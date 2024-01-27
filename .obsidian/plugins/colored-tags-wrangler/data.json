@@ -56,6 +56,20 @@
           "b": 255
         },
         "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resources/name/leetcode/🔖/problems/163-missing-ranges",
+        "color": {
+          "r": 200,
+          "g": 137,
+          "b": 0
+        },
+        "background_color": {
+          "r": 49,
+          "g": 49,
+          "b": 49
+        },
+        "luminance_offset": 0.15
       }
     ],
     "EnableMultipleTags": true,

@@ -10,6 +10,7 @@
           {
             "id": "b6d0e71300783725",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -17,12 +18,14 @@
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
-              }
+              },
+              "pinned": true
             }
           },
           {
             "id": "db1046e995b1ba58",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -30,11 +33,12 @@
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
-              }
+              },
+              "pinned": true
             }
           },
           {
-            "id": "4140ec952e03bdd1",
+            "id": "afa3eb32d92907f7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -46,8 +50,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -129,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/test.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/test.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -205,7 +208,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "the-vault/test.md"
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md"
               }
             }
           }
@@ -244,10 +247,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": true
     }
   },
-  "active": "4140ec952e03bdd1",
+  "active": "b6d0e71300783725",
   "lastOpenFiles": [
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/163. Missing Ranges.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
+    "the-vault/test.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
     "the-vault/zotero/My Library.bib",
     "the-vault/src/🔴 Academic/📚 Educational Resources/sortspec.md",
@@ -280,7 +284,6 @@
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Discuss",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/LeetCode ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Contest",
-    "the-vault/test.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Interview",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Featured",
