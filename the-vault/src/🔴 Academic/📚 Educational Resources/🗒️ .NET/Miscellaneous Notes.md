@@ -1,7 +1,7 @@
 ---
-title: Misc. Notes
+title: Miscellaneous Notes
 created: 2023-09-03 08:46
-updated: 2024-01-06T16:26
+updated: 2024-01-27T06:26
 authors:
   - Edmund Leibert III
 tags:
@@ -12,14 +12,14 @@ tags:
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ .NET::Misc. Notes
 ---
 
-# Misc. Notes
+# Miscellaneous Notes
 
 ---
 
-> [!ABSTRACT]+ 
-> Miscellaneous scratch notes pertaining to [.NET](https://dotnet.microsoft.com/en-us/). [@NETBuildTest]
+> [!INFO]+ Note 
+> This page contains **miscellaneous** _scratch notes_ pertaining to **[.NET](https://dotnet.microsoft.com/en-us/)**. 
 > 
-> These notes are primarily structured in a Q&A format, making it easy to follow and learn. Corresponding Anki flashcards are available, enabling efficient revision and reinforcement of the concepts.
+> These notes are primarily structured in a Q&A format, making it easy to follow and learn. Corresponding [**Anki**](https://apps.ankiweb.net/) flashcards are available, enabling efficient revision and reinforcement of the concepts. 
 
 ---
 
@@ -44,7 +44,7 @@ docto -f C:\Directory\MyFile.doc -O "C:\Output Directory\MyTextFile.pdf" -T wdFo
 ﹇<br>
 What does JSON stand for?
 
-#card 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/json
 
 **J**ava**S**cript **O**bject **N**otation
 

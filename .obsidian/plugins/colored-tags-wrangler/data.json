@@ -70,6 +70,20 @@
           "b": 49
         },
         "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/technology/json",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "background_color": {
+          "r": 31,
+          "g": 31,
+          "b": 31
+        },
+        "luminance_offset": 0.15
       }
     ],
     "EnableMultipleTags": true,

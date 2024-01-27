@@ -1,7 +1,7 @@
 ---
 title: 🗒️ Zotero ∋ Table of Contents
 created: 2023-09-03 08:46
-updated: 2024-01-25T00:50
+updated: 2024-01-27T06:41
 author(s):
   - Edmund Leibert III
 tags:
@@ -16,14 +16,14 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Zotero::🔖::🗒
 
 ---
 
-> [!ABSTRACT]+ 
-> Scratch notes pertaining to [Zotero](https://www.zotero.org/). [@ZoteroYourPersonal]
+> [!INFO]+ Note 
+> This vault module contains _scratch notes_ pertaining to **[Zotero](https://www.zotero.org/)**. [@ZoteroYourPersonal]
 > 
-> These notes are primarily structured in a Q&A format, making it easy to follow and learn. Corresponding Anki flashcards are available, enabling efficient revision and reinforcement of the concepts.
+> These notes are primarily structured in a Q&A format, making it easy to follow and learn. Corresponding [**Anki**](https://apps.ankiweb.net/) flashcards are available, enabling efficient revision and reinforcement of the concepts. [@ankitectsAnkiPowerfulIntelligent]
 
 ---
 
-> [!info]+ 
+> [!INFO]+ Note 
 > **Previous Note(s):**
 > 
 
@@ -41,12 +41,15 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Zotero::🔖::🗒
 
 ## Bibliography
 
-\[1\]
-“Zotero | Your personal research assistant.” Available: [https://www.zotero.org/](https://www.zotero.org/). [Accessed: Dec. 13, 2023]
+\[1\] 
+Ankitects, “Anki - powerful, intelligent flashcards,” _Anki - powerful, intelligent flashcards_. Available: https://apps.ankiweb.net/
+
+\[2\] 
+“Zotero | Your personal research assistant,” _Zotero_. Available: https://www.zotero.org/
 
 ---
 
-> [!info]+
+> [!INFO]+ Note
 > **Next Note(s):**
 > 
 

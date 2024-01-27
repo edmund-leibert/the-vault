@@ -23,13 +23,13 @@
             }
           },
           {
-            "id": "db1046e995b1ba58",
+            "id": "c5c5564932c35060",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/163. Missing Ranges.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/🗒️ Zotero ∋ Table of Contents.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -38,19 +38,20 @@
             }
           },
           {
-            "id": "afa3eb32d92907f7",
+            "id": "318646537f44c62b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/test.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -132,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/🗒️ Zotero ∋ Table of Contents.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/🗒️ Zotero ∋ Table of Contents.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -208,7 +209,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md"
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/🗒️ Zotero ∋ Table of Contents.md"
               }
             }
           }
@@ -247,14 +248,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": true
     }
   },
-  "active": "b6d0e71300783725",
+  "active": "c5c5564932c35060",
   "lastOpenFiles": [
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/163. Missing Ranges.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
-    "the-vault/test.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/🗒️ Zotero ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/Misc. Notes.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
-    "the-vault/zotero/My Library.bib",
     "the-vault/src/🔴 Academic/📚 Educational Resources/sortspec.md",
+    "Untitled.loom",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/163. Missing Ranges.md",
+    "the-vault/test.md",
+    "the-vault/zotero/My Library.bib",
     "the-vault/src/🔴 Academic/sortspec.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/4. Median of Two Arrays.md",
     "the-vault/sortspec.md",
@@ -263,7 +267,6 @@
     "the-vault/src/🔵 Vocational/🔵 Vocational ∋ Table of Contents.md",
     "kartik-misc/4._Median_of_Two_Sorted_Arrays.md",
     "the-vault/assets/excalidraw/Drawing 2024-01-24 18.09.02.excalidraw.md",
-    "Untitled.loom",
     "the-vault/assets/excalidraw/Drawing 2024-01-24 18.09.02.excalidraw.light.png",
     "the-vault/assets/excalidraw/Drawing 2024-01-24 18.09.02.excalidraw.light.svg",
     "the-vault/assets/excalidraw/Drawing 2024-01-24 18.09.02.excalidraw.dark.png",
@@ -280,9 +283,7 @@
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Interview/Interview ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Discuss/Discuss ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Interview",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Contest/Contest ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Discuss",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/LeetCode ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Contest",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Interview",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn",
