@@ -310,7 +310,6 @@
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Obsidian/Misc. Notes.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Python/Pip.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Python/Misc. Notes.md": "TiNotes",
-  "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/Misc. Notes.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/Discord/DE Grind Crew/💼 Vocational": "RiBookmarkFill",
   "the-vault/src/🔴 Academic/📚 Educational Resources/Docker Docs/Guides/Docker Overview.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/Docker Docs/Guides/Get started": "RiBookmarkFill",
@@ -366,5 +365,6 @@
   "the-vault/zotero/My Library.bib": "EiZotero",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET": "EiMicrosoftNET",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md": "EiScribbleNotes",
-  "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/163. Missing Ranges.md": "TiNotes"
+  "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/163. Missing Ranges.md": "TiNotes",
+  "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/Miscellaneous Notes.md": "TiNotes"
 }

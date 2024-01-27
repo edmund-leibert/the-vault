@@ -1,7 +1,7 @@
 ---
 title: 🗒️ Zotero ∋ Table of Contents
 created: 2023-09-03 08:46
-updated: 2024-01-27T06:41
+updated: 2024-01-27T06:56
 author(s):
   - Edmund Leibert III
 tags:
@@ -35,17 +35,17 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Zotero::🔖::🗒
 
 - **🗒 Zotero**
 	- [🗒️ Zotero ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20Resources/🗒️%20Zotero/🗒️%20Zotero%20∋%20Table%20of%20Contents.md)
-	- [Misc. Notes](the-vault/src/🔴%20Academic/📚%20Educational%20Resources/🗒️%20Zotero/Misc.%20Notes.md)
+	- [Miscellaneous Notes](the-vault/src/🔴%20Academic/📚%20Educational%20Resources/🗒️%20Zotero/Miscellaneous%20Notes.md)
 
 ---
 
 ## Bibliography
 
-\[1\] 
-Ankitects, “Anki - powerful, intelligent flashcards,” _Anki - powerful, intelligent flashcards_. Available: https://apps.ankiweb.net/
+\[1\]
+Corporation for Digital Scholarship, “Zotero | Your personal research assistant,” _Zotero | Your Personal research assistant_. Available: [https://www.zotero.org/](https://www.zotero.org/). [Accessed: Dec. 12, 2023]
 
-\[2\] 
-“Zotero | Your personal research assistant,” _Zotero_. Available: https://www.zotero.org/
+\[2\]
+Ankitects, “Anki - powerful, intelligent flashcards,” _Anki - powerful, intelligent flashcards_. Available: [https://apps.ankiweb.net/](https://apps.ankiweb.net/). [Accessed: Jan. 26, 2024]
 
 ---
 

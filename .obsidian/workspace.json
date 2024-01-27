@@ -38,12 +38,12 @@
             }
           },
           {
-            "id": "318646537f44c62b",
+            "id": "5b6989b6615aa3e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -51,7 +51,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/🗒️ Zotero ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/🗒️ Zotero ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -209,7 +209,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/🗒️ Zotero ∋ Table of Contents.md"
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md"
               }
             }
           }
@@ -248,12 +248,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": true
     }
   },
-  "active": "c5c5564932c35060",
+  "active": "3b22159245c2a393",
   "lastOpenFiles": [
+    "the-vault/assets/banners/dotnet.jpeg",
+    "the-vault/assets/banners/Web capture_27-1-2024_7515_dotnet.microsoft.com.jpeg.crdownload",
+    "the-vault/assets/banners",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/🗒️ Zotero ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/Misc. Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/sortspec.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/Miscellaneous Notes.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/sortspec.md",
     "Untitled.loom",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/163. Missing Ranges.md",
@@ -277,18 +281,14 @@
     "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Problems/Untitled.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/118. Pascal's Triangle.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/620. Not Boring Movies.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/sortspec.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/sortspec.md",
     "the-vault/terror-interview-problem.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Interview/Interview ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Discuss/Discuss ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Interview",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Discuss",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Contest",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Interview",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Featured",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Selenium",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore"
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Featured"
   ]
 }

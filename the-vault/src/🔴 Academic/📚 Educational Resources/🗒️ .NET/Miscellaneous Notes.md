@@ -1,15 +1,15 @@
 ---
 title: Miscellaneous Notes
 created: 2023-09-03 08:46
-updated: 2024-01-27T06:26
+updated: 2024-01-27T07:02
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-net/🔖/misc-notes
-  - 🔴-academic/📚-educational-resource/format/miscellaneous
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/framework/net
+  - 🔴-academic/📚-educational-resources/name/🗒️-net/🔖/miscellaneous-notes
+  - 🔴-academic/📚-educational-resources/format/miscellaneous
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/framework/net
   - study-note
-cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ .NET::Misc. Notes
+cards-deck: 🔴 Academic::📚 Educational Resources::🗒️ .NET::Miscellaneous Notes
 ---
 
 # Miscellaneous Notes
@@ -23,7 +23,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ .NET::Misc. Notes
 
 ---
 
-> [!INFO]+ 
+> [!INFO]+ Note
 > **Previous Note(s)**:
 > 
 
@@ -501,7 +501,7 @@ It typically automates system maintenance or administration—though its general
 
 ---
 
-> [!INFO]+
+> [!INFO]+ Note
 > **Next Note(s)**:
 > 
 
