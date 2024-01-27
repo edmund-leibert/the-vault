@@ -6,6 +6,7 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "RiFolderFill",
       "RiBookmarkFill",
       "LiConstruction",
       "EiHsfLogo",
@@ -19,8 +20,7 @@
       "EiBazel",
       "EiDEGrindCrew",
       "SiMicrosoftexcel",
-      "SiPython",
-      "EiSystemDesignFightClub"
+      "SiPython"
     ],
     "recentlyUsedIconsSize": 15,
     "rules": [

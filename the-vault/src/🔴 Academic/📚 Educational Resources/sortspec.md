@@ -1,6 +1,6 @@
 ---
 created: 2023-09-03 08:46
-updated: 2023-12-09T20:54
+updated: 2024-01-26T18:35
 sorting-spec: |-
   target-folder: .
   order-desc: a-z
@@ -20,5 +20,6 @@ sorting-spec: |-
   Discord
   🗒️ Git
   %
+  🗒️ .NET
   sortspec
 ---

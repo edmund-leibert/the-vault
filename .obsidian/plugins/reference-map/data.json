@@ -7,22 +7,22 @@
   "showJournal": true,
   "filterRedundantReferences": true,
   "lookupLinkedFiles": true,
-  "searchTitle": false,
+  "searchTitle": true,
   "searchLimit": 3,
-  "searchFrontMatter": false,
+  "searchFrontMatter": true,
   "searchFrontMatterKey": "keywords",
   "searchFrontMatterLimit": 3,
   "searchCiteKey": true,
-  "pullFromZotero": true,
+  "pullFromZotero": false,
   "zoteroGroups": [
     {
       "id": 1,
       "name": "My Library",
-      "lastUpdate": 1706173350954
+      "lastUpdate": 1706324228211
     }
   ],
   "zoteroPort": "23119",
-  "searchCiteKeyPath": "",
+  "searchCiteKeyPath": "the-vault\\zotero\\My Library.bib",
   "autoUpdateCitekeyFile": true,
   "linkCiteKey": true,
   "findZoteroCiteKeyFromID": true,

@@ -5,14 +5,16 @@
     {
       "id": 1,
       "name": "My Library",
-      "lastUpdate": 1706319999562
+      "lastUpdate": 1706323507036
     }
   ],
   "renderCitations": true,
   "renderCitationsReadingMode": true,
   "renderLinkCitations": true,
-  "pullFromZotero": true,
+  "pullFromZotero": false,
   "enableCiteKeyCompletion": true,
   "showCitekeyTooltips": true,
-  "cslStyleURL": "https://raw.githubusercontent.com/citation-style-language/styles/master/ieee-with-url.csl"
+  "cslStyleURL": "https://raw.githubusercontent.com/citation-style-language/styles/master/ieee-with-url.csl",
+  "zoteroPort": "23119",
+  "pathToBibliography": "C:\\Users\\edmun\\Projects\\Repositories\\the-vault\\the-vault\\zotero\\My Library.bib"
 }
