@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "762c0d441787ef08",
+            "id": "b6d0e71300783725",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,8 +19,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "db1046e995b1ba58",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/163. Missing Ranges.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/163. Missing Ranges.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/163. Missing Ranges.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,12 +192,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md"
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/163. Missing Ranges.md"
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -217,12 +231,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": true
     }
   },
-  "active": "762c0d441787ef08",
+  "active": "db1046e995b1ba58",
   "lastOpenFiles": [
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/163. Missing Ranges.md",
+    "the-vault/zotero/My Library.bib",
     "the-vault/src/🔴 Academic/📚 Educational Resources/sortspec.md",
     "the-vault/src/🔴 Academic/sortspec.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/4. Median of Two Arrays.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
     "the-vault/sortspec.md",
     "the-vault/src/🔴 Academic/🔴 Academic ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/Real Python/Real Python ∋ Table of Contents.md",
@@ -238,7 +255,6 @@
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Obsidian/Misc. Notes.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/119. Pascal's Triangle II.md",
     "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Problems/Untitled.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Misc. Notes.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/118. Pascal's Triangle.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/620. Not Boring Movies.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/sortspec.md",
@@ -252,7 +268,6 @@
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/LeetCode ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Contest",
     "the-vault/test.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/Structy ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Interview",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Featured",

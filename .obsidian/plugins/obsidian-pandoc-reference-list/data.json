@@ -1,20 +1,21 @@
 {
   "pathToPandoc": "C:\\Program Files\\Pandoc\\pandoc.EXE",
-  "tooltipDelay": 400,
+  "tooltipDelay": 100,
   "zoteroGroups": [
     {
       "id": 1,
       "name": "My Library",
-      "lastUpdate": 1706323507036
+      "lastUpdate": 1706329132208
     }
   ],
   "renderCitations": true,
   "renderCitationsReadingMode": true,
   "renderLinkCitations": true,
-  "pullFromZotero": false,
+  "pullFromZotero": true,
   "enableCiteKeyCompletion": true,
   "showCitekeyTooltips": true,
   "cslStyleURL": "https://raw.githubusercontent.com/citation-style-language/styles/master/ieee-with-url.csl",
   "zoteroPort": "23119",
-  "pathToBibliography": "C:\\Users\\edmun\\Projects\\Repositories\\the-vault\\the-vault\\zotero\\My Library.bib"
+  "pathToBibliography": "C:\\Users\\edmun\\Projects\\Repositories\\the-vault\\the-vault\\zotero\\My Library.bib",
+  "cslLang": "en-US"
 }

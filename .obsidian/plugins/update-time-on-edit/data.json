@@ -573,9 +573,6 @@
     "the-vault/src/🔴 Academic/📚 Educational Resources/Use the Index, Luke!/0. Preface.md": "a3c2e7a84e58a5595a4ee761afb841b446b674d1175d31ef8c9999785ba89408",
     "the-vault/src/🔴 Academic/📚 Educational Resources/Use the Index, Luke!/1. Chapter.md": "8979202cfcaf34c1580aae9601d52c6b5898a835de4ef6833dc36316e3272f94",
     "the-vault/src/🔴 Academic/📚 Educational Resources/Wikipedia/Tree traversal.md": "39b8adcbf1827a88b7943bcaf080cde92f63d00f193259b30f51b31a1346a446",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Misc. Notes.md": "8b694ad3140362851a23df3360977582041bc3735b72f28dcb58d3150ad1c77d",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/sortspec.md": "5192dcfb24e05b8808979831770cb9d7adf0c0f2b8af86ca7b22cfe201b53890",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md": "89d64b90420e94ffdcf045e8813ddc8e132cb9f9f694e95cc0691fb4f02c0ed5",
     "the-vault/src/🔴 Academic/📚 Educational Resources/University Physics with Modern Physics, 15th Edition (2019)/ANSWERS TO ODD-NUMBERED PROBLEMS.md": "51cbdf62a6b7ccb47912378272647e601900921d69014551e64db4cca78d023e",
     "the-vault/src/🔴 Academic/📚 Educational Resources/University Physics with Modern Physics, 15th Edition (2019)/APPENDIX A.md": "d4b43f861910efc50ffdd27579ca3112c89e1b3abb350479423e04dbf6e07848",
     "the-vault/src/🔴 Academic/📚 Educational Resources/University Physics with Modern Physics, 15th Edition (2019)/APPENDIX B.md": "741199310627823c6b32604cc156757be83d69de3dd4a4a75cfcfba35e6469ec",
@@ -727,7 +724,7 @@
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/144. Binary Tree Preorder Traversal.md": "174786e09d4c381f70b80d54fa647054ee97f723d88f6f0be6285ea6ba7f6f5a",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/157. Read N Characters Given Read4.md": "0944e0e4dddc271aa9f085ead77f95a4ff95003c43a7c44ce0c6b71acea92cf9",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/160. Intersection of Two Linked Lists.md": "4c29463e28bc1d484890d8996a76e11aeae324f6b98c101cdd4be41f2bcc3824",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/163. Missing Ranges.md": "5319834b3eaa35fd08ee372f6e716b66d84e4821c0c003b25a5c9be08d0a512b",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/163. Missing Ranges.md": "6e842e709a58997c1856feb8f406f982b2edde33c668315068f18018937193ec",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/169. Majority Element.md": "08bdd59c90e7a78a3d76d22cced3635fb16239877a88e6b37e1c6bd5b31b0eb9",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/175. Combine Two Tables.md": "1688daa337fcc75884c4ac6a6c5f75ff299573e0144012cb3798baddef2063a7",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/182. Duplicate Emails.md": "5bbacb99f8396df0d515059017c786794fc8faa0d97a1b2326e02ed7504e9c27",
@@ -952,6 +949,9 @@
     "the-vault/src/🔴 Academic/👷🏽‍♂️ Projects/Project “Backbone”.md": "b5ff48a7eac918583578e842f9037e7f9824a45af387ea31f1097e5c230458b0",
     "the-vault/src/🔴 Academic/👷🏽‍♂️ Projects/Project “BetterWinget”.md": "2d3eaaef97be5a72a71d5c2c795cfde21a52613338e7df68e36f2c2cdd5e05b9",
     "the-vault/src/🔴 Academic/👷🏽‍♂️ Projects/Project “MeDev”.md": "f1c2312010cedbe88db1bbbf9004930fb5af37d9a86ca2b89c0bac5574d2206e",
-    "the-vault/src/🔴 Academic/👷🏽‍♂️ Projects/Project “Colortype”.md": "9460a23b704923d724504df4af75dc6f06aec852a913cf03af9726ef540d3097"
+    "the-vault/src/🔴 Academic/👷🏽‍♂️ Projects/Project “Colortype”.md": "9460a23b704923d724504df4af75dc6f06aec852a913cf03af9726ef540d3097",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/sortspec.md": "5192dcfb24e05b8808979831770cb9d7adf0c0f2b8af86ca7b22cfe201b53890",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md": "ac87775fe37eb217cac49da78b69e6213d07cc138edd1f90dc3554f6fcd8d44e",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md": "8b694ad3140362851a23df3360977582041bc3735b72f28dcb58d3150ad1c77d"
   }
 }

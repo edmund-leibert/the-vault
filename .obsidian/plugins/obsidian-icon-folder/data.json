@@ -6,6 +6,8 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "EiScribbleNotes",
+      "EiZotero",
       "RiFolderFill",
       "RiBookmarkFill",
       "LiConstruction",
@@ -18,9 +20,7 @@
       "FasHashtag",
       "SiDiscord",
       "EiBazel",
-      "EiDEGrindCrew",
-      "SiMicrosoftexcel",
-      "SiPython"
+      "EiDEGrindCrew"
     ],
     "recentlyUsedIconsSize": 15,
     "rules": [
@@ -150,7 +150,6 @@
   "the-vault/templates/Template {{Structy ∋ Challenge}}.md": "TiTemplate",
   "the-vault/src/🔴 Academic/📚 Educational Resource/Discrete Mathematics and Its Applications, 8th Edition": "FasBook",
   "the-vault/src/🔴 Academic/📚 Educational Resource/Discrete Mathematical Structures, 6th Edition": "FasBook",
-  "the-vault/zotero/My Library.bib": "EiZoteroItem",
   "the-vault/src/🔴 Academic/📚 Educational Resource/O'Reilly Learning/Fluent Python, 2nd Edition (2022)": "FasBook",
   "the-vault/templates/Template {{LeetCode ∋ Problem}}.md": "TiTemplate",
   "the-vault/templates/Template {{Attempt ∋ “✅ Succeeded”}}.md": "TiTemplate",
@@ -194,7 +193,6 @@
   "the-vault/src/🔴 Academic/📚 Educational Resources/Use the Index, Luke!": "EiUseTheIndexLuke",
   "the-vault/src/🔴 Academic/📚 Educational Resources/Vim": "SiVim",
   "the-vault/src/🔴 Academic/📚 Educational Resources/Wikipedia": "EiWikipedia",
-  "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET": "EiMicrosoftNET",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Anaconda": "SiAnaconda",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Angular": "SiAngular",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Bash": "SiGnubash",
@@ -292,7 +290,6 @@
   "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/4. Graph": "RiBookmarkFill",
   "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/8. Mixed Recall": "RiBookmarkFill",
   "the-vault/src/🔴 Academic/📚 Educational Resources/Wikipedia/Tree traversal.md": "TiNotes",
-  "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Misc. Notes.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Anaconda/Misc. Notes.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Angular/Misc. Notes.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Bash/Misc. Notes.md": "TiNotes",
@@ -365,5 +362,8 @@
   "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore": "RiBookmarkFill",
   "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Contest": "RiBookmarkFill",
   "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Discuss": "RiBookmarkFill",
-  "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Interview": "RiBookmarkFill"
+  "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Interview": "RiBookmarkFill",
+  "the-vault/zotero/My Library.bib": "EiZotero",
+  "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET": "EiMicrosoftNET",
+  "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md": "EiScribbleNotes"
 }

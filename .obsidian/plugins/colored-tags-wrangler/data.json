@@ -16,16 +16,16 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🍑-booty",
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/framework/net",
         "color": {
-          "r": 68,
-          "g": 0,
+          "r": 255,
+          "g": 255,
           "b": 255
         },
         "background_color": {
-          "r": 171,
-          "g": 33,
-          "b": 33
+          "r": 80,
+          "g": 39,
+          "b": 213
         },
         "luminance_offset": 0.15
       },
@@ -40,6 +40,20 @@
           "r": 100,
           "g": 100,
           "b": 100
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/cpp",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "background_color": {
+          "r": 56,
+          "g": 89,
+          "b": 255
         },
         "luminance_offset": 0.15
       }

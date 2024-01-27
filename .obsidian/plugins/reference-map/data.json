@@ -5,7 +5,7 @@
   "abstractTruncateLength": 160,
   "showAuthors": true,
   "showJournal": true,
-  "filterRedundantReferences": true,
+  "filterRedundantReferences": false,
   "lookupLinkedFiles": true,
   "searchTitle": true,
   "searchLimit": 3,
@@ -13,12 +13,12 @@
   "searchFrontMatterKey": "keywords",
   "searchFrontMatterLimit": 3,
   "searchCiteKey": true,
-  "pullFromZotero": false,
+  "pullFromZotero": true,
   "zoteroGroups": [
     {
       "id": 1,
       "name": "My Library",
-      "lastUpdate": 1706324228211
+      "lastUpdate": 1706329723808
     }
   ],
   "zoteroPort": "23119",
