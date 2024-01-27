@@ -1,6 +1,6 @@
 ---
 created: 2023-10-01 16:14
-updated: 2024-01-23T07:34
+updated: 2024-01-26T22:09
 cards-deck: Default
 tags:
   - 🍑-booty
@@ -115,4 +115,9 @@ What are the various callouts?
 
 > [!caution] Caution
 > Contents
+
+{1:purple}
+
+{{2:pink}}
+^1706335749088
 
