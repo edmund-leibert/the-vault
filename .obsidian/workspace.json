@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b45caff1db8087f6",
+            "id": "c71d590ad1d3b8e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -215,8 +215,9 @@
       "custom-sort:Toggle custom sorting": false
     }
   },
-  "active": "b45caff1db8087f6",
+  "active": "c71d590ad1d3b8e3",
   "lastOpenFiles": [
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/4. Median of Two Arrays.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
     "the-vault/assets/banners/dotnet.jpeg",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/🗒️ Zotero ∋ Table of Contents.md",
@@ -231,7 +232,6 @@
     "the-vault/test.md",
     "the-vault/zotero/My Library.bib",
     "the-vault/src/🔴 Academic/sortspec.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/4. Median of Two Arrays.md",
     "the-vault/sortspec.md",
     "the-vault/src/🔴 Academic/🔴 Academic ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/Real Python/Real Python ∋ Table of Contents.md",
