@@ -14,8 +14,8 @@
     "spoiler",
     "callouts"
   ],
-  "monospaceFontFamily": "FiraCode Nerd Font",
-  "textFontFamily": "Trebuchet MS",
+  "monospaceFontFamily": "FiraCode Nerd Font,Consolas",
+  "textFontFamily": "Arial,Trebuchet MS",
   "cssTheme": "Minimal",
   "baseFontSize": 16
 }

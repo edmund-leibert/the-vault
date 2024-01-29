@@ -118,7 +118,7 @@
   ],
   "showDeleteConfirmation": true,
   "underlineFolder": true,
-  "allowWhitespaceCollapsing": false,
+  "stopWhitespaceCollapsing": true,
   "underlineFolderInPath": true,
   "openFolderNoteOnClickInPath": true,
   "openInNewTab": false,
@@ -192,5 +192,8 @@
     "excludeFromFolderOverview": false,
     "string": ""
   },
-  "hideCollapsingIcon": false
+  "hideCollapsingIcon": false,
+  "tabManagerEnabled": true,
+  "ignoreAttachmentFolder": true,
+  "allowWhitespaceCollapsing": false
 }

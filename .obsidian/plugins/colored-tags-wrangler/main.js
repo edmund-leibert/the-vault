@@ -6752,6 +6752,13 @@ function migrate_12_to_13(loaded_data) {
   return transformed_data;
 }
 
+// src/plugin/settings/migrations/migrate_13_to_14.ts
+function migrate_13_to_14(loaded_data) {
+  let transformed_data = loaded_data;
+  transformed_data.Info.SettingsVersion = 14;
+  return transformed_data;
+}
+
 // src/plugin/settings/Migrate.ts
 var MIGRATION_STEPS = [
   // Using any's isn't perfect but will do for now
@@ -6770,7 +6777,8 @@ var MIGRATION_STEPS = [
   (data) => migrate_09_to_10(data),
   (data) => migrate_10_to_11(data),
   (data) => migrate_11_to_12(data),
-  (data) => migrate_12_to_13(data)
+  (data) => migrate_12_to_13(data),
+  (data) => migrate_13_to_14(data)
 ];
 function Migrate(data) {
   var _a, _b;
@@ -6879,11 +6887,7 @@ var DefaultSettings = {
   TagColors: {
     ColorPicker: [],
     EnableMultipleTags: true,
-    EnableSeparateBackground: false,
-    EnableSeparateLuminanceOffset: false,
-    // can be removed
-    EnableDarkLightDifference: true,
-    // can be removed
+    EnableSeparateBackground: true,
     EnableBackgroundOpacity: false,
     Values: {
       BackgroundOpacity: 0.45,
@@ -6911,7 +6915,7 @@ var DefaultSettings = {
     }
   },
   Kanban: {
-    Enable: false,
+    Enable: true,
     EnableCards: false,
     EnableLists: false,
     HideHashtags: false,
@@ -6939,7 +6943,7 @@ var DefaultSettings = {
     EnableExperimentalCommands: false
   },
   Info: {
-    SettingsVersion: 13
+    SettingsVersion: 14
     // UPDATE THIS WHEN YOU CHANGE ANYTHING IN THE SETTINGS!!!
   }
 };
@@ -6952,7 +6956,7 @@ function get_tags(data, enable_multiple_tags, remove_slash = true) {
     if (!enable_multiple_tags) {
       return [{ tag_name, color, background_color, luminance_offset }];
     }
-    return tag_name.split(reSplit).map((tag) => tag.trim().toLowerCase()).filter(Boolean).map((tag) => remove_slash ? tag.replace(reSLASH, "") : tag).map((tag) => ({ tag_name: tag, color, background_color, luminance_offset }));
+    return tag_name.split(reSplit).map((tag) => tag.trim()).filter(Boolean).map((tag) => remove_slash ? tag.replace(reSLASH, "") : tag).map((tag) => ({ tag_name: tag, color, background_color, luminance_offset }));
   });
 }
 
@@ -6990,23 +6994,19 @@ var StyleWrangler = class {
 };
 
 // src/plugin/style_manager/css_wranglers/CSSWrangler.ts
-var lineCleanup = (line) => line.split("\n").map((l) => l.trim()).join(" ");
+var rxCssComment = /\/\*[^*]*\*+([^/*][^*]*\*+)*\//g;
+var lineCleanup = (line) => line.split("\n").map((l) => l.replace(rxCssComment, "").trim()).join(" ");
 var CSSWrangler = class extends StyleWrangler {
   // -----------------------------------------------------------------------------------------------------------------
   // Constructor
   // -----------------------------------------------------------------------------------------------------------------
-  constructor(id, plugin, settingLocation) {
+  constructor(plugin, settingLocation) {
     super(plugin, settingLocation);
-    this.id = !id.startsWith("#") ? `#${id}` : id;
-    this.styleEL_light = document.createElement("style");
-    this.styleEL_dark = document.createElement("style");
-    this.styleEL_light.id = `${this.id}_light`;
-    this.styleEL_dark.id = `${this.id}_dark`;
   }
   // -----------------------------------------------------------------------------------------------------------------
   // Methods
   // -----------------------------------------------------------------------------------------------------------------
-  applyStyles() {
+  getCssStyling() {
     return [
       this.assembleCss("body.theme-light").map(lineCleanup).join(" "),
       this.assembleCss("body.theme-dark").map(lineCleanup).join(" ")
@@ -7020,19 +7020,21 @@ var CSSWranglerKanbanHashtags = class extends CSSWrangler {
   // Constructor
   // -----------------------------------------------------------------------------------------------------------------
   constructor(plugin) {
-    super("#styleKanbanEl", plugin, plugin.settings.Kanban);
+    super(plugin, plugin.settings.Kanban);
   }
   // -----------------------------------------------------------------------------------------------------------------
   // Methods
   // -----------------------------------------------------------------------------------------------------------------
   assembleCss(_) {
-    return [`
-		div[data-type="kanban"] a.tag>span,
-		div.kanban-plugin a.tag>span,
-		div[data-type="kanban"] .cm-hashtag-begin {
-			visibility: hidden;
-			position: absolute;
-		}`];
+    return [
+      `
+			div[data-type="kanban"] a.tag>span,
+			div.kanban-plugin a.tag>span,
+			div[data-type="kanban"] .cm-hashtag-begin {
+				visibility: hidden;
+				position: absolute;
+			}`
+    ];
   }
 };
 
@@ -7042,7 +7044,7 @@ var CSSWranglerKanbanCards = class extends CSSWrangler {
   // Constructor
   // -----------------------------------------------------------------------------------------------------------------
   constructor(plugin) {
-    super("#styleKanbanCardsEl", plugin, plugin.settings.Kanban);
+    super(plugin, plugin.settings.Kanban);
   }
   // -----------------------------------------------------------------------------------------------------------------
   // Methods
@@ -7067,7 +7069,7 @@ var CSSWranglerKanbanLists = class extends CSSWrangler {
   // Constructor
   // -----------------------------------------------------------------------------------------------------------------
   constructor(plugin) {
-    super("#styleKanbanListsEl", plugin, plugin.settings.Kanban);
+    super(plugin, plugin.settings.Kanban);
   }
   // -----------------------------------------------------------------------------------------------------------------
   // Methods
@@ -7093,7 +7095,7 @@ var CSSWranglerTags = class extends CSSWrangler {
   // Constructor
   // -----------------------------------------------------------------------------------------------------------------
   constructor(plugin) {
-    super("#styleTagsEl", plugin, plugin.settings.TagColors);
+    super(plugin, plugin.settings.TagColors);
   }
   // -----------------------------------------------------------------------------------------------------------------
   // Methods
@@ -7111,7 +7113,7 @@ var CSSWranglerTags = class extends CSSWrangler {
       ...this.getTags(false).map(
         (v) => this._assembleCss(
           theme,
-          `.tag[href="#${v.tag_name}"]`,
+          `.tag[href="#${v.tag_name}" i]`,
           important,
           v.color,
           v.background_color
@@ -7136,7 +7138,7 @@ var CSSWranglerTagsCanvas = class extends CSSWrangler {
   // Constructor
   // -----------------------------------------------------------------------------------------------------------------
   constructor(plugin) {
-    super("#styleTagsCanvasEl", plugin, plugin.settings.TagColors);
+    super(plugin, plugin.settings.TagColors);
   }
   // -----------------------------------------------------------------------------------------------------------------
   // Methods
@@ -7160,7 +7162,7 @@ var CSSWranglerFolderNote = class extends CSSWrangler {
   // Constructor
   // -----------------------------------------------------------------------------------------------------------------
   constructor(plugin) {
-    super("#styleFolderNoteEl", plugin, plugin.settings.FolderNote);
+    super(plugin, plugin.settings.FolderNote);
   }
   // -----------------------------------------------------------------------------------------------------------------
   // Methods
@@ -7228,7 +7230,7 @@ var CSSWranglerTagsNoWrap = class extends CSSWrangler {
   // Constructor
   // -----------------------------------------------------------------------------------------------------------------
   constructor(plugin) {
-    super("#styleCSS", plugin, plugin.settings.TagColors);
+    super(plugin, plugin.settings.TagColors);
   }
   // -----------------------------------------------------------------------------------------------------------------
   // Methods
@@ -7356,6 +7358,15 @@ var StyleManager = class {
     this.wrangler_kanban_cards = new CSSWranglerKanbanCards(plugin);
     this.wrangler_kanban_lists = new CSSWranglerKanbanLists(plugin);
     this.wrangler_folder_note = new CSSWranglerFolderNote(plugin);
+    this.style_wranglers_css = new Array(
+      this.wrangler_css_note_tags,
+      this.wrangler_css_note_tags_no_wrap,
+      this.wrangler_tags_canvas,
+      this.wrangler_kanban_hashtags,
+      this.wrangler_kanban_cards,
+      this.wrangler_kanban_lists,
+      this.wrangler_folder_note
+    );
     this.wrangler_note_property_tags = new JqueryWranglerNotePropertyTags(plugin);
     this.wrangler_note_background = new JqueryWranglerNoteBackgrounds(plugin);
     this.wrangler_canvas_node_background = new JqueryWranglerCanvasNodeBackground(plugin);
@@ -7396,11 +7407,14 @@ var StyleManager = class {
         styles: this.wrangler_folder_note
       }
     ];
-    this.styleElement.innerHTML = styleSets.filter((set) => set.enabled).flatMap((set) => set.styles.applyStyles()).join("");
+    this.styleElement.innerHTML = styleSets.filter((set) => set.enabled).flatMap((set) => set.styles.getCssStyling()).join("");
     document.head.appendChild(this.styleElement);
   }
   removeStyles() {
     document.head.removeChild(this.styleElement);
+  }
+  getAllCssStyling() {
+    return this.style_wranglers_css.flatMap((style) => style.getCssStyling());
   }
 };
 
@@ -8036,6 +8050,7 @@ var ComponentTagsEnableAutoBackgroundButton = class extends SettingsTabComponent
         component.setValue(this.plugin.settings.TagColors.EnableSeparateBackground).onChange(async (state) => {
           this.plugin.settings.TagColors.EnableSeparateBackground = state;
           await this.plugin.saveSettings();
+          this.settings_tab.display();
         });
       }
     );
@@ -8270,8 +8285,19 @@ async function exportGraphJsonFolderNotes(plugin) {
   await writeGraphJson(graph_data, plugin.app.vault);
 }
 
+// src/plugin/commands/experimental/ExportToCSS.ts
+async function ExportToCSS(editor, _, plugin) {
+  editor.replaceSelection(
+    [
+      "```css",
+      ...plugin.style_manager.getAllCssStyling(),
+      "```"
+    ].join("\n")
+  );
+}
+
 // src/plugin/commands/ExportGraphJsonTagsCodeblock.ts
-async function ExportGraphJsonTagsCodeblock(editor, ctx, plugin) {
+async function ExportGraphJsonTagsCodeblock(editor, _, plugin) {
   var _a;
   const color_groups = get_tags(plugin.settings.TagColors.ColorPicker, (_a = plugin.settings) == null ? void 0 : _a.TagColors.EnableMultipleTags).map(({ tag_name, color }) => {
     return {
@@ -8339,6 +8365,11 @@ var ColoredTagWrangler = class extends import_obsidian26.Plugin {
         id: "export-FOLDER-to-graph",
         name: "EXPERIMENTAL : export TAGS LINKED TO FOLDER NOTES to graph.json. This overwrites your current graph.json. Use at own risk!",
         callback: async () => await exportGraphJsonFolderNotes(this)
+      });
+      this.addCommand({
+        id: "export-css-to-codeblock",
+        name: "EXPERIMENTAL : CSS Styling to code block.",
+        editorCallback: async (editor, ctx) => await ExportToCSS(editor, ctx, this)
       });
     }
   }
