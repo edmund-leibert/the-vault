@@ -47,5 +47,6 @@
   "heatmap-calendar",
   "obsidian-outliner",
   "callout-manager",
-  "obsidian-admonition"
+  "obsidian-admonition",
+  "reveal-active-file-button"
 ]

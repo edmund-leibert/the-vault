@@ -1,7 +1,7 @@
 ---
 title: 🗒️ Obsidian ∋ Table of Contents
 created: 2023-08-20 08:26
-updated: 2024-01-06T16:33
+updated: 2024-01-28T17:00
 authors:
   - Edmund Leibert III
 tags:
@@ -147,14 +147,25 @@ Should use the following symbol… `？`
 <br>﹈<br>^1700212962949
 
 ﹇<br>
-What symbol should I use as an alternate to the *period* (i.e., `.`) for filenames?
+What symbol should one use as an alternate to the _period_ (i.e., `.`) for filenames?
 
 #card 
 
-Should use the Unicode Character (U+2024): `․`
+One should use the Unicode Character (U+2024): `․`
 
 ⌂
 <br>﹈<br>^1704182900714
+
+﹇<br>
+What symbol should one use as an alternate to _parentheses_ (i.e., `(` or `)`) for filenames?
+
+#card 
+
+One should use the _decorative brackets_ variants of each: `❨` and `❩` [@xahleeUnicodeBracketsQuotes2010]
+
+⌂
+<br>﹈<br>
+
 
 ﹇<br>
 When writing software engineering documents, should I put filenames in code blocks or bold them?
@@ -185,7 +196,10 @@ Remember, the most important thing is to be consistent in your formatting throug
 ## :EiZoteroItem: Bibliography
 
 \[1\]
-“Slash (punctuation) - Wikipedia.” Available: [https://en.wikipedia.org/wiki/Slash_(punctuation)](https://en.wikipedia.org/wiki/Slash_(punctuation)). [Accessed: Dec. 01, 2023]
+“Slash (punctuation) - Wikipedia.” Available: [https://en.wikipedia.org/wiki/Slash_(punctuation)](https://en.wikipedia.org/wiki/Slash_(punctuation)). [Accessed: Dec. 01, 2023]
+ 
+\[2\]
+Xah Lee, “Unicode: Brackets, Quotes «»「」【】《》,” _∑ Xah Lee Web 李杀网_, Aug. 13, 2010. Available: [http://xahlee.info/comp/unicode_matching_brackets.html](http://xahlee.info/comp/unicode_matching_brackets.html). [Accessed: Jan. 28, 2024]
 
 ---
 
