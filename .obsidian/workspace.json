@@ -19,6 +19,16 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "9a95ef57136d776c",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "the-vault/assets/excalidraw/Drawing 2024-01-28 18.07.30.excalidraw.md"
+              }
+            }
           }
         ]
       }
@@ -78,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 611.5,
-    "collapsed": true
+    "width": 391.5
   },
   "right": {
     "id": "1186c1364788cf17",
@@ -219,8 +228,14 @@
   },
   "active": "2b59779e694d11f8",
   "lastOpenFiles": [
-    "Untitled.loom",
+    "the-vault/assets/excalidraw/Drawing 2024-01-28 18.07.30.excalidraw.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/295. Find Median from Data Stream.md",
+    "the-vault/assets/excalidraw/Drawing 2024-01-28 18.07.30.excalidraw.light.png",
+    "the-vault/assets/excalidraw/Drawing 2024-01-28 18.07.30.excalidraw.light.svg",
+    "the-vault/assets/excalidraw/Drawing 2024-01-28 18.07.30.excalidraw.dark.png",
+    "the-vault/assets/excalidraw/Drawing 2024-01-28 18.07.30.excalidraw.dark.svg",
+    "the-vault/assets/excalidraw/Drawing 2024-01-28 18.06.57.excalidraw.md",
+    "Untitled.loom",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Obsidian/Misc. Notes.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/4. Median of Two Arrays.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
@@ -251,8 +266,6 @@
     "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Problems/Untitled.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/118. Pascal's Triangle.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/620. Not Boring Movies.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/sortspec.md",
-    "the-vault/terror-interview-problem.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Interview",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Discuss",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Contest",
