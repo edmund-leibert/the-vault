@@ -1,7 +1,7 @@
 ---
 title: Explore ∋ Table of Contents
 created: 2024-01-05T10:43
-updated: 2024-01-25T16:47
+updated: 2024-01-30T08:15
 authors:
   - Edmund Leibert III
 tags:
@@ -17,7 +17,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::LeetCode::Explore ∋ Tabl
 ---
 
 > [!abstract]+ Abstract 
-> _Table of Contents_ for the **0. Introduction** section of [Structy ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20Resources/Structy/Structy%20∋%20Table%20of%20Contents.md).
+> _Table of Contents_ for the **Explore** section of [Structy ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20Resources/Structy/Structy%20∋%20Table%20of%20Contents.md).
 
 ---
 

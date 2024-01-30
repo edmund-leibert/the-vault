@@ -1,7 +1,7 @@
 ---
 title: LeetCode ∋ Table of Contents
 created: 2024-01-23T16:17
-updated: 2024-01-25T16:47
+updated: 2024-01-30T08:18
 authors:
   - Edmund Leibert III
 tags:
@@ -16,33 +16,33 @@ cards-deck: 🔴 Academic::📚 Educational Resource::LeetCode::LeetCode ∋ Tab
 
 ---
 
-> [!abstract]+ 
-> These LeetCode course notes are an invaluable resource for anyone preparing for technical interviews. The notes delve into the intricacies of various coding problems, providing clear explanations and efficient solutions.
+> [!INFO]+ Note 
+> These **LeetCode** course notes are an invaluable resource for anyone preparing for technical interviews. The notes delve into the intricacies of various coding problems, providing clear explanations and efficient solutions.
 > 
 > The notes are structured in a Q&A format, making it easy to follow and learn. To aid in efficient revision and reinforcement of the concepts, corresponding Anki flashcards for LeetCode problems are also provided. This combination of resources offers a comprehensive approach to mastering coding interview questions.
 
 ---
 
-> [!info]+ 
-> **Previous Note(s)**:
+> [!INFO]+ Note 
+> **Previous Notes**:
 > 
 
 ---
 
-> [!info]+ 
+> [!INFO]+ Note
 > Key for what emojis in the names of notes represent…
 > - 👨🏻‍🏫 = lecture
 > - 👨🏽‍💻 = challenge
 > - 📝 = quiz
 
-> [!info]+ 
+> [!INFO]+ Note
 > The GitHub repository of my solutions for this course can be found here…
 > - :SiCplusplus: **C++**: [edmund-leibert/structy-course (github.com)](https://github.com/edmund-leibert/structy-course)
 > - :SiPython: **Python**:
 > - :SiJavascript: **JavaScript**:
 > - :FabJava: **Java**:
 
-> [!info]+ 
+> [!INFO]+ Note
 > The course itself can be found here: [Structy | Learn Algorithms, Efficiently.](https://www.structy.net/)
 
 ﹇<br>
@@ -70,7 +70,7 @@ A. Zabian, “Structy - Learn data structures and algorithms, efficiently.,” _
 ---
 
 > [!info]+
-> **Next Note(s)**:
+> **Next Notes**:
 > - [0. Introduction ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20Resources/Structy/0.%20Introduction/0.%20Introduction%20∋%20Table%20of%20Contents.md)
 
 ---
