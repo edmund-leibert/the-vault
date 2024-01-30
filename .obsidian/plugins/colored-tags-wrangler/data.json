@@ -98,6 +98,20 @@
           "b": 49
         },
         "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/developer-platform/net",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "background_color": {
+          "r": 80,
+          "g": 39,
+          "b": 213
+        },
+        "luminance_offset": 0.15
       }
     ],
     "EnableMultipleTags": true,
@@ -119,20 +133,7 @@
   },
   "FolderNote": {
     "Enable": true,
-    "FolderTagLinks": [
-      {
-        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/technology/yarn",
-        "folder_path": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Yarn"
-      },
-      {
-        "tag_name": "🔴-academic/📚-educational-resource/name/yarn",
-        "folder_path": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Yarn"
-      },
-      {
-        "tag_name": "study-note",
-        "folder_path": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Yarn"
-      }
-    ],
+    "FolderTagLinks": [],
     "EnableAutoDetect": true,
     "Values": {
       "ForceImportant": true,

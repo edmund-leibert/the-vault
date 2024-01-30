@@ -1,13 +1,13 @@
 ---
 title: Miscellaneous Notes
 created: 2023-09-03 08:46
-updated: 2024-01-30T08:41
+updated: 2024-01-30T14:34
 authors:
   - Edmund Leibert III
 tags:
   - 🔴-academic/📚-educational-resources/name/🗒️-net/🔖/miscellaneous-notes
   - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/framework/net
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/developer-platform/net
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resources::🗒️ .NET::Miscellaneous Notes
 ---
@@ -28,6 +28,17 @@ cards-deck: 🔴 Academic::📚 Educational Resources::🗒️ .NET::Miscellaneo
 > 
 
 ---
+
+﹇<br>
+In brief, what is Microsoft’s **.NET**?
+
+#card 
+
+**.NET** is a free, cross-platform, [open-source developer platform](https://github.com/dotnet/core) for building [many kinds of applications](https://learn.microsoft.com/en-us/dotnet/core/apps). It can run programs written in [multiple languages](https://learn.microsoft.com/en-us/dotnet/fundamentals/languages), with [C#](https://learn.microsoft.com/en-us/dotnet/csharp/) being the most popular. It relies on a [high-performance](https://devblogs.microsoft.com/dotnet/category/performance/) runtime that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/).
+
+⌂
+<br>﹈<br>
+
 
 ﹇<br>
 Using the [DocTo](https://github.com/tobya/DocTo) library, how can I export a .docx to a .pdf in the command line?

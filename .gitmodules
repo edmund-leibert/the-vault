@@ -4,3 +4,6 @@
 [submodule ".obsidian/plugins/flashcards-obsidian"]
 	path = .obsidian/plugins/flashcards-obsidian
 	url = https://github.com/edmund-leibert/flashcards-obsidian.git
+[submodule ".obsidian/plugins/obsidian-banners"]
+	path = .obsidian/plugins/obsidian-banners
+	url = https://github.com/edmund-leibert/obsidian-banners.git
