@@ -26,15 +26,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/LeetCode ∋ Table of Contents.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -231,11 +230,11 @@
       "custom-sort:Toggle custom sorting": false
     }
   },
-  "active": "3b22159245c2a393",
+  "active": "06592723bb4d254f",
   "lastOpenFiles": [
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/LeetCode ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Explore ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/sortspec.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/sortspec.md",

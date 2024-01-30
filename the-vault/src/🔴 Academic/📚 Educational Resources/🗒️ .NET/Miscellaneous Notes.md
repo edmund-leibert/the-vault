@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2023-09-03 08:46
-updated: 2024-01-27T07:02
+updated: 2024-01-30T08:41
 authors:
   - Edmund Leibert III
 tags:
@@ -17,7 +17,7 @@ cards-deck: 🔴 Academic::📚 Educational Resources::🗒️ .NET::Miscellaneo
 ---
 
 > [!INFO]+ Note 
-> This page contains **miscellaneous** _scratch notes_ pertaining to **[.NET](https://dotnet.microsoft.com/en-us/)**. 
+> This **page** contains **miscellaneous** _scratch notes_ pertaining to **[.NET](https://dotnet.microsoft.com/en-us/)**. 
 > 
 > These notes are primarily structured in a Q&A format, making it easy to follow and learn. Corresponding [**Anki**](https://apps.ankiweb.net/) flashcards are available, enabling efficient revision and reinforcement of the concepts. 
 
