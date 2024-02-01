@@ -1,7 +1,7 @@
 ---
 title: 🗒️ Obsidian ∋ Table of Contents
 created: 2023-08-20 08:26
-updated: 2024-01-28T17:00
+updated: 2024-01-30T20:43
 authors:
   - Edmund Leibert III
 tags:
@@ -180,11 +180,7 @@ Bolding can be used for emphasis or to highlight important parts of the text. Ho
 
 Remember, the most important thing is to be consistent in your formatting throughout your document. If you choose to use code blocks for filenames, for example, you should do so consistently throughout your document.
 
-> [!tip]
-> red
-
-
-> [!TIP]
+> [!TIP]+ Tip
 > For this repository of notes, we will be following the convention of writing filenames in code blocks.
 
 ⌂

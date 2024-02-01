@@ -1,7 +1,6 @@
 [
   "table-editor-obsidian",
   "obsidian-hider",
-  "obsidian-minimal-settings",
   "dataview",
   "highlightr-plugin",
   "chronology",
@@ -23,10 +22,8 @@
   "obsidian-underline",
   "OA-file-hider",
   "math-booster",
-  "obsidian-tikzjax",
   "obsidian-excalidraw-plugin",
   "obsidian-icon-folder",
-  "mathlinks",
   "reveal-file-in-explorer",
   "obsidian-trash-explorer",
   "global-search-and-replace",
@@ -35,8 +32,6 @@
   "quick-latex",
   "update-time-on-edit",
   "obsidian-git",
-  "obsidian-style-settings",
-  "reference-map",
   "obsidian-zotero-desktop-connector",
   "obsidian-citation-plugin",
   "obsidian-pandoc-reference-list",
@@ -48,5 +43,9 @@
   "obsidian-outliner",
   "callout-manager",
   "obsidian-admonition",
-  "reveal-active-file-button"
+  "reveal-active-file-button",
+  "obsidian-style-settings",
+  "obsidian-minimal-settings",
+  "mathlinks",
+  "obsidian-banners"
 ]

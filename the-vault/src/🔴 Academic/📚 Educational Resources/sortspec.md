@@ -1,6 +1,6 @@
 ---
 created: 2023-09-03 08:46
-updated: 2024-01-27T06:30
+updated: 2024-01-30T17:53
 sorting-spec: |-
   target-folder: .
   order-desc: a-z
@@ -15,11 +15,11 @@ sorting-spec: |-
   🗒️ Python
   DE Grind Crew
   🗒️ Bazel
-  🗒️ PowerShell
   🗒️ Obsidian
   Discord
   🗒️ Git
   %
+  🗒️ PowerShell
   🗒️ Zotero
   🗒️ .NET
   sortspec

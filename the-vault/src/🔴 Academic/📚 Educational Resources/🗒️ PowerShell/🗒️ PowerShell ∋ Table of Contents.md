@@ -1,25 +1,25 @@
 ---
 title: 🗒️ PowerShell ∋ Table of Contents
 created: 2023-08-04 01:58
-updated: 2024-01-25T00:50
+updated: 2024-01-30T17:55
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/powershell/🔖/powershell-∋-table-of-contents
-  - 🔴-academic/📚-educational-resource/format/website
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/powershell
+  - 🔴-academic/📚-educational-resources/name/powershell/🔖/powershell-∋-table-of-contents
+  - 🔴-academic/📚-educational-resources/format/website
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/powershell
   - study-note
-cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ PowerShell::🗒️ PowerShell ∋ Table of Contents
+cards-deck: 🔴 Academic::📚 Educational Resources::🗒️ PowerShell::🗒️ PowerShell ∋ Table of Contents
 ---
 
 # 🗒️ PowerShell ∋ Table of Contents
 
 ---
 
-> [!ABSTRACT]+ 
-> Scratch notes pertaining to [PowerShell](https://github.com/PowerShell/PowerShell). [@powershellteamPowerShellPowerShellPowerShell]
+> [!INFO]+ Note 
+> This **vault module** contains _scratch notes_ pertaining to [PowerShell](https://github.com/PowerShell/PowerShell). [@powershellteamPowerShellPowerShellPowerShell]
 > 
-> These notes are primarily structured in a Q&A format, making it easy to follow and learn. Corresponding Anki flashcards are available, enabling efficient revision and reinforcement of the concepts.
+> These notes are primarily structured in a Q&A format, making it easy to follow and learn. Corresponding [**Anki**](https://apps.ankiweb.net/) flashcards are available, enabling efficient revision and reinforcement of the concepts. [@ankitectsAnkiPowerfulIntelligent]
 
 ---
 

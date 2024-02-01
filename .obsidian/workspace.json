@@ -4,24 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b82936f51a7e0d29",
+        "id": "d862435731923960",
         "type": "tabs",
         "children": [
           {
-            "id": "06592723bb4d254f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "df8f81ab50e13840",
+            "id": "ad875b12cadd5994",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -33,8 +20,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -63,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:🔴-academic/📚-educational-resource/name/leetcode/🏷️/problems/difficulty/hard",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,21 +65,12 @@
               "type": "bookmarks",
               "state": {}
             }
-          },
-          {
-            "id": "3c59e1c3808417f2",
-            "type": "leaf",
-            "state": {
-              "type": "trash-explorer",
-              "state": {}
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 438.5,
-    "collapsed": true
+    "width": 371.5
   },
   "right": {
     "id": "1186c1364788cf17",
@@ -164,37 +141,11 @@
             }
           },
           {
-            "id": "14fdbc695897f306",
-            "type": "leaf",
-            "state": {
-              "type": "reference-map-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "b8b73bcedd402aeb",
-            "type": "leaf",
-            "state": {
-              "type": "timeline",
-              "state": {}
-            }
-          },
-          {
-            "id": "a9a469301574008a",
+            "id": "ed523b222c760ff1",
             "type": "leaf",
             "state": {
               "type": "quiet-outline",
               "state": {}
-            }
-          },
-          {
-            "id": "7333b65a64cac92b",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md"
-              }
             }
           }
         ],
@@ -202,11 +153,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 400.5
+    "width": 451.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "omnisearch:Omnisearch": false,
       "switcher:Open quick switcher": true,
       "graph:Open graph view": true,
       "canvas:Create new canvas": true,
@@ -219,22 +170,39 @@
       "audio-recorder:Start/stop recording": true,
       "workspaces:Manage workspace layouts": true,
       "publish:Publish changes...": true,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "chronology:Open Chronology": false,
+      "custom-sort:Toggle custom sorting": false,
       "notion-like-tables:Create loom": false,
+      "omnisearch:Omnisearch": false,
       "templater-obsidian:Templater": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "reference-map:Reference Map": false,
       "obsidian-trash-explorer:Open trash explorer": false,
       "cloze:Toggle all clozes": false,
       "obsidian-day-planner:Timeline": false,
-      "custom-sort:Toggle custom sorting": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "df8f81ab50e13840",
+  "active": "ad875b12cadd5994",
   "lastOpenFiles": [
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
+    "the-vault/src/🔵 Vocational/🔵 Vocational ∋ Table of Contents.md",
+    "the-vault/src/🟢 Personal/🟢 Personal ∋ Table of Contents.md",
+    "the-vault/src/🟢 Personal",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
+    "the-vault/src/🔵 Vocational",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Microsoft Excel/Misc. Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Spark Optimization/Executor vs Executor Core.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ ESLint/Misc. Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Docker/Misc. Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ GitHub CLI/Misc. Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ GitHub/🗒️ GitHub ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Google Apps Script/🗒️ Google Apps Script ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ GoogleTest/Misc. Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ HTML/🗒️ HTML ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Obsidian/Misc. Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/sortspec.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ PowerShell/🗒️ PowerShell ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/sortspec.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/LeetCode ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Explore ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/sortspec.md",
@@ -252,32 +220,15 @@
     "the-vault/assets/excalidraw/Drawing 2024-01-28 18.07.30.excalidraw.light.svg",
     "the-vault/assets/excalidraw/Drawing 2024-01-28 18.07.30.excalidraw.dark.png",
     "the-vault/assets/excalidraw/Drawing 2024-01-28 18.07.30.excalidraw.dark.svg",
-    "the-vault/assets/excalidraw/Drawing 2024-01-28 18.06.57.excalidraw.md",
     "Untitled.loom",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Obsidian/Misc. Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/4. Median of Two Arrays.md",
     "the-vault/assets/banners/dotnet.jpeg",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/🗒️ Zotero ∋ Table of Contents.md",
     "the-vault/assets/banners/Web capture_27-1-2024_7515_dotnet.microsoft.com.jpeg.crdownload",
     "the-vault/assets/banners",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/sortspec.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/Miscellaneous Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/sortspec.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/163. Missing Ranges.md",
-    "the-vault/test.md",
     "the-vault/zotero/My Library.bib",
-    "the-vault/src/🔴 Academic/sortspec.md",
-    "the-vault/sortspec.md",
-    "the-vault/src/🔴 Academic/🔴 Academic ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/Real Python/Real Python ∋ Table of Contents.md",
-    "the-vault/src/🔵 Vocational/🔵 Vocational ∋ Table of Contents.md",
-    "kartik-misc/4._Median_of_Two_Sorted_Arrays.md",
     "the-vault/assets/excalidraw/Drawing 2024-01-24 18.09.02.excalidraw.light.png",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Interview",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Discuss",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Contest",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Interview",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Featured"
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Interview"
   ]
 }

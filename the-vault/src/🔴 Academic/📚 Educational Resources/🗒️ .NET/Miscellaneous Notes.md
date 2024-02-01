@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2023-09-03 08:46
-updated: 2024-01-30T15:54
+updated: 2024-01-31T19:33
 authors:
   - Edmund Leibert III
 tags:
@@ -10,6 +10,8 @@ tags:
   - 🔴-academic/📚-educational-resources/discipline/computer-science/developer-platform/net
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resources::🗒️ .NET::Miscellaneous Notes
+banner: "![[the-vault/assets/banners/dotnet.jpeg]]"
+banner_y: 0
 ---
 
 # Miscellaneous Notes
@@ -34,16 +36,34 @@ In brief, what is Microsoft’s **.NET**?
 
 #card 
 
-**.NET** is a free, cross-platform, [open-source developer platform](https://github.com/dotnet/core) for building [many kinds of applications](https://learn.microsoft.com/en-us/dotnet/core/apps). It can run programs written in [multiple languages](https://learn.microsoft.com/en-us/dotnet/fundamentals/languages), with [C#](https://learn.microsoft.com/en-us/dotnet/csharp/) being the most popular. It relies on a [high-performance](https://devblogs.microsoft.com/dotnet/category/performance/) runtime that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/).
+**.NET** is a free, cross-platform, [open-source developer platform](https://github.com/dotnet/core) for building [many kinds of applications](https://learn.microsoft.com/en-us/dotnet/core/apps). It can run programs written in [multiple languages](https://learn.microsoft.com/en-us/dotnet/fundamentals/languages), with [C#](https://learn.microsoft.com/en-us/dotnet/csharp/) being the most popular. It relies on a [high-performance](https://devblogs.microsoft.com/dotnet/category/performance/) runtime that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/). [@genevievewarrenIntroductionNETNET2024]
 
 ⌂
 <br>﹈<br>
 
 
 ﹇<br>
-Using the [DocTo](https://github.com/tobya/DocTo) library, how can I export a .docx to a .pdf in the command line?
+What is **DocTo**?
 
-#card 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/technologies/docto
+
+**DocTo** is a simple utility for converting a Microsoft Word Document ‘.doc’ and Microsoft Excel ‘.xls’ files to any other supported format such as `.txt`, `.csv`, `.rtf`, and `.pdf`. [@tobyallenDocToXLSTo]
+
+It additionally has the following features:
+- Can also be used to convert `.txt`, `.rtf`, `.csv` to `.doc`, `.xls` or `.pdf` format.
+- Can be used to convert older word documents to latest format.
+
+> [!CAUTION]+ Warning
+> Must have Microsoft Word or Excel installed on host machine.
+
+⌂
+<br>﹈<br>
+
+
+﹇<br>
+Using the [DocTo](https://github.com/tobya/DocTo) library, how can I export a `.docx` to a `.pdf` in the command line? [@tobyallenDocToXLSTo]
+
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/technologies/docto
 
 ```pwsh
 docto -f C:\Directory\MyFile.doc -O "C:\Output Directory\MyTextFile.pdf" -T wdFormatPDF
@@ -63,21 +83,110 @@ What does JSON stand for?
 <br>﹈<br>^1702296738213
 
 ﹇<br>
-What namespace in .NET provides functionality for serializing to and deserializing form JavaScript Object Notation (JSON)?
+What _namespace_ in .NET provides functionality for _serializing_ to and _deserializing_ form **J**ava**S**cript **O**bject **N**otation (JSON)?
 
-#card 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp
 
-The `System.Text.JSON` namespace.
+[The `System.Text.Json` namespace in .NET provides high-performance, low-allocating, and standards-compliant capabilities to process JavaScript Object Notation (JSON)](https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-8.0) [@dotnet-botSystemTextJson]. [It includes serializing objects to JSON text and deserializing JSON text to objects, with UTF-8 support built-in](https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-8.0)  [@dotnet-botSystemTextJson]. [It also provides types to read and write JSON text encoded as UTF-8, and to create an in-memory document object model (DOM) for random access of the JSON elements within a structured view of the data](https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-8.0) [@dotnet-botSystemTextJson].
+
+[Here’s an example of how to use the `System.Text.Json` namespace to serialize an object to JSON](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/how-to) [@genevievewarrenHowSerializeJSON2023]:
+
+```csharp
+using System;
+using System.Text.Json;
+
+namespace SerializeBasic
+{
+    public class WeatherForecast
+    {
+        public DateTimeOffset Date { get; set; }
+        public int TemperatureCelsius { get; set; }
+        public string? Summary { get; set; }
+    }
+
+    public class Program
+    {
+        public static void Main()
+        {
+            var weatherForecast = new WeatherForecast
+            {
+                Date = DateTime.Parse("2019-08-01"),
+                TemperatureCelsius = 25,
+                Summary = "Hot"
+            };
+
+            string jsonString = JsonSerializer.Serialize(weatherForecast);
+            Console.WriteLine(jsonString);
+        }
+    }
+}
+```
+
+[This code creates a `WeatherForecast` object, serializes it to a JSON string using the `JsonSerializer.Serialize` method, and then writes the JSON string to the console](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/how-to) [@genevievewarrenHowSerializeJSON2023]. [The output will be a minified JSON string](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/how-to) [@genevievewarrenHowSerializeJSON2023].
+
+When you run this program, it will print a JSON string to the console that represents the `WeatherForecast` object. The JSON string will look something like this:
+
+```json
+{"Date":"2019-08-01T00:00:00","TemperatureCelsius":25,"Summary":"Hot"}
+```
+
+This string represents a `WeatherForecast` with a `Date` of “2019-08-01”, a `TemperatureCelsius` of 25, and a `Summary` of “Hot”
 
 ⌂
 <br>﹈<br>^1702296738224
 
 ﹇<br>
-Does the serialized form include any information about an object’s associated methods?
+In the context of **C#**,  and more generally **.NET**, does the _serialized form_ include any information about an object’s associated _methods_?
 
-#card 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp 
 
-No.
+[In C#, and generally in most programming languages, serialization does **not** include an object’s methods](https://stackoverflow.com/questions/2767893/are-methods-also-serialized-along-with-the-data-members-in-net) [\[1\]](https://stackoverflow.com/questions/2767893/are-methods-also-serialized-along-with-the-data-members-in-net) [\[2\]](https://stackoverflow.com/questions/3042665/what-is-the-meaning-of-serialization-in-programming-languages). [Serialization is the process of converting the state of an object into a form that can be persisted or transported](https://learn.microsoft.com/en-us/dotnet/standard/serialization/) [\[3\]](https://learn.microsoft.com/en-us/dotnet/standard/serialization/) [\[4\]](https://www.c-sharpcorner.com/article/serialization-and-deserialization-in-c-sharp/). [The serialized form includes only the data members (fields and properties) of the object](https://stackoverflow.com/questions/2767893/are-methods-also-serialized-along-with-the-data-members-in-net) [\[1\]](https://stackoverflow.com/questions/2767893/are-methods-also-serialized-along-with-the-data-members-in-net) [\[2\]](https://stackoverflow.com/questions/3042665/what-is-the-meaning-of-serialization-in-programming-languages).
+
+Here’s an example to illustrate this. Consider a class `Person` that is defined in a file `Person.cs`, inside a namespace `MyApp.Models`, with properties and a method:
+
+```csharp
+public class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+
+    public string GetGreeting()
+    {
+        return $"Hello, my name is {Name} and I am {Age} years old.";
+    }
+}
+```
+
+Now, let’s create an instance of this class and serialize it:
+
+```csharp
+using System;
+using System.Text.Json;
+using MyApp.Models; // Included the namespace where Person class is defined
+
+public class Program
+{
+    public static void Main()
+    {
+        var person = new Person
+        {
+            Name = "John Doe",
+            Age = 30
+        };
+
+        string jsonString = JsonSerializer.Serialize(person);
+        Console.WriteLine(jsonString);
+    }
+}
+```
+
+When you run this program, it will print a JSON string to the console that represents the `Person` object. The JSON string will look something like this:
+
+```json
+{"Name":"John Doe","Age":30}
+```
+
+As you can see, the serialized JSON string includes the values of the `Name` and `Age` properties, but it does not include any information about the `GetGreeting()` method. [This is because serialization is about capturing the state (data) of an object, not its behavior (methods)](https://stackoverflow.com/questions/2767893/are-methods-also-serialized-along-with-the-data-members-in-net) [\[1\]](https://stackoverflow.com/questions/2767893/are-methods-also-serialized-along-with-the-data-members-in-net) [\[2\]](https://stackoverflow.com/questions/3042665/what-is-the-meaning-of-serialization-in-programming-languages).
 
 ⌂
 <br>﹈<br>^1702296738231
@@ -127,11 +236,11 @@ What is the difference between **.NET Core**, **.NET Framework**, and **.NET**?
 
 #card 
 
-As of 2023, **.NET Core**, **.NET Framework**, and **.NET** are runtimes for building applications with **.NET**, sharing many of the same APIs called the .NET Standard[1](https://stackify.com/net-core-vs-net-framework/).
-- **.NET Framework** is used for Windows desktop and server-based applications, including ASP.NET web applications[1](https://stackify.com/net-core-vs-net-framework/).
-- **.NET Core** is used for server applications that run on Windows, Linux, and Mac, and supports the implementation of micro-services[1](https://stackify.com/net-core-vs-net-framework/).
-	- **.NET Core** is more effective, fast, secure, flexible, and scalable than **.NET Framework**, and offers cross-platform performance and cloud deployment[1](https://stackify.com/net-core-vs-net-framework/).
-	- **.NET Core** is open source and free to use[1](https://stackify.com/net-core-vs-net-framework/).
+As of 2023, **.NET Core**, **.NET Framework**, and **.NET** are runtimes for building applications with **.NET**, sharing many of the same APIs called the .NET Standard [\[1\]](https://stackify.com/net-core-vs-net-framework/).
+- **.NET Framework** is used for Windows desktop and server-based applications, including ASP.NET web applications [\[1\]](https://stackify.com/net-core-vs-net-framework/).
+- **.NET Core** is used for server applications that run on Windows, Linux, and Mac, and supports the implementation of micro-services [\[1\]](https://stackify.com/net-core-vs-net-framework/).
+	- **.NET Core** is more effective, fast, secure, flexible, and scalable than **.NET Framework**, and offers cross-platform performance and cloud deployment [\[1\]](https://stackify.com/net-core-vs-net-framework/).
+	- **.NET Core** is open source and free to use [\[1\]](https://stackify.com/net-core-vs-net-framework/).
 	- **.NET** is simply the new name for **.NET Core** (the “Core” part of the name was dropped for .NET Core v5.0)
 
 ⌂

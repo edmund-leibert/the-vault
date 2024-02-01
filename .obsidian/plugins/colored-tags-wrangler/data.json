@@ -112,6 +112,48 @@
           "b": 213
         },
         "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/powershell",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "background_color": {
+          "r": 21,
+          "g": 33,
+          "b": 45
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "background_color": {
+          "r": 119,
+          "g": 89,
+          "b": 223
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/technologies/docto",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "background_color": {
+          "r": 45,
+          "g": 45,
+          "b": 45
+        },
+        "luminance_offset": 0.15
       }
     ],
     "EnableMultipleTags": true,

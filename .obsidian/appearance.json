@@ -1,6 +1,6 @@
 {
   "accentColor": "#734eca",
-  "theme": "moonstone",
+  "theme": "obsidian",
   "nativeMenus": true,
   "translucency": true,
   "enabledCssSnippets": [
@@ -12,7 +12,8 @@
     "realistic-highlight",
     "source-mode",
     "spoiler",
-    "callouts"
+    "callouts",
+    "banners"
   ],
   "monospaceFontFamily": "FiraCode Nerd Font,Consolas",
   "textFontFamily": "Atkinson Hyperlegible,Arial,Trebuchet MS",

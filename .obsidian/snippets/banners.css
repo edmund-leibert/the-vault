@@ -1,0 +1,10 @@
+
+.mod-header {
+    margin-top: calc(var(--banner-height) - 15px);
+}
+
+.obsidian-banner-wrapper {
+    height: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: calc(var(--banner-height) - 19em);
+}
