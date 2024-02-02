@@ -327,13 +327,13 @@ In the context of .NET, what does IIS stand for and what is it?
 
 #card 
 
-IIS stands for **I**nternet **I**nformation **S**ervices. [It is a flexible, secure, and manageable web server for hosting web applications, including ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/?view=aspnetcore-8.0)[1](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/?view=aspnetcore-8.0).
+IIS stands for **I**nternet **I**nformation **S**ervices. [It is a flexible, secure, and manageable web server for hosting web applications, including ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/?view=aspnetcore-8.0) [@rickandersonHostASPNET2023].
 
-[An IIS web server runs on the Microsoft .NET platform on the Windows OS](https://stackify.com/iis-web-server/)[2](https://stackify.com/iis-web-server/). [While it’s possible to run IIS on Linux and Macs using Mono, it’s not recommended and will likely be unstable](https://stackify.com/iis-web-server/)[2](https://stackify.com/iis-web-server/). [It’s versatile and stable, and it’s been widely used in production for many years](https://stackify.com/iis-web-server/)[2](https://stackify.com/iis-web-server/).
+[An IIS web server runs on the Microsoft .NET platform on the Windows OS](https://stackify.com/iis-web-server/) [@vuolletWhatIISWeb2023]. [While it’s possible to run IIS on Linux and Macs using Mono, it’s not recommended and will likely be unstable](https://stackify.com/iis-web-server/) [@vuolletWhatIISWeb2023]. [It’s versatile and stable, and it’s been widely used in production for many years](https://stackify.com/iis-web-server/) [@vuolletWhatIISWeb2023].
 
-Most commonly, IIS is used to host ASP.NET web applications and static websites. [It can also be used as an FTP server, host WCF services, and be extended to host web applications built on other platforms such as PHP](https://stackify.com/iis-web-server/)[2](https://stackify.com/iis-web-server/).
+Most commonly, IIS is used to host ASP.NET web applications and static websites. [It can also be used as an FTP server, host WCF services, and be extended to host web applications built on other platforms such as PHP](https://stackify.com/iis-web-server/) [@vuolletWhatIISWeb2023].
 
-[In the context of ASP.NET, IIS allows web applications to fully leverage the powerful features and extensibility of ASP.NET](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/?view=aspnetcore-8.0)[3](https://learn.microsoft.com/en-us/iis/get-started/introduction-to-iis/iis-web-server-overview). [Features including forms-based authentication, membership, session state, and many others can be used for all types of content, providing a unified experience across the entire web application](https://learn.microsoft.com/en-us/iis/get-started/introduction-to-iis/iis-web-server-overview)[3](https://learn.microsoft.com/en-us/iis/get-started/introduction-to-iis/iis-web-server-overview).
+[In the context of ASP.NET, IIS allows web applications to fully leverage the powerful features and extensibility of ASP.NET](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/?view=aspnetcore-8.0) [@leanserverIISWebServer2022]. [Features including forms-based authentication, membership, session state, and many others can be used for all types of content, providing a unified experience across the entire web application](https://learn.microsoft.com/en-us/iis/get-started/introduction-to-iis/iis-web-server-overview) [@leanserverIISWebServer2022].
 
 ⌂
 <br>﹈<br>^1702296738281
@@ -696,10 +696,71 @@ It typically automates system maintenance or administration—though its general
 
 ## :EiZoteroItem: Bibliography
 
-\[1\]
-Microsoft Corporation, .“NET | Build. Test. Deploy.,” _Microsoft_. Available: [https://dotnet.microsoft.com/en-us/](https://dotnet.microsoft.com/en-us/). [Accessed: Dec. 11, 2023]
+[1]
+Microsoft Corporation, .“NET | Build. Test. Deploy.,” _Microsoft_. Available: [https://dotnet.microsoft.com/en-us/](https://dotnet.microsoft.com/en-us/). [Accessed: Dec. 11, 2023]
 
+[2]
+“Introduction to .NET - .NET,” _Microsoft Learn: Build skills that open doors in your career_, Jan. 10, 2024. Available: [https://learn.microsoft.com/en-us/dotnet/core/introduction](https://learn.microsoft.com/en-us/dotnet/core/introduction). [Accessed: Jan. 30, 2024]
 
+[3]
+Toby Allen, “DocTo & XLSTo,” _DocTo & XLSTo | DocTo_. Available: [http://tobya.github.io/DocTo/](http://tobya.github.io/DocTo/). [Accessed: Jan. 30, 2024]
+
+[4]
+dotnet-bot, “System.Text.Json Namespace,” _Microsoft Learn: Build skills that open doors in your career_. Available: [https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-8.0](https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-8.0). [Accessed: Jan. 31, 2024]
+
+[5]
+“How to serialize JSON in C# - .NET,” _Microsoft Learn: Build skills that open doors in your career_, Oct. 25, 2023. Available: [https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/how-to](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/how-to). [Accessed: Jan. 31, 2024]
+
+[6]
+Lisa, “Are methods also serialized along with the data members in .NET?,” _Stack Overflow_, May 05, 2010. Available: [https://stackoverflow.com/q/2767893/8088657](https://stackoverflow.com/q/2767893/8088657). [Accessed: Feb. 01, 2024]
+
+[7]
+masoud ramezani, “What is the meaning of serialization in programming languages?,” _Stack Overflow_, Apr. 24, 2020. Available: [https://stackoverflow.com/q/3042665/8088657](https://stackoverflow.com/q/3042665/8088657). [Accessed: Feb. 01, 2024]
+
+[8]
+“Serialization in .NET,” _Microsoft Learn: Build skills that open doors in your career_, Oct. 25, 2023. Available: [https://learn.microsoft.com/en-us/dotnet/standard/serialization/](https://learn.microsoft.com/en-us/dotnet/standard/serialization/). [Accessed: Feb. 01, 2024]
+
+[9]
+F. Naeem, “Serialization and Deserialization in C#,” _C# Corner - Community of Software and Data Developers_, Jun. 15, 2023. Available: [https://www.c-sharpcorner.com/article/serialization-and-deserialization-in-c-sharp/](https://www.c-sharpcorner.com/article/serialization-and-deserialization-in-c-sharp/). [Accessed: Feb. 01, 2024]
+
+[10]
+“Serialize and deserialize JSON using C# - .NET,” _Microsoft Learn: Build skills that open doors in your career_, Oct. 25, 2023. Available: [https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/overview](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/overview). [Accessed: Feb. 01, 2024]
+
+[11]
+dotnet-bot, “JsonSerializer.Serialize Method (System.Text.Json),” _Microsoft Learn: Build skills that open doors in your career_. Available: [https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializer.serialize?view=net-8.0](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializer.serialize?view=net-8.0). [Accessed: Feb. 01, 2024]
+
+[12]
+“Serialization,” _Wikipedia, the free encyclopedia_. Oct. 01, 2023. Available: [https://en.wikipedia.org/w/index.php?title=Serialization&oldid=1178142559](https://en.wikipedia.org/w/index.php?title=Serialization&oldid=1178142559). [Accessed: Feb. 01, 2024]
+
+[13]
+“What is Serialization?,” _freeCodeCamp.org_, Jan. 10, 2022. Available: [https://www.freecodecamp.org/news/what-is-serialization/](https://www.freecodecamp.org/news/what-is-serialization/). [Accessed: Feb. 01, 2024]
+
+[14]
+baeldung, “What Are Serialization and Deserialization in Programming? | Baeldung on Computer Science,” _Baeldung on CS_, Jun. 17, 2023. Available: [https://www.baeldung.com/cs/serialization-deserialization](https://www.baeldung.com/cs/serialization-deserialization). [Accessed: Feb. 01, 2024]
+
+[15]
+The OWASP Foundation, “Deserialization - OWASP Cheat Sheet Series,” _OWASP Cheat Sheet Series_. Available: [https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html). [Accessed: Feb. 01, 2024]
+
+[16]
+Dagster Labs, “Data Deserialization | Dagster Glossary,” _Dagster | Cloud-native orchestration of data pipelines_. Available: [https://dagster.io/glossary/data-deserialization](https://dagster.io/glossary/data-deserialization). [Accessed: Feb. 01, 2024]
+
+[17]
+Keyur, “Comparing .NET Framework, .NET Core, .NET 5, and .NET 6,” _C# Corner - Community of Software and Data Developers_. Available: [https://www.c-sharpcorner.com/article/comparing-net-framework-net-core-net-5-and-net-6/](https://www.c-sharpcorner.com/article/comparing-net-framework-net-core-net-5-and-net-6/). [Accessed: Feb. 01, 2024]
+
+[18]
+blubberbo, .“NET Core vs ASP.NET Core,” _Stack Overflow_, Feb. 26, 2020. Available: [https://stackoverflow.com/q/44136118/8088657](https://stackoverflow.com/q/44136118/8088657). [Accessed: Feb. 01, 2024]
+
+[19]
+Genevieve Warren, “Choose between .NET and .NET Framework for server apps - .NET,” _Microsoft Learn: Build skills that open doors in your career_, Oct. 04, 2022. Available: [https://learn.microsoft.com/en-us/dotnet/standard/choosing-core-framework-server](https://learn.microsoft.com/en-us/dotnet/standard/choosing-core-framework-server). [Accessed: Feb. 01, 2024]
+
+[20]
+Rick Anderson, “Host ASP.NET Core on Windows with IIS,” _Microsoft Learn: Build skills that open doors in your career_, Jul. 11, 2023. Available: [https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/?view=aspnetcore-8.0](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/?view=aspnetcore-8.0). [Accessed: Feb. 01, 2024]
+
+[21]
+P. Vuollet, “What is IIS Web Server: (Internet Information Services)?,” _Stackify_, Sep. 27, 2023. Available: [https://stackify.com/iis-web-server/](https://stackify.com/iis-web-server/). [Accessed: Feb. 01, 2024]
+
+[22]
+leanserver, “IIS Web Server Overview,” _Microsoft Learn: Build skills that open doors in your career_, Aug. 23, 2022. Available: [https://learn.microsoft.com/en-us/iis/get-started/introduction-to-iis/iis-web-server-overview](https://learn.microsoft.com/en-us/iis/get-started/introduction-to-iis/iis-web-server-overview). [Accessed: Feb. 01, 2024]
 
 ---
 
