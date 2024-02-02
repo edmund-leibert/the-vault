@@ -19,12 +19,16 @@ cards-deck: 🔴 Academic::📚 Educational Resources::LeetCode::Problems::<% tp
 
 ---
 
-> [!ABSTRACT]+
-> Notes pertaining to .
+> [!INFO]+ Note
+> This page contains notes pertaining to the **LeetCode** problem 
+> 
+> These notes are primarily structured in a Q&A format, making it easy to follow and learn. Corresponding **Anki** flashcards are available, enabling efficient revision and reinforcement of the concepts.
+> 
+> Performance of attempts are also recorded.
 
 ---
 
-> [!INFO]
+> [!INFO] Note
 > **Previous Notes**:
 > 
 
@@ -58,8 +62,8 @@ cards-deck: 🔴 Academic::📚 Educational Resources::LeetCode::Problems::<% tp
 
 ---
 
-> [!INFO]+ 
-> **Next Note(s)**:
+> [!INFO]+ Note
+> **Next Notes**:
 > 
 
 ---

@@ -30,6 +30,20 @@
         "luminance_offset": 0.15
       },
       {
+        "tag_name": "🔴-academic/📚-educational-resources/name/leetcode/🏷️/problems/difficulty/easy",
+        "color": {
+          "r": 28,
+          "g": 184,
+          "b": 184
+        },
+        "background_color": {
+          "r": 240,
+          "g": 240,
+          "b": 240
+        },
+        "luminance_offset": 0.15
+      },
+      {
         "tag_name": "🔴-academic/📚-educational-resources/name/leetcode/🏷️/problems/difficulty/hard",
         "color": {
           "r": 255,
@@ -37,9 +51,9 @@
           "b": 0
         },
         "background_color": {
-          "r": 207,
-          "g": 207,
-          "b": 207
+          "r": 240,
+          "g": 240,
+          "b": 240
         },
         "luminance_offset": 0.15
       },
@@ -152,6 +166,34 @@
           "r": 45,
           "g": 45,
           "b": 45
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resources/name/🗒️-net/🔖/🗒️-net-∋-table-of-contents",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "background_color": {
+          "r": 80,
+          "g": 39,
+          "b": 213
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resources/name/leetcode/🔖/problems/1-two-sum",
+        "color": {
+          "r": 200,
+          "g": 137,
+          "b": 0
+        },
+        "background_color": {
+          "r": 49,
+          "g": 49,
+          "b": 49
         },
         "luminance_offset": 0.15
       }

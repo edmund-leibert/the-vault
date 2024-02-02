@@ -4,31 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "31e0c67a5175836d",
+        "id": "4ffc9cf27dfe41ae",
         "type": "tabs",
         "children": [
           {
-            "id": "4068e4ccba296112",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "23371769ab002cf2",
+            "id": "872d16caa9f3390b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/The LeetCode Beginner's Guide/The LeetCode Beginner's Guide ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -36,20 +21,19 @@
             }
           },
           {
-            "id": "0672242730a81064",
+            "id": "6e40ca3bb63d8ca8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/LeetCode ∋ Table of Contents.md",
+                "file": "the-vault/templates/Template {{LeetCode ∋ Problem}}.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -115,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/The LeetCode Beginner's Guide/The LeetCode Beginner's Guide ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/The LeetCode Beginner's Guide/The LeetCode Beginner's Guide ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,13 +162,11 @@
             }
           },
           {
-            "id": "637a6204bf81eaa3",
+            "id": "837deccb2e2982db",
             "type": "leaf",
             "state": {
-              "type": "outline",
-              "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/The LeetCode Beginner's Guide/The LeetCode Beginner's Guide ∋ Table of Contents.md"
-              }
+              "type": "ReferenceListView",
+              "state": {}
             }
           },
           {
@@ -196,15 +178,17 @@
             }
           },
           {
-            "id": "837deccb2e2982db",
+            "id": "d1e3a4e141024f39",
             "type": "leaf",
             "state": {
-              "type": "ReferenceListView",
-              "state": {}
+              "type": "outline",
+              "state": {
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md"
+              }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -238,13 +222,19 @@
       "reference-map:Reference Map": false
     }
   },
-  "active": "23371769ab002cf2",
+  "active": "872d16caa9f3390b",
   "lastOpenFiles": [
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/LeetCode ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/The LeetCode Beginner's Guide/The LeetCode Beginner's Guide ∋ Table of Contents.md",
+    "the-vault/templates/Template {{LeetCode ∋ Problem}}.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md",
+    "the-vault/assets/banners/Web capture_2-2-2024_10533_leetcode.com.jpeg",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
-    "the-vault/assets/banners/leetcode-beginner-guard.jpeg",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/4. Median of Two Arrays.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/LeetCode ∋ Table of Contents.md",
+    "the-vault/assets/banners/leetcode-beginner-guard.jpeg.~tmp",
+    "the-vault/assets/banners/dotnet.jpeg.~tmp",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/The LeetCode Beginner's Guide/The LeetCode Beginner's Guide ∋ Table of Contents.md",
+    "the-vault/assets/banners/leetcode-beginner-guard.jpeg",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Spark Optimization/Causes of OOM Errors/Excessively Large Partition.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Spark Optimization/Causes of OOM Errors/Excessively High Concurrency.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Spark Optimization/Causes of OOM Errors/Container killed by YARN.md",
@@ -257,16 +247,12 @@
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Spark Optimization/Dynamic Partition Pruning.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ TypeScript/🗒️ TypeScript ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/🗒️ Zotero ∋ Table of Contents.md",
-    "the-vault/templates/Template {{LeetCode ∋ Problem}}.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Visual Studio Code/Keyboard Shortcuts.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Visual Studio Code/🗒️ Visual Studio Code ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Visual Studio/Project Structure.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Visual Studio/Configuring the Settings.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Visual Studio/🗒️ Visual Studio ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ SQL/🗒️ SQL ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Rust/🗒️ Rust ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Physics/Mechanical Physics.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Bash/Misc. Notes.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/The LeetCode Beginner's Guide",
     "the-vault/src/🟢 Personal",
     "the-vault/src/🔵 Vocational",
@@ -279,12 +265,9 @@
     "the-vault/assets/excalidraw/Drawing 2024-01-28 18.07.30.excalidraw.dark.png",
     "the-vault/assets/excalidraw/Drawing 2024-01-28 18.07.30.excalidraw.dark.svg",
     "Untitled.loom",
-    "the-vault/assets/banners/dotnet.jpeg",
     "the-vault/assets/banners/Web capture_27-1-2024_7515_dotnet.microsoft.com.jpeg.crdownload",
     "the-vault/assets/banners",
     "the-vault/zotero/My Library.bib",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Interview",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Discuss",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Contest"
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Interview"
   ]
 }

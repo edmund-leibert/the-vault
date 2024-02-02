@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2023-09-03 08:46
-updated: 2024-02-02T01:00
+updated: 2024-02-02T10:36
 authors:
   - Edmund Leibert III
 tags:
@@ -10,7 +10,7 @@ tags:
   - 🔴-academic/📚-educational-resources/discipline/computer-science/developer-platform/net
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resources::🗒️ .NET::Miscellaneous Notes
-banner: "![[the-vault/assets/banners/dotnet.jpeg]]"
+banner: "![[https://i.imgur.com/ZLk5l96.jpg]]"
 banner_y: 0
 ---
 
@@ -325,7 +325,7 @@ Microsoft merged the best of .NET Core and .NET Framework into a single platform
 ﹇<br>
 In the context of .NET, what does **IIS** stand for and what is it?
 
-#card 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/technology/
 
 IIS stands for **I**nternet **I**nformation **S**ervices. [It is a flexible, secure, and manageable web server for hosting web applications, including ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/?view=aspnetcore-8.0) [@rickandersonHostASPNET2023].
 
@@ -343,20 +343,39 @@ As of 2024, is **IIS** current out “outdated”? If it is outdated, what is a 
 
 #card
 
-[**Internet Information Services (IIS)** is still being used and supported by Microsoft](https://learn.microsoft.com/en-us/lifecycle/products/internet-information-services-iis)[1](https://learn.microsoft.com/en-us/lifecycle/products/internet-information-services-iis). [However, it’s important to note that older versions of IIS (7.5 and below) are no longer supported by Microsoft and may be vulnerable to attacks](https://cybernews.com/security/millions-of-microsoft-web-servers-powered-by-vulnerable-legacy-software/)[2](https://cybernews.com/security/millions-of-microsoft-web-servers-powered-by-vulnerable-legacy-software/). [Therefore, it’s recommended to use the latest version of IIS for the most secure and best performance](https://learn.microsoft.com/en-us/lifecycle/products/internet-information-services-iis)[1](https://learn.microsoft.com/en-us/lifecycle/products/internet-information-services-iis).
+[**Internet Information Services (IIS)** is still being used and supported by Microsoft](https://learn.microsoft.com/en-us/lifecycle/products/internet-information-services-iis) [@leanserverIISWebServer2022]. [However, it’s important to note that older versions of IIS (7.5 and below) are no longer supported by Microsoft and may be vulnerable to attacks](https://cybernews.com/security/millions-of-microsoft-web-servers-powered-by-vulnerable-legacy-software/) [@edvardasmikalauskasMillionsMicrosoftWeb2023]. [Therefore, it’s recommended to use the latest version of IIS for the most secure and best performance](https://learn.microsoft.com/en-us/lifecycle/products/internet-information-services-iis) [@leanserverIISWebServer2022].
 
 As for alternatives to IIS, there are several modern web servers that you might consider:
 
-- [**NGINX**: An open-source web server that is known for its high performance, stability, rich feature set, simple configuration, and low resource consumption](https://www.trustradius.com/products/iis/competitors)[3](https://www.trustradius.com/products/iis/competitors)[4](https://alternativeto.net/software/microsoft-iis/).
-- **Apache HTTP Server**: An open-source web server that’s been a popular choice for many years. [It’s highly configurable and supports a range of features](https://www.trustradius.com/products/iis/competitors)[3](https://www.trustradius.com/products/iis/competitors)[4](https://alternativeto.net/software/microsoft-iis/).
-- [**Caddy**: A powerful, enterprise-ready, open-source web server with automatic HTTPS written in Go](https://alternativeto.net/software/microsoft-iis/)[4](https://alternativeto.net/software/microsoft-iis/).
-- [**LiteSpeed**: Known for its speed, this is a drop-in Apache replacement and the 4th most popular web server on the internet](https://designpress.com/web-development/lightweight-alternatives-to-apache-and-iis-web-servers/)[5](https://designpress.com/web-development/lightweight-alternatives-to-apache-and-iis-web-servers/).
-- [**Lighttpd**: A secure, fast, compliant, and very flexible web-server that has been optimized for high-performance environments](https://designpress.com/web-development/lightweight-alternatives-to-apache-and-iis-web-servers/)[5](https://designpress.com/web-development/lightweight-alternatives-to-apache-and-iis-web-servers/).
+- [**NGINX**: An open-source web server that is known for its high performance, stability, rich feature set, simple configuration, and low resource consumption](https://www.trustradius.com/products/iis/competitors) [@trustradiusListBestMicrosoft] [@alternativetoMicrosoftIISAlternatives2019].
+- **Apache HTTP Server**: An open-source web server that’s been a popular choice for many years. [It’s highly configurable and supports a range of features](https://www.trustradius.com/products/iis/competitors) [@trustradiusListBestMicrosoft] [@alternativetoMicrosoftIISAlternatives2019].
+- [**Caddy**: A powerful, enterprise-ready, open-source web server with automatic HTTPS written in Go](https://alternativeto.net/software/microsoft-iis/) [@alternativetoMicrosoftIISAlternatives2019].
+- [**LiteSpeed**: Known for its speed, this is a drop-in Apache replacement and the 4th most popular web server on the internet](https://designpress.com/web-development/lightweight-alternatives-to-apache-and-iis-web-servers/) [@dimmittLightweightAlternativesApache2011].
+- [**Lighttpd**: A secure, fast, compliant, and very flexible web-server that has been optimized for high-performance environments](https://designpress.com/web-development/lightweight-alternatives-to-apache-and-iis-web-servers/) [@dimmittLightweightAlternativesApache2011].
 
-[Each of these servers has its own strengths and weaknesses, and the best one for you depends on your specific needs and circumstances](https://www.trustradius.com/products/iis/competitors)[3](https://www.trustradius.com/products/iis/competitors)[4](https://alternativeto.net/software/microsoft-iis/)[5](https://designpress.com/web-development/lightweight-alternatives-to-apache-and-iis-web-servers/). [It’s also worth noting that while these alternatives can serve as replacements for IIS, they might not offer the same level of integration with other Microsoft technologies](https://www.trustradius.com/products/iis/competitors)[3](https://www.trustradius.com/products/iis/competitors)[4](https://alternativeto.net/software/microsoft-iis/)[6](https://stackshare.io/microsoft-iis/alternatives)[5](https://designpress.com/web-development/lightweight-alternatives-to-apache-and-iis-web-servers/).
+[Each of these servers has its own strengths and weaknesses, and the best one for you depends on your specific needs and circumstances](https://www.trustradius.com/products/iis/competitors) [@trustradiusListBestMicrosoft] [@alternativetoMicrosoftIISAlternatives2019] [@dimmittLightweightAlternativesApache2011]. [It’s also worth noting that while these alternatives can serve as replacements for IIS, they might not offer the same level of integration with other Microsoft technologies](https://www.trustradius.com/products/iis/competitors) [@trustradiusListBestMicrosoft] [@alternativetoMicrosoftIISAlternatives2019] [@dimmittLightweightAlternativesApache2011].
 
 ⌂
 <br>﹈<br>
+
+﹇<br>
+Just to clarify, what server am I running when I run a simple **Node.js** application locally? In your explanation, make sure to relate this to how Microsoft’s **IIS** works too?
+
+#card 
+
+[When you run a JavaScript Node.js application locally, you’re typically running it on a **Node.js server**](https://stackoverflow.com/questions/5489956/how-could-others-on-a-local-network-access-my-nodejs-app-while-its-running-on)[1](https://stackoverflow.com/questions/5489956/how-could-others-on-a-local-network-access-my-nodejs-app-while-its-running-on)[2](https://sabe.io/tutorials/setting-up-local-web-server-node-js)[3](https://stackoverflow.com/questions/6084360/using-node-js-as-a-simple-web-server). [Node.js includes a built-in HTTP server library, allowing you to run a web server without the use of external software](https://stackoverflow.com/questions/5489956/how-could-others-on-a-local-network-access-my-nodejs-app-while-its-running-on)[1](https://stackoverflow.com/questions/5489956/how-could-others-on-a-local-network-access-my-nodejs-app-while-its-running-on)[2](https://sabe.io/tutorials/setting-up-local-web-server-node-js)[3](https://stackoverflow.com/questions/6084360/using-node-js-as-a-simple-web-server).
+
+[For example, if you’re using the `http-server` package in Node.js, you’re running a simple, zero-configuration HTTP server that serves up static files](https://sabe.io/tutorials/setting-up-local-web-server-node-js)[2](https://sabe.io/tutorials/setting-up-local-web-server-node-js). [You can start this server with a command like `http-server` in your project directory](https://stackoverflow.com/questions/6084360/using-node-js-as-a-simple-web-server)[3](https://stackoverflow.com/questions/6084360/using-node-js-as-a-simple-web-server).
+
+Now, let’s talk about **IIS (Internet Information Services)**. [IIS is a web server software created by Microsoft for use with the Windows operating system](https://www.hanselman.com/blog/installing-and-running-nodejs-applications-within-iis-on-windows-are-you-mad)[4](https://www.hanselman.com/blog/installing-and-running-nodejs-applications-within-iis-on-windows-are-you-mad)[5](https://devtut.github.io/nodejs/using-iisnode-to-host-node-js-web-apps-in-iis.html). [It’s used to host websites and other content on the web](https://www.hanselman.com/blog/installing-and-running-nodejs-applications-within-iis-on-windows-are-you-mad)[4](https://www.hanselman.com/blog/installing-and-running-nodejs-applications-within-iis-on-windows-are-you-mad)[5](https://devtut.github.io/nodejs/using-iisnode-to-host-node-js-web-apps-in-iis.html).
+
+[In terms of Node.js, you can actually run your Node.js applications on IIS using the **iisnode** module](https://stackoverflow.com/questions/5489956/how-could-others-on-a-local-network-access-my-nodejs-app-while-its-running-on)[4](https://www.hanselman.com/blog/installing-and-running-nodejs-applications-within-iis-on-windows-are-you-mad)[6](https://stackoverflow.com/questions/46266609/host-node-js-on-windows-server-iis)[7](https://adrianjnkns.medium.com/iis-hosting-nodejs-application-572d81689f9e). [The iisnode module allows hosting of Node.js applications in IIS on Windows](https://stackoverflow.com/questions/5489956/how-could-others-on-a-local-network-access-my-nodejs-app-while-its-running-on)[4](https://www.hanselman.com/blog/installing-and-running-nodejs-applications-within-iis-on-windows-are-you-mad)[6](https://stackoverflow.com/questions/46266609/host-node-js-on-windows-server-iis)[7](https://adrianjnkns.medium.com/iis-hosting-nodejs-application-572d81689f9e). [This can be beneficial if you’re already using IIS for other applications and want to keep everything on the same server](https://stackoverflow.com/questions/5489956/how-could-others-on-a-local-network-access-my-nodejs-app-while-its-running-on)[4](https://www.hanselman.com/blog/installing-and-running-nodejs-applications-within-iis-on-windows-are-you-mad)[6](https://stackoverflow.com/questions/46266609/host-node-js-on-windows-server-iis)[7](https://adrianjnkns.medium.com/iis-hosting-nodejs-application-572d81689f9e).
+
+However, it’s important to note that running a Node.js application on IIS is not the same as running it on a Node.js server. When you run your Node.js application locally without IIS, you’re running it directly on a Node.js server. [When you run it on IIS using iisnode, IIS is acting as a reverse proxy, forwarding requests to your Node.js application and then returning the responses](https://www.hanselman.com/blog/installing-and-running-nodejs-applications-within-iis-on-windows-are-you-mad)[4](https://www.hanselman.com/blog/installing-and-running-nodejs-applications-within-iis-on-windows-are-you-mad)[6](https://stackoverflow.com/questions/46266609/host-node-js-on-windows-server-iis)[7](https://adrianjnkns.medium.com/iis-hosting-nodejs-application-572d81689f9e).
+
+⌂
+<br>﹈<br>
+
 
 ﹇<br>
 What are HTTP, HTTP/2, HTTPS, FTP, FTPS, SMTP and NNTP?
