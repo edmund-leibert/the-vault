@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2023-09-03 08:46
-updated: 2024-01-31T19:33
+updated: 2024-02-01T14:36
 authors:
   - Edmund Leibert III
 tags:
@@ -83,7 +83,7 @@ What does JSON stand for?
 <br>﹈<br>^1702296738213
 
 ﹇<br>
-What _namespace_ in .NET provides functionality for _serializing_ to and _deserializing_ form **J**ava**S**cript **O**bject **N**otation (JSON)?
+What _namespace_ in **.NET** provides functionality for _serializing_ to and _deserializing_ form **J**ava**S**cript **O**bject **N**otation (JSON)?
 
 #card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp
 
@@ -140,7 +140,7 @@ In the context of **C#**,  and more generally **.NET**, does the _serialized for
 
 #card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp 
 
-[In C#, and generally in most programming languages, serialization does **not** include an object’s methods](https://stackoverflow.com/questions/2767893/are-methods-also-serialized-along-with-the-data-members-in-net) [\[1\]](https://stackoverflow.com/questions/2767893/are-methods-also-serialized-along-with-the-data-members-in-net) [\[2\]](https://stackoverflow.com/questions/3042665/what-is-the-meaning-of-serialization-in-programming-languages). [Serialization is the process of converting the state of an object into a form that can be persisted or transported](https://learn.microsoft.com/en-us/dotnet/standard/serialization/) [\[3\]](https://learn.microsoft.com/en-us/dotnet/standard/serialization/) [\[4\]](https://www.c-sharpcorner.com/article/serialization-and-deserialization-in-c-sharp/). [The serialized form includes only the data members (fields and properties) of the object](https://stackoverflow.com/questions/2767893/are-methods-also-serialized-along-with-the-data-members-in-net) [\[1\]](https://stackoverflow.com/questions/2767893/are-methods-also-serialized-along-with-the-data-members-in-net) [\[2\]](https://stackoverflow.com/questions/3042665/what-is-the-meaning-of-serialization-in-programming-languages).
+[In C#, and generally in most programming languages, serialization does **not** include an object’s methods](https://stackoverflow.com/questions/2767893/are-methods-also-serialized-along-with-the-data-members-in-net) [@lisaAreMethodsAlso2010] [@ramezaniWhatMeaningSerialization2020]. [Serialization is the process of converting the state of an object into a form that can be persisted or transported](https://learn.microsoft.com/en-us/dotnet/standard/serialization/) [@genevievewarrenSerializationNET2023] [@naeemSerializationDeserialization2023]. [The serialized form includes only the data members (fields and properties) of the object](https://stackoverflow.com/questions/2767893/are-methods-also-serialized-along-with-the-data-members-in-net) [@lisaAreMethodsAlso2010] [@ramezaniWhatMeaningSerialization2020].
 
 Here’s an example to illustrate this. Consider a class `Person` that is defined in a file `Person.cs`, inside a namespace `MyApp.Models`, with properties and a method:
 
@@ -186,17 +186,71 @@ When you run this program, it will print a JSON string to the console that repre
 {"Name":"John Doe","Age":30}
 ```
 
-As you can see, the serialized JSON string includes the values of the `Name` and `Age` properties, but it does not include any information about the `GetGreeting()` method. [This is because serialization is about capturing the state (data) of an object, not its behavior (methods)](https://stackoverflow.com/questions/2767893/are-methods-also-serialized-along-with-the-data-members-in-net) [\[1\]](https://stackoverflow.com/questions/2767893/are-methods-also-serialized-along-with-the-data-members-in-net) [\[2\]](https://stackoverflow.com/questions/3042665/what-is-the-meaning-of-serialization-in-programming-languages).
+As you can see, the serialized JSON string includes the values of the `Name` and `Age` properties, but it does not include any information about the `GetGreeting()` method. [This is because serialization is about capturing the state (data) of an object, not its behavior (methods)](https://stackoverflow.com/questions/2767893/are-methods-also-serialized-along-with-the-data-members-in-net) [@lisaAreMethodsAlso2010] [@ramezaniWhatMeaningSerialization2020].
 
 ⌂
 <br>﹈<br>^1702296738231
 
 ﹇<br>
-What is the definition of *serialization*?
+In the context of software engineering, specifically** .NET**, is it possible to also _serialize_ an object's _methods_. If not, how do we rebuild an object with its methods when _deserializing_ data?
 
-#card-reverse 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp 
 
-The process of converting the state of an object, that is the values of its properties, into a form that can be stored or transmitted.
+[In .NET, serialization is the process of converting the state of an object into a form that can be persisted or transported](https://learn.microsoft.com/en-us/dotnet/standard/serialization/) [@genevievewarrenSerializationNET2023]. This typically includes the values of its properties. [However, the serialized form **does not include any information about an object’s associated methods**](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/overview) [@genevievewarrenSerializeDeserializeJSON2023].
+
+[When you deserialize, you reconstruct an object from the serialized form](https://learn.microsoft.com/en-us/dotnet/standard/serialization/) [@genevievewarrenSerializationNET2023]. The deserialization process does not automatically rebuild the methods of an object. [Instead, the methods are part of the class definition, and when an object is deserialized, it is an instance of that class with its state (i.e., field values) populated from the serialized data](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/overview) [@genevievewarrenSerializeDeserializeJSON2023].
+
+If you need to call methods on a deserialized object, those methods should be part of the class definition. When you deserialize an instance of the class, you can call any public methods defined in the class.
+
+Here’s a simple example of serialization and deserialization using `System.Text.Json`:
+
+```csharp
+public class UserData
+{
+    public int UserId { get; set; }
+
+    // This method is not serialized
+    public string GetUserIdString()
+    {
+        return $"User ID: {UserId}";
+    }
+}
+
+// Serialization
+var userData = new UserData { UserId = 0 };
+var userDataString = System.Text.Json.JsonSerializer.Serialize(userData);
+
+// Deserialization
+var deserializedUserData = System.Text.Json.JsonSerializer.Deserialize<UserData>(userDataString);
+
+// Now you can call the method on the deserialized object
+string userIdString = deserializedUserData.GetUserIdString();
+```
+
+[In this example, the `GetUserIdString` method is not serialized, but after deserialization, you can call it on the `deserializedUserData` object because it’s part of the `UserData` class definition](https://learn.microsoft.com/en-us/dotnet/standard/serialization/) [@genevievewarrenSerializationNET2023] [@dotnet-botJsonSerializerSerializeMethod].
+
+If you need to modify the behavior of methods after deserialization based on the serialized data, consider using a design pattern such as the Strategy pattern, where the serialized data determines which implementation of a method to use. Another approach could be to include some kind of configuration data in your serialized object that your methods can use to alter their behavior after deserialization. However, these approaches go beyond basic serialization and deserialization and involve more advanced object-oriented design.
+
+⌂
+<br>﹈<br>
+
+
+﹇<br>
+In general, what is the definition of *serialization*?
+
+#card-reverse #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp 
+
+[<span class="spoiler">**Serialization**</span> is the process of translating a data structure or object state into a format that can be stored (e.g., in files or data buffers) or transmitted (e.g., over computer networks) and reconstructed later, possibly in a different computer environment](https://en.wikipedia.org/wiki/Serialization) [@Serialization2023] [@WhatSerialization2022] [@baeldungWhatAreSerialization2023]. [This process allows us to save the data associated with an object and recreate the object in a new location](https://en.wikipedia.org/wiki/Serialization) [@baeldungWhatAreSerialization2023]. [The serialized form does not include any information about an object’s associated methods](https://en.wikipedia.org/wiki/Serialization) [@Serialization2023].
+
+Here’s a simple example of serialization in C#:
+
+```csharp
+// An object to be serialized
+var userData = new UserData { UserId = 0 };
+
+// Serialization
+var userDataString = System.Text.Json.JsonSerializer.Serialize(userData);
+```
 
 ⌂
 <br>﹈<br>^1702296738238
@@ -204,9 +258,16 @@ The process of converting the state of an object, that is the values of its prop
 ﹇<br>
 What is the definition of *deserialization*?
 
-#card-reverse 
+#card-reverse #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp 
 
-Reconstructs an object from the deserialized form.
+<span class="spoiler">**Deserialization**</span> is the reverse process of serialization. [It involves taking data structured in some format and rebuilding it into an object](https://en.wikipedia.org/wiki/Serialization) [@theowaspfoundationDeserializationOWASPCheat] [@dagsterlabsDataDeserializationDagster]. [This process is used to extract the data or the state of the object from the stored or received serialized format](https://en.wikipedia.org/wiki/Serialization) [@dagsterlabsDataDeserializationDagster].
+
+Here’s a simple example of deserialization in C#:
+
+```csharp
+// Deserialization
+var deserializedUserData = System.Text.Json.JsonSerializer.Deserialize<UserData>(userDataString);
+```
 
 ⌂
 <br>﹈<br>^1702296738247
@@ -236,24 +297,43 @@ What is the difference between **.NET Core**, **.NET Framework**, and **.NET**?
 
 #card 
 
-As of 2023, **.NET Core**, **.NET Framework**, and **.NET** are runtimes for building applications with **.NET**, sharing many of the same APIs called the .NET Standard [\[1\]](https://stackify.com/net-core-vs-net-framework/).
-- **.NET Framework** is used for Windows desktop and server-based applications, including ASP.NET web applications [\[1\]](https://stackify.com/net-core-vs-net-framework/).
-- **.NET Core** is used for server applications that run on Windows, Linux, and Mac, and supports the implementation of micro-services [\[1\]](https://stackify.com/net-core-vs-net-framework/).
-	- **.NET Core** is more effective, fast, secure, flexible, and scalable than **.NET Framework**, and offers cross-platform performance and cloud deployment [\[1\]](https://stackify.com/net-core-vs-net-framework/).
-	- **.NET Core** is open source and free to use [\[1\]](https://stackify.com/net-core-vs-net-framework/).
-	- **.NET** is simply the new name for **.NET Core** (the “Core” part of the name was dropped for .NET Core v5.0)
+Sure, let’s break down these terms:
+
+- **.NET Framework**: This is the original .NET platform introduced by Microsoft in 2002. [It’s a platform for developing Windows-based applications using languages such as C# and VB.NET](https://www.c-sharpcorner.com/article/comparing-net-framework-net-core-net-5-and-net-6/) [@keyurComparingNETFramework]. [It includes a common runtime environment called the Common Language Runtime (CLR) and a set of class libraries and APIs that support various functionalities](https://www.c-sharpcorner.com/article/comparing-net-framework-net-core-net-5-and-net-6/) [@keyurComparingNETFramework].
+- [**.NET Core**: Introduced by Microsoft in 2016, .NET Core is a cross-platform, open-source alternative to .NET Framework](https://www.c-sharpcorner.com/article/comparing-net-framework-net-core-net-5-and-net-6/) [@keyurComparingNETFramework]. [It can run on Linux and macOS as well as Windows](https://www.c-sharpcorner.com/article/comparing-net-framework-net-core-net-5-and-net-6/) [@keyurComparingNETFramework]. [It’s modular and lightweight, allowing developers to choose only the components they need for their applications](https://www.c-sharpcorner.com/article/comparing-net-framework-net-core-net-5-and-net-6/) [@keyurComparingNETFramework]. [It also offers improved performance and scalability compared to .NET Framework](https://www.c-sharpcorner.com/article/comparing-net-framework-net-core-net-5-and-net-6/) [@keyurComparingNETFramework].
+- [**.NET**: In 2020, Microsoft released .NET 5 as the next major version of .NET Core](https://www.c-sharpcorner.com/article/comparing-net-framework-net-core-net-5-and-net-6/) [@keyurComparingNETFramework]. [It’s intended to be the single platform for all types of .NET development, whether it’s Windows-based or cross-platform](https://www.c-sharpcorner.com/article/comparing-net-framework-net-core-net-5-and-net-6/) [@keyurComparingNETFramework]. [It merges the best features and capabilities of both .NET Core and .NET Framework while also adding new ones](https://www.c-sharpcorner.com/article/comparing-net-framework-net-core-net-5-and-net-6/) [@keyurComparingNETFramework].
+- [**ASP.NET**: This is a framework for building web applications that runs on .NET](https://stackoverflow.com/questions/44136118/net-core-vs-asp-net-core) [@blubberboNETCoreVs2020]. [ASP.NET Core is a version of ASP.NET that runs on both .NET Core and .NET 5.0, on top of multiple OS platforms: Windows, Linux & macOS](https://stackoverflow.com/questions/44136118/net-core-vs-asp-net-core) [@blubberboNETCoreVs2020]. [ASP.NET 4.x (ASP.NET/ASP.NET MVC) runs on the .NET Framework only, on top of Windows OS](https://stackoverflow.com/questions/44136118/net-core-vs-asp-net-core)  [@blubberboNETCoreVs2020].
+
+[In summary, .NET Framework is the original platform for Windows development, .NET Core is a cross-platform alternative, .NET is the unified platform for all .NET development, and ASP.NET is a framework for building web applications that can run on .NET Framework, .NET Core, or .NET](https://learn.microsoft.com/en-us/dotnet/standard/choosing-core-framework-server) [@genevievewarrenChooseNETNET2022] [@keyurComparingNETFramework]  [@blubberboNETCoreVs2020].
 
 ⌂
 <br>﹈<br>^1702296738273
 
 ﹇<br>
-What is IIS?
+As of 2024, can **.NET** be considered a newer version of **.NET Core**?
 
 #card 
 
-IIS stands for Internet Information Services.
-- It is an extensible web server created by Microsoft for use with the Windows NT family.
-- IIS supports HTTP, HTTP/2, HTTPS, FTP, FTPS, SMTP and NNTP.
+Yes, that’s correct. **.NET 5** and its successors are the next step forward from **.NET Core**.
+
+Microsoft merged the best of .NET Core and .NET Framework into a single platform called .NET. This unified platform is intended to be used for all types of .NET development, whether it’s Windows-based or cross-platform. So, you can think of .NET as a newer version of .NET Core.
+
+⌂
+<br>﹈<br>
+
+
+﹇<br>
+In the context of .NET, what does IIS stand for and what is it?
+
+#card 
+
+IIS stands for **I**nternet **I**nformation **S**ervices. [It is a flexible, secure, and manageable web server for hosting web applications, including ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/?view=aspnetcore-8.0)[1](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/?view=aspnetcore-8.0).
+
+[An IIS web server runs on the Microsoft .NET platform on the Windows OS](https://stackify.com/iis-web-server/)[2](https://stackify.com/iis-web-server/). [While it’s possible to run IIS on Linux and Macs using Mono, it’s not recommended and will likely be unstable](https://stackify.com/iis-web-server/)[2](https://stackify.com/iis-web-server/). [It’s versatile and stable, and it’s been widely used in production for many years](https://stackify.com/iis-web-server/)[2](https://stackify.com/iis-web-server/).
+
+Most commonly, IIS is used to host ASP.NET web applications and static websites. [It can also be used as an FTP server, host WCF services, and be extended to host web applications built on other platforms such as PHP](https://stackify.com/iis-web-server/)[2](https://stackify.com/iis-web-server/).
+
+[In the context of ASP.NET, IIS allows web applications to fully leverage the powerful features and extensibility of ASP.NET](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/?view=aspnetcore-8.0)[3](https://learn.microsoft.com/en-us/iis/get-started/introduction-to-iis/iis-web-server-overview). [Features including forms-based authentication, membership, session state, and many others can be used for all types of content, providing a unified experience across the entire web application](https://learn.microsoft.com/en-us/iis/get-started/introduction-to-iis/iis-web-server-overview)[3](https://learn.microsoft.com/en-us/iis/get-started/introduction-to-iis/iis-web-server-overview).
 
 ⌂
 <br>﹈<br>^1702296738281

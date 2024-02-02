@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d862435731923960",
+        "id": "31e0c67a5175836d",
         "type": "tabs",
         "children": [
           {
-            "id": "ad875b12cadd5994",
+            "id": "4068e4ccba296112",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#🔴-academic/📚-educational-resources",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 371.5
+    "width": 471.5
   },
   "right": {
     "id": "1186c1364788cf17",
@@ -147,6 +147,16 @@
               "type": "quiet-outline",
               "state": {}
             }
+          },
+          {
+            "id": "637a6204bf81eaa3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md"
+              }
+            }
           }
         ],
         "currentTab": 4
@@ -182,40 +192,41 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ad875b12cadd5994",
+  "active": "4068e4ccba296112",
   "lastOpenFiles": [
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
-    "the-vault/src/🔵 Vocational/🔵 Vocational ∋ Table of Contents.md",
-    "the-vault/src/🟢 Personal/🟢 Personal ∋ Table of Contents.md",
-    "the-vault/src/🟢 Personal",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/The LeetCode Beginner's Guide/The LeetCode Beginner's Guide ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Angular/Misc. Notes.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
-    "the-vault/src/🔵 Vocational",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Microsoft Excel/Misc. Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Spark Optimization/Executor vs Executor Core.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ ESLint/Misc. Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Docker/Misc. Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ GitHub CLI/Misc. Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ GitHub/🗒️ GitHub ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Google Apps Script/🗒️ Google Apps Script ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ GoogleTest/Misc. Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ HTML/🗒️ HTML ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Obsidian/Misc. Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/sortspec.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ PowerShell/🗒️ PowerShell ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/sortspec.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/LeetCode ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Explore ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/The LeetCode Beginner's Guide/sortspec.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/sortspec.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/sortspec.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Featured/Featured ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/Learn ∋ Table of Contents.md",
-    "the-vault/assets/excalidraw/Drawing 2024-01-28 21.39.00.excalidraw.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/The LeetCode Beginner's Guide",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/7. Exhaustive Recursion/101. permutations 👨🏽‍💻.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/8. Mixed Recall/119. breaking boundaries 👨🏽‍💻.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/8. Mixed Recall/116. rare routing 👨🏽‍💻.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/8. Mixed Recall/sortspec.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/7. Exhaustive Recursion/sortspec.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/6. Stack/sortspec.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/5. Dynamic Programming/sortspec.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/4. Graph/sortspec.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/5. Dynamic Programming/092. dynamic programming wrap up 👨🏻‍🏫.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/5. Dynamic Programming/083. summing squares 👨🏽‍💻.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/3. Binary Tree/sortspec.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/2. Linked List/sortspec.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/1. Array and String/sortspec.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/8. Mixed Recall/126. build tree in post 👨🏽‍💻.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/1. Array and String/005. array and string welcome.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/0. Introduction/004. is prime.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/0. Introduction/001. code workspace tour.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/1. Array and String/007. compress.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/1. Array and String/011. pair product.md",
+    "the-vault/src/🟢 Personal",
+    "the-vault/src/🔵 Vocational",
     "the-vault/assets/excalidraw/Drawing 2024-01-28 21.39.00.excalidraw.light.png",
     "the-vault/assets/excalidraw/Drawing 2024-01-28 21.39.00.excalidraw.light.svg",
     "the-vault/assets/excalidraw/Drawing 2024-01-28 21.39.00.excalidraw.dark.png",
     "the-vault/assets/excalidraw/Drawing 2024-01-28 21.39.00.excalidraw.dark.svg",
-    "the-vault/assets/excalidraw/Drawing 2024-01-28 18.07.30.excalidraw.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/295. Find Median from Data Stream.md",
     "the-vault/assets/excalidraw/Drawing 2024-01-28 18.07.30.excalidraw.light.png",
     "the-vault/assets/excalidraw/Drawing 2024-01-28 18.07.30.excalidraw.light.svg",
     "the-vault/assets/excalidraw/Drawing 2024-01-28 18.07.30.excalidraw.dark.png",
@@ -228,7 +239,6 @@
     "the-vault/assets/excalidraw/Drawing 2024-01-24 18.09.02.excalidraw.light.png",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Interview",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Discuss",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Contest",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Interview"
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Contest"
   ]
 }
