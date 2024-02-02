@@ -5,9 +5,9 @@ updated: 2023-11-22T14:04
 author(s):
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-javascript/🔖/misc-notes
-  - 🔴-academic/📚-educational-resource/format/course
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/javascript
+  - 🔴-academic/📚-educational-resources/name/🗒️-javascript/🔖/misc-notes
+  - 🔴-academic/📚-educational-resources/format/course
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/javascript
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ JavaScript::Misc. Notes
 ---

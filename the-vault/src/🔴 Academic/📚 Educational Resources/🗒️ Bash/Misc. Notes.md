@@ -2,15 +2,14 @@
 title: 🗒️ Bash
 created: 2023-08-04 01:58
 updated: 2023-11-18T02:44
-updated: 2023-11-22T11:02
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-bash/misc-notes
-  - 🔴-academic/📚-educational-resource/format/miscellaneous
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/bash
+  - 🔴-academic/📚-educational-resources/name/🗒️-bash/misc-notes
+  - 🔴-academic/📚-educational-resources/format/miscellaneous
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/bash
   - study-note
-cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Bash::Misc. Notes
+cards-deck: 🔴 Academic::📚 Educational Resources::🗒️ Bash::Misc. Notes
 ---
 
 # Misc. Notes
@@ -39,12 +38,6 @@ Yes, Bash can be considered a programming language. [It is primarily a command i
 [Bash is a Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29)\[[3](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29)\]. [It has been used as the default login shell for most Linux distributions](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29)\[[3](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29)\].
 
 [So, if you have experience with Bash, it’s definitely worth mentioning as a programming language skill](https://stackoverflow.com/questions/28693737/is-bash-a-programming-language)\[[2](https://stackoverflow.com/questions/28693737/is-bash-a-programming-language)\].
-
-<center><b>Bibliography:</b></center>
-
-\[1\]
-![vladimirlikicUnderstandingBashElements2018](the-vault/zotero/vladimirlikicUnderstandingBashElements2018.md)
-^vladimirlikicUnderstandingBashElements2018
 
 ⌂
 <br>﹈<br>

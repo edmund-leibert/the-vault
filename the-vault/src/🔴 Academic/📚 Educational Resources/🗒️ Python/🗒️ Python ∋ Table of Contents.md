@@ -5,9 +5,9 @@ updated: 2024-01-25T00:50
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-python/🔖/🗒️-python-∋-table-of-contents
-  - 🔴-academic/📚-educational-resource/format/website
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python
+  - 🔴-academic/📚-educational-resources/name/🗒️-python/🔖/🗒️-python-∋-table-of-contents
+  - 🔴-academic/📚-educational-resources/format/website
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/python
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::Python::Python ∋ Table of Contents
 ---

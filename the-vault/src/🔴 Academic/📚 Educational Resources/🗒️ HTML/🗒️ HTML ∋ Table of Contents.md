@@ -5,9 +5,9 @@ updated: 2024-01-25T00:50
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-html/🔖/🗒️-html-∋-table-of-contents
-  - 🔴-academic/📚-educational-resource/format/miscellaneous
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/markup-language/html
+  - 🔴-academic/📚-educational-resources/name/🗒️-html/🔖/🗒️-html-∋-table-of-contents
+  - 🔴-academic/📚-educational-resources/format/miscellaneous
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/markup-language/html
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ HTML::🗒️ HTML ∋ Table of Contents
 ---

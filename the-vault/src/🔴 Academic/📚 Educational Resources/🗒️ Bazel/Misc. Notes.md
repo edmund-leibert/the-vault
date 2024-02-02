@@ -5,9 +5,9 @@ updated: 2023-12-03T15:31
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-bazel/🔖/misc-notes
-  - 🔴-academic/📚-educational-resource/format/website
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/bazel
+  - 🔴-academic/📚-educational-resources/name/🗒️-bazel/🔖/misc-notes
+  - 🔴-academic/📚-educational-resources/format/website
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/bazel
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Bazel::Misc. Notes
 ---

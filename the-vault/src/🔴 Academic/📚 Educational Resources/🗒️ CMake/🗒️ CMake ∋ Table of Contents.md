@@ -5,9 +5,9 @@ updated: 2024-01-25T00:50
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-cmake/🔖/cmake-∋-table-of-contents
-  - 🔴-academic/📚-educational-resource/format/miscellaneous
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/cmake
+  - 🔴-academic/📚-educational-resources/name/🗒️-cmake/🔖/cmake-∋-table-of-contents
+  - 🔴-academic/📚-educational-resources/format/miscellaneous
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/cmake
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ CMake::🗒️ CMake ∋ Table of Contents
 ---

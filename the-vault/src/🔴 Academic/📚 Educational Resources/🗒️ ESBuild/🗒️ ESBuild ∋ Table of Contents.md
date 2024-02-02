@@ -5,9 +5,9 @@ updated: 2024-01-25T00:50
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-esbuild/🔖/🗒️-esbuild-∋-table-of-contents
-  - 🔴-academic/📚-educational-resource/format/miscellaneous
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/esbuild
+  - 🔴-academic/📚-educational-resources/name/🗒️-esbuild/🔖/🗒️-esbuild-∋-table-of-contents
+  - 🔴-academic/📚-educational-resources/format/miscellaneous
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/esbuild
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ esbuild::🗒️ esbuild ∋ Table of Contents
 ---

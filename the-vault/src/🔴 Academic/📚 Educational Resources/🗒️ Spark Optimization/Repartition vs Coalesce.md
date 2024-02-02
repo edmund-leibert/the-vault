@@ -1,12 +1,9 @@
 ---
 tags:
-  - 🔴-academics/📚-educational-resources/discipline/computer-science/spark
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/spark
 cards-deck: Default::Computer Science
 created: 2023-09-12 11:38
-23-09-28 14:16
-
 updated: 2023-09-18 18:04
-
 ---
 
 In Apache Spark, both `repartition` and `coalesce` are methods used to control the number of partitions in a Resilient Distributed Dataset (RDD) or a DataFrame. Partitions are the basic unit of parallelism in Spark, and the choice of the number of partitions can impact the performance of your Spark job. However, they serve slightly different purposes:

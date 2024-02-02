@@ -1,14 +1,10 @@
 ---
 created: 2023-11-18T02:44
 updated: 2023-11-18T02:44
----
----
 tags:
-  - 🔴-academics/📚-educational-resources/discipline/computer-science/spark
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/spark
 cards-deck: Default::Computer Science
-created: 2023-09-12 11:38
-pdated: 2023-09-18 18:04
-eral reasons:
+---
 
 1. **Inadequate Memory for Task Execution**: Spark tasks within an executor require a certain amount of memory to function efficiently. When you allocate only 10% of the total memory to the executor, it may not have enough memory to accommodate the data, intermediate results, and other resources required for task execution. As a result, tasks might fail or perform poorly, leading to container termination.
 

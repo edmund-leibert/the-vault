@@ -5,9 +5,9 @@ updated: 2023-12-04T08:26
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/wikipedia/🔖/tree-traversal
-  - 🔴-academic/📚-educational-resource/format/website
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/data-structures-and-algorithms/tree
+  - 🔴-academic/📚-educational-resources/name/wikipedia/🔖/tree-traversal
+  - 🔴-academic/📚-educational-resources/format/website
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/data-structures-and-algorithms/tree
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::Wikipedia::Tree traversal
 ---

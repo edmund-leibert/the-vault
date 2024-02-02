@@ -5,9 +5,9 @@ updated: 2023-12-11T19:26
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-angular/🔖/misc-notes
-  - 🔴-academic/📚-educational-resource/format/miscellaneous
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/angular
+  - 🔴-academic/📚-educational-resources/name/🗒️-angular/🔖/misc-notes
+  - 🔴-academic/📚-educational-resources/format/miscellaneous
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/angular
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Angular::🗒️ Angular ∋ Table of Contents::Misc. Notes
 ---

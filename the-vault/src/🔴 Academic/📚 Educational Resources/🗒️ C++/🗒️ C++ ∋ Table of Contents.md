@@ -5,9 +5,9 @@ updated: 2024-01-25T00:50
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-cpp/🔖/🗒️-cpp-∋-table-of-contents
-  - 🔴-academic/📚-educational-resource/format/internet
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp
+  - 🔴-academic/📚-educational-resources/name/🗒️-cpp/🔖/🗒️-cpp-∋-table-of-contents
+  - 🔴-academic/📚-educational-resources/format/internet
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/cpp
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ C++::🗒️ C++ ∋ Table of Contents
 ---

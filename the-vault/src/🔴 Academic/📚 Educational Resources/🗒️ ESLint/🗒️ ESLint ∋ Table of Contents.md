@@ -5,9 +5,9 @@ authors:
 created: 2023-09-03 08:46
 updated: 2024-01-25T00:50
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-eslint/🔖/🗒️-eslint-∋-table-of-contents
-  - 🔴-academic/📚-educational-resource/format/miscellaneous
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/eslint
+  - 🔴-academic/📚-educational-resources/name/🗒️-eslint/🔖/🗒️-eslint-∋-table-of-contents
+  - 🔴-academic/📚-educational-resources/format/miscellaneous
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/eslint
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ ESLint::🗒️ ESLint ∋ Table of Contents
 ---

@@ -1,14 +1,12 @@
 ---
 created: 2023-11-18T02:44
 updated: 2023-11-18T02:44
----
----
 tags:
-  - 🔴-academics/📚-educational-resources/discipline/computer-science/spark
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/spark
 cards-deck: Default::Computer Science
-created: 2023-09-12 11:38
-pdated: 2023-09-18 18:04
-rk executor without considering the underlying hardware capabilities and workload characteristics can be a bad idea for several reasons:
+---
+
+The spark executor without considering the underlying hardware capabilities and workload characteristics can be a bad idea for several reasons:
 
 1. Resource contention: Spark executors compete for CPU and memory resources on a worker node. If you assign too many cores to an executor, it can lead to resource contention, where multiple tasks within the same executor fight for CPU time and memory, causing inefficient utilization and potentially slowing down processing. This can lead to poor overall cluster performance.
 

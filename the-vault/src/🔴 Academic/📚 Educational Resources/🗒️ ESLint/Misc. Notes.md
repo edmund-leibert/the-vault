@@ -5,9 +5,9 @@ updated: 2023-12-12T01:17
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-eslint/🔖/misc-notes
-  - 🔴-academic/📚-educational-resource/format/miscellaneous
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/eslint
+  - 🔴-academic/📚-educational-resources/name/🗒️-eslint/🔖/misc-notes
+  - 🔴-academic/📚-educational-resources/format/miscellaneous
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/eslint
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ ESLint::Misc. Notes
 ---

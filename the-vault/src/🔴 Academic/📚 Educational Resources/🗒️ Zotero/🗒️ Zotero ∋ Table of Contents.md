@@ -5,9 +5,9 @@ updated: 2024-01-27T06:56
 author(s):
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-zotero/🔖/🗒️-zotero-∋-table-of-contents
-  - 🔴-academic/📚-educational-resource/format/course
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/zotero
+  - 🔴-academic/📚-educational-resources/name/🗒️-zotero/🔖/🗒️-zotero-∋-table-of-contents
+  - 🔴-academic/📚-educational-resources/format/course
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/zotero
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Zotero::🔖::🗒️ Zotero ∋ Table of Contents
 ---

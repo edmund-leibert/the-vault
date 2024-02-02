@@ -5,9 +5,9 @@ updated: 2024-01-27T06:33
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-zotero/🔖/miscellaneous-notes
-  - 🔴-academic/📚-educational-resource/format/miscellaneous
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/zotero
+  - 🔴-academic/📚-educational-resources/name/🗒️-zotero/🔖/miscellaneous-notes
+  - 🔴-academic/📚-educational-resources/format/miscellaneous
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/zotero
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Zotero::Misc. Notes
 ---
@@ -44,7 +44,7 @@ docto -f C:\Directory\MyFile.doc -O "C:\Output Directory\MyTextFile.pdf" -T wdFo
 ﹇<br>
 What does JSON stand for?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/json
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/technology/json
 
 **J**ava**S**cript **O**bject **N**otation
 

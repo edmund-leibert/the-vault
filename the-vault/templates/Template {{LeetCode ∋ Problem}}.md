@@ -5,14 +5,14 @@ authors:
 created: 
 updated: 
 tags:
-  - 🔴-academic/📚-educational-resource/name/leetcode/🔖/problems/
-  - 🔴-academic/📚-educational-resource/format/website
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/
-  - 🔴-academic/📚-educational-resource/name/leetcode/🏷️/problems/premium/
-  - 🔴-academic/📚-educational-resource/name/leetcode/🏷️/problems/difficulty/
-  - 🔴-academic/📚-educational-resource/name/leetcode/🏷️/problems/tag/topic/
+  - 🔴-academic/📚-educational-resources/name/leetcode/🔖/problems/
+  - 🔴-academic/📚-educational-resources/format/website
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/
+  - 🔴-academic/📚-educational-resources/name/leetcode/🏷️/problems/premium/
+  - 🔴-academic/📚-educational-resources/name/leetcode/🏷️/problems/difficulty/
+  - 🔴-academic/📚-educational-resources/name/leetcode/🏷️/problems/tag/topic/
   - study-note
-cards-deck: 🔴 Academic::📚 Educational Resource::LeetCode::Problems::<% tp.file.title %>
+cards-deck: 🔴 Academic::📚 Educational Resources::LeetCode::Problems::<% tp.file.title %>
 ---
 
 # <% tp.file.title %>

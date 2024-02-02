@@ -4,12 +4,11 @@ authors:
   - Edmund Leibert III
 created: 2023-09-03 08:46
 updated: 2023-11-18T02:44
-updated: 2023-11-22T11:02
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-sql
-  - 🔴-academic/📚-educational-resource/format/miscellaneous
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/sql
-  - 🔴-academic/📚-educational-resource/name/🗒️-sql/🔖-bookmark/🗒️-sql
+  - 🔴-academic/📚-educational-resources/name/🗒️-sql
+  - 🔴-academic/📚-educational-resources/format/miscellaneous
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/sql
+  - 🔴-academic/📚-educational-resources/name/🗒️-sql/🔖-bookmark/🗒️-sql
   - study-note
 cards-deck: 🔴 Academic::📚 Educational ResourceSQL
 ---
@@ -31,7 +30,7 @@ cards-deck: 🔴 Academic::📚 Educational ResourceSQL
 ﹇<br>
 What is `INNER JOIN` in SQL Server?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 `JOIN` (or explicitly `INNER JOIN`) returns rows that have matching values in both tables.
 
@@ -70,7 +69,7 @@ What type of join is being done for the following?
 ﹇<br>
 What is `LEFT (OUTER) JOIN` in SQL Server?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server
 
 `LEFT JOIN` (or, in SQL Server, can be explicitly written as `LEFT OUTER JOIN`) returns all rows from the left table with corresponding rows from the right table. If there's no matching row, `NULL`s are returned as values from the second 
 table.
@@ -108,7 +107,7 @@ What type of join is being done for the following?
 ﹇<br>
 What is `RIGHT (OUTER) JOIN` in SQL Server?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server
 
 `RIGHT JOIN` (or, in SQL Server, can be written explicitly  written as `RIGHT OUTER JOIN`) returns all rows from the right table with corresponding rows from the left table. If there's no matching row, `NULL`s are returned as values from the left table.
 
@@ -144,7 +143,7 @@ What type of join is being done for the following?
 ﹇<br>
 What is `FULL JOIN` in SQL Server?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server
 
 `FULL JOIN` (or explicitly `FULL OUTER JOIN`) returns all rows from both tables — if there's no matching row in the second
 table, `NULL`s are returned.
@@ -181,7 +180,7 @@ What type of join is being done for the following?
 ﹇<br>
 What is `CROSS JOIN` in SQL Server?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server
 
 `CROSS JOIN` returns all possible combinations of rows from both tables. There are two syntaxes available.
 
@@ -222,7 +221,7 @@ What type of join is being done for the following?
 ﹇<br>
 What is `NATURAL JOIN` in SQL Server?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 `NATURAL JOIN` will join tables by all columns with the same name.
 
@@ -408,7 +407,7 @@ ON e1.managerId = e2.id
 WHERE e1.salary > e2.salary
 ```
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 Like so…
 ```sql
@@ -462,7 +461,7 @@ GROUP BY p.email
 HAVING (*) > 1
 ```
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 No, the above code will **not** compile
 - You have an incorrect syntax near '*'
@@ -538,7 +537,7 @@ ON c.id = o.customerId
 WHERE o.id = NULL
 ```
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 There is a small issue with the code you provided. The `WHERE` clause is checking if the `id` column from the `Orders` table is `NULL`, but it is using the equality operator (`=`) instead of the `IS` keyword. 
 
@@ -587,7 +586,7 @@ FROM Bikes b
 GROUP BY bike_number
 ```
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 1. The `SELECT` clause is not correctly written. You are trying to select the `bike_number` and `end_time` columns, but you have included the `DESC` keyword after `end_time`. The `DESC` keyword is used to specify the sort order of a column in an `ORDER BY` clause, and it cannot be used in the `SELECT` clause. To fix this, you should remove the `DESC` keyword from the `SELECT` clause.
 2. The `GROUP BY` clause is not being used correctly. You are grouping the rows by the `bike_number` column, but you are not using any aggregate functions in the `SELECT` clause. When using a `GROUP BY` clause, you must use an aggregate function (such as `COUNT`, `SUM`, `AVG`, etc.) to calculate a value for each group. If you want to select non-aggregated columns, you must include them in the `GROUP BY` clause.
@@ -634,7 +633,7 @@ GROUP BY artist
 ORDER BY artist ASC AND occurrences DESC
 ```
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 There is a small issue with the syntax of the `ORDER BY` clause in your code. The `ORDER BY` clause is used to sort the rows in the result set based on one or more columns. You can specify multiple columns to sort by, separated by commas, and you can specify the sort order for each column using the `ASC` (ascending) or `DESC` (descending) keyword. However, you cannot use the `AND` keyword to combine multiple sort conditions.
 Here is the corrected version of your code:
@@ -718,7 +717,7 @@ FROM Person p
 ORDER BY p.person_id DESC;
 ```
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 Yes, the following code is valid and logically correct.
 
@@ -731,7 +730,7 @@ Yes, the following code is valid and logically correct.
 ﹇<br>
 What does `LEFT` do in SQL Server? What is the difference between `LEFT` and `SUBSTRING`?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 [The `LEFT` function in SQL returns the left part of a character string with the specified number of characters](https://database.guide/left-vs-substring-in-sql-server-whats-the-difference/)[1](https://database.guide/left-vs-substring-in-sql-server-whats-the-difference/). For example, `LEFT('SQL Tutorial', 3)` returns `'SQL'`.
 
@@ -759,7 +758,7 @@ WHERE
   (e1.type = 'Nonmetal' AND e2.type = 'Metal')
 ```
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 While the following code is valid (i.e., will compile), it is **not** logically correct.
 - The resulting set will include **all** possible combinations. For example, it will include both `AB` and `BA` combinations which are both the same.
@@ -799,7 +798,7 @@ ORDER BY
 	o.country ASC
 ```
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 Yes, it will compile and be logically corrected.
 
@@ -833,7 +832,7 @@ LEFT JOIN Teams t2
   ON t1.team_name != t2.team_name
 ```
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server
 
 While the following code is valid, it is **not** logically correct.
 - We are not considering the edge where there is just _one_ team. In that case, we should not return _any_ matches.
@@ -869,7 +868,7 @@ BEGIN
 END
 ```
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 No, the code is not valid and will not compile.
 - If you are trying to reference an argument you must prepend it with the `@` sign. (reason for compile error)
@@ -885,7 +884,7 @@ No, the code is not valid and will not compile.
 ﹇<br>
 When checking a value against a bounds, is it sufficient to just use the `>=` and `<=` operators?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 No, should use the logical operator `BETWEEN` which is inclusive of both ends.
 
@@ -921,7 +920,7 @@ AND MyDateTimeColumn < DATEADD(day, 1, '2023-06-28')
 ﹇<br>
 What is a Common Table Expression (CTE) in the context of SQL?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 A Common Table Expression (CTE) is a named temporary result set that you can reference within a `SELECT`, `INSERT`, `UPDATE`, or `DELETE` statement. CTEs are defined using the `WITH` clause and can be used to simplify complex queries by breaking them down into smaller, more manageable pieces. CTEs can also be used to recursively reference themselves, which can be useful for solving problems that require recursive logic, such as traversing hierarchical data.
 
@@ -951,7 +950,7 @@ CTEs are similar to derived tables in that they allow you to define a temporary 
 ﹇<br>
 Without using window functions, how can I get all rows where the `temperature` of that row is greater than the previous row?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 ```sql
 /* Write your T-SQL query statement below */
@@ -974,7 +973,7 @@ INNER JOIN
 ﹇<br>
 Using window functions, how can I get all rows where the `temperature` of that row is greater than the previous day (yesterday)?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 Windows functions won’t work because we can not account for date jumps. If that is not a concern, then we can proceed as follows…
 
@@ -1010,7 +1009,7 @@ WHERE temperature > prev_temperature;
 ﹇<br>
 Does SQL Server, consider `NULL` to be less than 1000?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 In SQL Server, `NULL` is not considered to be less than, greater than, or equal to any value, including 1000. `NULL` represents missing or unknown data, and any comparison between `NULL` and another value will return `UNKNOWN`, which is treated as `FALSE` in a `WHERE` or `HAVING` clause.
 For example, consider the following query that attempts to filter rows where a column `col` is less than 1000:
@@ -1067,7 +1066,7 @@ ON c.order_number = om.max_order_number
 WHERE customer_number IS NOT NULL
 ```
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 Yes, but it is not efficient. It is adaptable though to deal with a case where your input table as multiple max `order_number`s.
 - Nonetheless, for the purposes of just finding the max `order_number` when you are **explicitly** told that only _one_ customer can have the classification of max orders done, then you can use the `GROUP BY` and `LIMIT` approach.
@@ -1108,7 +1107,7 @@ The test cases are generated so that **exactly one customer** will have placed
 
 The result format is in the following example.
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 ```sql
 SELECT TOP 1 customer_number
@@ -1132,7 +1131,7 @@ GROUP BY c.class
 HAVING c.class >= 5
 ```
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server 
 
 The query has a syntax issue because the `HAVING` clause is supposed to filter the grouped result set based on some aggregate function (e.g., COUNT, AVG, SUM, MIN, MAX, etc.). In this query, the `HAVING` clause is being used directly with a column `c.class` without an aggregate function, which will throw an error in SQL Server.
 

@@ -5,9 +5,9 @@ updated: 2024-01-02T01:07
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-microsoft-excel/🔖/misc-notes
-  - 🔴-academic/📚-educational-resource/format/miscellaneous
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/microsoft-excel
+  - 🔴-academic/📚-educational-resources/name/🗒️-microsoft-excel/🔖/misc-notes
+  - 🔴-academic/📚-educational-resources/format/miscellaneous
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/microsoft-excel
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Microsoft Excel::Misc. Notes
 ---

@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2023-09-03 08:46
-updated: 2024-02-01T14:36
+updated: 2024-02-02T01:00
 authors:
   - Edmund Leibert III
 tags:
@@ -26,7 +26,7 @@ banner_y: 0
 ---
 
 > [!INFO]+ Note
-> **Previous Note(s)**:
+> **Previous Notes**:
 > 
 
 ---
@@ -75,7 +75,7 @@ docto -f C:\Directory\MyFile.doc -O "C:\Output Directory\MyTextFile.pdf" -T wdFo
 ﹇<br>
 What does JSON stand for?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/json
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/technology/json
 
 **J**ava**S**cript **O**bject **N**otation
 
@@ -323,7 +323,7 @@ Microsoft merged the best of .NET Core and .NET Framework into a single platform
 
 
 ﹇<br>
-In the context of .NET, what does IIS stand for and what is it?
+In the context of .NET, what does **IIS** stand for and what is it?
 
 #card 
 
@@ -337,6 +337,26 @@ Most commonly, IIS is used to host ASP.NET web applications and static websites.
 
 ⌂
 <br>﹈<br>^1702296738281
+
+﹇<br>
+As of 2024, is **IIS** current out “outdated”? If it is outdated, what is a modern alternative to it currently?
+
+#card
+
+[**Internet Information Services (IIS)** is still being used and supported by Microsoft](https://learn.microsoft.com/en-us/lifecycle/products/internet-information-services-iis)[1](https://learn.microsoft.com/en-us/lifecycle/products/internet-information-services-iis). [However, it’s important to note that older versions of IIS (7.5 and below) are no longer supported by Microsoft and may be vulnerable to attacks](https://cybernews.com/security/millions-of-microsoft-web-servers-powered-by-vulnerable-legacy-software/)[2](https://cybernews.com/security/millions-of-microsoft-web-servers-powered-by-vulnerable-legacy-software/). [Therefore, it’s recommended to use the latest version of IIS for the most secure and best performance](https://learn.microsoft.com/en-us/lifecycle/products/internet-information-services-iis)[1](https://learn.microsoft.com/en-us/lifecycle/products/internet-information-services-iis).
+
+As for alternatives to IIS, there are several modern web servers that you might consider:
+
+- [**NGINX**: An open-source web server that is known for its high performance, stability, rich feature set, simple configuration, and low resource consumption](https://www.trustradius.com/products/iis/competitors)[3](https://www.trustradius.com/products/iis/competitors)[4](https://alternativeto.net/software/microsoft-iis/).
+- **Apache HTTP Server**: An open-source web server that’s been a popular choice for many years. [It’s highly configurable and supports a range of features](https://www.trustradius.com/products/iis/competitors)[3](https://www.trustradius.com/products/iis/competitors)[4](https://alternativeto.net/software/microsoft-iis/).
+- [**Caddy**: A powerful, enterprise-ready, open-source web server with automatic HTTPS written in Go](https://alternativeto.net/software/microsoft-iis/)[4](https://alternativeto.net/software/microsoft-iis/).
+- [**LiteSpeed**: Known for its speed, this is a drop-in Apache replacement and the 4th most popular web server on the internet](https://designpress.com/web-development/lightweight-alternatives-to-apache-and-iis-web-servers/)[5](https://designpress.com/web-development/lightweight-alternatives-to-apache-and-iis-web-servers/).
+- [**Lighttpd**: A secure, fast, compliant, and very flexible web-server that has been optimized for high-performance environments](https://designpress.com/web-development/lightweight-alternatives-to-apache-and-iis-web-servers/)[5](https://designpress.com/web-development/lightweight-alternatives-to-apache-and-iis-web-servers/).
+
+[Each of these servers has its own strengths and weaknesses, and the best one for you depends on your specific needs and circumstances](https://www.trustradius.com/products/iis/competitors)[3](https://www.trustradius.com/products/iis/competitors)[4](https://alternativeto.net/software/microsoft-iis/)[5](https://designpress.com/web-development/lightweight-alternatives-to-apache-and-iis-web-servers/). [It’s also worth noting that while these alternatives can serve as replacements for IIS, they might not offer the same level of integration with other Microsoft technologies](https://www.trustradius.com/products/iis/competitors)[3](https://www.trustradius.com/products/iis/competitors)[4](https://alternativeto.net/software/microsoft-iis/)[6](https://stackshare.io/microsoft-iis/alternatives)[5](https://designpress.com/web-development/lightweight-alternatives-to-apache-and-iis-web-servers/).
+
+⌂
+<br>﹈<br>
 
 ﹇<br>
 What are HTTP, HTTP/2, HTTPS, FTP, FTPS, SMTP and NNTP?
@@ -765,7 +785,7 @@ leanserver, “IIS Web Server Overview,” _Microsoft Learn: Build skills that o
 ---
 
 > [!INFO]+ Note
-> **Next Note(s)**:
+> **Next Notes**:
 > 
 
 ---

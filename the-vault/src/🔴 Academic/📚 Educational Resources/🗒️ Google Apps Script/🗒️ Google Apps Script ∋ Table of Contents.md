@@ -5,9 +5,9 @@ updated: 2024-01-25T00:50
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-Google-Apps-Script/🔖/🗒️-google-apps-script-∋-table-of-contents
-  - 🔴-academic/📚-educational-resource/format/miscellaneous
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/google-apps-script
+  - 🔴-academic/📚-educational-resources/name/🗒️-Google-Apps-Script/🔖/🗒️-google-apps-script-∋-table-of-contents
+  - 🔴-academic/📚-educational-resources/format/miscellaneous
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/google-apps-script
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Google Apps Scripts::🗒️ Google Apps Scripts ∋ Table of Contents
 ---

@@ -5,9 +5,9 @@ updated: 2024-01-25T00:50
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/structy/🔖/structy-∋-table-of-contents
-  - 🔴-academic/📚-educational-resource/format/course
-  - 🔴-academic/📚-educational-resource/discipline/computer-science
+  - 🔴-academic/📚-educational-resources/name/structy/🔖/structy-∋-table-of-contents
+  - 🔴-academic/📚-educational-resources/format/course
+  - 🔴-academic/📚-educational-resources/discipline/computer-science
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::Structy::Structy ∋ Table of Contents
 ---

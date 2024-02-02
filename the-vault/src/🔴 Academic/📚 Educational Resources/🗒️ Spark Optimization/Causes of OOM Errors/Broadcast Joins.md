@@ -1,17 +1,12 @@
 ---
 created: 2023-11-18T02:44
 updated: 2023-11-18T02:44
----
----
 tags:
-  - 🔴-academics/📚-educational-resources/discipline/computer-science/spark
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/spark
 cards-deck: Default::Computer Science
-created: 2023-09-12 11:38
+---
 
-updated: 2023-09-28 14:16
-
-updated: 2023-09-18 18:04
-he cluster. This is an optimization technique for small DataFrames that can significantly improve join performance by reducing data shuffling across the network. However, when not used judiciously, broadcast joins can lead to out of memory errors. Here's how:
+The cluster. This is an optimization technique for small DataFrames that can significantly improve join performance by reducing data shuffling across the network. However, when not used judiciously, broadcast joins can lead to out of memory errors. Here's how:
 
 1. **Data Size**: The primary reason for out of memory errors in broadcast joins is the size of the data being broadcasted. When you broadcast a DataFrame or RDD, it means that a copy of that entire dataset is sent to every worker node in the cluster. If the DataFrame being broadcasted is too large, it can exhaust the memory resources available on each worker node.
 

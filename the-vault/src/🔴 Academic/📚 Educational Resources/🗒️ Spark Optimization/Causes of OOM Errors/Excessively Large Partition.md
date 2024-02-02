@@ -1,13 +1,12 @@
 ---
 tags:
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/apache-spark
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/apache-spark
 cards-deck: Default::Computer Science
 created: 2023-09-12 11:38
 updated: 2023-11-18T02:44
-updated: 2023-11-22T13:50
 ---
 
-ry is typically divided into different regions, such as storage memory and execution memory. When one excessive large partition is processed in an executor, it can lead to out-of-memory errors due to several reasons:
+Memory is typically divided into different regions, such as storage memory and execution memory. When one excessive large partition is processed in an executor, it can lead to out-of-memory errors due to several reasons:
 
 1. **Memory Fragmentation**: When a large partition is processed, it can fragment the available memory, making it challenging for Spark to allocate memory for other tasks or partitions. This can lead to inefficient memory utilization and potential out-of-memory errors.
 

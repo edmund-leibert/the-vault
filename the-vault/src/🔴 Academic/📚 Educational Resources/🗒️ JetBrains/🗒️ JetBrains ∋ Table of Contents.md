@@ -5,8 +5,8 @@ updated: 2023-11-18T02:44
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-jetbrains/🗒️-jetbrains-∋-table-of-contents
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/jetbrains
+  - 🔴-academic/📚-educational-resources/name/🗒️-jetbrains/🗒️-jetbrains-∋-table-of-contents
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/jetbrains
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ JetBrains::🗒️ JetBrains ∋ Table of Contents
 ---

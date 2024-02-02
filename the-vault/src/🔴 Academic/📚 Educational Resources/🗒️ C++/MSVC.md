@@ -5,9 +5,9 @@ updated: 2023-12-04T09:42
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-cpp/🔖/msvc
-  - 🔴-academic/📚-educational-resource/format/miscellaneous
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp
+  - 🔴-academic/📚-educational-resources/name/🗒️-cpp/🔖/msvc
+  - 🔴-academic/📚-educational-resources/format/miscellaneous
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/cpp
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ C++::MSVC
 ---

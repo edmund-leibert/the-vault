@@ -5,9 +5,9 @@ updated: 2024-01-25T00:50
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-go/🔖/🗒️-go-∋-table-of-contents
-  - 🔴-academic/📚-educational-resource/format/miscellaneous
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/go
+  - 🔴-academic/📚-educational-resources/name/🗒️-go/🔖/🗒️-go-∋-table-of-contents
+  - 🔴-academic/📚-educational-resources/format/miscellaneous
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/go
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Go::🗒️ Go ∋ Table of Contents
 ---

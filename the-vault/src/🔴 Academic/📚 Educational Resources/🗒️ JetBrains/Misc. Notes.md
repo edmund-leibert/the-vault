@@ -5,8 +5,8 @@ authors:
 created: 2023-11-05T00:57
 updated: 2023-12-23T12:34
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-jetbrains/misc-notes
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/jetbrains
+  - 🔴-academic/📚-educational-resources/name/🗒️-jetbrains/misc-notes
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/jetbrains
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource️ C++::🗒️ JetBrains::Misc. Notes
 ---

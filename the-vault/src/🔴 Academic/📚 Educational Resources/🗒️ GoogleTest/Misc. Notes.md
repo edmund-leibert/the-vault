@@ -5,9 +5,9 @@ updated: 2023-12-14T05:55
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-googletest/🔖/misc-notes
-  - 🔴-academic/📚-educational-resource/format/miscellaneous
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/framework/googletest
+  - 🔴-academic/📚-educational-resources/name/🗒️-googletest/🔖/misc-notes
+  - 🔴-academic/📚-educational-resources/format/miscellaneous
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/framework/googletest
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ GoogleTest::Misc. Notes
 ---

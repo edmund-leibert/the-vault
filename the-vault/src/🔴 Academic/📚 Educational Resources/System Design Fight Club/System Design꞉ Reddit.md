@@ -5,10 +5,10 @@ updated: 2023-12-07T21:36
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/system-design-fight-club
-  - 🔴-academic/📚-educational-resource/format/internet
-  - 🔴-academic/📚-educational-resource/discipline/computer-science
-  - 🔴-academic/📚-educational-resource/name/system-design-fight-club/🔖/system-design-reddit
+  - 🔴-academic/📚-educational-resources/name/system-design-fight-club
+  - 🔴-academic/📚-educational-resources/format/internet
+  - 🔴-academic/📚-educational-resources/discipline/computer-science
+  - 🔴-academic/📚-educational-resources/name/system-design-fight-club/🔖/system-design-reddit
   - study-note
 cards-deck: Default::Computer Science
 ---

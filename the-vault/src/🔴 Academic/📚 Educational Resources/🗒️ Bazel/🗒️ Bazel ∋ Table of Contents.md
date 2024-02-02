@@ -5,9 +5,9 @@ updated: 2024-01-25T00:50
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-bazel/🔖/bazel-∋-table-of-contents
-  - 🔴-academic/📚-educational-resource/format/website
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/bazel
+  - 🔴-academic/📚-educational-resources/name/🗒️-bazel/🔖/bazel-∋-table-of-contents
+  - 🔴-academic/📚-educational-resources/format/website
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/bazel
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Bazel::🗒️ Bazel ∋ Table of Contents
 ---

@@ -5,9 +5,9 @@ updated: 2023-12-10T03:47
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/powershell/🔖/misc-notes
-  - 🔴-academic/📚-educational-resource/format/website
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/powershell
+  - 🔴-academic/📚-educational-resources/name/powershell/🔖/misc-notes
+  - 🔴-academic/📚-educational-resources/format/website
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/powershell
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ PowerShell::Misc. Notes
 ---

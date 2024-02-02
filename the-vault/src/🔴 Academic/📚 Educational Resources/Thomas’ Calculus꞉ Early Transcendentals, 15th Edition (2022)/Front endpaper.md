@@ -7,7 +7,7 @@ author:
 publisher: Pearson
 published: February 2022
 tags:
-  - 🔴-academic/📚-educational-resource/name/thomas-calculus-early-transcendentals-15th-edition-2022
+  - 🔴-academic/📚-educational-resources/name/thomas-calculus-early-transcendentals-15th-edition-2022
   - study-note
 cards-deck: Default::Mathematics
 created: 2023-10-13T01:57

@@ -1,6 +1,6 @@
 ---
 tags:
-  - 🔴-academic/📚-educational-resource/name/university-physics-with-modern-physics-15th-edition-2019
+  - 🔴-academic/📚-educational-resources/name/university-physics-with-modern-physics-15th-edition-2019
   - study-note
 cards-deck: Default::Physics
 created: 2023-10-27T17:38

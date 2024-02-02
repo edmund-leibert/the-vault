@@ -1,7 +1,7 @@
 ---
 tags:
-  - 🔴-academic/📚-educational-resource/name/the-modern-javascript-tutorial
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/javascript
+  - 🔴-academic/📚-educational-resources/name/the-modern-javascript-tutorial
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/javascript
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-10-13T01:57

@@ -5,9 +5,9 @@ updated: 2024-01-07T01:09
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-git/misc-notes
-  - 🔴-academic/📚-educational-resource/format/miscellaneous
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/git
+  - 🔴-academic/📚-educational-resources/name/🗒️-git/misc-notes
+  - 🔴-academic/📚-educational-resources/format/miscellaneous
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/git
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Git::Misc. Notes
 ---
@@ -775,7 +775,7 @@ By looking at the `.gitmodules` file in the root directory of the repository.
 ﹇<br>
 Using Git, how can I fetch all the branches from my remote repository named origin?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/git 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/technology/git 
 
 You can fetch all the branches from your remote repository named `origin` by using the following command in your terminal:
 
@@ -793,7 +793,7 @@ Remember, `git fetch` only downloads the data from the remote repository but doe
 ﹇<br>
 How can you rename a remote branch in Git?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/git 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/technology/git 
 
 To rename a remote branch in Git, you can follow these steps:
 

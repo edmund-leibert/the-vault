@@ -1,7 +1,7 @@
 ---
 tags:
-  - 🔴-academic/📚-educational-resource/name/typst-documentation
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/typst
+  - 🔴-academic/📚-educational-resources/name/typst-documentation
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/typst
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-09-03 08:46

@@ -5,10 +5,10 @@ updated: 2024-01-24T17:01
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-latex
-  - 🔴-academic/📚-educational-resource/format/miscellaneous
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/latex
-  - 🔴-academic/📚-educational-resource/name/🗒️-latex/🔖-bookmark/🗒️-latex
+  - 🔴-academic/📚-educational-resources/name/🗒️-latex
+  - 🔴-academic/📚-educational-resources/format/miscellaneous
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/latex
+  - 🔴-academic/📚-educational-resources/name/🗒️-latex/🔖-bookmark/🗒️-latex
 cards-deck: 🔴 Academic::📚 Educational ResourceX
 ---
 

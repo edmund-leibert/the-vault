@@ -5,9 +5,9 @@ updated: 2024-01-25T00:50
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/🗒️-hugo/🔖/🗒️-hugo-∋-table-of-contents
-  - 🔴-academic/📚-educational-resource/format/miscellaneous
-  - 🔴-academic/📚-educational-resource/discipline/computer-science/framework/net
+  - 🔴-academic/📚-educational-resources/name/🗒️-hugo/🔖/🗒️-hugo-∋-table-of-contents
+  - 🔴-academic/📚-educational-resources/format/miscellaneous
+  - 🔴-academic/📚-educational-resources/discipline/computer-science/framework/net
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Hugo::🗒️ Hugo ∋ Table of Contents
 ---
