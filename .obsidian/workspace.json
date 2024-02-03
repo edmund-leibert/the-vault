@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/175. Combine Two Tables.md",
-                "mode": "source",
+                "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
@@ -34,22 +34,8 @@
               },
               "pinned": true
             }
-          },
-          {
-            "id": "6e40ca3bb63d8ca8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "the-vault/templates/Template {{LeetCode ∋ Problem}}.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -116,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/175. Combine Two Tables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/175. Combine Two Tables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md"
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/175. Combine Two Tables.md"
               }
             }
           }
@@ -209,7 +195,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 451.5
+    "width": 451.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -229,19 +216,19 @@
       "custom-sort:Toggle custom sorting": false,
       "notion-like-tables:Create loom": false,
       "omnisearch:Omnisearch": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-trash-explorer:Open trash explorer": false,
       "cloze:Toggle all clozes": false,
       "obsidian-day-planner:Timeline": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "reference-map:Reference Map": false
+      "reference-map:Reference Map": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a39665c0e31396ac",
+  "active": "872d16caa9f3390b",
   "lastOpenFiles": [
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/175. Combine Two Tables.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/175. Combine Two Tables.md",
     "the-vault/templates/Template {{LeetCode ∋ Problem}}.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/226. Invert Binary Tree.md",
     "the-vault/assets/banners/Web capture_2-2-2024_10533_leetcode.com.jpeg",

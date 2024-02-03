@@ -602,14 +602,14 @@ var require_lib = __commonJS({
       }
       return ms;
     }
-    function listStuff2(loc, length2, englishFn, intlFn) {
+    function listStuff2(loc, length, englishFn, intlFn) {
       const mode = loc.listingMode();
       if (mode === "error") {
         return null;
       } else if (mode === "en") {
-        return englishFn(length2);
+        return englishFn(length);
       } else {
-        return intlFn(length2);
+        return intlFn(length);
       }
     }
     function supportsFastNumbers2(loc) {
@@ -787,24 +787,24 @@ var require_lib = __commonJS({
       redefaultToSystem(alts = {}) {
         return this.clone({ ...alts, defaultToEN: false });
       }
-      months(length2, format = false) {
-        return listStuff2(this, length2, months2, () => {
-          const intl = format ? { month: length2, day: "numeric" } : { month: length2 }, formatStr = format ? "format" : "standalone";
-          if (!this.monthsCache[formatStr][length2]) {
-            this.monthsCache[formatStr][length2] = mapMonths2((dt) => this.extract(dt, intl, "month"));
+      months(length, format = false) {
+        return listStuff2(this, length, months2, () => {
+          const intl = format ? { month: length, day: "numeric" } : { month: length }, formatStr = format ? "format" : "standalone";
+          if (!this.monthsCache[formatStr][length]) {
+            this.monthsCache[formatStr][length] = mapMonths2((dt) => this.extract(dt, intl, "month"));
           }
-          return this.monthsCache[formatStr][length2];
+          return this.monthsCache[formatStr][length];
         });
       }
-      weekdays(length2, format = false) {
-        return listStuff2(this, length2, weekdays2, () => {
-          const intl = format ? { weekday: length2, year: "numeric", month: "long", day: "numeric" } : { weekday: length2 }, formatStr = format ? "format" : "standalone";
-          if (!this.weekdaysCache[formatStr][length2]) {
-            this.weekdaysCache[formatStr][length2] = mapWeekdays2(
+      weekdays(length, format = false) {
+        return listStuff2(this, length, weekdays2, () => {
+          const intl = format ? { weekday: length, year: "numeric", month: "long", day: "numeric" } : { weekday: length }, formatStr = format ? "format" : "standalone";
+          if (!this.weekdaysCache[formatStr][length]) {
+            this.weekdaysCache[formatStr][length] = mapWeekdays2(
               (dt) => this.extract(dt, intl, "weekday")
             );
           }
-          return this.weekdaysCache[formatStr][length2];
+          return this.weekdaysCache[formatStr][length];
         });
       }
       meridiems() {
@@ -823,15 +823,15 @@ var require_lib = __commonJS({
           }
         );
       }
-      eras(length2) {
-        return listStuff2(this, length2, eras2, () => {
-          const intl = { era: length2 };
-          if (!this.eraCache[length2]) {
-            this.eraCache[length2] = [DateTime2.utc(-40, 1, 1), DateTime2.utc(2017, 1, 1)].map(
+      eras(length) {
+        return listStuff2(this, length, eras2, () => {
+          const intl = { era: length };
+          if (!this.eraCache[length]) {
+            this.eraCache[length] = [DateTime2.utc(-40, 1, 1), DateTime2.utc(2017, 1, 1)].map(
               (dt) => this.extract(dt, intl, "era")
             );
           }
-          return this.eraCache[length2];
+          return this.eraCache[length];
         });
       }
       extract(dt, intlOpts, field) {
@@ -1341,8 +1341,8 @@ var require_lib = __commonJS({
       "Dec"
     ];
     var monthsNarrow2 = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
-    function months2(length2) {
-      switch (length2) {
+    function months2(length) {
+      switch (length) {
         case "narrow":
           return [...monthsNarrow2];
         case "short":
@@ -1368,8 +1368,8 @@ var require_lib = __commonJS({
     ];
     var weekdaysShort2 = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
     var weekdaysNarrow2 = ["M", "T", "W", "T", "F", "S", "S"];
-    function weekdays2(length2) {
-      switch (length2) {
+    function weekdays2(length) {
+      switch (length) {
         case "narrow":
           return [...weekdaysNarrow2];
         case "short":
@@ -1386,8 +1386,8 @@ var require_lib = __commonJS({
     var erasLong2 = ["Before Christ", "Anno Domini"];
     var erasShort2 = ["BC", "AD"];
     var erasNarrow2 = ["B", "A"];
-    function eras2(length2) {
-      switch (length2) {
+    function eras2(length) {
+      switch (length) {
         case "narrow":
           return [...erasNarrow2];
         case "short":
@@ -1401,14 +1401,14 @@ var require_lib = __commonJS({
     function meridiemForDateTime2(dt) {
       return meridiems2[dt.hour < 12 ? 0 : 1];
     }
-    function weekdayForDateTime2(dt, length2) {
-      return weekdays2(length2)[dt.weekday - 1];
+    function weekdayForDateTime2(dt, length) {
+      return weekdays2(length)[dt.weekday - 1];
     }
-    function monthForDateTime2(dt, length2) {
-      return months2(length2)[dt.month - 1];
+    function monthForDateTime2(dt, length) {
+      return months2(length)[dt.month - 1];
     }
-    function eraForDateTime2(dt, length2) {
-      return eras2(length2)[dt.year < 0 ? 0 : 1];
+    function eraForDateTime2(dt, length) {
+      return eras2(length)[dt.year < 0 ? 0 : 1];
     }
     function formatRelativeTime2(unit, count, numeric = "always", narrow = false) {
       const units = {
@@ -1549,8 +1549,8 @@ var require_lib = __commonJS({
             return "Z";
           }
           return dt.isValid ? dt.zone.formatOffset(dt.ts, opts.format) : "";
-        }, meridiem = () => knownEnglish ? meridiemForDateTime2(dt) : string({ hour: "numeric", hourCycle: "h12" }, "dayperiod"), month = (length2, standalone) => knownEnglish ? monthForDateTime2(dt, length2) : string(standalone ? { month: length2 } : { month: length2, day: "numeric" }, "month"), weekday = (length2, standalone) => knownEnglish ? weekdayForDateTime2(dt, length2) : string(
-          standalone ? { weekday: length2 } : { weekday: length2, month: "long", day: "numeric" },
+        }, meridiem = () => knownEnglish ? meridiemForDateTime2(dt) : string({ hour: "numeric", hourCycle: "h12" }, "dayperiod"), month = (length, standalone) => knownEnglish ? monthForDateTime2(dt, length) : string(standalone ? { month: length } : { month: length, day: "numeric" }, "month"), weekday = (length, standalone) => knownEnglish ? weekdayForDateTime2(dt, length) : string(
+          standalone ? { weekday: length } : { weekday: length, month: "long", day: "numeric" },
           "weekday"
         ), maybeMacro = (token) => {
           const formatOpts = _Formatter.macroTokenToFormatOpts(token);
@@ -1559,7 +1559,7 @@ var require_lib = __commonJS({
           } else {
             return token;
           }
-        }, era = (length2) => knownEnglish ? eraForDateTime2(dt, length2) : string({ era: length2 }, "era"), tokenToString = (token) => {
+        }, era = (length) => knownEnglish ? eraForDateTime2(dt, length) : string({ era: length }, "era"), tokenToString = (token) => {
           switch (token) {
             case "S":
               return this.num(dt.millisecond);
@@ -3366,8 +3366,8 @@ var require_lib = __commonJS({
        * @example Info.months('long', { outputCalendar: 'islamic' })[0] //=> 'Rabiʻ I'
        * @return {Array}
        */
-      static months(length2 = "long", { locale = null, numberingSystem = null, locObj = null, outputCalendar = "gregory" } = {}) {
-        return (locObj || Locale2.create(locale, numberingSystem, outputCalendar)).months(length2);
+      static months(length = "long", { locale = null, numberingSystem = null, locObj = null, outputCalendar = "gregory" } = {}) {
+        return (locObj || Locale2.create(locale, numberingSystem, outputCalendar)).months(length);
       }
       /**
        * Return an array of format month names.
@@ -3382,8 +3382,8 @@ var require_lib = __commonJS({
        * @param {string} [opts.outputCalendar='gregory'] - the calendar
        * @return {Array}
        */
-      static monthsFormat(length2 = "long", { locale = null, numberingSystem = null, locObj = null, outputCalendar = "gregory" } = {}) {
-        return (locObj || Locale2.create(locale, numberingSystem, outputCalendar)).months(length2, true);
+      static monthsFormat(length = "long", { locale = null, numberingSystem = null, locObj = null, outputCalendar = "gregory" } = {}) {
+        return (locObj || Locale2.create(locale, numberingSystem, outputCalendar)).months(length, true);
       }
       /**
        * Return an array of standalone week names.
@@ -3399,8 +3399,8 @@ var require_lib = __commonJS({
        * @example Info.weekdays('short', { locale: 'ar' })[0] //=> 'الاثنين'
        * @return {Array}
        */
-      static weekdays(length2 = "long", { locale = null, numberingSystem = null, locObj = null } = {}) {
-        return (locObj || Locale2.create(locale, numberingSystem, null)).weekdays(length2);
+      static weekdays(length = "long", { locale = null, numberingSystem = null, locObj = null } = {}) {
+        return (locObj || Locale2.create(locale, numberingSystem, null)).weekdays(length);
       }
       /**
        * Return an array of format week names.
@@ -3414,8 +3414,8 @@ var require_lib = __commonJS({
        * @param {string} [opts.locObj=null] - an existing locale object to use
        * @return {Array}
        */
-      static weekdaysFormat(length2 = "long", { locale = null, numberingSystem = null, locObj = null } = {}) {
-        return (locObj || Locale2.create(locale, numberingSystem, null)).weekdays(length2, true);
+      static weekdaysFormat(length = "long", { locale = null, numberingSystem = null, locObj = null } = {}) {
+        return (locObj || Locale2.create(locale, numberingSystem, null)).weekdays(length, true);
       }
       /**
        * Return an array of meridiems.
@@ -3438,8 +3438,8 @@ var require_lib = __commonJS({
        * @example Info.eras('long', { locale: 'fr' }) //=> [ 'avant Jésus-Christ', 'après Jésus-Christ' ]
        * @return {Array}
        */
-      static eras(length2 = "short", { locale = null } = {}) {
-        return Locale2.create(locale, null, "gregory").eras(length2);
+      static eras(length = "short", { locale = null } = {}) {
+        return Locale2.create(locale, null, "gregory").eras(length);
       }
       /**
        * Return the set of available features in this environment.
@@ -6202,7 +6202,7 @@ var require_lib = __commonJS({
             var a2 = e2 + u2, f2 = t2 - o2;
             return r2[t2] = { line: a2, lineStart: o2 }, { offset: t2, line: a2 + 1, column: f2 + 1 };
           }
-          function _17(n4) {
+          function _18(n4) {
             if (!y(n4))
               throw new Error("not a parser: " + n4);
           }
@@ -6273,7 +6273,7 @@ var require_lib = __commonJS({
           }
           function C() {
             for (var n4 = [].slice.call(arguments), t2 = n4.length, r2 = 0; r2 < t2; r2 += 1)
-              _17(n4[r2]);
+              _18(n4[r2]);
             return e(function(r3, e2) {
               for (var u2, o2 = new Array(t2), i2 = 0; i2 < t2; i2 += 1) {
                 if (!(u2 = B(n4[i2]._(r3, e2), u2)).status)
@@ -6297,7 +6297,7 @@ var require_lib = __commonJS({
             if (0 === t2)
               return Y("zero alternates");
             for (var r2 = 0; r2 < t2; r2 += 1)
-              _17(n4[r2]);
+              _18(n4[r2]);
             return e(function(t3, r3) {
               for (var e2, u2 = 0; u2 < n4.length; u2 += 1)
                 if ((e2 = B(n4[u2]._(t3, r3), e2)).status)
@@ -6309,7 +6309,7 @@ var require_lib = __commonJS({
             return H(n4, t2).or(X([]));
           }
           function H(n4, t2) {
-            return _17(n4), _17(t2), J(n4, t2.then(n4).many(), function(n5, t3) {
+            return _18(n4), _18(t2), J(n4, t2.then(n4).many(), function(n5, t3) {
               return [n5].concat(t3);
             });
           }
@@ -6368,8 +6368,8 @@ var require_lib = __commonJS({
               return Z(Q(n4));
             throw new Error("not a string, regexp, or parser: " + n4);
           }
-          function $4(n4) {
-            return _17(n4), e(function(t2, r2) {
+          function $3(n4) {
+            return _18(n4), e(function(t2, r2) {
               var e2 = n4._(t2, r2), u2 = t2.slice(r2, e2.index);
               return e2.status ? x(r2, 'not "' + u2 + '"') : b(r2, null);
             });
@@ -6416,7 +6416,7 @@ var require_lib = __commonJS({
           }, u.thru = function(n4) {
             return n4(this);
           }, u.then = function(n4) {
-            return _17(n4), C(this, n4).map(function(n5) {
+            return _18(n4), C(this, n4).map(function(n5) {
               return n5[1];
             });
           }, u.many = function() {
@@ -6502,7 +6502,7 @@ var require_lib = __commonJS({
           }, u.lookahead = function(n4) {
             return this.skip(Z(n4));
           }, u.notFollowedBy = function(n4) {
-            return this.skip($4(n4));
+            return this.skip($3(n4));
           }, u.desc = function(n4) {
             E(n4) || (n4 = [n4]);
             var t2 = this;
@@ -6547,7 +6547,7 @@ var require_lib = __commonJS({
             return nn(function(t2) {
               return n4.indexOf(t2) < 0;
             }).desc("none of '" + n4 + "'");
-          }, e.notFollowedBy = $4, e.of = X, e.oneOf = function(n4) {
+          }, e.notFollowedBy = $3, e.of = X, e.oneOf = function(n4) {
             for (var t2 = n4.split(""), r2 = 0; r2 < t2.length; r2++)
               t2[r2] = "'" + t2[r2] + "'";
             return nn(function(t3) {
@@ -6659,8 +6659,8 @@ var require_lib = __commonJS({
         path2 = path2.substring(0, path2.length - 3);
       return path2;
     }
-    parsimmon_umd_minExports.alt(parsimmon_umd_minExports.regex(new RegExp(emojiRegex(), "")), parsimmon_umd_minExports.regex(/[0-9\p{Letter}_-]+/u).map((str) => str.toLocaleLowerCase()), parsimmon_umd_minExports.whitespace.map((_17) => "-"), parsimmon_umd_minExports.any.map((_17) => "")).many().map((result) => result.join(""));
-    var HEADER_CANONICALIZER = parsimmon_umd_minExports.alt(parsimmon_umd_minExports.regex(new RegExp(emojiRegex(), "")), parsimmon_umd_minExports.regex(/[0-9\p{Letter}_-]+/u), parsimmon_umd_minExports.whitespace.map((_17) => " "), parsimmon_umd_minExports.any.map((_17) => " ")).many().map((result) => {
+    parsimmon_umd_minExports.alt(parsimmon_umd_minExports.regex(new RegExp(emojiRegex(), "")), parsimmon_umd_minExports.regex(/[0-9\p{Letter}_-]+/u).map((str) => str.toLocaleLowerCase()), parsimmon_umd_minExports.whitespace.map((_18) => "-"), parsimmon_umd_minExports.any.map((_18) => "")).many().map((result) => result.join(""));
+    var HEADER_CANONICALIZER = parsimmon_umd_minExports.alt(parsimmon_umd_minExports.regex(new RegExp(emojiRegex(), "")), parsimmon_umd_minExports.regex(/[0-9\p{Letter}_-]+/u), parsimmon_umd_minExports.whitespace.map((_18) => " "), parsimmon_umd_minExports.any.map((_18) => " ")).many().map((result) => {
       return result.join("").split(/\s+/).join(" ").trim();
     });
     function normalizeHeaderForLink(header) {
@@ -7345,7 +7345,7 @@ var require_lib = __commonJS({
       number: (q) => parsimmon_umd_minExports.regexp(/-?[0-9]+(\.[0-9]+)?/).map((str) => Number.parseFloat(str)).desc("number"),
       // A quote-surrounded string which supports escape characters ('\').
       string: (q) => parsimmon_umd_minExports.string('"').then(parsimmon_umd_minExports.alt(q.escapeCharacter, parsimmon_umd_minExports.noneOf('"\\')).atLeast(0).map((chars) => chars.join(""))).skip(parsimmon_umd_minExports.string('"')).desc("string"),
-      escapeCharacter: (_17) => parsimmon_umd_minExports.string("\\").then(parsimmon_umd_minExports.any).map((escaped) => {
+      escapeCharacter: (_18) => parsimmon_umd_minExports.string("\\").then(parsimmon_umd_minExports.any).map((escaped) => {
         if (escaped === '"')
           return '"';
         if (escaped === "\\")
@@ -7354,13 +7354,13 @@ var require_lib = __commonJS({
           return "\\" + escaped;
       }),
       // A boolean true/false value.
-      bool: (_17) => parsimmon_umd_minExports.regexp(/true|false|True|False/).map((str) => str.toLowerCase() == "true").desc("boolean ('true' or 'false')"),
+      bool: (_18) => parsimmon_umd_minExports.regexp(/true|false|True|False/).map((str) => str.toLowerCase() == "true").desc("boolean ('true' or 'false')"),
       // A tag of the form '#stuff/hello-there'.
-      tag: (_17) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("#"), parsimmon_umd_minExports.alt(parsimmon_umd_minExports.regexp(/[^\u2000-\u206F\u2E00-\u2E7F'!"#$%&()*+,.:;<=>?@^`{|}~\[\]\\\s]/).desc("text")).many(), (start, rest) => start + rest.join("")).desc("tag ('#hello/stuff')"),
+      tag: (_18) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("#"), parsimmon_umd_minExports.alt(parsimmon_umd_minExports.regexp(/[^\u2000-\u206F\u2E00-\u2E7F'!"#$%&()*+,.:;<=>?@^`{|}~\[\]\\\s]/).desc("text")).many(), (start, rest) => start + rest.join("")).desc("tag ('#hello/stuff')"),
       // A variable identifier, which is alphanumeric and must start with a letter or... emoji.
-      identifier: (_17) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.alt(parsimmon_umd_minExports.regexp(/\p{Letter}/u), parsimmon_umd_minExports.regexp(EMOJI_REGEX).desc("text")), parsimmon_umd_minExports.alt(parsimmon_umd_minExports.regexp(/[0-9\p{Letter}_-]/u), parsimmon_umd_minExports.regexp(EMOJI_REGEX).desc("text")).many(), (first, rest) => first + rest.join("")).desc("variable identifier"),
+      identifier: (_18) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.alt(parsimmon_umd_minExports.regexp(/\p{Letter}/u), parsimmon_umd_minExports.regexp(EMOJI_REGEX).desc("text")), parsimmon_umd_minExports.alt(parsimmon_umd_minExports.regexp(/[0-9\p{Letter}_-]/u), parsimmon_umd_minExports.regexp(EMOJI_REGEX).desc("text")).many(), (first, rest) => first + rest.join("")).desc("variable identifier"),
       // An Obsidian link of the form [[<link>]].
-      link: (_17) => parsimmon_umd_minExports.regexp(/\[\[([^\[\]]*?)\]\]/u, 1).map((linkInner) => parseInnerLink(linkInner)).desc("file link"),
+      link: (_18) => parsimmon_umd_minExports.regexp(/\[\[([^\[\]]*?)\]\]/u, 1).map((linkInner) => parseInnerLink(linkInner)).desc("file link"),
       // An embeddable link which can start with '!'. This overlaps with the normal negation operator, so it is only
       // provided for metadata parsing.
       embedLink: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("!").atMost(1), q.link, (p, l3) => {
@@ -7369,13 +7369,13 @@ var require_lib = __commonJS({
         return l3;
       }).desc("file link"),
       // Binary plus or minus operator.
-      binaryPlusMinus: (_17) => parsimmon_umd_minExports.regexp(/\+|-/).map((str) => str).desc("'+' or '-'"),
+      binaryPlusMinus: (_18) => parsimmon_umd_minExports.regexp(/\+|-/).map((str) => str).desc("'+' or '-'"),
       // Binary times or divide operator.
-      binaryMulDiv: (_17) => parsimmon_umd_minExports.regexp(/\*|\/|%/).map((str) => str).desc("'*' or '/' or '%'"),
+      binaryMulDiv: (_18) => parsimmon_umd_minExports.regexp(/\*|\/|%/).map((str) => str).desc("'*' or '/' or '%'"),
       // Binary comparison operator.
-      binaryCompareOp: (_17) => parsimmon_umd_minExports.regexp(/>=|<=|!=|>|<|=/).map((str) => str).desc("'>=' or '<=' or '!=' or '=' or '>' or '<'"),
+      binaryCompareOp: (_18) => parsimmon_umd_minExports.regexp(/>=|<=|!=|>|<|=/).map((str) => str).desc("'>=' or '<=' or '!=' or '=' or '>' or '<'"),
       // Binary boolean combination operator.
-      binaryBooleanOp: (_17) => parsimmon_umd_minExports.regexp(/and|or|&|\|/i).map((str) => {
+      binaryBooleanOp: (_18) => parsimmon_umd_minExports.regexp(/and|or|&|\|/i).map((str) => {
         if (str.toLowerCase() == "and")
           return "&";
         else if (str.toLowerCase() == "or")
@@ -7384,22 +7384,22 @@ var require_lib = __commonJS({
           return str;
       }).desc("'and' or 'or'"),
       // A date which can be YYYY-MM[-DDTHH:mm:ss].
-      rootDate: (_17) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.regexp(/\d{4}/), parsimmon_umd_minExports.string("-"), parsimmon_umd_minExports.regexp(/\d{2}/), (year, _18, month) => {
+      rootDate: (_18) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.regexp(/\d{4}/), parsimmon_umd_minExports.string("-"), parsimmon_umd_minExports.regexp(/\d{2}/), (year, _19, month) => {
         return DateTime2.fromObject({ year: Number.parseInt(year), month: Number.parseInt(month) });
       }).desc("date in format YYYY-MM[-DDTHH-MM-SS.MS]"),
-      dateShorthand: (_17) => parsimmon_umd_minExports.alt(...Object.keys(DATE_SHORTHANDS).sort((a, b) => b.length - a.length).map(parsimmon_umd_minExports.string)),
-      date: (q) => chainOpt(q.rootDate, (ym) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("-"), parsimmon_umd_minExports.regexp(/\d{2}/), (_17, day) => ym.set({ day: Number.parseInt(day) })), (ymd) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("T"), parsimmon_umd_minExports.regexp(/\d{2}/), (_17, hour) => ymd.set({ hour: Number.parseInt(hour) })), (ymdh) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string(":"), parsimmon_umd_minExports.regexp(/\d{2}/), (_17, minute) => ymdh.set({ minute: Number.parseInt(minute) })), (ymdhm) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string(":"), parsimmon_umd_minExports.regexp(/\d{2}/), (_17, second) => ymdhm.set({ second: Number.parseInt(second) })), (ymdhms) => parsimmon_umd_minExports.alt(
-        parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("."), parsimmon_umd_minExports.regexp(/\d{3}/), (_17, millisecond) => ymdhms.set({ millisecond: Number.parseInt(millisecond) })),
+      dateShorthand: (_18) => parsimmon_umd_minExports.alt(...Object.keys(DATE_SHORTHANDS).sort((a, b) => b.length - a.length).map(parsimmon_umd_minExports.string)),
+      date: (q) => chainOpt(q.rootDate, (ym) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("-"), parsimmon_umd_minExports.regexp(/\d{2}/), (_18, day) => ym.set({ day: Number.parseInt(day) })), (ymd) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("T"), parsimmon_umd_minExports.regexp(/\d{2}/), (_18, hour) => ymd.set({ hour: Number.parseInt(hour) })), (ymdh) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string(":"), parsimmon_umd_minExports.regexp(/\d{2}/), (_18, minute) => ymdh.set({ minute: Number.parseInt(minute) })), (ymdhm) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string(":"), parsimmon_umd_minExports.regexp(/\d{2}/), (_18, second) => ymdhm.set({ second: Number.parseInt(second) })), (ymdhms) => parsimmon_umd_minExports.alt(
+        parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("."), parsimmon_umd_minExports.regexp(/\d{3}/), (_18, millisecond) => ymdhms.set({ millisecond: Number.parseInt(millisecond) })),
         parsimmon_umd_minExports.succeed(ymdhms)
         // pass
       ), (dt) => parsimmon_umd_minExports.alt(parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("+").or(parsimmon_umd_minExports.string("-")), parsimmon_umd_minExports.regexp(/\d{1,2}(:\d{2})?/), (pm, hr) => dt.setZone("UTC" + pm + hr, { keepLocalTime: true })), parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("Z"), () => dt.setZone("utc", { keepLocalTime: true })), parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("["), parsimmon_umd_minExports.regexp(/[0-9A-Za-z+-\/]+/u), parsimmon_umd_minExports.string("]"), (_a, zone, _b) => dt.setZone(zone, { keepLocalTime: true })))).assert((dt) => dt.isValid, "valid date").desc("date in format YYYY-MM[-DDTHH-MM-SS.MS]"),
       // A date, plus various shorthand times of day it could be.
       datePlus: (q) => parsimmon_umd_minExports.alt(q.dateShorthand.map((d) => DATE_SHORTHANDS[d]()), q.date).desc("date in format YYYY-MM[-DDTHH-MM-SS.MS] or in shorthand"),
       // A duration of time.
-      durationType: (_17) => parsimmon_umd_minExports.alt(...Object.keys(DURATION_TYPES).sort((a, b) => b.length - a.length).map(parsimmon_umd_minExports.string)),
-      duration: (q) => parsimmon_umd_minExports.seqMap(q.number, parsimmon_umd_minExports.optWhitespace, q.durationType, (count, _17, t) => DURATION_TYPES[t].mapUnits((x) => x * count)).sepBy1(parsimmon_umd_minExports.string(",").trim(parsimmon_umd_minExports.optWhitespace).or(parsimmon_umd_minExports.optWhitespace)).map((durations) => durations.reduce((p, c) => p.plus(c))).desc("duration like 4hr2min"),
+      durationType: (_18) => parsimmon_umd_minExports.alt(...Object.keys(DURATION_TYPES).sort((a, b) => b.length - a.length).map(parsimmon_umd_minExports.string)),
+      duration: (q) => parsimmon_umd_minExports.seqMap(q.number, parsimmon_umd_minExports.optWhitespace, q.durationType, (count, _18, t) => DURATION_TYPES[t].mapUnits((x) => x * count)).sepBy1(parsimmon_umd_minExports.string(",").trim(parsimmon_umd_minExports.optWhitespace).or(parsimmon_umd_minExports.optWhitespace)).map((durations) => durations.reduce((p, c) => p.plus(c))).desc("duration like 4hr2min"),
       // A raw null value.
-      rawNull: (_17) => parsimmon_umd_minExports.string("null"),
+      rawNull: (_18) => parsimmon_umd_minExports.string("null"),
       // Source parsing.
       tagSource: (q) => q.tag.map((tag) => Sources.tag(tag)),
       csvSource: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("csv(").skip(parsimmon_umd_minExports.optWhitespace), q.string, parsimmon_umd_minExports.string(")"), (_1, path2, _22) => Sources.csv(path2)),
@@ -7407,7 +7407,7 @@ var require_lib = __commonJS({
       linkOutgoingSource: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("outgoing(").skip(parsimmon_umd_minExports.optWhitespace), q.link, parsimmon_umd_minExports.string(")"), (_1, link, _22) => Sources.link(link.path, false)),
       folderSource: (q) => q.string.map((str) => Sources.folder(str)),
       parensSource: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("("), parsimmon_umd_minExports.optWhitespace, q.source, parsimmon_umd_minExports.optWhitespace, parsimmon_umd_minExports.string(")"), (_1, _22, field, _32, _42) => field),
-      negateSource: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.alt(parsimmon_umd_minExports.string("-"), parsimmon_umd_minExports.string("!")), q.atomSource, (_17, source) => Sources.negate(source)),
+      negateSource: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.alt(parsimmon_umd_minExports.string("-"), parsimmon_umd_minExports.string("!")), q.atomSource, (_18, source) => Sources.negate(source)),
       atomSource: (q) => parsimmon_umd_minExports.alt(q.parensSource, q.negateSource, q.linkOutgoingSource, q.linkIncomingSource, q.folderSource, q.tagSource, q.csvSource),
       binaryOpSource: (q) => createBinaryParser(q.atomSource, q.binaryBooleanOp.map((s3) => s3), Sources.binaryOp),
       source: (q) => q.binaryOpSource,
@@ -7424,7 +7424,7 @@ var require_lib = __commonJS({
       boolField: (q) => q.bool.map((val) => Fields.literal(val)).desc("boolean"),
       dateField: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("date("), parsimmon_umd_minExports.optWhitespace, q.datePlus, parsimmon_umd_minExports.optWhitespace, parsimmon_umd_minExports.string(")"), (prefix2, _1, date, _22, postfix) => Fields.literal(date)).desc("date"),
       durationField: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("dur("), parsimmon_umd_minExports.optWhitespace, q.duration, parsimmon_umd_minExports.optWhitespace, parsimmon_umd_minExports.string(")"), (prefix2, _1, dur, _22, postfix) => Fields.literal(dur)).desc("duration"),
-      nullField: (q) => q.rawNull.map((_17) => Fields.NULL),
+      nullField: (q) => q.rawNull.map((_18) => Fields.NULL),
       linkField: (q) => q.link.map((f) => Fields.literal(f)),
       listField: (q) => q.field.sepBy(parsimmon_umd_minExports.string(",").trim(parsimmon_umd_minExports.optWhitespace)).wrap(parsimmon_umd_minExports.string("[").skip(parsimmon_umd_minExports.optWhitespace), parsimmon_umd_minExports.optWhitespace.then(parsimmon_umd_minExports.string("]"))).map((l3) => Fields.list(l3)).desc("list ('[1, 2, 3]')"),
       objectField: (q) => parsimmon_umd_minExports.seqMap(q.identifier.or(q.string), parsimmon_umd_minExports.string(":").trim(parsimmon_umd_minExports.optWhitespace), q.field, (name, _sep, value) => {
@@ -7472,18 +7472,18 @@ var require_lib = __commonJS({
         }
         return result;
       }),
-      negatedField: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("!"), q.indexField, (_17, field) => Fields.negate(field)).desc("negated field"),
+      negatedField: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("!"), q.indexField, (_18, field) => Fields.negate(field)).desc("negated field"),
       parensField: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("("), parsimmon_umd_minExports.optWhitespace, q.field, parsimmon_umd_minExports.optWhitespace, parsimmon_umd_minExports.string(")"), (_1, _22, field, _32, _42) => field),
       lambdaField: (q) => parsimmon_umd_minExports.seqMap(q.identifier.sepBy(parsimmon_umd_minExports.string(",").trim(parsimmon_umd_minExports.optWhitespace)).wrap(parsimmon_umd_minExports.string("(").trim(parsimmon_umd_minExports.optWhitespace), parsimmon_umd_minExports.string(")").trim(parsimmon_umd_minExports.optWhitespace)), parsimmon_umd_minExports.string("=>").trim(parsimmon_umd_minExports.optWhitespace), q.field, (ident, _ignore, value) => {
         return { type: "lambda", arguments: ident, value };
       }),
-      dotPostfix: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("."), q.identifier, (_17, field) => {
+      dotPostfix: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("."), q.identifier, (_18, field) => {
         return { type: "dot", field };
       }),
-      indexPostfix: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("["), parsimmon_umd_minExports.optWhitespace, q.field, parsimmon_umd_minExports.optWhitespace, parsimmon_umd_minExports.string("]"), (_17, _22, field, _32, _42) => {
+      indexPostfix: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("["), parsimmon_umd_minExports.optWhitespace, q.field, parsimmon_umd_minExports.optWhitespace, parsimmon_umd_minExports.string("]"), (_18, _22, field, _32, _42) => {
         return { type: "index", field };
       }),
-      functionPostfix: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("("), parsimmon_umd_minExports.optWhitespace, q.field.sepBy(parsimmon_umd_minExports.string(",").trim(parsimmon_umd_minExports.optWhitespace)), parsimmon_umd_minExports.optWhitespace, parsimmon_umd_minExports.string(")"), (_17, _1, fields, _22, _32) => {
+      functionPostfix: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("("), parsimmon_umd_minExports.optWhitespace, q.field.sepBy(parsimmon_umd_minExports.string(",").trim(parsimmon_umd_minExports.optWhitespace)), parsimmon_umd_minExports.optWhitespace, parsimmon_umd_minExports.string(")"), (_18, _1, fields, _22, _32) => {
         return { type: "function", fields };
       }),
       // The precedence hierarchy of operators - multiply/divide, add/subtract, compare, and then boolean operations.
@@ -7574,7 +7574,7 @@ var require_lib = __commonJS({
         }
       }).desc("TABLE or LIST or TASK or CALENDAR"),
       fromClause: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.regexp(/FROM/i), parsimmon_umd_minExports.whitespace, EXPRESSION.source, (_1, _22, source) => source),
-      whereClause: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.regexp(/WHERE/i), parsimmon_umd_minExports.whitespace, EXPRESSION.field, (where, _17, field) => {
+      whereClause: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.regexp(/WHERE/i), parsimmon_umd_minExports.whitespace, EXPRESSION.field, (where, _18, field) => {
         return { type: "where", clause: field };
       }).desc("WHERE <expression>"),
       sortByClause: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.regexp(/SORT/i), parsimmon_umd_minExports.whitespace, q.sortField.sepBy1(parsimmon_umd_minExports.string(",").trim(parsimmon_umd_minExports.optWhitespace)), (sort, _1, fields) => {
@@ -7583,10 +7583,10 @@ var require_lib = __commonJS({
       limitClause: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.regexp(/LIMIT/i), parsimmon_umd_minExports.whitespace, EXPRESSION.field, (limit, _1, field) => {
         return { type: "limit", amount: field };
       }).desc("LIMIT <value>"),
-      flattenClause: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.regexp(/FLATTEN/i).skip(parsimmon_umd_minExports.whitespace), q.namedField, (_17, field) => {
+      flattenClause: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.regexp(/FLATTEN/i).skip(parsimmon_umd_minExports.whitespace), q.namedField, (_18, field) => {
         return { type: "flatten", field };
       }).desc("FLATTEN <value> [AS <name>]"),
-      groupByClause: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.regexp(/GROUP BY/i).skip(parsimmon_umd_minExports.whitespace), q.namedField, (_17, field) => {
+      groupByClause: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.regexp(/GROUP BY/i).skip(parsimmon_umd_minExports.whitespace), q.namedField, (_18, field) => {
         return { type: "group", field };
       }).desc("GROUP BY <value> [AS <name>]"),
       // Full query parsing.
@@ -7978,16 +7978,16 @@ var require_lodash = __commonJS({
         return func.apply(thisArg, args);
       }
       function arrayAggregator(array, setter, iteratee, accumulator) {
-        var index = -1, length2 = array == null ? 0 : array.length;
-        while (++index < length2) {
+        var index = -1, length = array == null ? 0 : array.length;
+        while (++index < length) {
           var value = array[index];
           setter(accumulator, value, iteratee(value), array);
         }
         return accumulator;
       }
       function arrayEach(array, iteratee) {
-        var index = -1, length2 = array == null ? 0 : array.length;
-        while (++index < length2) {
+        var index = -1, length = array == null ? 0 : array.length;
+        while (++index < length) {
           if (iteratee(array[index], index, array) === false) {
             break;
           }
@@ -7995,17 +7995,17 @@ var require_lodash = __commonJS({
         return array;
       }
       function arrayEachRight(array, iteratee) {
-        var length2 = array == null ? 0 : array.length;
-        while (length2--) {
-          if (iteratee(array[length2], length2, array) === false) {
+        var length = array == null ? 0 : array.length;
+        while (length--) {
+          if (iteratee(array[length], length, array) === false) {
             break;
           }
         }
         return array;
       }
       function arrayEvery(array, predicate) {
-        var index = -1, length2 = array == null ? 0 : array.length;
-        while (++index < length2) {
+        var index = -1, length = array == null ? 0 : array.length;
+        while (++index < length) {
           if (!predicate(array[index], index, array)) {
             return false;
           }
@@ -8013,8 +8013,8 @@ var require_lodash = __commonJS({
         return true;
       }
       function arrayFilter(array, predicate) {
-        var index = -1, length2 = array == null ? 0 : array.length, resIndex = 0, result = [];
-        while (++index < length2) {
+        var index = -1, length = array == null ? 0 : array.length, resIndex = 0, result = [];
+        while (++index < length) {
           var value = array[index];
           if (predicate(value, index, array)) {
             result[resIndex++] = value;
@@ -8023,12 +8023,12 @@ var require_lodash = __commonJS({
         return result;
       }
       function arrayIncludes(array, value) {
-        var length2 = array == null ? 0 : array.length;
-        return !!length2 && baseIndexOf(array, value, 0) > -1;
+        var length = array == null ? 0 : array.length;
+        return !!length && baseIndexOf(array, value, 0) > -1;
       }
       function arrayIncludesWith(array, value, comparator) {
-        var index = -1, length2 = array == null ? 0 : array.length;
-        while (++index < length2) {
+        var index = -1, length = array == null ? 0 : array.length;
+        while (++index < length) {
           if (comparator(value, array[index])) {
             return true;
           }
@@ -8036,42 +8036,42 @@ var require_lodash = __commonJS({
         return false;
       }
       function arrayMap(array, iteratee) {
-        var index = -1, length2 = array == null ? 0 : array.length, result = Array(length2);
-        while (++index < length2) {
+        var index = -1, length = array == null ? 0 : array.length, result = Array(length);
+        while (++index < length) {
           result[index] = iteratee(array[index], index, array);
         }
         return result;
       }
       function arrayPush(array, values) {
-        var index = -1, length2 = values.length, offset2 = array.length;
-        while (++index < length2) {
+        var index = -1, length = values.length, offset2 = array.length;
+        while (++index < length) {
           array[offset2 + index] = values[index];
         }
         return array;
       }
       function arrayReduce(array, iteratee, accumulator, initAccum) {
-        var index = -1, length2 = array == null ? 0 : array.length;
-        if (initAccum && length2) {
+        var index = -1, length = array == null ? 0 : array.length;
+        if (initAccum && length) {
           accumulator = array[++index];
         }
-        while (++index < length2) {
+        while (++index < length) {
           accumulator = iteratee(accumulator, array[index], index, array);
         }
         return accumulator;
       }
       function arrayReduceRight(array, iteratee, accumulator, initAccum) {
-        var length2 = array == null ? 0 : array.length;
-        if (initAccum && length2) {
-          accumulator = array[--length2];
+        var length = array == null ? 0 : array.length;
+        if (initAccum && length) {
+          accumulator = array[--length];
         }
-        while (length2--) {
-          accumulator = iteratee(accumulator, array[length2], length2, array);
+        while (length--) {
+          accumulator = iteratee(accumulator, array[length], length, array);
         }
         return accumulator;
       }
       function arraySome(array, predicate) {
-        var index = -1, length2 = array == null ? 0 : array.length;
-        while (++index < length2) {
+        var index = -1, length = array == null ? 0 : array.length;
+        while (++index < length) {
           if (predicate(array[index], index, array)) {
             return true;
           }
@@ -8096,8 +8096,8 @@ var require_lodash = __commonJS({
         return result;
       }
       function baseFindIndex(array, predicate, fromIndex, fromRight) {
-        var length2 = array.length, index = fromIndex + (fromRight ? 1 : -1);
-        while (fromRight ? index-- : ++index < length2) {
+        var length = array.length, index = fromIndex + (fromRight ? 1 : -1);
+        while (fromRight ? index-- : ++index < length) {
           if (predicate(array[index], index, array)) {
             return index;
           }
@@ -8108,8 +8108,8 @@ var require_lodash = __commonJS({
         return value === value ? strictIndexOf(array, value, fromIndex) : baseFindIndex(array, baseIsNaN, fromIndex);
       }
       function baseIndexOfWith(array, value, fromIndex, comparator) {
-        var index = fromIndex - 1, length2 = array.length;
-        while (++index < length2) {
+        var index = fromIndex - 1, length = array.length;
+        while (++index < length) {
           if (comparator(array[index], value)) {
             return index;
           }
@@ -8120,8 +8120,8 @@ var require_lodash = __commonJS({
         return value !== value;
       }
       function baseMean(array, iteratee) {
-        var length2 = array == null ? 0 : array.length;
-        return length2 ? baseSum(array, iteratee) / length2 : NAN;
+        var length = array == null ? 0 : array.length;
+        return length ? baseSum(array, iteratee) / length : NAN;
       }
       function baseProperty(key2) {
         return function(object) {
@@ -8140,16 +8140,16 @@ var require_lodash = __commonJS({
         return accumulator;
       }
       function baseSortBy(array, comparer) {
-        var length2 = array.length;
+        var length = array.length;
         array.sort(comparer);
-        while (length2--) {
-          array[length2] = array[length2].value;
+        while (length--) {
+          array[length] = array[length].value;
         }
         return array;
       }
       function baseSum(array, iteratee) {
-        var result, index = -1, length2 = array.length;
-        while (++index < length2) {
+        var result, index = -1, length = array.length;
+        while (++index < length) {
           var current2 = iteratee(array[index]);
           if (current2 !== undefined2) {
             result = result === undefined2 ? current2 : result + current2;
@@ -8186,8 +8186,8 @@ var require_lodash = __commonJS({
         return cache.has(key2);
       }
       function charsStartIndex(strSymbols, chrSymbols) {
-        var index = -1, length2 = strSymbols.length;
-        while (++index < length2 && baseIndexOf(chrSymbols, strSymbols[index], 0) > -1) {
+        var index = -1, length = strSymbols.length;
+        while (++index < length && baseIndexOf(chrSymbols, strSymbols[index], 0) > -1) {
         }
         return index;
       }
@@ -8198,9 +8198,9 @@ var require_lodash = __commonJS({
         return index;
       }
       function countHolders(array, placeholder) {
-        var length2 = array.length, result = 0;
-        while (length2--) {
-          if (array[length2] === placeholder) {
+        var length = array.length, result = 0;
+        while (length--) {
+          if (array[length] === placeholder) {
             ++result;
           }
         }
@@ -8240,8 +8240,8 @@ var require_lodash = __commonJS({
         };
       }
       function replaceHolders(array, placeholder) {
-        var index = -1, length2 = array.length, resIndex = 0, result = [];
-        while (++index < length2) {
+        var index = -1, length = array.length, resIndex = 0, result = [];
+        while (++index < length) {
           var value = array[index];
           if (value === placeholder || value === PLACEHOLDER) {
             array[index] = PLACEHOLDER;
@@ -8265,8 +8265,8 @@ var require_lodash = __commonJS({
         return result;
       }
       function strictIndexOf(array, value, fromIndex) {
-        var index = fromIndex - 1, length2 = array.length;
-        while (++index < length2) {
+        var index = fromIndex - 1, length = array.length;
+        while (++index < length) {
           if (array[index] === value) {
             return index;
           }
@@ -8309,7 +8309,7 @@ var require_lodash = __commonJS({
         return string.match(reUnicodeWord) || [];
       }
       var runInContext = function runInContext2(context) {
-        context = context == null ? root : _17.defaults(root.Object(), context, _17.pick(root, contextProps));
+        context = context == null ? root : _18.defaults(root.Object(), context, _18.pick(root, contextProps));
         var Array2 = context.Array, Date2 = context.Date, Error2 = context.Error, Function2 = context.Function, Math2 = context.Math, Object2 = context.Object, RegExp2 = context.RegExp, String2 = context.String, TypeError2 = context.TypeError;
         var arrayProto = Array2.prototype, funcProto = Function2.prototype, objectProto = Object2.prototype;
         var coreJsData = context["__core-js_shared__"];
@@ -8458,13 +8458,13 @@ var require_lodash = __commonJS({
           return result2;
         }
         function lazyValue() {
-          var array = this.__wrapped__.value(), dir = this.__dir__, isArr = isArray(array), isRight = dir < 0, arrLength = isArr ? array.length : 0, view = getView(0, arrLength, this.__views__), start = view.start, end = view.end, length2 = end - start, index = isRight ? end : start - 1, iteratees = this.__iteratees__, iterLength = iteratees.length, resIndex = 0, takeCount = nativeMin(length2, this.__takeCount__);
-          if (!isArr || !isRight && arrLength == length2 && takeCount == length2) {
+          var array = this.__wrapped__.value(), dir = this.__dir__, isArr = isArray(array), isRight = dir < 0, arrLength = isArr ? array.length : 0, view = getView(0, arrLength, this.__views__), start = view.start, end = view.end, length = end - start, index = isRight ? end : start - 1, iteratees = this.__iteratees__, iterLength = iteratees.length, resIndex = 0, takeCount = nativeMin(length, this.__takeCount__);
+          if (!isArr || !isRight && arrLength == length && takeCount == length) {
             return baseWrapperValue(array, this.__actions__);
           }
           var result2 = [];
           outer:
-            while (length2-- && resIndex < takeCount) {
+            while (length-- && resIndex < takeCount) {
               index += dir;
               var iterIndex = -1, value = array[index];
               while (++iterIndex < iterLength) {
@@ -8486,9 +8486,9 @@ var require_lodash = __commonJS({
         LazyWrapper.prototype = baseCreate(baseLodash.prototype);
         LazyWrapper.prototype.constructor = LazyWrapper;
         function Hash(entries) {
-          var index = -1, length2 = entries == null ? 0 : entries.length;
+          var index = -1, length = entries == null ? 0 : entries.length;
           this.clear();
-          while (++index < length2) {
+          while (++index < length) {
             var entry = entries[index];
             this.set(entry[0], entry[1]);
           }
@@ -8526,9 +8526,9 @@ var require_lodash = __commonJS({
         Hash.prototype.has = hashHas;
         Hash.prototype.set = hashSet;
         function ListCache(entries) {
-          var index = -1, length2 = entries == null ? 0 : entries.length;
+          var index = -1, length = entries == null ? 0 : entries.length;
           this.clear();
-          while (++index < length2) {
+          while (++index < length) {
             var entry = entries[index];
             this.set(entry[0], entry[1]);
           }
@@ -8574,9 +8574,9 @@ var require_lodash = __commonJS({
         ListCache.prototype.has = listCacheHas;
         ListCache.prototype.set = listCacheSet;
         function MapCache(entries) {
-          var index = -1, length2 = entries == null ? 0 : entries.length;
+          var index = -1, length = entries == null ? 0 : entries.length;
           this.clear();
-          while (++index < length2) {
+          while (++index < length) {
             var entry = entries[index];
             this.set(entry[0], entry[1]);
           }
@@ -8612,9 +8612,9 @@ var require_lodash = __commonJS({
         MapCache.prototype.has = mapCacheHas;
         MapCache.prototype.set = mapCacheSet;
         function SetCache(values2) {
-          var index = -1, length2 = values2 == null ? 0 : values2.length;
+          var index = -1, length = values2 == null ? 0 : values2.length;
           this.__data__ = new MapCache();
-          while (++index < length2) {
+          while (++index < length) {
             this.add(values2[index]);
           }
         }
@@ -8667,21 +8667,21 @@ var require_lodash = __commonJS({
         Stack.prototype.has = stackHas;
         Stack.prototype.set = stackSet;
         function arrayLikeKeys(value, inherited) {
-          var isArr = isArray(value), isArg = !isArr && isArguments(value), isBuff = !isArr && !isArg && isBuffer(value), isType = !isArr && !isArg && !isBuff && isTypedArray(value), skipIndexes = isArr || isArg || isBuff || isType, result2 = skipIndexes ? baseTimes(value.length, String2) : [], length2 = result2.length;
+          var isArr = isArray(value), isArg = !isArr && isArguments(value), isBuff = !isArr && !isArg && isBuffer(value), isType = !isArr && !isArg && !isBuff && isTypedArray(value), skipIndexes = isArr || isArg || isBuff || isType, result2 = skipIndexes ? baseTimes(value.length, String2) : [], length = result2.length;
           for (var key2 in value) {
             if ((inherited || hasOwnProperty2.call(value, key2)) && !(skipIndexes && // Safari 9 has enumerable `arguments.length` in strict mode.
             (key2 == "length" || // Node.js 0.10 has enumerable non-index properties on buffers.
             isBuff && (key2 == "offset" || key2 == "parent") || // PhantomJS 2 has enumerable non-index properties on typed arrays.
             isType && (key2 == "buffer" || key2 == "byteLength" || key2 == "byteOffset") || // Skip index properties.
-            isIndex(key2, length2)))) {
+            isIndex(key2, length)))) {
               result2.push(key2);
             }
           }
           return result2;
         }
         function arraySample(array) {
-          var length2 = array.length;
-          return length2 ? array[baseRandom(0, length2 - 1)] : undefined2;
+          var length = array.length;
+          return length ? array[baseRandom(0, length - 1)] : undefined2;
         }
         function arraySampleSize(array, n2) {
           return shuffleSelf(copyArray(array), baseClamp(n2, 0, array.length));
@@ -8701,10 +8701,10 @@ var require_lodash = __commonJS({
           }
         }
         function assocIndexOf(array, key2) {
-          var length2 = array.length;
-          while (length2--) {
-            if (eq(array[length2][0], key2)) {
-              return length2;
+          var length = array.length;
+          while (length--) {
+            if (eq(array[length][0], key2)) {
+              return length;
             }
           }
           return -1;
@@ -8734,8 +8734,8 @@ var require_lodash = __commonJS({
           }
         }
         function baseAt(object, paths) {
-          var index = -1, length2 = paths.length, result2 = Array2(length2), skip = object == null;
-          while (++index < length2) {
+          var index = -1, length = paths.length, result2 = Array2(length), skip = object == null;
+          while (++index < length) {
             result2[index] = skip ? undefined2 : get(object, paths[index]);
           }
           return result2;
@@ -8818,13 +8818,13 @@ var require_lodash = __commonJS({
           };
         }
         function baseConformsTo(object, source, props) {
-          var length2 = props.length;
+          var length = props.length;
           if (object == null) {
-            return !length2;
+            return !length;
           }
           object = Object2(object);
-          while (length2--) {
-            var key2 = props[length2], predicate = source[key2], value = object[key2];
+          while (length--) {
+            var key2 = props[length], predicate = source[key2], value = object[key2];
             if (value === undefined2 && !(key2 in object) || !predicate(value)) {
               return false;
             }
@@ -8840,8 +8840,8 @@ var require_lodash = __commonJS({
           }, wait);
         }
         function baseDifference(array, values2, iteratee2, comparator) {
-          var index = -1, includes2 = arrayIncludes, isCommon = true, length2 = array.length, result2 = [], valuesLength = values2.length;
-          if (!length2) {
+          var index = -1, includes2 = arrayIncludes, isCommon = true, length = array.length, result2 = [], valuesLength = values2.length;
+          if (!length) {
             return result2;
           }
           if (iteratee2) {
@@ -8856,7 +8856,7 @@ var require_lodash = __commonJS({
             values2 = new SetCache(values2);
           }
           outer:
-            while (++index < length2) {
+            while (++index < length) {
               var value = array[index], computed = iteratee2 == null ? value : iteratee2(value);
               value = comparator || value !== 0 ? value : 0;
               if (isCommon && computed === computed) {
@@ -8884,8 +8884,8 @@ var require_lodash = __commonJS({
           return result2;
         }
         function baseExtremum(array, iteratee2, comparator) {
-          var index = -1, length2 = array.length;
-          while (++index < length2) {
+          var index = -1, length = array.length;
+          while (++index < length) {
             var value = array[index], current2 = iteratee2(value);
             if (current2 != null && (computed === undefined2 ? current2 === current2 && !isSymbol(current2) : comparator(current2, computed))) {
               var computed = current2, result2 = value;
@@ -8894,14 +8894,14 @@ var require_lodash = __commonJS({
           return result2;
         }
         function baseFill(array, value, start, end) {
-          var length2 = array.length;
+          var length = array.length;
           start = toInteger(start);
           if (start < 0) {
-            start = -start > length2 ? 0 : length2 + start;
+            start = -start > length ? 0 : length + start;
           }
-          end = end === undefined2 || end > length2 ? length2 : toInteger(end);
+          end = end === undefined2 || end > length ? length : toInteger(end);
           if (end < 0) {
-            end += length2;
+            end += length;
           }
           end = start > end ? 0 : toLength(end);
           while (start < end) {
@@ -8919,10 +8919,10 @@ var require_lodash = __commonJS({
           return result2;
         }
         function baseFlatten(array, depth, predicate, isStrict, result2) {
-          var index = -1, length2 = array.length;
+          var index = -1, length = array.length;
           predicate || (predicate = isFlattenable);
           result2 || (result2 = []);
-          while (++index < length2) {
+          while (++index < length) {
             var value = array[index];
             if (depth > 0 && predicate(value)) {
               if (depth > 1) {
@@ -8951,11 +8951,11 @@ var require_lodash = __commonJS({
         }
         function baseGet(object, path2) {
           path2 = castPath(path2, object);
-          var index = 0, length2 = path2.length;
-          while (object != null && index < length2) {
+          var index = 0, length = path2.length;
+          while (object != null && index < length) {
             object = object[toKey(path2[index++])];
           }
-          return index && index == length2 ? object : undefined2;
+          return index && index == length ? object : undefined2;
         }
         function baseGetAllKeys(object, keysFunc, symbolsFunc) {
           var result2 = keysFunc(object);
@@ -8980,19 +8980,19 @@ var require_lodash = __commonJS({
           return number >= nativeMin(start, end) && number < nativeMax(start, end);
         }
         function baseIntersection(arrays, iteratee2, comparator) {
-          var includes2 = comparator ? arrayIncludesWith : arrayIncludes, length2 = arrays[0].length, othLength = arrays.length, othIndex = othLength, caches = Array2(othLength), maxLength = Infinity, result2 = [];
+          var includes2 = comparator ? arrayIncludesWith : arrayIncludes, length = arrays[0].length, othLength = arrays.length, othIndex = othLength, caches = Array2(othLength), maxLength = Infinity, result2 = [];
           while (othIndex--) {
             var array = arrays[othIndex];
             if (othIndex && iteratee2) {
               array = arrayMap(array, baseUnary(iteratee2));
             }
             maxLength = nativeMin(array.length, maxLength);
-            caches[othIndex] = !comparator && (iteratee2 || length2 >= 120 && array.length >= 120) ? new SetCache(othIndex && array) : undefined2;
+            caches[othIndex] = !comparator && (iteratee2 || length >= 120 && array.length >= 120) ? new SetCache(othIndex && array) : undefined2;
           }
           array = arrays[0];
           var index = -1, seen = caches[0];
           outer:
-            while (++index < length2 && result2.length < maxLength) {
+            while (++index < length && result2.length < maxLength) {
               var value = array[index], computed = iteratee2 ? iteratee2(value) : value;
               value = comparator || value !== 0 ? value : 0;
               if (!(seen ? cacheHas(seen, computed) : includes2(result2, computed, comparator))) {
@@ -9075,9 +9075,9 @@ var require_lodash = __commonJS({
           return isObjectLike(value) && getTag(value) == mapTag;
         }
         function baseIsMatch(object, source, matchData, customizer) {
-          var index = matchData.length, length2 = index, noCustomizer = !customizer;
+          var index = matchData.length, length = index, noCustomizer = !customizer;
           if (object == null) {
-            return !length2;
+            return !length;
           }
           object = Object2(object);
           while (index--) {
@@ -9086,7 +9086,7 @@ var require_lodash = __commonJS({
               return false;
             }
           }
-          while (++index < length2) {
+          while (++index < length) {
             data = matchData[index];
             var key2 = data[0], objValue = object[key2], srcValue = data[1];
             if (noCustomizer && data[2]) {
@@ -9246,12 +9246,12 @@ var require_lodash = __commonJS({
           assignMergeValue(object, key2, newValue);
         }
         function baseNth(array, n2) {
-          var length2 = array.length;
-          if (!length2) {
+          var length = array.length;
+          if (!length) {
             return;
           }
-          n2 += n2 < 0 ? length2 : 0;
-          return isIndex(n2, length2) ? array[n2] : undefined2;
+          n2 += n2 < 0 ? length : 0;
+          return isIndex(n2, length) ? array[n2] : undefined2;
         }
         function baseOrderBy(collection, iteratees, orders) {
           if (iteratees.length) {
@@ -9284,8 +9284,8 @@ var require_lodash = __commonJS({
           });
         }
         function basePickBy(object, paths, predicate) {
-          var index = -1, length2 = paths.length, result2 = {};
-          while (++index < length2) {
+          var index = -1, length = paths.length, result2 = {};
+          while (++index < length) {
             var path2 = paths[index], value = baseGet(object, path2);
             if (predicate(value, path2)) {
               baseSet(result2, castPath(path2, object), value);
@@ -9299,14 +9299,14 @@ var require_lodash = __commonJS({
           };
         }
         function basePullAll(array, values2, iteratee2, comparator) {
-          var indexOf2 = comparator ? baseIndexOfWith : baseIndexOf, index = -1, length2 = values2.length, seen = array;
+          var indexOf2 = comparator ? baseIndexOfWith : baseIndexOf, index = -1, length = values2.length, seen = array;
           if (array === values2) {
             values2 = copyArray(values2);
           }
           if (iteratee2) {
             seen = arrayMap(array, baseUnary(iteratee2));
           }
-          while (++index < length2) {
+          while (++index < length) {
             var fromIndex = 0, value = values2[index], computed = iteratee2 ? iteratee2(value) : value;
             while ((fromIndex = indexOf2(seen, computed, fromIndex, comparator)) > -1) {
               if (seen !== array) {
@@ -9318,10 +9318,10 @@ var require_lodash = __commonJS({
           return array;
         }
         function basePullAt(array, indexes) {
-          var length2 = array ? indexes.length : 0, lastIndex = length2 - 1;
-          while (length2--) {
-            var index = indexes[length2];
-            if (length2 == lastIndex || index !== previous) {
+          var length = array ? indexes.length : 0, lastIndex = length - 1;
+          while (length--) {
+            var index = indexes[length];
+            if (length == lastIndex || index !== previous) {
               var previous = index;
               if (isIndex(index)) {
                 splice.call(array, index, 1);
@@ -9336,9 +9336,9 @@ var require_lodash = __commonJS({
           return lower + nativeFloor(nativeRandom() * (upper - lower + 1));
         }
         function baseRange(start, end, step, fromRight) {
-          var index = -1, length2 = nativeMax(nativeCeil((end - start) / (step || 1)), 0), result2 = Array2(length2);
-          while (length2--) {
-            result2[fromRight ? length2 : ++index] = start;
+          var index = -1, length = nativeMax(nativeCeil((end - start) / (step || 1)), 0), result2 = Array2(length);
+          while (length--) {
+            result2[fromRight ? length : ++index] = start;
             start += step;
           }
           return result2;
@@ -9374,8 +9374,8 @@ var require_lodash = __commonJS({
             return object;
           }
           path2 = castPath(path2, object);
-          var index = -1, length2 = path2.length, lastIndex = length2 - 1, nested = object;
-          while (nested != null && ++index < length2) {
+          var index = -1, length = path2.length, lastIndex = length - 1, nested = object;
+          while (nested != null && ++index < length) {
             var key2 = toKey(path2[index]), newValue = value;
             if (key2 === "__proto__" || key2 === "constructor" || key2 === "prototype") {
               return object;
@@ -9408,18 +9408,18 @@ var require_lodash = __commonJS({
           return shuffleSelf(values(collection));
         }
         function baseSlice(array, start, end) {
-          var index = -1, length2 = array.length;
+          var index = -1, length = array.length;
           if (start < 0) {
-            start = -start > length2 ? 0 : length2 + start;
+            start = -start > length ? 0 : length + start;
           }
-          end = end > length2 ? length2 : end;
+          end = end > length ? length : end;
           if (end < 0) {
-            end += length2;
+            end += length;
           }
-          length2 = start > end ? 0 : end - start >>> 0;
+          length = start > end ? 0 : end - start >>> 0;
           start >>>= 0;
-          var result2 = Array2(length2);
-          while (++index < length2) {
+          var result2 = Array2(length);
+          while (++index < length) {
             result2[index] = array[index + start];
           }
           return result2;
@@ -9478,8 +9478,8 @@ var require_lodash = __commonJS({
           return nativeMin(high, MAX_ARRAY_INDEX);
         }
         function baseSortedUniq(array, iteratee2) {
-          var index = -1, length2 = array.length, resIndex = 0, result2 = [];
-          while (++index < length2) {
+          var index = -1, length = array.length, resIndex = 0, result2 = [];
+          while (++index < length) {
             var value = array[index], computed = iteratee2 ? iteratee2(value) : value;
             if (!index || !eq(computed, seen)) {
               var seen = computed;
@@ -9511,11 +9511,11 @@ var require_lodash = __commonJS({
           return result2 == "0" && 1 / value == -INFINITY ? "-0" : result2;
         }
         function baseUniq(array, iteratee2, comparator) {
-          var index = -1, includes2 = arrayIncludes, length2 = array.length, isCommon = true, result2 = [], seen = result2;
+          var index = -1, includes2 = arrayIncludes, length = array.length, isCommon = true, result2 = [], seen = result2;
           if (comparator) {
             isCommon = false;
             includes2 = arrayIncludesWith;
-          } else if (length2 >= LARGE_ARRAY_SIZE) {
+          } else if (length >= LARGE_ARRAY_SIZE) {
             var set3 = iteratee2 ? null : createSet(array);
             if (set3) {
               return setToArray(set3);
@@ -9527,7 +9527,7 @@ var require_lodash = __commonJS({
             seen = iteratee2 ? [] : result2;
           }
           outer:
-            while (++index < length2) {
+            while (++index < length) {
               var value = array[index], computed = iteratee2 ? iteratee2(value) : value;
               value = comparator || value !== 0 ? value : 0;
               if (isCommon && computed === computed) {
@@ -9559,10 +9559,10 @@ var require_lodash = __commonJS({
           return baseSet(object, path2, updater(baseGet(object, path2)), customizer);
         }
         function baseWhile(array, predicate, isDrop, fromRight) {
-          var length2 = array.length, index = fromRight ? length2 : -1;
-          while ((fromRight ? index-- : ++index < length2) && predicate(array[index], index, array)) {
+          var length = array.length, index = fromRight ? length : -1;
+          while ((fromRight ? index-- : ++index < length) && predicate(array[index], index, array)) {
           }
-          return isDrop ? baseSlice(array, fromRight ? 0 : index, fromRight ? index + 1 : length2) : baseSlice(array, fromRight ? index + 1 : 0, fromRight ? length2 : index);
+          return isDrop ? baseSlice(array, fromRight ? 0 : index, fromRight ? index + 1 : length) : baseSlice(array, fromRight ? index + 1 : 0, fromRight ? length : index);
         }
         function baseWrapperValue(value, actions) {
           var result2 = value;
@@ -9574,14 +9574,14 @@ var require_lodash = __commonJS({
           }, result2);
         }
         function baseXor(arrays, iteratee2, comparator) {
-          var length2 = arrays.length;
-          if (length2 < 2) {
-            return length2 ? baseUniq(arrays[0]) : [];
+          var length = arrays.length;
+          if (length < 2) {
+            return length ? baseUniq(arrays[0]) : [];
           }
-          var index = -1, result2 = Array2(length2);
-          while (++index < length2) {
+          var index = -1, result2 = Array2(length);
+          while (++index < length) {
             var array = arrays[index], othIndex = -1;
-            while (++othIndex < length2) {
+            while (++othIndex < length) {
               if (othIndex != index) {
                 result2[index] = baseDifference(result2[index] || array, arrays[othIndex], iteratee2, comparator);
               }
@@ -9590,8 +9590,8 @@ var require_lodash = __commonJS({
           return baseUniq(baseFlatten(result2, 1), iteratee2, comparator);
         }
         function baseZipObject(props, values2, assignFunc) {
-          var index = -1, length2 = props.length, valsLength = values2.length, result2 = {};
-          while (++index < length2) {
+          var index = -1, length = props.length, valsLength = values2.length, result2 = {};
+          while (++index < length) {
             var value = index < valsLength ? values2[index] : undefined2;
             assignFunc(result2, props[index], value);
           }
@@ -9611,9 +9611,9 @@ var require_lodash = __commonJS({
         }
         var castRest = baseRest;
         function castSlice(array, start, end) {
-          var length2 = array.length;
-          end = end === undefined2 ? length2 : end;
-          return !start && end >= length2 ? array : baseSlice(array, start, end);
+          var length = array.length;
+          end = end === undefined2 ? length : end;
+          return !start && end >= length ? array : baseSlice(array, start, end);
         }
         var clearTimeout2 = ctxClearTimeout || function(id) {
           return root.clearTimeout(id);
@@ -9622,7 +9622,7 @@ var require_lodash = __commonJS({
           if (isDeep) {
             return buffer.slice();
           }
-          var length2 = buffer.length, result2 = allocUnsafe ? allocUnsafe(length2) : new buffer.constructor(length2);
+          var length = buffer.length, result2 = allocUnsafe ? allocUnsafe(length) : new buffer.constructor(length);
           buffer.copy(result2);
           return result2;
         }
@@ -9661,8 +9661,8 @@ var require_lodash = __commonJS({
           return 0;
         }
         function compareMultiple(object, other, orders) {
-          var index = -1, objCriteria = object.criteria, othCriteria = other.criteria, length2 = objCriteria.length, ordersLength = orders.length;
-          while (++index < length2) {
+          var index = -1, objCriteria = object.criteria, othCriteria = other.criteria, length = objCriteria.length, ordersLength = orders.length;
+          while (++index < length) {
             var result2 = compareAscending(objCriteria[index], othCriteria[index]);
             if (result2) {
               if (index >= ordersLength) {
@@ -9706,9 +9706,9 @@ var require_lodash = __commonJS({
           return result2;
         }
         function copyArray(source, array) {
-          var index = -1, length2 = source.length;
-          array || (array = Array2(length2));
-          while (++index < length2) {
+          var index = -1, length = source.length;
+          array || (array = Array2(length));
+          while (++index < length) {
             array[index] = source[index];
           }
           return array;
@@ -9716,8 +9716,8 @@ var require_lodash = __commonJS({
         function copyObject(source, props, object, customizer) {
           var isNew = !object;
           object || (object = {});
-          var index = -1, length2 = props.length;
-          while (++index < length2) {
+          var index = -1, length = props.length;
+          while (++index < length) {
             var key2 = props[index];
             var newValue = customizer ? customizer(object[key2], source[key2], key2, object, source) : undefined2;
             if (newValue === undefined2) {
@@ -9745,14 +9745,14 @@ var require_lodash = __commonJS({
         }
         function createAssigner(assigner) {
           return baseRest(function(object, sources) {
-            var index = -1, length2 = sources.length, customizer = length2 > 1 ? sources[length2 - 1] : undefined2, guard = length2 > 2 ? sources[2] : undefined2;
-            customizer = assigner.length > 3 && typeof customizer == "function" ? (length2--, customizer) : undefined2;
+            var index = -1, length = sources.length, customizer = length > 1 ? sources[length - 1] : undefined2, guard = length > 2 ? sources[2] : undefined2;
+            customizer = assigner.length > 3 && typeof customizer == "function" ? (length--, customizer) : undefined2;
             if (guard && isIterateeCall(sources[0], sources[1], guard)) {
-              customizer = length2 < 3 ? undefined2 : customizer;
-              length2 = 1;
+              customizer = length < 3 ? undefined2 : customizer;
+              length = 1;
             }
             object = Object2(object);
-            while (++index < length2) {
+            while (++index < length) {
               var source = sources[index];
               if (source) {
                 assigner(object, source, index, customizer);
@@ -9769,8 +9769,8 @@ var require_lodash = __commonJS({
             if (!isArrayLike(collection)) {
               return eachFunc(collection, iteratee2);
             }
-            var length2 = collection.length, index = fromRight ? length2 : -1, iterable = Object2(collection);
-            while (fromRight ? index-- : ++index < length2) {
+            var length = collection.length, index = fromRight ? length : -1, iterable = Object2(collection);
+            while (fromRight ? index-- : ++index < length) {
               if (iteratee2(iterable[index], index, iterable) === false) {
                 break;
               }
@@ -9780,9 +9780,9 @@ var require_lodash = __commonJS({
         }
         function createBaseFor(fromRight) {
           return function(object, iteratee2, keysFunc) {
-            var index = -1, iterable = Object2(object), props = keysFunc(object), length2 = props.length;
-            while (length2--) {
-              var key2 = props[fromRight ? length2 : ++index];
+            var index = -1, iterable = Object2(object), props = keysFunc(object), length = props.length;
+            while (length--) {
+              var key2 = props[fromRight ? length : ++index];
               if (iteratee2(iterable[key2], key2, iterable) === false) {
                 break;
               }
@@ -9840,13 +9840,13 @@ var require_lodash = __commonJS({
         function createCurry(func, bitmask, arity) {
           var Ctor = createCtor(func);
           function wrapper() {
-            var length2 = arguments.length, args = Array2(length2), index = length2, placeholder = getHolder(wrapper);
+            var length = arguments.length, args = Array2(length), index = length, placeholder = getHolder(wrapper);
             while (index--) {
               args[index] = arguments[index];
             }
-            var holders = length2 < 3 && args[0] !== placeholder && args[length2 - 1] !== placeholder ? [] : replaceHolders(args, placeholder);
-            length2 -= holders.length;
-            if (length2 < arity) {
+            var holders = length < 3 && args[0] !== placeholder && args[length - 1] !== placeholder ? [] : replaceHolders(args, placeholder);
+            length -= holders.length;
+            if (length < arity) {
               return createRecurry(
                 func,
                 bitmask,
@@ -9857,7 +9857,7 @@ var require_lodash = __commonJS({
                 holders,
                 undefined2,
                 undefined2,
-                arity - length2
+                arity - length
               );
             }
             var fn = this && this !== root && this instanceof wrapper ? Ctor : func;
@@ -9881,7 +9881,7 @@ var require_lodash = __commonJS({
         }
         function createFlow(fromRight) {
           return flatRest(function(funcs) {
-            var length2 = funcs.length, index = length2, prereq = LodashWrapper.prototype.thru;
+            var length = funcs.length, index = length, prereq = LodashWrapper.prototype.thru;
             if (fromRight) {
               funcs.reverse();
             }
@@ -9894,8 +9894,8 @@ var require_lodash = __commonJS({
                 var wrapper = new LodashWrapper([], true);
               }
             }
-            index = wrapper ? index : length2;
-            while (++index < length2) {
+            index = wrapper ? index : length;
+            while (++index < length) {
               func = funcs[index];
               var funcName = getFuncName(func), data = funcName == "wrapper" ? getData(func) : undefined2;
               if (data && isLaziable(data[0]) && data[1] == (WRAP_ARY_FLAG | WRAP_CURRY_FLAG | WRAP_PARTIAL_FLAG | WRAP_REARG_FLAG) && !data[4].length && data[9] == 1) {
@@ -9909,8 +9909,8 @@ var require_lodash = __commonJS({
               if (wrapper && args.length == 1 && isArray(value)) {
                 return wrapper.plant(value).value();
               }
-              var index2 = 0, result2 = length2 ? funcs[index2].apply(this, args) : value;
-              while (++index2 < length2) {
+              var index2 = 0, result2 = length ? funcs[index2].apply(this, args) : value;
+              while (++index2 < length) {
                 result2 = funcs[index2].call(this, result2);
               }
               return result2;
@@ -9920,7 +9920,7 @@ var require_lodash = __commonJS({
         function createHybrid(func, bitmask, thisArg, partials, holders, partialsRight, holdersRight, argPos, ary2, arity) {
           var isAry = bitmask & WRAP_ARY_FLAG, isBind = bitmask & WRAP_BIND_FLAG, isBindKey = bitmask & WRAP_BIND_KEY_FLAG, isCurried = bitmask & (WRAP_CURRY_FLAG | WRAP_CURRY_RIGHT_FLAG), isFlip = bitmask & WRAP_FLIP_FLAG, Ctor = isBindKey ? undefined2 : createCtor(func);
           function wrapper() {
-            var length2 = arguments.length, args = Array2(length2), index = length2;
+            var length = arguments.length, args = Array2(length), index = length;
             while (index--) {
               args[index] = arguments[index];
             }
@@ -9933,8 +9933,8 @@ var require_lodash = __commonJS({
             if (partialsRight) {
               args = composeArgsRight(args, partialsRight, holdersRight, isCurried);
             }
-            length2 -= holdersCount;
-            if (isCurried && length2 < arity) {
+            length -= holdersCount;
+            if (isCurried && length < arity) {
               var newHolders = replaceHolders(args, placeholder);
               return createRecurry(
                 func,
@@ -9946,17 +9946,17 @@ var require_lodash = __commonJS({
                 newHolders,
                 argPos,
                 ary2,
-                arity - length2
+                arity - length
               );
             }
             var thisBinding = isBind ? thisArg : this, fn = isBindKey ? thisBinding[func] : func;
-            length2 = args.length;
+            length = args.length;
             if (argPos) {
               args = reorder(args, argPos);
-            } else if (isFlip && length2 > 1) {
+            } else if (isFlip && length > 1) {
               args.reverse();
             }
-            if (isAry && ary2 < length2) {
+            if (isAry && ary2 < length) {
               args.length = ary2;
             }
             if (this && this !== root && this instanceof wrapper) {
@@ -10007,14 +10007,14 @@ var require_lodash = __commonJS({
             });
           });
         }
-        function createPadding(length2, chars) {
+        function createPadding(length, chars) {
           chars = chars === undefined2 ? " " : baseToString(chars);
           var charsLength = chars.length;
           if (charsLength < 2) {
-            return charsLength ? baseRepeat(chars, length2) : chars;
+            return charsLength ? baseRepeat(chars, length) : chars;
           }
-          var result2 = baseRepeat(chars, nativeCeil(length2 / stringSize(chars)));
-          return hasUnicode(chars) ? castSlice(stringToArray(result2), 0, length2).join("") : result2.slice(0, length2);
+          var result2 = baseRepeat(chars, nativeCeil(length / stringSize(chars)));
+          return hasUnicode(chars) ? castSlice(stringToArray(result2), 0, length).join("") : result2.slice(0, length);
         }
         function createPartial(func, bitmask, thisArg, partials) {
           var isBind = bitmask & WRAP_BIND_FLAG, Ctor = createCtor(func);
@@ -10114,14 +10114,14 @@ var require_lodash = __commonJS({
           if (!isBindKey && typeof func != "function") {
             throw new TypeError2(FUNC_ERROR_TEXT);
           }
-          var length2 = partials ? partials.length : 0;
-          if (!length2) {
+          var length = partials ? partials.length : 0;
+          if (!length) {
             bitmask &= ~(WRAP_PARTIAL_FLAG | WRAP_PARTIAL_RIGHT_FLAG);
             partials = holders = undefined2;
           }
           ary2 = ary2 === undefined2 ? ary2 : nativeMax(toInteger(ary2), 0);
           arity = arity === undefined2 ? arity : toInteger(arity);
-          length2 -= holders ? holders.length : 0;
+          length -= holders ? holders.length : 0;
           if (bitmask & WRAP_PARTIAL_RIGHT_FLAG) {
             var partialsRight = partials, holdersRight = holders;
             partials = holders = undefined2;
@@ -10147,7 +10147,7 @@ var require_lodash = __commonJS({
           thisArg = newData[2];
           partials = newData[3];
           holders = newData[4];
-          arity = newData[9] = newData[9] === undefined2 ? isBindKey ? 0 : func.length : nativeMax(newData[9] - length2, 0);
+          arity = newData[9] = newData[9] === undefined2 ? isBindKey ? 0 : func.length : nativeMax(newData[9] - length, 0);
           if (!arity && bitmask & (WRAP_CURRY_FLAG | WRAP_CURRY_RIGHT_FLAG)) {
             bitmask &= ~(WRAP_CURRY_FLAG | WRAP_CURRY_RIGHT_FLAG);
           }
@@ -10325,9 +10325,9 @@ var require_lodash = __commonJS({
           return metaMap.get(func);
         };
         function getFuncName(func) {
-          var result2 = func.name + "", array = realNames[result2], length2 = hasOwnProperty2.call(realNames, result2) ? array.length : 0;
-          while (length2--) {
-            var data = array[length2], otherFunc = data.func;
+          var result2 = func.name + "", array = realNames[result2], length = hasOwnProperty2.call(realNames, result2) ? array.length : 0;
+          while (length--) {
+            var data = array[length], otherFunc = data.func;
             if (otherFunc == null || otherFunc == func) {
               return data.name;
             }
@@ -10348,10 +10348,10 @@ var require_lodash = __commonJS({
           return isKeyable(key2) ? data[typeof key2 == "string" ? "string" : "hash"] : data.map;
         }
         function getMatchData(object) {
-          var result2 = keys(object), length2 = result2.length;
-          while (length2--) {
-            var key2 = result2[length2], value = object[key2];
-            result2[length2] = [key2, value, isStrictComparable(value)];
+          var result2 = keys(object), length = result2.length;
+          while (length--) {
+            var key2 = result2[length], value = object[key2];
+            result2[length] = [key2, value, isStrictComparable(value)];
           }
           return result2;
         }
@@ -10415,8 +10415,8 @@ var require_lodash = __commonJS({
           };
         }
         function getView(start, end, transforms) {
-          var index = -1, length2 = transforms.length;
-          while (++index < length2) {
+          var index = -1, length = transforms.length;
+          while (++index < length) {
             var data = transforms[index], size2 = data.size;
             switch (data.type) {
               case "drop":
@@ -10441,23 +10441,23 @@ var require_lodash = __commonJS({
         }
         function hasPath(object, path2, hasFunc) {
           path2 = castPath(path2, object);
-          var index = -1, length2 = path2.length, result2 = false;
-          while (++index < length2) {
+          var index = -1, length = path2.length, result2 = false;
+          while (++index < length) {
             var key2 = toKey(path2[index]);
             if (!(result2 = object != null && hasFunc(object, key2))) {
               break;
             }
             object = object[key2];
           }
-          if (result2 || ++index != length2) {
+          if (result2 || ++index != length) {
             return result2;
           }
-          length2 = object == null ? 0 : object.length;
-          return !!length2 && isLength(length2) && isIndex(key2, length2) && (isArray(object) || isArguments(object));
+          length = object == null ? 0 : object.length;
+          return !!length && isLength(length) && isIndex(key2, length) && (isArray(object) || isArguments(object));
         }
         function initCloneArray(array) {
-          var length2 = array.length, result2 = new array.constructor(length2);
-          if (length2 && typeof array[0] == "string" && hasOwnProperty2.call(array, "index")) {
+          var length = array.length, result2 = new array.constructor(length);
+          if (length && typeof array[0] == "string" && hasOwnProperty2.call(array, "index")) {
             result2.index = array.index;
             result2.input = array.input;
           }
@@ -10500,22 +10500,22 @@ var require_lodash = __commonJS({
           }
         }
         function insertWrapDetails(source, details) {
-          var length2 = details.length;
-          if (!length2) {
+          var length = details.length;
+          if (!length) {
             return source;
           }
-          var lastIndex = length2 - 1;
-          details[lastIndex] = (length2 > 1 ? "& " : "") + details[lastIndex];
-          details = details.join(length2 > 2 ? ", " : " ");
+          var lastIndex = length - 1;
+          details[lastIndex] = (length > 1 ? "& " : "") + details[lastIndex];
+          details = details.join(length > 2 ? ", " : " ");
           return source.replace(reWrapComment, "{\n/* [wrapped with " + details + "] */\n");
         }
         function isFlattenable(value) {
           return isArray(value) || isArguments(value) || !!(spreadableSymbol && value && value[spreadableSymbol]);
         }
-        function isIndex(value, length2) {
+        function isIndex(value, length) {
           var type = typeof value;
-          length2 = length2 == null ? MAX_SAFE_INTEGER : length2;
-          return !!length2 && (type == "number" || type != "symbol" && reIsUint.test(value)) && (value > -1 && value % 1 == 0 && value < length2);
+          length = length == null ? MAX_SAFE_INTEGER : length;
+          return !!length && (type == "number" || type != "symbol" && reIsUint.test(value)) && (value > -1 && value % 1 == 0 && value < length);
         }
         function isIterateeCall(value, index, object) {
           if (!isObject(object)) {
@@ -10632,8 +10632,8 @@ var require_lodash = __commonJS({
         function overRest(func, start, transform2) {
           start = nativeMax(start === undefined2 ? func.length - 1 : start, 0);
           return function() {
-            var args = arguments, index = -1, length2 = nativeMax(args.length - start, 0), array = Array2(length2);
-            while (++index < length2) {
+            var args = arguments, index = -1, length = nativeMax(args.length - start, 0), array = Array2(length);
+            while (++index < length) {
               array[index] = args[start + index];
             }
             index = -1;
@@ -10649,10 +10649,10 @@ var require_lodash = __commonJS({
           return path2.length < 2 ? object : baseGet(object, baseSlice(path2, 0, -1));
         }
         function reorder(array, indexes) {
-          var arrLength = array.length, length2 = nativeMin(indexes.length, arrLength), oldArray = copyArray(array);
-          while (length2--) {
-            var index = indexes[length2];
-            array[length2] = isIndex(index, arrLength) ? oldArray[index] : undefined2;
+          var arrLength = array.length, length = nativeMin(indexes.length, arrLength), oldArray = copyArray(array);
+          while (length--) {
+            var index = indexes[length];
+            array[length] = isIndex(index, arrLength) ? oldArray[index] : undefined2;
           }
           return array;
         }
@@ -10690,8 +10690,8 @@ var require_lodash = __commonJS({
           };
         }
         function shuffleSelf(array, size2) {
-          var index = -1, length2 = array.length, lastIndex = length2 - 1;
-          size2 = size2 === undefined2 ? length2 : size2;
+          var index = -1, length = array.length, lastIndex = length - 1;
+          size2 = size2 === undefined2 ? length : size2;
           while (++index < size2) {
             var rand = baseRandom(index, lastIndex), value = array[rand];
             array[rand] = array[index];
@@ -10755,19 +10755,19 @@ var require_lodash = __commonJS({
           } else {
             size2 = nativeMax(toInteger(size2), 0);
           }
-          var length2 = array == null ? 0 : array.length;
-          if (!length2 || size2 < 1) {
+          var length = array == null ? 0 : array.length;
+          if (!length || size2 < 1) {
             return [];
           }
-          var index = 0, resIndex = 0, result2 = Array2(nativeCeil(length2 / size2));
-          while (index < length2) {
+          var index = 0, resIndex = 0, result2 = Array2(nativeCeil(length / size2));
+          while (index < length) {
             result2[resIndex++] = baseSlice(array, index, index += size2);
           }
           return result2;
         }
         function compact(array) {
-          var index = -1, length2 = array == null ? 0 : array.length, resIndex = 0, result2 = [];
-          while (++index < length2) {
+          var index = -1, length = array == null ? 0 : array.length, resIndex = 0, result2 = [];
+          while (++index < length) {
             var value = array[index];
             if (value) {
               result2[resIndex++] = value;
@@ -10776,11 +10776,11 @@ var require_lodash = __commonJS({
           return result2;
         }
         function concat() {
-          var length2 = arguments.length;
-          if (!length2) {
+          var length = arguments.length;
+          if (!length) {
             return [];
           }
-          var args = Array2(length2 - 1), array = arguments[0], index = length2;
+          var args = Array2(length - 1), array = arguments[0], index = length;
           while (index--) {
             args[index - 1] = arguments[index];
           }
@@ -10804,20 +10804,20 @@ var require_lodash = __commonJS({
           return isArrayLikeObject(array) ? baseDifference(array, baseFlatten(values2, 1, isArrayLikeObject, true), undefined2, comparator) : [];
         });
         function drop(array, n2, guard) {
-          var length2 = array == null ? 0 : array.length;
-          if (!length2) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
             return [];
           }
           n2 = guard || n2 === undefined2 ? 1 : toInteger(n2);
-          return baseSlice(array, n2 < 0 ? 0 : n2, length2);
+          return baseSlice(array, n2 < 0 ? 0 : n2, length);
         }
         function dropRight(array, n2, guard) {
-          var length2 = array == null ? 0 : array.length;
-          if (!length2) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
             return [];
           }
           n2 = guard || n2 === undefined2 ? 1 : toInteger(n2);
-          n2 = length2 - n2;
+          n2 = length - n2;
           return baseSlice(array, 0, n2 < 0 ? 0 : n2);
         }
         function dropRightWhile(array, predicate) {
@@ -10827,58 +10827,58 @@ var require_lodash = __commonJS({
           return array && array.length ? baseWhile(array, getIteratee(predicate, 3), true) : [];
         }
         function fill(array, value, start, end) {
-          var length2 = array == null ? 0 : array.length;
-          if (!length2) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
             return [];
           }
           if (start && typeof start != "number" && isIterateeCall(array, value, start)) {
             start = 0;
-            end = length2;
+            end = length;
           }
           return baseFill(array, value, start, end);
         }
         function findIndex(array, predicate, fromIndex) {
-          var length2 = array == null ? 0 : array.length;
-          if (!length2) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
             return -1;
           }
           var index = fromIndex == null ? 0 : toInteger(fromIndex);
           if (index < 0) {
-            index = nativeMax(length2 + index, 0);
+            index = nativeMax(length + index, 0);
           }
           return baseFindIndex(array, getIteratee(predicate, 3), index);
         }
         function findLastIndex(array, predicate, fromIndex) {
-          var length2 = array == null ? 0 : array.length;
-          if (!length2) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
             return -1;
           }
-          var index = length2 - 1;
+          var index = length - 1;
           if (fromIndex !== undefined2) {
             index = toInteger(fromIndex);
-            index = fromIndex < 0 ? nativeMax(length2 + index, 0) : nativeMin(index, length2 - 1);
+            index = fromIndex < 0 ? nativeMax(length + index, 0) : nativeMin(index, length - 1);
           }
           return baseFindIndex(array, getIteratee(predicate, 3), index, true);
         }
         function flatten(array) {
-          var length2 = array == null ? 0 : array.length;
-          return length2 ? baseFlatten(array, 1) : [];
+          var length = array == null ? 0 : array.length;
+          return length ? baseFlatten(array, 1) : [];
         }
         function flattenDeep(array) {
-          var length2 = array == null ? 0 : array.length;
-          return length2 ? baseFlatten(array, INFINITY) : [];
+          var length = array == null ? 0 : array.length;
+          return length ? baseFlatten(array, INFINITY) : [];
         }
         function flattenDepth(array, depth) {
-          var length2 = array == null ? 0 : array.length;
-          if (!length2) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
             return [];
           }
           depth = depth === undefined2 ? 1 : toInteger(depth);
           return baseFlatten(array, depth);
         }
         function fromPairs(pairs) {
-          var index = -1, length2 = pairs == null ? 0 : pairs.length, result2 = {};
-          while (++index < length2) {
+          var index = -1, length = pairs == null ? 0 : pairs.length, result2 = {};
+          while (++index < length) {
             var pair = pairs[index];
             result2[pair[0]] = pair[1];
           }
@@ -10888,19 +10888,19 @@ var require_lodash = __commonJS({
           return array && array.length ? array[0] : undefined2;
         }
         function indexOf(array, value, fromIndex) {
-          var length2 = array == null ? 0 : array.length;
-          if (!length2) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
             return -1;
           }
           var index = fromIndex == null ? 0 : toInteger(fromIndex);
           if (index < 0) {
-            index = nativeMax(length2 + index, 0);
+            index = nativeMax(length + index, 0);
           }
           return baseIndexOf(array, value, index);
         }
         function initial(array) {
-          var length2 = array == null ? 0 : array.length;
-          return length2 ? baseSlice(array, 0, -1) : [];
+          var length = array == null ? 0 : array.length;
+          return length ? baseSlice(array, 0, -1) : [];
         }
         var intersection = baseRest(function(arrays) {
           var mapped = arrayMap(arrays, castArrayLikeObject);
@@ -10927,18 +10927,18 @@ var require_lodash = __commonJS({
           return array == null ? "" : nativeJoin.call(array, separator);
         }
         function last(array) {
-          var length2 = array == null ? 0 : array.length;
-          return length2 ? array[length2 - 1] : undefined2;
+          var length = array == null ? 0 : array.length;
+          return length ? array[length - 1] : undefined2;
         }
         function lastIndexOf(array, value, fromIndex) {
-          var length2 = array == null ? 0 : array.length;
-          if (!length2) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
             return -1;
           }
-          var index = length2;
+          var index = length;
           if (fromIndex !== undefined2) {
             index = toInteger(fromIndex);
-            index = index < 0 ? nativeMax(length2 + index, 0) : nativeMin(index, length2 - 1);
+            index = index < 0 ? nativeMax(length + index, 0) : nativeMin(index, length - 1);
           }
           return value === value ? strictLastIndexOf(array, value, index) : baseFindIndex(array, baseIsNaN, index, true);
         }
@@ -10956,9 +10956,9 @@ var require_lodash = __commonJS({
           return array && array.length && values2 && values2.length ? basePullAll(array, values2, undefined2, comparator) : array;
         }
         var pullAt = flatRest(function(array, indexes) {
-          var length2 = array == null ? 0 : array.length, result2 = baseAt(array, indexes);
+          var length = array == null ? 0 : array.length, result2 = baseAt(array, indexes);
           basePullAt(array, arrayMap(indexes, function(index) {
-            return isIndex(index, length2) ? +index : index;
+            return isIndex(index, length) ? +index : index;
           }).sort(compareAscending));
           return result2;
         });
@@ -10967,9 +10967,9 @@ var require_lodash = __commonJS({
           if (!(array && array.length)) {
             return result2;
           }
-          var index = -1, indexes = [], length2 = array.length;
+          var index = -1, indexes = [], length = array.length;
           predicate = getIteratee(predicate, 3);
-          while (++index < length2) {
+          while (++index < length) {
             var value = array[index];
             if (predicate(value, index, array)) {
               result2.push(value);
@@ -10983,16 +10983,16 @@ var require_lodash = __commonJS({
           return array == null ? array : nativeReverse.call(array);
         }
         function slice(array, start, end) {
-          var length2 = array == null ? 0 : array.length;
-          if (!length2) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
             return [];
           }
           if (end && typeof end != "number" && isIterateeCall(array, start, end)) {
             start = 0;
-            end = length2;
+            end = length;
           } else {
             start = start == null ? 0 : toInteger(start);
-            end = end === undefined2 ? length2 : toInteger(end);
+            end = end === undefined2 ? length : toInteger(end);
           }
           return baseSlice(array, start, end);
         }
@@ -11003,10 +11003,10 @@ var require_lodash = __commonJS({
           return baseSortedIndexBy(array, value, getIteratee(iteratee2, 2));
         }
         function sortedIndexOf(array, value) {
-          var length2 = array == null ? 0 : array.length;
-          if (length2) {
+          var length = array == null ? 0 : array.length;
+          if (length) {
             var index = baseSortedIndex(array, value);
-            if (index < length2 && eq(array[index], value)) {
+            if (index < length && eq(array[index], value)) {
               return index;
             }
           }
@@ -11019,8 +11019,8 @@ var require_lodash = __commonJS({
           return baseSortedIndexBy(array, value, getIteratee(iteratee2, 2), true);
         }
         function sortedLastIndexOf(array, value) {
-          var length2 = array == null ? 0 : array.length;
-          if (length2) {
+          var length = array == null ? 0 : array.length;
+          if (length) {
             var index = baseSortedIndex(array, value, true) - 1;
             if (eq(array[index], value)) {
               return index;
@@ -11035,8 +11035,8 @@ var require_lodash = __commonJS({
           return array && array.length ? baseSortedUniq(array, getIteratee(iteratee2, 2)) : [];
         }
         function tail(array) {
-          var length2 = array == null ? 0 : array.length;
-          return length2 ? baseSlice(array, 1, length2) : [];
+          var length = array == null ? 0 : array.length;
+          return length ? baseSlice(array, 1, length) : [];
         }
         function take(array, n2, guard) {
           if (!(array && array.length)) {
@@ -11046,13 +11046,13 @@ var require_lodash = __commonJS({
           return baseSlice(array, 0, n2 < 0 ? 0 : n2);
         }
         function takeRight(array, n2, guard) {
-          var length2 = array == null ? 0 : array.length;
-          if (!length2) {
+          var length = array == null ? 0 : array.length;
+          if (!length) {
             return [];
           }
           n2 = guard || n2 === undefined2 ? 1 : toInteger(n2);
-          n2 = length2 - n2;
-          return baseSlice(array, n2 < 0 ? 0 : n2, length2);
+          n2 = length - n2;
+          return baseSlice(array, n2 < 0 ? 0 : n2, length);
         }
         function takeRightWhile(array, predicate) {
           return array && array.length ? baseWhile(array, getIteratee(predicate, 3), false, true) : [];
@@ -11089,14 +11089,14 @@ var require_lodash = __commonJS({
           if (!(array && array.length)) {
             return [];
           }
-          var length2 = 0;
+          var length = 0;
           array = arrayFilter(array, function(group) {
             if (isArrayLikeObject(group)) {
-              length2 = nativeMax(group.length, length2);
+              length = nativeMax(group.length, length);
               return true;
             }
           });
-          return baseTimes(length2, function(index) {
+          return baseTimes(length, function(index) {
             return arrayMap(array, baseProperty(index));
           });
         }
@@ -11138,7 +11138,7 @@ var require_lodash = __commonJS({
           return baseZipObject(props || [], values2 || [], baseSet);
         }
         var zipWith = baseRest(function(arrays) {
-          var length2 = arrays.length, iteratee2 = length2 > 1 ? arrays[length2 - 1] : undefined2;
+          var length = arrays.length, iteratee2 = length > 1 ? arrays[length - 1] : undefined2;
           iteratee2 = typeof iteratee2 == "function" ? (arrays.pop(), iteratee2) : undefined2;
           return unzipWith(arrays, iteratee2);
         });
@@ -11155,20 +11155,20 @@ var require_lodash = __commonJS({
           return interceptor(value);
         }
         var wrapperAt = flatRest(function(paths) {
-          var length2 = paths.length, start = length2 ? paths[0] : 0, value = this.__wrapped__, interceptor = function(object) {
+          var length = paths.length, start = length ? paths[0] : 0, value = this.__wrapped__, interceptor = function(object) {
             return baseAt(object, paths);
           };
-          if (length2 > 1 || this.__actions__.length || !(value instanceof LazyWrapper) || !isIndex(start)) {
+          if (length > 1 || this.__actions__.length || !(value instanceof LazyWrapper) || !isIndex(start)) {
             return this.thru(interceptor);
           }
-          value = value.slice(start, +start + (length2 ? 1 : 0));
+          value = value.slice(start, +start + (length ? 1 : 0));
           value.__actions__.push({
             "func": thru,
             "args": [interceptor],
             "thisArg": undefined2
           });
           return new LodashWrapper(value, this.__chain__).thru(function(array) {
-            if (length2 && !array.length) {
+            if (length && !array.length) {
               array.push(undefined2);
             }
             return array;
@@ -11275,11 +11275,11 @@ var require_lodash = __commonJS({
         function includes(collection, value, fromIndex, guard) {
           collection = isArrayLike(collection) ? collection : values(collection);
           fromIndex = fromIndex && !guard ? toInteger(fromIndex) : 0;
-          var length2 = collection.length;
+          var length = collection.length;
           if (fromIndex < 0) {
-            fromIndex = nativeMax(length2 + fromIndex, 0);
+            fromIndex = nativeMax(length + fromIndex, 0);
           }
-          return isString2(collection) ? fromIndex <= length2 && collection.indexOf(value, fromIndex) > -1 : !!length2 && baseIndexOf(collection, value, fromIndex) > -1;
+          return isString2(collection) ? fromIndex <= length && collection.indexOf(value, fromIndex) > -1 : !!length && baseIndexOf(collection, value, fromIndex) > -1;
         }
         var invokeMap = baseRest(function(collection, path2, args) {
           var index = -1, isFunc = typeof path2 == "function", result2 = isArrayLike(collection) ? Array2(collection.length) : [];
@@ -11366,10 +11366,10 @@ var require_lodash = __commonJS({
           if (collection == null) {
             return [];
           }
-          var length2 = iteratees.length;
-          if (length2 > 1 && isIterateeCall(collection, iteratees[0], iteratees[1])) {
+          var length = iteratees.length;
+          if (length > 1 && isIterateeCall(collection, iteratees[0], iteratees[1])) {
             iteratees = [];
-          } else if (length2 > 2 && isIterateeCall(iteratees[0], iteratees[1], iteratees[2])) {
+          } else if (length > 2 && isIterateeCall(iteratees[0], iteratees[1], iteratees[2])) {
             iteratees = [iteratees[0]];
           }
           return baseOrderBy(collection, baseFlatten(iteratees, 1), []);
@@ -11570,8 +11570,8 @@ var require_lodash = __commonJS({
           transforms = transforms.length == 1 && isArray(transforms[0]) ? arrayMap(transforms[0], baseUnary(getIteratee())) : arrayMap(baseFlatten(transforms, 1), baseUnary(getIteratee()));
           var funcsLength = transforms.length;
           return baseRest(function(args) {
-            var index = -1, length2 = nativeMin(args.length, funcsLength);
-            while (++index < length2) {
+            var index = -1, length = nativeMin(args.length, funcsLength);
+            while (++index < length) {
               args[index] = transforms[index].call(this, args[index]);
             }
             return apply(func, this, args);
@@ -11888,12 +11888,12 @@ var require_lodash = __commonJS({
         var defaults = baseRest(function(object, sources) {
           object = Object2(object);
           var index = -1;
-          var length2 = sources.length;
-          var guard = length2 > 2 ? sources[2] : undefined2;
+          var length = sources.length;
+          var guard = length > 2 ? sources[2] : undefined2;
           if (guard && isIterateeCall(sources[0], sources[1], guard)) {
-            length2 = 1;
+            length = 1;
           }
-          while (++index < length2) {
+          while (++index < length) {
             var source = sources[index];
             var props = keysIn(source);
             var propsIndex = -1;
@@ -12006,9 +12006,9 @@ var require_lodash = __commonJS({
           if (isDeep) {
             result2 = baseClone(result2, CLONE_DEEP_FLAG | CLONE_FLAT_FLAG | CLONE_SYMBOLS_FLAG, customOmitClone);
           }
-          var length2 = paths.length;
-          while (length2--) {
-            baseUnset(result2, paths[length2]);
+          var length = paths.length;
+          while (length--) {
+            baseUnset(result2, paths[length]);
           }
           return result2;
         });
@@ -12032,15 +12032,15 @@ var require_lodash = __commonJS({
         }
         function result(object, path2, defaultValue2) {
           path2 = castPath(path2, object);
-          var index = -1, length2 = path2.length;
-          if (!length2) {
-            length2 = 1;
+          var index = -1, length = path2.length;
+          if (!length) {
+            length = 1;
             object = undefined2;
           }
-          while (++index < length2) {
+          while (++index < length) {
             var value = object == null ? undefined2 : object[toKey(path2[index])];
             if (value === undefined2) {
-              index = length2;
+              index = length;
               value = defaultValue2;
             }
             object = isFunction(value) ? value.call(object) : value;
@@ -12166,8 +12166,8 @@ var require_lodash = __commonJS({
         function endsWith(string, target, position) {
           string = toString(string);
           target = baseToString(target);
-          var length2 = string.length;
-          position = position === undefined2 ? length2 : baseClamp(toInteger(position), 0, length2);
+          var length = string.length;
+          position = position === undefined2 ? length : baseClamp(toInteger(position), 0, length);
           var end = position;
           position -= target.length;
           return position >= 0 && string.slice(position, end) == target;
@@ -12187,27 +12187,27 @@ var require_lodash = __commonJS({
           return result2 + (index ? " " : "") + word.toLowerCase();
         });
         var lowerFirst = createCaseFirst("toLowerCase");
-        function pad(string, length2, chars) {
+        function pad(string, length, chars) {
           string = toString(string);
-          length2 = toInteger(length2);
-          var strLength = length2 ? stringSize(string) : 0;
-          if (!length2 || strLength >= length2) {
+          length = toInteger(length);
+          var strLength = length ? stringSize(string) : 0;
+          if (!length || strLength >= length) {
             return string;
           }
-          var mid = (length2 - strLength) / 2;
+          var mid = (length - strLength) / 2;
           return createPadding(nativeFloor(mid), chars) + string + createPadding(nativeCeil(mid), chars);
         }
-        function padEnd(string, length2, chars) {
+        function padEnd(string, length, chars) {
           string = toString(string);
-          length2 = toInteger(length2);
-          var strLength = length2 ? stringSize(string) : 0;
-          return length2 && strLength < length2 ? string + createPadding(length2 - strLength, chars) : string;
+          length = toInteger(length);
+          var strLength = length ? stringSize(string) : 0;
+          return length && strLength < length ? string + createPadding(length - strLength, chars) : string;
         }
-        function padStart2(string, length2, chars) {
+        function padStart2(string, length, chars) {
           string = toString(string);
-          length2 = toInteger(length2);
-          var strLength = length2 ? stringSize(string) : 0;
-          return length2 && strLength < length2 ? createPadding(length2 - strLength, chars) + string : string;
+          length = toInteger(length);
+          var strLength = length ? stringSize(string) : 0;
+          return length && strLength < length ? createPadding(length - strLength, chars) + string : string;
         }
         function parseInt2(string, radix, guard) {
           if (guard || radix == null) {
@@ -12347,10 +12347,10 @@ var require_lodash = __commonJS({
           return castSlice(strSymbols, start).join("");
         }
         function truncate(string, options) {
-          var length2 = DEFAULT_TRUNC_LENGTH, omission = DEFAULT_TRUNC_OMISSION;
+          var length = DEFAULT_TRUNC_LENGTH, omission = DEFAULT_TRUNC_OMISSION;
           if (isObject(options)) {
             var separator = "separator" in options ? options.separator : separator;
-            length2 = "length" in options ? toInteger(options.length) : length2;
+            length = "length" in options ? toInteger(options.length) : length;
             omission = "omission" in options ? baseToString(options.omission) : omission;
           }
           string = toString(string);
@@ -12359,10 +12359,10 @@ var require_lodash = __commonJS({
             var strSymbols = stringToArray(string);
             strLength = strSymbols.length;
           }
-          if (length2 >= strLength) {
+          if (length >= strLength) {
             return string;
           }
-          var end = length2 - stringSize(omission);
+          var end = length - stringSize(omission);
           if (end < 1) {
             return omission;
           }
@@ -12424,8 +12424,8 @@ var require_lodash = __commonJS({
           return object;
         });
         function cond(pairs) {
-          var length2 = pairs == null ? 0 : pairs.length, toIteratee = getIteratee();
-          pairs = !length2 ? [] : arrayMap(pairs, function(pair) {
+          var length = pairs == null ? 0 : pairs.length, toIteratee = getIteratee();
+          pairs = !length ? [] : arrayMap(pairs, function(pair) {
             if (typeof pair[1] != "function") {
               throw new TypeError2(FUNC_ERROR_TEXT);
             }
@@ -12433,7 +12433,7 @@ var require_lodash = __commonJS({
           });
           return baseRest(function(args) {
             var index = -1;
-            while (++index < length2) {
+            while (++index < length) {
               var pair = pairs[index];
               if (apply(pair[0], this, args)) {
                 return apply(pair[1], this, args);
@@ -12550,10 +12550,10 @@ var require_lodash = __commonJS({
           if (n2 < 1 || n2 > MAX_SAFE_INTEGER) {
             return [];
           }
-          var index = MAX_ARRAY_LENGTH, length2 = nativeMin(n2, MAX_ARRAY_LENGTH);
+          var index = MAX_ARRAY_LENGTH, length = nativeMin(n2, MAX_ARRAY_LENGTH);
           iteratee2 = getIteratee(iteratee2);
           n2 -= MAX_ARRAY_LENGTH;
-          var result2 = baseTimes(length2, iteratee2);
+          var result2 = baseTimes(length, iteratee2);
           while (++index < n2) {
             iteratee2(index);
           }
@@ -13083,17 +13083,17 @@ var require_lodash = __commonJS({
         }
         return lodash;
       };
-      var _17 = runInContext();
+      var _18 = runInContext();
       if (typeof define == "function" && typeof define.amd == "object" && define.amd) {
-        root._ = _17;
+        root._ = _18;
         define(function() {
-          return _17;
+          return _18;
         });
       } else if (freeModule) {
-        (freeModule.exports = _17)._ = _17;
-        freeExports._ = _17;
+        (freeModule.exports = _18)._ = _18;
+        freeExports._ = _18;
       } else {
-        root._ = _17;
+        root._ = _18;
       }
     }).call(exports);
   }
@@ -14158,7 +14158,7 @@ var require_react_development = __commonJS({
           }
           return dispatcher.useContext(Context);
         }
-        function useState9(initialState) {
+        function useState10(initialState) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useState(initialState);
         }
@@ -14170,7 +14170,7 @@ var require_react_development = __commonJS({
           var dispatcher = resolveDispatcher();
           return dispatcher.useRef(initialValue);
         }
-        function useEffect12(create, deps) {
+        function useEffect13(create, deps) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useEffect(create, deps);
         }
@@ -14186,7 +14186,7 @@ var require_react_development = __commonJS({
           var dispatcher = resolveDispatcher();
           return dispatcher.useCallback(callback, deps);
         }
-        function useMemo5(create, deps) {
+        function useMemo6(create, deps) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useMemo(create, deps);
         }
@@ -14952,15 +14952,15 @@ var require_react_development = __commonJS({
         exports.useContext = useContext2;
         exports.useDebugValue = useDebugValue2;
         exports.useDeferredValue = useDeferredValue;
-        exports.useEffect = useEffect12;
+        exports.useEffect = useEffect13;
         exports.useId = useId;
         exports.useImperativeHandle = useImperativeHandle;
         exports.useInsertionEffect = useInsertionEffect;
         exports.useLayoutEffect = useLayoutEffect4;
-        exports.useMemo = useMemo5;
+        exports.useMemo = useMemo6;
         exports.useReducer = useReducer2;
         exports.useRef = useRef13;
-        exports.useState = useState9;
+        exports.useState = useState10;
         exports.useSyncExternalStore = useSyncExternalStore;
         exports.useTransition = useTransition;
         exports.version = ReactVersion;
@@ -15033,15 +15033,15 @@ var require_scheduler_development = __commonJS({
         }
         function siftDown(heap, node, i) {
           var index = i;
-          var length2 = heap.length;
-          var halfLength = length2 >>> 1;
+          var length = heap.length;
+          var halfLength = length >>> 1;
           while (index < halfLength) {
             var leftIndex = (index + 1) * 2 - 1;
             var left = heap[leftIndex];
             var rightIndex = leftIndex + 1;
             var right = heap[rightIndex];
             if (compare(left, node) < 0) {
-              if (rightIndex < length2 && compare(right, left) < 0) {
+              if (rightIndex < length && compare(right, left) < 0) {
                 heap[index] = right;
                 heap[rightIndex] = node;
                 index = rightIndex;
@@ -15050,7 +15050,7 @@ var require_scheduler_development = __commonJS({
                 heap[leftIndex] = node;
                 index = leftIndex;
               }
-            } else if (rightIndex < length2 && compare(right, node) < 0) {
+            } else if (rightIndex < length && compare(right, node) < 0) {
               heap[index] = right;
               heap[rightIndex] = node;
               index = rightIndex;
@@ -17495,7 +17495,7 @@ var require_react_dom_development = __commonJS({
           var warnedForNaNValue = false;
           var warnedForInfinityValue = false;
           var camelize = function(string) {
-            return string.replace(hyphenPattern, function(_17, character) {
+            return string.replace(hyphenPattern, function(_18, character) {
               return character.toUpperCase();
             });
           };
@@ -21526,7 +21526,7 @@ var require_react_dom_development = __commonJS({
           return getModernOffsetsFromPoints(outerNode, anchorNode, anchorOffset, focusNode, focusOffset);
         }
         function getModernOffsetsFromPoints(outerNode, anchorNode, anchorOffset, focusNode, focusOffset) {
-          var length2 = 0;
+          var length = 0;
           var start = -1;
           var end = -1;
           var indexWithinAnchor = 0;
@@ -21538,13 +21538,13 @@ var require_react_dom_development = __commonJS({
               var next = null;
               while (true) {
                 if (node === anchorNode && (anchorOffset === 0 || node.nodeType === TEXT_NODE)) {
-                  start = length2 + anchorOffset;
+                  start = length + anchorOffset;
                 }
                 if (node === focusNode && (focusOffset === 0 || node.nodeType === TEXT_NODE)) {
-                  end = length2 + focusOffset;
+                  end = length + focusOffset;
                 }
                 if (node.nodeType === TEXT_NODE) {
-                  length2 += node.nodeValue.length;
+                  length += node.nodeValue.length;
                 }
                 if ((next = node.firstChild) === null) {
                   break;
@@ -21557,10 +21557,10 @@ var require_react_dom_development = __commonJS({
                   break outer;
                 }
                 if (parentNode === anchorNode && ++indexWithinAnchor === anchorOffset) {
-                  start = length2;
+                  start = length;
                 }
                 if (parentNode === focusNode && ++indexWithinFocus === focusOffset) {
-                  end = length2;
+                  end = length;
                 }
                 if ((next = node.nextSibling) !== null) {
                   break;
@@ -21585,9 +21585,9 @@ var require_react_dom_development = __commonJS({
             return;
           }
           var selection = win.getSelection();
-          var length2 = node.textContent.length;
-          var start = Math.min(offsets.start, length2);
-          var end = offsets.end === void 0 ? start : Math.min(offsets.end, length2);
+          var length = node.textContent.length;
+          var start = Math.min(offsets.start, length);
+          var end = offsets.end === void 0 ? start : Math.min(offsets.end, length);
           if (!selection.extend && start > end) {
             var temp = end;
             end = start;
@@ -24170,8 +24170,8 @@ var require_react_dom_development = __commonJS({
           var baseLength = getBitLength(baseIdWithLeadingBit) - 1;
           var baseId = baseIdWithLeadingBit & ~(1 << baseLength);
           var slot = index2 + 1;
-          var length2 = getBitLength(totalChildren) + baseLength;
-          if (length2 > 30) {
+          var length = getBitLength(totalChildren) + baseLength;
+          if (length > 30) {
             var numberOfOverflowBits = baseLength - baseLength % 5;
             var newOverflowBits = (1 << numberOfOverflowBits) - 1;
             var newOverflow = (baseId & newOverflowBits).toString(32);
@@ -24187,7 +24187,7 @@ var require_react_dom_development = __commonJS({
             var newBits = slot << baseLength;
             var _id = newBits | baseId;
             var _overflow = baseOverflow;
-            treeContextId = 1 << length2 | _id;
+            treeContextId = 1 << length | _id;
             treeContextOverflow = _overflow;
           }
         }
@@ -35621,7 +35621,7 @@ var require_react_dom_development = __commonJS({
           return root2;
         }
         var ReactVersion = "18.2.0";
-        function createPortal3(children, containerInfo, implementation) {
+        function createPortal4(children, containerInfo, implementation) {
           var key2 = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : null;
           {
             checkKeyStringCoercion(key2);
@@ -36466,7 +36466,7 @@ var require_react_dom_development = __commonJS({
           if (!isValidContainer(container)) {
             throw new Error("Target container is not a DOM element.");
           }
-          return createPortal3(children, container, null, key2);
+          return createPortal4(children, container, null, key2);
         }
         function renderSubtreeIntoContainer(parentComponent, element, containerNode, callback) {
           return unstable_renderSubtreeIntoContainer(parentComponent, element, containerNode, callback);
@@ -36716,7 +36716,7 @@ var require_jquery = __commonJS({
         splice: arr.splice
       };
       jQuery.extend = jQuery.fn.extend = function() {
-        var options, name, src, copy, copyIsArray, clone3, target = arguments[0] || {}, i = 1, length2 = arguments.length, deep = false;
+        var options, name, src, copy, copyIsArray, clone3, target = arguments[0] || {}, i = 1, length = arguments.length, deep = false;
         if (typeof target === "boolean") {
           deep = target;
           target = arguments[i] || {};
@@ -36725,11 +36725,11 @@ var require_jquery = __commonJS({
         if (typeof target !== "object" && !isFunction(target)) {
           target = {};
         }
-        if (i === length2) {
+        if (i === length) {
           target = this;
           i--;
         }
-        for (; i < length2; i++) {
+        for (; i < length; i++) {
           if ((options = arguments[i]) != null) {
             for (name in options) {
               copy = options[name];
@@ -36790,10 +36790,10 @@ var require_jquery = __commonJS({
           DOMEval(code, { nonce: options && options.nonce }, doc);
         },
         each: function(obj, callback) {
-          var length2, i = 0;
+          var length, i = 0;
           if (isArrayLike(obj)) {
-            length2 = obj.length;
-            for (; i < length2; i++) {
+            length = obj.length;
+            for (; i < length; i++) {
               if (callback.call(obj[i], i, obj[i]) === false) {
                 break;
               }
@@ -36859,8 +36859,8 @@ var require_jquery = __commonJS({
           return first;
         },
         grep: function(elems, callback, invert) {
-          var callbackInverse, matches = [], i = 0, length2 = elems.length, callbackExpect = !invert;
-          for (; i < length2; i++) {
+          var callbackInverse, matches = [], i = 0, length = elems.length, callbackExpect = !invert;
+          for (; i < length; i++) {
             callbackInverse = !callback(elems[i], i);
             if (callbackInverse !== callbackExpect) {
               matches.push(elems[i]);
@@ -36870,10 +36870,10 @@ var require_jquery = __commonJS({
         },
         // arg is for internal usage only
         map: function(elems, callback, arg) {
-          var length2, value, i = 0, ret = [];
+          var length, value, i = 0, ret = [];
           if (isArrayLike(elems)) {
-            length2 = elems.length;
-            for (; i < length2; i++) {
+            length = elems.length;
+            for (; i < length; i++) {
               value = callback(elems[i], i, arg);
               if (value != null) {
                 ret.push(value);
@@ -36905,11 +36905,11 @@ var require_jquery = __commonJS({
         }
       );
       function isArrayLike(obj) {
-        var length2 = !!obj && "length" in obj && obj.length, type = toType(obj);
+        var length = !!obj && "length" in obj && obj.length, type = toType(obj);
         if (isFunction(obj) || isWindow2(obj)) {
           return false;
         }
-        return type === "array" || length2 === 0 || typeof length2 === "number" && length2 > 0 && length2 - 1 in obj;
+        return type === "array" || length === 0 || typeof length === "number" && length > 0 && length - 1 in obj;
       }
       function nodeName(elem, name) {
         return elem.nodeName && elem.nodeName.toLowerCase() === name.toLowerCase();
@@ -37645,32 +37645,32 @@ var require_jquery = __commonJS({
             first: createPositionalPseudo(function() {
               return [0];
             }),
-            last: createPositionalPseudo(function(_matchIndexes, length2) {
-              return [length2 - 1];
+            last: createPositionalPseudo(function(_matchIndexes, length) {
+              return [length - 1];
             }),
-            eq: createPositionalPseudo(function(_matchIndexes, length2, argument) {
-              return [argument < 0 ? argument + length2 : argument];
+            eq: createPositionalPseudo(function(_matchIndexes, length, argument) {
+              return [argument < 0 ? argument + length : argument];
             }),
-            even: createPositionalPseudo(function(matchIndexes, length2) {
+            even: createPositionalPseudo(function(matchIndexes, length) {
               var i2 = 0;
-              for (; i2 < length2; i2 += 2) {
+              for (; i2 < length; i2 += 2) {
                 matchIndexes.push(i2);
               }
               return matchIndexes;
             }),
-            odd: createPositionalPseudo(function(matchIndexes, length2) {
+            odd: createPositionalPseudo(function(matchIndexes, length) {
               var i2 = 1;
-              for (; i2 < length2; i2 += 2) {
+              for (; i2 < length; i2 += 2) {
                 matchIndexes.push(i2);
               }
               return matchIndexes;
             }),
-            lt: createPositionalPseudo(function(matchIndexes, length2, argument) {
+            lt: createPositionalPseudo(function(matchIndexes, length, argument) {
               var i2;
               if (argument < 0) {
-                i2 = argument + length2;
-              } else if (argument > length2) {
-                i2 = length2;
+                i2 = argument + length;
+              } else if (argument > length) {
+                i2 = length;
               } else {
                 i2 = argument;
               }
@@ -37679,9 +37679,9 @@ var require_jquery = __commonJS({
               }
               return matchIndexes;
             }),
-            gt: createPositionalPseudo(function(matchIndexes, length2, argument) {
-              var i2 = argument < 0 ? argument + length2 : argument;
-              for (; ++i2 < length2; ) {
+            gt: createPositionalPseudo(function(matchIndexes, length, argument) {
+              var i2 = argument < 0 ? argument + length : argument;
+              for (; ++i2 < length; ) {
                 matchIndexes.push(i2);
               }
               return matchIndexes;
@@ -38368,7 +38368,7 @@ var require_jquery = __commonJS({
       var rnothtmlwhite = /[^\x20\t\r\n\f]+/g;
       function createOptions(options) {
         var object = {};
-        jQuery.each(options.match(rnothtmlwhite) || [], function(_17, flag) {
+        jQuery.each(options.match(rnothtmlwhite) || [], function(_18, flag) {
           object[flag] = true;
         });
         return object;
@@ -38407,7 +38407,7 @@ var require_jquery = __commonJS({
                 queue.push(memory);
               }
               (function add2(args) {
-                jQuery.each(args, function(_17, arg) {
+                jQuery.each(args, function(_18, arg) {
                   if (isFunction(arg)) {
                     if (!options.unique || !self2.has(arg)) {
                       list.push(arg);
@@ -38425,7 +38425,7 @@ var require_jquery = __commonJS({
           },
           // Remove a callback from the list
           remove: function() {
-            jQuery.each(arguments, function(_17, arg) {
+            jQuery.each(arguments, function(_18, arg) {
               var index;
               while ((index = jQuery.inArray(arg, list, index)) > -1) {
                 list.splice(index, 1);
@@ -39196,8 +39196,8 @@ var require_jquery = __commonJS({
         return display;
       }
       function showHide(elements, show) {
-        var display, elem, values = [], index = 0, length2 = elements.length;
-        for (; index < length2; index++) {
+        var display, elem, values = [], index = 0, length = elements.length;
+        for (; index < length; index++) {
           elem = elements[index];
           if (!elem.style) {
             continue;
@@ -39220,7 +39220,7 @@ var require_jquery = __commonJS({
             }
           }
         }
-        for (index = 0; index < length2; index++) {
+        for (index = 0; index < length; index++) {
           if (values[index] != null) {
             elements[index].style.display = values[index];
           }
@@ -40749,8 +40749,8 @@ var require_jquery = __commonJS({
         return attrs;
       }
       function createTween(value, prop, animation) {
-        var tween, collection = (Animation.tweeners[prop] || []).concat(Animation.tweeners["*"]), index = 0, length2 = collection.length;
-        for (; index < length2; index++) {
+        var tween, collection = (Animation.tweeners[prop] || []).concat(Animation.tweeners["*"]), index = 0, length = collection.length;
+        for (; index < length; index++) {
           if (tween = collection[index].call(animation, prop, value)) {
             return tween;
           }
@@ -40904,21 +40904,21 @@ var require_jquery = __commonJS({
         }
       }
       function Animation(elem, properties2, options) {
-        var result, stopped, index = 0, length2 = Animation.prefilters.length, deferred = jQuery.Deferred().always(function() {
+        var result, stopped, index = 0, length = Animation.prefilters.length, deferred = jQuery.Deferred().always(function() {
           delete tick.elem;
         }), tick = function() {
           if (stopped) {
             return false;
           }
-          var currentTime = fxNow || createFxNow(), remaining = Math.max(0, animation.startTime + animation.duration - currentTime), temp = remaining / animation.duration || 0, percent = 1 - temp, index2 = 0, length3 = animation.tweens.length;
-          for (; index2 < length3; index2++) {
+          var currentTime = fxNow || createFxNow(), remaining = Math.max(0, animation.startTime + animation.duration - currentTime), temp = remaining / animation.duration || 0, percent = 1 - temp, index2 = 0, length2 = animation.tweens.length;
+          for (; index2 < length2; index2++) {
             animation.tweens[index2].run(percent);
           }
           deferred.notifyWith(elem, [animation, percent, remaining]);
-          if (percent < 1 && length3) {
+          if (percent < 1 && length2) {
             return remaining;
           }
-          if (!length3) {
+          if (!length2) {
             deferred.notifyWith(elem, [animation, 1, 0]);
           }
           deferred.resolveWith(elem, [animation]);
@@ -40947,12 +40947,12 @@ var require_jquery = __commonJS({
             return tween;
           },
           stop: function(gotoEnd) {
-            var index2 = 0, length3 = gotoEnd ? animation.tweens.length : 0;
+            var index2 = 0, length2 = gotoEnd ? animation.tweens.length : 0;
             if (stopped) {
               return this;
             }
             stopped = true;
-            for (; index2 < length3; index2++) {
+            for (; index2 < length2; index2++) {
               animation.tweens[index2].run(1);
             }
             if (gotoEnd) {
@@ -40965,7 +40965,7 @@ var require_jquery = __commonJS({
           }
         }), props = animation.props;
         propFilter(props, animation.opts.specialEasing);
-        for (; index < length2; index++) {
+        for (; index < length; index++) {
           result = Animation.prefilters[index].call(animation, elem, props, animation.opts);
           if (result) {
             if (isFunction(result.stop)) {
@@ -41003,8 +41003,8 @@ var require_jquery = __commonJS({
           } else {
             props = props.match(rnothtmlwhite);
           }
-          var prop, index = 0, length2 = props.length;
-          for (; index < length2; index++) {
+          var prop, index = 0, length = props.length;
+          for (; index < length; index++) {
             prop = props[index];
             Animation.tweeners[prop] = Animation.tweeners[prop] || [];
             Animation.tweeners[prop].unshift(callback);
@@ -41108,7 +41108,7 @@ var require_jquery = __commonJS({
             type = type || "fx";
           }
           return this.each(function() {
-            var index, data = dataPriv.get(this), queue = data[type + "queue"], hooks = data[type + "queueHooks"], timers = jQuery.timers, length2 = queue ? queue.length : 0;
+            var index, data = dataPriv.get(this), queue = data[type + "queue"], hooks = data[type + "queueHooks"], timers = jQuery.timers, length = queue ? queue.length : 0;
             data.finish = true;
             jQuery.queue(this, type, []);
             if (hooks && hooks.stop) {
@@ -41120,7 +41120,7 @@ var require_jquery = __commonJS({
                 timers.splice(index, 1);
               }
             }
-            for (index = 0; index < length2; index++) {
+            for (index = 0; index < length; index++) {
               if (queue[index] && queue[index].finish) {
                 queue[index].finish.call(this);
               }
@@ -41837,7 +41837,7 @@ var require_jquery = __commonJS({
         function inspect(dataType) {
           var selected;
           inspected[dataType] = true;
-          jQuery.each(structure[dataType] || [], function(_17, prefilterOrFactory) {
+          jQuery.each(structure[dataType] || [], function(_18, prefilterOrFactory) {
             var dataTypeOrTransport = prefilterOrFactory(options, originalOptions, jqXHR);
             if (typeof dataTypeOrTransport === "string" && !seekingTransport && !inspected[dataTypeOrTransport]) {
               options.dataTypes.unshift(dataTypeOrTransport);
@@ -42512,7 +42512,7 @@ var require_jquery = __commonJS({
         if (s2.crossDomain || s2.scriptAttrs) {
           var script, callback;
           return {
-            send: function(_17, complete) {
+            send: function(_18, complete) {
               script = jQuery("<script>").attr(s2.scriptAttrs || {}).prop({ charset: s2.scriptCharset, src: s2.url }).on("load error", callback = function(evt) {
                 script.remove();
                 callback = null;
@@ -42972,7 +42972,7 @@ var require_use_sync_external_store_shim_development = __commonJS({
           return x === y && (x !== 0 || 1 / x === 1 / y) || x !== x && y !== y;
         }
         var objectIs = typeof Object.is === "function" ? Object.is : is2;
-        var useState9 = React4.useState, useEffect12 = React4.useEffect, useLayoutEffect4 = React4.useLayoutEffect, useDebugValue2 = React4.useDebugValue;
+        var useState10 = React4.useState, useEffect13 = React4.useEffect, useLayoutEffect4 = React4.useLayoutEffect, useDebugValue2 = React4.useDebugValue;
         var didWarnOld18Alpha = false;
         var didWarnUncachedGetSnapshot = false;
         function useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot) {
@@ -42994,7 +42994,7 @@ var require_use_sync_external_store_shim_development = __commonJS({
               }
             }
           }
-          var _useState = useState9({
+          var _useState = useState10({
             inst: {
               value,
               getSnapshot
@@ -43009,7 +43009,7 @@ var require_use_sync_external_store_shim_development = __commonJS({
               });
             }
           }, [subscribe, value, getSnapshot]);
-          useEffect12(function() {
+          useEffect13(function() {
             if (checkIfSnapshotChanged(inst)) {
               forceUpdate({
                 inst
@@ -43082,7 +43082,7 @@ var require_with_selector_development = __commonJS({
         }
         var objectIs = typeof Object.is === "function" ? Object.is : is2;
         var useSyncExternalStore = shim.useSyncExternalStore;
-        var useRef13 = React4.useRef, useEffect12 = React4.useEffect, useMemo5 = React4.useMemo, useDebugValue2 = React4.useDebugValue;
+        var useRef13 = React4.useRef, useEffect13 = React4.useEffect, useMemo6 = React4.useMemo, useDebugValue2 = React4.useDebugValue;
         function useSyncExternalStoreWithSelector2(subscribe, getSnapshot, getServerSnapshot, selector, isEqual) {
           var instRef = useRef13(null);
           var inst;
@@ -43095,7 +43095,7 @@ var require_with_selector_development = __commonJS({
           } else {
             inst = instRef.current;
           }
-          var _useMemo = useMemo5(function() {
+          var _useMemo = useMemo6(function() {
             var hasMemo = false;
             var memoizedSnapshot;
             var memoizedSelection;
@@ -43139,7 +43139,7 @@ var require_with_selector_development = __commonJS({
             return [getSnapshotWithSelector, getServerSnapshotWithSelector];
           }, [getSnapshot, getServerSnapshot, selector, isEqual]), getSelection = _useMemo[0], getServerSelection = _useMemo[1];
           var value = useSyncExternalStore(subscribe, getSelection, getServerSelection);
-          useEffect12(function() {
+          useEffect13(function() {
             inst.hasValue = true;
             inst.value = value;
           }, [value]);
@@ -43517,8 +43517,8 @@ var require_moment = __commonJS({
         return input.replace(/\\/g, "");
       }
       function makeFormatFunction(format2) {
-        var array = format2.match(formattingTokens), i, length2;
-        for (i = 0, length2 = array.length; i < length2; i++) {
+        var array = format2.match(formattingTokens), i, length;
+        for (i = 0, length = array.length; i < length; i++) {
           if (formatTokenFunctions[array[i]]) {
             array[i] = formatTokenFunctions[array[i]];
           } else {
@@ -43527,7 +43527,7 @@ var require_moment = __commonJS({
         }
         return function(mom) {
           var output = "", i2;
-          for (i2 = 0; i2 < length2; i2++) {
+          for (i2 = 0; i2 < length; i2++) {
             output += isFunction(array[i2]) ? array[i2].call(mom, format2) : array[i2];
           }
           return output;
@@ -47964,10 +47964,10 @@ var require_react_jsx_runtime_development = __commonJS({
             return jsxWithValidation(type, props, key2, false);
           }
         }
-        var jsx17 = jsxWithValidationDynamic;
+        var jsx16 = jsxWithValidationDynamic;
         var jsxs13 = jsxWithValidationStatic;
         exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.jsx = jsx17;
+        exports.jsx = jsx16;
         exports.jsxs = jsxs13;
       })();
     }
@@ -49012,8 +49012,8 @@ var require_luxon = __commonJS({
     var monthsLong2 = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     var monthsShort2 = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     var monthsNarrow2 = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
-    function months2(length2) {
-      switch (length2) {
+    function months2(length) {
+      switch (length) {
         case "narrow":
           return [].concat(monthsNarrow2);
         case "short":
@@ -49031,8 +49031,8 @@ var require_luxon = __commonJS({
     var weekdaysLong2 = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
     var weekdaysShort2 = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
     var weekdaysNarrow2 = ["M", "T", "W", "T", "F", "S", "S"];
-    function weekdays2(length2) {
-      switch (length2) {
+    function weekdays2(length) {
+      switch (length) {
         case "narrow":
           return [].concat(weekdaysNarrow2);
         case "short":
@@ -49049,8 +49049,8 @@ var require_luxon = __commonJS({
     var erasLong2 = ["Before Christ", "Anno Domini"];
     var erasShort2 = ["BC", "AD"];
     var erasNarrow2 = ["B", "A"];
-    function eras2(length2) {
-      switch (length2) {
+    function eras2(length) {
+      switch (length) {
         case "narrow":
           return [].concat(erasNarrow2);
         case "short":
@@ -49064,14 +49064,14 @@ var require_luxon = __commonJS({
     function meridiemForDateTime2(dt) {
       return meridiems2[dt.hour < 12 ? 0 : 1];
     }
-    function weekdayForDateTime2(dt, length2) {
-      return weekdays2(length2)[dt.weekday - 1];
+    function weekdayForDateTime2(dt, length) {
+      return weekdays2(length)[dt.weekday - 1];
     }
-    function monthForDateTime2(dt, length2) {
-      return months2(length2)[dt.month - 1];
+    function monthForDateTime2(dt, length) {
+      return months2(length)[dt.month - 1];
     }
-    function eraForDateTime2(dt, length2) {
-      return eras2(length2)[dt.year < 0 ? 0 : 1];
+    function eraForDateTime2(dt, length) {
+      return eras2(length)[dt.year < 0 ? 0 : 1];
     }
     function formatRelativeTime2(unit, count, numeric, narrow) {
       if (numeric === void 0) {
@@ -49299,18 +49299,18 @@ var require_luxon = __commonJS({
             hour: "numeric",
             hour12: true
           }, "dayperiod");
-        }, month = function month2(length2, standalone) {
-          return knownEnglish ? monthForDateTime2(dt, length2) : string(standalone ? {
-            month: length2
+        }, month = function month2(length, standalone) {
+          return knownEnglish ? monthForDateTime2(dt, length) : string(standalone ? {
+            month: length
           } : {
-            month: length2,
+            month: length,
             day: "numeric"
           }, "month");
-        }, weekday = function weekday2(length2, standalone) {
-          return knownEnglish ? weekdayForDateTime2(dt, length2) : string(standalone ? {
-            weekday: length2
+        }, weekday = function weekday2(length, standalone) {
+          return knownEnglish ? weekdayForDateTime2(dt, length) : string(standalone ? {
+            weekday: length
           } : {
-            weekday: length2,
+            weekday: length,
             month: "long",
             day: "numeric"
           }, "weekday");
@@ -49321,9 +49321,9 @@ var require_luxon = __commonJS({
           } else {
             return token;
           }
-        }, era = function era2(length2) {
-          return knownEnglish ? eraForDateTime2(dt, length2) : string({
-            era: length2
+        }, era = function era2(length) {
+          return knownEnglish ? eraForDateTime2(dt, length) : string({
+            era: length
           }, "era");
         }, tokenToString = function tokenToString2(token) {
           switch (token) {
@@ -50134,14 +50134,14 @@ var require_luxon = __commonJS({
       }
       return ms;
     }
-    function listStuff2(loc, length2, defaultOK, englishFn, intlFn) {
+    function listStuff2(loc, length, defaultOK, englishFn, intlFn) {
       var mode = loc.listingMode(defaultOK);
       if (mode === "error") {
         return null;
       } else if (mode === "en") {
-        return englishFn(length2);
+        return englishFn(length);
       } else {
-        return intlFn(length2);
+        return intlFn(length);
       }
     }
     function supportsFastNumbers2(loc) {
@@ -50342,7 +50342,7 @@ var require_luxon = __commonJS({
           defaultToEN: false
         }));
       };
-      _proto4.months = function months$1(length2, format, defaultOK) {
+      _proto4.months = function months$1(length, format, defaultOK) {
         var _this = this;
         if (format === void 0) {
           format = false;
@@ -50350,22 +50350,22 @@ var require_luxon = __commonJS({
         if (defaultOK === void 0) {
           defaultOK = true;
         }
-        return listStuff2(this, length2, defaultOK, months2, function() {
+        return listStuff2(this, length, defaultOK, months2, function() {
           var intl = format ? {
-            month: length2,
+            month: length,
             day: "numeric"
           } : {
-            month: length2
+            month: length
           }, formatStr = format ? "format" : "standalone";
-          if (!_this.monthsCache[formatStr][length2]) {
-            _this.monthsCache[formatStr][length2] = mapMonths2(function(dt) {
+          if (!_this.monthsCache[formatStr][length]) {
+            _this.monthsCache[formatStr][length] = mapMonths2(function(dt) {
               return _this.extract(dt, intl, "month");
             });
           }
-          return _this.monthsCache[formatStr][length2];
+          return _this.monthsCache[formatStr][length];
         });
       };
-      _proto4.weekdays = function weekdays$1(length2, format, defaultOK) {
+      _proto4.weekdays = function weekdays$1(length, format, defaultOK) {
         var _this2 = this;
         if (format === void 0) {
           format = false;
@@ -50373,21 +50373,21 @@ var require_luxon = __commonJS({
         if (defaultOK === void 0) {
           defaultOK = true;
         }
-        return listStuff2(this, length2, defaultOK, weekdays2, function() {
+        return listStuff2(this, length, defaultOK, weekdays2, function() {
           var intl = format ? {
-            weekday: length2,
+            weekday: length,
             year: "numeric",
             month: "long",
             day: "numeric"
           } : {
-            weekday: length2
+            weekday: length
           }, formatStr = format ? "format" : "standalone";
-          if (!_this2.weekdaysCache[formatStr][length2]) {
-            _this2.weekdaysCache[formatStr][length2] = mapWeekdays2(function(dt) {
+          if (!_this2.weekdaysCache[formatStr][length]) {
+            _this2.weekdaysCache[formatStr][length] = mapWeekdays2(function(dt) {
               return _this2.extract(dt, intl, "weekday");
             });
           }
-          return _this2.weekdaysCache[formatStr][length2];
+          return _this2.weekdaysCache[formatStr][length];
         });
       };
       _proto4.meridiems = function meridiems$1(defaultOK) {
@@ -50410,21 +50410,21 @@ var require_luxon = __commonJS({
           return _this3.meridiemCache;
         });
       };
-      _proto4.eras = function eras$1(length2, defaultOK) {
+      _proto4.eras = function eras$1(length, defaultOK) {
         var _this4 = this;
         if (defaultOK === void 0) {
           defaultOK = true;
         }
-        return listStuff2(this, length2, defaultOK, eras2, function() {
+        return listStuff2(this, length, defaultOK, eras2, function() {
           var intl = {
-            era: length2
+            era: length
           };
-          if (!_this4.eraCache[length2]) {
-            _this4.eraCache[length2] = [DateTime2.utc(-40, 1, 1), DateTime2.utc(2017, 1, 1)].map(function(dt) {
+          if (!_this4.eraCache[length]) {
+            _this4.eraCache[length] = [DateTime2.utc(-40, 1, 1), DateTime2.utc(2017, 1, 1)].map(function(dt) {
               return _this4.extract(dt, intl, "era");
             });
           }
-          return _this4.eraCache[length2];
+          return _this4.eraCache[length];
         });
       };
       _proto4.extract = function extract(dt, intlOpts, field) {
@@ -51343,7 +51343,7 @@ var require_luxon = __commonJS({
         return o && o.isLuxonInterval || false;
       };
       var _proto = Interval3.prototype;
-      _proto.length = function length2(unit) {
+      _proto.length = function length(unit) {
         if (unit === void 0) {
           unit = "milliseconds";
         }
@@ -51623,44 +51623,44 @@ var require_luxon = __commonJS({
       Info3.normalizeZone = function normalizeZone$1(input) {
         return normalizeZone2(input, Settings2.defaultZone);
       };
-      Info3.months = function months3(length2, _temp) {
-        if (length2 === void 0) {
-          length2 = "long";
+      Info3.months = function months3(length, _temp) {
+        if (length === void 0) {
+          length = "long";
         }
         var _ref = _temp === void 0 ? {} : _temp, _ref$locale = _ref.locale, locale = _ref$locale === void 0 ? null : _ref$locale, _ref$numberingSystem = _ref.numberingSystem, numberingSystem = _ref$numberingSystem === void 0 ? null : _ref$numberingSystem, _ref$locObj = _ref.locObj, locObj = _ref$locObj === void 0 ? null : _ref$locObj, _ref$outputCalendar = _ref.outputCalendar, outputCalendar = _ref$outputCalendar === void 0 ? "gregory" : _ref$outputCalendar;
-        return (locObj || Locale2.create(locale, numberingSystem, outputCalendar)).months(length2);
+        return (locObj || Locale2.create(locale, numberingSystem, outputCalendar)).months(length);
       };
-      Info3.monthsFormat = function monthsFormat(length2, _temp2) {
-        if (length2 === void 0) {
-          length2 = "long";
+      Info3.monthsFormat = function monthsFormat(length, _temp2) {
+        if (length === void 0) {
+          length = "long";
         }
         var _ref2 = _temp2 === void 0 ? {} : _temp2, _ref2$locale = _ref2.locale, locale = _ref2$locale === void 0 ? null : _ref2$locale, _ref2$numberingSystem = _ref2.numberingSystem, numberingSystem = _ref2$numberingSystem === void 0 ? null : _ref2$numberingSystem, _ref2$locObj = _ref2.locObj, locObj = _ref2$locObj === void 0 ? null : _ref2$locObj, _ref2$outputCalendar = _ref2.outputCalendar, outputCalendar = _ref2$outputCalendar === void 0 ? "gregory" : _ref2$outputCalendar;
-        return (locObj || Locale2.create(locale, numberingSystem, outputCalendar)).months(length2, true);
+        return (locObj || Locale2.create(locale, numberingSystem, outputCalendar)).months(length, true);
       };
-      Info3.weekdays = function weekdays3(length2, _temp3) {
-        if (length2 === void 0) {
-          length2 = "long";
+      Info3.weekdays = function weekdays3(length, _temp3) {
+        if (length === void 0) {
+          length = "long";
         }
         var _ref3 = _temp3 === void 0 ? {} : _temp3, _ref3$locale = _ref3.locale, locale = _ref3$locale === void 0 ? null : _ref3$locale, _ref3$numberingSystem = _ref3.numberingSystem, numberingSystem = _ref3$numberingSystem === void 0 ? null : _ref3$numberingSystem, _ref3$locObj = _ref3.locObj, locObj = _ref3$locObj === void 0 ? null : _ref3$locObj;
-        return (locObj || Locale2.create(locale, numberingSystem, null)).weekdays(length2);
+        return (locObj || Locale2.create(locale, numberingSystem, null)).weekdays(length);
       };
-      Info3.weekdaysFormat = function weekdaysFormat(length2, _temp4) {
-        if (length2 === void 0) {
-          length2 = "long";
+      Info3.weekdaysFormat = function weekdaysFormat(length, _temp4) {
+        if (length === void 0) {
+          length = "long";
         }
         var _ref4 = _temp4 === void 0 ? {} : _temp4, _ref4$locale = _ref4.locale, locale = _ref4$locale === void 0 ? null : _ref4$locale, _ref4$numberingSystem = _ref4.numberingSystem, numberingSystem = _ref4$numberingSystem === void 0 ? null : _ref4$numberingSystem, _ref4$locObj = _ref4.locObj, locObj = _ref4$locObj === void 0 ? null : _ref4$locObj;
-        return (locObj || Locale2.create(locale, numberingSystem, null)).weekdays(length2, true);
+        return (locObj || Locale2.create(locale, numberingSystem, null)).weekdays(length, true);
       };
       Info3.meridiems = function meridiems3(_temp5) {
         var _ref5 = _temp5 === void 0 ? {} : _temp5, _ref5$locale = _ref5.locale, locale = _ref5$locale === void 0 ? null : _ref5$locale;
         return Locale2.create(locale).meridiems();
       };
-      Info3.eras = function eras3(length2, _temp6) {
-        if (length2 === void 0) {
-          length2 = "short";
+      Info3.eras = function eras3(length, _temp6) {
+        if (length === void 0) {
+          length = "short";
         }
         var _ref6 = _temp6 === void 0 ? {} : _temp6, _ref6$locale = _ref6.locale, locale = _ref6$locale === void 0 ? null : _ref6$locale;
-        return Locale2.create(locale, null, "gregory").eras(length2);
+        return Locale2.create(locale, null, "gregory").eras(length);
       };
       Info3.features = function features() {
         var intl = false, intlTokens = false, zones = false, relative = false;
@@ -54659,7 +54659,7 @@ var require_rrule = __commonJS({
                     /* range */
                   ])(this.yearlen), 0, this.yearlen];
                 };
-                Iterinfo.prototype.mdayset = function(_17, month, __) {
+                Iterinfo.prototype.mdayset = function(_18, month, __) {
                   var start = this.mrange[month - 1];
                   var end = this.mrange[month];
                   var set2 = Object(helpers[
@@ -55126,7 +55126,7 @@ var require_rrule = __commonJS({
               var options = {};
               var dtstartWithZone = /^DTSTART;TZID=(.+?):([^;]+)$/.exec(rfcString);
               if (dtstartWithZone) {
-                var _17 = dtstartWithZone[0], tzid = dtstartWithZone[1], dtstart = dtstartWithZone[2];
+                var _18 = dtstartWithZone[0], tzid = dtstartWithZone[1], dtstart = dtstartWithZone[2];
                 options.tzid = tzid;
                 options.dtstart = esm_dateutil.untilStringToDate(dtstart);
                 return options;
@@ -55987,7 +55987,7 @@ var require_rrule = __commonJS({
                   this._handle_BYMINUTE = this._handle_int_list;
                   this._handle_BYSECOND = this._handle_int_list;
                 }
-                RRuleStr.prototype._handle_DTSTART = function(rrkwargs, _17, value, __) {
+                RRuleStr.prototype._handle_DTSTART = function(rrkwargs, _18, value, __) {
                   var parms = /^DTSTART(?:;TZID=([^:=]+))?(?::|=)(.*)/.exec(value);
                   var ___ = parms[0], tzid = parms[1], dtstart = parms[2];
                   rrkwargs["dtstart"] = esm_dateutil.untilStringToDate(dtstart);
@@ -56003,20 +56003,20 @@ var require_rrule = __commonJS({
                     return parseInt(x, 10);
                   });
                 };
-                RRuleStr.prototype._handle_FREQ = function(rrkwargs, _17, value, __) {
+                RRuleStr.prototype._handle_FREQ = function(rrkwargs, _18, value, __) {
                   rrkwargs["freq"] = RRuleStr._freq_map[value];
                 };
-                RRuleStr.prototype._handle_UNTIL = function(rrkwargs, _17, value, __) {
+                RRuleStr.prototype._handle_UNTIL = function(rrkwargs, _18, value, __) {
                   try {
                     rrkwargs["until"] = esm_dateutil.untilStringToDate(value);
                   } catch (error) {
                     throw new Error("invalid until date");
                   }
                 };
-                RRuleStr.prototype._handle_WKST = function(rrkwargs, _17, value, __) {
+                RRuleStr.prototype._handle_WKST = function(rrkwargs, _18, value, __) {
                   rrkwargs["wkst"] = RRuleStr._weekday_map[value];
                 };
-                RRuleStr.prototype._handle_BYWEEKDAY = function(rrkwargs, _17, value, __) {
+                RRuleStr.prototype._handle_BYWEEKDAY = function(rrkwargs, _18, value, __) {
                   var splt;
                   var i;
                   var j;
@@ -57784,14 +57784,14 @@ function mapWeekdays(f) {
   }
   return ms;
 }
-function listStuff(loc, length2, englishFn, intlFn) {
+function listStuff(loc, length, englishFn, intlFn) {
   const mode = loc.listingMode();
   if (mode === "error") {
     return null;
   } else if (mode === "en") {
-    return englishFn(length2);
+    return englishFn(length);
   } else {
-    return intlFn(length2);
+    return intlFn(length);
   }
 }
 function supportsFastNumbers(loc) {
@@ -57969,24 +57969,24 @@ var Locale = class _Locale {
   redefaultToSystem(alts = {}) {
     return this.clone({ ...alts, defaultToEN: false });
   }
-  months(length2, format = false) {
-    return listStuff(this, length2, months, () => {
-      const intl = format ? { month: length2, day: "numeric" } : { month: length2 }, formatStr = format ? "format" : "standalone";
-      if (!this.monthsCache[formatStr][length2]) {
-        this.monthsCache[formatStr][length2] = mapMonths((dt) => this.extract(dt, intl, "month"));
+  months(length, format = false) {
+    return listStuff(this, length, months, () => {
+      const intl = format ? { month: length, day: "numeric" } : { month: length }, formatStr = format ? "format" : "standalone";
+      if (!this.monthsCache[formatStr][length]) {
+        this.monthsCache[formatStr][length] = mapMonths((dt) => this.extract(dt, intl, "month"));
       }
-      return this.monthsCache[formatStr][length2];
+      return this.monthsCache[formatStr][length];
     });
   }
-  weekdays(length2, format = false) {
-    return listStuff(this, length2, weekdays, () => {
-      const intl = format ? { weekday: length2, year: "numeric", month: "long", day: "numeric" } : { weekday: length2 }, formatStr = format ? "format" : "standalone";
-      if (!this.weekdaysCache[formatStr][length2]) {
-        this.weekdaysCache[formatStr][length2] = mapWeekdays(
+  weekdays(length, format = false) {
+    return listStuff(this, length, weekdays, () => {
+      const intl = format ? { weekday: length, year: "numeric", month: "long", day: "numeric" } : { weekday: length }, formatStr = format ? "format" : "standalone";
+      if (!this.weekdaysCache[formatStr][length]) {
+        this.weekdaysCache[formatStr][length] = mapWeekdays(
           (dt) => this.extract(dt, intl, "weekday")
         );
       }
-      return this.weekdaysCache[formatStr][length2];
+      return this.weekdaysCache[formatStr][length];
     });
   }
   meridiems() {
@@ -58005,15 +58005,15 @@ var Locale = class _Locale {
       }
     );
   }
-  eras(length2) {
-    return listStuff(this, length2, eras, () => {
-      const intl = { era: length2 };
-      if (!this.eraCache[length2]) {
-        this.eraCache[length2] = [DateTime.utc(-40, 1, 1), DateTime.utc(2017, 1, 1)].map(
+  eras(length) {
+    return listStuff(this, length, eras, () => {
+      const intl = { era: length };
+      if (!this.eraCache[length]) {
+        this.eraCache[length] = [DateTime.utc(-40, 1, 1), DateTime.utc(2017, 1, 1)].map(
           (dt) => this.extract(dt, intl, "era")
         );
       }
-      return this.eraCache[length2];
+      return this.eraCache[length];
     });
   }
   extract(dt, intlOpts, field) {
@@ -58536,8 +58536,8 @@ var monthsShort = [
   "Dec"
 ];
 var monthsNarrow = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
-function months(length2) {
-  switch (length2) {
+function months(length) {
+  switch (length) {
     case "narrow":
       return [...monthsNarrow];
     case "short":
@@ -58563,8 +58563,8 @@ var weekdaysLong = [
 ];
 var weekdaysShort = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 var weekdaysNarrow = ["M", "T", "W", "T", "F", "S", "S"];
-function weekdays(length2) {
-  switch (length2) {
+function weekdays(length) {
+  switch (length) {
     case "narrow":
       return [...weekdaysNarrow];
     case "short":
@@ -58581,8 +58581,8 @@ var meridiems = ["AM", "PM"];
 var erasLong = ["Before Christ", "Anno Domini"];
 var erasShort = ["BC", "AD"];
 var erasNarrow = ["B", "A"];
-function eras(length2) {
-  switch (length2) {
+function eras(length) {
+  switch (length) {
     case "narrow":
       return [...erasNarrow];
     case "short":
@@ -58596,14 +58596,14 @@ function eras(length2) {
 function meridiemForDateTime(dt) {
   return meridiems[dt.hour < 12 ? 0 : 1];
 }
-function weekdayForDateTime(dt, length2) {
-  return weekdays(length2)[dt.weekday - 1];
+function weekdayForDateTime(dt, length) {
+  return weekdays(length)[dt.weekday - 1];
 }
-function monthForDateTime(dt, length2) {
-  return months(length2)[dt.month - 1];
+function monthForDateTime(dt, length) {
+  return months(length)[dt.month - 1];
 }
-function eraForDateTime(dt, length2) {
-  return eras(length2)[dt.year < 0 ? 0 : 1];
+function eraForDateTime(dt, length) {
+  return eras(length)[dt.year < 0 ? 0 : 1];
 }
 function formatRelativeTime(unit, count, numeric = "always", narrow = false) {
   const units = {
@@ -58747,8 +58747,8 @@ var Formatter = class _Formatter {
         return "Z";
       }
       return dt.isValid ? dt.zone.formatOffset(dt.ts, opts.format) : "";
-    }, meridiem = () => knownEnglish ? meridiemForDateTime(dt) : string({ hour: "numeric", hourCycle: "h12" }, "dayperiod"), month = (length2, standalone) => knownEnglish ? monthForDateTime(dt, length2) : string(standalone ? { month: length2 } : { month: length2, day: "numeric" }, "month"), weekday = (length2, standalone) => knownEnglish ? weekdayForDateTime(dt, length2) : string(
-      standalone ? { weekday: length2 } : { weekday: length2, month: "long", day: "numeric" },
+    }, meridiem = () => knownEnglish ? meridiemForDateTime(dt) : string({ hour: "numeric", hourCycle: "h12" }, "dayperiod"), month = (length, standalone) => knownEnglish ? monthForDateTime(dt, length) : string(standalone ? { month: length } : { month: length, day: "numeric" }, "month"), weekday = (length, standalone) => knownEnglish ? weekdayForDateTime(dt, length) : string(
+      standalone ? { weekday: length } : { weekday: length, month: "long", day: "numeric" },
       "weekday"
     ), maybeMacro = (token) => {
       const formatOpts = _Formatter.macroTokenToFormatOpts(token);
@@ -58757,7 +58757,7 @@ var Formatter = class _Formatter {
       } else {
         return token;
       }
-    }, era = (length2) => knownEnglish ? eraForDateTime(dt, length2) : string({ era: length2 }, "era"), tokenToString = (token) => {
+    }, era = (length) => knownEnglish ? eraForDateTime(dt, length) : string({ era: length }, "era"), tokenToString = (token) => {
       switch (token) {
         case "S":
           return this.num(dt.millisecond);
@@ -60574,8 +60574,8 @@ var Info = class {
    * @example Info.months('long', { outputCalendar: 'islamic' })[0] //=> 'Rabiʻ I'
    * @return {Array}
    */
-  static months(length2 = "long", { locale = null, numberingSystem = null, locObj = null, outputCalendar = "gregory" } = {}) {
-    return (locObj || Locale.create(locale, numberingSystem, outputCalendar)).months(length2);
+  static months(length = "long", { locale = null, numberingSystem = null, locObj = null, outputCalendar = "gregory" } = {}) {
+    return (locObj || Locale.create(locale, numberingSystem, outputCalendar)).months(length);
   }
   /**
    * Return an array of format month names.
@@ -60590,8 +60590,8 @@ var Info = class {
    * @param {string} [opts.outputCalendar='gregory'] - the calendar
    * @return {Array}
    */
-  static monthsFormat(length2 = "long", { locale = null, numberingSystem = null, locObj = null, outputCalendar = "gregory" } = {}) {
-    return (locObj || Locale.create(locale, numberingSystem, outputCalendar)).months(length2, true);
+  static monthsFormat(length = "long", { locale = null, numberingSystem = null, locObj = null, outputCalendar = "gregory" } = {}) {
+    return (locObj || Locale.create(locale, numberingSystem, outputCalendar)).months(length, true);
   }
   /**
    * Return an array of standalone week names.
@@ -60607,8 +60607,8 @@ var Info = class {
    * @example Info.weekdays('short', { locale: 'ar' })[0] //=> 'الاثنين'
    * @return {Array}
    */
-  static weekdays(length2 = "long", { locale = null, numberingSystem = null, locObj = null } = {}) {
-    return (locObj || Locale.create(locale, numberingSystem, null)).weekdays(length2);
+  static weekdays(length = "long", { locale = null, numberingSystem = null, locObj = null } = {}) {
+    return (locObj || Locale.create(locale, numberingSystem, null)).weekdays(length);
   }
   /**
    * Return an array of format week names.
@@ -60622,8 +60622,8 @@ var Info = class {
    * @param {string} [opts.locObj=null] - an existing locale object to use
    * @return {Array}
    */
-  static weekdaysFormat(length2 = "long", { locale = null, numberingSystem = null, locObj = null } = {}) {
-    return (locObj || Locale.create(locale, numberingSystem, null)).weekdays(length2, true);
+  static weekdaysFormat(length = "long", { locale = null, numberingSystem = null, locObj = null } = {}) {
+    return (locObj || Locale.create(locale, numberingSystem, null)).weekdays(length, true);
   }
   /**
    * Return an array of meridiems.
@@ -60646,8 +60646,8 @@ var Info = class {
    * @example Info.eras('long', { locale: 'fr' }) //=> [ 'avant Jésus-Christ', 'après Jésus-Christ' ]
    * @return {Array}
    */
-  static eras(length2 = "short", { locale = null } = {}) {
-    return Locale.create(locale, null, "gregory").eras(length2);
+  static eras(length = "short", { locale = null } = {}) {
+    return Locale.create(locale, null, "gregory").eras(length);
   }
   /**
    * Return the set of available features in this environment.
@@ -63126,7 +63126,7 @@ var import_obsidian9 = require("obsidian");
 var import_obsidian_dataview3 = __toESM(require_lib());
 
 // src/index.tsx
-var import_lodash15 = __toESM(require_lodash());
+var import_lodash16 = __toESM(require_lodash());
 var import_obsidian7 = require("obsidian");
 var React3 = __toESM(require_react());
 var import_client = __toESM(require_client());
@@ -66777,11 +66777,11 @@ var DragOverlay = /* @__PURE__ */ import_react3.default.memo((_ref) => {
 });
 
 // src/components/App.tsx
-var import_jquery2 = __toESM(require_jquery());
-var import_lodash13 = __toESM(require_lodash());
+var import_jquery = __toESM(require_jquery());
+var import_lodash14 = __toESM(require_lodash());
 var import_obsidian5 = require("obsidian");
 var import_obsidian_dataview2 = __toESM(require_lib());
-var import_react18 = __toESM(require_react());
+var import_react19 = __toESM(require_react());
 
 // node_modules/immer/dist/immer.mjs
 var NOTHING = Symbol.for("immer-nothing");
@@ -67634,7 +67634,7 @@ function invariant(condition, message) {
 var import_obsidian = require("obsidian");
 function roundMinutes(date) {
   return date.set({
-    minute: Math.floor(date.minute / 15) * 15,
+    minute: Math.floor(date.minute) - Math.floor(date.minute) % 15,
     second: 0,
     millisecond: 0
   });
@@ -67644,16 +67644,16 @@ var getEndISO = ({ tasks, events: events2, startISO, endISO }) => {
   invariant(startISO, endISO);
   let startTime = DateTime.fromISO(startISO);
   for (let event of events2) {
-    const length2 = DateTime.fromISO(event.endISO).diff(
+    const length = DateTime.fromISO(event.endISO).diff(
       DateTime.fromISO(event.startISO)
     );
-    startTime = startTime.plus(length2);
+    startTime = startTime.plus(length);
   }
   for (let task of tasks) {
     if (!task.length)
       continue;
-    const length2 = Duration.fromDurationLike(task.length);
-    startTime = startTime.plus(length2);
+    const length = Duration.fromDurationLike(task.length);
+    startTime = startTime.plus(length);
   }
   return import_lodash2.default.max([toISO(startTime), endISO]);
 };
@@ -67800,36 +67800,21 @@ var scrolling = false;
 var scrollToSection = async (id) => {
   let scrollTimeout = null;
   return new Promise((resolve) => {
-    let count = 0;
-    const scroll = () => {
-      count++;
-      if (count > 10) {
-        (0, import_lodash2.reject)(`section not found: #time-ruler-${id}`);
-        return;
-      }
-      const child = document.getElementById(`time-ruler-${id}`);
-      if (!child) {
-        if (scrollTimeout) {
-          clearTimeout(scrollTimeout);
-        }
-        scrollTimeout = setTimeout(() => scrollToSection(id), 250);
-        return;
-      }
-      if (scrolling)
-        return;
-      scrolling = true;
-      child.scrollIntoView({
-        block: "start",
-        inline: "start",
-        behavior: "smooth"
-      });
-      setTimeout(() => {
-        resolve();
-        scrollTimeout = null;
-        scrolling = false;
-      }, 500);
-    };
-    scroll();
+    const child = document.getElementById(`time-ruler-${id}`);
+    if (!child) {
+      (0, import_lodash2.reject)("child not found");
+      return;
+    }
+    child.scrollIntoView({
+      block: "start",
+      inline: "start",
+      behavior: "smooth"
+    });
+    setTimeout(() => {
+      resolve();
+      scrollTimeout = null;
+      scrolling = false;
+    }, 500);
   });
 };
 var queryTasks = (id, query, tasks) => {
@@ -67941,12 +67926,14 @@ var nestedScheduled = (parentScheduled, childScheduled) => {
   return !parentScheduled && childScheduled ? false : parentScheduled && childScheduled && parentScheduled < childScheduled ? false : true;
 };
 var getToday = () => {
+  return getStartDate(DateTime.now());
+};
+var getStartDate = (time) => {
   const dayEnd = getters.get("settings").dayStartEnd[1];
-  const now3 = DateTime.now();
-  if (dayEnd < 12 && now3.hour < dayEnd)
-    return now3.minus({ days: 1 }).toISODate();
+  if (dayEnd < 12 && time.hour < dayEnd)
+    return time.minus({ days: 1 }).toISODate();
   else
-    return now3.toISODate();
+    return time.toISODate();
 };
 var hasPriority = (task) => task.priority !== void 0 && task.priority !== 3 /* DEFAULT */;
 
@@ -67972,6 +67959,7 @@ var useAppStore = createWithEqualityFn(() => ({
     dayStartEnd: [0, 24],
     groupBy: "path",
     muted: false,
+    timerEvent: "notification",
     twentyFourHourFormat: false,
     showCompleted: false,
     extendBlocks: false,
@@ -68168,151 +68156,101 @@ var onDragStart = (ev) => {
 };
 
 // src/services/autoScroll.ts
-var import_jquery = __toESM(require_jquery());
 var import_obsidian2 = require("obsidian");
 var import_react7 = __toESM(require_react());
-var useAutoScroll = (dragging) => {
-  const dragRef = (0, import_react7.useRef)(dragging);
-  dragRef.current = dragging;
-  const scrollAction = (0, import_react7.useRef)(false);
-  const timeRulerBoundingRect = (0, import_react7.useRef)(null);
-  const position = (0, import_react7.useRef)({ x: 0, y: 0 });
-  const autoScroll = () => {
-    if (!dragRef.current)
-      return;
-    const SCROLL_TIME = 1e3;
-    const WAIT_TIME = 500;
-    const MARGIN = 20;
-    const performScroll = (el, scrollInfo) => {
-      var _a;
-      if (!dragRef.current)
-        return;
-      (0, import_jquery.default)(el).css("scroll-snap-type", "none");
-      el.win.setTimeout(() => {
-        (0, import_jquery.default)(el).css("scroll-snap-type", "");
-      }, SCROLL_TIME);
-      scrollAction.current = true;
-      el.win.setTimeout(() => {
-        scrollAction.current = false;
-      }, SCROLL_TIME);
-      switch (scrollInfo.type) {
-        case "top":
-          el.scrollBy({
-            top: scrollInfo.value,
-            behavior: "smooth"
-          });
-          break;
-        case "left":
-          el.scrollBy({
-            left: scrollInfo.value,
-            behavior: "smooth"
-          });
-          break;
-        case "section":
-          (_a = (0, import_jquery.default)(el).children()[scrollInfo.value]) == null ? void 0 : _a.scrollIntoView({
-            inline: "start",
-            behavior: "smooth"
-          });
-          break;
-      }
-    };
-    const prepareScroll = (el, scrollInfo) => {
-      if (!dragRef.current)
-        return;
-      scrollAction.current = window.setTimeout(
-        () => performScroll(el, scrollInfo),
-        WAIT_TIME
-      );
-    };
-    const cancelScroll = () => {
-      if (typeof scrollAction.current === "number")
-        window.clearTimeout(scrollAction.current);
-      scrollAction.current = false;
-    };
-    let continueAutoScroll = false;
-    const targets = document.elementsFromPoint(
-      position.current.x,
-      position.current.y
-    );
-    const yTargets = targets.filter(
-      (el) => el.getAttribute("data-auto-scroll") === "y"
-    );
-    for (let el of yTargets) {
-      const rect = el.getBoundingClientRect();
-      if (rect.top > position.current.y - MARGIN) {
-        if (!scrollAction.current)
-          prepareScroll(el, {
-            type: "top",
-            value: (rect.height - MARGIN * 2) * -1
-          });
-        continueAutoScroll = true;
-        break;
-      } else if (rect.bottom < position.current.y + MARGIN) {
-        if (!scrollAction.current)
-          prepareScroll(el, { type: "top", value: rect.height - MARGIN * 2 });
-        continueAutoScroll = true;
-        break;
-      }
-    }
-    const xTargets = targets.filter(
-      (el) => el.getAttribute("data-auto-scroll") === "x"
-    );
-    for (let el of xTargets) {
-      const rect = el.getBoundingClientRect();
-      if (rect.left > position.current.x - MARGIN) {
-        if (!scrollAction.current)
-          prepareScroll(el, {
-            type: "left",
-            value: (rect.width - MARGIN * 2) * -1
-          });
-        continueAutoScroll = true;
-        break;
-      } else if (rect.right < position.current.x + MARGIN) {
-        if (!scrollAction.current)
-          prepareScroll(el, { type: "left", value: rect.width - MARGIN * 2 });
-        continueAutoScroll = true;
-        break;
-      }
-    }
-    if (!continueAutoScroll && scrollAction.current) {
-      cancelScroll();
-    }
-    if (dragRef.current)
-      requestAnimationFrame(autoScroll);
-  };
-  const updateMousePosition = (ev) => {
-    if (!dragRef.current)
-      return;
-    if (ev instanceof TouchEvent) {
-      position.current.x = ev.touches[0].clientX;
-      position.current.y = ev.touches[0].clientY;
-    } else if (ev instanceof MouseEvent) {
-      position.current.x = ev.clientX;
-      position.current.y = ev.clientY;
-    }
-  };
+var useAutoScroll = () => {
+  const dragging = useAppStore((state) => !!state.dragData);
+  let scrolling2 = (0, import_react7.useRef)(false);
+  let timeout = (0, import_react7.useRef)(null);
+  const WAIT_TIME = 500;
   (0, import_react7.useEffect)(() => {
-    if (dragging) {
-      timeRulerBoundingRect.current = (0, import_jquery.default)("#time-ruler")[0].getBoundingClientRect();
+    const scrollBy = (el, object) => {
+      scrolling2.current = true;
+      el.scrollBy({ ...object, behavior: "smooth" });
+      setTimeout(() => {
+        scrolling2.current = false;
+        timeout.current = null;
+      }, 750);
+    };
+    const autoScroll = (ev) => {
+      if (scrolling2.current)
+        return;
+      let pos = { x: 0, y: 0 };
+      if (ev instanceof TouchEvent) {
+        pos.x = ev.touches[0].clientX;
+        pos.y = ev.touches[0].clientY;
+      } else if (ev instanceof MouseEvent) {
+        pos.x = ev.clientX;
+        pos.y = ev.clientY;
+      }
+      const tr = document.getElementById("time-ruler");
+      invariant(tr);
+      let found = false;
+      for (let el of tr.findAll("[data-auto-scroll]")) {
+        const { left, top, right, bottom, width, height } = el.getBoundingClientRect();
+        if (pos.x < left || pos.x > right || pos.y < top || pos.y > bottom)
+          continue;
+        const MARGIN = 10;
+        if (pos.x < left + MARGIN) {
+          found = true;
+          if (!timeout.current)
+            timeout.current = setTimeout(
+              () => scrollBy(el, { left: -width }),
+              WAIT_TIME
+            );
+          break;
+        } else if (pos.x > right - MARGIN) {
+          found = true;
+          if (!timeout.current)
+            timeout.current = setTimeout(
+              () => scrollBy(el, { left: width }),
+              WAIT_TIME
+            );
+          break;
+        } else if (pos.y < top + MARGIN) {
+          found = true;
+          if (!timeout.current)
+            timeout.current = setTimeout(
+              () => scrollBy(el, { top: -height }),
+              WAIT_TIME
+            );
+          break;
+        } else if (pos.y > bottom - MARGIN) {
+          found = true;
+          if (!timeout.current)
+            timeout.current = setTimeout(
+              () => scrollBy(el, { top: height }),
+              WAIT_TIME
+            );
+          break;
+        }
+      }
+      if (!found && timeout.current) {
+        clearTimeout(timeout.current);
+        timeout.current = null;
+      }
+    };
+    if (dragging)
       window.addEventListener(
         import_obsidian2.Platform.isMobile ? "touchmove" : "mousemove",
-        updateMousePosition
+        autoScroll
       );
-      autoScroll();
-    } else {
-      scrollAction.current = false;
+    return () => {
       window.removeEventListener(
         import_obsidian2.Platform.isMobile ? "touchmove" : "mousemove",
-        updateMousePosition
+        autoScroll
       );
-    }
+    };
   }, [dragging]);
 };
 
 // src/services/obsidianApi.ts
-var import_lodash5 = __toESM(require_lodash());
+var import_lodash6 = __toESM(require_lodash());
 var import_obsidian3 = require("obsidian");
 var import_obsidian_dataview = __toESM(require_lib());
+
+// src/assets/assets.ts
+var import_lodash4 = __toESM(require_lodash());
 
 // src/assets/pop.mp3
 var pop_default = "data:audio/mpeg;base64,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";
@@ -68332,12 +68270,17 @@ var sounds = {
   start: startSnd,
   timer: timerSnd
 };
+for (let sound of import_lodash4.default.values(sounds)) {
+  sound.autoplay = true;
+  sound.pause();
+  sound.currentTime = 0;
+}
 
 // src/services/parser.ts
-var import_lodash4 = __toESM(require_lodash());
+var import_lodash5 = __toESM(require_lodash());
 var ISO_MATCH = "\\d{4}-\\d{2}-\\d{2}(T\\d{2}:\\d{2})?";
 var TASKS_EMOJI_SEARCH = new RegExp(
-  `[${import_lodash4.default.values(keyToTasksEmoji).join("")}] ?(${ISO_MATCH})?`,
+  `[${import_lodash5.default.values(keyToTasksEmoji).join("")}] ?(${ISO_MATCH})?`,
   "gi"
 );
 var TASKS_REPEAT_SEARCH = new RegExp(
@@ -68375,8 +68318,8 @@ function textToTask(item, dailyNoteInfo2, defaultFormat) {
   let notes = item.text.includes("\n") ? (_c = item.text.match(/\n((.|\n)*$)/)) == null ? void 0 : _c[1] : void 0;
   if (notes)
     notes = notes.replace(LINK_SEARCH, "[$1]");
-  const extraFields = import_lodash4.default.mapValues(
-    import_lodash4.default.omit(item, RESERVED_FIELDS),
+  const extraFields = import_lodash5.default.mapValues(
+    import_lodash5.default.omit(item, RESERVED_FIELDS),
     (x) => x.toString()
   );
   const parseId = (task) => {
@@ -68386,10 +68329,10 @@ function textToTask(item, dailyNoteInfo2, defaultFormat) {
     var _a2, _b2, _c2, _d2, _e2, _f;
     let rawScheduled = item.scheduled;
     let rawLength = item.length;
-    let length3;
+    let length2;
     let scheduled2;
     if (rawLength && Duration.isDuration(rawLength))
-      length3 = { hour: rawLength.hours, minute: rawLength.minutes };
+      length2 = { hour: rawLength.hours, minute: rawLength.minutes };
     let isDate2 = true;
     if (rawScheduled) {
       const hasTime = /scheduled:: ?\d{4}-\d{2}-\d{2}T/.test(item.text);
@@ -68468,7 +68411,7 @@ function textToTask(item, dailyNoteInfo2, defaultFormat) {
           if (endTime < rawScheduled)
             endTime = endTime.plus({ day: 1 });
           rawLength = endTime.diff(rawScheduled).shiftTo("hour", "minute");
-          length3 = { hour: rawLength.hours, minute: rawLength.minutes };
+          length2 = { hour: rawLength.hours, minute: rawLength.minutes };
         }
       }
     }
@@ -68477,7 +68420,7 @@ function textToTask(item, dailyNoteInfo2, defaultFormat) {
     else {
       scheduled2 = isDate2 ? rawScheduled.toISODate() : toISO(rawScheduled);
     }
-    return { scheduled: scheduled2, length: length3 };
+    return { scheduled: scheduled2, length: length2 };
   };
   const parseDateKey = (key2) => {
     var _a2, _b2;
@@ -68546,7 +68489,7 @@ function textToTask(item, dailyNoteInfo2, defaultFormat) {
       return `"${item.query}"`;
     return item.query;
   };
-  const { length: length2, scheduled } = parseScheduledAndLength();
+  const { length, scheduled } = parseScheduledAndLength();
   const due = parseDateKey("due");
   const completion = item.completed ? parseDateKey("completion") : void 0;
   const start = parseDateKey("start");
@@ -68567,14 +68510,14 @@ function textToTask(item, dailyNoteInfo2, defaultFormat) {
     reminder,
     due,
     scheduled,
-    length: length2,
+    length,
     tags: item.tags,
     title,
     originalTitle,
     originalText: item.text,
     notes,
     repeat,
-    extraFields: import_lodash4.default.keys(extraFields).length > 0 ? extraFields : void 0,
+    extraFields: import_lodash5.default.keys(extraFields).length > 0 ? extraFields : void 0,
     position: item.position,
     path: item.path + (item.section.subpath ? "#" + item.section.subpath : ""),
     priority,
@@ -68593,7 +68536,7 @@ function pageToTask(item, defaultFieldFormat) {
   const parseScheduledAndLength = () => {
     var _a2;
     let scheduled2 = testDateTime(item.scheduled);
-    let length3 = testDuration(item.length);
+    let length2 = testDuration(item.length);
     let isDate2 = false;
     let startHours = void 0, startMinutes = void 0;
     const date = testDateTime(item.date);
@@ -68621,7 +68564,7 @@ function pageToTask(item, defaultFieldFormat) {
               minute: startMinutes
             });
             const durationLength = endTime.diff(startTime).shiftTo("hour", "minute");
-            length3 = {
+            length2 = {
               hour: durationLength.hours,
               minute: durationLength.minutes
             };
@@ -68632,9 +68575,9 @@ function pageToTask(item, defaultFieldFormat) {
     }
     if (isDate2 && scheduled2)
       scheduled2 = scheduled2.slice(0, 10);
-    return { scheduled: scheduled2, length: length3 };
+    return { scheduled: scheduled2, length: length2 };
   };
-  const { scheduled, length: length2 } = parseScheduledAndLength();
+  const { scheduled, length } = parseScheduledAndLength();
   const fieldFormat = item.date || item.startTime ? "full-calendar" : "dataview";
   return {
     id: item.file.path,
@@ -68649,7 +68592,7 @@ function pageToTask(item, defaultFieldFormat) {
     reminder: testDateTime(item.reminder),
     due: testDateTime(item.due),
     scheduled,
-    length: length2,
+    length,
     tags: [...item.file.tags],
     title: item.file.name,
     originalTitle: item.file.name,
@@ -68704,7 +68647,7 @@ function taskToText(task, defaultFieldFormat) {
   const dailyNoteInfo2 = getters.get("dailyNoteInfo");
   let draft = `- [${task.completed ? "x" : task.status}] ${task.originalTitle.replace(/\s+$/, "")} ${task.tags.length > 0 ? task.tags.join(" ") + " " : ""}`;
   if (task.extraFields) {
-    import_lodash4.default.sortBy(import_lodash4.default.entries(task.extraFields), 0).forEach(([key2, value]) => {
+    import_lodash5.default.sortBy(import_lodash5.default.entries(task.extraFields), 0).forEach(([key2, value]) => {
       draft += `[${key2}:: ${value}]`;
     });
   }
@@ -68743,7 +68686,7 @@ function taskToText(task, defaultFieldFormat) {
       }
       if (task.due)
         draft += `  > ${task.due}`;
-      if (task.priority && task.priority !== 3 /* DEFAULT */) {
+      if (hasPriority(task)) {
         draft += ` ${priorityNumberToSimplePriority[task.priority]}`;
       }
       if ((!task.scheduled || isDateISO(task.scheduled)) && task.length && task.length.hour + task.length.minute > 0) {
@@ -68985,24 +68928,22 @@ var ObsidianAPI = class extends import_obsidian3.Component {
     if (!excludePaths)
       return;
     this.excludePaths = new RegExp(
-      excludePaths.map((x) => `^${import_lodash5.default.escapeRegExp(x)}`).join("|")
+      excludePaths.map((x) => `^${import_lodash6.default.escapeRegExp(x)}`).join("|")
     );
   }
   searchTasks(path, dailyNoteInfo, completed = false, dateBounds) {
     const now = DateTime.now();
     const customStatuses = new RegExp(
-      `[${(0, import_lodash5.escapeRegExp)(this.settings.customStatus.statuses)}]`
+      `[${(0, import_lodash6.escapeRegExp)(this.settings.customStatus.statuses)}]`
     );
     let taskSearch;
     let pageSearch;
     const testDateBounds = (task) => {
-      var _a, _b;
-      const taskDate = (_b = (_a = task.scheduled) != null ? _a : task.due) != null ? _b : task.completion;
+      var _a;
+      const taskDate = (_a = task.scheduled) != null ? _a : task.completion;
       if (!DateTime.isDateTime(taskDate))
         return true;
       const dateString = toISO(taskDate);
-      if (!dateString)
-        return true;
       return dateString >= dateBounds[0] && dateString <= dateBounds[1];
     };
     try {
@@ -69047,7 +68988,7 @@ var ObsidianAPI = class extends import_obsidian3.Component {
         (task) => textToTask(task, dailyNoteInfo, this.settings.fieldFormat)
       )
     ).array();
-    const tasksDict = import_lodash5.default.fromPairs(processedTasks.map((task) => [task.id, task]));
+    const tasksDict = import_lodash6.default.fromPairs(processedTasks.map((task) => [task.id, task]));
     for (let task of processedTasks) {
       if (task.page)
         continue;
@@ -69078,8 +69019,12 @@ var ObsidianAPI = class extends import_obsidian3.Component {
     }
     const dailyNoteInfo2 = getters.get("dailyNoteInfo");
     const searchWithinWeeks = getters.get("searchWithinWeeks");
-    const dateBounds2 = [
-      DateTime.now().plus({ weeks: searchWithinWeeks[0] }).toISODate(),
+    const showingPastDates = getters.get("showingPastDates");
+    const dateBounds2 = showingPastDates ? [
+      DateTime.now().minus({ weeks: searchWithinWeeks[1] }).toISODate(),
+      DateTime.now().plus({ days: 1 }).toISODate()
+    ] : [
+      DateTime.now().minus({ days: 1 }).toISODate(),
       DateTime.now().plus({ weeks: searchWithinWeeks[1] }).toISODate()
     ];
     const tasks = this.searchTasks(path2, dailyNoteInfo2, completed2, dateBounds2);
@@ -69089,7 +69034,7 @@ var ObsidianAPI = class extends import_obsidian3.Component {
     const updatedTasks = {
       ...getters.get("tasks")
     };
-    const newHeadings = import_lodash5.default.uniq(
+    const newHeadings = import_lodash6.default.uniq(
       processedTasks2.map(
         (task) => parseFileFromPath(
           parseHeadingFromPath(task.path, task.page, dailyNoteInfo2)
@@ -69122,22 +69067,22 @@ var ObsidianAPI = class extends import_obsidian3.Component {
       delete updatedTasks[id];
     }
     for (let task of processedTasks2) {
-      if (!import_lodash5.default.isEqual(task, updatedTasks[task.id])) {
+      if (!import_lodash6.default.isEqual(task, updatedTasks[task.id])) {
         updated = true;
         updatedTasks[task.id] = task;
       }
     }
     if (!updated)
       return;
-    const queries = import_lodash5.default.sortBy(
-      import_lodash5.default.filter(updatedTasks, (task) => !task.completed && !!task.query),
+    const queries = import_lodash6.default.sortBy(
+      import_lodash6.default.filter(updatedTasks, (task) => !task.completed && !!task.query),
       (task) => {
         var _a;
         return (_a = getParentScheduled(task, updatedTasks)) != null ? _a : "99999";
       }
     );
-    const queriedIds = import_lodash5.default.groupBy(
-      import_lodash5.default.keys(updatedTasks),
+    const queriedIds = import_lodash6.default.groupBy(
+      import_lodash6.default.keys(updatedTasks),
       (id) => updatedTasks[id].queryParent
     );
     const alreadyQueried = /* @__PURE__ */ new Set();
@@ -69160,7 +69105,7 @@ var ObsidianAPI = class extends import_obsidian3.Component {
         };
       }
       if (queriedIds[task.id]) {
-        const unQueriedIds = import_lodash5.default.difference(
+        const unQueriedIds = import_lodash6.default.difference(
           queriedIds[task.id],
           queriedTasks.map((x) => x.id)
         );
@@ -69183,7 +69128,7 @@ var ObsidianAPI = class extends import_obsidian3.Component {
     if (beforeIndex === -1)
       throw new Error("file not in headings list");
     const newFileOrder = [...this.settings.fileOrder];
-    import_lodash5.default.pull(newFileOrder, file);
+    import_lodash6.default.pull(newFileOrder, file);
     newFileOrder.splice(beforeIndex, 0, file);
     this.setSetting({ fileOrder: newFileOrder });
     setters.set({ fileOrder: newFileOrder });
@@ -69219,7 +69164,7 @@ var ObsidianAPI = class extends import_obsidian3.Component {
     let targetLine;
     if (heading) {
       targetLine = lines.findIndex(
-        (line) => new RegExp(`#+ ${import_lodash5.default.escapeRegExp(heading)}$`).test(line)
+        (line) => new RegExp(`#+ ${import_lodash6.default.escapeRegExp(heading)}$`).test(line)
       ) + 1;
       if (this.settings.addTaskToEnd) {
         targetLine = lines.findIndex(
@@ -69289,17 +69234,17 @@ var ObsidianAPI = class extends import_obsidian3.Component {
   async deleteTasks(ids2) {
     const tasks = getters.get("tasks");
     const deletedTaskGroups = ids2.map((id) => tasks[id]);
-    const files = import_lodash5.default.groupBy(
+    const files = import_lodash6.default.groupBy(
       deletedTaskGroups,
       (task) => parseFileFromPath(task.path)
     );
     const updatedTasks = {};
-    for (let [filePath, deletedTasks] of import_lodash5.default.entries(files)) {
+    for (let [filePath, deletedTasks] of import_lodash6.default.entries(files)) {
       const file = await this.getFile(filePath);
       invariant(file);
       const fileText = await this.app.vault.read(file);
       const lines = fileText.split("\n");
-      for (let task of import_lodash5.default.sortBy(
+      for (let task of import_lodash6.default.sortBy(
         deletedTasks,
         (task2) => task2.position.start.line * -1
       )) {
@@ -69308,11 +69253,11 @@ var ObsidianAPI = class extends import_obsidian3.Component {
           task.position.end.line + 1 - task.position.start.line
         );
         if (task.query) {
-          for (let queriedTask of import_lodash5.default.filter(
+          for (let queriedTask of import_lodash6.default.filter(
             getters.get("tasks"),
             (queriedTask2) => queriedTask2.queryParent === task.id
           )) {
-            updatedTasks[queriedTask.id] = import_lodash5.default.omit(queriedTask, "queryParent");
+            updatedTasks[queriedTask.id] = import_lodash6.default.omit(queriedTask, "queryParent");
           }
         }
       }
@@ -69421,12 +69366,14 @@ function openTaskInRuler(id) {
       showingPastDates: task.completed,
       searchWithinWeeks: [
         searchWithinWeeks[0],
-        import_lodash5.default.max([weeksAhead, searchWithinWeeks[1]])
+        import_lodash6.default.max([weeksAhead, searchWithinWeeks[1]])
       ]
     });
   }
   setTimeout(async () => {
-    let section = !scheduled ? "unscheduled" : scheduled.slice(0, 10);
+    const now3 = toISO(DateTime.now());
+    const showingPastDates = getters.get("showingPastDates");
+    let section = !scheduled ? "unscheduled" : scheduled < now3 && scheduled !== now3.slice(0, 10) && !showingPastDates ? "now" : scheduled.slice(0, 10);
     await scrollToSection(section);
     let tries = 0;
     const findTask = () => {
@@ -69453,7 +69400,7 @@ function openTaskInRuler(id) {
 }
 
 // src/components/Block.tsx
-var import_lodash8 = __toESM(require_lodash());
+var import_lodash10 = __toESM(require_lodash());
 
 // node_modules/zustand/esm/shallow.mjs
 function shallow$1(objA, objB) {
@@ -69554,38 +69501,8 @@ function Droppable({
 }
 
 // src/components/Task.tsx
-var import_lodash6 = __toESM(require_lodash());
-
-// src/components/Deadline.tsx
+var import_lodash7 = __toESM(require_lodash());
 var import_jsx_runtime3 = __toESM(require_jsx_runtime());
-function Deadline({
-  task,
-  dragContainer,
-  isDragging = false
-}) {
-  const dragData = {
-    dragType: "due",
-    task,
-    dragContainer
-  };
-  const { setNodeRef, attributes, listeners } = useDraggable({
-    id: `${dragContainer}::due`,
-    data: dragData
-  });
-  return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
-    "div",
-    {
-      ref: setNodeRef,
-      ...attributes,
-      ...listeners,
-      className: `task-due ml-2 cursor-grab whitespace-nowrap font-menu text-xs text-accent hover:underline ${!task.due && !isDragging ? "hidden group-hover:block" : ""}`,
-      children: !task.due ? "due" : DateTime.fromISO(task.due).toFormat("EEEEE M/d")
-    }
-  );
-}
-
-// src/components/Task.tsx
-var import_jsx_runtime4 = __toESM(require_jsx_runtime());
 function Task({
   dragContainer,
   startISO,
@@ -69602,13 +69519,14 @@ function Task({
   };
   subtasks = useAppStore((state) => {
     var _a2;
-    return import_lodash6.default.flatMap(
+    return import_lodash7.default.flatMap(
       subtasks != null ? subtasks : task.children.concat((_a2 = task.queryChildren) != null ? _a2 : []).map((id) => state.tasks[id]),
       (subtask) => {
         if (!subtask)
           return [];
-        if (!nestedScheduled(task.scheduled, subtask.scheduled))
+        if (!nestedScheduled(task.scheduled, subtask.scheduled) && !nestedScheduled(task.due, subtask.scheduled)) {
           return [];
+        }
         if (subtask.completed !== state.showingPastDates)
           return [];
         return subtask;
@@ -69643,92 +69561,109 @@ function Task({
     attributes: lengthAttributes,
     listeners: lengthListeners
   } = useDraggable({
-    id: `${task.id}::${renderType}::${length}::${dragContainer}`,
+    id: `${task.id}::${renderType}::length::${dragContainer}`,
     data: lengthDragData
+  });
+  const deadlineDragData = {
+    dragType: "due",
+    task
+  };
+  const {
+    setNodeRef: setDeadlineNodeRef,
+    attributes: deadlineAttributes,
+    listeners: deadlineListeners
+  } = useDraggable({
+    id: `${task.id}::${renderType}::deadline::${dragContainer}`,
+    data: deadlineDragData
   });
   const dailyNoteInfo2 = useAppStore((state) => state.dailyNoteInfo);
   if (!task)
-    return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(import_jsx_runtime4.Fragment, {});
+    return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_jsx_runtime3.Fragment, {});
   const hasLengthDrag = task.length || task.scheduled && !isDateISO(task.scheduled);
-  return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(
+  return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(
     "div",
     {
-      className: `relative rounded-icon py-0.5 transition-colors duration-300 w-full`,
+      className: `relative rounded-icon py-0.5 transition-colors duration-300 w-full min-h-line`,
       "data-id": isLink ? "" : task.id,
       "data-task": task.status === " " ? "" : task.status,
       children: [
-        /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(
+        /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(
           "div",
           {
-            className: `selectable group flex items-start rounded-icon pr-2 ${isLink ? "font-menu text-xs" : "font-sans"}`,
+            className: `selectable group flex items-start rounded-icon pr-2 font-sans ${isLink ? "text-sm" : ""}`,
             ref: setNodeRef,
             children: [
-              /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "flex h-line w-indent flex-none items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+              /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "flex h-line w-indent flex-none items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
                 Button_default,
                 {
                   onPointerDown: () => false,
                   onClick: () => completeTask(),
-                  className: `task-list-item-checkbox selectable flex flex-none items-center justify-center rounded-checkbox border border-solid border-faint p-0 text-xs shadow-none hover:border-normal cursor-pointer ${isLink ? "h-2 w-2" : "h-4 w-4"} ${task.completed ? "bg-faint" : "bg-transparent"}`,
+                  className: `task-list-item-checkbox selectable flex flex-none items-center justify-center rounded-checkbox border border-solid border-faint p-0 text-xs shadow-none hover:border-normal cursor-pointer ${isLink ? "h-2 w-2" : app.isMobile ? "h-5 w-5" : "h-4 w-4"} ${task.completed ? "bg-faint" : "bg-transparent"}`,
                   "data-task": task.status === " " ? "" : task.status,
-                  children: task.status === "x" ? /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(import_jsx_runtime4.Fragment, {}) : task.status
+                  children: task.status === "x" ? /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_jsx_runtime3.Fragment, {}) : task.status
                 }
               ) }),
-              /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
-                "div",
-                {
-                  className: `w-fit cursor-pointer break-words leading-line hover:underline ${[1 /* HIGH */, 0 /* HIGHEST */].includes(
-                    task.priority
-                  ) ? "text-accent" : renderType === "deadline" ? "" : task.priority === 4 /* LOW */ || isLink || task.status === "x" ? "text-faint" : ""}`,
-                  onClick: () => openTask(task),
-                  children: task.title || "Untitled"
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "flex h-line grow items-center justify-end space-x-1 font-menu child:my-1", children: [
-                task.priority !== 3 /* DEFAULT */ && /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "task-priority whitespace-nowrap rounded-full px-1 font-menu text-xs font-bold text-accent", children: priorityNumberToSimplePriority[task.priority] }),
-                hasLengthDrag && /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+              /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: `flex w-full`, children: [
+                /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
                   "div",
                   {
-                    className: `task-length cursor-ns-resize whitespace-nowrap font-menu text-xs text-accent ${!task.length ? "hidden group-hover:block" : ""}`,
-                    ref: setLengthNodeRef,
-                    ...lengthAttributes,
-                    ...lengthListeners,
-                    children: !task.length ? "length" : `${((_c = task.length) == null ? void 0 : _c.hour) ? `${(_d = task.length) == null ? void 0 : _d.hour}h` : ""}${((_e = task.length) == null ? void 0 : _e.minute) ? `${(_f = task.length) == null ? void 0 : _f.minute}m` : ""}`
+                    className: `w-fit cursor-pointer break-words leading-line hover:underline ${[1 /* HIGH */, 0 /* HIGHEST */].includes(
+                      task.priority
+                    ) ? "text-accent" : renderType === "deadline" ? "" : task.priority === 4 /* LOW */ || isLink || task.status === "x" ? "text-faint" : ""}`,
+                    onClick: () => openTask(task),
+                    children: task.title || "Untitled"
                   }
                 ),
-                !task.completed && /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
-                  Deadline,
-                  {
-                    task,
-                    dragContainer: `${task.id}::${renderType}::${dragContainer}`
-                  }
-                ),
-                !task.completed && task.reminder && /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "task-reminder ml-2 flex items-center whitespace-nowrap font-menu text-xs text-normal", children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Logo, { src: "alarm-clock", className: "mr-1" }),
-                  /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { children: `${DateTime.fromISO(task.reminder.slice(0, 10)).toFormat(
-                    "M/d"
-                  )}${task.reminder.slice(10)}` })
-                ] }),
-                /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+                /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(
                   "div",
                   {
-                    className: "hidden group-hover:block cursor-grab",
-                    ...attributes,
-                    ...listeners,
-                    ref: setActivatorNodeRef,
-                    children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
-                      Logo,
-                      {
-                        src: "align-justify",
-                        className: "hover:bg-selection transition-colors duration-300 rounded-icon p-1 w-6"
-                      }
-                    )
+                    className: `h-line grow items-center space-x-1 font-menu child:my-1 justify-end flex`,
+                    children: [
+                      task.priority !== 3 /* DEFAULT */ && /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "task-priority whitespace-nowrap rounded-full px-1 font-menu text-xs font-bold text-accent", children: priorityNumberToSimplePriority[task.priority] }),
+                      hasLengthDrag && /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
+                        "div",
+                        {
+                          className: `task-length cursor-ns-resize whitespace-nowrap font-menu text-xs text-accent group-hover:bg-selection group-hover:rounded-full group-hover:px-2 ${!task.length ? "hidden group-hover:block" : ""}`,
+                          ref: setLengthNodeRef,
+                          ...lengthAttributes,
+                          ...lengthListeners,
+                          children: !task.length ? "length" : `${((_c = task.length) == null ? void 0 : _c.hour) ? `${(_d = task.length) == null ? void 0 : _d.hour}h` : ""}${((_e = task.length) == null ? void 0 : _e.minute) ? `${(_f = task.length) == null ? void 0 : _f.minute}m` : ""}`
+                        }
+                      ),
+                      !task.completed && /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
+                        "div",
+                        {
+                          ref: setDeadlineNodeRef,
+                          ...deadlineAttributes,
+                          ...deadlineListeners,
+                          className: `task-due ml-2 cursor-grab whitespace-nowrap font-menu text-xs text-accent hover:underline group-hover:bg-selection group-hover:rounded-full group-hover:px-2 ${!task.due ? "hidden group-hover:block" : ""}`,
+                          children: !task.due ? "due" : DateTime.fromISO(task.due).toFormat("EEEEE M/d")
+                        }
+                      ),
+                      !task.completed && task.reminder && /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "task-reminder ml-2 flex items-center whitespace-nowrap font-menu text-xs text-normal", children: [
+                        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(Logo, { src: "alarm-clock", className: "mr-1" }),
+                        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("span", { children: `${DateTime.fromISO(task.reminder.slice(0, 10)).toFormat(
+                          "M/d"
+                        )}${task.reminder.slice(10)}` })
+                      ] })
+                    ]
                   }
                 )
-              ] })
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
+                "div",
+                {
+                  className: "hidden group-hover:flex cursor-grab grow items-center ml-1 h-line",
+                  ...attributes,
+                  ...listeners,
+                  ref: setActivatorNodeRef,
+                  children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(Logo, { src: "align-justify", className: "py-2 px-1 h-full" })
+                }
+              )
             ]
           }
         ),
-        import_lodash6.default.keys(task.extraFields).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "no-scrollbar flex space-x-2 overflow-x-auto pl-indent text-xs child:whitespace-nowrap", children: task.tags.map((tag) => /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+        import_lodash7.default.keys(task.extraFields).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "no-scrollbar flex space-x-2 overflow-x-auto pl-indent text-xs child:whitespace-nowrap", children: task.tags.map((tag) => /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
           "div",
           {
             className: "cm-hashtag cm-hashtag-end cm-hashtag-begin !h-fit !text-xs",
@@ -69736,18 +69671,18 @@ function Task({
           },
           tag
         )) }),
-        !isLink && task.notes && /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "task-description break-words pl-indent pr-2 text-xs text-faint", children: task.notes }),
-        subtasks && subtasks.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "flex w-full overflow-hidden", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+        !isLink && task.notes && /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "task-description break-words pl-indent pr-2 text-xs text-faint", children: task.notes }),
+        subtasks && subtasks.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "flex w-full overflow-hidden", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
             "div",
             {
               className: `min-w-[20px] grow min-h-[12px] flex items-center justify-end ${collapsed ? "pl-indent pr-2" : "pl-[8px] py-2"}`,
-              children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+              children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
                 "div",
                 {
                   className: "h-full w-full transition-colors duration-300 hover:bg-selection rounded-icon flex items-center justify-center cursor-pointer",
                   onClick: () => setters.patchCollapsed([task.id], !collapsed),
-                  children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+                  children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
                     "div",
                     {
                       className: `${collapsed ? "h-0 w-full border-t" : "w-0 h-full border-l"} border-0 border-solid border-faint opacity-50`
@@ -69757,7 +69692,7 @@ function Task({
               )
             }
           ),
-          !collapsed && subtasks.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+          !collapsed && subtasks.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
             Block,
             {
               dragContainer: `${dragContainer}::${task.id}`,
@@ -69780,8 +69715,8 @@ function Task({
 }
 
 // src/components/Group.tsx
-var import_lodash7 = __toESM(require_lodash());
-var import_jsx_runtime5 = __toESM(require_jsx_runtime());
+var import_lodash8 = __toESM(require_lodash());
+var import_jsx_runtime4 = __toESM(require_jsx_runtime());
 var UNGROUPED = "__ungrouped";
 function Group({
   path: path2,
@@ -69805,7 +69740,7 @@ function Group({
   const [heading, container] = useAppStore(
     (state) => {
       var _a;
-      return formatHeadingTitle(
+      return path2 === UPCOMING ? ["Upcoming", ""] : formatHeadingTitle(
         path2,
         state.settings.groupBy,
         state.dailyNoteInfo,
@@ -69820,15 +69755,20 @@ function Group({
   const dragging = useAppStore(
     (state) => state.settings.groupBy === "path" && state.dragData && state.dragData.dragType === "group" && parseFileFromPath(state.dragData.path) !== heading
   );
-  return /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(
+  const sortedTasks = import_lodash8.default.sortBy(
+    tasks,
+    (task) => path2 === UPCOMING ? task.due : parseFileFromPath(task.path),
+    "position.start.line"
+  );
+  return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(
     "div",
     {
       ref: setNodeRef,
       className: `w-full overflow-hidden time-ruler-group`,
       "data-id": `${path2}::${dragContainer}::${type}`,
       children: [
-        path2 && path2 !== UNGROUPED && !hidePaths.includes(path2) && /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(import_jsx_runtime5.Fragment, { children: [
-          dragging ? /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(
+        path2 && path2 !== UNGROUPED && !hidePaths.includes(path2) && /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(import_jsx_runtime4.Fragment, { children: [
+          dragging ? /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
             Droppable,
             {
               data: {
@@ -69836,15 +69776,15 @@ function Group({
                 heading: parseFileFromPath(path2)
               },
               id: `${dragContainer}::${path2}::droppable`,
-              children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "h-2 w-full rounded-icon" })
+              children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "h-2 w-full rounded-icon" })
             }
-          ) : /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "h-2 w-full rounded-icon" }),
-          /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(
+          ) : /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "h-2 w-full rounded-icon" }),
+          /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(
             "div",
             {
               className: `selectable flex rounded-icon font-menu text-xs group w-full`,
               children: [
-                /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "w-indent flex-none px-1", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(
+                /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "w-indent flex-none px-1", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
                   Button_default,
                   {
                     className: "group-hover:opacity-100 opacity-0 transition-opacity duration-200 h-4 py-0.5 flex-none",
@@ -69856,7 +69796,7 @@ function Group({
                     onPointerDown: () => false
                   }
                 ) }),
-                /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(
+                /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(
                   "div",
                   {
                     className: "w-full flex items-center cursor-grab",
@@ -69864,9 +69804,9 @@ function Group({
                     ...listeners,
                     ref: setActivatorNodeRef,
                     children: [
-                      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: `w-fit flex-none max-w-[50%] text-normal`, children: heading.slice(0, 40) + (heading.length > 40 ? "..." : "") }),
-                      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("hr", { className: "border-t border-t-faint opacity-50 mx-2 h-0 my-0 w-full" }),
-                      container && !hidePaths.includes(container) && /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "w-fit flex-none text-right pr-2", children: (container.slice(0, 25) + (container.length > 25 ? "..." : "")).replace(".md", "") })
+                      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: `w-fit flex-none max-w-[50%] text-normal`, children: heading.slice(0, 40) + (heading.length > 40 ? "..." : "") }),
+                      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("hr", { className: "border-t border-t-faint opacity-50 mx-2 h-0 my-0 w-full" }),
+                      container && !hidePaths.includes(container) && /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "w-fit flex-none text-right pr-2", children: (container.slice(0, 25) + (container.length > 25 ? "..." : "")).replace(".md", "") })
                     ]
                   }
                 )
@@ -69874,11 +69814,7 @@ function Group({
             }
           )
         ] }),
-        !collapsed && import_lodash7.default.sortBy(
-          tasks,
-          (task) => parseFileFromPath(task.path),
-          "position.start.line"
-        ).map((task) => /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Task, { dragContainer, ...task }, task.id))
+        !collapsed && sortedTasks.map((task) => /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Task, { dragContainer, ...task }, task.id))
       ]
     }
   );
@@ -69889,7 +69825,7 @@ var import_react12 = __toESM(require_react());
 
 // src/components/Minutes.tsx
 var import_react11 = __toESM(require_react());
-var import_jsx_runtime6 = __toESM(require_jsx_runtime());
+var import_jsx_runtime5 = __toESM(require_jsx_runtime());
 function Minutes({
   startISO,
   endISO,
@@ -69900,7 +69836,7 @@ function Minutes({
   const hideTimes = useAppStore((state) => state.settings.hideTimes);
   const dayEnd = useAppStore((state) => state.settings.dayStartEnd[1]);
   if (hideTimes)
-    return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(import_jsx_runtime6.Fragment, {});
+    return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(import_jsx_runtime5.Fragment, {});
   const times = [];
   const givenStart = DateTime.fromISO(startISO);
   const givenEnd = DateTime.fromISO(endISO);
@@ -69929,7 +69865,7 @@ function Minutes({
     );
   }
   const startISOs = times.map((time) => toISO(time));
-  return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: `min-h-[4px]`, children: times.map((time, i) => /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(Time, { ...{ type, time, dragContainer } }, startISOs[i])) });
+  return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: `min-h-[4px]`, children: times.map((time, i) => /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Time, { ...{ type, time, dragContainer } }, startISOs[i])) });
 }
 function Time({ time, type, dragContainer }) {
   const minutes = time.minute;
@@ -69971,12 +69907,12 @@ function Time({ time, type, dragContainer }) {
     return `${state.dragData["start"] <= iso && state.dragData["end"] >= iso ? "border-0 border-l-2 border-solid border-l-accent" : ""}`;
   });
   const hourDisplay = useHourDisplay(hours);
-  return /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(
+  return /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(
     "div",
     {
       className: `flex h-[16px] items-center justify-end relative`,
       children: [
-        /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(
+        /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(
           "div",
           {
             className: `flex text-sm absolute right-12 h-4 items-center bg-selection rounded-icon px-2 text-accent !z-50 justify-center ${isOver ? "block" : "hidden"}`,
@@ -69987,7 +69923,7 @@ function Time({ time, type, dragContainer }) {
             ]
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(
+        /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(
           "div",
           {
             className: `w-10 h-full flex flex-none items-center justify-end ${selectedClassName}`,
@@ -69998,13 +69934,13 @@ function Time({ time, type, dragContainer }) {
               setDragNodeRef(node);
             },
             children: [
-              /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+              /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(
                 "hr",
                 {
                   className: `my-0 border-0 border-t hover:border-accent border-faint ${type === "hours" ? hours % 6 === 0 ? "w-6" : hours % 3 === 0 ? "w-4" : "w-1" : minutes === 0 ? hours % 3 === 0 ? "w-6" : "w-4" : minutes % 30 === 0 ? "w-2" : "w-1"}`
                 }
               ),
-              /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+              /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(
                 "div",
                 {
                   className: `ml-1 h-full flex-none font-menu text-xs w-4 hover:text-accent text-muted`,
@@ -70021,7 +69957,7 @@ function Time({ time, type, dragContainer }) {
 }
 
 // src/components/Hours.tsx
-var import_jsx_runtime7 = __toESM(require_jsx_runtime());
+var import_jsx_runtime6 = __toESM(require_jsx_runtime());
 function Hours({
   startISO,
   endISO,
@@ -70048,8 +69984,8 @@ function Hours({
     });
   }
   const hideTimes = useAppStore((state) => state.settings.hideTimes);
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: `pb-1 relative ${hideTimes ? "space-y-1" : ""}`, children: [
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: `pb-1 relative ${hideTimes ? "space-y-1" : ""}`, children: [
+    /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
       Minutes,
       {
         dragContainer: dragContainer + "::" + startISO,
@@ -70068,8 +70004,8 @@ function Hours({
         blocks: blocks2
       }, i) => {
         var _a2, _b2, _c2;
-        return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)(import_react12.Fragment, { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+        return /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(import_react12.Fragment, { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
             Block,
             {
               startISO: blockStartISO,
@@ -70081,7 +70017,7 @@ function Hours({
               type: "event"
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
             Minutes,
             {
               dragContainer: dragContainer + "::" + blockStartISO,
@@ -70098,8 +70034,70 @@ function Hours({
 }
 
 // src/components/Block.tsx
+var import_react14 = __toESM(require_react());
+var import_react_dom2 = __toESM(require_react_dom());
+
+// src/components/Unscheduled.tsx
+var import_lodash9 = __toESM(require_lodash());
+var import_react13 = __toESM(require_react());
+var import_jsx_runtime7 = __toESM(require_jsx_runtime());
+var Unscheduled = (0, import_react13.memo)(_Unscheduled, () => true);
+var Unscheduled_default = Unscheduled;
+var COLLAPSE_UNSCHEDULED = "tr-collapse-unscheduled";
+function _Unscheduled() {
+  const showCompleted = useAppStore((state) => state.settings.showCompleted);
+  const showingPastDates = useAppStore((state) => state.showingPastDates);
+  const tasks = useAppStore(
+    (state) => import_lodash9.default.filter(
+      state.tasks,
+      (task) => (showCompleted || (showingPastDates ? task.completed : !task.completed)) && !task.parent && !task.queryParent && !parseTaskDate(task) && !task.due
+    )
+  );
+  const childWidth = useAppStore(
+    (state) => (state.settings.viewMode === "week" || state.settings.viewMode === "hour") && state.childWidth > 1 ? state.childWidth : 1
+  );
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: `h-0 grow flex flex-col`, children: [
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "flex items-center space-x-1 group flex-none", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+        "div",
+        {
+          className: "w-indent flex-none pr-1",
+          id: COLLAPSE_UNSCHEDULED
+        }
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Droppable, { id: "unscheduled-timespan", data: { scheduled: "" }, children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "font-menu", children: "Unscheduled" }) })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+      "div",
+      {
+        className: `h-0 grow w-full mt-1 rounded-icon ${childWidth > 1 ? `unscheduled child:h-full child:child:h-full ${[
+          "",
+          "child:child:child:child:w-full",
+          "child:child:child:child:w-1/2",
+          "child:child:child:child:w-1/3",
+          "child:child:child:child:w-1/4"
+        ][childWidth]}` : "overflow-x-hidden overflow-y-auto"}`,
+        "data-auto-scroll": childWidth > 1 ? "x" : "y",
+        children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+          Block,
+          {
+            startISO: void 0,
+            blocks: [],
+            events: [],
+            type: "unscheduled",
+            dragContainer: "unscheduled",
+            tasks
+          }
+        )
+      }
+    )
+  ] });
+}
+
+// src/components/Block.tsx
 var import_jsx_runtime8 = __toESM(require_jsx_runtime());
 var UNGROUPED2 = "__ungrouped";
+var UPCOMING = "__upcoming";
 function Block({
   hidePaths = [],
   tasks,
@@ -70115,77 +70113,71 @@ function Block({
 }) {
   var _a, _b, _c, _d;
   let showingTasks = useAppStore((state) => {
-    const children = import_lodash8.default.flatMap(tasks, (task) => getChildren(task, state.tasks));
+    const children = import_lodash10.default.flatMap(tasks, (task) => getChildren(task, state.tasks));
     return tasks.filter((task) => !children.includes(task.id));
   }, shallow$1);
-  const topLevel = import_lodash8.default.sortBy(showingTasks, "id");
+  const topLevel = import_lodash10.default.sortBy(showingTasks, "id");
   const groupedTasks = useAppStore((state) => {
     const groupBy = state.settings.groupBy;
-    switch (groupBy) {
-      case false:
-        return { [UNGROUPED2]: topLevel };
-      case "path":
-        return import_lodash8.default.groupBy(
-          topLevel,
-          (task) => {
-            var _a2;
-            return (_a2 = parseHeadingFromTask(
-              task,
-              state.tasks,
-              state.dailyNoteInfo,
-              hidePaths,
-              parentId
-            )) != null ? _a2 : UNGROUPED2;
-          }
-        );
-      case "priority":
-        return import_lodash8.default.groupBy(
-          topLevel,
-          (task) => task.priority === 3 /* DEFAULT */ ? UNGROUPED2 : task.priority
-        );
-      case "hybrid":
-        return import_lodash8.default.groupBy(
-          topLevel,
-          (task) => {
-            var _a2;
-            return task.priority === 3 /* DEFAULT */ ? (_a2 = parseHeadingFromTask(
-              task,
-              state.tasks,
-              state.dailyNoteInfo,
-              hidePaths,
-              parentId
-            )) != null ? _a2 : UNGROUPED2 : task.priority;
-          }
-        );
-    }
+    return import_lodash10.default.groupBy(topLevel, (task) => {
+      var _a2, _b2;
+      if (type === "all-day" && task.due)
+        return UPCOMING;
+      switch (groupBy) {
+        case false:
+          return UNGROUPED2;
+        case "path":
+          return (_a2 = parseHeadingFromTask(
+            task,
+            state.tasks,
+            state.dailyNoteInfo,
+            hidePaths,
+            parentId
+          )) != null ? _a2 : UNGROUPED2;
+        case "priority":
+          return task.priority === 3 /* DEFAULT */ ? UNGROUPED2 : task.priority;
+        case "hybrid":
+          return task.priority === 3 /* DEFAULT */ ? (_b2 = parseHeadingFromTask(
+            task,
+            state.tasks,
+            state.dailyNoteInfo,
+            hidePaths,
+            parentId
+          )) != null ? _b2 : UNGROUPED2 : task.priority;
+      }
+    });
   });
   const sortedGroups = useAppStore((state) => {
     switch (state.settings.groupBy) {
       case "priority":
-        return import_lodash8.default.sortBy(
-          import_lodash8.default.entries(groupedTasks),
-          ([group]) => group === UNGROUPED2 ? 0 : 1,
+        return import_lodash10.default.sortBy(
+          import_lodash10.default.entries(groupedTasks),
+          ([group]) => group === UNGROUPED2 ? 0 : group === UPCOMING ? 0.1 : 1,
           0
         );
       case "path":
-        return import_lodash8.default.sortBy(import_lodash8.default.entries(groupedTasks), [
+        return import_lodash10.default.sortBy(import_lodash10.default.entries(groupedTasks), [
+          ([group]) => group === UPCOMING ? 0 : 1,
           ([group, _tasks]) => state.fileOrder.indexOf(parseFileFromPath(group)),
           ([group, _tasks]) => group.includes(">") ? "2" : group.includes("#") ? "1" : "0",
           "1.0.id"
         ]);
       case "hybrid":
-        return import_lodash8.default.sortBy(import_lodash8.default.entries(groupedTasks), [
+        return import_lodash10.default.sortBy(import_lodash10.default.entries(groupedTasks), [
+          ([group]) => group === UPCOMING ? 0 : 1,
           ([group, _tasks]) => group === UNGROUPED2 ? 0 : priorityNumberToKey[group] !== void 0 ? 1 : 2,
           ([group, _tasks]) => priorityNumberToKey[group] !== void 0 ? group : state.fileOrder.indexOf(parseFileFromPath(group)),
           ([group, _tasks]) => group.includes(">") ? "2" : group.includes("#") ? "1" : "0",
           "1.0.id"
         ]);
       case false:
-        return import_lodash8.default.entries(groupedTasks);
+        return import_lodash10.default.entries(groupedTasks);
     }
   }, shallow$1);
-  const collapsed = useAppStore(
-    (state) => !import_lodash8.default.map(sortedGroups, ([group]) => state.collapsed[group]).includes(false)
+  const expanded = useAppStore(
+    (state) => import_lodash10.default.sum(
+      sortedGroups.filter(([group]) => group !== UNGROUPED2).map(([group]) => state.collapsed[group] ? 0 : 1)
+    ) > 0
   );
   const dragData = {
     dragType: "block",
@@ -70215,127 +70207,159 @@ function Block({
   const draggable = tasks.length > 0;
   const onlyPath = events2.length === 0 && type === "event" && sortedGroups.length === 1 && sortedGroups[0][0] !== UNGROUPED2 ? sortedGroups[0][0] : void 0;
   const onlyPathTitle = useAppStore(
-    (state) => onlyPath && formatHeadingTitle(
+    (state) => onlyPath && (onlyPath === UPCOMING ? "Upcoming" : formatHeadingTitle(
       onlyPath,
       state.settings.groupBy,
       state.dailyNoteInfo
-    )[0]
+    )[0])
   );
   const showingPastDates = useAppStore((state) => state.showingPastDates);
   const firstEndISO = ((_a = blocks[0]) == null ? void 0 : _a.startISO) || endISO;
-  const firstStartISO = showingPastDates || !startISO ? startISO : import_lodash8.default.max([startISO, toISO(roundMinutes(DateTime.now()))]);
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(
-    "div",
+  const firstStartISO = showingPastDates || !startISO ? startISO : import_lodash10.default.max([startISO, toISO(roundMinutes(DateTime.now()))]);
+  const collapseButton = () => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "w-indent flex-none px-1", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+    Button_default,
     {
-      id,
-      "data-role": "block",
-      className: `relative w-full rounded-icon ${["event", "unscheduled"].includes(type) ? "bg-code" : ""} `,
-      ref: draggable ? setNodeRef : void 0,
-      children: [
-        type === "event" && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
-          Droppable,
-          {
-            data: { scheduled: startISO != null ? startISO : "" },
-            id: `${dragContainer}::${type}::${startISO}::${(_d = (_b = tasks[0]) == null ? void 0 : _b.id) != null ? _d : (_c = events2 == null ? void 0 : events2[0]) == null ? void 0 : _c.id}`,
-            children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(
-              "div",
-              {
-                className: `selectable flex rounded-icon font-menu text-xs group w-full py-0.5`,
-                children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "w-indent flex-none px-1", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
-                    Button_default,
-                    {
-                      className: "group-hover:opacity-100 opacity-0 transition-opacity duration-200 h-4 py-0.5 flex-none",
-                      src: collapsed ? "chevron-right" : "chevron-down",
-                      onClick: () => {
-                        setters.patchCollapsed(
-                          import_lodash8.default.map(sortedGroups, 0).filter((x) => x !== UNGROUPED2),
-                          !collapsed
-                        );
-                        return false;
-                      },
-                      onPointerDown: () => false
-                    }
-                  ) }),
-                  /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "w-full flex", children: [
-                    /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: `w-fit flex-none max-w-[80%] mr-2`, children: [
-                      onlyPathTitle && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { children: onlyPathTitle.slice(0, 40) + (onlyPathTitle.length > 40 ? "..." : "") }),
-                      events2.map(({ title, id: id2 }) => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { children: title.slice(0, 40) + (title.length > 40 ? "..." : "") }, id2))
-                    ] }),
-                    /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(
-                      "div",
-                      {
-                        className: "w-full flex items-center cursor-grab pr-2",
-                        ...attributes,
-                        ...listeners,
-                        ref: setActivatorNodeRef,
-                        children: [
-                          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("hr", { className: "border-t border-t-faint opacity-50 h-0 my-0 w-full" }),
-                          startISO && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("span", { className: "ml-2 whitespace-nowrap flex-none", children: formatStart(startISO) }),
-                          hideTimes && startISO && endISO && !isDateISO(startISO) && DateTime.fromISO(startISO).diff(DateTime.fromISO(endISO)) && /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(import_jsx_runtime8.Fragment, { children: [
-                            /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("span", { className: "ml-2 text-faint flex-none", children: ">" }),
-                            /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("span", { className: "ml-2 whitespace-nowrap text-muted flex-none", children: formatStart(endISO) })
-                          ] })
-                        ]
-                      }
-                    )
-                  ] })
-                ]
-              }
-            )
+      className: "group-hover:opacity-100 opacity-0 transition-opacity duration-200 h-4 py-0.5 flex-none",
+      src: expanded ? "chevron-down" : "chevron-right",
+      onClick: () => {
+        setters.patchCollapsed(
+          import_lodash10.default.map(sortedGroups, 0).filter((x) => x !== UNGROUPED2),
+          expanded
+        );
+        return false;
+      },
+      onPointerDown: () => false
+    }
+  ) });
+  const collapsed = useAppStore(
+    (state) => type === "unscheduled" ? import_lodash10.default.sum(
+      sortedGroups.map(([title]) => state.collapsed[title] ? 1 : 0)
+    ) === sortedGroups.length : false
+  );
+  const [unscheduledPortal, setUnscheduledPortal] = (0, import_react14.useState)(null);
+  (0, import_react14.useEffect)(() => {
+    if (type === "unscheduled") {
+      setUnscheduledPortal(
+        document.getElementById(COLLAPSE_UNSCHEDULED)
+      );
+    }
+  }, []);
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(import_jsx_runtime8.Fragment, { children: [
+    type === "unscheduled" && unscheduledPortal && (0, import_react_dom2.createPortal)(
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+        Button_default,
+        {
+          className: "flex-none w-full opacity-0 group-hover:opacity-100 transition-opacity duration-300",
+          src: collapsed ? "chevron-right" : "chevron-down",
+          onClick: () => {
+            setters.patchCollapsed(import_lodash10.default.map(sortedGroups, 0), !collapsed);
+            return false;
           }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "flex relative w-full", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
-            "div",
+        }
+      ),
+      unscheduledPortal
+    ),
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(
+      "div",
+      {
+        id,
+        "data-role": "block",
+        className: `relative w-full rounded-icon ${["event", "unscheduled", "all-day"].includes(type) ? "bg-code pb-2" : ""} `,
+        ref: draggable ? setNodeRef : void 0,
+        children: [
+          (type === "event" || type === "all-day") && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+            Droppable,
             {
-              className: `time-ruler-groups w-full relative z-10 h-fit ${type === "event" ? "pt-1 pl-1 pb-1" : ""}`,
-              children: sortedGroups.map(([path2, tasks2]) => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
-                Group,
+              data: { scheduled: startISO != null ? startISO : "" },
+              id: `${dragContainer}::${type}::${startISO}::${(_d = (_b = tasks[0]) == null ? void 0 : _b.id) != null ? _d : (_c = events2 == null ? void 0 : events2[0]) == null ? void 0 : _c.id}`,
+              children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(
+                "div",
                 {
-                  ...{
-                    path: path2,
-                    tasks: tasks2,
-                    type,
-                    hidePaths: onlyPath ? [...hidePaths, onlyPath] : hidePaths,
-                    dragContainer: `${dragContainer}::${startISO}`
-                  }
-                },
-                path2
-              ))
+                  className: `selectable flex rounded-icon font-menu text-xs w-full py-0.5 group`,
+                  children: [
+                    collapseButton(),
+                    /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "w-full flex", children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: `w-fit flex-none max-w-[80%] mr-2`, children: [
+                        onlyPathTitle && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { children: onlyPathTitle.slice(0, 40) + (onlyPathTitle.length > 40 ? "..." : "") }),
+                        events2.map(({ title, id: id2 }) => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { children: title.slice(0, 40) + (title.length > 40 ? "..." : "") }, id2))
+                      ] }),
+                      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(
+                        "div",
+                        {
+                          className: "w-full flex items-center cursor-grab pr-2",
+                          ...attributes,
+                          ...listeners,
+                          ref: setActivatorNodeRef,
+                          children: [
+                            /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("hr", { className: "border-t border-t-faint opacity-50 h-0 my-0 w-full" }),
+                            startISO && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("span", { className: "ml-2 whitespace-nowrap flex-none", children: formatStart(startISO) }),
+                            hideTimes && startISO && endISO && !isDateISO(startISO) && DateTime.fromISO(startISO).diff(
+                              DateTime.fromISO(endISO)
+                            ) && /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(import_jsx_runtime8.Fragment, { children: [
+                              /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("span", { className: "ml-2 text-faint flex-none", children: ">" }),
+                              /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("span", { className: "ml-2 whitespace-nowrap text-muted flex-none", children: formatStart(endISO) })
+                            ] })
+                          ]
+                        }
+                      )
+                    ] })
+                  ]
+                }
+              )
             }
           ),
-          firstStartISO && firstEndISO && firstStartISO < firstEndISO && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "w-10 flex-none", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
-            Minutes,
-            {
-              startISO: firstStartISO,
-              endISO: firstEndISO,
-              dragContainer,
-              chopStart: true,
-              chopEnd: true
-            }
-          ) })
-        ] }),
-        events2[0] && (events2[0].location || events2[0].notes) && /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "py-2 pl-indent text-xs", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "w-full truncate", children: events2[0].location }),
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "w-full truncate text-muted", children: events2[0].notes })
-        ] }),
-        blocks.length > 0 && blocks[0].startISO && endISO && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Hours, { ...{ endISO, blocks }, startISO: blocks[0].startISO })
-      ]
-    }
-  );
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "flex relative w-full", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+              "div",
+              {
+                className: `time-ruler-groups w-full relative z-10 h-fit ${type === "event" ? "pt-1 pl-1 pb-1" : ""}`,
+                children: sortedGroups.map(([path2, tasks2]) => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+                  Group,
+                  {
+                    ...{
+                      path: path2,
+                      tasks: tasks2,
+                      type,
+                      hidePaths: onlyPath ? [...hidePaths, onlyPath] : hidePaths,
+                      dragContainer: `${dragContainer}::${startISO}`
+                    }
+                  },
+                  path2
+                ))
+              }
+            ),
+            firstStartISO && firstEndISO && firstStartISO < firstEndISO && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "w-10 flex-none", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+              Minutes,
+              {
+                startISO: firstStartISO,
+                endISO: firstEndISO,
+                dragContainer,
+                chopStart: true,
+                chopEnd: true
+              }
+            ) })
+          ] }),
+          events2[0] && (events2[0].location || events2[0].notes) && /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "py-2 pl-indent text-xs", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "w-full truncate", children: events2[0].location }),
+            /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "w-full truncate text-muted", children: events2[0].notes })
+          ] }),
+          blocks.length > 0 && blocks[0].startISO && endISO && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Hours, { ...{ endISO, blocks }, startISO: blocks[0].startISO })
+        ]
+      }
+    )
+  ] });
 }
 
 // src/components/Day.tsx
-var import_lodash9 = __toESM(require_lodash());
-var import_react14 = __toESM(require_react());
+var import_lodash11 = __toESM(require_lodash());
+var import_react16 = __toESM(require_react());
 
 // src/components/Timer.tsx
-var import_react13 = __toESM(require_react());
+var import_react15 = __toESM(require_react());
 var import_react_timer_hook = __toESM(require_dist());
 var import_jsx_runtime9 = __toESM(require_jsx_runtime());
 function Timer() {
-  const pauseExpiration = (0, import_react13.useRef)(true);
+  const pauseExpiration = (0, import_react15.useRef)(true);
   const { negative, startISO, maxSeconds, playing } = useAppStore(
     (state) => state.timer
   );
@@ -70356,7 +70380,7 @@ function Timer() {
     autoStart: false,
     offsetTimestamp: startISO ? new Date(startISO) : /* @__PURE__ */ new Date()
   });
-  (0, import_react13.useEffect)(() => {
+  (0, import_react15.useEffect)(() => {
     pauseExpiration.current = false;
     if (!startISO)
       return;
@@ -70367,12 +70391,12 @@ function Timer() {
       stopwatch.reset(DateTime.now().plus({ seconds: seconds2 }).toJSDate(), true);
     }
   }, []);
-  (0, import_react13.useEffect)(() => {
+  (0, import_react15.useEffect)(() => {
     const newPlaying = stopwatch.isRunning || timer.isRunning;
     if (newPlaying !== playing)
       setters.patchTimer({ playing: newPlaying });
   }, [stopwatch.isRunning, timer.isRunning]);
-  const [input, setInput] = (0, import_react13.useState)("");
+  const [input, setInput] = (0, import_react15.useState)("");
   const seconds = maxSeconds ? timer.seconds : stopwatch.seconds;
   const minutes = maxSeconds ? timer.minutes : stopwatch.minutes;
   const hours = maxSeconds ? timer.hours : stopwatch.hours;
@@ -70404,6 +70428,34 @@ function Timer() {
     }
     playSound();
   };
+  const reset = () => {
+    setters.patchTimer({ negative: false });
+    if (maxSeconds) {
+      setters.patchTimer({
+        maxSeconds: null
+      });
+      timer.restart(/* @__PURE__ */ new Date(), false);
+    } else {
+      stopwatch.reset(void 0, false);
+    }
+    setInput("");
+  };
+  const addTime = (minutes2) => {
+    if (maxSeconds) {
+      const currentTime2 = DateTime.now().plus({ seconds: timer.totalSeconds }).plus({ minutes: minutes2 });
+      timer.restart(currentTime2.toJSDate(), true);
+      setters.patchTimer({
+        maxSeconds: maxSeconds + minutes2 * 60,
+        startISO: currentTime2.toJSDate().toISOString()
+      });
+    } else {
+      const currentTime2 = DateTime.now().plus({
+        seconds: stopwatch.totalSeconds
+      }).plus({ minutes: minutes2 });
+      stopwatch.reset(currentTime2.toJSDate(), true);
+      setters.patchTimer({ startISO: currentTime2.toJSDate().toISOString() });
+    }
+  };
   let width = 0;
   if (!maxSeconds) {
     const CYCLE_SEC = 60;
@@ -70428,28 +70480,6 @@ function Timer() {
     else {
       playing ? maxSeconds ? timer.pause() : stopwatch.pause() : maxSeconds ? timer.resume() : stopwatch.start();
       playSound();
-    }
-  };
-  const reset = () => {
-    setters.patchTimer({ negative: false });
-    if (maxSeconds) {
-      setters.patchTimer({
-        maxSeconds: null
-      });
-      timer.restart(/* @__PURE__ */ new Date(), false);
-    } else {
-      stopwatch.reset(void 0, false);
-    }
-    setInput("");
-  };
-  const addTime = (minutes2) => {
-    if (maxSeconds) {
-      setters.patchTimer({ maxSeconds: maxSeconds + minutes2 * 60 });
-      const currentTime2 = DateTime.now().plus({ minutes: timer.minutes, hours: timer.hours }).plus({ minutes: minutes2 });
-      timer.restart(currentTime2.toJSDate(), true);
-    } else {
-      const currentTime2 = DateTime.now().plus({ minutes: stopwatch.minutes, hours: stopwatch.hours }).plus({ minutes: minutes2 });
-      stopwatch.reset(currentTime2.toJSDate(), true);
     }
   };
   const borders = useAppStore((state) => state.settings.borders);
@@ -70508,11 +70538,12 @@ function Day({
   dragContainer,
   isNow
 }) {
+  var _a, _b;
   const showingPastDates = useAppStore((state) => state.showingPastDates);
   const now3 = toISO(roundMinutes(DateTime.now()));
-  const startDate = startISO.slice(0, 10);
+  const startDate = getStartDate(DateTime.fromISO(startISO));
   const showCompleted = useAppStore((state) => state.settings.showCompleted);
-  const id = isNow ? "now" : startDate;
+  const id = startDate;
   const [allDay, blocksByTime, deadlines] = useAppStore((state) => {
     const allDay2 = {
       startISO: startDate,
@@ -70523,16 +70554,13 @@ function Day({
     };
     const blocksByTime2 = {};
     const deadlines2 = [];
-    import_lodash9.default.forEach(state.tasks, (task) => {
+    import_lodash11.default.forEach(state.tasks, (task) => {
       const scheduled = parseTaskDate(task);
-      const isShown = (task.due || scheduled && !task.queryParent) && (showCompleted || task.completed === showingPastDates);
+      const isShown = (task.due || scheduled) && !task.queryParent && (showCompleted || task.completed === showingPastDates);
       if (!isShown)
         return;
-      const scheduledForToday = !scheduled ? false : isNow ? isDateISO(scheduled) ? showingPastDates ? scheduled > startDate : scheduled < startDate : showingPastDates ? scheduled > startISO : scheduled < endISO : isDateISO(scheduled) ? scheduled === startDate : scheduled >= startISO && scheduled < endISO;
-      const dueToday = !task.due ? false : task.due >= startDate;
-      if (dueToday) {
-        deadlines2.push(task);
-      }
+      const scheduledForToday = !scheduled ? false : isNow ? isDateISO(scheduled) ? showingPastDates ? scheduled >= startDate : scheduled <= startDate : showingPastDates ? scheduled >= startISO : scheduled < endISO : isDateISO(scheduled) ? scheduled === startDate : scheduled >= startISO && scheduled < endISO;
+      const dueToday = !showingPastDates && (!task.due ? false : isNow || task.due >= startDate);
       if (scheduledForToday) {
         invariant(scheduled);
         if (isDateISO(scheduled)) {
@@ -70549,9 +70577,11 @@ function Day({
               blocks: []
             };
         }
+      } else if (dueToday) {
+        allDay2.tasks.push(task);
       }
     });
-    for (let event of import_lodash9.default.filter(
+    for (let event of import_lodash11.default.filter(
       state.events,
       (event2) => event2.endISO > startISO && event2.startISO < endISO && (showingPastDates ? event2.startISO <= now3 : event2.endISO >= now3)
     )) {
@@ -70570,10 +70600,10 @@ function Day({
     }
     return [allDay2, blocksByTime2, deadlines2];
   }, shallow$1);
-  const blocks = import_lodash9.default.map(import_lodash9.default.sortBy(import_lodash9.default.entries(blocksByTime), 0), 1);
+  let blocks = import_lodash11.default.map(import_lodash11.default.sortBy(import_lodash11.default.entries(blocksByTime), 0), 1);
   const viewMode = useAppStore((state) => state.settings.viewMode);
   const calendarMode = viewMode === "week";
-  let title = isNow ? "Now" : DateTime.fromISO(startISO || endISO).toFormat(
+  let title = isNow ? "Today" : DateTime.fromISO(startISO || endISO).toFormat(
     calendarMode ? "EEE d" : "EEE, MMM d"
   );
   const collapsed = useAppStore((state) => state.collapsed[id]);
@@ -70592,15 +70622,21 @@ function Day({
       setTimeout(() => openTaskInRuler(foundTask.id));
     }
   };
-  (0, import_react14.useEffect)(expandIfFound, [foundTaskInAllDay]);
-  const allDayFrame = (0, import_react14.useRef)(null);
-  const [allDayHeight, setAllDayHeight] = (0, import_react14.useState)();
+  (0, import_react16.useEffect)(expandIfFound, [foundTaskInAllDay]);
+  const allDayFrame = (0, import_react16.useRef)(null);
+  const [allDayHeight, setAllDayHeight] = (0, import_react16.useState)();
   const wide = useAppStore((state) => state.childWidth > 1);
+  const TR_NOW = "TR::NOW";
+  const focus = useAppStore((state) => isNow && state.collapsed[TR_NOW]);
+  if (focus) {
+    endISO = (_b = (_a = blocks.find(({ startISO: startISO2 }) => startISO2 && startISO2 > now3)) == null ? void 0 : _a.endISO) != null ? _b : now3;
+    blocks = blocks.filter(({ startISO: startISO2 }) => startISO2 && startISO2 <= now3);
+  }
   return /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: `flex flex-col overflow-hidden relative`, children: [
     /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "flex items-center group relative z-10", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
       Droppable,
       {
-        data: { scheduled: isNow ? now3 : startDate },
+        data: { scheduled: startDate },
         id: dragContainer + "::" + startISO + "::timeline",
         children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "flex items-center grow", children: [
           /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "flex-none w-indent pr-1", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
@@ -70643,16 +70679,6 @@ function Day({
               "data-auto-scroll": calendarMode ? void 0 : "y",
               ref: allDayFrame,
               children: [
-                deadlines.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "rounded-icon bg-code", children: import_lodash9.default.sortBy(deadlines, "due", "scheduled").map((task) => /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
-                  Task,
-                  {
-                    renderType: "deadline",
-                    subtasks: [],
-                    dragContainer,
-                    ...task
-                  },
-                  task.id
-                )) }),
                 allDay.events.map((event) => /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
                   Block,
                   {
@@ -70670,7 +70696,7 @@ function Day({
                 allDay.tasks.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
                   Block,
                   {
-                    type: "event",
+                    type: "all-day",
                     events: [],
                     tasks: allDay.tasks,
                     startISO: startDate,
@@ -70682,6 +70708,34 @@ function Day({
               ]
             }
           ),
+          isNow && /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "w-full flex h-6 mt-1 items-center", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+              Droppable,
+              {
+                id: `${dragContainer}::now`,
+                data: {
+                  scheduled: now3
+                },
+                children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "h-full grow flex font-menu items-center space-x-2 pl-indent", children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", { className: "text-xs", children: "Now" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("hr", { className: "w-full border-selection" })
+                ] })
+              }
+            ),
+            /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+              Button_default,
+              {
+                className: "",
+                src: focus ? "maximize-2" : "minimize-2",
+                onClick: () => {
+                  if (!focus) {
+                    setters.patchCollapsed([id], true);
+                  }
+                  setters.patchCollapsed([TR_NOW], !focus);
+                }
+              }
+            )
+          ] }),
           /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(
             "div",
             {
@@ -70722,11 +70776,11 @@ function Day({
 }
 
 // src/components/NewTask.tsx
-var import_lodash10 = __toESM(require_lodash());
-var import_react15 = __toESM(require_react());
+var import_lodash12 = __toESM(require_lodash());
+var import_react17 = __toESM(require_react());
 var import_jsx_runtime11 = __toESM(require_jsx_runtime());
 function NewTask({ dragContainer }) {
-  var _a;
+  var _a, _b;
   const data = {
     dragType: "new_button"
   };
@@ -70735,8 +70789,8 @@ function NewTask({ dragContainer }) {
     data
   });
   const newTask = useAppStore((state) => state.newTask);
-  const frame = (0, import_react15.useRef)(null);
-  const inputFrame = (0, import_react15.useRef)(null);
+  const frame = (0, import_react17.useRef)(null);
+  const inputFrame = (0, import_react17.useRef)(null);
   const checkShowing = (ev) => {
     invariant(frame.current);
     const els = document.elementsFromPoint(ev.clientX, ev.clientY);
@@ -70744,7 +70798,7 @@ function NewTask({ dragContainer }) {
       setters.set({ newTask: false });
     }
   };
-  (0, import_react15.useEffect)(() => {
+  (0, import_react17.useEffect)(() => {
     window.removeEventListener("mousedown", checkShowing);
     if (newTask) {
       window.addEventListener("mousedown", checkShowing);
@@ -70755,13 +70809,13 @@ function NewTask({ dragContainer }) {
     }
     return () => window.removeEventListener("mousedown", checkShowing);
   }, [!!newTask]);
-  const [search, setSearch] = (0, import_react15.useState)("");
+  const [search, setSearch] = (0, import_react17.useState)("");
   const dailyNoteInfo2 = useAppStore((state) => state.dailyNoteInfo);
   const allHeadings = useAppStore((state) => {
     if (!newTask)
       return [];
-    return import_lodash10.default.uniq(
-      import_lodash10.default.flatMap(state.tasks, (task) => {
+    return import_lodash12.default.uniq(
+      import_lodash12.default.flatMap(state.tasks, (task) => {
         if (task.completed)
           return [];
         const heading = parseHeadingFromPath(
@@ -70777,7 +70831,7 @@ function NewTask({ dragContainer }) {
   const filteredHeadings = allHeadings.filter(
     (heading) => searchExp.test(heading)
   );
-  (0, import_react15.useEffect)(() => {
+  (0, import_react17.useEffect)(() => {
     setSearch("");
   }, [newTask]);
   const draggingTask = useAppStore(
@@ -70792,42 +70846,25 @@ function NewTask({ dragContainer }) {
       }
     ) }),
     /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(
-      "div",
+      Button_default,
       {
-        className: "relative h-10 w-10 flex-none",
         ...attributes,
         ...listeners,
         ref: setNodeRef,
-        children: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(
-          Button_default,
-          {
-            className: "h-full w-full cursor-grab !rounded-full bg-accent child:invert",
-            src: "plus"
-          }
-        )
+        className: "relative flex-none h-10 w-10 cursor-grab !rounded-full bg-accent child:invert",
+        src: "plus"
       }
     ),
-    newTask && /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "fixed left-0 top-0 z-40 !mx-0 flex h-full w-full items-center justify-center p-8 space-y-2", children: /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)(
+    newTask && /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "fixed left-0 top-0 z-40 !mx-0 flex h-full w-full items-center justify-center p-8 space-y-2 ", children: /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)(
       "div",
       {
-        className: "flex h-full max-h-[50vh] w-full flex-col space-y-1 overflow-y-auto overflow-x-hidden rounded-icon border border-solid border-faint bg-code p-2 max-w-2xl",
+        className: "flex h-full max-h-[50vh] w-full flex-col space-y-1 overflow-y-auto overflow-x-hidden rounded-icon border border-solid border-faint bg-code p-2 max-w-2xl backdrop-blur",
         ref: frame,
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "pl-2 font-menu text-lg font-bold text-center", children: "New Task" }),
-          /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("div", { className: "flex", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(
-              "input",
-              {
-                ref: inputFrame,
-                className: "w-full rounded-icon border border-solid border-faint bg-transparent font-menu font-light backdrop-blur !text-base px-1 py-2",
-                value: (_a = newTask.originalTitle) != null ? _a : "",
-                placeholder: "title...",
-                onChange: (ev) => setters.set({
-                  newTask: { ...newTask, originalTitle: ev.target.value }
-                }),
-                onKeyDown: (ev) => ev.key === "Enter" && getters.getObsidianAPI().createNewTask(newTask, null, dailyNoteInfo2)
-              }
-            ),
+          /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("div", { className: "flex items-center", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "pl-2 font-menu text-lg font-bold mr-2", children: "New Task" }),
+            /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "text-sm text-faint", children: (_a = newTask.scheduled) != null ? _a : "Unscheduled" }),
+            /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "grow" }),
             /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(
               Button_default,
               {
@@ -70836,6 +70873,19 @@ function NewTask({ dragContainer }) {
               }
             )
           ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(
+            "input",
+            {
+              ref: inputFrame,
+              className: "w-full rounded-icon border border-solid border-faint bg-transparent font-menu font-light backdrop-blur !text-base px-1 py-2",
+              value: (_b = newTask.originalTitle) != null ? _b : "",
+              placeholder: "title...",
+              onChange: (ev) => setters.set({
+                newTask: { ...newTask, originalTitle: ev.target.value }
+              }),
+              onKeyDown: (ev) => ev.key === "Enter" && getters.getObsidianAPI().createNewTask(newTask, null, dailyNoteInfo2)
+            }
+          ),
           /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(
             "input",
             {
@@ -70881,17 +70931,17 @@ function NewTaskHeading({ path: path2 }) {
 }
 
 // src/components/Search.tsx
-var import_lodash11 = __toESM(require_lodash());
-var import_react16 = __toESM(require_react());
-var import_react_dom2 = __toESM(require_react_dom());
+var import_lodash13 = __toESM(require_lodash());
+var import_react18 = __toESM(require_react());
+var import_react_dom3 = __toESM(require_react_dom());
 var import_jsx_runtime12 = __toESM(require_jsx_runtime());
 function Search() {
   const tasks = useAppStore((state) => state.tasks);
   const showingPastDates = useAppStore((state) => state.showingPastDates);
   const showCompleted = useAppStore((state) => state.settings.showCompleted);
-  const allTasks = (0, import_react16.useMemo)(
-    () => import_lodash11.default.sortBy(
-      import_lodash11.default.values(tasks).filter(
+  const allTasks = (0, import_react18.useMemo)(
+    () => import_lodash13.default.sortBy(
+      import_lodash13.default.values(tasks).filter(
         (task) => showCompleted || task.completed === showingPastDates
       ),
       "id"
@@ -70899,7 +70949,7 @@ function Search() {
       var _a;
       return [
         [
-          task.path + task.title,
+          (task.page ? parseFolderFromPath(task.path) : task.path) + task.title,
           task.tags.map((x) => "#" + x).join(" "),
           (_a = task.notes) != null ? _a : "",
           priorityNumberToKey[task.priority],
@@ -70910,17 +70960,34 @@ function Search() {
     }),
     [tasks]
   );
-  const [search, setSearch] = (0, import_react16.useState)("");
+  const [search, setSearch] = (0, import_react18.useState)("");
   const searchExp = convertSearchToRegExp(search);
-  const foundTasks = allTasks.filter(
-    ([strings]) => strings.find((string) => !search || string && searchExp.test(string))
+  const splitSearch = search.split("");
+  const NOT_INCLUDED = 25;
+  const foundTasks = import_lodash13.default.sortBy(
+    allTasks.filter(
+      ([strings]) => strings.find((string) => !search || string && searchExp.test(string))
+    ),
+    ([_matches, task]) => {
+      let total = 0;
+      let index = 0;
+      for (let char of splitSearch) {
+        const newIndex = task.title.indexOf(char, index);
+        if (newIndex !== -1) {
+          total += newIndex - total;
+          index = newIndex;
+        } else
+          total += NOT_INCLUDED;
+      }
+      return total;
+    }
   );
-  const input = (0, import_react16.useRef)(null);
-  (0, import_react16.useEffect)(() => {
+  const input = (0, import_react18.useRef)(null);
+  (0, import_react18.useEffect)(() => {
     var _a;
     return (_a = input.current) == null ? void 0 : _a.focus();
   }, []);
-  return (0, import_react_dom2.createPortal)(
+  return (0, import_react_dom3.createPortal)(
     /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "modal-container mod-dim", children: [
       /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
         "div",
@@ -70952,6 +71019,7 @@ function Search() {
         /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", { className: "prompt-results", children: foundTasks.map(([_strings, task]) => /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)(
           "div",
           {
+            "data-info": task.id,
             className: "clickable-icon suggestion-item mod-complex",
             onClick: () => {
               openTaskInRuler(task.id);
@@ -70984,7 +71052,7 @@ function Search() {
                     color: "var(--text-faint)",
                     flex: "none"
                   },
-                  children: task.path.replace("#", " # ").replace(".md", "")
+                  children: (task.page ? parseFolderFromPath(task.path) : task.path).replace(".md", "")
                 }
               )
             ]
@@ -70998,55 +71066,8 @@ function Search() {
   );
 }
 
-// src/components/Unscheduled.tsx
-var import_lodash12 = __toESM(require_lodash());
-var import_react17 = __toESM(require_react());
-var import_jsx_runtime13 = __toESM(require_jsx_runtime());
-var Unscheduled = (0, import_react17.memo)(_Unscheduled, () => true);
-var Unscheduled_default = Unscheduled;
-function _Unscheduled() {
-  const showCompleted = useAppStore((state) => state.settings.showCompleted);
-  const showingPastDates = useAppStore((state) => state.showingPastDates);
-  const tasks = useAppStore(
-    (state) => import_lodash12.default.filter(
-      state.tasks,
-      (task) => (showCompleted || (showingPastDates ? task.completed : !task.completed)) && !task.parent && !task.queryParent && !parseTaskDate(task)
-    )
-  );
-  const childWidth = useAppStore(
-    (state) => (state.settings.viewMode === "week" || state.settings.viewMode === "hour") && state.childWidth > 1 ? state.childWidth : 1
-  );
-  return /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: `h-0 grow flex flex-col`, children: [
-    /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "flex items-center space-x-1 group flex-none pl-indent", children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Droppable, { id: "unscheduled-timespan", data: { scheduled: "" }, children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "font-menu", children: "Unscheduled" }) }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
-      "div",
-      {
-        className: `h-0 grow w-full mt-1 rounded-icon ${childWidth > 1 ? `unscheduled child:h-full child:child:h-full ${[
-          "",
-          "child:child:child:child:w-full",
-          "child:child:child:child:w-1/2",
-          "child:child:child:child:w-1/3",
-          "child:child:child:child:w-1/4"
-        ][childWidth]}` : "overflow-x-hidden overflow-y-auto"}`,
-        "data-auto-scroll": childWidth > 1 ? "x" : "y",
-        children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
-          Block,
-          {
-            startISO: void 0,
-            blocks: [],
-            events: [],
-            type: "unscheduled",
-            dragContainer: "unscheduled",
-            tasks
-          }
-        )
-      }
-    )
-  ] });
-}
-
 // src/components/App.tsx
-var import_jsx_runtime14 = __toESM(require_jsx_runtime());
+var import_jsx_runtime13 = __toESM(require_jsx_runtime());
 function App2({ apis }) {
   const reload = async () => {
     const dv2 = (0, import_obsidian_dataview2.getAPI)();
@@ -71068,7 +71089,8 @@ function App2({ apis }) {
       extendBlocks: apis.obsidian.getSetting("extendBlocks"),
       hideTimes: apis.obsidian.getSetting("hideTimes"),
       borders: apis.obsidian.getSetting("borders"),
-      viewMode: apis.obsidian.getSetting("viewMode")
+      viewMode: apis.obsidian.getSetting("viewMode"),
+      timerEvent: apis.obsidian.getSetting("timerEvent")
     };
     setters.set({
       apis,
@@ -71078,11 +71100,11 @@ function App2({ apis }) {
     apis.calendar.loadEvents();
     apis.obsidian.loadTasks("", getters.get("showingPastDates"));
   };
-  (0, import_react18.useEffect)(() => {
+  (0, import_react19.useEffect)(() => {
     reload();
   }, [apis]);
-  const [now3, setNow] = (0, import_react18.useState)(DateTime.now());
-  (0, import_react18.useEffect)(() => {
+  const [now3, setNow] = (0, import_react19.useState)(DateTime.now());
+  (0, import_react19.useEffect)(() => {
     const update = () => {
       setNow(DateTime.now());
     };
@@ -71096,11 +71118,19 @@ function App2({ apis }) {
           negative: true,
           playing: true
         });
-        try {
-          new Notification("timer complete");
-          if (!getters.get("settings").muted)
-            sounds.timer.play();
-        } catch (err) {
+        if (app.isMobile) {
+          sounds.timer.play();
+          new import_obsidian5.Notice("Timer complete");
+        } else {
+          switch (getters.get("settings").timerEvent) {
+            case "notification":
+              new Notification("Timer complete");
+              break;
+            case "sound":
+              sounds.timer.play();
+              new import_obsidian5.Notice("Timer complete");
+              break;
+          }
         }
       }
     };
@@ -71110,30 +71140,40 @@ function App2({ apis }) {
       window.clearInterval(timerInterval);
     };
   }, []);
+  (0, import_react19.useEffect)(() => {
+    const timeout = setTimeout(() => {
+      scrollToSection(getToday());
+    }, 1e3);
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, []);
   const showingPastDates = useAppStore((state) => state.showingPastDates);
   const today = DateTime.fromISO(getToday());
-  const [weeksShownState, setWeeksShown] = (0, import_react18.useState)(1);
+  const [weeksShownState, setWeeksShown] = (0, import_react19.useState)(1);
   const viewMode = useAppStore((state) => state.settings.viewMode);
   const datesShown = weeksShownState * 7 * (showingPastDates ? -1 : 1);
+  (0, import_react19.useEffect)(
+    () => {
+      var _a;
+      return (_a = getters.getObsidianAPI()) == null ? void 0 : _a.loadTasks("", showingPastDates);
+    },
+    [weeksShownState, showingPastDates]
+  );
   const dayStart = useAppStore((state) => state.settings.dayStartEnd[0]);
   const roundedNow = toISO(roundMinutes(DateTime.now()));
   const nowBoundary = toISO(roundMinutes(DateTime.now().plus({ minute: 15 })));
+  const tomorrow = toISO(today.plus({ days: 1, hours: dayStart }));
   const times = [
     { type: "unscheduled" },
     {
-      dragContainer: "now",
-      startISO: roundedNow,
-      endISO: nowBoundary,
+      startISO: toISO(now3),
+      endISO: toISO(today.plus({ days: 1, hours: dayStart })),
       type: "minutes",
+      dragContainer: "app",
       isNow: true
     },
-    {
-      startISO: showingPastDates ? toISO(today.plus({ hours: dayStart })) : nowBoundary,
-      endISO: showingPastDates ? roundedNow : toISO(today.plus({ hours: dayStart, days: 1 })),
-      type: "minutes",
-      dragContainer: "app"
-    },
-    ...import_lodash13.default.range(showingPastDates ? -1 : 1, datesShown).map((i) => ({
+    ...import_lodash14.default.range(showingPastDates ? -1 : 1, datesShown).map((i) => ({
       startISO: toISO(today.plus({ days: i, hours: dayStart })),
       endISO: toISO(today.plus({ days: i + 1, hours: dayStart })),
       type: "minutes",
@@ -71143,28 +71183,16 @@ function App2({ apis }) {
   if (showingPastDates)
     times.reverse();
   const searchWithinWeeks = useAppStore((state) => state.searchWithinWeeks);
-  (0, import_react18.useEffect)(() => {
+  (0, import_react19.useEffect)(() => {
     var _a;
     (_a = getters.getObsidianAPI()) == null ? void 0 : _a.loadTasks("", showingPastDates);
   }, [searchWithinWeeks, showingPastDates]);
-  (0, import_react18.useEffect)(() => {
-    if (showingPastDates && -weeksShownState < searchWithinWeeks[0]) {
-      setters.set({
-        searchWithinWeeks: [-weeksShownState, searchWithinWeeks[1]]
-      });
-    }
-    if (!showingPastDates && weeksShownState > searchWithinWeeks[1]) {
-      setters.set({
-        searchWithinWeeks: [searchWithinWeeks[0], weeksShownState]
-      });
-    }
-  }, [showingPastDates, weeksShownState]);
   const [activeDrag, activeDragRef] = useAppStoreRef((state) => state.dragData);
-  useAutoScroll(!!activeDrag);
+  useAutoScroll();
   const measuringConfig = {
     draggable: {
       measure: (el) => {
-        const parentRect = (0, import_jquery2.default)("#time-ruler").parent()[0].getBoundingClientRect();
+        const parentRect = (0, import_jquery.default)("#time-ruler").parent()[0].getBoundingClientRect();
         const rect = el.getBoundingClientRect();
         return {
           ...rect,
@@ -71175,7 +71203,7 @@ function App2({ apis }) {
     },
     dragOverlay: {
       measure: (el) => {
-        const parentRect = (0, import_jquery2.default)("#time-ruler").parent()[0].getBoundingClientRect();
+        const parentRect = (0, import_jquery.default)("#time-ruler").parent()[0].getBoundingClientRect();
         const rect = el.getBoundingClientRect();
         return {
           ...rect,
@@ -71187,26 +71215,26 @@ function App2({ apis }) {
   };
   const getDragElement = () => {
     if (!activeDrag)
-      return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(import_jsx_runtime14.Fragment, {});
+      return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(import_jsx_runtime13.Fragment, {});
     switch (activeDrag.dragType) {
       case "task":
-        return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(Task, { ...activeDrag });
+        return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Task, { ...activeDrag });
       case "task-length":
       case "time":
-        return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(import_jsx_runtime14.Fragment, {});
+        return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(import_jsx_runtime13.Fragment, {});
       case "group":
-        return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(Group, { ...activeDrag });
+        return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Group, { ...activeDrag });
       case "block":
-        return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(Block, { ...activeDrag, dragging: true });
-      case "due":
-        return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(Deadline, { ...activeDrag, isDragging: true });
+        return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Block, { ...activeDrag, dragging: true });
       case "new_button":
-        return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(NewTask, { dragContainer: "activeDrag" });
+        return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(NewTask, { dragContainer: "activeDrag" });
+      case "due":
+        return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "h-line p-2 text-accent", children: "due" });
     }
   };
-  const scroller = (0, import_react18.useRef)(null);
-  const [scrollViews, setScrollViews] = (0, import_react18.useState)([-1, 1]);
-  const container = (0, import_react18.useRef)(null);
+  const scroller = (0, import_react19.useRef)(null);
+  const [scrollViews, setScrollViews] = (0, import_react19.useState)([-1, 1]);
+  const container = (0, import_react19.useRef)(null);
   const calendarMode = viewMode === "week";
   const { childWidth, childClass } = useChildWidth({
     container
@@ -71225,16 +71253,16 @@ function App2({ apis }) {
       setScrollViews([leftLevel, rightLevel]);
     }
   };
-  (0, import_react18.useEffect)(updateScroll, [childWidth]);
-  (0, import_react18.useEffect)(() => {
+  (0, import_react19.useEffect)(updateScroll, [childWidth]);
+  (0, import_react19.useEffect)(() => {
     updateScroll();
   }, [calendarMode]);
-  (0, import_react18.useEffect)(() => {
-    const childNodes = (0, import_jquery2.default)("#time-ruler-times")[0].childNodes;
+  (0, import_react19.useEffect)(() => {
+    const childNodes = (0, import_jquery.default)("#time-ruler-times")[0].childNodes;
     const firstElement = childNodes.item(
       showingPastDates ? childNodes.length - 2 : 1
     );
-    (0, import_jquery2.default)("#time-ruler-times").scrollLeft(firstElement.offsetLeft);
+    (0, import_jquery.default)("#time-ruler-times").scrollLeft(firstElement.offsetLeft);
   }, [calendarMode, showingPastDates]);
   const sensors = useSensors(
     ...import_obsidian5.Platform.isMobile ? [
@@ -71246,26 +71274,26 @@ function App2({ apis }) {
       })
     ] : [useSensor(PointerSensor), useSensor(MouseSensor)]
   );
-  (0, import_react18.useEffect)(() => {
+  (0, import_react19.useEffect)(() => {
     var _a, _b, _c, _d;
-    (_b = (_a = (0, import_jquery2.default)("#time-ruler").parent()[0]) == null ? void 0 : _a.style) == null ? void 0 : _b.setProperty("overflow", "clip", "important");
-    (_d = (_c = (0, import_jquery2.default)("#time-ruler").parent()[0]) == null ? void 0 : _c.style) == null ? void 0 : _d.setProperty("padding", "4px 8px 8px", "important");
+    (_b = (_a = (0, import_jquery.default)("#time-ruler").parent()[0]) == null ? void 0 : _a.style) == null ? void 0 : _b.setProperty("overflow", "clip", "important");
+    (_d = (_c = (0, import_jquery.default)("#time-ruler").parent()[0]) == null ? void 0 : _c.style) == null ? void 0 : _d.setProperty("padding", "4px 8px 8px", "important");
   }, []);
   const borders = useAppStore((state) => state.settings.borders);
   const frameClass = `p-0.5 child:p-1 child:bg-primary child:rounded-icon child:h-full child:w-full ${borders ? "child:border-solid child:border-divider child:border-[1px]" : ""}`;
   const dayPadding = (time) => {
     invariant(time.type !== "unscheduled");
     const startDate = DateTime.fromISO(time.startISO);
-    return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(import_jsx_runtime14.Fragment, { children: import_lodash13.default.range(startDate.weekday < 4 ? 1 : 5, startDate.weekday).map(
-      (day) => /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("div", { className: `${frameClass}`, children: /* @__PURE__ */ (0, import_jsx_runtime14.jsxs)("div", { className: "flex-col", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("div", { className: "font-menu pl-8 text-faint flex-none", children: now3.startOf("week").plus({ days: day - 1 }).toFormat("EEE d") }),
-        /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("div", { className: "grow h-0 w-full rounded-icon bg-code" })
+    return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(import_jsx_runtime13.Fragment, { children: import_lodash14.default.range(startDate.weekday < 4 ? 1 : 5, startDate.weekday).map(
+      (day) => /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: `${frameClass}`, children: /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: "flex-col", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "font-menu pl-8 text-faint flex-none", children: now3.startOf("week").plus({ days: day - 1 }).toFormat("EEE d") }),
+        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "grow h-0 w-full rounded-icon bg-code" })
       ] }) }, day)
     ) });
   };
   const searchStatus = useAppStore((state) => state.searchStatus);
-  return /* @__PURE__ */ (0, import_jsx_runtime14.jsxs)(import_jsx_runtime14.Fragment, { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(import_jsx_runtime13.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
       DndContext,
       {
         onDragStart,
@@ -71275,7 +71303,7 @@ function App2({ apis }) {
         measuring: measuringConfig,
         sensors,
         autoScroll: false,
-        children: /* @__PURE__ */ (0, import_jsx_runtime14.jsxs)(
+        children: /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(
           "div",
           {
             id: "time-ruler",
@@ -71290,18 +71318,18 @@ function App2({ apis }) {
             },
             className: `time-ruler-container sidebar-color`,
             children: [
-              /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
+              /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
                 DragOverlay,
                 {
                   dropAnimation: null,
                   className: "backdrop-blur opacity-50",
                   style: {
-                    width: `calc((100% - 48px) / ${trueChildWidth})`
+                    width: (activeDrag == null ? void 0 : activeDrag.dragType) === "due" ? void 0 : `calc((100% - 48px) / ${trueChildWidth})`
                   },
                   children: getDragElement()
                 }
               ),
-              /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
+              /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
                 Buttons,
                 {
                   ...{
@@ -71314,7 +71342,7 @@ function App2({ apis }) {
                   }
                 }
               ),
-              /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
+              /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
                 "div",
                 {
                   className: `flex h-full w-full snap-mandatory rounded-icon text-base child:flex-none child:snap-start ${childClass} ${calendarMode ? "flex-wrap overflow-y-auto overflow-x-hidden snap-y justify-center child:h-1/2" : "snap-x !overflow-x-auto overflow-y-clip child:h-full"}`,
@@ -71324,32 +71352,26 @@ function App2({ apis }) {
                   onScroll: updateScroll,
                   children: times.map((time, i) => {
                     const isShowing = calendarMode || i >= scrollViews[0] && i <= scrollViews[1];
-                    return time.type === "unscheduled" ? /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
+                    return time.type === "unscheduled" ? /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
                       "div",
                       {
                         id: "time-ruler-unscheduled",
                         className: `${frameClass} ${calendarMode ? "!w-full" : ""}`,
-                        children: isShowing && /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(Unscheduled_default, {})
+                        children: isShowing && /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Unscheduled_default, {})
                       },
                       "unscheduled"
-                    ) : /* @__PURE__ */ (0, import_jsx_runtime14.jsxs)(
-                      import_react18.Fragment,
-                      {
-                        children: [
-                          calendarMode && i === (showingPastDates ? 0 : 1) && childWidth > 1 && dayPadding(time),
-                          /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
-                            "div",
-                            {
-                              id: `time-ruler-${time.isNow ? "now" : time.startISO.slice(0, 10)}`,
-                              className: frameClass,
-                              children: isShowing && /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(Day, { ...time })
-                            }
-                          ),
-                          calendarMode && DateTime.fromISO(time.startISO).weekday === 7 ? /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("div", { className: "!h-0 !w-1" }) : null
-                        ]
-                      },
-                      time.isNow ? "now" : time.startISO + "::" + time.type
-                    );
+                    ) : /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(import_react19.Fragment, { children: [
+                      calendarMode && i === (showingPastDates ? 0 : 1) && childWidth > 1 && dayPadding(time),
+                      /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
+                        "div",
+                        {
+                          id: `time-ruler-${time.startISO.slice(0, 10)}`,
+                          className: frameClass,
+                          children: isShowing && /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Day, { ...time })
+                        }
+                      ),
+                      calendarMode && DateTime.fromISO(time.startISO).weekday === 7 ? /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "!h-0 !w-1" }) : null
+                    ] }, time.startISO + "::" + time.type);
                   })
                 }
               )
@@ -71358,7 +71380,7 @@ function App2({ apis }) {
         )
       }
     ),
-    searchStatus && /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(Search, {})
+    searchStatus && /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Search, {})
   ] });
 }
 var Buttons = ({
@@ -71370,22 +71392,19 @@ var Buttons = ({
 }) => {
   const now3 = DateTime.now();
   const viewMode = useAppStore((state) => state.settings.viewMode);
-  (0, import_react18.useEffect)(() => {
+  (0, import_react19.useEffect)(() => {
     var _a;
-    (_a = (0, import_jquery2.default)(`#time-ruler-${getToday()}`)[0]) == null ? void 0 : _a.scrollIntoView();
+    (_a = (0, import_jquery.default)(`#time-ruler-${getToday()}`)[0]) == null ? void 0 : _a.scrollIntoView();
   }, [viewMode, showingPastDates]);
-  (0, import_react18.useEffect)(() => {
-    scrollToSection(getToday());
-  }, []);
-  const nextButton = /* @__PURE__ */ (0, import_jsx_runtime14.jsxs)("div", { className: "flex", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
+  const nextButton = /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: "flex", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
       Button_default,
       {
         onClick: () => setWeeksShown(weeksShownState + 1),
         src: "chevron-right"
       }
     ),
-    weeksShownState > 0 && /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
+    weeksShownState > 0 && /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
       Button_default,
       {
         className: `force-hover rounded-icon`,
@@ -71396,8 +71415,8 @@ var Buttons = ({
   ] });
   const buttonMaps = times.concat();
   buttonMaps.splice(1, 0, {});
-  const [showingModal, setShowingModal] = (0, import_react18.useState)(false);
-  const modalFrame = (0, import_react18.useRef)(null);
+  const [showingModal, setShowingModal] = (0, import_react19.useState)(false);
+  const modalFrame = (0, import_react19.useRef)(null);
   const checkShowing = (ev) => {
     invariant(modalFrame.current);
     const els = document.elementsFromPoint(ev.clientX, ev.clientY);
@@ -71405,44 +71424,44 @@ var Buttons = ({
       setShowingModal(false);
     }
   };
-  (0, import_react18.useEffect)(() => {
+  (0, import_react19.useEffect)(() => {
     window.removeEventListener("click", checkShowing);
     if (showingModal) {
       window.addEventListener("click", checkShowing);
     }
     return () => window.removeEventListener("click", checkShowing);
   }, [showingModal]);
-  const today = now3.toISODate();
-  const yesterday = now3.minus({ days: 1 }).toISODate();
-  const tomorrow = now3.plus({ days: 1 }).toISODate();
+  const today = getStartDate(now3);
+  const yesterday = getStartDate(now3.minus({ days: 1 }));
+  const tomorrow = getStartDate(now3.plus({ days: 1 }));
   const renderButton = (time, i) => {
-    var _a, _b;
-    const thisDate = DateTime.fromISO(time.startISO);
-    return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
+    const start = getStartDate(DateTime.fromISO(time.startISO));
+    const thisDate = DateTime.fromISO(start);
+    return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
       Droppable,
       {
         id: time.startISO + "::button",
         data: {
-          scheduled: time.isNow ? time.startISO : (_b = (_a = time.startISO) == null ? void 0 : _a.slice(0, 10)) != null ? _b : ""
+          scheduled: start
         },
-        children: /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
+        children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
           Button_default,
           {
             className: "h-[28px]",
             onClick: () => scrollToSection(
-              time.type === "unscheduled" ? "unscheduled" : time.isNow ? "now" : time.startISO.slice(0, 10)
+              time.type === "unscheduled" ? "unscheduled" : time.startISO.slice(0, 10)
             ),
-            children: time.type === "unscheduled" ? "Unscheduled" : time.isNow ? "Now" : time.startISO === today ? "Today" : time.startISO === yesterday ? "Yesterday" : time.startISO === tomorrow ? "Tomorrow" : thisDate.toFormat("EEE MMM d")
+            children: time.type === "unscheduled" ? "Unscheduled" : start === today ? "Today" : start === yesterday ? "Yesterday" : start === tomorrow ? "Tomorrow" : thisDate.toFormat("EEE MMM d")
           }
         )
       },
-      time.type === "unscheduled" ? "unscheduled" : time.isNow ? "now" : time.startISO
+      time.type === "unscheduled" ? "unscheduled" : time.startISO
     );
   };
   const hideTimes = useAppStore((state) => state.settings.hideTimes);
-  return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(import_jsx_runtime14.Fragment, { children: /* @__PURE__ */ (0, import_jsx_runtime14.jsxs)("div", { className: `flex w-full items-center space-x-1 rounded-icon`, children: [
-    /* @__PURE__ */ (0, import_jsx_runtime14.jsxs)("div", { className: "group relative", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(import_jsx_runtime13.Fragment, { children: /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: `flex w-full items-center space-x-1 rounded-icon`, children: [
+    /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: "group relative", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
         Button_default,
         {
           src: "more-horizontal",
@@ -71452,14 +71471,14 @@ var Buttons = ({
           }
         }
       ),
-      showingModal && /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
+      showingModal && /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
         "div",
         {
           className: "tr-menu",
           ref: modalFrame,
           onClick: () => setShowingModal(false),
-          children: /* @__PURE__ */ (0, import_jsx_runtime14.jsxs)("div", { className: "flex flex-col items-center", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime14.jsxs)(
+          children: /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: "flex flex-col items-center", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(
               "div",
               {
                 className: "clickable-icon w-full",
@@ -71467,18 +71486,18 @@ var Buttons = ({
                   setters.set({ showingPastDates: !showingPastDates });
                 },
                 children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
+                  /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
                     Logo,
                     {
                       src: showingPastDates ? "chevron-right" : "chevron-left",
                       className: "w-6 flex-none"
                     }
                   ),
-                  /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("span", { className: "whitespace-nowrap", children: showingPastDates ? "Future" : "Past" })
+                  /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("span", { className: "whitespace-nowrap", children: showingPastDates ? "Future" : "Past" })
                 ]
               }
             ),
-            /* @__PURE__ */ (0, import_jsx_runtime14.jsxs)(
+            /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(
               "div",
               {
                 className: "clickable-icon w-full",
@@ -71486,12 +71505,12 @@ var Buttons = ({
                   setupStore();
                 },
                 children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(Logo, { src: "rotate-cw", className: "w-6 flex-none" }),
-                  /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("span", { className: "whitespace-nowrap", children: "Reload" })
+                  /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Logo, { src: "rotate-cw", className: "w-6 flex-none" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("span", { className: "whitespace-nowrap", children: "Reload" })
                 ]
               }
             ),
-            /* @__PURE__ */ (0, import_jsx_runtime14.jsxs)(
+            /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(
               "div",
               {
                 className: "clickable-icon w-full",
@@ -71501,28 +71520,28 @@ var Buttons = ({
                   });
                 },
                 children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(Logo, { src: "kanban", className: "w-6 flex-none rotate-90" }),
-                  /* @__PURE__ */ (0, import_jsx_runtime14.jsxs)("span", { className: "whitespace-nowrap", children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Logo, { src: "kanban", className: "w-6 flex-none rotate-90" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("span", { className: "whitespace-nowrap", children: [
                     hideTimes ? "Show" : "Hide",
                     " Times"
                   ] })
                 ]
               }
             ),
-            /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("div", { className: "text-muted my-1 w-fit", children: "Group By" }),
-            /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("div", { className: "flex w-fit", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "text-muted my-1 w-fit", children: "Group By" }),
+            /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "flex w-fit", children: [
               ["path", "Path", "folder-tree"],
               ["priority", "Priority", "alert-circle"],
               ["hybrid", "Hybrid", "arrow-down-narrow-wide"],
               [false, "None", "x"]
             ].map(
-              ([groupBy, title, src]) => /* @__PURE__ */ (0, import_jsx_runtime14.jsxs)("div", { className: "flex flex-col items-center", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
+              ([groupBy, title, src]) => /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: "flex flex-col items-center", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
                   Button_default,
                   {
                     src,
                     title,
-                    className: "w-6 flex-none",
+                    className: `${app.isMobile ? "!w-8 !h-8" : "!w-6 !h-6"} !p-0 flex-none`,
                     onClick: () => {
                       getters.getObsidianAPI().setSetting({
                         groupBy
@@ -71530,22 +71549,22 @@ var Buttons = ({
                     }
                   }
                 ),
-                /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("div", { className: "text-xs text-faint", children: title })
+                /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "text-xs text-faint", children: title })
               ] }, title)
             ) }),
-            /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("div", { className: "text-muted my-1 w-fit", children: "Layout" }),
-            /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("div", { className: "flex w-fit", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "text-muted my-1 w-fit", children: "Layout" }),
+            /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "flex w-fit", children: [
               ["hour", "Hours", "square"],
               ["day", "Days", "gallery-horizontal"],
               ["week", "Weeks", "layout-grid"]
             ].map(
-              ([viewMode2, title, src]) => /* @__PURE__ */ (0, import_jsx_runtime14.jsxs)("div", { className: "flex flex-col items-center", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
+              ([viewMode2, title, src]) => /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: "flex flex-col items-center", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
                   Button_default,
                   {
                     src,
                     title,
-                    className: "w-6 flex-none",
+                    className: `${app.isMobile ? "!w-8 !h-8" : "!w-6 !h-6"} !p-0 flex-none`,
                     onClick: () => {
                       getters.getObsidianAPI().setSetting({
                         viewMode: viewMode2
@@ -71553,21 +71572,21 @@ var Buttons = ({
                     }
                   }
                 ),
-                /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("div", { className: "text-xs text-faint", children: title })
+                /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "text-xs text-faint", children: title })
               ] }, title)
             ) })
           ] })
         }
       )
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
       Button_default,
       {
         src: "search",
         onClick: () => setters.set({ searchStatus: true })
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime14.jsxs)(
+    /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(
       "div",
       {
         className: `no-scrollbar flex w-full snap-mandatory rounded-icon pb-0.5 child:snap-start snap-x items-center space-x-2 overflow-x-auto`,
@@ -71580,13 +71599,13 @@ var Buttons = ({
         ]
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(NewTask, { dragContainer: "buttons" })
+    /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(NewTask, { dragContainer: "buttons" })
   ] }) });
 };
 
 // src/services/calendarApi.ts
 var import_ical = __toESM(require_ical2());
-var import_lodash14 = __toESM(require_lodash());
+var import_lodash15 = __toESM(require_lodash());
 var import_obsidian6 = require("obsidian");
 var CalendarAPI = class extends import_obsidian6.Component {
   constructor(settings, removeCalendar) {
@@ -71602,13 +71621,14 @@ var CalendarAPI = class extends import_obsidian6.Component {
     const events2 = {};
     const now3 = DateTime.now();
     let i = 0;
+    let offline = false;
     const calendarLoads = this.settings.calendars.map(async (calendar) => {
       var _a, _b, _c;
       try {
         const data = await (0, import_obsidian6.request)(calendar);
         const icsEvents = import_ical.default.parseICS(data);
         const calendarName = (_b = (_a = data.match(/CALNAME:(.*)/)) == null ? void 0 : _a[1]) != null ? _b : "Default";
-        for (let [id, event] of import_lodash14.default.entries(icsEvents)) {
+        for (let [id, event] of import_lodash15.default.entries(icsEvents)) {
           if (!event.start || !event.end || event.type !== "VEVENT")
             continue;
           let end = DateTime.fromJSDate(event.end).setZone("local");
@@ -71633,8 +71653,10 @@ var CalendarAPI = class extends import_obsidian6.Component {
         }
         i++;
       } catch (err) {
-        new import_obsidian6.Notice("Time Ruler: failed to load calendar from " + calendar);
-        console.error(err);
+        offline = true;
+      }
+      if (offline) {
+        new import_obsidian6.Notice("Time Ruler: failed to load calendars");
       }
     });
     await Promise.all(calendarLoads);
@@ -71643,7 +71665,7 @@ var CalendarAPI = class extends import_obsidian6.Component {
 };
 
 // src/index.tsx
-var import_jsx_runtime15 = __toESM(require_jsx_runtime());
+var import_jsx_runtime14 = __toESM(require_jsx_runtime());
 var TIME_RULER_VIEW = "time-ruler-view";
 var TimeRulerView = class extends import_obsidian7.ItemView {
   constructor(leaf, plugin) {
@@ -71662,7 +71684,7 @@ var TimeRulerView = class extends import_obsidian7.ItemView {
     this.obsidianAPI = new ObsidianAPI(
       this.plugin.settings,
       (settings) => {
-        for (let key2 of import_lodash15.default.keys(settings)) {
+        for (let key2 of import_lodash16.default.keys(settings)) {
           this.plugin.settings[key2] = settings[key2];
         }
         this.plugin.saveSettings();
@@ -71673,14 +71695,14 @@ var TimeRulerView = class extends import_obsidian7.ItemView {
       this.app
     );
     this.calendarLinkAPI = new CalendarAPI(this.plugin.settings, (calendar) => {
-      import_lodash15.default.pull(this.plugin.settings.calendars, calendar);
+      import_lodash16.default.pull(this.plugin.settings.calendars, calendar);
       this.plugin.saveSettings();
     });
     this.obsidianAPI.load();
     this.calendarLinkAPI.load();
     this.root = (0, import_client.createRoot)(this.containerEl.children[1]);
     this.root.render(
-      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(React3.StrictMode, { children: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(React3.StrictMode, { children: /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
         App2,
         {
           apis: {
@@ -71699,42 +71721,42 @@ var TimeRulerView = class extends import_obsidian7.ItemView {
 };
 
 // src/plugin/SettingsTab.tsx
-var import_jquery3 = __toESM(require_jquery());
-var import_lodash16 = __toESM(require_lodash());
+var import_jquery2 = __toESM(require_jquery());
+var import_lodash17 = __toESM(require_lodash());
 var import_obsidian8 = require("obsidian");
-var import_react19 = __toESM(require_react());
+var import_react20 = __toESM(require_react());
 var import_client2 = __toESM(require_client());
-var import_jsx_runtime16 = __toESM(require_jsx_runtime());
+var import_jsx_runtime15 = __toESM(require_jsx_runtime());
 var WEBCAL = "webcal";
 function Calendars({
   plugin,
   names,
   updateCalendars
 }) {
-  (0, import_react19.useEffect)(() => {
-    (0, import_jquery3.default)(frameRef.current).find("button").each((_i, el) => (0, import_obsidian8.setIcon)(el, "x"));
+  (0, import_react20.useEffect)(() => {
+    (0, import_jquery2.default)(frameRef.current).find("button").each((_i, el) => (0, import_obsidian8.setIcon)(el, "x"));
   });
-  const frameRef = (0, import_react19.useRef)(null);
-  return /* @__PURE__ */ (0, import_jsx_runtime16.jsx)("div", { ref: frameRef, style: { paddingBottom: "8px" }, children: plugin.settings.calendars.map((calendar) => /* @__PURE__ */ (0, import_jsx_runtime16.jsxs)(
+  const frameRef = (0, import_react20.useRef)(null);
+  return /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("div", { ref: frameRef, style: { paddingBottom: "8px" }, children: plugin.settings.calendars.map((calendar) => /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(
     "div",
     {
       style: { display: "flex", alignItems: "center", marginTop: "4px" },
       children: [
-        /* @__PURE__ */ (0, import_jsx_runtime16.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(
           "button",
           {
             style: { marginRight: "4px" },
             onClick: () => {
               if (!confirm("Remove this calendar?"))
                 return;
-              import_lodash16.default.pull(plugin.settings.calendars, calendar);
+              import_lodash17.default.pull(plugin.settings.calendars, calendar);
               plugin.saveSettings();
               updateCalendars();
             },
             "data-role": "time-ruler-delete"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime16.jsx)("div", { children: names[calendar] })
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("div", { children: names[calendar] })
       ]
     },
     calendar
@@ -71748,7 +71770,7 @@ var SettingsTab = class extends import_obsidian8.PluginSettingTab {
   }
   updateCalendars() {
     this.root.render(
-      /* @__PURE__ */ (0, import_jsx_runtime16.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(
         Calendars,
         {
           plugin: this.plugin,
@@ -71790,6 +71812,17 @@ var SettingsTab = class extends import_obsidian8.PluginSettingTab {
       toggle.setValue(this.plugin.settings.muted);
       toggle.onChange((value) => {
         this.plugin.settings.muted = value;
+        this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian8.Setting(containerEl).setName("Timer Event").setDesc("Toggle the event triggered on timer end.").addDropdown((dropdown) => {
+      dropdown.addOptions({
+        notification: "Notification",
+        sound: "Sound"
+      });
+      dropdown.setValue(this.plugin.settings.timerEvent);
+      dropdown.onChange((value) => {
+        this.plugin.settings.timerEvent = value;
         this.plugin.saveSettings();
       });
     });
@@ -71876,14 +71909,14 @@ var SettingsTab = class extends import_obsidian8.PluginSettingTab {
     const customStatuses2 = new import_obsidian8.Setting(containerEl).setName("Custom Statuses").setDesc(
       "Include only, or exclude certain, characters between the double brackets [ ] of a task. Write characters with no separation."
     );
-    customStatuses2.controlEl.appendChild((0, import_jquery3.default)(
+    customStatuses2.controlEl.appendChild((0, import_jquery2.default)(
       /*html*/
       `<span>Exclude</span>`
     )[0]);
     customStatuses2.addToggle(
       (toggle) => toggle.setValue(this.plugin.settings.customStatus.include).setTooltip("Exclude the current value")
     );
-    customStatuses2.controlEl.appendChild((0, import_jquery3.default)(
+    customStatuses2.controlEl.appendChild((0, import_jquery2.default)(
       /*html*/
       `<span>Include</span>`
     )[0]);
@@ -71920,7 +71953,7 @@ var SettingsTab = class extends import_obsidian8.PluginSettingTab {
         try {
           await this.addCalendarName(newValue);
           this.plugin.settings.calendars.push(newValue);
-          this.plugin.settings.calendars = import_lodash16.default.uniq(
+          this.plugin.settings.calendars = import_lodash17.default.uniq(
             this.plugin.settings.calendars
           );
           this.plugin.saveSettings();
@@ -71947,6 +71980,7 @@ var DEFAULT_SETTINGS = {
   calendars: [],
   fieldFormat: "dataview",
   muted: false,
+  timerEvent: "notification",
   inbox: null,
   search: "",
   taskSearch: "",
@@ -71991,7 +72025,7 @@ var TimeRulerPlugin = class extends import_obsidian9.Plugin {
     this.registerEvent(
       this.app.workspace.on(
         "editor-menu",
-        (menu, _17, context) => this.openMenu(menu, context)
+        (menu, _18, context) => this.openMenu(menu, context)
       )
     );
     this.addCommand({
@@ -72001,10 +72035,11 @@ var TimeRulerPlugin = class extends import_obsidian9.Plugin {
       checkCallback: () => {
         this.app.workspace.getActiveFile();
       },
-      editorCallback: (_17, context) => this.jumpToTask(context)
+      editorCallback: (_18, context) => this.jumpToTask(context)
     });
   }
   async jumpToTask(context) {
+    var _a;
     invariant(context.file);
     let path2 = context.file.path.replace(".md", "");
     if (!path2)
@@ -72018,7 +72053,12 @@ var TimeRulerPlugin = class extends import_obsidian9.Plugin {
       new import_obsidian9.Notice("cursor is not on task");
       return;
     }
-    await this.activateView();
+    const leaf = (_a = this.app.workspace.getLeavesOfType(TIME_RULER_VIEW)) == null ? void 0 : _a[0];
+    if (!leaf) {
+      await this.activateView();
+    } else {
+      this.app.workspace.revealLeaf(leaf);
+    }
     openTaskInRuler(path2 + "::" + cursor.line);
   }
   openMenu(menu, context) {
@@ -72045,10 +72085,7 @@ var TimeRulerPlugin = class extends import_obsidian9.Plugin {
     let scheduled;
     switch (modification) {
       case "now":
-        let now3 = DateTime.now().startOf("minute");
-        while (now3.minute % 15 !== 0)
-          now3 = now3.plus({ minute: 1 });
-        scheduled = toISO(now3);
+        scheduled = toISO(roundMinutes(DateTime.now()));
         break;
       case "unschedule":
         scheduled = "";

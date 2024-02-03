@@ -1,5 +1,6 @@
 {
   "folder": "the-vault/assets/excalidraw",
+  "cropFolder": "",
   "embedUseExcalidrawFolder": true,
   "templateFilePath": "Excalidraw/Template.excalidraw",
   "scriptFolderPath": "Excalidraw/Scripts",
@@ -13,6 +14,7 @@
   "drawingFilnameEmbedPostfix": " ",
   "drawingFilenameDateTime": "YYYY-MM-DD HH.mm.ss",
   "useExcalidrawExtension": true,
+  "cropPrefix": "cropped_",
   "previewImageType": "SVG",
   "allowImageCache": true,
   "displayExportedImageIfAvailable": false,
@@ -84,7 +86,7 @@
   "mdCSS": "",
   "scriptEngineSettings": {},
   "defaultTrayMode": false,
-  "previousRelease": "2.0.18",
+  "previousRelease": "2.0.19",
   "showReleaseNotes": true,
   "showNewVersionNotification": true,
   "latexBoilerplate": "\\color{blue}",

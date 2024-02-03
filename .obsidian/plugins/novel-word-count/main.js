@@ -339,7 +339,9 @@ var DEFAULT_SETTINGS = {
   characterCountType: "AllCharacters" /* StringLength */,
   wordCountType: "SpaceDelimited" /* SpaceDelimited */,
   pageCountType: "ByWords" /* ByWords */,
+  includeDirectories: "",
   excludeComments: false,
+  excludeCodeBlocks: false,
   debugMode: false
 };
 var NovelWordCountSettingTab = class extends import_obsidian2.PluginSettingTab {
@@ -533,11 +535,30 @@ var NovelWordCountSettingTab = class extends import_obsidian2.PluginSettingTab {
       })
     );
     if (this.plugin.settings.showAdvanced) {
+      const includePathsChanged = async (txt, value) => {
+        this.plugin.settings.includeDirectories = value;
+        await this.plugin.saveSettings();
+        await this.plugin.initialize();
+      };
+      new import_obsidian2.Setting(containerEl).setName("Include file/folder names").setDesc(
+        "Only count paths matching the indicated term(s). Case-sensitive, comma-separated. Defaults to all files."
+      ).addText((txt) => {
+        txt.setPlaceholder("").setValue(this.plugin.settings.includeDirectories).onChange((0, import_obsidian2.debounce)(includePathsChanged.bind(this, txt), 1e3));
+      });
       new import_obsidian2.Setting(containerEl).setName("Exclude comments").setDesc(
         "Exclude %%Obsidian%% and <!--HTML--> comments from counts. May affect performance on large vaults."
       ).addToggle(
         (toggle) => toggle.setValue(this.plugin.settings.excludeComments).onChange(async (value) => {
           this.plugin.settings.excludeComments = value;
+          await this.plugin.saveSettings();
+          await this.plugin.initialize();
+        })
+      );
+      new import_obsidian2.Setting(containerEl).setName("Exclude code blocks").setDesc(
+        "Exclude ```code blocks``` (e.g. DataView snippets) from all counts. May affect performance on large vaults."
+      ).addToggle(
+        (toggle) => toggle.setValue(this.plugin.settings.excludeCodeBlocks).onChange(async (value) => {
+          this.plugin.settings.excludeCodeBlocks = value;
           await this.plugin.saveSettings();
           await this.plugin.initialize();
         })
@@ -713,6 +734,7 @@ var FileHelper = class {
     this.app = app;
     this.plugin = plugin;
     this.debugHelper = new DebugHelper();
+    this.pathIncludeMatchers = [];
     this.cjkRegex = /\p{Script=Han}|\p{Script=Hiragana}|\p{Script=Katakana}|\p{Script=Hangul}|[0-9]+/gu;
     this.FileTypeAllowlist = /* @__PURE__ */ new Set([
       "",
@@ -745,7 +767,21 @@ var FileHelper = class {
   }
   async getAllFileCounts(cancellationToken) {
     const debugEnd = this.debugHelper.debugStart("getAllFileCounts");
-    const files = this.vault.getFiles();
+    let files = this.vault.getFiles();
+    if (typeof this.plugin.settings.includeDirectories === "string" && this.plugin.settings.includeDirectories.trim() !== "*" && this.plugin.settings.includeDirectories.trim() !== "") {
+      const includeMatchers = this.plugin.settings.includeDirectories.trim().split(",").map((matcher) => matcher.trim());
+      const matchedFiles = files.filter(
+        (file) => includeMatchers.some((matcher) => file.path.includes(matcher))
+      );
+      if (matchedFiles.length > 0) {
+        this.pathIncludeMatchers = includeMatchers;
+      } else {
+        this.pathIncludeMatchers = [];
+        this.debugHelper.debug(
+          "No files matched by includeDirectories setting. Defaulting to all files."
+        );
+      }
+    }
     const counts = {};
     for (const file of files) {
       if (cancellationToken.isCancelled) {
@@ -949,9 +985,18 @@ var FileHelper = class {
         );
       }
     }
+    if (this.settings.excludeCodeBlocks && meaningfulContent.includes("```")) {
+      meaningfulContent = meaningfulContent.replace(
+        /(?:```[\s\S]+?```)/gim,
+        ""
+      );
+    }
     return meaningfulContent;
   }
   shouldCountFile(file, metadata) {
+    if (this.pathIncludeMatchers.length > 0 && !this.pathIncludeMatchers.some((matcher) => file.path.includes(matcher))) {
+      return false;
+    }
     if (!this.FileTypeAllowlist.has(file.extension.toLowerCase())) {
       return false;
     }
@@ -971,7 +1016,6 @@ var FileHelper = class {
 
 // logic/locale_format.ts
 var locales = [...navigator.languages, "en-US"];
-var DateFormat = new Intl.DateTimeFormat(locales);
 var NumberFormatDefault = new Intl.NumberFormat(locales);
 var NumberFormatDecimal = new Intl.NumberFormat(locales, {
   minimumFractionDigits: 1,
@@ -1039,6 +1083,7 @@ var ReadTimeHelper = class {
 };
 
 // logic/node_label.ts
+var import_obsidian4 = require("obsidian");
 var NodeLabelHelper = class {
   constructor(plugin) {
     this.plugin = plugin;
@@ -1200,7 +1245,7 @@ var NodeLabelHelper = class {
         if (counts.createdDate === 0) {
           return null;
         }
-        const cDate = DateFormat.format(new Date(counts.createdDate));
+        const cDate = (0, import_obsidian4.moment)(counts.createdDate).format("YYYY/MM/DD");
         if (overrideSuffix !== null) {
           return `${cDate}${overrideSuffix}`;
         }
@@ -1209,11 +1254,11 @@ var NodeLabelHelper = class {
         if (counts.modifiedDate === 0) {
           return null;
         }
-        const uDate = DateFormat.format(new Date(counts.modifiedDate));
+        const uDate = (0, import_obsidian4.moment)(counts.modifiedDate).format("YYYY/MM/DD");
         if (overrideSuffix !== null) {
           return `${uDate}${overrideSuffix}`;
         }
-        return abbreviateDescriptions ? `${DateFormat.format(new Date(counts.modifiedDate))}/u` : `Updated ${DateFormat.format(new Date(counts.modifiedDate))}`;
+        return abbreviateDescriptions ? `${uDate}/u` : `Updated ${uDate}`;
       case "filesize" /* FileSize */:
         return this.fileSizeHelper.formatFileSize(
           counts.sizeInBytes,
@@ -1225,8 +1270,8 @@ var NodeLabelHelper = class {
 };
 
 // main.ts
-var import_obsidian4 = require("obsidian");
-var NovelWordCountPlugin = class extends import_obsidian4.Plugin {
+var import_obsidian5 = require("obsidian");
+var NovelWordCountPlugin = class extends import_obsidian5.Plugin {
   constructor(app, manifest) {
     super(app, manifest);
     this.debugHelper = new DebugHelper();
