@@ -13,11 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/175. Combine Two Tables.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "a39665c0e31396ac",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
-              }
+              },
+              "pinned": true
             }
           },
           {
@@ -33,7 +48,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +99,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 471.5
+    "width": 471.5,
+    "collapsed": true
   },
   "right": {
     "id": "1186c1364788cf17",
@@ -192,8 +209,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 451.5,
-    "collapsed": true
+    "width": 451.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -222,10 +238,12 @@
       "reference-map:Reference Map": false
     }
   },
-  "active": "872d16caa9f3390b",
+  "active": "a39665c0e31396ac",
   "lastOpenFiles": [
-    "the-vault/templates/Template {{LeetCode ∋ Problem}}.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/175. Combine Two Tables.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md",
+    "the-vault/templates/Template {{LeetCode ∋ Problem}}.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/226. Invert Binary Tree.md",
     "the-vault/assets/banners/Web capture_2-2-2024_10533_leetcode.com.jpeg",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
@@ -252,7 +270,6 @@
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Visual Studio/Project Structure.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Visual Studio/Configuring the Settings.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Visual Studio/🗒️ Visual Studio ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ SQL/🗒️ SQL ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/The LeetCode Beginner's Guide",
     "the-vault/src/🟢 Personal",
     "the-vault/src/🔵 Vocational",
