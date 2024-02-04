@@ -228,9 +228,9 @@
       {
         "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server",
         "color": {
-          "r": 192,
+          "r": 194,
           "g": 0,
-          "b": 54
+          "b": 0
         },
         "background_color": {
           "r": 242,
@@ -250,6 +250,34 @@
           "r": 89,
           "g": 130,
           "b": 160
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/dbms/oracle-dbms",
+        "color": {
+          "r": 200,
+          "g": 68,
+          "b": 49
+        },
+        "background_color": {
+          "r": 242,
+          "g": 242,
+          "b": 242
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql",
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "background_color": {
+          "r": 237,
+          "g": 237,
+          "b": 237
         },
         "luminance_offset": 0.15
       }

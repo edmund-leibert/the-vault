@@ -34,6 +34,16 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "33e57321152307bd",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.md"
+              }
+            }
           }
         ]
       }
@@ -191,7 +201,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -227,8 +237,18 @@
   },
   "active": "872d16caa9f3390b",
   "lastOpenFiles": [
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md",
+    "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.md",
+    "assets/Pasted Image 20240203161331_786.png",
+    "assets/Pasted Image 20240203161245_791.png",
+    "assets/assets ∋ Table of Contents.md",
+    "assets/Pasted Image 20240203161132_777.png",
+    "assets",
+    "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.light.png",
+    "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.light.svg",
+    "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.dark.png",
+    "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.dark.svg",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/175. Combine Two Tables.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md",
     "the-vault/templates/Template {{LeetCode ∋ Problem}}.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/226. Invert Binary Tree.md",
     "the-vault/assets/banners/Web capture_2-2-2024_10533_leetcode.com.jpeg",
@@ -254,24 +274,13 @@
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/🗒️ Zotero ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Visual Studio Code/Keyboard Shortcuts.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Visual Studio Code/🗒️ Visual Studio Code ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Visual Studio/Project Structure.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Visual Studio/Configuring the Settings.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Visual Studio/🗒️ Visual Studio ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/The LeetCode Beginner's Guide",
     "the-vault/src/🟢 Personal",
     "the-vault/src/🔵 Vocational",
     "the-vault/assets/excalidraw/Drawing 2024-01-28 21.39.00.excalidraw.light.png",
-    "the-vault/assets/excalidraw/Drawing 2024-01-28 21.39.00.excalidraw.light.svg",
-    "the-vault/assets/excalidraw/Drawing 2024-01-28 21.39.00.excalidraw.dark.png",
-    "the-vault/assets/excalidraw/Drawing 2024-01-28 21.39.00.excalidraw.dark.svg",
-    "the-vault/assets/excalidraw/Drawing 2024-01-28 18.07.30.excalidraw.light.png",
-    "the-vault/assets/excalidraw/Drawing 2024-01-28 18.07.30.excalidraw.light.svg",
-    "the-vault/assets/excalidraw/Drawing 2024-01-28 18.07.30.excalidraw.dark.png",
-    "the-vault/assets/excalidraw/Drawing 2024-01-28 18.07.30.excalidraw.dark.svg",
     "Untitled.loom",
     "the-vault/assets/banners/Web capture_27-1-2024_7515_dotnet.microsoft.com.jpeg.crdownload",
     "the-vault/assets/banners",
-    "the-vault/zotero/My Library.bib",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Interview"
+    "the-vault/zotero/My Library.bib"
   ]
 }

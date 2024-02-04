@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "tag:#🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp  ",
+  "search": "",
   "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -17,6 +17,6 @@
   "repelStrength": 15.3326403326403,
   "linkStrength": 0.458939708939709,
   "linkDistance": 30,
-  "scale": 1.001433889663631,
+  "scale": 0.20469104688309997,
   "close": true
 }
