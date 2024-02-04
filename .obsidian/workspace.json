@@ -36,16 +36,20 @@
             }
           },
           {
-            "id": "33e57321152307bd",
+            "id": "7b9ddd9c5bdcaa3c",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.md"
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ PowerShell/Misc. Notes.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -74,7 +78,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#javascript",
+                "query": "tag:#🔴-academic/📚-educational-resources/discipline/computer-science/dbms  ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,7 +95,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -112,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/175. Combine Two Tables.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ PowerShell/Misc. Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/175. Combine Two Tables.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ PowerShell/Misc. Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -196,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/175. Combine Two Tables.md"
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ PowerShell/Misc. Notes.md"
               }
             }
           }
@@ -205,8 +210,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 451.5,
-    "collapsed": true
+    "width": 451.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -235,8 +239,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "872d16caa9f3390b",
+  "active": "7b9ddd9c5bdcaa3c",
   "lastOpenFiles": [
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/175. Combine Two Tables.md",
     "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.md",
     "assets/Pasted Image 20240203161331_786.png",
     "assets/Pasted Image 20240203161245_791.png",
@@ -247,7 +252,6 @@
     "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.light.svg",
     "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.dark.png",
     "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.dark.svg",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/175. Combine Two Tables.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md",
     "the-vault/templates/Template {{LeetCode ∋ Problem}}.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/226. Invert Binary Tree.md",

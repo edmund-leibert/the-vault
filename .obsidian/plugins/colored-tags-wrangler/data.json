@@ -210,6 +210,34 @@
           "b": 237
         },
         "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resources/name/leetcode/🏷️/problems/premium/🔓-no",
+        "color": {
+          "r": 54,
+          "g": 186,
+          "b": 69
+        },
+        "background_color": {
+          "r": 240,
+          "g": 240,
+          "b": 240
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resources/name/leetcode/🏷️/problems/premium/🔒-yes",
+        "color": {
+          "r": 185,
+          "g": 34,
+          "b": 34
+        },
+        "background_color": {
+          "r": 240,
+          "g": 240,
+          "b": 240
+        },
+        "luminance_offset": 0.15
       }
     ],
     "EnableMultipleTags": true,
