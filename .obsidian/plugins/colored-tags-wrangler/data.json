@@ -16,20 +16,6 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/framework/net",
-        "color": {
-          "r": 255,
-          "g": 255,
-          "b": 255
-        },
-        "background_color": {
-          "r": 80,
-          "g": 39,
-          "b": 213
-        },
-        "luminance_offset": 0.15
-      },
-      {
         "tag_name": "🔴-academic/📚-educational-resources/name/leetcode/🏷️/problems/difficulty/easy",
         "color": {
           "r": 28,
@@ -72,20 +58,6 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/name/leetcode/🔖/problems/163-missing-ranges",
-        "color": {
-          "r": 200,
-          "g": 137,
-          "b": 0
-        },
-        "background_color": {
-          "r": 49,
-          "g": 49,
-          "b": 49
-        },
-        "luminance_offset": 0.15
-      },
-      {
         "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/technology/json",
         "color": {
           "r": 255,
@@ -100,7 +72,7 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/name/leetcode/🔖/problems/4-median-of-two-arrays",
+        "tag_name": "🔴-academic/📚-educational-resources/name/leetcode/🔖/problems/1-two-sum; 🔴-academic/📚-educational-resources/name/leetcode/🔖/problems/4-median-of-two-arrays; 🔴-academic/📚-educational-resources/name/leetcode/🔖/problems/163-missing-ranges; 🔴-academic/📚-educational-resources/name/leetcode/🔖/problems/175-combine-two-tables",
         "color": {
           "r": 200,
           "g": 137,
@@ -114,7 +86,7 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/developer-platform/net",
+        "tag_name": "🔴-academic/📚-educational-resources/name/🗒️-net/🔖/🗒️-net-∋-table-of-contents; 🔴-academic/📚-educational-resources/discipline/computer-science/developer-platform/net",
         "color": {
           "r": 255,
           "g": 255,
@@ -170,48 +142,6 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/name/🗒️-net/🔖/🗒️-net-∋-table-of-contents",
-        "color": {
-          "r": 255,
-          "g": 255,
-          "b": 255
-        },
-        "background_color": {
-          "r": 80,
-          "g": 39,
-          "b": 213
-        },
-        "luminance_offset": 0.15
-      },
-      {
-        "tag_name": "🔴-academic/📚-educational-resources/name/leetcode/🔖/problems/1-two-sum",
-        "color": {
-          "r": 200,
-          "g": 137,
-          "b": 0
-        },
-        "background_color": {
-          "r": 49,
-          "g": 49,
-          "b": 49
-        },
-        "luminance_offset": 0.15
-      },
-      {
-        "tag_name": "🔴-academic/📚-educational-resources/name/leetcode/🔖/problems/175-combine-two-tables",
-        "color": {
-          "r": 200,
-          "g": 137,
-          "b": 0
-        },
-        "background_color": {
-          "r": 49,
-          "g": 49,
-          "b": 49
-        },
-        "luminance_offset": 0.15
-      },
-      {
         "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/dbms/postgresql",
         "color": {
           "r": 255,
@@ -226,7 +156,7 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server",
+        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server; 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/t-sql",
         "color": {
           "r": 194,
           "g": 0,
@@ -268,11 +198,11 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql",
+        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/sql",
         "color": {
-          "r": 0,
-          "g": 0,
-          "b": 0
+          "r": 220,
+          "g": 130,
+          "b": 46
         },
         "background_color": {
           "r": 237,
