@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2023-09-03 08:46
-updated: 2024-02-02T10:36
+updated: 2024-02-04T14:22
 authors:
   - Edmund Leibert III
 tags:
@@ -19,9 +19,9 @@ banner_y: 0
 ---
 
 > [!INFO]+ Note 
-> This **page** contains **miscellaneous** _scratch notes_ pertaining to **[.NET](https://dotnet.microsoft.com/en-us/)**. [@NETBuildTest]
+> This **page** contains **miscellaneous** _scratch notes_ pertaining to **[.NET](https://dotnet.microsoft.com/en-us/)** [@NETBuildTest].
 > 
-> These notes are primarily structured in a Q&A format, making it easy to follow and learn. Corresponding [**Anki**](https://apps.ankiweb.net/) flashcards are available, enabling efficient revision and reinforcement of the concepts. 
+> These notes are primarily structured in a Q&A format, making it easy to follow and learn. Corresponding [**Anki**](https://apps.ankiweb.net/) flashcards are available, enabling efficient revision and reinforcement of the concepts [@ankitectsAnkiPowerfulIntelligent].
 
 ---
 
@@ -36,10 +36,10 @@ In brief, what is Microsoft’s **.NET**?
 
 #card 
 
-**.NET** is a free, cross-platform, [open-source developer platform](https://github.com/dotnet/core) for building [many kinds of applications](https://learn.microsoft.com/en-us/dotnet/core/apps). It can run programs written in [multiple languages](https://learn.microsoft.com/en-us/dotnet/fundamentals/languages), with [C#](https://learn.microsoft.com/en-us/dotnet/csharp/) being the most popular. It relies on a [high-performance](https://devblogs.microsoft.com/dotnet/category/performance/) runtime that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/). [@genevievewarrenIntroductionNETNET2024]
+**.NET** is a free, cross-platform, [open-source developer platform](https://github.com/dotnet/core) for building [many kinds of applications](https://learn.microsoft.com/en-us/dotnet/core/apps). It can run programs written in [multiple languages](https://learn.microsoft.com/en-us/dotnet/fundamentals/languages), with [C#](https://learn.microsoft.com/en-us/dotnet/csharp/) being the most popular. It relies on a [high-performance](https://devblogs.microsoft.com/dotnet/category/performance/) runtime that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/) [@genevievewarrenIntroductionNETNET2024].
 
 ⌂
-<br>﹈<br>
+<br>﹈<br>^1707085375786
 
 
 ﹇<br>
@@ -57,11 +57,11 @@ It additionally has the following features:
 > Must have Microsoft Word or Excel installed on host machine.
 
 ⌂
-<br>﹈<br>
+<br>﹈<br>^1707085375799
 
 
 ﹇<br>
-Using the [DocTo](https://github.com/tobya/DocTo) library, how can I export a `.docx` to a `.pdf` in the command line? [@tobyallenDocToXLSTo]
+Using the [DocTo](https://github.com/tobya/DocTo) library, how can I export a `.docx` to a `.pdf` in the command line [@tobyallenDocToXLSTo]?
 
 #card #🔴-academic/📚-educational-resources/discipline/computer-science/technologies/docto
 
@@ -232,7 +232,7 @@ string userIdString = deserializedUserData.GetUserIdString();
 If you need to modify the behavior of methods after deserialization based on the serialized data, consider using a design pattern such as the Strategy pattern, where the serialized data determines which implementation of a method to use. Another approach could be to include some kind of configuration data in your serialized object that your methods can use to alter their behavior after deserialization. However, these approaches go beyond basic serialization and deserialization and involve more advanced object-oriented design.
 
 ⌂
-<br>﹈<br>
+<br>﹈<br>^1707085375806
 
 
 ﹇<br>
@@ -319,7 +319,7 @@ Yes, that’s correct. **.NET 5** and its successors are the next step forward f
 Microsoft merged the best of .NET Core and .NET Framework into a single platform called .NET. This unified platform is intended to be used for all types of .NET development, whether it’s Windows-based or cross-platform. So, you can think of .NET as a newer version of .NET Core.
 
 ⌂
-<br>﹈<br>
+<br>﹈<br>^1707085375820
 
 
 ﹇<br>
@@ -356,7 +356,7 @@ As for alternatives to IIS, there are several modern web servers that you might 
 [Each of these servers has its own strengths and weaknesses, and the best one for you depends on your specific needs and circumstances](https://www.trustradius.com/products/iis/competitors) [@trustradiusListBestMicrosoft] [@alternativetoMicrosoftIISAlternatives2019] [@dimmittLightweightAlternativesApache2011]. [It’s also worth noting that while these alternatives can serve as replacements for IIS, they might not offer the same level of integration with other Microsoft technologies](https://www.trustradius.com/products/iis/competitors) [@trustradiusListBestMicrosoft] [@alternativetoMicrosoftIISAlternatives2019] [@dimmittLightweightAlternativesApache2011].
 
 ⌂
-<br>﹈<br>
+<br>﹈<br>^1707085375830
 
 ﹇<br>
 Just to clarify, what server am I running when I run a simple **Node.js** application locally? In your explanation, make sure to relate this to how Microsoft’s **IIS** works too?
@@ -374,7 +374,7 @@ Now, let’s talk about **IIS (Internet Information Services)**. [IIS is a web s
 However, it’s important to note that running a Node.js application on IIS is not the same as running it on a Node.js server. When you run your Node.js application locally without IIS, you’re running it directly on a Node.js server. [When you run it on IIS using iisnode, IIS is acting as a reverse proxy, forwarding requests to your Node.js application and then returning the responses](https://www.hanselman.com/blog/installing-and-running-nodejs-applications-within-iis-on-windows-are-you-mad)[4](https://www.hanselman.com/blog/installing-and-running-nodejs-applications-within-iis-on-windows-are-you-mad)[6](https://stackoverflow.com/questions/46266609/host-node-js-on-windows-server-iis)[7](https://adrianjnkns.medium.com/iis-hosting-nodejs-application-572d81689f9e).
 
 ⌂
-<br>﹈<br>
+<br>﹈<br>^1707085375836
 
 
 ﹇<br>
@@ -386,6 +386,68 @@ These are all network protocols. They are designed to send/transfer information 
 
 ⌂
 <br>﹈<br>^1702296738290
+
+﹇<br>
+In the context of software engineering, specifically in the language **C#** (**.NET**), what exactly is an `async` function and how does it work? Relate your description/analysis to threads at the operating system level.
+
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp 
+
+[In C#, an `async` function is a method, lambda expression, or anonymous method that is marked with the `async` keyword](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async)[1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async)[2](https://www.c-sharpcorner.com/article/async-and-await-in-c-sharp/). [This keyword indicates that the function is asynchronous, meaning it can run in the background while other code executes](https://stackify.com/c-threading-and-multithreading-a-guide-with-examples/)[3](https://stackify.com/c-threading-and-multithreading-a-guide-with-examples/).
+
+Here’s how it works:
+
+1. [An `async` method runs synchronously until it reaches its first `await` expression](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async)[1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async). [The `await` keyword is used to specify that the method should wait for the result of an asynchronous operation before continuing](https://www.c-sharpcorner.com/article/async-and-await-in-c-sharp/)[2](https://www.c-sharpcorner.com/article/async-and-await-in-c-sharp/).
+2. [At the `await` expression, the method is suspended, and control returns to the caller of the method](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async)[1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async). [This allows the application to continue with other work that doesn’t depend on the awaited task](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/task-asynchronous-programming-model)[4](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/task-asynchronous-programming-model).
+3. [Once the awaited task is complete, the method resumes where it left off](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async)[1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async).
+
+In terms of threads at the operating system level, here’s the relationship:
+
+- [The `async` and `await` keywords don’t cause additional threads to be created](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async)[5](https://stackoverflow.com/questions/37278281/async-await-and-threads). [They work with the .NET runtime to handle the asynchronicity](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async)[6](https://auth0.com/blog/introduction-to-async-programming-in-csharp/).
+- When an `async` method awaits a task, it frees up its thread to do other work. [This could be the UI thread, allowing the application to remain responsive](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async)[4](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/task-asynchronous-programming-model).
+- [For I/O-bound code, you `await` an operation that returns a `Task` or `Task<T>` inside of an `async` method](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async)[4](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/task-asynchronous-programming-model). [For CPU-bound code, you `await` an operation that is started on a background thread with the `Task.Run` method](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async)[7](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/async-scenarios).
+
+Here’s a simple example of an `async` function in C#:
+
+```csharp
+public async Task<int> ExampleMethodAsync()
+{
+    // This method runs asynchronously.
+    int result = await SomeOtherAsyncMethod();
+    return result;
+}
+```
+
+In this example, `ExampleMethodAsync` is an `async` method that returns a `Task<int>`. Inside the method, it calls `SomeOtherAsyncMethod()` and `await`s its result. Once `SomeOtherAsyncMethod()` completes, its result is returned from `ExampleMethodAsync`.
+
+⌂
+<br>﹈<br>^1707085375845
+
+﹇<br>
+Two brief questions: 
+1. When calling an `async` method, must you have an `await` prepended/before it when calling it? 
+2. Must an `async` method, by definition, must call another `async` function?
+
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp 
+
+1. **Do you need to use `await` when calling an `async` method?**
+    - [No, it’s not mandatory to use `await` when calling an `async` method](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[1](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[2](https://stackoverflow.com/questions/17805887/using-async-without-await). [However, if you call an `async` method without `await`, the method will return a `Task` or `Task<T>` immediately, and the caller will continue execution before the `async` method has completed](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[1](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[2](https://stackoverflow.com/questions/17805887/using-async-without-await). [This can lead to unexpected behavior if the caller depends on the completion of the `async` method](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[1](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[2](https://stackoverflow.com/questions/17805887/using-async-without-await). [If you don’t need to wait for the `async` method to complete, you can ignore the returned `Task`](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[1](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[2](https://stackoverflow.com/questions/17805887/using-async-without-await). [But be aware that any exceptions thrown by the `async` method will be swallowed and won’t be observed until the `Task` is awaited](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[1](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await).
+2. **Does an `async` function have to call another `async` function?**
+    - Not necessarily. [An `async` method doesn’t have to call another `async` method](https://stackoverflow.com/questions/9343594/how-to-call-asynchronous-method-from-synchronous-method-in-c)[3](https://stackoverflow.com/questions/9343594/how-to-call-asynchronous-method-from-synchronous-method-in-c)[4](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/async-scenarios). [However, if an `async` method doesn’t contain an `await` expression, it will run synchronously](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[3](https://stackoverflow.com/questions/9343594/how-to-call-asynchronous-method-from-synchronous-method-in-c)[4](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/async-scenarios). [That means the method will execute on the same thread and won’t yield control back to the caller until it’s completed](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[3](https://stackoverflow.com/questions/9343594/how-to-call-asynchronous-method-from-synchronous-method-in-c)[4](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/async-scenarios). [This can defeat the purpose of making the method `async` in the first place](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[3](https://stackoverflow.com/questions/9343594/how-to-call-asynchronous-method-from-synchronous-method-in-c)[4](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/async-scenarios).
+
+⌂
+<br>﹈<br>^1707085375850
+
+﹇<br>
+It seems unless I specify manually the creation of extra threads in **C#**, when an `async` method is now waiting (via `await`) for another method to finish execution and return a task, the threads itself don't change or go off the processor, but instead the thread itself switches to execute a different method. Is this correct?
+
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp 
+
+In C#, when an `async` method encounters an `await` keyword, it doesn’t necessarily create a new thread. Instead, it signs up the rest of the method as a continuation on the awaited task. The thread that was executing the method can then go back to the thread pool and be used for another work until the awaited task completes. When the awaited task completes, the continuation (the rest of the method) can be executed on a different thread.
+
+This is one of the key benefits of `async`/`await` in C# - it allows you to write asynchronous code that can free up threads to do other work, without manually creating and managing threads. This can lead to more efficient use of system resources, particularly in I/O-bound operations.
+
+⌂
+<br>﹈<br>^1707085375854
 
 
 ﹇<br>
@@ -411,7 +473,7 @@ internal abstract class MerriamWebsterAnkiFlashcardsGenerator
 }
 ```
 
-#card 
+#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp 
 
 Asynchronous methods in C# typically return a `Task` or `Task<T>`, and they should be awaited with the `await` keyword.
 

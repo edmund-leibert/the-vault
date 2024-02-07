@@ -6,6 +6,7 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FabJava",
       "EiScribbleNotes",
       "EiZotero",
       "RiFolderFill",
@@ -19,8 +20,7 @@
       "TiNotes",
       "FasHashtag",
       "SiDiscord",
-      "EiBazel",
-      "EiDEGrindCrew"
+      "EiBazel"
     ],
     "recentlyUsedIconsSize": 15,
     "rules": [
@@ -302,7 +302,6 @@
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ ESBuild/Misc. Notes.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ French/Misc. Notes.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ ESLint/Misc. Notes.md": "TiNotes",
-  "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Git/Misc. Notes.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ GitHub CLI/Misc. Notes.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ GoogleTest/Misc. Notes.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ JetBrains/Keyboard Shortcuts.md": "TiKeyboardHide",
@@ -487,5 +486,8 @@
   "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/8. Mixed Recall/122. binary search 👨🏽‍💻.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/Structy/8. Mixed Recall/123. binary search tree includes 👨🏽‍💻.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/The LeetCode Beginner's Guide": "RiBookmarkFill",
-  "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md": "TiNotes"
+  "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md": "TiNotes",
+  "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/175. Combine Two Tables.md": "TiNotes",
+  "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Git/Miscellaneous Notes.md": "TiNotes",
+  "the-vault/src/🔴 Academic/📚 Educational Resources/Java": "FabJava"
 }

@@ -1,7 +1,7 @@
 ---
 title: Misc. Notes
 created: 2023-08-04 01:58
-updated: 2024-02-03T17:51
+updated: 2024-02-03T18:04
 authors:
   - Edmund Leibert III
 tags:
@@ -871,6 +871,38 @@ If you need to refresh environment variables, you may need to restart the PowerS
 
 ⌂
 <br>﹈<br>^1702208877706
+
+﹇<br>
+In PowerShell, how can you retrieve the value of an environment variable?
+
+#card 
+
+In PowerShell, you can retrieve the value of an environment variable using the `$env:` syntax followed by the name of the environment variable. Here’s how you can do it:
+
+```powershell
+$env:VariableName
+```
+
+Replace `VariableName` with the name of the environment variable you want to retrieve. For example, to retrieve the system `PATH` variable, you would use:
+
+```powershell
+$env:PATH
+```
+
+This command retrieves the system `PATH` variable.
+
+You can also list all environment variables with the following command:
+
+```powershell
+Get-ChildItem Env:
+```
+
+This command retrieves all environment variables.
+
+Remember, environment variable names are case-sensitive on non-Windows platforms. 
+
+⌂
+<br>﹈<br>
 
 
 ---

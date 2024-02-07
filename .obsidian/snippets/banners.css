@@ -6,5 +6,5 @@
 .obsidian-banner-wrapper {
     height: 0px !important;
     margin-top: 0px !important;
-    margin-bottom: calc(var(--banner-height) - 19em);
+    margin-bottom: calc(var(--banner-height) - 18em);
 }

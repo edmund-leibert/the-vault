@@ -86,7 +86,7 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/name/🗒️-net/🔖/🗒️-net-∋-table-of-contents; 🔴-academic/📚-educational-resources/discipline/computer-science/developer-platform/net",
+        "tag_name": "🔴-academic/📚-educational-resources/name/🗒️-net/🔖/🗒️-net-∋-table-of-contents; 🔴-academic/📚-educational-resources/discipline/computer-science/developer-platform/net; 🔴-academic/📚-educational-resources/name/🗒️-net/🔖/miscellaneous-notes",
         "color": {
           "r": 255,
           "g": 255,
@@ -236,6 +236,20 @@
           "r": 240,
           "g": 240,
           "b": 240
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/technology/git; 🔴-academic/📚-educational-resources/name/🗒️-git/miscellaneous-notes",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "background_color": {
+          "r": 246,
+          "g": 76,
+          "b": 40
         },
         "luminance_offset": 0.15
       }

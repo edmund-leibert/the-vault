@@ -30,7 +30,6 @@
   "obsidian-front-matter-title-plugin",
   "obsidian-latex-suite",
   "quick-latex",
-  "obsidian-git",
   "obsidian-zotero-desktop-connector",
   "obsidian-citation-plugin",
   "obsidian-pandoc-reference-list",
@@ -48,5 +47,6 @@
   "mathlinks",
   "obsidian-banners",
   "reference-map",
-  "update-time-on-edit"
+  "update-time-on-edit",
+  "flashcards-obsidian"
 ]
