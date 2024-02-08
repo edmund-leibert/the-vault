@@ -4,39 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "4ffc9cf27dfe41ae",
+        "id": "dfcfb3528f17813b",
         "type": "tabs",
         "children": [
           {
-            "id": "a39665c0e31396ac",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "468a758f7c26e39e",
+            "id": "5ac07946a8babe6d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Java/Miscellaneous Notes.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -86,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 471.5
+    "width": 561.5
   },
   "right": {
     "id": "1186c1364788cf17",
@@ -102,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Java/Miscellaneous Notes.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Java/Miscellaneous Notes.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Java/Miscellaneous Notes.md"
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md"
               }
             }
           }
@@ -226,14 +210,20 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "468a758f7c26e39e",
+  "active": "5ac07946a8babe6d",
   "lastOpenFiles": [
-    "the-vault/src/🔴 Academic/📚 Educational Resources/sortspec.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Java/Miscellaneous Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/Java/Java ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/Java",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/sortspec.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/sortspec.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/Learn ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
+    "the-vault/src/🔴 Academic/👷🏽‍♂️ Projects/👷🏽‍♂️ Projects ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/LeetCode ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Java/Miscellaneous Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/sortspec.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Java/Java ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Java",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.md",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.light.png",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.light.svg",
@@ -241,7 +231,6 @@
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.dark.svg",
     "the-vault/terror-interview-problem.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ PowerShell/Misc. Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Git/Miscellaneous Notes.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/175. Combine Two Tables.md",
     "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.md",
@@ -256,7 +245,6 @@
     "the-vault/templates/Template {{LeetCode ∋ Problem}}.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/226. Invert Binary Tree.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/4. Median of Two Arrays.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/LeetCode ∋ Table of Contents.md",
     "the-vault/assets/banners/leetcode-beginner-guard.jpeg.~tmp",
     "the-vault/assets/banners/dotnet.jpeg.~tmp",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/The LeetCode Beginner's Guide/The LeetCode Beginner's Guide ∋ Table of Contents.md",
@@ -264,10 +252,6 @@
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Spark Optimization/Causes of OOM Errors/Excessively High Concurrency.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Spark Optimization/Causes of OOM Errors/Container killed by YARN.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Spark Optimization/Causes of OOM Errors/Broadcast Joins.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Spark Optimization/Optimizing DataFrame Transformations/General Join Mechanics.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Spark Optimization/Repartition vs Coalesce.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Spark Optimization/Partition vs Bucketing.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Spark Optimization/Executor vs Executor Core.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/The LeetCode Beginner's Guide",
     "the-vault/src/🟢 Personal",
     "the-vault/src/🔵 Vocational",

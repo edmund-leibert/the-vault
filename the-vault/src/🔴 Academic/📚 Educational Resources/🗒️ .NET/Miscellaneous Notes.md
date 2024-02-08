@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2023-09-03 08:46
-updated: 2024-02-04T14:22
+updated: 2024-02-07T19:41
 authors:
   - Edmund Leibert III
 tags:
