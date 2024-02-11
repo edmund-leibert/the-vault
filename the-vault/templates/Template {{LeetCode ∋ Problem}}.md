@@ -13,6 +13,8 @@ tags:
   - 🔴-academic/📚-educational-resources/name/leetcode/🏷️/problems/tag/topic/
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resources::LeetCode::Problems::<% tp.file.title %>
+banner: 
+banner_y:
 ---
 
 # <% tp.file.title %>
@@ -20,9 +22,9 @@ cards-deck: 🔴 Academic::📚 Educational Resources::LeetCode::Problems::<% tp
 ---
 
 > [!INFO]+ Note
-> This page contains notes pertaining to the **LeetCode** problem 
+> This page contains notes pertaining to the **LeetCode** problem [@leetcodePalindromeNumber].
 > 
-> These notes are primarily structured in a Q&A format, making it easy to follow and learn. Corresponding **Anki** flashcards are available, enabling efficient revision and reinforcement of the concepts.
+> These notes are primarily structured in a Q&A format, making it easy to follow and learn. Corresponding **Anki** flashcards are available, enabling efficient revision and reinforcement of the concepts [@ankitectsAnkiPowerfulIntelligent].
 > 
 > Performance of attempts are also recorded.
 

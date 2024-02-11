@@ -4,23 +4,50 @@
     "type": "split",
     "children": [
       {
-        "id": "dfcfb3528f17813b",
+        "id": "5d7c248676848f53",
         "type": "tabs",
         "children": [
           {
-            "id": "5ac07946a8babe6d",
+            "id": "431406eaf5a8014b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/Vim/Keyboard Shortcuts.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "a28e0acdbcf9cb7f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/Java/Miscellaneous Notes.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "331fb8a7b1f91433",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/Vim/Miscellanous Notes.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -49,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#🔴-academic/📚-educational-resources/discipline/computer-science/dbms  ",
+                "query": "tag:🔴-academic/📚-educational-resources/name/leetcode/🏷️/problems/premium/🔓-no",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +97,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 561.5
+    "width": 488.5,
+    "collapsed": true
   },
   "right": {
     "id": "1186c1364788cf17",
@@ -86,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/Vim/Miscellanous Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/Vim/Miscellanous Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,12 +193,12 @@
             }
           },
           {
-            "id": "d1e3a4e141024f39",
+            "id": "0f89d99f1eedb83d",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md"
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resources/Vim/Miscellanous Notes.md"
               }
             }
           }
@@ -187,6 +215,7 @@
       "flashcards-obsidian:Generate flashcards": false,
       "switcher:Open quick switcher": true,
       "graph:Open graph view": true,
+      "workspaces:Manage workspace layouts": false,
       "canvas:Create new canvas": true,
       "daily-notes:Open today's daily note": true,
       "templates:Insert template": true,
@@ -195,7 +224,6 @@
       "zk-prefixer:Create new unique note": true,
       "random-note:Open random note": true,
       "audio-recorder:Start/stop recording": true,
-      "workspaces:Manage workspace layouts": true,
       "publish:Publish changes...": true,
       "chronology:Open Chronology": false,
       "custom-sort:Toggle custom sorting": false,
@@ -210,53 +238,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5ac07946a8babe6d",
+  "active": "331fb8a7b1f91433",
   "lastOpenFiles": [
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/sortspec.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/sortspec.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/Learn ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Java/Miscellaneous Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Vim/Miscellanous Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/Miscellaneous Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/Vim/Keyboard Shortcuts.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Git/Miscellaneous Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/9. Palindrome Number.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/Miscellaneous Notes.md",
-    "the-vault/src/🔴 Academic/👷🏽‍♂️ Projects/👷🏽‍♂️ Projects ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/🗒️ .NET ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Zotero/🗒️ Zotero ∋ Table of Contents.md",
+    "the-vault/templates/Template {{Phrase ∋ “As of current moment”}}.md",
+    "the-vault/templates/Template {{Attempt ∋ “❌ Failed”}}.md",
+    "the-vault/templates/Template {{Anki Note ∋ “⋕card-reverse”}}.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/4. Median of Two Arrays.md",
+    "the-vault/templates/Template {{LeetCode ∋ Problem}}.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/Untitled.md",
+    "Untitled.loom",
     "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/LeetCode ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Java/Miscellaneous Notes.md",
+    "the-vault/🔴 Academics/🔴 Academics ∋ Table of Contents.md",
+    "the-vault/🔴 Academics/📚 Educational Resources/🌐 LeetCode/112. Path Sum.md",
+    "the-vault/🔴 Academics/📚 Educational Resources/🌐 LeetCode/🌐 LeetCode ∋ Table of Contents.md",
+    "the-vault/🔴 Academics/📚 Educational Resources/📚 Educational Resources ∋ Table of Contents.md",
+    "the-vault/🔴 Academics/📚 Educational Resources/🌐 LeetCode",
+    "the-vault/🔴 Academics/📚 Educational Resources",
+    "the-vault/🔴 Academics",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ CMake/Miscellaneous Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ CMake/🗒️ CMake ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ CMake/sortspec.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ .NET/sortspec.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/sortspec.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/Java/Java ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ LeetCode/🗒️ LeetCode ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ LeetCode",
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/sortspec.md",
     "the-vault/src/🔴 Academic/📚 Educational Resources/Java",
-    "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.md",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.light.png",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.light.svg",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.dark.png",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.dark.svg",
-    "the-vault/terror-interview-problem.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ PowerShell/Misc. Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Git/Miscellaneous Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/175. Combine Two Tables.md",
-    "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.md",
     "assets/Pasted Image 20240203161331_786.png",
     "assets/Pasted Image 20240203161245_791.png",
-    "assets/assets ∋ Table of Contents.md",
     "assets/Pasted Image 20240203161132_777.png",
     "assets",
     "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.light.png",
     "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.light.svg",
     "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.dark.png",
-    "the-vault/templates/Template {{LeetCode ∋ Problem}}.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/226. Invert Binary Tree.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/4. Median of Two Arrays.md",
     "the-vault/assets/banners/leetcode-beginner-guard.jpeg.~tmp",
     "the-vault/assets/banners/dotnet.jpeg.~tmp",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/The LeetCode Beginner's Guide/The LeetCode Beginner's Guide ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Spark Optimization/Causes of OOM Errors/Excessively Large Partition.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Spark Optimization/Causes of OOM Errors/Excessively High Concurrency.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Spark Optimization/Causes of OOM Errors/Container killed by YARN.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Spark Optimization/Causes of OOM Errors/Broadcast Joins.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/The LeetCode Beginner's Guide",
-    "the-vault/src/🟢 Personal",
-    "the-vault/src/🔵 Vocational",
-    "Untitled.loom",
-    "the-vault/assets/banners/Web capture_27-1-2024_7515_dotnet.microsoft.com.jpeg.crdownload",
-    "the-vault/assets/banners"
+    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Explore/Learn/The LeetCode Beginner's Guide"
   ]
 }

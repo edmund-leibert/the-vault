@@ -1,6 +1,6 @@
 ---
 created: 2023-09-03 08:46
-updated: 2024-02-05T10:53
+updated: 2024-02-09T22:49
 sorting-spec: |-
   target-folder: .
   order-desc: a-z
@@ -19,6 +19,7 @@ sorting-spec: |-
   Discord
   🗒️ Git
   %
+  🗒️ LeetCode
   🗒️ Java
   🗒️ PowerShell
   🗒️ Zotero

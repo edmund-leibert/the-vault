@@ -6,6 +6,8 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FasStar",
+      "SiLeetcode",
       "FabJava",
       "EiScribbleNotes",
       "EiZotero",
@@ -18,9 +20,7 @@
       "EiMermaid",
       "EiTestingIcon",
       "TiNotes",
-      "FasHashtag",
-      "SiDiscord",
-      "EiBazel"
+      "FasHashtag"
     ],
     "recentlyUsedIconsSize": 15,
     "rules": [
@@ -293,7 +293,6 @@
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Anaconda/Misc. Notes.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Angular/Misc. Notes.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Bash/Misc. Notes.md": "TiNotes",
-  "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ CMake/Misc. Notes.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ C++/Algorithms library.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ C++/Misc. Notes.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ C++/MSVC.md": "TiNotes",
@@ -321,7 +320,7 @@
   "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/144. Binary Tree Preorder Traversal.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/169. Majority Element.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/190. Reverse Bits.md": "TiNotes",
-  "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/4. Median of Two Arrays.md": "TiNotes",
+  "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/4. Median of Two Arrays.md": "FasStar",
   "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/603. Consecutive Available Seats.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/620. Not Boring Movies.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/Python Docs/Python 3.12.0 documentation/Python HOWTOs": "RiBookmarkFill",
@@ -489,5 +488,7 @@
   "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/175. Combine Two Tables.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Git/Miscellaneous Notes.md": "TiNotes",
-  "the-vault/src/🔴 Academic/📚 Educational Resources/Java": "FabJava"
+  "the-vault/src/🔴 Academic/📚 Educational Resources/Java": "FabJava",
+  "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ LeetCode": "SiLeetcode",
+  "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ CMake/Miscellaneous Notes.md": "TiNotes"
 }

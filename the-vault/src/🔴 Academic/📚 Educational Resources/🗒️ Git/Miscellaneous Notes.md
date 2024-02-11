@@ -1,7 +1,7 @@
 ---
 title: 🗒️ Git
 created: 2023-08-04 01:58
-updated: 2024-02-04T11:27
+updated: 2024-02-10T15:45
 authors:
   - Edmund Leibert III
 tags:
@@ -879,7 +879,31 @@ If you cherry-pick from a public branch, you should consider using `git cherry-p
 Please replace `<branch-name>` with the name of your branch and `<commit-hash>` with the hash of the commit you want to cherry-pick.
 
 ⌂
-<br>﹈<br>
+<br>﹈<br>^1707608703114
+
+﹇<br>
+Is the typewriter’s apostrophe, also known as the straight apostrophe (`'`), often recommended over the curly or smart apostrophe (`’`) in Git commit messages? If so, or not, why?
+
+#card 
+
+The typewriter’s apostrophe, also known as the straight apostrophe (`'`), is often recommended over the curly or smart apostrophe (`’`) in Git commit messages for a couple of reasons:
+
+1. **Character Encoding**: Git and many other tools are designed to work best with ASCII, a character encoding standard. [The straight apostrophe is part of the ASCII standard, while the curly apostrophe is not](https://stackoverflow.com/questions/44554606/why-does-this-apostrophe-in-my-code-show-up-as-a-in-git-bash) [@sabriAnswerWhyDoes2017]. This means that using a curly apostrophe could lead to unexpected results when your commit message is viewed in different environments.
+2. **Command Line Compatibility**: When writing commit messages in the command line, it’s common to wrap the message in single quotes (`git commit -m 'Your message here'`). [If your message includes a curly apostrophe, it could prematurely close the string, causing errors](https://stackoverflow.com/questions/44554606/why-does-this-apostrophe-in-my-code-show-up-as-a-in-git-bash) [@sabriAnswerWhyDoes2017]. Using a straight apostrophe avoids this issue.
+
+Here’s an example of how you might escape a curly apostrophe in a commit message:
+
+```bash
+git commit -m 'It\'s a great day for coding!'
+```
+
+[In this case, the backslash (`\`) is used to “escape” the straight apostrophe, indicating that it should be treated as a character in the string rather than a delimiter](https://stackoverflow.com/questions/44554606/why-does-this-apostrophe-in-my-code-show-up-as-a-in-git-bash) [@sabriAnswerWhyDoes2017].
+
+However, it’s worth noting that these issues are largely specific to command-line interfaces and certain programming contexts. [In more general writing contexts, such as in a word processor or on the web, the curly apostrophe is often preferred for its more typographically correct and visually appealing appearance] [@sabriAnswerWhyDoes2017].
+
+⌂
+<br>﹈<br>^1707608703129
+
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 🗒️ CMake ∋ Table of Contents
 created: 2023-10-31T16:39
-updated: 2024-01-25T00:50
+updated: 2024-02-10T00:41
 authors:
   - Edmund Leibert III
 tags:
@@ -33,7 +33,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ CMake::🗒️ CMa
 
 - **CMake**
 	- [🗒️ CMake ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20Resources/🗒️%20CMake/🗒️%20CMake%20∋%20Table%20of%20Contents.md)
-	- [Misc. Notes](the-vault/src/🔴%20Academic/📚%20Educational%20Resources/🗒️%20CMake/Misc.%20Notes.md)
+	- [Miscellaneous Notes](the-vault/src/🔴%20Academic/📚%20Educational%20Resources/🗒️%20CMake/Miscellaneous%20Notes.md)
 
 ---
 

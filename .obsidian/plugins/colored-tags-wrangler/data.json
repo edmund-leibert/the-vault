@@ -252,6 +252,76 @@
           "b": 40
         },
         "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/technology/cmake",
+        "color": {
+          "r": 35,
+          "g": 147,
+          "b": 69
+        },
+        "background_color": {
+          "r": 6,
+          "g": 77,
+          "b": 136
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resources/discipline/business/technology/microsoft-excel",
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "background_color": {
+          "r": 15,
+          "g": 116,
+          "b": 61
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/technology/zotero",
+        "color": {
+          "r": 245,
+          "g": 0,
+          "b": 0
+        },
+        "background_color": {
+          "r": 232,
+          "g": 232,
+          "b": 232
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/java",
+        "color": {
+          "r": 242,
+          "g": 152,
+          "b": 37
+        },
+        "background_color": {
+          "r": 216,
+          "g": 233,
+          "b": 245
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/technology/vim",
+        "color": {
+          "r": 153,
+          "g": 153,
+          "b": 153
+        },
+        "background_color": {
+          "r": 0,
+          "g": 127,
+          "b": 0
+        },
+        "luminance_offset": 0.15
       }
     ],
     "EnableMultipleTags": true,
