@@ -30509,6 +30509,7 @@ function MyCalendar(params) {
       value: selectedDay,
       maxDetail: "month",
       minDetail: "month",
+      showWeekNumbers: plugin.settings.showWeekNumbers,
       view: "month",
       tileContent: customTileContent,
       tileClassName: customTileClass,
@@ -30598,7 +30599,8 @@ var DEFAULT_SETTINGS = {
   sortingOption: "name",
   newNoteDate: "current-date",
   newNoteCancelButtonReverse: false,
-  fileNameOverflowBehaviour: "hide"
+  fileNameOverflowBehaviour: "hide",
+  showWeekNumbers: false
 };
 var OZCalendarPluginSettingsTab = class extends import_obsidian6.PluginSettingTab {
   constructor(app2, plugin) {
@@ -30641,6 +30643,13 @@ var OZCalendarPluginSettingsTab = class extends import_obsidian6.PluginSettingTa
     ).addDropdown((dropdown) => {
       dropdown.addOption("ISO 8601", "ISO 8601").addOption("US", "US").setValue(this.plugin.settings.calendarType).onChange((newValue) => {
         this.plugin.settings.calendarType = newValue;
+        this.plugin.saveSettings();
+        this.plugin.calendarForceUpdate();
+      });
+    });
+    new import_obsidian6.Setting(containerEl).setName("Show Week Numbers").setDesc("Enable if you want to have week numbers within the calendar view").addToggle((toggle) => {
+      toggle.setValue(this.plugin.settings.showWeekNumbers).onChange((newValue) => {
+        this.plugin.settings.showWeekNumbers = newValue;
         this.plugin.saveSettings();
         this.plugin.calendarForceUpdate();
       });

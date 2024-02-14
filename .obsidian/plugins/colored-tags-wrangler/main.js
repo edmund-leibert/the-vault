@@ -7147,7 +7147,7 @@ var CSSWranglerTagsCanvas = class extends CSSWrangler {
     const important = this.getImportant();
     return this.getTags(false).map(
       ({ tag_name, color, background_color }) => `
-${theme} div.canvas-node-container:has(div.markdown-embed-content a[href="#${tag_name}"]) {
+${theme} div.canvas-node-container:has(div.markdown-embed-content a[href="#${tag_name}" i]) {
 	--canvas-color : ${color.r}, ${color.g}, ${color.b} !important;
 	background : ${this.getBackgroundWithOpacityString(background_color)} ${important};
 	border-color: rgb(${color.r}, ${color.g}, ${color.b}) ${important};
@@ -7327,16 +7327,26 @@ var JqueryWranglerCanvasNodeBackground = class extends JqueryWrangler {
   // Methods
   // -----------------------------------------------------------------------------------------------------------------
   findElement(tag_name) {
-    return (0, import_jquery3.default)(`div.canvas-node > div.canvas-node-container:has(a.tag[href="#${tag_name}"])`);
+    if (!tag_name)
+      return null;
+    const regex = new RegExp(`#${tag_name}`, "i");
+    return (0, import_jquery3.default)(`div.canvas-node > div.canvas-node-container:has(a.tag)`).filter((_, el) => {
+      const href = (0, import_jquery3.default)(el).find("a.tag").attr("href");
+      if (href === void 0)
+        return false;
+      return regex.test(href);
+    });
   }
   assembleStyling() {
     this.getTags(false).map(
       ({ tag_name, color, background_color }) => {
         const canvasNode = this.findElement(tag_name);
-        if (canvasNode !== null) {
-          canvasNode.css({ "--canvas-color": `${color.r}, ${color.g}, ${color.b}` });
-          canvasNode.css({ "background-color": this.getBackgroundWithOpacityString(background_color) });
-        }
+        if (canvasNode === null)
+          return;
+        canvasNode.css({
+          "--canvas-color": `${color.r}, ${color.g}, ${color.b}`,
+          "background-color": this.getBackgroundWithOpacityString(background_color)
+        });
       }
     );
   }
