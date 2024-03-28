@@ -4,8 +4,8 @@ created: 2023-08-10 19:59
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/learning-sql-3rd-edition-2020
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/sql
+  - 🔴-academic/📚-educational-resource/name/learning-sql-3rd-edition-2020
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/sql
   - study-note
 cards-deck: Default::Computer Science
 updated: 2024-01-25T16:47

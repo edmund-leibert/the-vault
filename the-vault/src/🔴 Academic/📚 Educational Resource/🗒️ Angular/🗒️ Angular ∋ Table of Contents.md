@@ -1,13 +1,13 @@
 ---
 title: 🗒️ Angular ∋ Table of Contents
 created: 2023-09-03 08:46
-updated: 2024-01-25T00:50
+updated: 2024-03-27T00:31
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-angular/🔖/🗒️-angular-∋-table-of-contents
-  - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/angular
+  - 🔴-academic/📚-educational-resource/name/🗒️-angular/🔖/🗒️-angular-∋-table-of-contents
+  - 🔴-academic/📚-educational-resource/format/miscellaneous
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/angular
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Angular::🗒️ Angular ∋ Table of Contents
 ---
@@ -32,8 +32,8 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Angular::🗒️ A
 ## :FasListOl: Table of Contents
 
 - **🗒️ Angular**
-	- [🗒️ Angular ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/🗒️%20Angular/🗒️%20Angular%20∋%20Table%20of%20Contents.md)
-	- [Misc. Notes](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/🗒️%20Angular/Misc.%20Notes.md)
+	- [🗒️ Angular ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/🗒️%20Angular/🗒️%20Angular%20∋%20Table%20of%20Contents.md)
+	- [Misc. Notes](the-vault/src/🔴%20Academic/📚%20Educational%20resource/🗒️%20Angular/Misc.%20Notes.md)
 
 ---
 

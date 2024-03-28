@@ -5,6 +5,7 @@ sorting-spec: |-
   target-folder: .
   order-desc: a-z
   ... ∋ Table of Contents
+  Guides
   %
   sortspece
 ---

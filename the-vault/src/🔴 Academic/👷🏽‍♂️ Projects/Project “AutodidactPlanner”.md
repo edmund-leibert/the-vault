@@ -1,7 +1,7 @@
 ---
 tags:
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/python
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/sql
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/sql
   - data-garage/project-1
 cards-deck: Default::Computer Science
 version: v0.1

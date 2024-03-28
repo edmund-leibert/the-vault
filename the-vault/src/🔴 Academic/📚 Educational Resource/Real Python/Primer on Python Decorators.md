@@ -5,13 +5,13 @@ authors:
 created: 2023-11-14T19:56
 updated: 2024-01-25T16:47
 tags:
-  - 🔴-academic/📚-educational-resources/name/real-python/primer-on-python-decorators
-  - 🔴-academic/📚-educational-resources/format/website
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/python
-  - 🔴-academic/📚-educational-resources/name/real-python/🏷️/all-resources/article
-  - 🔴-academic/📚-educational-resources/name/real-python/🏷️/all-skill-levels/intermediate
-  - 🔴-academic/📚-educational-resources/name/real-python/🏷️/tutorials/category-tags/intermediate
-  - 🔴-academic/📚-educational-resources/name/real-python/🏷️/tutorials/category-tags/python
+  - 🔴-academic/📚-educational-resource/name/real-python/primer-on-python-decorators
+  - 🔴-academic/📚-educational-resource/format/website
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python
+  - 🔴-academic/📚-educational-resource/name/real-python/🏷️/all-resources/article
+  - 🔴-academic/📚-educational-resource/name/real-python/🏷️/all-skill-levels/intermediate
+  - 🔴-academic/📚-educational-resource/name/real-python/🏷️/tutorials/category-tags/intermediate
+  - 🔴-academic/📚-educational-resource/name/real-python/🏷️/tutorials/category-tags/python
   - study-note
   - new-tag
 cards-deck: 🔴 Academic::📚 Educational Resource::LeetCode::Problems::Primer on Python Decorators

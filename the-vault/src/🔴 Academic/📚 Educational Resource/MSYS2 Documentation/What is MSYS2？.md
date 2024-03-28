@@ -1,6 +1,6 @@
 ---
 tags:
-  - 🔴-academic/📚-educational-resources/name/msys2-documentation
+  - 🔴-academic/📚-educational-resource/name/msys2-documentation
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-09-03 08:46

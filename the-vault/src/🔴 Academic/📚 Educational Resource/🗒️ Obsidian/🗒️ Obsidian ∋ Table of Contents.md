@@ -5,9 +5,9 @@ updated: 2024-01-03T13:45
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-obsidian/🔖/🗒️-obsidian-∋-table-of-contents
-  - 🔴-academic/📚-educational-resources/format/website
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/obsidian
+  - 🔴-academic/📚-educational-resource/name/🗒️-obsidian/🔖/🗒️-obsidian-∋-table-of-contents
+  - 🔴-academic/📚-educational-resource/format/website
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/obsidian
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Obsidian::🗒️ Obsidian ∋ Table of Contents
 ---

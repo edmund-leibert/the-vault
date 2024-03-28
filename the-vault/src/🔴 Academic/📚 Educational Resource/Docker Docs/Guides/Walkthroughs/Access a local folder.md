@@ -1,13 +1,13 @@
 ---
 title: Access a local folder
 created: 2023-11-19T12:44
-updated: 2024-01-25T16:47
+updated: 2024-03-27T00:31
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/docker-docs/🔖/guides/walkthroughs/access-a-local-folder-from-a-container
-  - 🔴-academic/📚-educational-resources/format/website
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/docker
+  - 🔴-academic/📚-educational-resource/name/docker-docs/🔖/guides/walkthroughs/access-a-local-folder-from-a-container
+  - 🔴-academic/📚-educational-resource/format/website
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/docker
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::Docker Docs::Guides::Walkthroughs::Access a local folder
 ---
@@ -209,7 +209,7 @@ For example, in a Node.js project, it's not recommended to sync the `node_modul
 ## [Step 4: Develop the application](https://docs.docker.com/guides/walkthroughs/access-local-folder/#step-4-develop-the-application)
 
 ﹇<br>
-In comparing with the previous walkthrough [Persist data between containers](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Docker%20Docs/Guides/Walkthroughs/Persist%20data%20between%20containers.md), what approach to development is better overall?
+In comparing with the previous walkthrough [Persist data between containers](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Docker%20Docs/Guides/Walkthroughs/Persist%20data%20between%20containers.md), what approach to development is better overall?
 
 #card 
 

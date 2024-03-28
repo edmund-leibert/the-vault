@@ -5,9 +5,9 @@ updated: 2024-01-25T16:47
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/python-docs/🔖/python-3-12-0-documentation/python-howtos/enum-howto
-  - 🔴-academic/📚-educational-resources/format/internet
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/python
+  - 🔴-academic/📚-educational-resource/name/python-docs/🔖/python-3-12-0-documentation/python-howtos/enum-howto
+  - 🔴-academic/📚-educational-resource/format/internet
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::Python Docs::Python 3.12.0 documentation::Python HOWTOs::Enum HOWTO
 ---
@@ -113,7 +113,7 @@ So, while you can’t have functions within classes with the same name to signal
 ﹇<br>
 What is the difference between Python and C++ in terms of constructors?
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/cpp 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp 
 
 Unlike C++, Python doesn’t allow multiple constructors with different parameters.
 
@@ -146,7 +146,7 @@ So, while you can’t have functions within classes with the same name to signal
 ﹇<br>
 Can you overload a function in Python, like in C++? 
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/cpp 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp 
 
 [In Python, function overloading in the same way as in C++ or Java is not directly supported](https://stackoverflow.com/questions/7113032/overloaded-functions-in-python)[1](https://stackoverflow.com/questions/7113032/overloaded-functions-in-python)[2](https://stackoverflow.com/questions/75326378/function-overloading-in-python). [This means you can’t have multiple definitions of the same function with different numbers or types of parameters](https://www.geeksforgeeks.org/python-method-overloading/)[3](https://www.geeksforgeeks.org/python-method-overloading/). [If you try to define a function more than once, only the most recent definition will be used](https://www.geeksforgeeks.org/python-method-overloading/)[3](https://www.geeksforgeeks.org/python-method-overloading/).
 

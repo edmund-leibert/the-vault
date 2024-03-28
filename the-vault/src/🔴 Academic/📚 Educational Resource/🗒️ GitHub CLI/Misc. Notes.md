@@ -5,9 +5,9 @@ updated: 2023-12-14T05:34
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-github-cli/🔖/misc-notes
-  - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/github-cli
+  - 🔴-academic/📚-educational-resource/name/🗒️-github-cli/🔖/misc-notes
+  - 🔴-academic/📚-educational-resource/format/miscellaneous
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/github-cli
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ GitHub CLI::Misc.Notes
 ---

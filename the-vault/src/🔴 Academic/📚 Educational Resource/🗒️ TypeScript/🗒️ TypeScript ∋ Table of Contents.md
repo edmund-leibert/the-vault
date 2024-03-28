@@ -3,8 +3,8 @@ author:
 publisher: 
 published: 
 tags:
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/typescript
-  - 🔴-academic/📚-educational-resources/name/typescript
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/typescript
+  - 🔴-academic/📚-educational-resource/name/typescript
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-09-03 08:46

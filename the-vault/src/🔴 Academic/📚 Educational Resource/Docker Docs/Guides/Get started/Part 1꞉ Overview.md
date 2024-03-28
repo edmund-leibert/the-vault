@@ -1,13 +1,13 @@
 ---
 title: Part 1꞉ Overview
 created: 2023-10-31T17:48
-updated: 2024-01-25T16:47
+updated: 2024-03-27T00:31
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/docker-docs/🔖/guides/get-started/part-1-overview
-  - 🔴-academic/📚-educational-resources/format/internet
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/docker
+  - 🔴-academic/📚-educational-resource/name/docker-docs/🔖/guides/get-started/part-1-overview
+  - 🔴-academic/📚-educational-resource/format/internet
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/docker
   - study-note
 cards-deck: "🔴 Academic::📚 Educational Resource::Docker Docs::Guides::Get started::Part 1: Overview"
 ---
@@ -93,6 +93,6 @@ The {1:isolated filesystem} is provided by an {2:image}, and the {2:image} must 
 
 > [!INFO]+ 
 > **Next Note(s)**:
-> - [Part 2꞉ Containerize an application](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Docker%20Docs/Guides/Get%20started/Part%202꞉%20Containerize%20an%20application.md)
+> - [Part 2꞉ Containerize an application](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Docker%20Docs/Guides/Get%20started/Part%202꞉%20Containerize%20an%20application.md)
 
 ---

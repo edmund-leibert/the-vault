@@ -1,13 +1,13 @@
 ---
 title: Misc. Notes
 created: 2023-11-17T00:08
-updated: 2023-11-22T14:04
+updated: 2024-03-27T00:02
 author(s):
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-javascript/🔖/misc-notes
-  - 🔴-academic/📚-educational-resources/format/course
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/javascript
+  - 🔴-academic/📚-educational-resource/name/🗒️-javascript/🔖/misc-notes
+  - 🔴-academic/📚-educational-resource/format/course
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/javascript
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ JavaScript::Misc. Notes
 ---
@@ -373,9 +373,112 @@ However, this is not universally supported in all flavors of Markdown, and it’
 ⌂
 <br>﹈<br>^1700690613192
 
+﹇<br>
+As of Mar. 26, 2024 11:53:59 PM, what does it mean for functions to be first-class objects in JavaScript?
 
+#card
 
+Functions in JavaScript can be treated like other data types. They can be assigned to variables, passed as arguments to other functions, and returned from functions.
 
+⌂
+<br>﹈<br>^1711522975393
+
+﹇<br>
+As of Mar. 26, 2024 11:53:59 PM, give an example of assigning a function to a variable in JavaScript.
+
+#card
+
+```javascript
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+
+const sayHi = greet; // Assigning the function to a variable
+
+sayHi("Alice"); // Calling the function using the variable
+```
+
+⌂
+<br>﹈<br>^1711522975402
+
+﹇<br>
+As of Mar. 26, 2024 11:53:59 PM, how can functions be passed as arguments in JavaScript?
+
+#card
+
+You can pass functions as arguments to other functions that execute them. This allows functions to operate on other functions.
+
+```javascript
+function execute(func, value) {
+  func(value); // Calling the function passed as an argument
+}
+
+execute(greet, "Bob");
+```
+
+⌂
+<br>﹈<br>^1711522975409
+
+﹇<br>
+As of Mar. 26, 2024 11:53:59 PM, can functions return other functions in JavaScript?*
+
+#card
+
+Yes! This allows creating complex functional patterns.
+
+```javascript
+function createGreeter(greeting) {
+  return function(name) {
+    console.log(greeting + ", " + name + "!");
+  }
+}
+
+const morningGreeting = createGreeter("Good morning");
+morningGreeting("Charlie");
+```
+
+⌂
+<br>﹈<br>^1711522975418
+
+﹇<br>
+As of Mar. 26, 2024 11:53:59 PM, What are some benefits of first-class functions in JavaScript?
+
+#card
+
+- Higher-Order Functions: Functions that operate on other functions.
+- Callbacks: Functions passed to asynchronous operations for handling responses.
+- Closures: Functions that "remember" variables from their creation scope.
+
+⌂
+<br>﹈<br>^1711522975425
+
+﹇<br>
+As of Mar. 26, 2024 11:53:59 PM, what's the difference between calling a method and calling the object itself?
+
+#card
+
+- Objects can have properties that are functions (methods).
+- You call methods using dot notation (e.g., `object.methodName()`).
+- You cannot directly call the object itself, but you can assign it to a variable and then call its methods.
+
+⌂
+<br>﹈<br>^1711522975436
+
+﹇<br>
+As of Mar. 26, 2024 11:53:59 PM, think of a real-life analogy for first-class objects.
+
+#card
+
+Imagine tools in a workshop. You can:
+
+- Grab a specific tool (assign a function to a variable).
+- Pass a tool to someone else (pass a function as an argument).
+- Create a new tool from existing ones (return a function from another function).
+
+By treating functions like tools, you have more flexibility in your coding tasks.
+
+⌂
+<br>﹈<br>^1711522975446
 
 ---
 

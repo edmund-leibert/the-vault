@@ -5,9 +5,9 @@ updated: 2024-02-10T23:49
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-zotero/🔖/miscellaneous-notes
-  - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/zotero
+  - 🔴-academic/📚-educational-resource/name/🗒️-zotero/🔖/miscellaneous-notes
+  - 🔴-academic/📚-educational-resource/format/miscellaneous
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/zotero
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Zotero::Miscellaneous Notes
 banner: "![[https://i.imgur.com/C0CtesB.jpg]]"
@@ -132,6 +132,18 @@ Remember, the goal of citation is to provide enough information to allow others 
 ---
 
 ## :EiZoteroItem: Bibliography
+
+\[1\]
+“Zotero | Your personal research assistant,” _Zotero_. Available: [https://www.zotero.org/](https://www.zotero.org/). [Accessed: Dec. 13, 2023]
+
+\[2\]
+Ankitects, “Anki - powerful, intelligent flashcards,” _Anki - powerful, intelligent flashcards_. Available: [https://apps.ankiweb.net/](https://apps.ankiweb.net/). [Accessed: Jan. 26, 2024]
+
+\[3\]
+Zotero, “Zotero Item Types and Fields,” _Zotero | Your Personal research assistant_. Available: [https://www.zotero.org/support/kb/item_types_and_fields](https://www.zotero.org/support/kb/item_types_and_fields). [Accessed: Feb. 10, 2024]
+
+\[4\]
+J. Caulfield, “IEEE Paper Format | Template & Guidelines,” _Scribbr_, Aug. 24, 2022. Available: [https://www.scribbr.com/ieee/ieee-paper-format/](https://www.scribbr.com/ieee/ieee-paper-format/). [Accessed: Feb. 10, 2024]
 
 ---
 

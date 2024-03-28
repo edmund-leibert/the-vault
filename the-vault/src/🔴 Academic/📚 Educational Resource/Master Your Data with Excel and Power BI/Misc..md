@@ -1,8 +1,8 @@
 ---
 tags:
-  - 🔴-academic/📚-educational-resources/name/master-your-data-with-excel-and-power-bi-2nd-edition-2019
-  - 🔴-academic/📚-educational-resources/discipline/business/technology/microsoft-excel
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/microsoft-excel
+  - 🔴-academic/📚-educational-resource/name/master-your-data-with-excel-and-power-bi-2nd-edition-2019
+  - 🔴-academic/📚-educational-resource/discipline/business/technology/microsoft-excel
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/microsoft-excel
   - study-note
 cards-deck: Default::Business
 created: 2023-09-03 08:46

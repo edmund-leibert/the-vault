@@ -4,8 +4,8 @@ created: 2023-08-24 19:30
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/java
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/java
+  - 🔴-academic/📚-educational-resource/name/java
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/java
   - study-note
 cards-deck: Default::Computer Science
 updated: 2023-11-18T02:44

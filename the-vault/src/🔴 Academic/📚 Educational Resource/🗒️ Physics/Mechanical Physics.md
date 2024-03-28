@@ -5,10 +5,10 @@ updated: 2023-11-18T02:44
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-physics
-  - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/physics
-  - 🔴-academic/📚-educational-resources/name/🗒️-physics/🔖-bookmark/mechanical-physics
+  - 🔴-academic/📚-educational-resource/name/🗒️-physics
+  - 🔴-academic/📚-educational-resource/format/miscellaneous
+  - 🔴-academic/📚-educational-resource/discipline/physics
+  - 🔴-academic/📚-educational-resource/name/🗒️-physics/🔖-bookmark/mechanical-physics
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resourceysics::Mechanical Physics
 version: v0.1

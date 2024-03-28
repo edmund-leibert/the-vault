@@ -1,13 +1,13 @@
 ---
 title: 🗒️ Zotero ∋ Table of Contents
 created: 2023-09-03 08:46
-updated: 2024-02-10T14:04
+updated: 2024-03-27T00:31
 author(s):
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-zotero/🔖/🗒️-zotero-∋-table-of-contents
-  - 🔴-academic/📚-educational-resources/format/course
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/zotero
+  - 🔴-academic/📚-educational-resource/name/🗒️-zotero/🔖/🗒️-zotero-∋-table-of-contents
+  - 🔴-academic/📚-educational-resource/format/course
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/zotero
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Zotero::🔖::🗒️ Zotero ∋ Table of Contents
 ---
@@ -32,8 +32,8 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Zotero::🔖::🗒
 ## :FasListOl: Table of Contents
 
 - **🗒 Zotero**
-	- [🗒️ Zotero ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/🗒️%20Zotero/🗒️%20Zotero%20∋%20Table%20of%20Contents.md)
-	- [Miscellaneous Notes](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/🗒️%20Zotero/Miscellaneous%20Notes.md)
+	- [🗒️ Zotero ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/🗒️%20Zotero/🗒️%20Zotero%20∋%20Table%20of%20Contents.md)
+	- [Miscellaneous Notes](the-vault/src/🔴%20Academic/📚%20Educational%20resource/🗒️%20Zotero/Miscellaneous%20Notes.md)
 
 ---
 

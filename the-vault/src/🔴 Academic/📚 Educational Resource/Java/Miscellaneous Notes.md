@@ -1,13 +1,13 @@
 ---
 title: Miscellaneous Notes
 created: 2023-09-03 08:46
-updated: 2024-02-11T00:54
+updated: 2024-02-19T13:41
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-java/🔖/miscellaneous-notes
-  - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/java
+  - 🔴-academic/📚-educational-resource/name/🗒️-java/🔖/miscellaneous-notes
+  - 🔴-academic/📚-educational-resource/format/miscellaneous
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/java
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Java::Miscellaneous Notes
 banner: "![[https://i.imgur.com/8NiD8Cf.jpeg]]"
@@ -537,4 +537,105 @@ In this code, the casting is necessary to let the compiler know that `obj` shoul
 
 ⌂
 <br>﹈<br>^1707639763440
+
+﹇<br>
+As of Feb. 19, 2024 01:38:21 PM, how can I make an `enum` in Java?
+
+#card 
+
+In Java, you can define an `enum` like this:
+
+```java
+public enum Day {
+    SUNDAY,
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY,
+    SATURDAY
+}
+```
+
+Each of the values (`SUNDAY`, `MONDAY`, etc.) are instances of the `Day` `enum`. You can use them in your code like this:
+
+```java
+Day day = Day.MONDAY;
+
+switch(day) {
+    case MONDAY:
+        System.out.println("Mondays are hard.");
+        break;
+    case FRIDAY:
+        System.out.println("Fridays are better.");
+        break;
+    // You can have a case for the other days.
+    default:
+        System.out.println("Midweek days are so-so.");
+        break;
+}
+```
+
+This will print “Mondays are hard.” because `day` is set to `Day.MONDAY`. You can also add methods, fields, and constructors to your `enum` types if needed. Remember that `enum` types are a type of class in Java. They can have methods and fields like any other class, but the list of `enum` values must always come first, and you cannot create new instances of the enum. All instances are automatically created when the `enum` is defined.
+
+⌂
+<br>﹈<br>
+
+﹇<br>
+As of Feb. 19, 2024 01:39:56 PM, can you add a method to an `enum` in Java?
+
+#card 
+
+Yes, you can add methods to an `enum` in Java. Here’s an example:
+
+```java
+public enum Day {
+    SUNDAY("Sunday"),
+    MONDAY("Monday"),
+    TUESDAY("Tuesday"),
+    WEDNESDAY("Wednesday"),
+    THURSDAY("Thursday"),
+    FRIDAY("Friday"),
+    SATURDAY("Saturday");
+
+    private final String dayName;
+
+    Day(String dayName) {
+        this.dayName = dayName;
+    }
+
+    public String getDayName() {
+        return this.dayName;
+    }
+}
+```
+
+In this example, each `Day` enum has a `dayName` field and a `getDayName()` method. You can use it like this:
+
+```java
+Day day = Day.MONDAY;
+System.out.println(day.getDayName());  // This will print "Monday"
+```
+
+Remember, the constructor for an `enum` type must be package-private or private access. It automatically creates the constants that are defined at the beginning of the `enum` body. You cannot invoke an `enum` constructor yourself. Also, all fields in an `enum` must be `final` or effectively `final`. They cannot be changed after the `enum` constants are created.
+
+⌂
+<br>﹈<br>
+
+﹇<br>
+As of Feb. 19, 2024 01:40:44 PM, is it best practice to have an `enum` have a function like `getDayName()` instead of just directly accessing the `enum` itself?
+
+#card 
+
+It depends on the use case. If the `enum` values themselves are sufficient, then you might not need additional methods. However, methods can provide additional functionality and abstraction, which can be beneficial in certain scenarios.
+
+For example, consider an `enum` representing HTTP response status codes. The `enum` values might be `OK`, `NOT_FOUND`, `INTERNAL_SERVER_ERROR`, etc. In this case, you might want a method to get the corresponding status code number (200, 404, 500, etc.). Directly accessing the `enum` value wouldn’t give you this information.
+
+In the `Day` `enum` example, the `getDayName()` method provides a way to get a nicely formatted string representing the day of the week. This could be useful if you’re using the `enum` values in your code but want to display a more user-friendly string in your UI.
+
+So, adding methods to an `enum` in Java can be considered good practice when those methods provide useful functionality that goes beyond what the `enum` values themselves can provide. It’s all about making your code as clear and maintainable as possible. If adding a method to an `enum` helps achieve that, then it’s a good practice. If not, then the method might be unnecessary. It’s always important to consider the specific needs of your project when making these decisions.
+
+⌂
+<br>﹈<br>
+
 

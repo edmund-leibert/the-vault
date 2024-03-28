@@ -5,9 +5,9 @@ updated: 2024-01-25T16:47
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-rollup/misc-notes
-  - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/rollup
+  - 🔴-academic/📚-educational-resource/name/🗒️-rollup/misc-notes
+  - 🔴-academic/📚-educational-resource/format/miscellaneous
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/rollup
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Rollup::Misc. Notes
 ---

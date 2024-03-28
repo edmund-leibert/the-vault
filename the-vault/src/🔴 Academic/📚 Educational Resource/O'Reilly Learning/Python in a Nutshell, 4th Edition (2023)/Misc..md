@@ -7,8 +7,8 @@ author:
 publisher: O'Reilly Media, Inc.
 published: March 2023
 tags:
-  - 🔴-academic/📚-educational-resources/name/python-in-a-nutshell-4th-edition-2023
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/python
+  - 🔴-academic/📚-educational-resource/name/python-in-a-nutshell-4th-edition-2023
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-09-03 08:46

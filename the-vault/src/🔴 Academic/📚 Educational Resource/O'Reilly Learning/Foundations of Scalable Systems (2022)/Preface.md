@@ -5,10 +5,10 @@ updated: 2024-01-25T16:47
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/📕-foundations-of-scalable-systems-(2022)
-  - 🔴-academic/📚-educational-resources/format/book
-  - 🔴-academic/📚-educational-resources/discipline/computer-science
-  - 🔴-academic/📚-educational-resources/name/📕-foundations-of-scalable-systems-(2022)/🔖-bookmark/📕-foundations-of-scalable-systems-(2022)/preface
+  - 🔴-academic/📚-educational-resource/name/📕-foundations-of-scalable-systems-(2022)
+  - 🔴-academic/📚-educational-resource/format/book
+  - 🔴-academic/📚-educational-resource/discipline/computer-science
+  - 🔴-academic/📚-educational-resource/name/📕-foundations-of-scalable-systems-(2022)/🔖-bookmark/📕-foundations-of-scalable-systems-(2022)/preface
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resourceoundations of Scalable Systems (2022)::Preface
 ---

@@ -1,15 +1,15 @@
 ---
-title: Misc. Notes
+title: Miscellaneous Notes
 created: 2023-08-04 01:58
-updated: 2024-02-03T18:04
+updated: 2024-03-27T01:34
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/powershell/🔖/misc-notes
-  - 🔴-academic/📚-educational-resources/format/website
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/powershell
+  - 🔴-academic/📚-educational-resource/name/powershell/🔖/miscellaneous-notes
+  - 🔴-academic/📚-educational-resource/format/website
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/powershell
   - study-note
-cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ PowerShell::Misc. Notes
+cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ PowerShell::Miscellaneous Notes
 ---
 
 # Misc. Notes
@@ -900,6 +900,55 @@ Get-ChildItem Env:
 This command retrieves all environment variables.
 
 Remember, environment variable names are case-sensitive on non-Windows platforms. 
+
+⌂
+<br>﹈<br>
+
+﹇<br>
+As of Feb. 18, 2024 11:10:09 AM, in **PowerShell**, what command can I run to list all the current ports open?
+
+#card 
+
+In PowerShell, you can use the `Get-NetTCPConnection` cmdlet to list all the current open ports. Here’s how you can do it:
+
+```powershell
+Get-NetTcpConnection -State Listen | Select-Object LocalAddress,LocalPort | Sort-Object -Property LocalPort | Format-Table
+```
+
+This command will return a list of all open TCP ports on your computer. The `-State Listen` parameter filters for ports that are listening for connections. The `Select-Object` cmdlet is used to select the `LocalAddress` and `LocalPort` properties, which represent the local IP address and port number. The `Sort-Object -Property LocalPort` sorts the output by the local port number, and `Format-Table` formats the output as a table.
+
+If you want to see more details, such as the process ID for each port, you can modify the command like this:
+
+```powershell
+Get-NetTcpConnection | Where-Object { ($_.State -eq "Listen") -and ($_.RemoteAddress -eq "0.0.0.0")} | Select-Object LocalAddress,LocalPort,RemoteAddress,RemotePort,State,OwningProcess | Format-Table
+```
+
+This command will return the local and remote addresses and ports, the state of the connection, and the process ID (`OwningProcess`) for each open port.
+
+Please note that you need to run these commands in an elevated PowerShell session (Run as Administrator).
+
+⌂
+<br>﹈<br>
+
+﹇<br>
+As of Mar. 27, 2024 01:30:08 AM, in the context of PowerShell, what does `Get-Content` do?
+
+#card 
+
+`Get-Content` is a cmdlet used in PowerShell to retrieve the contents of a file. Here's a breakdown of what it does:
+
+- **Reads files:** It primarily targets text files, but can also be used with other items that hold content.
+- **Line by line processing:** By default, Get-Content reads the content line by line and returns each line as a separate object.
+- **Output as a collection:** This collection of objects containing each line can be displayed directly in the console or stored in a variable for further manipulation.
+
+Here are some additional points to note about Get-Content:
+
+- **Aliases:** It has aliases like 'cat' and 'type' for easier use.
+- **Specifying path:** You need to provide the path to the file you want to read using the `-Path` parameter.
+- **Reading entire content:** To read the whole file at once as a single string, you can use the `-Raw` parameter.
+- **Filtering and selecting lines:** Get-Content offers options to filter content based on specific patterns or select a particular number of lines from the beginning or end of the file.
+
+Overall, Get-Content is a fundamental cmdlet for working with text files in PowerShell, allowing you to access, process, and analyze their content.
 
 ⌂
 <br>﹈<br>

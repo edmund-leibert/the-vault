@@ -1,13 +1,13 @@
 ---
 title: Structy ∋ Table of Contents
 created: 2023-09-03 08:46
-updated: 2024-01-25T00:50
+updated: 2024-03-27T00:31
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/structy/🔖/structy-∋-table-of-contents
-  - 🔴-academic/📚-educational-resources/format/course
-  - 🔴-academic/📚-educational-resources/discipline/computer-science
+  - 🔴-academic/📚-educational-resource/name/structy/🔖/structy-∋-table-of-contents
+  - 🔴-academic/📚-educational-resource/format/course
+  - 🔴-academic/📚-educational-resource/discipline/computer-science
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::Structy::Structy ∋ Table of Contents
 ---
@@ -58,13 +58,13 @@ Structy is a guided course that builds your algorithm knowledge efficiently. [@z
 ## :FasListOl: Table of Contents
 
 - **Structy**
-	- [Structy ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Structy/Structy%20∋%20Table%20of%20Contents.md)
+	- [Structy ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/Structy%20∋%20Table%20of%20Contents.md)
 	- **0. Introduction**
-		- [0. Introduction ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Structy/0.%20Introduction/0.%20Introduction%20∋%20Table%20of%20Contents.md)
-		- [001. code workspace tour](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Structy/0.%20Introduction/001.%20code%20workspace%20tour.md)
-		- [002. hey programmer](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Structy/0.%20Introduction/002.%20hey%20programmer.md)
-		- [003. max-value](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Structy/0.%20Introduction/003.%20max-value.md)
-		- [004. is prime](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Structy/0.%20Introduction/004.%20is%20prime.md)
+		- [0. Introduction ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/0.%20Introduction%20∋%20Table%20of%20Contents.md)
+		- [001. code workspace tour](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/001.%20code%20workspace%20tour.md)
+		- [002. hey programmer](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/002.%20hey%20programmer.md)
+		- [003. max-value](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/003.%20max-value.md)
+		- [004. is prime](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/004.%20is%20prime.md)
 	- **1. Array and String**
 	- **2. Array and String**
 	- **3. Binary Tree**
@@ -85,7 +85,7 @@ A. Zabian, “Structy - Learn data structures and algorithms, efficiently.,” _
 
 > [!info]+
 > **Next Note(s)**:
-> - [0. Introduction ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Structy/0.%20Introduction/0.%20Introduction%20∋%20Table%20of%20Contents.md)
+> - [0. Introduction ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/0.%20Introduction%20∋%20Table%20of%20Contents.md)
 
 ---
 

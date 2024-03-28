@@ -1,13 +1,13 @@
 ---
 title: 🗒️ esbuild
 created: 2023-10-31T16:39
-updated: 2024-01-25T00:50
+updated: 2024-03-27T00:31
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-esbuild/🔖/🗒️-esbuild-∋-table-of-contents
-  - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/esbuild
+  - 🔴-academic/📚-educational-resource/name/🗒️-esbuild/🔖/🗒️-esbuild-∋-table-of-contents
+  - 🔴-academic/📚-educational-resource/format/miscellaneous
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/esbuild
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ esbuild::🗒️ esbuild ∋ Table of Contents
 ---
@@ -32,8 +32,8 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ esbuild::🗒️ e
 ## :EiZoteroItem: Table of Contents
 
 - **🗒️ esbuild**
-	- [🗒️ ESBuild ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/🗒️%20ESBuild/🗒️%20ESBuild%20∋%20Table%20of%20Contents.md)
-	- [Misc. Notes](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/🗒️%20ESBuild/Misc.%20Notes.md)
+	- [🗒️ ESBuild ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/🗒️%20ESBuild/🗒️%20ESBuild%20∋%20Table%20of%20Contents.md)
+	- [Misc. Notes](the-vault/src/🔴%20Academic/📚%20Educational%20resource/🗒️%20ESBuild/Misc.%20Notes.md)
 
 ---
 

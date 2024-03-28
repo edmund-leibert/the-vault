@@ -1,8 +1,8 @@
 ---
 author: 
 tags:
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/yarn
-  - 🔴-academic/📚-educational-resources/name/yarn
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/yarn
+  - 🔴-academic/📚-educational-resource/name/yarn
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-09-03 08:46

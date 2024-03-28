@@ -1,6 +1,6 @@
 ---
 tags:
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/spark
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/spark
 cards-deck: Default::Computer Science
 created: 2023-09-12 11:38
 updated: 2023-09-18 18:04

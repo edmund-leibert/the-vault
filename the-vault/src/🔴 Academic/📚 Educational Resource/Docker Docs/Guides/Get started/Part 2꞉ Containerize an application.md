@@ -1,12 +1,12 @@
 ---
 title: Part 2꞉ Containerize an application
 created: 2023-10-31T17:48
-updated: 2024-01-25T16:47
+updated: 2024-03-27T00:31
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/docker-docs/🔖/guides/get-started/part-2-containerize-an-application
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/docker
+  - 🔴-academic/📚-educational-resource/name/docker-docs/🔖/guides/get-started/part-2-containerize-an-application
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/docker
   - study-note
 cards-deck: "🔴 Academic::📚 Educational Resource::Docker Docs::Guides::Get started::Part 2: Containerize an application"
 ---
@@ -22,7 +22,7 @@ cards-deck: "🔴 Academic::📚 Educational Resource::Docker Docs::Guides::Get 
 
 > [!INFO]+ 
 > **Previous Note(s)**:
-> - [Part 1꞉ Overview](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Docker%20Docs/Guides/Get%20started/Part%201꞉%20Overview.md)
+> - [Part 1꞉ Overview](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Docker%20Docs/Guides/Get%20started/Part%201꞉%20Overview.md)
 
 ---
 

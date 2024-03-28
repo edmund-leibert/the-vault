@@ -5,8 +5,8 @@ updated: 2024-01-25T16:47
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/discord/de-grind-crew/🔖/de-grind-crew-∋-table-of-contents
-  - 🔴-academic/📚-educational-resources/format/website
+  - 🔴-academic/📚-educational-resource/name/discord/de-grind-crew/🔖/de-grind-crew-∋-table-of-contents
+  - 🔴-academic/📚-educational-resource/format/website
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::Discord::DE Grind Crew::💼 Vocational::📒interview-questions
 ---
@@ -50,7 +50,7 @@ function<void(int, string)> dfs = [&](int work_left, string schedule){
 
 However, my question is what exactly does this `[&]` mean in the code?
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/cpp 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp 
 
 Yes, you're correct that this code is declaring a lambda function. In C++, a lambda function is a special type of function that you can define inline in your source code. They are particularly useful for small functions that are only going to be used once or twice, such as in this DFS recursion.
 
@@ -73,31 +73,31 @@ Generally, `[&]` is used when you want the lambda to act more like a local funct
 <br>﹈<br>^1701651716773
 
 In the context of lambda functions in C++, the **capture clause** {1:`[]`} means that it will capture nothing. The function cannot access anything not passed directly to it.
-#🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/cpp
+#🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp
 ^1701651716777
 
 In the context of lambda functions in C++, the **capture clause** {1:`[x]`} means that it will capture `x` by value, so the function gets its own copy of `x` and changes won't affect the original `x`.
-#🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/cpp
+#🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp
 ^1701651716782
 
 In the context of lambda functions in C++, the **capture clause** {1:`[=]`} means that it will capture all local variables by value. The function cannot modify the originals.
-#🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/cpp
+#🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp
 ^1701651716786
 
 In the context of lambda functions in C++, the **capture clause** {1:`[&]`} means that it will capture all local variables by reference. This means the function has access to the original variable and any changes made to this variable will be seen outside the lambda function.
-#🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/cpp
+#🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp
 ^1701651716790
 
 In the context of lambda functions in C++, the **capture clause** {1:`[&x]`} means that it will capture `x` by reference, the function can modify the original `x`.
-#🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/cpp
+#🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp
 ^1701651716793
 
 In the context of lambda functions in C++, the **capture clause** {1:`[this]`} means that it will capture the current object by reference so that class members can be accessed.
-#🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/cpp
+#🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp
 ^1701651716797
 
 In C++, a {1:lambda function} is a special type of function that you can {2:define inline} in your source code. They are particularly useful for {3:small functions} that are only going to be {1:used once or twice}.
-#🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/cpp
+#🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp
 ^1701651716800
 
 ---

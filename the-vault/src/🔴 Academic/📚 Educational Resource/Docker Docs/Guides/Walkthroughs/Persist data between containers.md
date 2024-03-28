@@ -1,13 +1,13 @@
 ---
 title: Persist data between containers
 created: 2023-11-19T12:44
-updated: 2024-01-25T16:47
+updated: 2024-03-27T00:31
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/docker-docs/🔖/guides/walkthroughs/persist-data-between-containers
-  - 🔴-academic/📚-educational-resources/format/website
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/docker
+  - 🔴-academic/📚-educational-resource/name/docker-docs/🔖/guides/walkthroughs/persist-data-between-containers
+  - 🔴-academic/📚-educational-resource/format/website
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/docker
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::Docker Docs::Guides::Walkthroughs::Persist data between containers
 ---
@@ -42,7 +42,7 @@ What should you complete first to better understand some concepts in this walkth
 
 #card 
 
-The [Run multi-container applications](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Docker%20Docs/Guides/Walkthroughs/Run%20multi-container%20applications.md) walkthrough.
+The [Run multi-container applications](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Docker%20Docs/Guides/Walkthroughs/Run%20multi-container%20applications.md) walkthrough.
 
 ⌂
 <br>﹈<br>^1700427510283

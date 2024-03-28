@@ -7474,7 +7474,7 @@ var ComponentCSSTagsNoWrap = class extends SettingsTabComponent {
 var import_obsidian3 = require("obsidian");
 var ComponentCSSNoteTags = class extends SettingsTabComponent {
   create_component(containerEL) {
-    new import_obsidian3.Setting(containerEL).setName("Apply Tag colors in notes").setDesc("Uses a tag set in the note's property Tags.").addToggle(
+    new import_obsidian3.Setting(containerEL).setName("Apply Tag colors in notes").setDesc("Colors the tags in the body of a note. Main setting to disable most usages.").addToggle(
       (component) => {
         component.setValue(this.plugin.settings.CSS.NoteTags).onChange(async (state) => {
           this.plugin.settings.CSS.NoteTags = state;
@@ -7504,7 +7504,7 @@ var ComponentCSSNoteBackground = class extends SettingsTabComponent {
 var import_obsidian5 = require("obsidian");
 var ComponentCSSNoteProperties = class extends SettingsTabComponent {
   create_component(containerEL) {
-    new import_obsidian5.Setting(containerEL).setName("Apply Tag color to the tags in a note's properties").addToggle(
+    new import_obsidian5.Setting(containerEL).setName("Apply Tag color to note's properties 'tags' field").setDesc("Colors the tags in a note's properties.").addToggle(
       (component) => {
         component.setValue(this.plugin.settings.CSS.NoteProperties).onChange(async (state) => {
           this.plugin.settings.CSS.NoteProperties = state;

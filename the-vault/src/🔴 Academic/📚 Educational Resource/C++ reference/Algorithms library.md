@@ -1,14 +1,14 @@
 ---
 title: Algorithms library
 created: 2023-09-03 08:46
-updated: 2024-01-25T16:46
+updated: 2024-03-27T00:31
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/cpp-reference
-  - 🔴-academic/📚-educational-resources/format/internet
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/cpp
-  - 🔴-academic/📚-educational-resources/name/leetcode/🔖/algorithms-library
+  - 🔴-academic/📚-educational-resource/name/cpp-reference
+  - 🔴-academic/📚-educational-resource/format/internet
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp
+  - 🔴-academic/📚-educational-resource/name/leetcode/🔖/algorithms-library
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::C++ reference::Algorithms library ∋ Table of Contents
 ---
@@ -32,7 +32,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::C++ reference::Algorithms 
 
 ## Table of Contents
 
-- [Algorithms library](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/🗒️%20C++/Algorithms%20library.md)
+- [Algorithms library](the-vault/src/🔴%20Academic/📚%20Educational%20resource/🗒️%20C++/Algorithms%20library.md)
 
 ---
 

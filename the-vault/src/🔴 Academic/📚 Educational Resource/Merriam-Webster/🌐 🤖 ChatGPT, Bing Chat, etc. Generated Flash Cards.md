@@ -1,7 +1,7 @@
 ---
 tags:
-  - 🔴-academic/📚-educational-resources/name/merriam-webster
-  - 🔴-academic/📚-educational-resources/discipline/english/dictionary/chatgpt-bing-chat-etc-generated-flash-cards
+  - 🔴-academic/📚-educational-resource/name/merriam-webster
+  - 🔴-academic/📚-educational-resource/discipline/english/dictionary/chatgpt-bing-chat-etc-generated-flash-cards
   - study-note
 cards-deck: Default::English
 created: 2023-09-03 08:46

@@ -5,10 +5,10 @@ updated: 2024-01-25T16:47
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/leetcode
-  - 🔴-academic/📚-educational-resources/format/internet
-  - 🔴-academic/📚-educational-resources/discipline/computer-science
-  - 🔴-academic/📚-educational-resources/name/leetcode/🔖/problems/problems-∋-table-of-contents
+  - 🔴-academic/📚-educational-resource/name/leetcode
+  - 🔴-academic/📚-educational-resource/format/internet
+  - 🔴-academic/📚-educational-resource/discipline/computer-science
+  - 🔴-academic/📚-educational-resource/name/leetcode/🔖/problems/problems-∋-table-of-contents
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::LeetCode::Problems::Problems ∋ Table of Contents
 ---

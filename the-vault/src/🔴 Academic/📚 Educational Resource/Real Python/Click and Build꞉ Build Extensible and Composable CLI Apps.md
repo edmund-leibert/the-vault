@@ -5,14 +5,14 @@ authors:
 created: 2023-11-14T19:56
 updated: 2024-01-25T16:47
 tags:
-  - 🔴-academic/📚-educational-resources/name/real-python/click-and-build-build-extensible-and-composable-cli-apps
-  - 🔴-academic/📚-educational-resources/format/website
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/python
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/library/click
-  - 🔴-academic/📚-educational-resources/name/real-python/🏷️/topic/devops
-  - 🔴-academic/📚-educational-resources/name/real-python/🏷️/topic/skill-level/intermediate
-  - 🔴-academic/📚-educational-resources/name/real-python/🏷️/topic/python
-  - 🔴-academic/📚-educational-resources/name/real-python/🏷️/topic/tools
+  - 🔴-academic/📚-educational-resource/name/real-python/click-and-build-build-extensible-and-composable-cli-apps
+  - 🔴-academic/📚-educational-resource/format/website
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/library/click
+  - 🔴-academic/📚-educational-resource/name/real-python/🏷️/topic/devops
+  - 🔴-academic/📚-educational-resource/name/real-python/🏷️/topic/skill-level/intermediate
+  - 🔴-academic/📚-educational-resource/name/real-python/🏷️/topic/python
+  - 🔴-academic/📚-educational-resource/name/real-python/🏷️/topic/tools
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::LeetCode::Problems::Click and Build꞉ Build Extensible and Composable CLI Apps
 ---

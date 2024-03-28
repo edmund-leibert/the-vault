@@ -5,9 +5,9 @@ updated: 2024-01-25T16:47
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/docker-docs/🔖/guides/walkthroughs/what-is-a-container?
-  - 🔴-academic/📚-educational-resources/format/website
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/docker
+  - 🔴-academic/📚-educational-resource/name/docker-docs/🔖/guides/walkthroughs/what-is-a-container?
+  - 🔴-academic/📚-educational-resource/format/website
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/docker
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::Docker Docs::Guides::Walkthroughs::What is a container?
 ---

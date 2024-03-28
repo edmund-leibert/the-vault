@@ -3,8 +3,8 @@ author:
 publisher: 
 published: 
 tags:
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/lua
-  - 🔴-academic/📚-educational-resources/name/lua
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/lua
+  - 🔴-academic/📚-educational-resource/name/lua
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-09-03 08:46

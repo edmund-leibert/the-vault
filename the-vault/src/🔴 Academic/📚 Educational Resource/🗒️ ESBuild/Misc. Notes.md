@@ -5,9 +5,9 @@ updated: 2023-12-11T23:34
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-esbuild/🔖/misc-notes
-  - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/esbuild
+  - 🔴-academic/📚-educational-resource/name/🗒️-esbuild/🔖/misc-notes
+  - 🔴-academic/📚-educational-resource/format/miscellaneous
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/esbuild
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ esbuild::Misc. Notes
 ---

@@ -1,7 +1,7 @@
 ---
 tags:
-  - 🔴-academic/📚-educational-resources/name/advanced-sql
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/sql
+  - 🔴-academic/📚-educational-resource/name/advanced-sql
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/sql
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-10-07 15:19

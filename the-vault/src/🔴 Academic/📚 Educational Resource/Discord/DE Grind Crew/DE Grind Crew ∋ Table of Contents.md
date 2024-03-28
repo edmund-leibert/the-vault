@@ -1,12 +1,12 @@
 ---
 title: 🗒️ DE Grind Crew ∋ Table of Contents
 created: 2023-10-31T16:39
-updated: 2024-01-25T16:47
+updated: 2024-03-27T00:31
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/discord/de-grind-crew/🔖/de-grind-crew-∋-table-of-contents
-  - 🔴-academic/📚-educational-resources/format/website
+  - 🔴-academic/📚-educational-resource/name/discord/de-grind-crew/🔖/de-grind-crew-∋-table-of-contents
+  - 🔴-academic/📚-educational-resource/format/website
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::Discord::DE Grind Crew::DE Grind Crew ∋ Table of Contents
 ---
@@ -31,10 +31,10 @@ cards-deck: 🔴 Academic::📚 Educational Resource::Discord::DE Grind Crew::DE
 ## :FasListOl: Table of Contents
 
 - **DE Grind Crew**
-	- [DE Grind Crew ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Discord/DE%20Grind%20Crew/DE%20Grind%20Crew%20∋%20Table%20of%20Contents.md)
+	- [DE Grind Crew ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Discord/DE%20Grind%20Crew/DE%20Grind%20Crew%20∋%20Table%20of%20Contents.md)
 	- **💼 Vocational**
-		- [💼 Vocational ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Discord/DE%20Grind%20Crew/💼%20Vocational/💼%20Vocational%20∋%20Table%20of%20Contents.md)
-		- [📒interview-questions](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Discord/DE%20Grind%20Crew/💼%20Vocational/📒interview-questions.md)
+		- [💼 Vocational ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Discord/DE%20Grind%20Crew/💼%20Vocational/💼%20Vocational%20∋%20Table%20of%20Contents.md)
+		- [📒interview-questions](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Discord/DE%20Grind%20Crew/💼%20Vocational/📒interview-questions.md)
 
 ---
 

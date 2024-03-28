@@ -5,7 +5,7 @@ updated: 2024-01-25T16:47
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/pragmaticoders/🔖/misc-notes
+  - 🔴-academic/📚-educational-resource/name/pragmaticoders/🔖/misc-notes
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::PragmatiCoders::Misc. Notes
 ---
@@ -28,7 +28,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::PragmatiCoders::Misc. Note
 ﹇<br>
 What is an **enum** in Python?
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/python 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 An **enum** is a special type of data structure in Python that allows you to define a set of named constants.
 
@@ -38,7 +38,7 @@ An **enum** is a special type of data structure in Python that allows you to def
 ﹇<br>
 Why use enums in Python?
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/python 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 Enums can make your Python code more readable, maintainable, and error-resistant.
 
@@ -48,7 +48,7 @@ Enums can make your Python code more readable, maintainable, and error-resistant
 ﹇<br>
 How do you define an enum in Python 3.10 or later?
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/python 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 You use the `enum` module and subclass the `Enum` class to create your own enums.
 
@@ -63,7 +63,7 @@ from enum import Enum
 ﹇<br>
 How do you access members of an enum?
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/python 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 You use the dot notation to access members of an enum.
 
@@ -73,7 +73,7 @@ You use the dot notation to access members of an enum.
 ﹇<br>
 In Python, how do you iterate over the members of an enum?
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/python 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 You use a for loop to iterate over the members of an enum.
 
@@ -83,7 +83,7 @@ You use a for loop to iterate over the members of an enum.
 ﹇<br>
 How can you use enums in switch statements?
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/python 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 You can use enums in switch statements to match different cases.
 
@@ -93,7 +93,7 @@ You can use enums in switch statements to match different cases.
 ﹇<br>
 Give an example of how to define an enum in Python 3.10 or later.
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/python 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 
 ```python
@@ -111,7 +111,7 @@ class Color(Enum):
 ﹇<br>
 Give an example of how to access a member of an enum.
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/python 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 ```python
 color = Color.RED
@@ -124,7 +124,7 @@ print(color)
 ﹇<br>
 Give an example of how to iterate over the members of an enum.
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/python 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 ```python
 for member in Color:
@@ -137,7 +137,7 @@ for member in Color:
 ﹇<br>
 Give an example of how to use an enum in a switch statement.
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/python 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 ```python
 def get_color_name(color):

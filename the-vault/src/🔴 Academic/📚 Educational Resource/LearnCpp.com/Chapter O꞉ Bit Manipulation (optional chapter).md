@@ -1,7 +1,7 @@
 ---
 tags:
-  - 🔴-academic/📚-educational-resources/name/learncpp-com
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/cpp
+  - 🔴-academic/📚-educational-resource/name/learncpp-com
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-10-27T17:38

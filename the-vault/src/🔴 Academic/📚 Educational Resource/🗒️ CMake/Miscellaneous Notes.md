@@ -5,9 +5,9 @@ updated: 2024-02-10T01:18
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-cmake/🔖/miscellaneous-notes
-  - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/cmake
+  - 🔴-academic/📚-educational-resource/name/🗒️-cmake/🔖/miscellaneous-notes
+  - 🔴-academic/📚-educational-resource/format/miscellaneous
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/cmake
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ CMake::Miscellaneous Notes
 banner: "![[https://i.imgur.com/8yW9ZIK.png]]"
@@ -123,7 +123,7 @@ Would it be correct to say:
 
 > the naming convention<u>s</u> of a **CMake** project name _are_
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/technology/cmake 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/cmake 
 
 Both phrases can be correct depending on the context.
 

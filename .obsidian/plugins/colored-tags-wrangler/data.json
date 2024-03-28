@@ -16,30 +16,30 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/name/leetcode/🏷️/problems/difficulty/easy",
+        "tag_name": "🔴-academic/📚-educational-resource/name/leetcode/🏷️/problems/difficulty/easy",
         "color": {
           "r": 28,
           "g": 184,
           "b": 184
         },
         "background_color": {
-          "r": 240,
-          "g": 240,
-          "b": 240
+          "r": 28,
+          "g": 28,
+          "b": 28
         },
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/name/leetcode/🏷️/problems/difficulty/hard",
+        "tag_name": "🔴-academic/📚-educational-resource/name/leetcode/🏷️/problems/difficulty/hard",
         "color": {
           "r": 255,
           "g": 0,
           "b": 0
         },
         "background_color": {
-          "r": 240,
-          "g": 240,
-          "b": 240
+          "r": 28,
+          "g": 28,
+          "b": 28
         },
         "luminance_offset": 0.15
       },
@@ -72,7 +72,7 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/name/leetcode/🔖/problems/1-two-sum; 🔴-academic/📚-educational-resources/name/leetcode/🔖/problems/4-median-of-two-arrays; 🔴-academic/📚-educational-resources/name/leetcode/🔖/problems/163-missing-ranges; 🔴-academic/📚-educational-resources/name/leetcode/🔖/problems/175-combine-two-tables",
+        "tag_name": "🔴-academic/📚-educational-resource/name/leetcode/🔖/problems/1-two-sum; 🔴-academic/📚-educational-resource/name/leetcode/🔖/problems/4-median-of-two-arrays; 🔴-academic/📚-educational-resource/name/leetcode/🔖/problems/163-missing-ranges; 🔴-academic/📚-educational-resource/name/leetcode/🔖/problems/175-combine-two-tables;\n🔴-academic/📚-educational-resource/name/leetcode/🔖/explore/learn/the-leetcode-beginners-guide;\n🔴-academic/📚-educational-resource/name/leetcode/🔖/problems/231-power-of-two;",
         "color": {
           "r": 200,
           "g": 137,
@@ -86,7 +86,7 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/name/🗒️-net/🔖/🗒️-net-∋-table-of-contents; 🔴-academic/📚-educational-resources/discipline/computer-science/developer-platform/net; 🔴-academic/📚-educational-resources/name/🗒️-net/🔖/miscellaneous-notes",
+        "tag_name": "🔴-academic/📚-educational-resource/name/🗒️-net/🔖/🗒️-net-∋-table-of-contents; 🔴-academic/📚-educational-resources/discipline/computer-science/developer-platform/net; 🔴-academic/📚-educational-resources/name/🗒️-net/🔖/miscellaneous-notes",
         "color": {
           "r": 255,
           "g": 255,
@@ -100,7 +100,7 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/powershell",
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/powershell",
         "color": {
           "r": 255,
           "g": 255,
@@ -114,7 +114,7 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp",
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp",
         "color": {
           "r": 255,
           "g": 255,
@@ -128,7 +128,7 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/technologies/docto",
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/technologies/docto",
         "color": {
           "r": 255,
           "g": 255,
@@ -142,7 +142,7 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/dbms/postgresql",
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/dbms/postgresql",
         "color": {
           "r": 255,
           "g": 255,
@@ -156,7 +156,7 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/dbms/sql-server; 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/t-sql",
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/dbms/sql-server; 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/t-sql;",
         "color": {
           "r": 194,
           "g": 0,
@@ -170,7 +170,7 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/dbms/mysql",
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/dbms/mysql",
         "color": {
           "r": 249,
           "g": 164,
@@ -184,7 +184,7 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/dbms/oracle-dbms",
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/dbms/oracle-dbms",
         "color": {
           "r": 200,
           "g": 68,
@@ -198,7 +198,7 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/sql",
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/sql",
         "color": {
           "r": 220,
           "g": 130,
@@ -212,35 +212,35 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/name/leetcode/🏷️/problems/premium/🔓-no",
+        "tag_name": "🔴-academic/📚-educational-resource/name/leetcode/🏷️/problems/premium/🔓-no",
         "color": {
           "r": 54,
           "g": 186,
           "b": 69
         },
         "background_color": {
-          "r": 240,
-          "g": 240,
-          "b": 240
+          "r": 28,
+          "g": 28,
+          "b": 28
         },
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/name/leetcode/🏷️/problems/premium/🔒-yes",
+        "tag_name": "🔴-academic/📚-educational-resource/name/leetcode/🏷️/problems/premium/🔒-yes",
         "color": {
           "r": 185,
           "g": 34,
           "b": 34
         },
         "background_color": {
-          "r": 240,
-          "g": 240,
-          "b": 240
+          "r": 28,
+          "g": 28,
+          "b": 28
         },
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/technology/git; 🔴-academic/📚-educational-resources/name/🗒️-git/miscellaneous-notes",
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/technology/git; 🔴-academic/📚-educational-resource/name/🗒️-git/miscellaneous-notes",
         "color": {
           "r": 255,
           "g": 255,
@@ -268,7 +268,7 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/discipline/business/technology/microsoft-excel",
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/business/technology/microsoft-excel",
         "color": {
           "r": 255,
           "g": 255,
@@ -282,7 +282,7 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/technology/zotero",
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/technology/zotero",
         "color": {
           "r": 245,
           "g": 0,
@@ -296,7 +296,7 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/java",
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/java",
         "color": {
           "r": 242,
           "g": 152,
@@ -310,7 +310,7 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/technology/vim",
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/technology/vim",
         "color": {
           "r": 153,
           "g": 153,
@@ -344,6 +344,50 @@
   "FolderNote": {
     "Enable": true,
     "FolderTagLinks": [
+      {
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/technology/yarn",
+        "folder_path": "the-vault/src/🔴 Academic/📚 Educational Resource/🗒️ Yarn"
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resource/name/yarn",
+        "folder_path": "the-vault/src/🔴 Academic/📚 Educational Resource/🗒️ Yarn"
+      },
+      {
+        "tag_name": "study-note",
+        "folder_path": "the-vault/src/🔴 Academic/📚 Educational Resource/🗒️ Yarn"
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resource/name/leetcode/🔖/explore/learn/the-leetcode-beginners-guide/solving-your-first-problem/solving-your-first-problem",
+        "folder_path": "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Explore/Learn/The LeetCode Beginner's Guide/Solving Your First Problem"
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resource/format/website",
+        "folder_path": "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Explore/Learn/The LeetCode Beginner's Guide/Solving Your First Problem"
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science",
+        "folder_path": "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Explore/Learn/The LeetCode Beginner's Guide/Solving Your First Problem"
+      },
+      {
+        "tag_name": "study-note",
+        "folder_path": "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Explore/Learn/The LeetCode Beginner's Guide/Solving Your First Problem"
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resource/name/leetcode/🔖/explore/learn/the-leetcode-beginners-guide/solving-your-first-problem/solving-your-first-problem",
+        "folder_path": "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Explore/The LeetCode Beginner's Guide/Solving Your First Problem"
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resource/format/website",
+        "folder_path": "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Explore/The LeetCode Beginner's Guide/Solving Your First Problem"
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science",
+        "folder_path": "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Explore/The LeetCode Beginner's Guide/Solving Your First Problem"
+      },
+      {
+        "tag_name": "study-note",
+        "folder_path": "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Explore/The LeetCode Beginner's Guide/Solving Your First Problem"
+      },
       {
         "tag_name": "🔴-academic/📚-educational-resources/discipline/computer-science/technology/yarn",
         "folder_path": "the-vault/src/🔴 Academic/📚 Educational Resources/🗒️ Yarn"

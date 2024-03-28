@@ -5,9 +5,9 @@ updated: 2024-01-25T16:46
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/anki/anki-▹-table-of-contents
-  - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/computer-science
+  - 🔴-academic/📚-educational-resource/name/anki/anki-▹-table-of-contents
+  - 🔴-academic/📚-educational-resource/format/miscellaneous
+  - 🔴-academic/📚-educational-resource/discipline/computer-science
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::Anki::Anki ▹ Table of Contents
 ---

@@ -3,11 +3,11 @@ title: 🗒️ ESLint ∋ Table of Contents
 authors:
   - Edmund Leibert III
 created: 2023-09-03 08:46
-updated: 2024-01-25T00:50
+updated: 2024-03-27T00:31
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-eslint/🔖/🗒️-eslint-∋-table-of-contents
-  - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/eslint
+  - 🔴-academic/📚-educational-resource/name/🗒️-eslint/🔖/🗒️-eslint-∋-table-of-contents
+  - 🔴-academic/📚-educational-resource/format/miscellaneous
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/eslint
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ ESLint::🗒️ ESLint ∋ Table of Contents
 ---
@@ -32,8 +32,8 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ ESLint::🗒️ ES
 ## Table of Contents
 
 - **🗒️ ESLint ∋ Table of Contents**
-	- [🗒️ ESLint ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/🗒️%20ESLint/🗒️%20ESLint%20∋%20Table%20of%20Contents.md)
-	- [Misc. Notes](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/🗒️%20ESLint/Misc.%20Notes.md)
+	- [🗒️ ESLint ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/🗒️%20ESLint/🗒️%20ESLint%20∋%20Table%20of%20Contents.md)
+	- [Misc. Notes](the-vault/src/🔴%20Academic/📚%20Educational%20resource/🗒️%20ESLint/Misc.%20Notes.md)
 
 ---
 

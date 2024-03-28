@@ -83,7 +83,7 @@ What is the most holy god
 ⌂
 <br>﹈<br>^1699173506002
 
-#🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/javascript
+#🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/javascript
 
 #javascript #🍑-booty
 

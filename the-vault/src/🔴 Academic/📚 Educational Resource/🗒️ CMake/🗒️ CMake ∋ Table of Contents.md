@@ -1,13 +1,13 @@
 ---
 title: 🗒️ CMake ∋ Table of Contents
 created: 2023-10-31T16:39
-updated: 2024-02-10T00:41
+updated: 2024-03-27T00:31
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-cmake/🔖/cmake-∋-table-of-contents
-  - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/cmake
+  - 🔴-academic/📚-educational-resource/name/🗒️-cmake/🔖/cmake-∋-table-of-contents
+  - 🔴-academic/📚-educational-resource/format/miscellaneous
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/cmake
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ CMake::🗒️ CMake ∋ Table of Contents
 ---
@@ -32,8 +32,8 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ CMake::🗒️ CMa
 ## :FasListOl: Table of Contents
 
 - **CMake**
-	- [🗒️ CMake ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/🗒️%20CMake/🗒️%20CMake%20∋%20Table%20of%20Contents.md)
-	- [Miscellaneous Notes](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/🗒️%20CMake/Miscellaneous%20Notes.md)
+	- [🗒️ CMake ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/🗒️%20CMake/🗒️%20CMake%20∋%20Table%20of%20Contents.md)
+	- [Miscellaneous Notes](the-vault/src/🔴%20Academic/📚%20Educational%20resource/🗒️%20CMake/Miscellaneous%20Notes.md)
 
 ---
 

@@ -5,9 +5,9 @@ updated: 2024-01-01T23:53
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-french/🔖/misc-notes
-  - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/french
+  - 🔴-academic/📚-educational-resource/name/🗒️-french/🔖/misc-notes
+  - 🔴-academic/📚-educational-resource/format/miscellaneous
+  - 🔴-academic/📚-educational-resource/discipline/french
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ French::Misc.Notes
 ---

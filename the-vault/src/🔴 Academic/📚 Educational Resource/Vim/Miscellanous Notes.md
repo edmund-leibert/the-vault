@@ -5,9 +5,9 @@ updated: 2024-02-10T22:30
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-vim/🔖/miscellaneous-notes
-  - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/vim
+  - 🔴-academic/📚-educational-resource/name/🗒️-vim/🔖/miscellaneous-notes
+  - 🔴-academic/📚-educational-resource/format/miscellaneous
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/vim
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Vim::Miscellaneous Notes
 banner: "![[https://i.imgur.com/shEPtb6.jpg]]"

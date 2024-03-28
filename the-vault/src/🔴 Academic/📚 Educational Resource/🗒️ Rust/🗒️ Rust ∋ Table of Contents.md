@@ -5,10 +5,10 @@ updated: 2023-11-18T02:44
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-rust
-  - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/computer-science
-  - 🔴-academic/📚-educational-resources/name/🗒️-rust/🔖-bookmark/🗒️-rust
+  - 🔴-academic/📚-educational-resource/name/🗒️-rust
+  - 🔴-academic/📚-educational-resource/format/miscellaneous
+  - 🔴-academic/📚-educational-resource/discipline/computer-science
+  - 🔴-academic/📚-educational-resource/name/🗒️-rust/🔖-bookmark/🗒️-rust
   - study-note
 cards-deck: 🔴 Academic::📚 Educational ResourceRust
 ---

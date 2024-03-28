@@ -5,8 +5,8 @@ updated: 2024-01-25T16:47
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/discord/de-grind-crew/🔖/de-grind-crew-∋-table-of-contents
-  - 🔴-academic/📚-educational-resources/format/website
+  - 🔴-academic/📚-educational-resource/name/discord/de-grind-crew/🔖/de-grind-crew-∋-table-of-contents
+  - 🔴-academic/📚-educational-resource/format/website
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::Discord::DE Grind Crew::💼 Vocational::💼 Vocational ∋ Table of Contents
 ---

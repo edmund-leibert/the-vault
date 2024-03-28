@@ -3,8 +3,8 @@ author: Kartik
 publisher: 
 published: 
 tags:
-  - 🔴-academic/📚-educational-resources/name/pganalyze-webinar
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/dbms/postgresql
+  - 🔴-academic/📚-educational-resource/name/pganalyze-webinar
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/dbms/postgresql
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-09-04 15:48

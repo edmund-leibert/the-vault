@@ -3,8 +3,8 @@ author:
 publisher: 
 published: 
 tags:
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/rust
-  - 🔴-academic/📚-educational-resources/name/leetcode
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/rust
+  - 🔴-academic/📚-educational-resource/name/leetcode
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-10-07 15:19

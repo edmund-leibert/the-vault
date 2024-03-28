@@ -5,9 +5,9 @@ updated: 2024-02-07T19:41
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-net/🔖/miscellaneous-notes
-  - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/developer-platform/net
+  - 🔴-academic/📚-educational-resource/name/🗒️-net/🔖/miscellaneous-notes
+  - 🔴-academic/📚-educational-resource/format/miscellaneous
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/developer-platform/net
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ .NET::Miscellaneous Notes
 banner: "![[https://i.imgur.com/ZLk5l96.jpg]]"
@@ -45,7 +45,7 @@ In brief, what is Microsoft’s **.NET**?
 ﹇<br>
 What is **DocTo**?
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/technologies/docto
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/technologies/docto
 
 **DocTo** is a simple utility for converting a Microsoft Word Document ‘.doc’ and Microsoft Excel ‘.xls’ files to any other supported format such as `.txt`, `.csv`, `.rtf`, and `.pdf`. [@tobyallenDocToXLSTo]
 
@@ -63,7 +63,7 @@ It additionally has the following features:
 ﹇<br>
 Using the [DocTo](https://github.com/tobya/DocTo) library, how can I export a `.docx` to a `.pdf` in the command line [@tobyallenDocToXLSTo]?
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/technologies/docto
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/technologies/docto
 
 ```pwsh
 docto -f C:\Directory\MyFile.doc -O "C:\Output Directory\MyTextFile.pdf" -T wdFormatPDF
@@ -75,7 +75,7 @@ docto -f C:\Directory\MyFile.doc -O "C:\Output Directory\MyTextFile.pdf" -T wdFo
 ﹇<br>
 What does JSON stand for?
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/technology/json
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/json
 
 **J**ava**S**cript **O**bject **N**otation
 
@@ -85,7 +85,7 @@ What does JSON stand for?
 ﹇<br>
 What _namespace_ in **.NET** provides functionality for _serializing_ to and _deserializing_ form **J**ava**S**cript **O**bject **N**otation (JSON)?
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp
 
 [The `System.Text.Json` namespace in .NET provides high-performance, low-allocating, and standards-compliant capabilities to process JavaScript Object Notation (JSON)](https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-8.0) [@dotnet-botSystemTextJson]. [It includes serializing objects to JSON text and deserializing JSON text to objects, with UTF-8 support built-in](https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-8.0)  [@dotnet-botSystemTextJson]. [It also provides types to read and write JSON text encoded as UTF-8, and to create an in-memory document object model (DOM) for random access of the JSON elements within a structured view of the data](https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-8.0) [@dotnet-botSystemTextJson].
 
@@ -138,7 +138,7 @@ This string represents a `WeatherForecast` with a `Date` of “2019-08-01”, a 
 ﹇<br>
 In the context of **C#**,  and more generally **.NET**, does the _serialized form_ include any information about an object’s associated _methods_?
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
 
 [In C#, and generally in most programming languages, serialization does **not** include an object’s methods](https://stackoverflow.com/questions/2767893/are-methods-also-serialized-along-with-the-data-members-in-net) [@lisaAreMethodsAlso2010] [@ramezaniWhatMeaningSerialization2020]. [Serialization is the process of converting the state of an object into a form that can be persisted or transported](https://learn.microsoft.com/en-us/dotnet/standard/serialization/) [@genevievewarrenSerializationNET2023] [@naeemSerializationDeserialization2023]. [The serialized form includes only the data members (fields and properties) of the object](https://stackoverflow.com/questions/2767893/are-methods-also-serialized-along-with-the-data-members-in-net) [@lisaAreMethodsAlso2010] [@ramezaniWhatMeaningSerialization2020].
 
@@ -194,7 +194,7 @@ As you can see, the serialized JSON string includes the values of the `Name` and
 ﹇<br>
 In the context of software engineering, specifically** .NET**, is it possible to also _serialize_ an object's _methods_. If not, how do we rebuild an object with its methods when _deserializing_ data?
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
 
 [In .NET, serialization is the process of converting the state of an object into a form that can be persisted or transported](https://learn.microsoft.com/en-us/dotnet/standard/serialization/) [@genevievewarrenSerializationNET2023]. This typically includes the values of its properties. [However, the serialized form **does not include any information about an object’s associated methods**](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/overview) [@genevievewarrenSerializeDeserializeJSON2023].
 
@@ -238,7 +238,7 @@ If you need to modify the behavior of methods after deserialization based on the
 ﹇<br>
 In general, what is the definition of *serialization*?
 
-#card-reverse #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp 
+#card-reverse #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
 
 [<span class="spoiler">**Serialization**</span> is the process of translating a data structure or object state into a format that can be stored (e.g., in files or data buffers) or transmitted (e.g., over computer networks) and reconstructed later, possibly in a different computer environment](https://en.wikipedia.org/wiki/Serialization) [@Serialization2023] [@WhatSerialization2022] [@baeldungWhatAreSerialization2023]. [This process allows us to save the data associated with an object and recreate the object in a new location](https://en.wikipedia.org/wiki/Serialization) [@baeldungWhatAreSerialization2023]. [The serialized form does not include any information about an object’s associated methods](https://en.wikipedia.org/wiki/Serialization) [@Serialization2023].
 
@@ -258,7 +258,7 @@ var userDataString = System.Text.Json.JsonSerializer.Serialize(userData);
 ﹇<br>
 What is the definition of *deserialization*?
 
-#card-reverse #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp 
+#card-reverse #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
 
 <span class="spoiler">**Deserialization**</span> is the reverse process of serialization. [It involves taking data structured in some format and rebuilding it into an object](https://en.wikipedia.org/wiki/Serialization) [@theowaspfoundationDeserializationOWASPCheat] [@dagsterlabsDataDeserializationDagster]. [This process is used to extract the data or the state of the object from the stored or received serialized format](https://en.wikipedia.org/wiki/Serialization) [@dagsterlabsDataDeserializationDagster].
 
@@ -325,7 +325,7 @@ Microsoft merged the best of .NET Core and .NET Framework into a single platform
 ﹇<br>
 In the context of .NET, what does **IIS** stand for and what is it?
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/technology/
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/
 
 IIS stands for **I**nternet **I**nformation **S**ervices. [It is a flexible, secure, and manageable web server for hosting web applications, including ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/?view=aspnetcore-8.0) [@rickandersonHostASPNET2023].
 
@@ -390,7 +390,7 @@ These are all network protocols. They are designed to send/transfer information 
 ﹇<br>
 In the context of software engineering, specifically in the language **C#** (**.NET**), what exactly is an `async` function and how does it work? Relate your description/analysis to threads at the operating system level.
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
 
 [In C#, an `async` function is a method, lambda expression, or anonymous method that is marked with the `async` keyword](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async)[1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async)[2](https://www.c-sharpcorner.com/article/async-and-await-in-c-sharp/). [This keyword indicates that the function is asynchronous, meaning it can run in the background while other code executes](https://stackify.com/c-threading-and-multithreading-a-guide-with-examples/)[3](https://stackify.com/c-threading-and-multithreading-a-guide-with-examples/).
 
@@ -427,7 +427,7 @@ Two brief questions:
 1. When calling an `async` method, must you have an `await` prepended/before it when calling it? 
 2. Must an `async` method, by definition, must call another `async` function?
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
 
 1. **Do you need to use `await` when calling an `async` method?**
     - [No, it’s not mandatory to use `await` when calling an `async` method](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[1](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[2](https://stackoverflow.com/questions/17805887/using-async-without-await). [However, if you call an `async` method without `await`, the method will return a `Task` or `Task<T>` immediately, and the caller will continue execution before the `async` method has completed](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[1](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[2](https://stackoverflow.com/questions/17805887/using-async-without-await). [This can lead to unexpected behavior if the caller depends on the completion of the `async` method](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[1](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[2](https://stackoverflow.com/questions/17805887/using-async-without-await). [If you don’t need to wait for the `async` method to complete, you can ignore the returned `Task`](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[1](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[2](https://stackoverflow.com/questions/17805887/using-async-without-await). [But be aware that any exceptions thrown by the `async` method will be swallowed and won’t be observed until the `Task` is awaited](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[1](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await).
@@ -440,7 +440,7 @@ Two brief questions:
 ﹇<br>
 It seems unless I specify manually the creation of extra threads in **C#**, when an `async` method is now waiting (via `await`) for another method to finish execution and return a task, the threads itself don't change or go off the processor, but instead the thread itself switches to execute a different method. Is this correct?
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
 
 In C#, when an `async` method encounters an `await` keyword, it doesn’t necessarily create a new thread. Instead, it signs up the rest of the method as a continuation on the awaited task. The thread that was executing the method can then go back to the thread pool and be used for another work until the awaited task completes. When the awaited task completes, the continuation (the rest of the method) can be executed on a different thread.
 
@@ -473,7 +473,7 @@ internal abstract class MerriamWebsterAnkiFlashcardsGenerator
 }
 ```
 
-#card #🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/csharp 
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
 
 Asynchronous methods in C# typically return a `Task` or `Task<T>`, and they should be awaited with the `await` keyword.
 

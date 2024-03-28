@@ -5,9 +5,9 @@ updated: 2023-12-04T09:39
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-cpp/🔖/misc-notes
-  - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/cpp
+  - 🔴-academic/📚-educational-resource/name/🗒️-cpp/🔖/misc-notes
+  - 🔴-academic/📚-educational-resource/format/miscellaneous
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource️::🗒️ C++::Misc. Notes
 ---

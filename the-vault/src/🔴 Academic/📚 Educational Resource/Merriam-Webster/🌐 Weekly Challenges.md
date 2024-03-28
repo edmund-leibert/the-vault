@@ -1,7 +1,7 @@
 ---
 tags:
-  - 🔴-academic/📚-educational-resources/name/merriam-webster
-  - 🔴-academic/📚-educational-resources/discipline/english/dictionary/weekly-challenges
+  - 🔴-academic/📚-educational-resource/name/merriam-webster
+  - 🔴-academic/📚-educational-resource/discipline/english/dictionary/weekly-challenges
   - study-note
 cards-deck: Default::English
 created: 2023-09-28 14:16

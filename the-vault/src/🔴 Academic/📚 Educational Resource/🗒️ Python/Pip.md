@@ -5,9 +5,9 @@ updated: 2023-11-28T10:56
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-python/🔖/pip
-  - 🔴-academic/📚-educational-resources/format/website
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/python
+  - 🔴-academic/📚-educational-resource/name/🗒️-python/🔖/pip
+  - 🔴-academic/📚-educational-resource/format/website
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Python::Pip
 ---

@@ -1,13 +1,13 @@
 ---
 title: LeetCode ∋ Table of Contents
 created: 2024-01-23T16:17
-updated: 2024-01-30T08:18
+updated: 2024-03-27T00:31
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/leetcode/🔖/leetcode-∋-table-of-contents
-  - 🔴-academic/📚-educational-resources/format/course
-  - 🔴-academic/📚-educational-resources/discipline/computer-science
+  - 🔴-academic/📚-educational-resource/name/leetcode/🔖/leetcode-∋-table-of-contents
+  - 🔴-academic/📚-educational-resource/format/course
+  - 🔴-academic/📚-educational-resource/discipline/computer-science
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::LeetCode::LeetCode ∋ Table of Contents
 ---
@@ -58,8 +58,8 @@ Structy is a guided course that builds your algorithm knowledge efficiently. [@z
 ## :FasListOl: Table of Contents
 
 - **Structy**
-	- [LeetCode ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/LeetCode/LeetCode%20∋%20Table%20of%20Contents.md)
-	- [Explore ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/LeetCode/Explore/Explore%20∋%20Table%20of%20Contents.md)
+	- [LeetCode ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/LeetCode/LeetCode%20∋%20Table%20of%20Contents.md)
+	- [Explore ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/LeetCode/Explore/Explore%20∋%20Table%20of%20Contents.md)
 ---
 
 ## :EiZoteroItem: Bibliography
@@ -71,7 +71,7 @@ A. Zabian, “Structy - Learn data structures and algorithms, efficiently.,” _
 
 > [!info]+
 > **Next Notes**:
-> - [0. Introduction ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Structy/0.%20Introduction/0.%20Introduction%20∋%20Table%20of%20Contents.md)
+> - [0. Introduction ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/0.%20Introduction%20∋%20Table%20of%20Contents.md)
 
 ---
 

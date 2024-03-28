@@ -2,7 +2,7 @@
 created: 2023-11-18T02:44
 updated: 2023-11-18T02:44
 tags:
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/spark
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/spark
 cards-deck: Default::Computer Science
 ---
 

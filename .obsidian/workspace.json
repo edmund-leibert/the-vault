@@ -4,37 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "5d7c248676848f53",
+        "id": "99de91e7aa85e64a",
         "type": "tabs",
         "children": [
           {
-            "id": "431406eaf5a8014b",
+            "id": "5c9f50b85669d1ac",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resource/🗒️ SQL/🗒️ SQL ∋ Table of Contents.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "7f0e58ebf7324b9d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resource/Wikipedia/Tree traversal.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/176. Second Highest Salary.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -63,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gpg",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 488.5
+    "width": 460.5
   },
   "right": {
     "id": "1186c1364788cf17",
@@ -100,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resource/Wikipedia/Tree traversal.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/176. Second Highest Salary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resource/Wikipedia/Tree traversal.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/176. Second Highest Salary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,12 +162,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resource/Wikipedia/Tree traversal.md"
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/176. Second Highest Salary.md"
               }
             }
           },
           {
-            "id": "4cd25d36be689799",
+            "id": "8afb4c1a3fa1b15d",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "fa50cdbb115860a4",
             "type": "leaf",
             "state": {
               "type": "quiet-outline",
@@ -193,10 +187,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 451.5
+    "width": 430.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-day-planner:Timeline": false,
       "flashcards-obsidian:Generate flashcards": false,
       "switcher:Open quick switcher": true,
       "graph:Open graph view": true,
@@ -209,54 +205,57 @@
       "zk-prefixer:Create new unique note": true,
       "random-note:Open random note": true,
       "audio-recorder:Start/stop recording": true,
+      "obsidian-trash-explorer:Open trash explorer": false,
       "publish:Publish changes...": true,
       "chronology:Open Chronology": false,
-      "notion-like-tables:Create loom": false,
       "omnisearch:Omnisearch": false,
-      "obsidian-trash-explorer:Open trash explorer": false,
-      "cloze:Toggle all clozes": false,
-      "obsidian-day-planner:Timeline": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "reference-map:Reference Map": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "templater-obsidian:Templater": false,
-      "custom-sort:Toggle custom sorting": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "notion-like-tables:Create loom": false,
+      "custom-sort:Toggle custom sorting": false,
+      "cloze:Toggle all clozes": false
     }
   },
-  "active": "7f0e58ebf7324b9d",
+  "active": "5c9f50b85669d1ac",
   "lastOpenFiles": [
-    "the-vault/src/🔴 Academic/📚 Educational Resource/🗒️ Zotero/Miscellaneous Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/🗒️ SQL/🗒️ SQL ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/Java/Miscellaneous Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Explore/Learn/The LeetCode Beginner's Guide/The LeetCode Beginner's Guide ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Problems/1. Two Sum.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Problems/175. Combine Two Tables.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Problems/295. Find Median from Data Stream.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Problems/4. Median of Two Arrays.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Problems/9. Palindrome Number.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/🗒️ .NET/Miscellaneous Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/Vim/Miscellanous Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/🗒️ Bash/Misc. Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/🗒️ CMake/Miscellaneous Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/🗒️ PowerShell/🗒️ PowerShell ∋ Table of Contents.md",
-    "the-vault/templates/Template {{LeetCode ∋ Problem}}.md",
-    "the-vault/templates/Template {{Anki Note ∋ “⋕card”}}.md",
-    "the-vault/templates/Template {{Anki Note ∋ “⋕card-reverse”}}.md",
-    "the-vault/templates/Template {{Phrase ∋ “As of current moment”}}.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/Java/Untitled.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/Vim/Keyboard Shortcuts.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/🗒️ Git/Miscellaneous Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/🗒️ Zotero/🗒️ Zotero ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/4. Median of Two Arrays.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/176. Second Highest Salary.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/🗒️ PowerShell/Miscellaneous Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/1. Two Sum.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/🗒️ JavaScript/Misc. Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/181. Employees Earning More Than Their Managers.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Java/Miscellaneous Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/231. Power of Two.md",
     "the-vault/templates/Template {{Attempt ∋ “❌ Failed”}}.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resources/LeetCode/Problems/Untitled.md",
+    "the-vault/templates/Template {{LeetCode ∋ Problem (Algorithms & Data Structures)}}.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Docker Docs/Guides/Walkthroughs/Access a local folder.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/🗒️ Git/Miscellaneous Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/2235. Add Two Integers.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Solving Your First Problem/Solving Your First Problem.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Overview.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/The LeetCode Beginner's Guide ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Solving Your First Problem/Solving Your First Problem ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/Explore ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Explore/Learn/Untitled/Untitled ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Explore/Learn/Untitled",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/sortspec.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Solving Your First Problem/sortspec.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Closing Comments/Closing Comments ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Where to Start/Where to Start ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Closing Comments",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Challenge Problems/Challenge Problems ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Where to Start",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Challenge Problems",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Solving Your First Problem",
+    "the-vault/src/🔴 Academic/📚 Educational resource/🗒️ Zotero/Miscellaneous Notes.md",
+    "the-vault/templates/Template {{Table of Contents}}.md",
     "Untitled.loom",
-    "the-vault/🔴 Academics/🔴 Academics ∋ Table of Contents.md",
-    "the-vault/🔴 Academics/📚 Educational Resources/🌐 LeetCode/112. Path Sum.md",
     "the-vault/🔴 Academics/📚 Educational Resources/🌐 LeetCode",
     "the-vault/🔴 Academics/📚 Educational Resources",
     "the-vault/🔴 Academics",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/🗒️ LeetCode",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/Java",
+    "the-vault/src/🔴 Academic/📚 Educational resource/🗒️ LeetCode",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.light.png",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.light.svg",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.dark.png",
@@ -264,12 +263,8 @@
     "assets/Pasted Image 20240203161331_786.png",
     "assets/Pasted Image 20240203161245_791.png",
     "assets/Pasted Image 20240203161132_777.png",
-    "assets",
     "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.light.png",
     "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.light.svg",
-    "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.dark.png",
-    "the-vault/assets/banners/leetcode-beginner-guard.jpeg.~tmp",
-    "the-vault/assets/banners/dotnet.jpeg.~tmp",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Explore/Learn/The LeetCode Beginner's Guide"
+    "the-vault/assets/excalidraw/Drawing 2024-02-03 16.05.15.excalidraw.dark.png"
   ]
 }

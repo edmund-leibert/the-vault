@@ -1,5 +1,5 @@
 {
-  "accentColor": "#734eca",
+  "accentColor": "#941cb5",
   "theme": "obsidian",
   "nativeMenus": true,
   "translucency": true,
@@ -13,10 +13,11 @@
     "source-mode",
     "spoiler",
     "callouts",
-    "banners"
+    "banners",
+    "multi-select-container"
   ],
   "monospaceFontFamily": "FiraCode Nerd Font,Consolas",
   "textFontFamily": "Atkinson Hyperlegible,Arial,Trebuchet MS",
   "cssTheme": "Minimal",
-  "baseFontSize": 15
+  "baseFontSize": 16
 }

@@ -5,10 +5,10 @@ updated: 2023-11-18T02:44
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-visual-studio
-  - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/visual-studio
-  - 🔴-academic/📚-educational-resources/name/🗒️-visual-studio/🔖-bookmark/🗒️-visual-studio-▹-📋-table-of-contents
+  - 🔴-academic/📚-educational-resource/name/🗒️-visual-studio
+  - 🔴-academic/📚-educational-resource/format/miscellaneous
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/visual-studio
+  - 🔴-academic/📚-educational-resource/name/🗒️-visual-studio/🔖-bookmark/🗒️-visual-studio-▹-📋-table-of-contents
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource🗒️ Visual Studio::🗒️ Visual Studio ▹ 📋 Table of Contents
 ---

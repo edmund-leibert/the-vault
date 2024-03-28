@@ -5,9 +5,9 @@ updated: 2023-11-18T02:44
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resources/name/🗒️-bash/misc-notes
-  - 🔴-academic/📚-educational-resources/format/miscellaneous
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/programming-language/bash
+  - 🔴-academic/📚-educational-resource/name/🗒️-bash/misc-notes
+  - 🔴-academic/📚-educational-resource/format/miscellaneous
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/bash
   - study-note
 cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Bash::Misc. Notes
 ---

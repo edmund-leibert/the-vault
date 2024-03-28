@@ -1,7 +1,7 @@
 ---
 tags:
-  - 🔴-academic/📚-educational-resources/name/cmake-documentation
-  - 🔴-academic/📚-educational-resources/discipline/computer-science/technology/cmake
+  - 🔴-academic/📚-educational-resource/name/cmake-documentation
+  - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/cmake
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-10-27T17:38
