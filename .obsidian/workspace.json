@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "99de91e7aa85e64a",
+        "id": "71d12c6ba6d14822",
         "type": "tabs",
         "children": [
           {
-            "id": "5c9f50b85669d1ac",
+            "id": "e07bf3de2ffb492e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/176. Second Highest Salary.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/176. Second Highest Salary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/176. Second Highest Salary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,9 +154,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/176. Second Highest Salary.md"
-              }
+              "state": {}
             }
           },
           {
@@ -187,8 +178,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 430.5,
-    "collapsed": true
+    "width": 430.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,10 +208,10 @@
       "cloze:Toggle all clozes": false
     }
   },
-  "active": "5c9f50b85669d1ac",
+  "active": "3b22159245c2a393",
   "lastOpenFiles": [
-    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/4. Median of Two Arrays.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/176. Second Highest Salary.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/4. Median of Two Arrays.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/🗒️ PowerShell/Miscellaneous Notes.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/1. Two Sum.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/🗒️ JavaScript/Misc. Notes.md",
