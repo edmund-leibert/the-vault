@@ -133,7 +133,8 @@
     "iconInFrontmatterEnabled": false,
     "iconsBackgroundCheckEnabled": true,
     "iconsInNotesEnabled": true,
-    "iconIdentifier": ":"
+    "iconIdentifier": ":",
+    "iconsInLinksEnabled": true
   },
   "the-vault/🔴 Academics/leila physics homework.md": "LiConstruction",
   "the-vault/🔴 Academics/📚 Educational Resources/🗒️ GitHub": "FabGithub",

@@ -394,6 +394,10 @@
 #time-ruler :is(.bg-accent) {
   background-color: var(--text-accent);
 }
+#time-ruler :is(.bg-blue-900) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
+}
 #time-ruler :is(.bg-code) {
   background-color: var(--code-background);
 }
@@ -474,9 +478,6 @@
 }
 #time-ruler :is(.pl-2) {
   padding-left: 0.5rem;
-}
-#time-ruler :is(.pl-4) {
-  padding-left: 1rem;
 }
 #time-ruler :is(.pl-8) {
   padding-left: 2rem;
