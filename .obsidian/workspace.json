@@ -28,7 +28,7 @@
               "type": "markdown",
               "state": {
                 "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
-                "mode": "source",
+                "mode": "preview",
                 "backlinks": true,
                 "source": true
               },
@@ -36,18 +36,16 @@
             }
           },
           {
-            "id": "6b9f47bd0a3d73d8",
+            "id": "091f5cc507aa60b8",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Structy/Structy ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
-              },
-              "pinned": true
+              }
             }
           }
         ],
@@ -118,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Structy/Structy ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Structy/Structy ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Structy/Structy ∋ Table of Contents.md"
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md"
               }
             }
           },
@@ -215,12 +213,11 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 430.5,
-    "collapsed": true
+    "width": 430.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -250,11 +247,16 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "6b9f47bd0a3d73d8",
+  "active": "091f5cc507aa60b8",
   "lastOpenFiles": [
-    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Structy/Structy ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/sortspec.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/sortspec.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Untitled.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Structy/Structy ∋ Table of Contents.md",
     "the-vault/🔴 Academics/🔴 Academics ∋ Table of Contents.md",
     "the-vault/🔴 Academics/📚 Educational Resources/🌐 LeetCode/112. Path Sum.md",
     "the-vault/🔴 Academics/📚 Educational Resources/🌐 LeetCode/🌐 LeetCode ∋ Table of Contents.md",
@@ -279,15 +281,10 @@
     "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/4. Median of Two Arrays.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ PowerShell/Miscellaneous Notes.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/1. Two Sum.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ JavaScript/Misc. Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/181. Employees Earning More Than Their Managers.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Java/Miscellaneous Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/231. Power of Two.md",
     "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Explore/Learn/Untitled",
     "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Closing Comments",
     "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Where to Start",
     "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Challenge Problems",
-    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Solving Your First Problem",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.light.png",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.light.svg",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.dark.png",
