@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "560dbf859b272763",
+            "id": "376b24ee677a8487",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/sortspec.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -21,35 +21,19 @@
             }
           },
           {
-            "id": "381e5a638336d0ae",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "091f5cc507aa60b8",
+            "id": "45727b5e195443a2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -78,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#data-garage",
+                "query": "tag:#🔴-academic",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -95,7 +79,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -247,14 +232,20 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "091f5cc507aa60b8",
+  "active": "376b24ee677a8487",
   "lastOpenFiles": [
-    "the-vault/src/🔴 Academic/📚 Educational resource/sortspec.md",
+    "the-vault/src/null Academic/null Academic ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
+    "the-vault/src/null Academic/null Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
+    "the-vault/src/null Academic/null Educational resource/null Educational resource ∋ Table of Contents.md",
+    "the-vault/src/null Academic/null Educational resource/Web Scalability for  Startup Engineers",
+    "the-vault/src/null Academic/null Educational resource",
+    "the-vault/src/null Academic",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/sortspec.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/sortspec.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Untitled.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts",
     "the-vault/src/🔴 Academic/📚 Educational resource/Structy/Structy ∋ Table of Contents.md",
     "the-vault/🔴 Academics/🔴 Academics ∋ Table of Contents.md",
@@ -278,13 +269,7 @@
     "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Bash/Misc. Notes.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Python/Misc. Notes.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/176. Second Highest Salary.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/4. Median of Two Arrays.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ PowerShell/Miscellaneous Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/1. Two Sum.md",
     "the-vault/src/🔴 Academic/📚 Educational Resource/LeetCode/Explore/Learn/Untitled",
-    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Closing Comments",
-    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Where to Start",
-    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Challenge Problems",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.light.png",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.light.svg",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.dark.png",

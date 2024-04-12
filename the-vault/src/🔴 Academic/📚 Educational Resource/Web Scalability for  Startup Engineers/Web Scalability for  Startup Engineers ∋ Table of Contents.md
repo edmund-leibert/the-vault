@@ -1,15 +1,15 @@
 ---
 title: Web Scalability for Startup Engineers ∋ Table of Contents
 created: 2023-09-03 08:46
-updated: 2024-04-12T05:28
+updated: 2024-04-12T06:32
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/structy/🔖/web-scalability-for-startup-engineers-∋-table-of-contents
+  - 🔴-academic/📚-educational-resource/name/web-scalability-for-startup-engineers/🔖/web-scalability-for-startup-engineers-∋-table-of-contents
   - 🔴-academic/📚-educational-resource/format/book
   - 🔴-academic/📚-educational-resource/discipline/computer-science
   - study-note
-cards-deck: 🔴 Academic::📚 Educational Resource::Web Scalability for Starup Engineers::Web Scalability for Starup Engineers ∋ Table of Contents
+cards-deck: 🔴 Academic::📚 Educational resource::Web Scalability for Startup Engineers::Web Scalability for Startup Engineers ∋ Table of Contents
 banner: "![[https://m.media-amazon.com/images/I/51aDZ1x51xL._SY466_.jpg]]"
 banner_y: 0
 ---
@@ -18,76 +18,48 @@ banner_y: 0
 
 ---
 
-> [!abstract]+ 
-> These [Structy | Learn Algorithms, Efficiently.](https://www.structy.net/) course notes are a comprehensive resource that delve into the intricacies of data structures and algorithms, with an additional focus on the nuances of different programming languages. 
-> 
+> [!INFO] Note
+> These _*Web Scalability for Startup Engineers*_ notes reveal content on how to successfully handle web application scalability challenges to meet increasing product and traffic demands. It provides a holistic view of infrastructure and architecture of a scalable web application, and describes how infrastructure and software architecture work together to support a scalable environment. [@ejsmontWebScalabilityStartup2015a] 
+>  
 > These notes are structured in a Q&A format, making it easy to follow and learn. Corresponding Anki flashcards are available, enabling efficient revision and reinforcement of the concepts.
 
 ---
 
-> [!info]+ 
-> **Previous Note(s)**:
+> [!INFO] Note
+> **Previous Notes**:
 > 
 
 ---
 
-> [!info]+ 
-> Key for what emojis in the names of notes represent…
-> - 👨🏻‍🏫 = lecture
-> - 👨🏽‍💻 = challenge
-> - 📝 = quiz
-
-> [!info]+ 
-> The GitHub repository of my solutions for this course can be found here…
-> - :SiCplusplus: **C++**: [edmund-leibert/structy-course (github.com)](https://github.com/edmund-leibert/structy-course)
-> - :SiPython: **Python**:
-> - :SiJavascript: **JavaScript**:
-> - :FabJava: **Java**:
-
-> [!info]+ 
-> The course itself can be found here: [Structy | Learn Algorithms, Efficiently.](https://www.structy.net/)
-
-﹇<br>
-What is the website **Structy**?
-
-#card
-
-Structy is a guided course that builds your algorithm knowledge efficiently. [@zabianStructyLearnData2023]
-
-⌂
-<br>﹈<br>^1699227896521
-
 ## :FasListOl: Table of Contents
 
-- **Structy**
-	- [Structy ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/Structy%20∋%20Table%20of%20Contents.md)
-	- **0. Introduction**
-		- [0. Introduction ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/0.%20Introduction%20∋%20Table%20of%20Contents.md)
-		- [001. code workspace tour](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/001.%20code%20workspace%20tour.md)
-		- [002. hey programmer](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/002.%20hey%20programmer.md)
-		- [003. max-value](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/003.%20max-value.md)
-		- [004. is prime](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/004.%20is%20prime.md)
-	- **1. Array and String**
-	- **2. Array and String**
-	- **3. Binary Tree**
-	- **4. Graph**
-	- **5. Dynamic Programming**
-	- **6. Stack**
-	- **7. Exhaustive Recursion**
-	- **8. Mixed Recall**
+- :FasBook: **Web Scalability for Startup Engineers**
+	- :FasListOl: [Web Scalability for  Startup Engineers ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Web%20Scalability%20for%20%20Startup%20Engineers/Web%20Scalability%20for%20%20Startup%20Engineers%20∋%20Table%20of%20Contents.md)
+	- :RiBookmarkFill: **Chapter 1. Core Concepts**
+		- :FasListOl: [Chapter 1. Core Concepts ∋ Table of Contents](obsidian://open?vault=the-vault&file=the-vault%2Fsrc%2F%F0%9F%94%B4%20Academic%2F%F0%9F%93%9A%20Educational%20resource%2FWeb%20Scalability%20for%20%20Startup%20Engineers%2FChapter%201.%20Core%20Concepts%2FChapter%201.%20Core%20Concepts%20%E2%88%8B%20Table%20of%20Contents)
+	- **Chapter 2. Principles of Good Software Design**
+	- **Chapter 3. Building the Front-End Layer**
+	- **Chapter 4. Web Services**
+	- **Chapter 5. Data Layer**
+	- **Chapter 6. Caching**
+	- **Chapter 7. Asynchronous Processing**
+	- **Chapter 8. Searching for Data**
+	- **Chapter 9. Other Dimensions of Scalability**
+	- **Appendix**
+	- **Index**
 
 ---
 
 ## :EiZoteroItem: Bibliography
 
 \[1\]
-A. Zabian, “Structy - Learn data structures and algorithms, efficiently.,” _Structy_, Sep. 30, 2023. Available: [https://www.structy.net/](https://www.structy.net/). [Accessed: Oct. 01, 2023]
+A. Ejsmont, _Web Scalability for Startup Engineers_. New York: McGraw-Hill Education, 2015.
 
 ---
 
-> [!info]+
-> **Next Note(s)**:
-> - [0. Introduction ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/0.%20Introduction%20∋%20Table%20of%20Contents.md)
+> [!INFO] Note
+> **Next Notes**:
+> - [Chapter 1. Core Concepts ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Web%20Scalability%20for%20%20Startup%20Engineers/Chapter%201.%20Core%20Concepts/Chapter%201.%20Core%20Concepts%20∋%20Table%20of%20Contents.md)
 
 ---
 

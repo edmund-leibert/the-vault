@@ -39,8 +39,6 @@
   "obsidian-day-planner",
   "heatmap-calendar",
   "obsidian-outliner",
-  "callout-manager",
-  "obsidian-admonition",
   "reveal-active-file-button",
   "obsidian-style-settings",
   "obsidian-minimal-settings",
@@ -49,5 +47,6 @@
   "reference-map",
   "flashcards-obsidian",
   "update-time-on-edit",
-  "obsidian-git"
+  "obsidian-git",
+  "callout-manager"
 ]

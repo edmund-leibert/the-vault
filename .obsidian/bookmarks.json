@@ -10,6 +10,30 @@
           "items": [
             {
               "type": "group",
+              "ctime": 1712928230283,
+              "items": [
+                {
+                  "type": "file",
+                  "ctime": 1712928268161,
+                  "path": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md"
+                },
+                {
+                  "type": "group",
+                  "ctime": 1712928279966,
+                  "items": [
+                    {
+                      "type": "file",
+                      "ctime": 1712928289481,
+                      "path": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md"
+                    }
+                  ],
+                  "title": "Chapter 1. Core Concepts"
+                }
+              ],
+              "title": "Web Scalability for Startup Engineers"
+            },
+            {
+              "type": "group",
               "ctime": 1692304562459,
               "items": [
                 {
@@ -452,7 +476,7 @@
               "title": "Real Python"
             }
           ],
-          "title": "📚 Educational Resource"
+          "title": "📚 Educational resource"
         }
       ],
       "title": "🔴 Academic"

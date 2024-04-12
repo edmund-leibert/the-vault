@@ -130,7 +130,7 @@
     },
     "iconInTabsEnabled": true,
     "iconInTitleEnabled": false,
-    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterEnabled": true,
     "iconsBackgroundCheckEnabled": true,
     "iconsInNotesEnabled": true,
     "iconIdentifier": ":",
@@ -499,6 +499,5 @@
   "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ GitHub CLI": "SiGithub",
   "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ GitHub CLI/Misc. Notes.md": "TiNotes",
   "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers": "FasBook",
-  "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts": "RiBookmarkFill",
-  "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md": "TiNotes"
+  "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts": "RiBookmarkFill"
 }
