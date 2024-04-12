@@ -4,23 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "4100271cc656e670",
+        "id": "5b91f601ad2b5ed3",
         "type": "tabs",
         "children": [
           {
-            "id": "51ca1900658127b9",
+            "id": "784ff142693bfecb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
+                "file": "ZtTemplates/zt-annot.eta.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "a48e870137af2b5b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#🔴-academic",
+                "query": "tag:#🔴-academic/📚-educational-resource/name/web-scalability-for-startup-engineers",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,16 +164,6 @@
             }
           },
           {
-            "id": "0f89d99f1eedb83d",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md"
-              }
-            }
-          },
-          {
             "id": "8afb4c1a3fa1b15d",
             "type": "leaf",
             "state": {
@@ -174,9 +178,40 @@
               "type": "quiet-outline",
               "state": {}
             }
+          },
+          {
+            "id": "1124117a3842eab8",
+            "type": "leaf",
+            "state": {
+              "type": "zotero-annotation-view",
+              "state": {
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
+                "itemId": 331,
+                "attachmentId": 334,
+                "follow": null
+              }
+            }
+          },
+          {
+            "id": "484501aa847349e9",
+            "type": "leaf",
+            "state": {
+              "type": "ReferenceListView",
+              "state": {}
+            }
+          },
+          {
+            "id": "65c504c9cf36f227",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md"
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -206,21 +241,28 @@
       "custom-sort:Toggle custom sorting": false,
       "cloze:Toggle all clozes": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "omnisearch:Omnisearch": false
+      "omnisearch:Omnisearch": false,
+      "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "51ca1900658127b9",
+  "active": "a48e870137af2b5b",
   "lastOpenFiles": [
-    "the-vault/src/null Academic/null Academic ∋ Table of Contents.md",
+    "ZtTemplates/zt-annot.eta.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
+    "ZtTemplates/ZtTemplates ∋ Table of Contents.md",
+    "ZtTemplates",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/What is Scalability？.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Obsidian/Misc. Notes.md",
+    "the-vault/src/null Academic/null Academic ∋ Table of Contents.md",
+    "the-vault/src/null Academic/null Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/What is Scalability？.md",
+    "the-vault/src/null Academic/null Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
     "the-vault/src/null Academic/null Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
     "the-vault/src/null Academic/null Educational resource/null Educational resource ∋ Table of Contents.md",
+    "the-vault/src/null Academic/null Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts",
     "the-vault/src/null Academic/null Educational resource/Web Scalability for  Startup Engineers",
     "the-vault/src/null Academic/null Educational resource",
     "the-vault/src/null Academic",
-    "the-vault/src/null Academic/null Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
-    "the-vault/src/null Academic/null Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/sortspec.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/sortspec.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Untitled.md",
@@ -240,12 +282,7 @@
     "the-vault/src/🔴 Academic/📚 Educational resource/University Physics with Modern Physics, 15th Edition (2019)/APPLICATIONS.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Python/🗒️ Python ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/University Physics with Modern Physics, 15th Edition (2019)/UNIT CONVERSION FACTORS.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/Scratch notes ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Wolfram Mathematica/🗒️ Wolfram Mathematica ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Yarn/🗒️ Yarn ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Bash/Misc. Notes.md",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.light.png",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.light.svg",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.dark.png",

@@ -30,7 +30,6 @@
   "obsidian-front-matter-title-plugin",
   "obsidian-latex-suite",
   "quick-latex",
-  "obsidian-zotero-desktop-connector",
   "obsidian-citation-plugin",
   "obsidian-linter",
   "colored-tags-wrangler",
@@ -47,5 +46,7 @@
   "flashcards-obsidian",
   "update-time-on-edit",
   "obsidian-git",
-  "callout-manager"
+  "callout-manager",
+  "zotlit",
+  "obsidian-pandoc-reference-list"
 ]

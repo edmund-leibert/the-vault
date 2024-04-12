@@ -119,7 +119,7 @@
   "whitelistFolders": [],
   "showDeleteConfirmation": true,
   "underlineFolder": true,
-  "stopWhitespaceCollapsing": true,
+  "stopWhitespaceCollapsing": false,
   "underlineFolderInPath": true,
   "openFolderNoteOnClickInPath": true,
   "openInNewTab": false,
@@ -157,7 +157,7 @@
     "explorer": false,
     "path": false
   },
-  "settingsTab": "path",
+  "settingsTab": "general",
   "supportedFileTypes": [
     "md"
   ],

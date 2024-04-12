@@ -1,7 +1,7 @@
 ---
 title: Web Scalability for Startup Engineers ∋ Table of Contents
 created: 2024-04-12T04:06
-updated: 2024-04-12T07:00
+updated: 2024-04-12T08:10
 authors:
   - Edmund Leibert III
 tags:
@@ -10,7 +10,7 @@ tags:
   - 🔴-academic/📚-educational-resource/discipline/computer-science
   - study-note
 cards-deck: 🔴 Academic::📚 Educational resource::Web Scalability for Startup Engineers::Web Scalability for Startup Engineers ∋ Table of Contents
-banner: "![[https://m.media-amazon.com/images/I/51aDZ1x51xL._SY466_.jpg]]"
+banner: "![[https://m.media-amazon.com/images/I/51aDZ1x51xL._AC_UF1000,1000_QL80_.jpg]]"
 banner_y: 0
 ---
 
@@ -31,22 +31,23 @@ banner_y: 0
 
 ---
 
-## :FasListOl: Table of Contents
-
-- :FasBook: **Web Scalability for Startup Engineers**
-	- :FasListOl: [Web Scalability for Startup Engineers ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Web%20Scalability%20for%20Startup%20Engineers/Web%20Scalability%20for%20%20Startup%20Engineers%20∋%20Table%20of%20Contents.md)
-	- :RiBookmarkFill: **Chapter 1. Core Concepts**
-		- :FasListOl: [Chapter 1. Core Concepts ∋ Table of Contents](obsidian://open?vault=the-vault&file=the-vault%2Fsrc%2F%F0%9F%94%B4%20Academic%2F%F0%9F%93%9A%20Educational%20resource%2FWeb%20Scalability%20for%20%20Startup%20Engineers%2FChapter%201.%20Core%20Concepts%2FChapter%201.%20Core%20Concepts%20%E2%88%8B%20Table%20of%20Contents)
-	- **Chapter 2. Principles of Good Software Design**
-	- **Chapter 3. Building the Front-End Layer**
-	- **Chapter 4. Web Services**
-	- **Chapter 5. Data Layer**
-	- **Chapter 6. Caching**
-	- **Chapter 7. Asynchronous Processing**
-	- **Chapter 8. Searching for Data**
-	- **Chapter 9. Other Dimensions of Scalability**
-	- **Appendix**
-	- **Index**
+> [!INFO] Note
+> **<ins>Table of Contents</ins>**
+> 
+> - :FasBook: **Web Scalability for Startup Engineers**
+> 	-  :FasListOl: [Web Scalability for Startup Engineers ∋ Table of Contents](obsidian://open?vault=the-vault&file=the-vault%2Fsrc%2F%F0%9F%94%B4%20Academic%2F%F0%9F%93%9A%20Educational%20resource%2FWeb%20Scalability%20for%20%20Startup%20Engineers%2FWeb%20Scalability%20for%20%20Startup%20Engineers%20%E2%88%8B%20Table%20of%20Contents)
+> 	- :RiBookmarkFill: **Chapter 1. Core Concepts**
+> 		- :FasListOl: [Chapter 1. Core Concepts ∋ Table of Contents](obsidian://open?vault=the-vault&file=the-vault%2Fsrc%2F%F0%9F%94%B4%20Academic%2F%F0%9F%93%9A%20Educational%20resource%2FWeb%20Scalability%20for%20%20Startup%20Engineers%2FChapter%201.%20Core%20Concepts%2FChapter%201.%20Core%20Concepts%20%E2%88%8B%20Table%20of%20Contents)
+> 	- **Chapter 2. Principles of Good Software Design**
+> 	- **Chapter 3. Building the Front-End Layer**
+> 	- **Chapter 4. Web Services**
+> 	- **Chapter 5. Data Layer**
+> 	- **Chapter 6. Caching**
+> 	- **Chapter 7. Asynchronous Processing**
+> 	- **Chapter 8. Searching for Data**
+> 	- **Chapter 9. Other Dimensions of Scalability**
+> 	- **Appendix**
+> 	- **Index**
 
 ---
 
@@ -59,7 +60,7 @@ A. Ejsmont, _Web Scalability for Startup Engineers_. New York: McGraw-Hill Educa
 
 > [!INFO] Note
 > **Next Notes**:
-> - [Chapter 1. Core Concepts ∋ Table of Contents](the-vault/src/null%20Academic/null%20Educational%20resource/Web%20Scalability%20for%20%20Startup%20Engineers/Chapter%201.%20Core%20Concepts/Chapter%201.%20Core%20Concepts%20∋%20Table%20of%20Contents.md)
+> - [Chapter 1. Core Concepts ∋ Table of Contents](the-vault/src/null%20Academic/null%20Educational%20resource/Web%20Scalability%20for%20%20Startup%20Engineers/Chapter%201.%20Core%20Concepts/Chapter%201.%)
 
 ---
 
