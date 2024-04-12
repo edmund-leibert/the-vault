@@ -1,7 +1,7 @@
 ---
 title: Algorithms library
 created: 2023-09-03 08:46
-updated: 2024-03-27T00:31
+updated: 2024-04-12T04:03
 authors:
   - Edmund Leibert III
 tags:
@@ -32,7 +32,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::C++ reference::Algorithms 
 
 ## Table of Contents
 
-- [Algorithms library](the-vault/src/🔴%20Academic/📚%20Educational%20resource/🗒️%20C++/Algorithms%20library.md)
+- [Algorithms library](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Scratch%20notes/🗒️%20C++/Algorithms%20library.md)
 
 ---
 

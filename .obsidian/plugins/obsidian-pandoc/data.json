@@ -7,7 +7,7 @@
   "displayYAMLFrontmatter": false,
   "linkStrippingBehaviour": "text",
   "highDPIDiagrams": true,
-  "pandoc": "C:\\Users\\edmun\\AppData\\Local\\Pandoc\\pandoc.EXE",
+  "pandoc": "C:\\Program Files\\Pandoc\\pandoc.exe",
   "pdflatex": null,
   "outputFolder": null,
   "extraArguments": "",
