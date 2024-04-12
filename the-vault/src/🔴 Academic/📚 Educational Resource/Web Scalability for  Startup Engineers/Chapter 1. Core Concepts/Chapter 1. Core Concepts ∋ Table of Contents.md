@@ -1,11 +1,11 @@
 ---
 title: Chapter 1. Core Concepts ∋ Table of Contents
-created: 2023-09-03 08:46
-updated: 2024-04-12T06:30
+created: 2024-04-12T05:58
+updated: 2024-04-12T06:41
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/web-scalability-for-startup-engineers/🔖/chapter-1-core-concepts/chapter-1-core-concepts
+  - 🔴-academic/📚-educational-resource/name/web-scalability-for-startup-engineers/🔖/chapter-1-core-concepts/chapter-1-core-concepts-∋-table-of-contents
   - 🔴-academic/📚-educational-resource/format/book
   - 🔴-academic/📚-educational-resource/discipline/computer-science
   - study-note
