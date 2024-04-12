@@ -1,7 +1,7 @@
 ---
 title: 🗒️ Obsidian ∋ Table of Contents
 created: 2023-08-20 08:26
-updated: 2024-01-30T20:43
+updated: 2024-04-12T08:51
 authors:
   - Edmund Leibert III
 tags:
@@ -186,6 +186,28 @@ Remember, the most important thing is to be consistent in your formatting throug
 ⌂
 <br>﹈<br>^1702108324016
 
+﹇<br>
+As of Apr. 12, 2024 07:53:37 AM, generally, what does each highlighting color signify?
+
+#card 
+
+- Yellow = Important points
+- Pink = Vocabulary
+- Green = Names, dates, or places
+- Blue = Theories and hypotheses
+- Orange = Point of view
+- Red = Critical (very rare)
+- Gray = Actions (things to do)
+
+⌂
+<br>﹈<br>
+
+> [!IMPORTANT] Important
+> > [!INFO] Note 
+> > :EiZotero: Page 2
+>  > 
+>  > > worth revisiting it after you’ve read the entire book
+>  > ^D79DNYNYaKJZ5LZHZp23
 
 ---
 

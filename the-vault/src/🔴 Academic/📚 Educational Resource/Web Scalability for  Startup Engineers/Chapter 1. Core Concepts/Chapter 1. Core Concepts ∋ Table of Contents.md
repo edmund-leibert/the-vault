@@ -1,7 +1,7 @@
 ---
 title: Chapter 1. Core Concepts ∋ Table of Contents
 created: 2024-04-12T05:58
-updated: 2024-04-12T08:16
+updated: 2024-04-12T09:01
 authors:
   - Edmund Leibert III
 tags:
@@ -31,8 +31,6 @@ banner_y: 0
 
 ---
 
-## :FasListOl: Table of Contents
-
 > [!INFO] Note
 > **<ins>Table of Contents</ins>**
 > 
@@ -43,6 +41,16 @@ banner_y: 0
 > 	- :TiNotes: Overview of the Application Architecture
 > 	- :TiNotes: Summary
 
+---
+
+> [!INFO] Note 
+> :EiZotero: Page 2
+> 
+>  > For now, it’s important to establish three main pillars of scalability: what it is and how it evolves, what it looks like in a large-scale application, and what its application architecture looks like.
+> 
+> ---
+> Good question to figure out is what are the three main pillars of scalability.
+> ^XEH6LP28aKJZ5LZHZp23
 
 ﹇<br>
 As of Apr. 12, 2024 07:38:46 AM, what are the three main pillars of **scalability** that are important to establish a comprehension of the topic?
@@ -54,17 +62,15 @@ As of Apr. 12, 2024 07:38:46 AM, what are the three main pillars of **scalabilit
 3. Comprehending the architecture of an application that supports scalability.
 
 ⌂
-<br>﹈<br>
+<br>﹈<br>^1712935563039
 
-> [!INFO] Note 
-> Page 2
-> 
-> For now, it’s important to establish three main pillars of scalability: what it is and how it evolves, what it looks like in a large-scale application, and what its application architecture looks like.
-> 
-> ---
-> Good question to figure out is what are the three main pillars of scalability.
-> ^XEH6LP28aKJZ5LZHZp23
-
+> [!IMPORTANT] Important
+> > [!INFO] Note 
+> > :EiZotero: Page 2
+> > > worth revisiting it after you’ve read the entire book
+>  > ---
+> Need to revisit this chapter after reading this book.
+> ^D79DNYNYaKJZ5LZHZp23
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: What is Scalability?
 created: 2024-04-12T05:58
-updated: 2024-04-12T08:12
+updated: 2024-04-12T09:20
 authors:
   - Edmund Leibert III
 tags:
@@ -38,6 +38,32 @@ banner_y:
 > 	- Overview of a Data Center Infrastructure
 > 	- Overview of the Application Architecture
 > 	- Summary
+
+---
+
+> [!INFO] Note 
+> :EiZotero: Page 3
+> 
+>  > Scalability is an ability to adjust the capacity of the system to cost- efficiently fulfill the demands. Scalability usually means an ability to handle more users, clients, data, transactions, or requests without affecting the user experience. It is important to remember that scalability should allow us to scale down as much as scale up and that scaling should be relatively cheap and quick to do.
+> 
+> ---
+> What is the definition of scalability?
+> ^IYDYUYB5aKJZ5LZHZp24
+
+﹇<br>
+As of Apr. 12, 2024 08:59:56 AM, what is **scalability** and its importance in a system?
+
+#card 
+
+Scalability is the ability to adjust the capacity of a system to cost-efficiently fulfill demands. It usually means the ability to handle more users, clients, data, transactions, or requests without affecting the user experience. Importantly, scalability should allow us to scale down as much as scale up, and scaling should be relatively cheap and quick to do.
+
+⌂
+<br>﹈<br>^1712938100178
+
+ Scalability should allow us to 〔1:scale down〕 〔2:as much as〕〔1:scale up〕, and 〔1:scaling〕 should be 〔2:relatively cheap and quick to do〕.
+
+
+As of Feb. 10, 2024 04:31:30 PM, a 〔1:Java interface〕 only contains 〔1:static constants〕 and 〔1:abstract methods〕.
 
 ---
 

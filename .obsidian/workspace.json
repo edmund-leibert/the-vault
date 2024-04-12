@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a48e870137af2b5b",
+            "id": "94bedb1255519fc5",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -82,6 +82,14 @@
         "type": "tabs",
         "children": [
           {
+            "id": "5aade107ecd47490",
+            "type": "leaf",
+            "state": {
+              "type": "chronology-calendar-view",
+              "state": {}
+            }
+          },
+          {
             "id": "1150306fa01e40e1",
             "type": "leaf",
             "state": {
@@ -111,6 +119,14 @@
             }
           },
           {
+            "id": "fa50cdbb115860a4",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
+              "state": {}
+            }
+          },
+          {
             "id": "4c1b27a015290e86",
             "type": "leaf",
             "state": {
@@ -134,10 +150,10 @@
             }
           },
           {
-            "id": "5aade107ecd47490",
+            "id": "484501aa847349e9",
             "type": "leaf",
             "state": {
-              "type": "chronology-calendar-view",
+              "type": "ReferenceListView",
               "state": {}
             }
           },
@@ -146,22 +162,6 @@
             "type": "leaf",
             "state": {
               "type": "reference-map-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "8afb4c1a3fa1b15d",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
-          },
-          {
-            "id": "fa50cdbb115860a4",
-            "type": "leaf",
-            "state": {
-              "type": "quiet-outline",
               "state": {}
             }
           },
@@ -179,15 +179,15 @@
             }
           },
           {
-            "id": "484501aa847349e9",
+            "id": "8afb4c1a3fa1b15d",
             "type": "leaf",
             "state": {
-              "type": "ReferenceListView",
+              "type": "advanced-tables-toolbar",
               "state": {}
             }
           },
           {
-            "id": "65c504c9cf36f227",
+            "id": "df3fc9ea5658ace9",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -196,8 +196,7 @@
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -226,16 +225,15 @@
       "custom-sort:Toggle custom sorting": false,
       "cloze:Toggle all clozes": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "omnisearch:Omnisearch": false,
-      "obsidian-trash-explorer:Open trash explorer": false
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "a48e870137af2b5b",
+  "active": "94bedb1255519fc5",
   "lastOpenFiles": [
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/What is Scalability？.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/2725. Interval Cancellation.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Obsidian/Misc. Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/What is Scalability？.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Anki/Anki ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Java/Miscellaneous Notes.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
