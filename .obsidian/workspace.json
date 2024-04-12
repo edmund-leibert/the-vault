@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "784ff142693bfecb",
+            "id": "a48e870137af2b5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ZtTemplates/zt-annot.eta.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/What is Scalability？.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -21,12 +21,27 @@
             }
           },
           {
-            "id": "a48e870137af2b5b",
+            "id": "6ab4ed08b8b6f95c",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Obsidian/Misc. Notes.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "1f74d104b7b9717e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/2725. Interval Cancellation.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -63,7 +78,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#🔴-academic/📚-educational-resource/name/web-scalability-for-startup-engineers",
+                "query": "〔",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -80,7 +95,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -101,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Obsidian/Misc. Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Obsidian/Misc. Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +201,7 @@
             "state": {
               "type": "zotero-annotation-view",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Obsidian/Misc. Notes.md",
                 "itemId": 331,
                 "attachmentId": 334,
                 "follow": null
@@ -206,16 +222,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md"
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Obsidian/Misc. Notes.md"
               }
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 430.5
+    "width": 453.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -241,19 +257,33 @@
       "custom-sort:Toggle custom sorting": false,
       "cloze:Toggle all clozes": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "omnisearch:Omnisearch": false,
-      "obsidian-trash-explorer:Open trash explorer": false
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "a48e870137af2b5b",
+  "active": "6ab4ed08b8b6f95c",
   "lastOpenFiles": [
-    "ZtTemplates/zt-annot.eta.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/2725. Interval Cancellation.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Anki/Anki ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/What is Scalability？.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Obsidian/Misc. Notes.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Java/Miscellaneous Notes.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
+    "ZtTemplates/zt-annot.eta.md",
+    "LiteratureNotes/LiteratureNotes ∋ Table of Contents.md",
+    "LiteratureNotes/zt-import/Design and build scalable web a.This is an invaluable roadmap for meeting the rapid demand to delive.md",
+    "LiteratureNotes/zt-import/zt-import ∋ Table of Contents.md",
+    "LiteratureNotes/zt-import",
+    "LiteratureNotes",
+    "ZtTemplates/zt-colored.eta.md",
+    "ZtTemplates/zt-cite2.eta.md",
+    "ZtTemplates/zt-cite.eta.md",
+    "ZtTemplates/zt-annots.eta.md",
+    "ZtTemplates/zt-note.eta.md",
+    "ZtTemplates/zt-field.eta.md",
+    "LiteratureNotes/zt-import/Annotations (4_12_2024, 7_19_40 AM).md",
     "ZtTemplates/ZtTemplates ∋ Table of Contents.md",
     "ZtTemplates",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/What is Scalability？.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Obsidian/Misc. Notes.md",
     "the-vault/src/null Academic/null Academic ∋ Table of Contents.md",
     "the-vault/src/null Academic/null Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/What is Scalability？.md",
     "the-vault/src/null Academic/null Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
@@ -265,24 +295,9 @@
     "the-vault/src/null Academic",
     "the-vault/src/🔴 Academic/📚 Educational resource/sortspec.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/sortspec.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Untitled.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Structy/Structy ∋ Table of Contents.md",
-    "the-vault/🔴 Academics/🔴 Academics ∋ Table of Contents.md",
-    "the-vault/🔴 Academics/📚 Educational Resources/🌐 LeetCode/112. Path Sum.md",
-    "the-vault/🔴 Academics/📚 Educational Resources/🌐 LeetCode/🌐 LeetCode ∋ Table of Contents.md",
-    "the-vault/🔴 Academics/📚 Educational Resources/📚 Educational Resources ∋ Table of Contents.md",
     "the-vault/🔴 Academics/📚 Educational Resources/🌐 LeetCode",
     "the-vault/🔴 Academics/📚 Educational Resources",
-    "the-vault/🔴 Academics",
-    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/LeetCode ∋ Table of Contents.md",
-    "the-vault/assets/excalidraw/Drawing 2024-04-12 04.27.29.excalidraw.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/27. Remove Element.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/University Physics with Modern Physics, 15th Edition (2019)/APPLICATIONS.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Python/🗒️ Python ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/University Physics with Modern Physics, 15th Edition (2019)/UNIT CONVERSION FACTORS.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.light.png",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.light.svg",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.dark.png",
