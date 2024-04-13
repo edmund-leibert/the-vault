@@ -1,11 +1,62 @@
 {
-  "userAdmonitions": {},
+  "userAdmonitions": {
+    "NOTE": {
+      "type": "NOTE",
+      "color": "98, 146, 223",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-info"
+      },
+      "command": false,
+      "title": "Note",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "TIP": {
+      "type": "TIP",
+      "color": "75, 175, 105",
+      "icon": {
+        "type": "octicons",
+        "name": "light-bulb"
+      },
+      "command": false,
+      "title": "Tip",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "IMPORTANT": {
+      "type": "IMPORTANT",
+      "color": "181, 93, 182",
+      "icon": {
+        "name": "file-import",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "important",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "Warning": {
+      "type": "Warning",
+      "color": "148, 116, 0",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-alert-triangle"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    }
+  },
   "syntaxHighlight": false,
   "copyButton": true,
   "version": "10.2.0",
   "autoCollapse": false,
   "defaultCollapseType": "open",
-  "injectColor": false,
+  "injectColor": true,
   "parseTitles": true,
   "dropShadow": true,
   "hideEmpty": false,

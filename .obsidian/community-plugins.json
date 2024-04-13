@@ -45,8 +45,8 @@
   "reference-map",
   "update-time-on-edit",
   "obsidian-git",
-  "callout-manager",
   "zotlit",
   "obsidian-pandoc-reference-list",
-  "flashcards-obsidian"
+  "flashcards-obsidian",
+  "obsidian-admonition"
 ]
