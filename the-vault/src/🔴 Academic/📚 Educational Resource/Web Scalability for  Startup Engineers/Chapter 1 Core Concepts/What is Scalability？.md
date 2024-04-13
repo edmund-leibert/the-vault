@@ -1,7 +1,7 @@
 ---
 title: What is Scalability?
 created: 2024-04-12T05:58
-updated: 2024-04-12T21:22
+updated: 2024-04-13T02:06
 authors:
   - Edmund Leibert III
 tags:
@@ -18,37 +18,42 @@ banner_y:
 
 ---
 
-> [!INFO] Note
+> [!NOTE] Note
 > These notes are of the **“What is Scalability?”** section of the **“Chapter 1. Core Concepts”** of the _**Web Scalability for Startup Engineers**_ book.
 >  
 > These notes are structured in a Q&A format, making it easy to follow and learn. Corresponding Anki flashcards are available, enabling efficient revision and reinforcement of the concepts. [@ejsmontWebScalabilityStartup2015]
+> 
 
 ---
 
-> [!INFO] Note
+> [!NOTE] Note
 > **Previous Notes**:
 > 
 
 ---
 
-> [!INFO] Note
+> [!NOTE] Note
+> 
 > **<ins>Table of Contents</ins>**
-> - :TiNotes: [What is Scalability?](obsidian://open?vault=the-vault&file=the-vault%2Fsrc%2F%F0%9F%94%B4%20Academic%2F%F0%9F%93%9A%20Educational%20resource%2FWeb%20Scalability%20for%20%20Startup%20Engineers%2FChapter%201.%20Core%20Concepts%2FWhat%20is%20Scalability%EF%BC%9F)
-> 	- Evolution from a Single Server to a Global Audience
-> 	- Overview of a Data Center Infrastructure
-> 	- Overview of the Application Architecture
-> 	- Summary
+> 
+> :TiNotes: [What is Scalability?](obsidian://open?vault=the-vault&file=the-vault%2Fsrc%2F%F0%9F%94%B4%20Academic%2F%F0%9F%93%9A%20Educational%20resource%2FWeb%20Scalability%20for%20%20Startup%20Engineers%2FChapter%201.%20Core%20Concepts%2FWhat%20is%20Scalability%EF%BC%9F)
+> - Evolution from a Single Server to a Global Audience
+> - Overview of a Data Center Infrastructure
+> - Overview of the Application Architecture
+> - Summary
+>
 
 ---
 
-> [!INFO] Note 
+> [!NOTE] Note 
 > :EiZotero: Page 3
-> 
->  > Scalability is an ability to adjust the capacity of the system to cost- efficiently fulfill the demands. Scalability usually means an ability to handle more users, clients, data, transactions, or requests without affecting the user experience. It is important to remember that scalability should allow us to scale down as much as scale up and that scaling should be relatively cheap and quick to do.
-> 
+>
+> > Scalability is an ability to adjust the capacity of the system to cost- efficiently fulfill the demands. Scalability usually means an ability to handle more users, clients, data, transactions, or requests without affecting the user experience. It is important to remember that scalability should allow us to scale down as much as scale up and that scaling should be relatively cheap and quick to do.
+>
 > ---
 > What is the definition of scalability?
 > ^IYDYUYB5aKJZ5LZHZp24
+> 
 
 ﹇<br>
 As of Apr. 12, 2024 08:59:56 AM, what is **scalability** and its importance in a system?
@@ -122,27 +127,28 @@ As of Apr. 12, 2024 09:10:23 PM, what is concurrency?
 
 Concurrency measures how many clients your system can serve at the same time. If you are building a web-based application, concurrency means how many users can use your application at the same time without affecting their user experience.
 
-⌂  
-
+⌂
 <br>﹈<br>
 
-> [!INFO] Note 
-> :EiZotero: Page 3
+> [!NOTE] Note 
+> Page 3
 > 
 >  > concurrency
 > 
 > ---
 > How is concurrency and parallelism related?
 > ^YNY8965FaKJZ5LZHZp24
+> 
 
-> [!INFO] Note 
-> :EiZotero: Page 3
+> [!NOTE] Note 
+> Page 3
 > 
 >  > Concurrency measures how many clients your system can serve at the same time.
 > 
 > ---
 > The definition of concurrency.
 > ^DWLVAHDDaKJZ5LZHZp24
+> 
 
 ﹇<br>
 As of Apr. 12, 2024 09:10:23 PM, why is **concurrency** difficult?
@@ -193,6 +199,7 @@ So while parallelism requires multiple CPUs/cores, concurrency is a program stru
 
 > [!IMPORTANT] Important
 > **Concurrency** is a broader concept that encompasses parallelism on systems with multiple CPUs/cores, but allows programs to still make progress on single-core systems.
+> 
 
 ⌂
 <br>﹈<br>
@@ -206,7 +213,7 @@ A. Ejsmont, _Web Scalability for Startup Engineers_. New York: McGraw-Hill Educa
 
 ---
 
-> [!INFO] Note
+> [!NOTE] Note
 > **Next Notes**:
 > - [0. Introduction ∋ Table of Contents](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/0.%20Introduction%20∋%20Table%20of%20Contents.md)
 

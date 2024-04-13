@@ -3,7 +3,7 @@
     "migrated": 4,
     "iconPacksPath": ".obsidian/icons",
     "fontSize": 16,
-    "emojiStyle": "none",
+    "emojiStyle": "twemoji",
     "iconColor": null,
     "recentlyUsedIcons": [
       "TiNotes",
@@ -130,7 +130,7 @@
     },
     "iconInTabsEnabled": true,
     "iconInTitleEnabled": false,
-    "iconInFrontmatterEnabled": true,
+    "iconInFrontmatterEnabled": false,
     "iconsBackgroundCheckEnabled": true,
     "iconsInNotesEnabled": true,
     "iconIdentifier": ":",

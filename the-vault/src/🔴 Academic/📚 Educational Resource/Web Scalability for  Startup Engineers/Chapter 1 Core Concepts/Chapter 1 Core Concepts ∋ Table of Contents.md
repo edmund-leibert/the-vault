@@ -1,7 +1,7 @@
 ---
 title: Chapter 1 Core Concepts ∋ Table of Contents
 created: 2024-04-12T05:58
-updated: 2024-04-12T11:59
+updated: 2024-04-13T02:03
 authors:
   - Edmund Leibert III
 tags:
@@ -18,32 +18,34 @@ banner_y: 0
 
 ---
 
-> [!INFO] Note
+> [!NOTE] Note
 > These notes are of the **“Chapter 1 Core Concepts”** section of the _**Web Scalability for Startup Engineers**_ book.
 >  
 > These notes are structured in a Q&A format, making it easy to follow and learn. Corresponding Anki flashcards are available, enabling efficient revision and reinforcement of the concepts. [@ejsmontWebScalabilityStartup2015]
 
 ---
 
-> [!INFO] Note
+> [!NOTE] Note
 > **Previous Notes**:
 > 
 
 ---
 
-> [!INFO] Note
+> [!NOTE] Note
 > **<ins>Table of Contents</ins>**
 > 
-> - :FasListOl: **Chapter 1 Core Concepts**
-> 	- :TiNotes: [What is Scalability?](obsidian://open?vault=the-vault&file=the-vault%2Fsrc%2F%F0%9F%94%B4%20Academic%2F%F0%9F%93%9A%20Educational%20resource%2FWeb%20Scalability%20for%20%20Startup%20Engineers%2FChapter%201.%20Core%20Concepts%2FWhat%20is%20Scalability%EF%BC%9F)
-> 	- :TiNotes: Evolution from a Single Server to a Global Audience
-> 	- :TiNotes: Overview of a Data Center Infrastructure
-> 	- :TiNotes: Overview of the Application Architecture
-> 	- :TiNotes: Summary
+> :FasListOl: **Chapter 1 Core Concepts**
+> - :TiNotes: [What is Scalability?](obsidian://open?vault=the-vault&file=the-vault%2Fsrc%2F%F0%9F%94%B4%20Academic%2F%F0%9F%93%9A%20Educational%20resource%2FWeb%20Scalability%20for%20%20Startup%20Engineers%2FChapter%201.%20Core%20Concepts%2FWhat%20is%20Scalability%EF%BC%9F)
+> - :TiNotes: Evolution from a Single Server to a Global Audience
+> - :TiNotes: Overview of a Data Center Infrastructure
+> - :TiNotes: Overview of the Application Architecture
+> - :TiNotes: Summary
+> 
 
 ---
 
-> [!INFO] Note 
+> [!NOTE] Note 
+> 
 > :EiZotero: Page 2
 > 
 >  > For now, it’s important to establish three main pillars of scalability: what it is and how it evolves, what it looks like in a large-scale application, and what its application architecture looks like.
@@ -51,6 +53,7 @@ banner_y: 0
 > ---
 > Good question to figure out is what are the three main pillars of scalability.
 > ^XEH6LP28aKJZ5LZHZp23
+> 
 
 ﹇<br>
 As of Apr. 12, 2024 07:38:46 AM, what are the three main pillars of **scalability** that are important to establish a comprehension of the topic?
@@ -65,12 +68,17 @@ As of Apr. 12, 2024 07:38:46 AM, what are the three main pillars of **scalabilit
 <br>﹈<br>^1712935563039
 
 > [!IMPORTANT] Important
-> > [!INFO] Note 
+> > [!NOTE] Note
+> >  
 > > :EiZotero: Page 2
+> > 
 > > > worth revisiting it after you’ve read the entire book
->  > ---
-> Need to revisit this chapter after reading this book.
-> ^D79DNYNYaKJZ5LZHZp23
+> >
+> > ---
+> > Need to revisit this chapter after reading this book.
+> > ^D79DNYNYaKJZ5LZHZp23
+> >
+> 
 
 ---
 
@@ -81,7 +89,7 @@ A. Ejsmont, _Web Scalability for Startup Engineers_. New York: McGraw-Hill Educa
 
 ---
 
-> [!INFO] Note
+> [!NOTE] Note
 > **Next Notes**:
 > - [What is Scalability?](obsidian://open?vault=the-vault&file=the-vault%2Fsrc%2F%F0%9F%94%B4%20Academic%2F%F0%9F%93%9A%20Educational%20resource%2FWeb%20Scalability%20for%20%20Startup%20Engineers%2FChapter%201%20Core%20Concepts%2FWhat%20is%20Scalability%EF%BC%9F)
 

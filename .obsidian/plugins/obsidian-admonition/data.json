@@ -73,7 +73,7 @@
   "defaultCollapseType": "open",
   "injectColor": true,
   "parseTitles": false,
-  "dropShadow": true,
+  "dropShadow": false,
   "hideEmpty": false,
   "open": {
     "admonitions": true,

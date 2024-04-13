@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2024-01-28T13:45
-updated: 2024-04-13T00:22
+updated: 2024-04-13T02:30
 authors:
   - Edmund Leibert III
 tags:
@@ -18,14 +18,14 @@ banner_y:
 
 ---
 
-> [!INFO] Note
-> These **miscellaneous** note pertain Obsidian.
+> [!NOTE] Note
+> These notes pertain to **miscellaneous** topics of Obsidian.
 >  
 > These notes are structured in a Q&A format, making it easy to follow and learn. Corresponding Anki flashcards are available, enabling efficient revision and reinforcement of the concepts. [@ejsmontWebScalabilityStartup2015]
 
 ---
 
-> [!INFO] Note
+> [!NOTE] Note
 > **Previous Notes**:
 > 
 
@@ -195,13 +195,13 @@ As of Apr. 12, 2024 07:53:37 AM, generally, what does each highlighting color si
 
 #card 
 
-- Yellow = Important points
-- Pink = Vocabulary
-- Green = Names, dates, or places
-- Blue = Theories and hypotheses
-- Orange = Point of view
-- Red = Critical (very rare)
-- Gray = Actions (things to do)
+- 🟨 Yellow = Important points
+- 🟪 Purple/Pink = Vocabulary
+- 🟩 Green = Names, dates, or places
+- 🟦 Blue = Theories and hypotheses
+- 🟧 Orange = Point of view
+- 🟥 Red = Critical (very rare)
+- ⬜ Gray = Actions (things to do)
 
 ⌂
 <br>﹈<br>
@@ -229,7 +229,7 @@ Xah Lee, “Unicode: Brackets, Quotes «»「」【】《》,” _∑ Xah Lee W
 
 ---
 
-> [!info]+ 
+> [!NOTE] Note
 > **Next Notes:**
 > 
 
