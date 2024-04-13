@@ -2,7 +2,7 @@ body {
     --p-spacing: 0.75rem;
 }
 
-.callout[data-callout="caution"] {
+/* .callout[data-callout="caution"] {
     border-left: 0.25em #cf222e solid;
 }
 .callout[data-callout="warning"] {
@@ -16,7 +16,7 @@ body {
 }
 .callout[data-callout="info"] {
     border-left: 0.25em #0969da solid;
-}
+} */
 
 /* .callout-icon svg {
     stroke-width: 2.5;

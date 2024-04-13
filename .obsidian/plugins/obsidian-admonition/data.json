@@ -28,7 +28,7 @@
     },
     "IMPORTANT": {
       "type": "IMPORTANT",
-      "color": "181, 93, 182",
+      "color": "129, 86, 194",
       "icon": {
         "type": "octicons",
         "name": "report"

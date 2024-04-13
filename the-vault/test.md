@@ -100,21 +100,6 @@ What are the various callouts?
 
 
 
-> [!info] Note
-> Highlights information that users should take into account, even when skimming.
-
-> [!tip] Tip
-> Optional information to help a user be more successful.
-
-> [!important] Important
-> Crucial information necessary for users to succeed.
-
-> [!warning] Warning
-> Critical content demanding immediate user attention due to potential risks.
-
-
-> [!caution] Caution
-> Contents
 
 {1:purple}
 
