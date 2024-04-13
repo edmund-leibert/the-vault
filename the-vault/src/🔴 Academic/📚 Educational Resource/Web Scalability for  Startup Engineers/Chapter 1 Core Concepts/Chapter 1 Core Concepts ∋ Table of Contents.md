@@ -1,7 +1,7 @@
 ---
-title: Chapter 1. Core Concepts ∋ Table of Contents
+title: Chapter 1 Core Concepts ∋ Table of Contents
 created: 2024-04-12T05:58
-updated: 2024-04-12T09:01
+updated: 2024-04-12T11:59
 authors:
   - Edmund Leibert III
 tags:
@@ -9,17 +9,17 @@ tags:
   - 🔴-academic/📚-educational-resource/format/book
   - 🔴-academic/📚-educational-resource/discipline/computer-science
   - study-note
-cards-deck: 🔴 Academic::📚 Educational resource::Web Scalability for Startup Engineers::Chapter 1. Core Concepts::Chapter 1. Core Concepts ∋ Table of Contents
+cards-deck: 🔴 Academic::📚 Educational resource::Web Scalability for Startup Engineers::Chapter 1 Core Concepts::Chapter 1 Core Concepts ∋ Table of Contents
 banner: 
 banner_y: 0
 ---
 
-# Chapter 1. Core Concepts ∋ Table of Contents 
+# Chapter 1 Core Concepts ∋ Table of Contents 
 
 ---
 
 > [!INFO] Note
-> These notes are of the **“Chapter 1. Core Concepts”** section of the _**Web Scalability for Startup Engineers**_ book.
+> These notes are of the **“Chapter 1 Core Concepts”** section of the _**Web Scalability for Startup Engineers**_ book.
 >  
 > These notes are structured in a Q&A format, making it easy to follow and learn. Corresponding Anki flashcards are available, enabling efficient revision and reinforcement of the concepts. [@ejsmontWebScalabilityStartup2015]
 
@@ -34,7 +34,7 @@ banner_y: 0
 > [!INFO] Note
 > **<ins>Table of Contents</ins>**
 > 
-> - :FasListOl: **Chapter 1. Core Concepts**
+> - :FasListOl: **Chapter 1 Core Concepts**
 > 	- :TiNotes: [What is Scalability?](obsidian://open?vault=the-vault&file=the-vault%2Fsrc%2F%F0%9F%94%B4%20Academic%2F%F0%9F%93%9A%20Educational%20resource%2FWeb%20Scalability%20for%20%20Startup%20Engineers%2FChapter%201.%20Core%20Concepts%2FWhat%20is%20Scalability%EF%BC%9F)
 > 	- :TiNotes: Evolution from a Single Server to a Global Audience
 > 	- :TiNotes: Overview of a Data Center Infrastructure

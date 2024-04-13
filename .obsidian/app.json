@@ -3,7 +3,7 @@
   "showLineNumber": true,
   "spellcheck": true,
   "vimMode": true,
-  "defaultViewMode": "source",
+  "defaultViewMode": "preview",
   "livePreview": false,
   "readableLineLength": false,
   "promptDelete": false,

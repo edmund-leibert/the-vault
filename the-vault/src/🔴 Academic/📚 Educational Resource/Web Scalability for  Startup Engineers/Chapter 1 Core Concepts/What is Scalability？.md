@@ -1,7 +1,7 @@
 ---
 title: What is Scalability?
 created: 2024-04-12T05:58
-updated: 2024-04-12T09:20
+updated: 2024-04-12T11:28
 authors:
   - Edmund Leibert III
 tags:
@@ -60,10 +60,69 @@ Scalability is the ability to adjust the capacity of a system to cost-efficientl
 ⌂
 <br>﹈<br>^1712938100178
 
- Scalability should allow us to 〔1:scale down〕 〔2:as much as〕〔1:scale up〕, and 〔1:scaling〕 should be 〔2:relatively cheap and quick to do〕.
+ Scalability should allow us to 〔1:scale down〕 〔2:as much as〕 〔1:scale up〕, and 〔1:scaling〕 should be 〔2:relatively cheap and quick to do〕.
+^1712945990362
 
+﹇<br>
+As of Apr. 12, 2024 11:25:57 AM, {{Question}}
 
-As of Feb. 10, 2024 04:31:30 PM, a 〔1:Java interface〕 only contains 〔1:static constants〕 and 〔1:abstract methods〕.
+#card 
+
+{{Answer}}
+
+⌂
+<br>﹈<br>^1712946508337
+
+﹇<br>
+As of Apr. 12, 2024 11:26:00 AM, what are the common challenges of handling more data in terms of scalability?
+
+#card 
+
+As a business grows and becomes more popular, it will have to handle more user accounts, products, location data, and digital content. 
+
+Processing more data puts pressure on the system as data needs to be sorted, searched through, read from disks, written to disks, and sent over the network. 
+
+Especially today, with the growing popularity of big data analytics, companies are storing ever-growing amounts of data without ever deleting it.
+
+⌂
+<br>﹈<br>^1712946508358
+
+﹇<br>
+As of Apr. 12, 2024 11:26:04 AM, what does handling higher concurrency levels mean in terms of scalability?
+
+#card 
+
+Concurrency measures how many clients your system can serve at the same time. If you are building a web-based application, concurrency means how many users can use your application at the same time without affecting their user experience. 
+
+Concurrency is difficult, as your servers have a limited amount of central processing units (CPUs) and execution threads. It is even more difficult, as you may need to synchronize parallel execution of your code to ensure consistency of your data. 
+
+Higher concurrency means more open connections, more active threads, more messages being processed at the same time, and more CPU context switches.
+
+⌂
+<br>﹈<br>^1712946508368
+
+﹇<br>
+As of Apr. 12, 2024 11:26:07 AM, what does handling higher interaction rates mean in terms of scalability?
+
+#card 
+
+The third dimension of scalability is the rate of interactions between your system and your clients. It is related to concurrency, but is a slightly different dimension. The rate of interactions measures how often your clients exchange information with your servers. For example, if you are building a website, your clients would navigate from one page to another, triggering server requests.
+
+⌂
+<br>﹈<br>^1712946508377
+
+﹇<br>
+As of Apr. 12, 2024 11:27:53 AM, what are the three measurements used for scalability?
+
+#card 
+
+1. **Handling more data**: This involves efficiently managing an increasing amount of user accounts, products, location data, and digital content.
+2. **Handling higher concurrency levels**: This measures how many clients your system can serve at the same time without affecting the user experience.
+3. **Handling higher interaction rates**: This measures how often your clients exchange information with your servers.
+
+⌂
+<br>﹈<br>^1712946508390
+
 
 ---
 
