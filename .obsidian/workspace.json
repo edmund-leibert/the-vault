@@ -13,20 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/MSYS2 Documentation/What is MSYS2？.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "e51f50648382f6b8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "the-vault/test.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Table of Contents.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -107,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/MSYS2 Documentation/What is MSYS2？.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Table of Contents.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/MSYS2 Documentation/What is MSYS2？.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Table of Contents.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +170,7 @@
             "state": {
               "type": "zotero-annotation-view",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/MSYS2 Documentation/What is MSYS2？.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Table of Contents.md",
                 "itemId": 331,
                 "attachmentId": 334,
                 "follow": null
@@ -196,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/MSYS2 Documentation/What is MSYS2？.md"
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Table of Contents.md"
               }
             }
           }
@@ -235,11 +222,18 @@
   },
   "active": "a1d1664d5367d7ae",
   "lastOpenFiles": [
-    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Obsidian/Miscellaneous Notes.md",
-    "the-vault/test.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md",
+    "LiteratureNotes/zt-import/zt-import ∋ Table of Contents.md",
+    "LiteratureNotes/LiteratureNotes ∋ Table of Contents.md",
+    "LiteratureNotes/zt-import/Annotations (4_12_2024, 7_19_40 AM).md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Table of Contents.md",
+    "LiteratureNotes/zt-import",
+    "LiteratureNotes",
+    "ZtTemplates/zt-annot.eta.md",
+    "the-vault/test.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/MSYS2 Documentation/What is MSYS2？.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Obsidian/Miscellaneous Notes.md",
     "the-vault/daily-notes/2024-04-12.md",
     "the-vault/terror-interview-problem.md",
     "the-vault/daily-planners/daily-planners ∋ Table of Contents.md",
@@ -247,24 +241,16 @@
     "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Problems/2725. Interval Cancellation.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Anki/Anki ∋ Table of Contents.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Java/Miscellaneous Notes.md",
-    "ZtTemplates/zt-annot.eta.md",
-    "LiteratureNotes/LiteratureNotes ∋ Table of Contents.md",
     "LiteratureNotes/zt-import/Design and build scalable web a.This is an invaluable roadmap for meeting the rapid demand to delive.md",
-    "LiteratureNotes/zt-import/zt-import ∋ Table of Contents.md",
-    "LiteratureNotes/zt-import",
-    "LiteratureNotes",
     "ZtTemplates/zt-colored.eta.md",
     "ZtTemplates/zt-cite2.eta.md",
     "ZtTemplates/zt-cite.eta.md",
     "ZtTemplates/zt-annots.eta.md",
     "ZtTemplates/zt-note.eta.md",
     "ZtTemplates/zt-field.eta.md",
-    "LiteratureNotes/zt-import/Annotations (4_12_2024, 7_19_40 AM).md",
     "ZtTemplates/ZtTemplates ∋ Table of Contents.md",
     "ZtTemplates",
     "the-vault/src/null Academic/null Academic ∋ Table of Contents.md",
-    "the-vault/src/null Academic/null Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/What is Scalability？.md",
-    "the-vault/src/null Academic/null Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts/Chapter 1. Core Concepts ∋ Table of Contents.md",
     "the-vault/src/null Academic/null Educational resource/Web Scalability for  Startup Engineers/Chapter 1. Core Concepts",
     "the-vault/src/null Academic/null Educational resource/Web Scalability for  Startup Engineers",
     "the-vault/src/null Academic/null Educational resource",
