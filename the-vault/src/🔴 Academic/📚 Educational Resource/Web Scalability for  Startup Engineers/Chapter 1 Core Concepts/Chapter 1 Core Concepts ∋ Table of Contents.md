@@ -83,6 +83,6 @@ A. Ejsmont, _Web Scalability for Startup Engineers_. New York: McGraw-Hill Educa
 
 > [!INFO] Note
 > **Next Notes**:
-> - [What is Scalability？](obsidian://open?vault=the-vault&file=the-vault%2Fsrc%2F%F0%9F%94%B4%20Academic%2F%F0%9F%93%9A%20Educational%20resource%2FWeb%20Scalability%20for%20%20Startup%20Engineers%2FChapter%201.%20Core%20Concepts%2FWhat%20is%20Scalability%EF%BC%9F)
+> - [What is Scalability?](obsidian://open?vault=the-vault&file=the-vault%2Fsrc%2F%F0%9F%94%B4%20Academic%2F%F0%9F%93%9A%20Educational%20resource%2FWeb%20Scalability%20for%20%20Startup%20Engineers%2FChapter%201%20Core%20Concepts%2FWhat%20is%20Scalability%EF%BC%9F)
 
 ---

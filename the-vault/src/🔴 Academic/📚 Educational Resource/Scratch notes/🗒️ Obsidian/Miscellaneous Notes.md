@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2024-01-28T13:45
-updated: 2024-04-13T00:03
+updated: 2024-04-13T00:22
 authors:
   - Edmund Leibert III
 tags:
@@ -19,7 +19,7 @@ banner_y:
 ---
 
 > [!INFO] Note
-> These notes are of the **“What is Scalability?”** section of the **“Chapter 1. Core Concepts”** of the _**Web Scalability for Startup Engineers**_ book.
+> These **miscellaneous** note pertain Obsidian.
 >  
 > These notes are structured in a Q&A format, making it easy to follow and learn. Corresponding Anki flashcards are available, enabling efficient revision and reinforcement of the concepts. [@ejsmontWebScalabilityStartup2015]
 
@@ -206,14 +206,16 @@ As of Apr. 12, 2024 07:53:37 AM, generally, what does each highlighting color si
 ⌂
 <br>﹈<br>
 
+﹇<br>
+As of Apr. 13, 2024 12:18:16 AM, 
 
+#card 
 
-> [!IMPORTANT] Important
-> > [!INFO] Note 
-> > :EiZotero: Page 2
-> > 
-> > > worth revisiting it after you’ve read the entire book
->  > ^D79DNYNYaKJZ5LZHZp23
+{{Answer}}
+
+⌂
+<br>﹈<br>
+
 
 ---
 
@@ -228,7 +230,7 @@ Xah Lee, “Unicode: Brackets, Quotes «»「」【】《》,” _∑ Xah Lee W
 ---
 
 > [!info]+ 
-> **Next Note(s):**
+> **Next Notes:**
 > 
 
 ---

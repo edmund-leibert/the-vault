@@ -1,7 +1,7 @@
 ---
 title: Web Scalability for Startup Engineers ∋ Table of Contents
 created: 2024-04-12T04:06
-updated: 2024-04-12T11:58
+updated: 2024-04-12T19:02
 authors:
   - Edmund Leibert III
 tags:
@@ -61,7 +61,7 @@ A. Ejsmont, _Web Scalability for Startup Engineers_. New York: McGraw-Hill Educa
 
 > [!INFO] Note
 > **Next Notes**:
-> - [Chapter 1. Core Concepts ∋ Table of Contents](the-vault/src/null%20Academic/null%20Educational%20resource/Web%20Scalability%20for%20%20Startup%20Engineers/Chapter%201.%20Core%20Concepts/Chapter%201.%)
+> - [Chapter 1 Core Concepts ∋ Table of Contents](obsidian://open?vault=the-vault&file=the-vault%2Fsrc%2F%F0%9F%94%B4%20Academic%2F%F0%9F%93%9A%20Educational%20resource%2FWeb%20Scalability%20for%20%20Startup%20Engineers%2FChapter%201%20Core%20Concepts%2FChapter%201%20Core%20Concepts%20%E2%88%8B%20Table%20of%20Contents)
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: What is Scalability?
 created: 2024-04-12T05:58
-updated: 2024-04-12T11:28
+updated: 2024-04-12T21:22
 authors:
   - Edmund Leibert III
 tags:
@@ -64,16 +64,6 @@ Scalability is the ability to adjust the capacity of a system to cost-efficientl
 ^1712945990362
 
 ﹇<br>
-As of Apr. 12, 2024 11:25:57 AM, {{Question}}
-
-#card 
-
-{{Answer}}
-
-⌂
-<br>﹈<br>^1712946508337
-
-﹇<br>
 As of Apr. 12, 2024 11:26:00 AM, what are the common challenges of handling more data in terms of scalability?
 
 #card 
@@ -123,6 +113,89 @@ As of Apr. 12, 2024 11:27:53 AM, what are the three measurements used for scalab
 ⌂
 <br>﹈<br>^1712946508390
 
+Got it, I will use the current time when creating Anki style flashcards going forward. Here are the cards with the time updated to 9:10:23 PM:
+
+﹇<br>
+As of Apr. 12, 2024 09:10:23 PM, what is concurrency?
+
+#card
+
+Concurrency measures how many clients your system can serve at the same time. If you are building a web-based application, concurrency means how many users can use your application at the same time without affecting their user experience.
+
+⌂  
+
+<br>﹈<br>
+
+> [!INFO] Note 
+> :EiZotero: Page 3
+> 
+>  > concurrency
+> 
+> ---
+> How is concurrency and parallelism related?
+> ^YNY8965FaKJZ5LZHZp24
+
+> [!INFO] Note 
+> :EiZotero: Page 3
+> 
+>  > Concurrency measures how many clients your system can serve at the same time.
+> 
+> ---
+> The definition of concurrency.
+> ^DWLVAHDDaKJZ5LZHZp24
+
+﹇<br>
+As of Apr. 12, 2024 09:10:23 PM, why is **concurrency** difficult?
+
+#card
+
+Concurrency is difficult, as your servers have a limited amount of central processing units (CPUs) and execution threads. It is even more difficult, as you may need to synchronize parallel execution of your code to ensure consistency of your data.
+
+⌂
+<br>﹈<br>  
+
+﹇<br>
+As of Apr. 12, 2024 09:10:23 PM, what does higher concurrency mean?  
+
+#card
+
+Higher concurrency means more open connections, more active threads, more messages being processed at the same time, and more CPU context switches.
+
+⌂
+<br>﹈<br>
+
+﹇<br>
+As of Apr. 12, 2024 09:19:08 PM, what is the difference between **concurrency** and **parallelism**?
+
+#card
+
+**Parallelism** utilizes multiple CPU cores to execute multiple threads entirely simultaneously. For example, if you have a multi-core processor, it can do multiple calculations at exactly the same time, with each calculation running on a separate CPU core.
+
+**Concurrency** is about dealing with multiple tasks in a way that allows them to make progress by interleaving their execution on a single CPU core. For example, a web server handles multiple requests concurrently by switching between servicing one request at a time when it is waiting on I/O for another request.
+
+At a lower level, concurrency is about structuring your program and using techniques like async/await, callbacks, promises, threads, etc. to allow separate tasks to be interleaved. Parallelism requires parallel hardware and distributes different segments of the same task across multiple CPU cores.
+
+⌂
+<br>﹈<br>
+
+﹇<br>
+As of Apr. 12, 2024 09:22:03 PM, how are parallelism and concurrency related?
+
+#card
+
+**Parallelism** and **concurrency** are closely related concepts, but with some key differences:
+
+**Parallelism** is about truly doing multiple tasks at the exact same time, by utilizing multiple CPU cores. Concurrency is about dealing with multiple tasks in a way that allows them to make progress independently and be interleaved on a single CPU core.
+
+However, **concurrency** enables parallelism on a multi-core system. By breaking tasks down into independently executable units, concurrent programs can effectively utilize multiple cores for parallel execution.
+
+So while parallelism requires multiple CPUs/cores, concurrency is a program structure and technique that allows a single process to be divided into tasks that can execute in parallel once CPU cores are available.
+
+> [!IMPORTANT] Important
+> **Concurrency** is a broader concept that encompasses parallelism on systems with multiple CPUs/cores, but allows programs to still make progress on single-core systems.
+
+⌂
+<br>﹈<br>
 
 ---
 
