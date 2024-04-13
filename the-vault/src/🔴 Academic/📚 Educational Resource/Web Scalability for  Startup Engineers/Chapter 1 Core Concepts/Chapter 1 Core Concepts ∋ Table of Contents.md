@@ -1,7 +1,7 @@
 ---
 title: Chapter 1 Core Concepts ∋ Table of Contents
 created: 2024-04-12T05:58
-updated: 2024-04-13T02:03
+updated: 2024-04-13T03:00
 authors:
   - Edmund Leibert III
 tags:
@@ -44,16 +44,16 @@ banner_y: 0
 
 ---
 
-> [!NOTE] Note 
-> 
-> :EiZotero: Page 2
-> 
->  > For now, it’s important to establish three main pillars of scalability: what it is and how it evolves, what it looks like in a large-scale application, and what its application architecture looks like.
-> 
-> ---
-> Good question to figure out is what are the three main pillars of scalability.
-> ^XEH6LP28aKJZ5LZHZp23
-> 
+
+:EiZotero: **Zotero Annotation** <br>
+Page 2 :: 🟨 Important point<br>
+> For now, it’s important to establish three main pillars of scalability: what it is and how it evolves, what it looks like in a large-scale application, and what its application architecture looks like.
+
+---
+Good question to figure out is what are the three main pillars of scalability.
+^XEH6LP28aKJZ5LZHZp23
+
+
 
 ﹇<br>
 As of Apr. 12, 2024 07:38:46 AM, what are the three main pillars of **scalability** that are important to establish a comprehension of the topic?

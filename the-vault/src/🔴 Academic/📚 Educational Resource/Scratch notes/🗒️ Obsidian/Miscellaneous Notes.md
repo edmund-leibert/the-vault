@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2024-01-28T13:45
-updated: 2024-04-13T02:30
+updated: 2024-04-13T02:49
 authors:
   - Edmund Leibert III
 tags:
@@ -195,23 +195,36 @@ As of Apr. 12, 2024 07:53:37 AM, generally, what does each highlighting color si
 
 #card 
 
-- 🟨 Yellow = Important points
-- 🟪 Purple/Pink = Vocabulary
-- 🟩 Green = Names, dates, or places
-- 🟦 Blue = Theories and hypotheses
-- 🟧 Orange = Point of view
-- 🟥 Red = Critical (very rare)
-- ⬜ Gray = Actions (things to do)
+- 🟨 **Yellow** = Important points
+- 🟪 **Purple**, **Pink**, or **Magenta** = Vocabulary
+- 🟩 **Green** = Names (People), dates, or places
+- 🟦 **Blue** = Theories and hypotheses
+- 🟧 **Orange** = Point of view
+- 🟥 **Red** = Critical (very rare)
+- 🟫 **Brown** or **Gray** = Actions (things to do)
 
 ⌂
 <br>﹈<br>
 
 ﹇<br>
-As of Apr. 13, 2024 12:18:16 AM, 
+As of Apr. 13, 2024 12:18:16 AM, what are the various **callouts** I can use that will conform to the **GitHub Flavored Markdown**? 
 
 #card 
 
-{{Answer}}
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]  
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
 
 ⌂
 <br>﹈<br>

@@ -411,7 +411,6 @@
     "the-vault/🔴 Academics/📚 Educational Resources/Structy/1. Array and String/1. Array and String ∋ Table of Contents.md": "911bf0da91b74133888f1cad56c8f0d6c99a3f777457da967ad77aa7a95eedf0",
     "the-vault/🔴 Academics/📚 Educational Resources/Structy/0. Introduction/0. Introduction ∋ Table of Contents.md": "f1345095864cd39d701e898216411167c4b3683e777c25024f0c4f536011f105",
     "the-vault/🔴 Academics/📚 Educational Resources/LeetCode/Problems/Problems ∋ Table of Contents.md": "ab869ef4c38f684aa0e5cbb52eb6c06dd6de3fc6e76d0d9bd57a42d5bd2efc8b",
-    "the-vault/terror-interview-problem.md": "95aaf58c7a86518c8cdb438671bf5db688ffb9711d8ba1329f9c4cc66ad4cd16",
     "README.md": "84dfac189ac1dc3705c5636f10ea67d4819a55c4b108842a48eeb26fa55c4aa9",
     "the-vault/sortspec.md": "f5918ee995403ec0aa0c3ea312f940b0776807813cc55ba6bb1f0a05b362f766",
     "the-vault/src/🔴 Academic/📚 Educational Resource/🗒️ esbuild/Misc. Notes.md": "aa9842dc1082186572c0d0bd526fa1c5ea0843dd69d5a608fc8086d111d3b369",
@@ -1030,7 +1029,8 @@
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/sortspec.md": "1de4eba4ba13097e3bbd18704637a0261e43b6939096ede2243b7af93c2acd24",
     "the-vault/src/🔴 Academic/📚 Educational resource/Anki/Anki ∋ Table of Contents.md": "fb668997c50ba09cfcc90d78edb2c99fb29eb05798046efb5d2dc0aff9855de8",
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md": "2097433718f8fb3fb44dd036132661f713d993737ca79c337dbf55facf5eebfc",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Table of Contents.md": "fadee22c3a1c287498b5c41ac8a07308530920ec0f8cc18d6845acb3b7eb69ff",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Obsidian/Miscellaneous Notes.md": "b21f5ceb57589154c999996d8d84bf8af3739decdb5e6ecde04b0863c3b50d1c"
+    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Table of Contents.md": "22dba46e1f30355cd70dc62190b4e2e109a9f35799b1296ef5d7f63c17c31724",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Obsidian/Miscellaneous Notes.md": "db52044e2f3f3696a7b154e5682d8317223bdc98c7ed07714819d3c93dadcf15",
+    "kartik-misc/terror-interview-problem.md": "95aaf58c7a86518c8cdb438671bf5db688ffb9711d8ba1329f9c4cc66ad4cd16"
   }
 }
