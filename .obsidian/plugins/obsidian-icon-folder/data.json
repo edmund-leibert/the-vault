@@ -96,7 +96,7 @@
         "order": 14
       },
       {
-        "rule": ".* ∋ Table of Contents",
+        "rule": ".* ∋ Folder Note",
         "icon": "FasListOl",
         "for": "files",
         "order": 15,
@@ -106,7 +106,8 @@
         "rule": ".*",
         "icon": "RiFolderFill",
         "for": "folders",
-        "order": 15
+        "order": 15,
+        "useFilePath": true
       },
       {
         "rule": ".*\\.md",

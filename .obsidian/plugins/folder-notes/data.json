@@ -123,10 +123,10 @@
   "underlineFolderInPath": true,
   "openFolderNoteOnClickInPath": true,
   "openInNewTab": false,
-  "folderNoteName": "{{folder_name}} ∋ Table of Contents",
+  "folderNoteName": "{{folder_name}} ∋ Folder Note",
   "folderNoteType": ".md",
   "disableFolderHighlighting": false,
-  "newFolderNoteName": "{{folder_name}} ∋ Table of Contents",
+  "newFolderNoteName": "{{folder_name}} ∋ Folder Note",
   "storageLocation": "insideFolder",
   "syncDelete": false,
   "showRenameConfirmation": true,
@@ -157,7 +157,7 @@
     "explorer": false,
     "path": false
   },
-  "settingsTab": "general",
+  "settingsTab": "exclude_folders",
   "supportedFileTypes": [
     "md"
   ],

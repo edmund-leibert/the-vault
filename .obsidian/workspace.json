@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "74340a984949f079",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Folder Note.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -35,7 +48,8 @@
               "pinned": true
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,8 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 468.5,
-    "collapsed": true
+    "width": 468.5
   },
   "right": {
     "id": "1186c1364788cf17",
@@ -111,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Folder Note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Folder Note.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +200,7 @@
             "state": {
               "type": "zotero-annotation-view",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Table of Contents.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Folder Note.md",
                 "itemId": 331,
                 "attachmentId": 334,
                 "follow": null
@@ -200,7 +213,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Table of Contents.md"
+                "file": "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Folder Note.md"
               }
             }
           },
@@ -212,8 +225,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "horizontal",
@@ -243,17 +255,17 @@
       "cloze:Toggle all clozes": false,
       "obsidian-day-planner:Timeline": false,
       "reference-map:Reference Map": false,
-      "flashcards-obsidian:Generate flashcards": false,
-      "obsidian-trash-explorer:Open trash explorer": false
+      "flashcards-obsidian:Generate flashcards": false
     }
   },
-  "active": "90cbafe742edb98c",
+  "active": "74340a984949f079",
   "lastOpenFiles": [
+    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
     "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Obsidian/Miscellaneous Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Table of Contents.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Folder Note.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md",
     "ZtTemplates/zt-annot.eta.md",
-    "ZtTemplates/ZtTemplates ∋ Table of Contents.md",
+    "ZtTemplates/ZtTemplates ∋ Folder Note.md",
     "ZtTemplates/zt-colored.eta.md",
     "ZtTemplates/zt-cite2.eta.md",
     "ZtTemplates/zt-cite.eta.md",
@@ -262,9 +274,8 @@
     "ZtTemplates/zt-note.eta.md",
     "ZtTemplates",
     "the-vault/src/🔴 Academic/📚 Educational resource/Vim/Miscellanous Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md",
     "README.md",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Anki/Anki ∋ Table of Contents.md",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Anki/Anki ∋ Folder Note.md",
     "the-vault/test.md",
     "LiteratureNotes/zt-import/zt-import ∋ Table of Contents.md",
     "LiteratureNotes/LiteratureNotes ∋ Table of Contents.md",
