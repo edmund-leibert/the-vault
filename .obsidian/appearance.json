@@ -12,9 +12,10 @@
     "realistic-highlight",
     "source-mode",
     "spoiler",
-    "callouts",
     "banners",
-    "multi-select-container"
+    "multi-select-container",
+    "custom-admonitions.7f445c",
+    "callouts"
   ],
   "monospaceFontFamily": "FiraCode Nerd Font,Consolas",
   "textFontFamily": "Atkinson Hyperlegible,Arial,Trebuchet MS",

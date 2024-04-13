@@ -2,7 +2,7 @@
   "userAdmonitions": {
     "NOTE": {
       "type": "NOTE",
-      "color": "98, 146, 223",
+      "color": "43, 90, 166",
       "icon": {
         "type": "obsidian",
         "name": "lucide-info"
@@ -15,7 +15,7 @@
     },
     "TIP": {
       "type": "TIP",
-      "color": "75, 175, 105",
+      "color": "54, 129, 77",
       "icon": {
         "type": "octicons",
         "name": "light-bulb"
@@ -30,25 +30,40 @@
       "type": "IMPORTANT",
       "color": "181, 93, 182",
       "icon": {
-        "name": "file-import",
-        "type": "font-awesome"
+        "type": "octicons",
+        "name": "report"
       },
       "command": false,
-      "title": "important",
+      "title": "Important",
       "injectColor": true,
       "noTitle": false,
       "copy": true
     },
-    "Warning": {
-      "type": "Warning",
+    "WARNING": {
+      "type": "WARNING",
       "color": "148, 116, 0",
       "icon": {
         "type": "obsidian",
         "name": "lucide-alert-triangle"
       },
       "command": false,
+      "title": "Warning",
       "injectColor": true,
-      "noTitle": false
+      "noTitle": false,
+      "copy": true
+    },
+    "CAUTION": {
+      "type": "CAUTION",
+      "color": "219, 0, 0",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-alert-octagon"
+      },
+      "command": false,
+      "title": "Caution",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
     }
   },
   "syntaxHighlight": false,
