@@ -72,7 +72,7 @@
   "autoCollapse": false,
   "defaultCollapseType": "open",
   "injectColor": true,
-  "parseTitles": true,
+  "parseTitles": false,
   "dropShadow": true,
   "hideEmpty": false,
   "open": {
