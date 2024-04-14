@@ -1,7 +1,7 @@
 ---
 title: What is a container?
 created: 2023-10-31T16:39
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -33,7 +33,7 @@ A {{1:container} is an {2:isolated environment for your code}.
 ﹇<br>
 Does a container have knowledge of your operating system, or files?
 
-#card 
+#anki-card 
 
 No, a container has no knowledge of your operating system, or your files
 
@@ -43,7 +43,7 @@ No, a container has no knowledge of your operating system, or your files
 ﹇<br>
 Do _containers_ have everything that you need in order to run, down to a base operating system?
 
-#card 
+#anki-card 
 
 Yes.
 
@@ -57,7 +57,7 @@ What exactly is the **Host port** option under **Optional settings** when runnin
 
 ![|400](https://docs.docker.com/guides/walkthroughs/images/getting-started-setup.webp?w=250&border=true)
 
-#card 
+#anki-card 
 
 The **Host port** option under **Optional settings** when running an image from Docker Desktop is used to map a port on your host machine to a port in the Docker container. This is known as port mapping or port forwarding.
 
@@ -75,7 +75,7 @@ For example, if you have a web server running in a Docker container listening on
 ﹇<br>
 Can you view your containers in Docker Desktop?
 
-#card 
+#anki-card 
 
 Yes, you can view it in the **Containers** tab of Docker Desktop.
 
@@ -88,7 +88,7 @@ Yes, you can view it in the **Containers** tab of Docker Desktop.
 ﹇<br>
 The container in this walkthrough runs a simple web server that displays a simple website. What is an example architecture of a more complex project using docker containers?
 
-#card 
+#anki-card 
 
 When working with more complex projects, you'll run different parts in different containers. For example, a different container for the frontend, backend, and database. In this walkthrough, you only have a simple frontend container.
 
@@ -102,7 +102,7 @@ When working with more complex projects, you'll run different parts in different
 ﹇<br>
 In Docker Desktop, how can you easily view and interact with different aspects of your container?
 
-#card 
+#anki-card 
 
 In Docker Desktop, simply select your container and then select **Files** to explore your container's isolated file system.
 
@@ -116,7 +116,7 @@ In Docker Desktop, when I inspect the files of a running container, what does th
 
 ![|550](the-vault/assets/images/Pasted%20image%2020231117020633.png)
 
-#card 
+#anki-card 
 
 [In Docker Desktop, when you inspect the files of a running or stopped container, you can see which files have been recently added, modified, or deleted](https://docs.docker.com/desktop/use-desktop/container/)[1](https://docs.docker.com/desktop/use-desktop/container/). [The “modified” note indicates that the file has been changed or updated in some way since the container was started](https://docs.docker.com/desktop/use-desktop/container/)[1](https://docs.docker.com/desktop/use-desktop/container/). 
 

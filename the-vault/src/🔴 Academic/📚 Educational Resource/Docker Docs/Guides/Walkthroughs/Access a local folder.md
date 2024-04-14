@@ -1,7 +1,7 @@
 ---
 title: Access a local folder
 created: 2023-11-19T12:44
-updated: 2024-04-13T22:27
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -30,7 +30,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::Docker Docs::Guides::Walkt
 ﹇<br>
 By default, what can’t containers do?
 
-#card 
+#anki-card 
 
 ❗Need to go back and fix
 
@@ -44,7 +44,7 @@ By default, what can’t containers do?
 ﹇<br>
 What is a bind mount in Docker?
 
-#card 
+#anki-card 
 
 Docker isolates all content, code, and data in a container from your local filesystem. By default, containers can't access directories in your local filesystem.
 
@@ -58,7 +58,7 @@ Sometimes, you may want to access a directory from your local filesystem. To do 
 ﹇<br>
 What does the `volumes` element do in a **Docker Compose** file in the context of a bind mount?
 
-#card 
+#anki-card 
 
 The `volumes` element tells Compose to mount the local folder (e.g., `./app`) to a specific path (e.g., `/usr/src/app`) in the container for the service (e.g., `todo-app`). This particular bind mount overwrites the static contents of the directory in the container and creates what is known as a development container.
 
@@ -100,7 +100,7 @@ services:
 
 What is the purpose of the second instruction `/usr/src/app/node_modules` in the `volumes` element?
 
-#card 
+#anki-card 
 
 The second instruction, `/usr/src/app/node_modules`, prevents the bind mount from overwriting the container’s `node_modules` directory to preserve the packages installed in the container.
 
@@ -142,7 +142,7 @@ services:
 
 Can you explain, line by line, what is happening in the following `compose.yaml` file?
 
-#card 
+#anki-card 
 
 ```yaml
 services: 
@@ -188,7 +188,7 @@ So, in summary, this configuration is setting up two services: `todo-app` and `t
 ﹇<br>
 What is the difference between **Docker Compose** watch and bind mounts?
 
-#card 
+#anki-card 
 
 Compose supports sharing a host directory inside service containers. Watch mode does not replace this functionality but exists as a companion specifically suited to developing in containers.
 
@@ -211,7 +211,7 @@ For example, in a Node.js project, it's not recommended to sync the `node_modul
 ﹇<br>
 In comparing with the previous walkthrough [Persist data between containers](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Docker%20Docs/Guides/Walkthroughs/Persist%20data%20between%20containers.md), what approach to development is better overall?
 
-#card 
+#anki-card 
 
 The watch method by far. It includes nodemon for hot reload and the watch is much more granular in detail.
 

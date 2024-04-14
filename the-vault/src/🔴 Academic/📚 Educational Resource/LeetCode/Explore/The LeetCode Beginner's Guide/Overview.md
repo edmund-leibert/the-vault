@@ -1,7 +1,7 @@
 ---
 title: Overview
 created: 2024-02-16T14:21
-updated: 2024-02-16T16:18
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -36,7 +36,7 @@ banner_y: 0
 ﹇<br>
 As of Feb. 16, 2024 02:31:25 PM, what is the purpose of *The LeetCode Beginner’s Guide*?
 
-#card 
+#anki-card 
 
 *The LeetCode Beginner’s Guide* is intended for new users of all experience levels and helps them become familiar with the LeetCode platform.
 
@@ -46,7 +46,7 @@ As of Feb. 16, 2024 02:31:25 PM, what is the purpose of *The LeetCode Beginner�
 ﹇<br>
 As of Feb. 16, 2024 02:31:27 PM, what can you do on LeetCode according to *The LeetCode Beginner’s Guide*?
 
-#card 
+#anki-card 
 
 On LeetCode, you can use tutorials and study plans to learn fundamental and advanced data structures and algorithms, compete in contests, use guides to prepare for top companies, exercise your problem-solving skills by solving real interview questions, and more.
 

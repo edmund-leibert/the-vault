@@ -1,7 +1,7 @@
 ---
 title: Misc. Notes
 created: 2023-11-20T04:46
-updated: 2024-04-09T10:49
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -32,7 +32,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Python::Misc. Note
 ﹇<br>
 Is there an equivalent of `return 0` like in C++? Or some way to indicate to the OS that the script ran successfully?
 
-#card 
+#anki-card 
 
 In Python, successfully completing a script without encountering unhandled exceptions effectively indicates to the operating system that the program ended successfully.
 
@@ -74,7 +74,7 @@ if __name__ == '__main__' -> int:
     return 0
 ```
 
-#card 
+#anki-card 
 
 No, there are a couple of issues with the code. 
 
@@ -101,7 +101,7 @@ if __name__ == '__main__':
 ﹇<br>
 Conventionally, when trying to mimic C++, does it make sense to put `sys.exit(0)` at the end of the `if __name__ == 'main':` block, or would it be better to put it at the end of the `main()` function?
 
-#card
+#anki-card
 
 In Python, it’s not necessary to use `sys.exit(0)` at the end of your script. When a Python script finishes executing, it exits back to the command prompt, and the exit status is 0 by default, which indicates successful execution.
 
@@ -147,7 +147,7 @@ class Solution:
 		return num1 + num2
 ```
 
-#card 
+#anki-card 
 
 The `self` keyword in Python is used to define instance methods within a class. It refers to the object instance itself that the method is called on.
 

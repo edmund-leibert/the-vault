@@ -1,7 +1,7 @@
 ---
 title: What is Scalability?
 created: 2024-04-12T05:58
-updated: 2024-04-13T22:28
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -58,7 +58,7 @@ banner_y:
 ﹇<br>
 As of Apr. 12, 2024 08:59:56 AM, what is **scalability** and its importance in a system?
 
-#card 
+#anki-card 
 
 Scalability is the ability to adjust the capacity of a system to cost-efficiently fulfill demands. It usually means the ability to handle more users, clients, data, transactions, or requests without affecting the user experience. Importantly, scalability should allow us to scale down as much as scale up, and scaling should be relatively cheap and quick to do.
 
@@ -71,7 +71,7 @@ Scalability is the ability to adjust the capacity of a system to cost-efficientl
 ﹇<br>
 As of Apr. 12, 2024 11:26:00 AM, what are the common challenges of handling more data in terms of scalability?
 
-#card 
+#anki-card 
 
 As a business grows and becomes more popular, it will have to handle more user accounts, products, location data, and digital content. 
 
@@ -85,7 +85,7 @@ Especially today, with the growing popularity of big data analytics, companies a
 ﹇<br>
 As of Apr. 12, 2024 11:26:04 AM, what does handling higher concurrency levels mean in terms of scalability?
 
-#card 
+#anki-card 
 
 Concurrency measures how many clients your system can serve at the same time. If you are building a web-based application, concurrency means how many users can use your application at the same time without affecting their user experience. 
 
@@ -99,7 +99,7 @@ Higher concurrency means more open connections, more active threads, more messag
 ﹇<br>
 As of Apr. 12, 2024 11:26:07 AM, what does handling higher interaction rates mean in terms of scalability?
 
-#card 
+#anki-card 
 
 The third dimension of scalability is the rate of interactions between your system and your clients. It is related to concurrency, but is a slightly different dimension. The rate of interactions measures how often your clients exchange information with your servers. For example, if you are building a website, your clients would navigate from one page to another, triggering server requests.
 
@@ -109,7 +109,7 @@ The third dimension of scalability is the rate of interactions between your syst
 ﹇<br>
 As of Apr. 12, 2024 11:27:53 AM, what are the three measurements used for scalability?
 
-#card 
+#anki-card 
 
 1. **Handling more data**: This involves efficiently managing an increasing amount of user accounts, products, location data, and digital content.
 2. **Handling higher concurrency levels**: This measures how many clients your system can serve at the same time without affecting the user experience.
@@ -124,7 +124,7 @@ Got it, I will use the current time when creating Anki style flashcards going fo
 ﹇<br>
 As of Apr. 12, 2024 09:10:23 PM, what is concurrency?
 
-#card
+#anki-card
 
 Concurrency measures how many clients your system can serve at the same time. If you are building a web-based application, concurrency means how many users can use your application at the same time without affecting their user experience.
 
@@ -155,7 +155,7 @@ Concurrency measures how many clients your system can serve at the same time. If
 ﹇<br>
 As of Apr. 12, 2024 09:10:23 PM, why is **concurrency** difficult?
 
-#card
+#anki-card
 
 Concurrency is difficult, as your servers have a limited amount of central processing units (CPUs) and execution threads. It is even more difficult, as you may need to synchronize parallel execution of your code to ensure consistency of your data.
 
@@ -166,7 +166,7 @@ Concurrency is difficult, as your servers have a limited amount of central proce
 ﹇<br>
 As of Apr. 12, 2024 09:10:23 PM, what does higher concurrency mean?  
 
-#card
+#anki-card
 
 Higher concurrency means more open connections, more active threads, more messages being processed at the same time, and more CPU context switches.
 
@@ -176,7 +176,7 @@ Higher concurrency means more open connections, more active threads, more messag
 ﹇<br>
 As of Apr. 12, 2024 09:19:08 PM, what is the difference between **concurrency** and **parallelism**?
 
-#card
+#anki-card
 
 **Parallelism** utilizes multiple CPU cores to execute multiple threads entirely simultaneously. For example, if you have a multi-core processor, it can do multiple calculations at exactly the same time, with each calculation running on a separate CPU core.
 
@@ -190,7 +190,7 @@ At a lower level, concurrency is about structuring your program and using techni
 ﹇<br>
 As of Apr. 12, 2024 09:22:03 PM, how are parallelism and concurrency related?
 
-#card
+#anki-card
 
 **Parallelism** and **concurrency** are closely related concepts, but with some key differences:
 

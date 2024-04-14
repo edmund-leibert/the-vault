@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2023-09-03 08:46
-updated: 2024-02-10T22:30
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -34,7 +34,7 @@ banner_y: 0
 ﹇<br>
 As of Feb. 10, 2024 04:01:20 PM, how can you find and replace text in Vim?
 
-#card 
+#anki-card 
 
 In Vim, you can find and replace text using the `:substitute` command, often shortened to `:s`. Here’s the general syntax:
 
@@ -82,7 +82,7 @@ Here are some examples:
 ﹇<br>
 As of Feb. 10, 2024 10:28:19 PM, in the context of **Vim**, how do replace the first occurrences of ‘foo’ in the current line with ‘bar’?
 
-#card 
+#anki-card 
 
 ```vim
 :s/foo/bar/
@@ -94,7 +94,7 @@ As of Feb. 10, 2024 10:28:19 PM, in the context of **Vim**, how do replace the f
 ﹇<br>
 As of Feb. 10, 2024 10:28:19 PM, in the context of **Vim**, how do replace all occurrences of ‘foo’ in the current line with ‘bar’?
 
-#card 
+#anki-card 
 
 ```vim
 :s/foo/bar/g
@@ -106,7 +106,7 @@ As of Feb. 10, 2024 10:28:19 PM, in the context of **Vim**, how do replace all o
 ﹇<br>
 As of Feb. 10, 2024 10:28:19 PM, in the context of **Vim**, how do replace all occurrences of ‘foo’ in the current file with ‘bar’?
 
-#card 
+#anki-card 
 
 ```vim
 :%s/foo/bar/g
@@ -118,7 +118,7 @@ As of Feb. 10, 2024 10:28:19 PM, in the context of **Vim**, how do replace all o
 ﹇<br>
 As of Feb. 10, 2024 10:28:19 PM, in the context of **Vim**, how do you replace all occurrences of ‘foo’ in the entire file with ‘bar’, asking for confirmation each time?
 
-#card 
+#anki-card 
 
 ```vim
 :%s/foo/bar/gc

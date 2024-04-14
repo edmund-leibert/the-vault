@@ -8,7 +8,7 @@ tags:
   - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/sql
   - study-note
 cards-deck: Default::Computer Science
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 ---
 
 # 📕 Learning SQL, 3rd Edition (2020)
@@ -22,7 +22,7 @@ updated: 2024-01-25T16:47
 
 ## Chapter 1. A Little Background
 
-In this book, where should I skip ahead if I want to just start writing queries? #card 
+In this book, where should I skip ahead if I want to just start writing queries? #anki-card 
 > [!info]+ Note
 > For those readers anxious to start writing queries, feel free to skip ahead to [Chapter 3](https://learning.oreilly.com/library/view/learning-sql-3rd/9781492057604/ch03.html#query_primer), but I recommend returning later to the first two chapters in order to better understand the history and utility of the SQL language.
 ^1691778115438
@@ -33,19 +33,19 @@ A {1:database} is {2:nothing more than a set of related information}.
 ^1691778115447
 
 What were some of the first computer applications developed?
-#card 
+#anki-card 
 *database systems*
 ^1691778115453
 
 What are *database systems*?
-#card 
+#anki-card 
 Computerized data storage and retrieval mechanisms
 ^1691778115458
 
 #### **Nonrelational Database Systems**
 
 What is a *hierarchical database system*?
-#card 
+#anki-card 
 A representation of data as one or more tree structures.
 For example…
 ![[the-vault/assets/images/Pasted image 20230810203231.png|650]]
@@ -53,24 +53,24 @@ For example…
 
 Is the following database system, what view/representation are they using?
 ![[the-vault/assets/images/Pasted image 20230810203231.png|650]]
-#card 
+#anki-card 
 They are using a *hierarchical database system*.
 ^1691778115472
 
 What is a *single-parent hierarchy* in the context of database systems? 
-#card-reverse  
+#anki-card-reverse  
 - Each node of a tree may have either zero *or* one parent
 - Each node of a tree may have zero, one, *or* many children
 ^1691778115478
 
 Can the following database system be considered a *single-parent hierarchy*? 
 ![[the-vault/assets/images/Pasted image 20230810203231.png|650]]
-#card 
+#anki-card 
 Yes, each node has at max 1 parent and has either zero, one, or many children.
 ^1691778115484
 
 What is a *network database system*?
-#card-reverse 
+#anki-card-reverse 
 A database system in which it exposes sets of records and sets of links that define relationships between different records.
 For example…
 ![[the-vault/assets/images/Pasted image 20230810211121.png|650]]
@@ -78,7 +78,7 @@ For example…
 
 For the following database, how would you find the transactions posted to Sue’s money market account?
 ![[the-vault/assets/images/Pasted image 20230810211121.png|650]]
-#card 
+#anki-card 
 1. 1. Find the customer record for Sue Smith.
 2. Follow the link from Sue Smith’s customer record to her list of accounts.
 3. Traverse the chain of accounts until you find the money market account.
@@ -89,7 +89,7 @@ One interesting feature of {1:network database systems} is its ability to act as
 ^1691778115506
 
 Are hierarchical and networks database systems alive and well today?
-#card 
+#anki-card 
 Yes, but generally in the mainframe world.
 - For example, hierarchical database systems have enjoyed a rebirth in the directory services realm (e.g., Microsoft’s Active Directory and the open source Apache Directory Server)
 ^1691778115513
@@ -97,7 +97,7 @@ Yes, but generally in the mainframe world.
 #### **The Relational Model**
 
 What did Dr. E F. Codd of IBM’s research laboratory propose in his published paper “A Relational Model of Data for Large Shared Data Banks”? 
-#card 
+#anki-card 
 - In this paper, it was proposed that data be represented as sets of _tables_. 
 - Rather than using pointers to navigate between related entities, redundant data is used to link records in different tables. 
 - For example, [Figure 1-3](https://learning.oreilly.com/library/view/learning-sql-3rd/9781492057604/ch01.html#relational_view_of_account_data) shows how George’s and Sue’s account information would appear in this context.
@@ -114,7 +114,7 @@ Each table in a relational database includes {information that uniquely identifi
 ^1691778115543
 
 What does every database server provide?
-#card 
+#anki-card 
 > [!note]+ Note
 > Every database server provides a mechanism for generating unique sets of numbers to use as primary key values, so you won’t need to worry about keeping track of what numbers have been assigned.
 ^1691778115550
@@ -122,48 +122,48 @@ What does every database server provide?
 In the following example database system…
 ![[the-vault/assets/images/Pasted image 20230811063221.png|650]]
 Why did we not have the *primary key* simply be a combination of the `fname` and the `lname` columns?
-#card 
+#anki-card 
 - There could be two or more people that have the same first and last name.
 - Also, people could change their first or last name (e.g., person gets married and adopts their spouses last name).
 	- Remember that primary key columns should never be allowed to change once a value has been assigned.
 ^1691778115559
 
 What is a *compound key*?
-#card-reverse 
+#anki-card-reverse 
 - A <span class="spoiler">*compound key*</span> is a *primary key* consisting of one or more columns.
 - For example… consider the case of using a combination of the `fname` and `lname` columns.
 ^1691778115566
 
 What is a *natural key?*
-#card 
+#anki-card 
 > [!Note]+ Note
 > In this example, choosing `fname`/`lname` as the primary key would be referred to as a _natural key_, whereas the choice of `cust_id` would be referred to as a _surrogate key_. The decision whether to employ natural or surrogate keys is up to the database designer, but in this particular case the choice is clear, since a person’s last name may change (such as when a person adopts a spouse’s last name), and primary key columns should never be allowed to change once a value has been assigned.
 ^1691778115574
 
 What is a *surrogate key*?
-#card 
+#anki-card 
 > [!Note]+ Note
 > In this example, choosing `fname`/`lname` as the primary key would be referred to as a _natural key_, whereas the choice of `cust_id` would be referred to as a _surrogate key_. The decision whether to employ natural or surrogate keys is up to the database designer, but in this particular case the choice is clear, since a person’s last name may change (such as when a person adopts a spouse’s last name), and primary key columns should never be allowed to change once a value has been assigned.
 ^1691778115583
 
 Should I choose a *surrogate key* or a *natural key*?
-#card 
+#anki-card 
 The decision to which is up to the database designer, but traditionally it is preferred to choose a *surrogate key*, especially is the *natural key* can change (e.g., a person’s last name).
 ^1691778115592
 
 Does the relational database model include redundant data? 
-#card 
+#anki-card 
 Yes, consider *foreign keys*.
 ^1691778115600
 
 What are *foreign keys*?
-#card-reverse 
+#anki-card-reverse 
 - Values that connect entities to other entities.
 - Serve the same purpose as the lines that connect the entities in the hierarchical and network versions of the account information.
 ^1691778115608
 
 What are some rules that the relational model makes regarding what redundant data may be stored?
-#card 
+#anki-card 
 - It is not proper to include the same information (unless it is a *foreign key*/*unique identifier*) in multiple places in your database.
 	- This is because, for example, if a customer where to change her name, you want to make sure her name is in only one place in the database, because if it is in two places, and you only update one place, your database will be unreliable.
 - It is not proper for a single column to contain multiple pieces of information.
@@ -172,54 +172,54 @@ What are some rules that the relational model makes regarding what redundant dat
 ^1691778115615
 
 Is it proper to include the same information (unless it is a *foreign key*/*unique identifier*) in multiple places in your database? 
-#card 
+#anki-card 
 No! This can make your database unreliable.
 ^1691778115623
 
 Is it proper for a single column to contain multiple pieces of information? 
-#card 
+#anki-card 
 No!
 ^1691780777433
 
 What is *normalization*? 
-#card-reverse 
+#anki-card-reverse 
 The process of refining a database design to ensure that each independent piece of information is in only one place (Except for foreign keys)
 ^1691778115631
 
 #### **Some Terminology**
 
 What is an **Entity**?
-#card-reverse 
+#anki-card-reverse 
 Something of interest to the database user community. Examples include customers, parts, geographic locations, etc.
 ^1691780777449
 
 What is a **Column**?
-#card-reverse 
+#anki-card-reverse 
 An individual piece of data stored in a table.
 ^1691780777455
 
 What is a **Row**?
-#card-reverse 
+#anki-card-reverse 
 A set of columns that together completely describe an entity or some action on an entity. Also called a record.
 ^1691780777461
 
 What is a **Table**?
-#card-reverse 
+#anki-card-reverse 
 A set of rows, held either in memory (nonpersistent) or on permanent storage (persistent).
 ^1691780777466
 
 What is a **Result set**?
-#card-reverse 
+#anki-card-reverse 
 Another name for a nonpersistent table, generally the result of an SQL query.
 ^1691780777472
 
 What is a **Primary key**?
-#card-reverse 
+#anki-card-reverse 
 One or more columns that can be used as a unique identifier for each row in a table.
 ^1691780777477
 
 What is a **Foreign key**?
-#card-reverse 
+#anki-card-reverse 
 One or more columns that can be used together to identify a single row in another table.
 ^1691780777483
 
@@ -227,82 +227,82 @@ One or more columns that can be used together to identify a single row in anothe
 
 
 What is a quick synopsis of the evolution of SQL?
-#card 
+#anki-card 
 ❗Need to finish.
 ^1691780777489
 
 What does ANSI stand for?
-#card 
+#anki-card 
 **A**merican **N**ational **S**tandards **I**nstitute 
 ^1691780777494
 
 Whare are some new features that have been added to the SQL language?
-#card 
+#anki-card 
 - object-oriented functionality
 - integration of related technologies, such as extensible markup language (XML) and JavaScript object notation
 ^1691780777502
 
 What is the result of an SQL query?
-#card 
+#anki-card 
 A table (also called, in this context, a *result set*)
 ^1691780777508
 
 How can a new permanent table be created in a relational database?
-#card 
+#anki-card 
 Simply store the result set of a query into the database.
 ^1691780777514
 
 Can a query use permanent tables as an input?
-#card 
+#anki-card 
 Yes.
 ^1691780777519
 
 Can a query use the result sets from other queries as inputs?
-#card 
+#anki-card 
 Yes.
 ^1691780777526
 
 Is SQL an acronym for anything?
-#card 
+#anki-card 
 Technically no, but many people will insist it stands for “Structured Query Language”
 ^1691780777532
 
 #### **SQL Statement Classes**
 
 What are some of the several distinct parts that make up the SQL language?
-#card-reverse 
+#anki-card-reverse 
 - SQL schema statements
 - SQL data statements
 - SQL transaction statements
 ^1691780777537
 
 What is the purpose of *SQL schema statements*?
-#card-reverse 
+#anki-card-reverse 
 Used to define the data structures stored in the database.
 ^1691780777543
 
 What is the purpose of *SQL data statements*?
-#card-reverse 
+#anki-card-reverse 
 Used to manipulate the data structures previously defined using SQL schema statements.
 ^1691780777549
 
 What is the purpose of *SQL transaction statements*?
-#card-reverse 
+#anki-card-reverse 
 Used to begin, end, and roll back transactions.
 ^1691780777555
 
 What does the SQL schema statement `create table` do?
-#card 
+#anki-card 
 Creates a new table in your database
 ^1691780777562
 
 What process can the SQL data statement `insert` be a part of?
-#card 
+#anki-card 
 Process of populating your new table with data
 ^1691780777567
 
 What is an example of a SQL schema statement?
-#card 
+#anki-card 
 ```sql
 CREATE TABLE
 ```
@@ -316,7 +316,7 @@ CREATE TABLE corporation
   CONSTRAINT pk_corporation PRIMARY KEY (corp_id)
  );
 ```
-#card 
+#anki-card 
 1. Creates a table called “corporation” with two columns…
 	1. First column is called “corp_id” and is data type of `SMALLINT`
 	2. Second column is called “name” of a string that can contain up to 30 chars
@@ -331,7 +331,7 @@ CREATE TABLE corporation
   CONSTRAINT pk_corporation PRIMARY KEY (corp_id)
  );
 ```
-#card 
+#anki-card 
 1. `CONSTRAINT`: This keyword indicates that you're defining a constraint for the table.
 2. `pk_corporation`: This is the name given to the constraint. Naming constraints is optional but can be useful if you ever need to refer to the constraint later (e.g., for modification or deletion). Here, the constraint is named `pk_corporation`.
 3. `PRIMARY KEY`: This keyword specifies that the constraint being defined is a primary key constraint.
@@ -361,12 +361,12 @@ CREATE TABLE corporation
   CONSTRAINT pk_corporation PRIMARY KEY (corp_id)
  );
 ```
-#card 
+#anki-card 
 No, the database will raise an error due to this constraint.
 ^1691780777595
 
 Is naming constraints required?
-#card 
+#anki-card 
 No, it is optional but useful if you ever need to refer to the constraint later (e.g., for modification or deletion)
 ^1691780777602
 
@@ -378,13 +378,13 @@ CREATE TABLE corporation
   CONSTRAINT pk_corporation PRIMARY KEY (corp_id)
  );
 ```
-#card 
+#anki-card 
 - The keyword that ensures that the `corp_id` column cannot contain `NULL` values and must be unique across all rows is the `PRIMARY KEY` keyword.
 - The `CONSTRAINT` keyword is used to define and optionally name a table constraint. In the provided SQL, `CONSTRAINT` is used to name the primary key constraint as `pk_corporation`, but the actual behavior (ensuring non-null and uniqueness) comes from the `PRIMARY KEY` keyword that follows it.
 ^1691780777609
 
 What SQL code creates a table? 
-#card 
+#anki-card 
 ❗To be filled.
 ^1691780777619
 
@@ -393,12 +393,12 @@ What does the following SQL code do?
 INSERT INTO corporation (corp_id, name)
 VALUES (27, 'Acme Paper Corporation');
 ```
-#card 
+#anki-card 
 This statement adds a row to the `corporation` table with a value of `27` for the `corp_id` column and a value of `Acme Paper Corporation` for the `name` column.
 ^1691781154125
 
 What SQL statement inserts into the table `corporation` a row with a value of `27` for the `corp_id` column and a value of `Acme Paper Corporation` for the `name` column.
-#card 
+#anki-card 
 ```sql
 INSERT INTO corporation (corp_id, name)
 VALUES (27, 'Acme Paper Corporation');
@@ -412,7 +412,7 @@ SELECT name
 FROM corporation
 WHERE corp_id = 27;
 ```
-#card 
+#anki-card 
 The following result would be…
 ```bash
 mysql< `SELECT name`
@@ -440,25 +440,25 @@ In general, {1:SQL schema statements} do {2:not require much discussion apart fr
 #### **SQL: A Nonprocedural Language**
 
 What characteristics define a *procedural language*?
-#card 
+#anki-card 
 > [!note] Note
 > A procedural language defines both the desired results and the mechanism, or process, by which the results are generated. Nonprocedural languages also define the desired results, but the process by which the results are generated is left to an external agent.
 ^1691781865179
 
 
 What characteristics define a *nonprocedural language*?
-#card 
+#anki-card 
 > [!note] Note
 > A procedural language defines both the desired results and the mechanism, or process, by which the results are generated. Nonprocedural languages also define the desired results, but the process by which the results are generated is left to an external agent.
 ^1691781865186
 
 In SQL, do you define the necessary inputs, outputs, and the manner in which a statement is executed?
-#card 
+#anki-card 
 No, the manner in which a statement is executed is left to a component of your database engine known as the *optimizer*.
 ^1691781865192
 
 Can you influence database engines?
-#card 
+#anki-card 
 - Most database engines will allow you to influence the optimizer’s decisions by specifying _optimizer hints_, such as suggesting that a particular index be used.
 - Most SQL users, however, will never get to this level of sophistication and will leave such tweaking to their database administrator or performance expert.
 ^1691781865198
@@ -489,7 +489,7 @@ WHERE i.fname = 'George' AND i.lname = 'Blake'
 +--------+-------------+---------------------+--------+
 1 row in set (0.00 sec)
 ```
-#card 
+#anki-card 
 - Without going into too much detail at this point, this query identifies the row in the `individual` table for George Blake and the row in the `product` table for the “checking” product.
 - Finds the row in the `account` table for this individual/product combination, and returns four columns from the `transaction` table for all transactions posted to this account.
 ^1691787160560
@@ -505,7 +505,7 @@ WHERE i.fname = 'George' AND i.lname = 'Blake'
   AND p.name = 'checking account';
 ```
 Is the alias `t` for the `transaction` table created in the line `INNER JOIN transcation t`? How is this valid?
-#card 
+#anki-card 
 Yes, you're correct. The alias `t` for the `transaction` table is created in the line:
 ```sql
 INNER JOIN transaction t ON t.account_id = a.account_id
@@ -525,7 +525,7 @@ WHERE i.fname = 'George' AND i.lname = 'Blake'
   AND p.name = 'checking account';
 ```
 Explain line by line what is going on.
-#card 
+#anki-card 
 ```sql
 SELECT t.txn_id, t.txn_type_cd, t.txn_date, t.amount
 ```
@@ -568,7 +568,7 @@ WHERE i.fname = 'George' AND i.lname = 'Blake'
   AND p.name = 'checking account';
 ```
 Explain line by line the resulting set at that time.
-#card 
+#anki-card 
 ```sql
 FROM individual i
 ```
@@ -601,7 +601,7 @@ SELECT t.txn_id, t.txn_type_cd, t.txn_date, t.amount
 ^1691787551865
 
 In most line by line breakdowns, why do we start (conceptually) from the `FROM` statement? 
-#card 
+#anki-card 
 - When reading and understanding SQL, it's generally best to start with the `FROM` clause because it sets the foundation of the query by defining the main table(s) you're working with. From there, the `JOIN` clauses extend the data sources, and the `WHERE` clauses filter the results. Finally, the `SELECT` clause specifies which columns to display in the final output.
 - However, when the database engine actually executes the query, the logical processing order (not necessarily the physical execution order) is a bit different. The typical logical order is:
 	1. **FROM**: Specifies the primary table.
@@ -617,7 +617,7 @@ In most line by line breakdowns, why do we start (conceptually) from the `FROM` 
 ^1691787551875
 
 Typically, in SQL breakdowns, what is logical order?
-#card 
+#anki-card 
 The typical logical order is:
 1. **FROM**: Specifies the primary table.
 2. **JOIN**: Adds additional tables.
@@ -630,7 +630,7 @@ The typical logical order is:
 ^1691787551882
 
 To clarify, when doing an `INNER JOIN`, does the _resulting set_ drop/remove rows that don’t match?
-#card 
+#anki-card 
 - Yes, you're correct. An `INNER JOIN` returns only the rows where there is a match in both the left (or first) and the right (or second) tables based on the specified join condition. 
 - Rows in the left table that do not have matching rows in the right table (and vice versa) will not appear in the resulting set. They are effectively "dropped" or "excluded" from the result.
 **For example:**
@@ -678,7 +678,7 @@ WHERE i.fname = 'George' AND i.lname = 'Blake'
   AND p.name = 'checking account';
 ```
 Lets say that we actually knew that George Blake’s customer ID is 8 and that checking accounts are designated by the code `'CHK'`, how could we make a more efficient and concise query?
-#card 
+#anki-card 
 ```sql
 SELECT t.txn_id, t.txn_type_cd, t.txn_date, t.amount
 FROM account a
@@ -695,7 +695,7 @@ For the following clauses…
 - `FROM`
 - `WHERE`
 What is the role of each of these?
-#card 
+#anki-card 
 ```sql
 SELECT /* one or more things */ ...
 FROM /* one or more places */ ...
@@ -704,13 +704,13 @@ WHERE /* one or more conditions apply */ ...
 ^1691788741696
 
 What is one way to create comments in SQL?
-#card 
+#anki-card 
 > [!note]+ NOTE
 > Most SQL implementations treat any text between the `/*` and `*/` tags as comments.
 ^1691788741707
 
 When constructing your query, generally what are your tasks to do so?
-#card 
+#anki-card 
 1. First task is generally to determine which table or tables will be needed and then add them to your `from` clause. 
 2. Next, you will need to add conditions to your `where` clause to filter out the data from these tables that you aren’t interested in.
 3. Finally, you will decide which columns from the different tables need to be retrieved and add them to your `select` clause.
@@ -722,7 +722,7 @@ SELECT cust_id, fname
 FROM individual
 WHERE lname = 'Smith';
 ```
-#card 
+#anki-card 
 This query searches the `individual` table for all rows whose `lname` column matches the string `'Smith'` and returns the `cust_id` and `fname` columns from those rows.
 ^1691788741722
 
@@ -731,7 +731,7 @@ What does the following code do?
 INSERT INTO product (product_cd, name)
 VALUES ('CD', 'Certificate of Depysit')
 ```
-#card 
+#anki-card 
 Insert a new row into the `product` table where the values of the row are `'CD'` and `'Certificate of Depysit'` for the columns `product_cd` and `name`.
 ^1691788741728
 
@@ -740,7 +740,7 @@ How can you fix a misspelling in a table? For example, how could I fix the mista
 INSERT INTO product (product_cd, name)
 VALUES ('CD', 'Certificate of Depysit')
 ```
-#card 
+#anki-card 
 You can clean that up with an `update` statement:
 ```sql
 UPDATE product
@@ -753,7 +753,7 @@ WHERE product_cd = 'CD';
 ^1691788741734
 
 Whenever you execute an SQL data statement, you will receive what type of feedback from the database engine?
-#card
+#anki-card
 - You will receive feedback regarding how many rows were affected by your statement. If you are using an interactive tool such as the `mysql` command-line tool mentioned earlier, then you will receive feedback concerning how many rows were either:
 	- Returned by your `select` statement
 	- Created by your `insert` statement
@@ -768,13 +768,13 @@ Most, if not all, databases do a pretty good job of {complying} with the latest 
 ^1691788741746
 
 As of 2023, what are two very popular database systems?
-#card 
+#anki-card 
 - MySQL
 - PostgreSQL
 ^1691794483761
 
 Is this book about MySQL’s SQL implementation?
-#card 
+#anki-card 
 _This is not a book about MySQL’s SQL implementation._
 Rather, this book is designed to teach you how to craft SQL statements that will run on MySQL with no modifications, and will run on recent releases of Oracle Database, DB2, and SQL Server with few or no modifications.
 ^1691794483780

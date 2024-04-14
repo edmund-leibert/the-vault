@@ -1,7 +1,7 @@
 ---
 title: Web Scalability for Startup Engineers ∋ Folder Note
 created: 2024-04-12T04:06
-updated: 2024-04-13T20:07
+updated: 2024-04-14T00:29
 authors:
   - Edmund Leibert III
 tags:
@@ -26,7 +26,7 @@ banner_y: 0
 ---
 
 > [!NOTE]
-> **Previous Notes**:
+> :BoBxLeftArrowCircle: **Previous Notes**:
 > 
 
 ---
@@ -68,7 +68,7 @@ banner_y: 0
 ---
 
 > [!NOTE]
-> **Next Notes**:
+> :BoBxRightArrowCircle: **Next Notes**:
 > - [Chapter 1 Core Concepts ∋ Table of Contents](obsidian://open?vault=the-vault&file=the-vault%2Fsrc%2F%F0%9F%94%B4%20Academic%2F%F0%9F%93%9A%20Educational%20resource%2FWeb%20Scalability%20for%20%20Startup%20Engineers%2FChapter%201%20Core%20Concepts%2FChapter%201%20Core%20Concepts%20%E2%88%8B%20Table%20of%20Contents)
 
 ---

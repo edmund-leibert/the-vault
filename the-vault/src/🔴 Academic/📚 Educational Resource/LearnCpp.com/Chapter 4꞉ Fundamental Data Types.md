@@ -5,7 +5,7 @@ tags:
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-10-27T17:38
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 ---
 
 # LearnCpp.com
@@ -20,20 +20,20 @@ updated: 2024-01-25T16:47
 
 ### 4.3 Object sizes and the sizeof operator
 
-In C++, how does one calculate the length of a primitive array using `sizeof()`? #card 
+In C++, how does one calculate the length of a primitive array using `sizeof()`? #anki-card 
 - Syntax to calculate an array...
 ```cpp
 datatype arr_size = sizeof(name_of_array)/sizeof(name_of_array[index]);
 ```
 
 
-In C++, how does one swap the values two array? #card-reverse 
+In C++, how does one swap the values two array? #anki-card-reverse 
 ```cpp
 stdswap(array[startIndex], array[smallestIndex])
 ```
 
 
-In C++, what function should one use to swap values in an array? What libraries is it in? #card-reverse 
+In C++, what function should one use to swap values in an array? What libraries is it in? #anki-card-reverse 
 - One should use the `swap` function.
 - It is defined in the following standard libraries...
 	- Defined in header `<algorithm>`
@@ -41,7 +41,7 @@ In C++, what function should one use to swap values in an array? What libraries 
 	- Defined in header `<string_view>`
 
 
-In C++, what does `std::` stand for? #card-reverse
+In C++, what does `std::` stand for? #anki-card-reverse
 - The `std` is a short form of standard.
 - The `std` namespace contains the built-in classes and declared functions.
 	- One can find all the standard types and functions in the c++ `std` namespace.

@@ -1,7 +1,7 @@
 ---
 title: Anki ▹ Table of Contents
 created: 2023-08-30 00:00
-updated: 2024-04-12T09:12
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -30,7 +30,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::Anki::Anki ▹ Table of Co
 ﹇<br>
 What does **burying** a card do?
 
-#card
+#anki-card
 
 Doing this hides the card from review until the next day.
 
@@ -43,7 +43,7 @@ This is useful if you want to temporarily not see a card while reviewing but don
 ﹇<br>
 What does **suspending** a card do?
 
-#card 
+#anki-card 
 
 Doing this removes it from review until you manually unsuspend it later.
 
@@ -65,7 +65,7 @@ As of Anki the following CSS snippet valid for styling a card in Anki v2.66?
 }
 ```
 
-#card 
+#anki-card 
 
 No, the code will not be interpreted. The `format()` specifier is not supported.
 

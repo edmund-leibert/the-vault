@@ -5,22 +5,22 @@ tags:
   - study-note
 cards-deck: Default::Business
 created: 2023-09-03 08:46
-updated: 2024-01-02T00:58
+updated: 2024-04-14T00:24
 ---
 
 Inexcel? 
 
-#card 
+#anki-card 
 
 `=DATE(year,1,1)`
 
 What is the shortcut to highlight an entire column of a table in Excel? 
 
-#card 
+#anki-card 
 
 <kbd>Ctrl</kbd> + <kbd>Space</kbd>
 
-What is the shortcut to highlight all cells above, or below, in a column of a table in Excel? #card
+What is the shortcut to highlight all cells above, or below, in a column of a table in Excel? #anki-card
 <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>↑</kbd>
 <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>↓</kbd>
  
@@ -28,7 +28,7 @@ What is the shortcut to highlight all cells above, or below, in a column of a ta
 ﹇<br>
 In Microsoft Office, specifically Excel, what is the shortcut to insert *both* the current date and time into a cell?
 
-#card 
+#anki-card 
 
 In Microsoft Excel, you can insert the current date and time into a cell using a combination of keyboard shortcuts. Here’s how you do it:
 

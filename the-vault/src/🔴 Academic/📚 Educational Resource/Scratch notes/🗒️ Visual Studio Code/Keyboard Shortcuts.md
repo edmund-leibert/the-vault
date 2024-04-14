@@ -1,7 +1,7 @@
 ---
 title: Keyboard Shortcuts
 created: 2023-09-25 16:03
-updated: 2023-11-18T02:44
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -35,7 +35,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Visual Studio Code
 ﹇<br>
 What is the keyboard shortcut to open the integrated terminal?
 
-#card-reverse 
+#anki-card-reverse 
 
 <kbd>Ctrl</kbd> + <kbd>`</kbd>
 
@@ -45,7 +45,7 @@ What is the keyboard shortcut to open the integrated terminal?
 ﹇<br>
 What is the keyboard shortcut to create a new terminal?
 
-#card-reverse 
+#anki-card-reverse 
 
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>
 
@@ -56,7 +56,7 @@ What is the keyboard shortcut to create a new terminal?
 ﹇<br>
 What is the keyboard shortcut to 
 
-#card-reverse 
+#anki-card-reverse 
 
 {{Answer}}
 

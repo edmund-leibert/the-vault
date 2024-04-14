@@ -1,7 +1,7 @@
 ---
 title: Persist data between containers
 created: 2023-11-19T12:44
-updated: 2024-04-13T22:27
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -30,7 +30,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::Docker Docs::Guides::Walkt
 ﹇<br>
 What does this walkthrough show you?
 
-#card 
+#anki-card 
 
 How to persist data between containers.
 
@@ -40,7 +40,7 @@ How to persist data between containers.
 ﹇<br>
 What should you complete first to better understand some concepts in this walkthrough?
 
-#card 
+#anki-card 
 
 The [Run multi-container applications](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Docker%20Docs/Guides/Walkthroughs/Run%20multi-container%20applications.md) walkthrough.
 
@@ -50,7 +50,7 @@ The [Run multi-container applications](the-vault/src/🔴%20Academic/📚%20Educ
 ﹇<br>
 What does Docker do with all content, code, and data in a container?
 
-#card 
+#anki-card 
 
 Docker isolates all content, code, and data in a container from your local filesystem.
 
@@ -62,7 +62,7 @@ Docker isolates all content, code, and data in a container from your local files
 ﹇<br>
 What happens when you delete a Docker container?
 
-#card 
+#anki-card 
 
 Docker deletes all the content within that container.
 
@@ -74,7 +74,7 @@ Docker deletes all the content within that container.
 ﹇<br>
 What can you use if you want to persist the data that a container generates?
 
-#card 
+#anki-card 
 
 You can use volumes.
 
@@ -84,7 +84,7 @@ You can use volumes.
 ﹇<br>
 What should you get before you start?
 
-#card 
+#anki-card 
 
 Docker Desktop.
 
@@ -98,7 +98,7 @@ Docker Desktop.
 ﹇<br>
 What is a volume in Docker?
 
-#card 
+#anki-card 
 
 A volume is a location in your local filesystem, automatically managed by Docker Desktop. It is used to persist data after you delete a container.
 
@@ -108,7 +108,7 @@ A volume is a location in your local filesystem, automatically managed by Docker
 ﹇<br>
 How do you add a volume to a project?
 
-#card 
+#anki-card 
 
 To add a volume to a project, open the compose.yaml file in a code or text editor, and uncomment the lines under the `volumes` element of the service (e.g., `todo-database`).
 
@@ -118,7 +118,7 @@ To add a volume to a project, open the compose.yaml file in a code or text edito
 ﹇<br>
 What does the `volumes` element nested under a service (e.g., `todo-database`) do in a Compose file?
 
-#card 
+#anki-card 
 
 The `volumes` element that is nested under a service tells Compose to mount the volume (e.g., `database`) to a specific path (e.g., `/data/db`) in the container for the service.
 
@@ -128,7 +128,7 @@ The `volumes` element that is nested under a service tells Compose to mount th
 ﹇<br>
 What does the top-level `volumes` element do in a Compose file?
 
-#card 
+#anki-card 
 
 The top-level `volumes` element defines and configures a volume that can be used by any of the services in the Compose file.
 
@@ -138,7 +138,7 @@ The top-level `volumes` element defines and configures a volume that can be us
 ﹇<br>
 How exactly are volumes managed by Docker?
 
-#card 
+#anki-card 
 
 [Volumes in Docker are completely managed by Docker](https://docs.docker.com/storage/volumes/) [@Volumes0000]. [They are stored in a part of the host filesystem which is managed by Docker](https://docs.docker.com/storage/) [@ManageDataDocker0000]. [This management by Docker provides several advantages such as ease of backup, migration, and sharing among multiple containers](https://docs.docker.com/storage/volumes/) [@Volumes0000] [@ManageDataDocker0000]. 
 
@@ -164,7 +164,7 @@ volumes:
   database:
 ```
 
-#card 
+#anki-card 
 
 - `todo-database:`: This is the name of the service. In this case, it’s a MongoDB database service.
 - `image: mongo:6`: This line tells Docker to use the `mongo:6` image from Docker Hub for this service.
@@ -191,7 +191,7 @@ So, in summary, this configuration is setting up a MongoDB service with a volume
 ﹇<br>
 What happens to your data when you delete and recreate containers in Docker Desktop?
 
-#card 
+#anki-card 
 
 If the image is configured to persist data, for example on a volume, Docker Desktop persists your data and it’s accessible to any container on your system by mounting the database volume. 
 
@@ -203,7 +203,7 @@ Docker Desktop looks for the database volume and creates it if it doesn’t exis
 ﹇<br>
 How do you delete an application stack in Docker Desktop?
 
-#card 
+#anki-card 
 
 To delete an application stack, open the Containers tab of Docker Desktop and select the Delete icon next to your application stack.
 

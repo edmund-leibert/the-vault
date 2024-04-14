@@ -1,7 +1,7 @@
 ---
 title: Misc. Notes
 created: 2023-10-31T16:39
-updated: 2023-12-12T01:17
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -57,7 +57,7 @@ In the following TypeScript snippet, why is **ESLint** notfying me that `heading
 	}
 ```
 
-#card 
+#anki-card 
 
 In JavaScript (and TypeScript), the `let` keyword allows you to reassign a variable to a new value, but pushing elements into an array does not count as reassignment. When ESLint says that the variable is never reassigned, it means that you never do something like:
 

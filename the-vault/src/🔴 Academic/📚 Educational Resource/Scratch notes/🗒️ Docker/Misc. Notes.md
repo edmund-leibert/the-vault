@@ -1,7 +1,7 @@
 ---
 title: Misc. Notes
 created: 2023-10-31T16:39
-updated: 2023-12-11T19:25
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -32,7 +32,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Docker::Misc. Note
 ﹇<br>
 How do you create and start a container from a service?
 
-#card-reverse 
+#anki-card-reverse 
 
 ```console
 docker-compose up
@@ -44,7 +44,7 @@ docker-compose up
 ﹇<br>
 How do I start containers in the background and leave them running? 
 
-#card-reverse 
+#anki-card-reverse 
 
 `docker-compose up -d`
 
@@ -54,7 +54,7 @@ How do I start containers in the background and leave them running?
 ﹇<br>
 Why would I need to start a container in the background? 
 
-#card 
+#anki-card 
 
 Before starting a Docker container, you must decide if you want to run it in the default foreground mode *or* in the background in a detached mode. 
 
@@ -69,7 +69,7 @@ To run a Docker container in the background, use the `-d` option. This starts th
 ﹇<br>
 What does the command `docker-compose down -v` do? 
 
-#card 
+#anki-card 
 
 The `docker-compose down` command stops all services associated with a Docker Compose configuration. 
 
@@ -81,7 +81,7 @@ Unlike `stop`, it also removes any containers and internal networks associated w
 ﹇<br>
 What is the difference between docker and docker-compose?
 
-#card 
+#anki-card 
 
 `Docker` is a platform that allows you to develop, test, and deploy applications as portable containers that can run virtually anywhere. The `docker` command line interface (CLI) is used to manage individual containers on a docker engine. It is the client command line to access the docker daemon API¹.
 
@@ -96,7 +96,7 @@ In summary, `docker` manages single containers while `docker-compose` manages mu
 ﹇<br>
 Consider the case where I have already instantiated a docker image and have a container currently running on my machine but I forgot to open an integrated terminal to that container. How can I run a shell inside the container?
 
-#card 
+#anki-card 
 
 If you have a running Docker container and want to browse its contents via the terminal, you can use the `docker exec` command to run a shell inside the container. This will allow you to interact with the container’s file system and execute commands as if you were logged in to the container.
 
@@ -116,7 +116,7 @@ Once you have started a shell inside the container, you can use standard Linux c
 ﹇<br>
 What command should you run to list all containers, including those that are currently running?
 
-#card-reverse  
+#anki-card-reverse  
 
 To do that, you can run this command: 
 
@@ -130,7 +130,7 @@ docker ps -a
 ﹇<br>
 What command should you run to list all containers that were created from the `ghcr.io/edmund-leibert/quartz:hugo` image?
 
-#card-reverse  
+#anki-card-reverse  
 
 To do that, you can run this command:
 
@@ -142,7 +142,7 @@ To do that, you can run this command:
 ﹇<br>
 What command can I use to start an existing container that is not currently running?
 
-#card 
+#anki-card 
 
 To do that, you can do this: 
 ```console
@@ -159,7 +159,7 @@ When I run the following command, does it always instantiate a new container?
 docker run -it --volume=$(shell pwd):/quartz -p 1313:1313 ghcr.io/edmund-leibert/quartz:hugo
 ```
 
-#card 
+#anki-card 
 
 Yes, when you run the `docker run` command, it will always create and start a new container from the specified image. In this case, the command you provided will create and start a new container from the `ghcr.io/edmund-leibert/quartz:hugo` image.
 

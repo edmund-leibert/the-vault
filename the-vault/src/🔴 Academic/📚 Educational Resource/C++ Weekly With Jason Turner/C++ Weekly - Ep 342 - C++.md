@@ -9,7 +9,7 @@ tags:
   - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp
   - study-note
 cards-deck: Default::Computer Science
-updated: 2024-01-25T16:46
+updated: 2024-04-14T00:24
 ---
 
 # 🌐 C++ Weekly With Jason Turner
@@ -28,7 +28,7 @@ updated: 2024-01-25T16:46
 ## C++ Weekly - Ep 342 - C++
 
 In brief, what are **ranges** in C++ and need do they fill? Make sure to consider there relationship with the standard algorithm library.
-#card
+#anki-card
 - Ranges are a new feature in C++20 that provide a way to abstract over iterators. This makes it easier to write algorithms that work on different types of data structures, and it also makes it easier to write composable algorithms.
 - For example, the standard algorithm library includes an algorithm called `std::sort()` that sorts a range of elements.
 - Before ranges, you would have to use iterators to specify the range of elements to be sorted.
@@ -66,13 +66,13 @@ for (int i : my_vector) {
   std::cout << i << " ";
 }
 ```
-#card 
+#anki-card 
 Yes, the following code will compile and run without any issues.
 - The key feature of this snippet is that we are using ranges instead of having to _manually_ specify the range (i.e., using the methods `.begin()` and `.end()`).
 ^1692863572439
 
 In C++, what is the `std::nth_element` function from the standard algorithm library?
-#card 
+#anki-card 
 - The `std::nth_element` algorithm is a useful standard library function in C++ that rearranges elements in a given range `[first, last)` in such a way that the element at the `nth` position is the element that would be there if the entire range were sorted.
 	- Furthermore, none of the elements preceding `nth` are greater than it, and none of the elements following it are less.
 - Here's a more concrete example and explanation:
@@ -97,25 +97,25 @@ int main() {
 ^1692863572445
 
 What is the worst-case time complexity of `std::nth_element`?
-#card
+#anki-card
 The worst-case time complexity of `std::nth_element` is more accurately described as linear on average,$\mathcal{O}(n)$, for the entire operation. The $\mathcal{O}(n \log n)$ complexity for swaps does not directly translate into the overall time complexity for the algorithm, as it refers to the number of swaps, not the time taken for the whole process.
 - The reason for this is that a swap operation can often be considered a constant-time operation, depending on how it's implemented. The notation here is likely emphasizing the number of swaps rather than directly contributing to the overall time complexity.
 ^1692880708474
 
 
 Why is the overall time complexity of `std::nth_element` considered linear, even though there are $\mathcal{O}(1)$ swaps?
-#card
+#anki-card
 The overall time complexity of `std::nth_element` is considered linear, or $\mathcal{O}(n)$, because each swap operation's cost is generally considered constant time, or $\mathcal{O}(1)$. The $\mathcal{O}(n \log n)$ complexity refers to the number of swap operations, not the overall time complexity for the entire algorithm.
 ^1692880708481
 
 
 What is the space complexity of `std::nth_element`?
-#card
+#anki-card
 The space complexity of `std::nth_element` is $\mathcal{O}(1)$, meaning it uses a constant amount of additional space beyond the input itself. The algorithm works in-place and doesn't require extra memory proportional to the size of the input.
 ^1692880708487
 
 Broadly speaking, in C++, what are the main categories that the operations/functions of the standard algorithm library can be divided into?
-#card 
+#anki-card 
 - Non-modifying sequence operations
 - Modifying sequence operations
 - Partitioning operations
@@ -132,13 +132,13 @@ Broadly speaking, in C++, what are the main categories that the operations/funct
 ^1692880708494
 
 In C++, what category does the algorithm, `std::nth_element` fall under to?
-#card 
+#anki-card 
 It falls under the category of *sorting operations*.
 ^1692880708500
 
 
 What are ranges in C++?
-#card-reverse
+#anki-card-reverse
 Ranges refer to a sequence of elements that can be iterated over. They can be expressed as an iterator-sentinel pair or as a single range argument in C++.
 Example: 
 ```cpp
@@ -149,7 +149,7 @@ std::ranges::sort(v);
 
 
 What is the purpose of constrained algorithms in the `std::ranges` namespace in C++20?
-#card-reverse
+#anki-card-reverse
 Constrained algorithms in `std::ranges` utilize concepts to enforce type constraints, ensuring correct types are used. Example: 
 ```cpp
 std::ranges::sort(v); 
@@ -159,7 +159,7 @@ The `std::ranges` ensures that `v` is sortable.
 
 
 How do ranges simplify the code when using algorithms in C++20?
-#card-reverse
+#anki-card-reverse
 Ranges allow you to pass a container itself as a single argument to an algorithm instead of manually providing iterators for the beginning and end.
 Example: 
 ```cpp
@@ -173,7 +173,7 @@ std::find(v.begin(), v.end(), 2);
 
 
 What is the benefit of projections and pointer-to-member callables in `std::ranges`?
-#card-reverse
+#anki-card-reverse
 Projections and pointer-to-member callables allow transforming values on-the-fly.
 Example: 
 ```cpp
@@ -183,7 +183,7 @@ Sorts a vector of `Person` objects by age without modifying the underlying data.
 ^1692880708525
 
 How have the return types of algorithms been enhanced in `std::ranges`?
-#card-reverse
+#anki-card-reverse
 The return types of most algorithms in `std::ranges` return more information.
 Example: 
 ```cpp
@@ -194,7 +194,7 @@ returns both the found iterator and the end of the range.
 
 
 What is the key advantage of using constrained algorithms in `std::ranges` compared to traditional algorithms?
-#card-reverse
+#anki-card-reverse
 Constrained algorithms in `std::ranges` enforce correct usage and type safety, are more expressive, and allow enhanced functionality and safety.
 Example: 
 ```cpp
@@ -250,7 +250,7 @@ The fact that C++ allows various forms of callables offers a great deal of flexi
 Here's a flashcard that summarizes this information:
 
 What is a callable in C++, and how can it be used with algorithms such as `std::ranges::find_if`? Provide examples.
-#card
+#anki-card
 A callable in C++ is an entity that can be called as a function. It includes function pointers, lambda expressions, objects with an overloaded `operator()`, and `std::function`. Examples:
 -  **Function Pointer**: 
 ```cpp

@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2023-09-03 08:46
-updated: 2024-02-19T13:41
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -35,7 +35,7 @@ banner_y: 0
 ﹇<br>
 As of Feb. 10, 2024 04:06:51 PM, what is the standard **convention** when **naming variables** in **Java**?
 
-#card 
+#anki-card 
 
 In Java, **variable names** should adhere to the following conventions:
 
@@ -68,7 +68,7 @@ These conventions make your code easier to read for yourself and other programme
 ﹇<br>
 As of Feb. 10, 2024 10:58:22 PM, what is a brief summary of the naming conventions of **Java**?
 
-#card 
+#anki-card 
 
 <table>
 	<tr>
@@ -200,7 +200,7 @@ package com.javatpoint;
 ﹇<br>
 In software engineering, what is an **interface**? How are interfaces generally implemented in Java?
 
-#card 
+#anki-card 
 
 In **software engineering**, an interface can be thought of as a contract between the system and the environment. In a computer program, the **system** is the function or module in question, and the **environment** is the rest of the project. The interface formally describes what can pass between the system and the environment. It's a shared boundary across which two or more separate components of a computer system exchange information.
 
@@ -241,7 +241,7 @@ In this example, Animal is an interface with two methods: eat and sleep. The Dog
 ﹇<br>
 As of Feb. 11, 2024 12:52:34 AM, what is the `Comparable` interface in Java and what is it used for?
 
-#card 
+#anki-card 
 
 The `Comparable` interface in Java is used for ordering objects of user-defined classes. A class must implement the `Comparable` interface to allow its instances to be compared to one another. The `Comparable` interface has a single method, `compareTo()`, which is used to define the natural order of the objects.
 
@@ -312,7 +312,7 @@ As of Feb. 10, 2024 04:34:22 PM, the the context of **Java**, the 〔1:`Object`�
 ﹇<br>
 As of Feb. 10, 2024 11:50:13 PM, what is an interface in software engineering?
 
-#card
+#anki-card
 
 An interface can be thought of as a contract between the system and the environment. In a computer program, the **system** is the function or module in question, and the **environment** is the rest of the project. 
 
@@ -324,7 +324,7 @@ The interface formally describes what can pass between the system and the enviro
 ﹇<br>
 As of Feb. 10, 2024 11:50:07 PM, what is an interface in Java?
 
-#card
+#anki-card
 
 In Java, an interface is a special type of class that only contains abstract methods. It’s a blueprint of a behavior.
 
@@ -336,7 +336,7 @@ A Java interface contains static constants and abstract methods. There can be on
 ﹇<br>
 As of Feb. 10, 2024 11:50:01 PM, how do you implement an interface in Java?
 
-#card
+#anki-card
 
 A class implements an interface by using the `implements` keyword followed by the interface name. 
 
@@ -348,7 +348,7 @@ The class must provide implementations for all the methods declared in the inter
 ﹇<br>
 As of Feb. 11, 2024 12:04:23 AM, can a Java **interface** include **static** constants?
 
-#card 
+#anki-card 
 
 Yes, a Java interface can include static constants. In fact, all variables declared in an interface are implicitly `public`, `static`, and `final`. Here’s an example:
 
@@ -370,7 +370,7 @@ A Java 〔1:interface can include〕 〔2:static constants〕. In fact, 〔3:all
 ﹇<br>
 As of Feb. 10, 2024 11:49:56 PM, what is the purpose of the `equals()` method in Java?
 
-#card
+#anki-card
 
 The `equals()` method is typically used to compare objects for equality. It’s defined in the `Object` class, which is the superclass for all classes in Java. Therefore, all objects in Java inherit this method and can use it to compare for equality.
 
@@ -380,7 +380,7 @@ The `equals()` method is typically used to compare objects for equality. It’s 
 ﹇<br>
 As of Feb. 11, 2024 12:09:07 AM, in the context of Java, how do you **create** an **interface**?
 
-#card 
+#anki-card 
 
 In Java, an interface is created using the `interface` keyword. It can include abstract methods (methods without a body) and static constants. Here’s a simple example:
 
@@ -415,7 +415,7 @@ In this example, `MyClass` is a class that implements `MyInterface`. It provides
 ﹇<br>
 As of Feb. 11, 2024 12:10:46 AM, what are the **hard** rules that one must keep in mind when trying to **create** an **interface** in **Java**?
 
-#card 
+#anki-card 
 
 Here are the key rules to keep in mind when creating an interface in Java:
 
@@ -436,7 +436,7 @@ Remember, the purpose of an interface is to define a contract for behavior. An i
 ﹇<br>
 As of Feb. 10, 2024 11:49:49 PM, how do you compare primitive types in Java?
 
-#card 
+#anki-card 
 
 For comparing primitive types, you should use the equality operator `==`. For example, `if (a == b)` would compare two integers `a` and `b`.
 ^1707612511194
@@ -447,7 +447,7 @@ For comparing primitive types, you should use the equality operator `==`. For ex
 ﹇<br>
 As of Feb. 10, 2024 11:27:50 PM,  does the `equals()` method have the capability to compare primitives?
 
-#card 
+#anki-card 
 
 The `equals()` method is a feature of objects in Java, not primitive types. Primitive types, such as `int`, `char`, `boolean`, `float`, `double`, `byte`, `short`, and `long`, are not objects and do not have methods.
 
@@ -482,7 +482,7 @@ For 〔1:comparing primitive types〕, you should use the 〔2:equality operator
 ﹇<br>
 As of Feb. 11, 2024 12:17:41 AM, in the context of Java, what is pattern matching?
 
-#card 
+#anki-card 
 
 In the context of Java, a pattern variable is a local variable that is assigned values extracted from a target only if a certain test, or predicate, is successful.
 
@@ -512,7 +512,7 @@ if (obj instanceof Savings that) {
 }
 ```
 
-#card 
+#anki-card 
 
 Casting in Java is used to convert an object of one type into another type. In your code, even though you’ve checked that `obj` is an instance of `Savings`, it’s still being treated as an `Object` within the scope of the `equals` method.
 
@@ -541,7 +541,7 @@ In this code, the casting is necessary to let the compiler know that `obj` shoul
 ﹇<br>
 As of Feb. 19, 2024 01:38:21 PM, how can I make an `enum` in Java?
 
-#card 
+#anki-card 
 
 In Java, you can define an `enum` like this:
 
@@ -584,7 +584,7 @@ This will print “Mondays are hard.” because `day` is set to `Day.MONDAY`. Yo
 ﹇<br>
 As of Feb. 19, 2024 01:39:56 PM, can you add a method to an `enum` in Java?
 
-#card 
+#anki-card 
 
 Yes, you can add methods to an `enum` in Java. Here’s an example:
 
@@ -625,7 +625,7 @@ Remember, the constructor for an `enum` type must be package-private or private 
 ﹇<br>
 As of Feb. 19, 2024 01:40:44 PM, is it best practice to have an `enum` have a function like `getDayName()` instead of just directly accessing the `enum` itself?
 
-#card 
+#anki-card 
 
 It depends on the use case. If the `enum` values themselves are sufficient, then you might not need additional methods. However, methods can provide additional functionality and abstraction, which can be beneficial in certain scenarios.
 

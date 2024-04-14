@@ -1,7 +1,7 @@
 ---
 title: Misc. Notes
 created: 2023-12-27T21:20
-updated: 2024-01-01T23:53
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -32,7 +32,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ French::Misc.Notes
 ﹇<br>
 How do you say “please” in French?
 
-#card 
+#anki-card 
 
 [The most common way to say please in French is **s’il vous plaît**, which literally means “if it pleases you”.](https://bing.com/search?q=How+do+you+say+please+in+french%3f)[1](https://bing.com/search?q=How+do+you+say+please+in+french%3f) 
 

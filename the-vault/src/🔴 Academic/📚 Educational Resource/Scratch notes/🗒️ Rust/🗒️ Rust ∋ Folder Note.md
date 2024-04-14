@@ -1,7 +1,7 @@
 ---
 title: 🗒️ Rust
 created: 2023-08-04 01:58
-updated: 2023-11-18T02:44
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -21,7 +21,7 @@ cards-deck: 🔴 Academic::📚 Educational ResourceRust
 
 
 How do I list all globally installed packages in Rust’s **cargo**?
-#card 
+#anki-card 
 The way to do so…
 ```bash
 cargo install --list
@@ -29,7 +29,7 @@ cargo install --list
 ^1693111890558
 
 Does **cargo** install crates globally? 
-#card 
+#anki-card 
 Yes, crates are installed globally for the current user, not per project. Currently, they are stored in `<user directory>/.cargo/registry`.
 ^1693111890569
 

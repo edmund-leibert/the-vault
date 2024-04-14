@@ -1,12 +1,12 @@
 ---
 created: 2023-11-18T06:43
-updated: 2024-02-10T15:59
+updated: 2024-04-14T00:24
 ---
 
 ﹇<br>
 What is the command to tab right a selection in **Vim**?
 
-#card 
+#anki-card 
 
 In Vim, you can tab right a selection by following these steps:
 

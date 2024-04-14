@@ -3,7 +3,7 @@ title: Click and Build꞉ Build Extensible and Composable CLI Apps
 authors:
   - Edmund Leibert III
 created: 2023-11-14T19:56
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 tags:
   - 🔴-academic/📚-educational-resource/name/real-python/click-and-build-build-extensible-and-composable-cli-apps
   - 🔴-academic/📚-educational-resource/format/website
@@ -36,7 +36,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::LeetCode::Problems::Click 
 ﹇<br>
 What Python library provides an extensible, composable, and user-friendly command-line interface for automation scripts?
 
-#card-reverse
+#anki-card-reverse
 
 Click
 
@@ -46,7 +46,7 @@ Click
 ﹇<br>
 Which Python library is known for being robust, mature, intuitive, and feature-rich for creating CLIs?
 
-#card-reverse
+#anki-card-reverse
 
 Click
 
@@ -56,7 +56,7 @@ Click
 ﹇<br>
 What should you have a good understanding of to get the most out of a tutorial on Click in Python?
 
-#card
+#anki-card
 
 A good understanding of Python programming, including the use of decorators, and familiarity with using the command line or terminal of your operating system.
 
@@ -66,7 +66,7 @@ A good understanding of Python programming, including the use of decorators, and
 ﹇<br>
 Besides Click, name two other libraries in Python for creating command-line interfaces.
 
-#card-reverse
+#anki-card-reverse
 
 In the Python ecosystem, you’ll find multiple libraries for creating CLIs, including [`argparse`](https://realpython.com/command-line-interfaces-python-argparse/) from the [standard library](https://docs.python.org/3/library/index.html), [Typer](https://realpython.com/python-typer-cli/), and a few others. [@PythonStandardLibrary] [@leodanispozoramosBuildCommandLineToDo2021]
 
@@ -78,7 +78,7 @@ However, Click offers a robust, mature, intuitive, and feature-rich solution.
 ﹇<br>
 What are some key features you can implement in your CLI apps using Click?
 
-#card
+#anki-card
 
 Adding arguments, options, and subcommands; enhancing usage and help pages; preparing the app for installation, use, and distribution.
 
@@ -88,7 +88,7 @@ Adding arguments, options, and subcommands; enhancing usage and help pages; prep
 ﹇<br>
 In what context is Click particularly useful in Python?
 
-#card-reverse
+#anki-card-reverse
 
 For developers, data scientists, DevOps engineers, or anyone using Python to automate repetitive tasks.
 
@@ -108,7 +108,7 @@ Click is a great alternative to the {2:[`argparse`](https://realpython.com/comm
 ﹇<br>
 What Python library provides a flexible and intuitive framework for creating CLI apps, supporting features like lazy composition, Unix conventions, and environment variable loading?
 
-#card-reverse
+#anki-card-reverse
 
 Click
 
@@ -118,7 +118,7 @@ Click
 ﹇<br>
 How does Click's API enhance the process of adding arguments, options, and subcommands to CLI applications?
 
-#card 
+#anki-card 
 
 Click’s [application programming interface (API)](https://en.wikipedia.org/wiki/API) is highly intuitive and consistent. The API takes advantage of Python [decorators](https://realpython.com/primer-on-python-decorators/), allowing you to add [arguments, options, and subcommands](https://realpython.com/command-line-interfaces-python-argparse/#commands-arguments-options-parameters-and-subcommands) to your CLIs quickly.
 
@@ -130,7 +130,7 @@ Click’s [application programming interface (API)](https://en.wikipedia.org/wi
 ﹇<br>
 What are some key features of Click apps?
 
-#card 
+#anki-card 
 
 Key features of Click apps include…
 - Can be **lazily composable** without restrictions
@@ -146,7 +146,7 @@ Key features of Click apps include…
 ﹇<br>
 How does Click handle user input and error messages?
 
-#card 
+#anki-card 
 
 Click has a strong understanding of data types, which allows it to generate consistent error messages when users provide the wrong type of input.
 
@@ -156,7 +156,7 @@ Click has a strong understanding of data types, which allows it to generate cons
 ﹇<br>
 What benefit does Click provide in terms of documentation and user assistance for CLI apps?
 
-#card 
+#anki-card 
 
 Click can generate usage and help pages for CLI apps, improving the user experience by keeping information about all arguments, options, and commands.
 
@@ -166,7 +166,7 @@ Click can generate usage and help pages for CLI apps, improving the user experie
 ﹇<br>
 In the general context of computer science/software engineering, what exactly is a decorator?
 
-#card 
+#anki-card 
 
 In computer science and software engineering, a **decorator** is a design pattern used to extend or alter the behavior of functions or methods without modifying their actual code. 
 
@@ -178,7 +178,7 @@ This pattern is often used for cross-cutting concerns, such as logging, authenti
 ﹇<br>
 Specifically, in the context of Python, what are **decorators**?
 
-#card 
+#anki-card 
 
 In Python, a **decorator** is a specific application of the decorator pattern. It's a function that takes another function as an argument, extends the behavior of this function, and returns a new function with the extended behavior. Python's decorators are a syntactic sugar, using the `@` symbol, that allows for easy modification of functions or methods.
 
@@ -210,7 +210,7 @@ In this example, `my_decorator` is a decorator that adds behavior before and aft
 ﹇<br>
 Does Click come with the Python standard library?
 
-#card 
+#anki-card 
 
 No, unlike `argparse`, Click doesn’t come in the Python standard library.
 

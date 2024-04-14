@@ -324,7 +324,7 @@
         "luminance_offset": 0.15
       },
       {
-        "tag_name": "card;\ncard-reverse",
+        "tag_name": "anki-card;\nanki-card-reverse",
         "color": {
           "r": 69,
           "g": 164,

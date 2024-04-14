@@ -1,7 +1,7 @@
 ---
 title: Pip
 created: 2023-10-31T16:39
-updated: 2023-11-28T10:56
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -32,7 +32,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Python::Pip
 ﹇<br>
 In the context of Python, what does **pip** stand for?
 
-#card 
+#anki-card 
 
 In the context of **Python**, PIP stands for **Pip Installs Packages**. [It’s a package manager for Python that helps to install and manage software packages written in Python](https://pypi.org/project/pip/) [@thepipdevelopersPipPyPARecommended]
 

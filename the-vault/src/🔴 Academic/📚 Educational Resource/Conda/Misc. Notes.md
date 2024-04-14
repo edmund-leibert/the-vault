@@ -1,7 +1,7 @@
 ---
 title: Misc. Notes
 created: 2023-11-14T23:35
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -30,7 +30,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::Conda::Misc. Notes
 ﹇<br>
 How can I list all conda environments?
 
-#card 
+#anki-card 
 
 To list all conda environments, you can use the following command in your terminal:
 

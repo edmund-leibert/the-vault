@@ -1,7 +1,7 @@
 ---
 title: Part 2꞉ Containerize an application
 created: 2023-10-31T17:48
-updated: 2024-04-13T22:27
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -38,7 +38,7 @@ To {1:build the image}, you'll need to use a {2:Dockerfile}.
 ﹇<br>
 What is a Dockerfile?
 
-#card 
+#anki-card 
 
 A Dockerfile is simply a text-based file with no file extension that contains a script of instructions. Docker uses this script to build a container image.
 
@@ -48,7 +48,7 @@ A Dockerfile is simply a text-based file with no file extension that contains a 
 ﹇<br>
 What is the general process to building an app’s image?
 
-#card 
+#anki-card 
 
 1. Create the Dockerfile for the application
 2. Build the image
@@ -63,7 +63,7 @@ What does the following command do?
 $ docker build -t getting-started .
 ```
 
-#card 
+#anki-card 
 
 The `docker build` command uses the Dockerfile to build a new image. You might have noticed that Docker downloaded a lot of "layers". This is because you instructed the builder that you wanted to start from the `node:18-alpine` image. But, since you didn't have that on your machine, Docker needed to download the image.
 
@@ -85,7 +85,7 @@ What does the following code do?
 $ docker run -dp 127.0.0.1:3000:3000 getting-started
 ```
 
-#card 
+#anki-card 
 
 Runs your container.
 

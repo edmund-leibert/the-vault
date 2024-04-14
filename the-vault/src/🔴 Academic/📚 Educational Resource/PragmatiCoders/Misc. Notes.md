@@ -1,7 +1,7 @@
 ---
 title: Misc. Notes
 created: 2023-11-14T14:30
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -28,7 +28,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::PragmatiCoders::Misc. Note
 ﹇<br>
 What is an **enum** in Python?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 An **enum** is a special type of data structure in Python that allows you to define a set of named constants.
 
@@ -38,7 +38,7 @@ An **enum** is a special type of data structure in Python that allows you to def
 ﹇<br>
 Why use enums in Python?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 Enums can make your Python code more readable, maintainable, and error-resistant.
 
@@ -48,7 +48,7 @@ Enums can make your Python code more readable, maintainable, and error-resistant
 ﹇<br>
 How do you define an enum in Python 3.10 or later?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 You use the `enum` module and subclass the `Enum` class to create your own enums.
 
@@ -63,7 +63,7 @@ from enum import Enum
 ﹇<br>
 How do you access members of an enum?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 You use the dot notation to access members of an enum.
 
@@ -73,7 +73,7 @@ You use the dot notation to access members of an enum.
 ﹇<br>
 In Python, how do you iterate over the members of an enum?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 You use a for loop to iterate over the members of an enum.
 
@@ -83,7 +83,7 @@ You use a for loop to iterate over the members of an enum.
 ﹇<br>
 How can you use enums in switch statements?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 You can use enums in switch statements to match different cases.
 
@@ -93,7 +93,7 @@ You can use enums in switch statements to match different cases.
 ﹇<br>
 Give an example of how to define an enum in Python 3.10 or later.
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 
 ```python
@@ -111,7 +111,7 @@ class Color(Enum):
 ﹇<br>
 Give an example of how to access a member of an enum.
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 ```python
 color = Color.RED
@@ -124,7 +124,7 @@ print(color)
 ﹇<br>
 Give an example of how to iterate over the members of an enum.
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 ```python
 for member in Color:
@@ -137,7 +137,7 @@ for member in Color:
 ﹇<br>
 Give an example of how to use an enum in a switch statement.
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/python 
 
 ```python
 def get_color_name(color):
@@ -156,7 +156,7 @@ def get_color_name(color):
 ﹇<br>
 What does the `+`, `-`, `#`, and `~` symbols before an attribute and operation in name in a class
 
-#card 
+#anki-card 
 
 The `+`, `-`, `#` and `~` symbols before an attribute and operation name in a class denote the visibility of the attribute and operation.
 
@@ -183,7 +183,7 @@ The `+`, `-`, `#` and `~` symbols before an attribute and operation name in a cl
 ﹇<br>
 What does “feeding a new table mean in the context of data engineering”?
 
-#card 
+#anki-card 
 
 In the context of data engineering, “feeding a new table” typically refers to the process of populating a newly created database table with data. This can be done through various methods such as:
 

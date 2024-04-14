@@ -1,7 +1,7 @@
 ---
 title: LaTeX
 created: 2023-08-04 01:58
-updated: 2024-01-24T17:01
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -36,7 +36,7 @@ cards-deck: 🔴 Academic::📚 Educational ResourceX
 ﹇<br>
 How can I type **Big O** in LaTeX/MathJax? 
 
-#card
+#anki-card
 
 ```latex
 $O(n\log{n})$ % regular O
@@ -55,7 +55,7 @@ You can refer to the following table for more information…
 ﹇<br>
 How can I create a _combinatorial_ in **MathJax**/**LaTeX**?
 
-#card 
+#anki-card 
 
 To create a combinatorial in MathJax/LaTeX, you can use the `\binom` or `\dbinom` command. The `\binom` command is the standard LaTeX command for creating binomial coefficients, and the `\dbinom` command is an alternative that is sometimes used for better spacing.
 The syntax for the `\binom` command is:
@@ -87,7 +87,7 @@ Here are some other examples of how to create combinatorials in MathJax/LaTeX:
 ﹇<br>
 How can I add a tab or extra padding space in MathJax/LaTeX?
 
-#card 
+#anki-card 
 
 To add a tab or extra padding space in MathJax/LaTeX, you can use the following commands:
 - `\;` for a thick space.
@@ -117,7 +117,7 @@ $$hello\quad world$$
 ﹇<br>
 In MathJax/LateX, how can I change text be normal in the equation?
 
-#card 
+#anki-card 
 
 To change text to normal in a MathJax/LaTeX equation, you can use the… 
 
@@ -140,7 +140,7 @@ x = \text{normal}
 ﹇<br>
 In MathJax/LaTeX, how can I type a vector? (e.g. $\vec{\boldsymbol{F}}$)
 
-#card 
+#anki-card 
 
 Use the `vec` command like so…
 

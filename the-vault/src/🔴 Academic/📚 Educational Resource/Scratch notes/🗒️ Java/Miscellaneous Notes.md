@@ -1,6 +1,6 @@
 ---
 created: 2024-02-05T10:53
-updated: 2024-02-05T10:55
+updated: 2024-04-14T00:24
 ---
 
 
@@ -11,7 +11,7 @@ When using **JetBrains**’ **IntelliJ IDEA Ultimate**, what should one do when 
 Error:java: error: release version 5 not supported
 ```
 
-#card 
+#anki-card 
 
 {{Answer}}
 

@@ -5,7 +5,7 @@ tags:
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-10-13T01:57
-updated: 2023-11-18T02:44
+updated: 2024-04-14T00:24
 ---
 
 # The Modern JavaScript Tutorial
@@ -16,7 +16,7 @@ updated: 2023-11-18T02:44
 
 #### 1.1 [**An Introduction to JavaScript**](https://javascript.info/intro)
 
-What will this section cover? #card-reverse 
+What will this section cover? #anki-card-reverse 
 - What’s so special about JavaScript
 - What we can achieve with it
 - Other technologies that play well with it
@@ -25,40 +25,40 @@ What will this section cover? #card-reverse
 
 ##### [**What is JavaScript?**](https://javascript.info/intro#what-is-javascript)
 
-Why was JavaScript initially created? #card 
+Why was JavaScript initially created? #anki-card 
 A language that was created to “make web pages alive.”
 ^1683149678260
 
 
-What are programs in the <span class="spoiler">JavaScript</span> language called? #card-reverse 
+What are programs in the <span class="spoiler">JavaScript</span> language called? #anki-card-reverse 
 The programs in this language are called *scripts*.
 ^1683149678263
 
 
-What are some features of *scripts*? #card-reverse 
+What are some features of *scripts*? #anki-card-reverse 
 - Can be written right in a web page’s HTML.
 - Can be ran automatically as the page loads.
 ^1683149678267
 
-Can JavaScript scripts be written right into a web page’s HTML? #card 
+Can JavaScript scripts be written right into a web page’s HTML? #anki-card 
 Yes.
 ^1684424307655
 
-Can JavaScript be ran automatically as the page loads? #card 
+Can JavaScript be ran automatically as the page loads? #anki-card 
 Yes.
 ^1684424307664
 
-How are scripts provided and executed? #card 
+How are scripts provided and executed? #anki-card 
 As plain text.
 ^1683149678270
 
 
-Scripts need special preparation or compilation to run. True or False? #card 
+Scripts need special preparation or compilation to run. True or False? #anki-card 
 False. Scripts don’t need special preparation or compilation to run.
 ^1683149678273
 
 
-Why is JavaScript called JavaScript? #card 
+Why is JavaScript called JavaScript? #anki-card 
 > [!info] Why is it called JavaScript?
 > - The language initially had another name: “LiveScript”
 > 	- However, Java was very popular at that time, so it was decided that positioning a new language as a “younger brother” of Java would help.
@@ -66,7 +66,7 @@ Why is JavaScript called JavaScript? #card
 ^1683149678276
 
 
-Does JavaScript only execute in the browser? #card 
+Does JavaScript only execute in the browser? #anki-card 
 No, today <span class="spoiler">JavaScript</span> can execute…
 - In the browser
 - On the server
@@ -74,19 +74,19 @@ No, today <span class="spoiler">JavaScript</span> can execute…
 ^1683149678280
 
 
-What is the “JavaScript virtual machine”? #card-reverse 
+What is the “JavaScript virtual machine”? #anki-card-reverse 
 What the browser’s embedded engine is sometimes called.
 ^1683149678284
 
 
-What are some JavaScript engines? #card 
+What are some JavaScript engines? #anki-card 
 - <span class="spoiler">[V8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine))</span> – in Chrome, Opera and Edge.
 - <span class="spoiler">[SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey)</span> – in Firefox.
 - …There are other codenames like “Chakra” for IE, “JavaScriptCore”, “Nitro” and “SquirrelFish” for Safari, etc.
 ^1683149678287
 
 
-How do JavaScript engines work? #card 
+How do JavaScript engines work? #anki-card 
 > [!info] How do engines work?
 > Engines are complicated. But the basics are easy..
 > 1. <span class="spoiler">The engine (embedded if it’s a browser) reads (“parses”) the script.</span>
@@ -100,28 +100,28 @@ How do JavaScript engines work? #card
 
 ##### [**What can in-browser JavaScript do?**](https://javascript.info/intro#what-can-in-browser-javascript-do)
 
-Is modern JavaScript considered a “safe” programming language? #card 
+Is modern JavaScript considered a “safe” programming language? #anki-card 
 Yes.
 ^1683149678293
 
 
-Why is modern JavaScript considered a “safe” programming language? #card 
+Why is modern JavaScript considered a “safe” programming language? #anki-card 
 - It does *not* provide low-level access to memory or the CPU
 - It was initially created for browsers which do not require it.
 ^1683149678296
 
 
-What do JavaScript’s capabilities greatly depend on? #card 
+What do JavaScript’s capabilities greatly depend on? #anki-card 
 The environment it’s running in.
 ^1683149678299
 
 
-<span class="spoiler">[Node.js](https://wikipedia.org/wiki/Node.js)</span> supports functions that allow JavaScript to read/write arbitrary files, perform network requests, etc. #card 
+<span class="spoiler">[Node.js](https://wikipedia.org/wiki/Node.js)</span> supports functions that allow JavaScript to read/write arbitrary files, perform network requests, etc. #anki-card 
 Node.js
 ^1683149678301
 
 
-What does [Node.js](https://wikipedia.org/wiki/Node.js) allow for? #card-reverse 
+What does [Node.js](https://wikipedia.org/wiki/Node.js) allow for? #anki-card-reverse 
 Support functions that allow JavaScript to…
 - read/write arbitrary files
 - perform network requests
@@ -129,7 +129,7 @@ Support functions that allow JavaScript to…
 ^1683149678304
 
 
-What is in-browser JavaScript able to do? #card 
+What is in-browser JavaScript able to do? #anki-card 
 - Add new HTML to the page, change the existing content, modify styles.
 - React to user actions, run on mouse clicks, pointer movements, key presses.
 - Send requests over the network to remote servers, download and upload files (so-called [AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)) and [COMET](https://en.wikipedia.org/wiki/Comet_(programming)) technologies).
@@ -138,21 +138,21 @@ What is in-browser JavaScript able to do? #card
 ^1683149678307
 
 
-What are cookies in JavaScript? #card 
+What are cookies in JavaScript? #anki-card 
 <span class="spoiler">Cookies</span> in JavaScript are a **set of data stored in the browser that is fetched whenever a web page is loaded**, and the content of this <span class="spoiler">cookie</span> will be used to reload the web page whenever there is a connectivity issue or the server is not reachable.
 ^1683149678311
 
 
 ##### [**What CAN’T in-browser JavaScript do?**](https://javascript.info/intro#what-can-t-in-browser-javascript-do)
 
-Why are JavaScript’s abilities in the browser limited? #card 
+Why are JavaScript’s abilities in the browser limited? #anki-card 
 To protect the user’s safety. For instance, imagine…
 - <span class="spoiler">An evil webpage accessing private information.</span>
 - <span class="spoiler">An evil webpage harming the user’s data.</span>
 ^1683149678314
 
 
-What are examples of such restrictions to JavaScript? #card-reverse 
+What are examples of such restrictions to JavaScript? #anki-card-reverse 
 - <span class="spoiler">JavaScript on a webpage may not read/write arbitrary files on the hard disk, copy them or execute programs. It has no direct access to OS functions.
   Modern browsers allow it to work with files, but the access is limited and only provided if the user does certain actions, like “dropping” a file into a browser window or selecting it via an `<input>` tag. 
   There are ways to interact with the camera/microphone and other devices, but they require a user’s explicit permission. So a JavaScript-enabled page may not sneakily enable a web-camera, observe the surroundings and send the information to the [NSA](https://en.wikipedia.org/wiki/National_Security_Agency).</span>
@@ -164,12 +164,12 @@ What are examples of such restrictions to JavaScript? #card-reverse
 ^1683149678318
 
 
-Does in-browser JavaScript have direct access to the OS? #card 
+Does in-browser JavaScript have direct access to the OS? #anki-card 
 No.
 ^1683149678321
 
 
-Generally, regarding in-browser JavaScript, do different tabs/windows know each other? #card 
+Generally, regarding in-browser JavaScript, do different tabs/windows know each other? #anki-card 
 - No.
 - Sometimes they do, for example when one window uses JavaScript to open the other one.
 	- But even in this case, JavaScript from one page may not access the other page if they come from different sites (from a different domain, protocol or port).
@@ -184,38 +184,38 @@ What are protocols?
 
 What are ports?
 
-![[the-vault/assets/images/an-introduction-to-modern-javascript.jpg|350]] #card 
+![[the-vault/assets/images/an-introduction-to-modern-javascript.jpg|350]] #anki-card 
 How should one visualize the limitations of in-browser JavaScript?
 ^1683149678328
 
 
 ##### [**What makes JavaScript unique?**](https://javascript.info/intro#what-makes-javascript-unique)
 
-What are the _three_ primary great things about JavaScript? #card-reverse 
+What are the _three_ primary great things about JavaScript? #anki-card-reverse 
 - Full integration with HTML/CSS
 - Simple things are done simply
 - Supported by all major browsers and enabled by default
 ^1683149678331
 
 
-Is JavaScript the only browser technology that combines full integration with HTML/CSS, simple things are done simply, and supported by all major browsers and enabled by default? #card 
+Is JavaScript the only browser technology that combines full integration with HTML/CSS, simple things are done simply, and supported by all major browsers and enabled by default? #anki-card 
 Yes.
 ^1683149678334
 
 
-Can JavaScript be used to create servers, mobile applications, etc.? #card 
+Can JavaScript be used to create servers, mobile applications, etc.? #anki-card 
 Yes.
 ^1683149678337
 
 
 ##### [**Languages “over” JavaScript**](https://javascript.info/intro#languages-over-javascript)
 
-What does _transpiled_ mean in the context of JavaScript? #card 
+What does _transpiled_ mean in the context of JavaScript? #anki-card 
 Converted to JavaScript.
 ^1683149678340
 
 
-What are some examples of languages that _transpile_ to JavaScript? #card 
+What are some examples of languages that _transpile_ to JavaScript? #anki-card 
 Examples of such languages:
 - <span class="spoiler">[CoffeeScript](https://coffeescript.org/)</span> is “syntactic sugar” for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.
 - <span class="spoiler">[TypeScript](https://www.typescriptlang.org/)</span> is concentrated on adding “strict data typing” to simplify the development and support of complex systems. It is developed by Microsoft.
@@ -229,12 +229,12 @@ Examples of such languages:
 
 ##### **Specification**
 
-Where is is the “formal specification” of the JavaScript? #card-reverse 
+Where is is the “formal specification” of the JavaScript? #anki-card-reverse 
 - The ECMA-262 specification contains the most in-depth, detailed and formalized information about JavaScript. It defines the language.
 - Not for everyday use since it is so detailed.
 ^1686453115120
 
-Where to read about new bleeding-edge features, including those that are “almost standard”? #card-reverse 
+Where to read about new bleeding-edge features, including those that are “almost standard”? #anki-card-reverse 
 See proposals at https://github.com/tc39/proposals.
 ^1686453115127
 
@@ -243,13 +243,13 @@ See proposals at https://github.com/tc39/proposals.
 {**MDN (Mozilla) JavaScript Reference**} is the main manual with examples and other information. It’s great to get in-depth information about individual language functions, methods etc.
 ^1686453115132
 
-How to best use MDN JavaScript reference? #card 
+How to best use MDN JavaScript reference? #anki-card 
 Although, it’s often best to use an internet search instead. Just use “MDN [term]” in the query, e.g. [https://google.com/search?q=MDN+parseInt](https://google.com/search?q=MDN+parseInt) to search for the `parseInt` function.
 ^1686453115136
 
 ##### **Compatibility tables**
 
-Where to see features currently supported by browsers? #card 
+Where to see features currently supported by browsers? #anki-card 
 - [https://caniuse.com](https://caniuse.com/) – per-feature tables of support, e.g. to see which engines support modern cryptography functions: [https://caniuse.com/#feat=cryptography](https://caniuse.com/#feat=cryptography).
 - [https://kangax.github.io/compat-table](https://kangax.github.io/compat-table) – a table with language features and engines that support those or don’t support.
 ^1686453115140
@@ -280,31 +280,31 @@ Where to see features currently supported by browsers? #card
 
 #### 2.1 [Hello, world!](https://javascript.info/hello-world)
 
-Is alert a browser-specific command? #card 
+Is alert a browser-specific command? #anki-card 
 Yes.
 ^1686453115143
 
 ##### **The “script” tag**
 
-What is a browser-specific command? #card 
+What is a browser-specific command? #anki-card 
 - A browser-specific command in JavaScript is a command that only works in a specific browser. [For example, you can use the `navigator.userAgent` property to detect the browser and write browser-specific code](https://stackoverflow.com/questions/14721237/how-do-i-write-browser-specific-javascript-code)
 - [However, it’s usually better to detect features rather than browsers, as you shouldn’t care what browser the end user is using as long as it supports your features](https://stackoverflow.com/questions/14721237/how-do-i-write-browser-specific-javascript-code)
 ^1686453115147
 
-How do you detect the current browser being used? #card-reverse  
+How do you detect the current browser being used? #anki-card-reverse  
 Can use the `navigator.userAgent`
 ^1686453115150
 
-Is better to detect the browser or just the features? #card 
+Is better to detect the browser or just the features? #anki-card 
 Better to detect just the features.
 ^1686453115154
 
-What is the concept of feature detection and why is it important? #card
+What is the concept of feature detection and why is it important? #anki-card
 - [Feature detection is the practice of determining whether a browser supports a certain block of code and running different code depending on whether it does or doesn’t, so that the browser can always provide a working experience rather than crashing or erroring in some browsers](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection)[1](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection).
 - [The idea behind feature detection is that you can run a test to determine whether a feature is supported in the current browser, and then conditionally run code to provide an acceptable experience both in browsers that do support the feature and browsers that don’t](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/JavaScript)[2](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/JavaScript).
 ^1686453115157
 
-How can one incorporate feature detection into their web application? #card 
+How can one incorporate feature detection into their web application? #anki-card 
 - [For example, you can detect whether the browser supports geolocation by using something like `if ("geolocation" in navigator) { ... }`](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection)[1](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection).
 ^1686453115161
 - [For complex applications, consider using an established feature detection library such as Modernizr rather than writing your own](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection)[1](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection).
@@ -318,7 +318,7 @@ The `<script>` tag contains JavaScript code which is {automatically executed} wh
 
 ##### **Modern markup**
 
-What are some attributes of the `<script>` that are no longer used in modern JavaScript? #card 
+What are some attributes of the `<script>` that are no longer used in modern JavaScript? #anki-card 
 - The `type` attribute: `<script type=…>`
 - The `language` attribute: `script language=…>`
 - Comments before and after scripts.
@@ -337,7 +337,7 @@ What rule should one follow regarding JavaScript and putting them in HTML files?
 > Other pages that reference the same script will take it from the cache instead of downloading it, so the file is actually downloaded only once.
 > That reduces traffic and makes pages faster.
 
-If the `src` is set, is the script content ignored? #card 
+If the `src` is set, is the script content ignored? #anki-card 
 > [!warning]+ If `src` is set, the script content ignored.
 > A single `<script>` tag can’t have both the `src` attribute and code inside.
 ^1686466953705
@@ -372,7 +372,7 @@ It is recommended putting {semicolons} at the end of each statement.
 
 ##### **“use strict”**
 
-What is the purpose of “use strict”? #card 
+What is the purpose of “use strict”? #anki-card 
 To make a script strictly adhere to modern JavaScript practices.
 ```js
 "use strict"; 
@@ -381,7 +381,7 @@ To make a script strictly adhere to modern JavaScript practices.
 
 The directive looks like a string: {"use strict"} or 'use strict'. When it is located at the {top} of a script, the whole script works the “modern” way.
 
-How to to make a function `"use strict"`? #card 
+How to to make a function `"use strict"`? #anki-card 
 Place `"use strict"` a the top of the function.
 
 What is

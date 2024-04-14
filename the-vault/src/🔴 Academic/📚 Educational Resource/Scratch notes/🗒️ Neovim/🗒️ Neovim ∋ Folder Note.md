@@ -1,6 +1,6 @@
 ---
 created: 2023-11-18T02:44
-updated: 2023-11-18T02:44
+updated: 2024-04-14T00:24
 ---
 ---
 author: 
@@ -18,60 +18,60 @@ updated: 2023-09-28 14:16
 updated: 2023-09-22 09:56
 3605588578
 
-What does the keymap <S-Tab> mean? #card-reverse 
+What does the keymap <S-Tab> mean? #anki-card-reverse 
 The keymap `<S-Tab>` stands for the Shift key combined with the Tab key. In key mapping notation, `<S-Tab>` represents pressing the Shift key (denoted by the `S` inside the angle brackets) and the Tab key simultaneously. This is a common key combination used in various applications and programming environments, including Neovim and Vim, for tasks like navigating between fields, cycling through autocompletion suggestions in reverse order, or unindenting lines of code.
 ^1683605588583
 
-What is the keymap to toggle a breakpoint via **nvim-dap**? #card-reverse
+What is the keymap to toggle a breakpoint via **nvim-dap**? #anki-card-reverse
 `<Space>B`
 ^1683605588586
 
-What does `<CR>` mean in mappings for Neovim? #card 
+What does `<CR>` mean in mappings for Neovim? #anki-card 
 In Vim, `<CR>` stands for “Carriage Return” and is used to represent the `Enter` key. It is often used in Vim mappings to execute a command. [For example, `:map <F10> <Esc>:tabnew<CR>` maps the `F10` key to open a new tab](https://www.linux.com/news/vim-tips-using-vim-mappings-and-abbreviations/)
 ^1683605588589
 
-**Front:** What is the Vim key to open a new line below the cursor? #card 
+**Front:** What is the Vim key to open a new line below the cursor? #anki-card 
 **Back:** In normal mode, you can use the <kbd>o</kbd> key to open a new line below the cursor and enter insert mode.
 ^1683605588593
 
-**Front:** What is the Vim key to open a new line above the cursor? #card 
+**Front:** What is the Vim key to open a new line above the cursor? #anki-card 
 **Back:** In normal mode, you can use the <kbd>O</kbd> (capital O) key to open a new line above the cursor and enter insert mode.
 ^1683605588596
 
-**Front:** In Vim’s normal mode, how do you move the cursor to the beginning of the current word or the previous word if the cursor is already at the beginning of a word? #card 
+**Front:** In Vim’s normal mode, how do you move the cursor to the beginning of the current word or the previous word if the cursor is already at the beginning of a word? #anki-card 
 **Back:** In Vim’s normal mode, you can use the <kbd>b</kbd> key to move the cursor to the beginning of the current word or the previous word if the cursor is already at the beginning of a word.
 ^1683605588600
 
-**Front:** In Vim’s insert mode, how do you move backward a word? #card 
+**Front:** In Vim’s insert mode, how do you move backward a word? #anki-card 
 **Back:** In Vim’s insert mode, you can use <kbd>Alt</kbd> + <kbd>b</kbd> to move backward a word.
 ^1683605588603
 
-**Front:** In Vim’s normal mode, how do you move the cursor to the end of the current word? #card 
+**Front:** In Vim’s normal mode, how do you move the cursor to the end of the current word? #anki-card 
 **Back:** In Vim’s normal mode, you can use the <kbd>e</kbd> key to move the cursor to the end of the current word.
 ^1683605588606
 
 
-How do I find and replace everything in vim? In other words, what is the general form of the substitute command? #card 
+How do I find and replace everything in vim? In other words, what is the general form of the substitute command? #anki-card 
 - In Vim, you can find and replace text using the `:substitute` (`:s`) command. To run commands in Vim, you must be in normal mode, the default mode when starting the editor. To go back to normal mode from any other mode, just press the `Esc` key. The general form of the substitute command is as follows:
   ```
   :[range]s/{pattern}/{string}/[flags] [count]
   ```
 ^1683608281394
 
-How to search and replace across the entire file? #card
+How to search and replace across the entire file? #anki-card
 - If you want to search and replace the pattern in the entire file, use the percentage character `%` as a range. This character indicates a range from the first to the last line of the file: `":"%s/foo/bar/g`
 ^1683608281400
 
-**Front:** What is the difference between the `:s` and `:g` commands in Vim? #card 
+**Front:** What is the difference between the `:s` and `:g` commands in Vim? #anki-card 
 **Back:** The `:s` command is used for substitution within a line or range of lines, while the `:g` command is used for global actions on all lines that match a certain pattern.
 ^1686475017066
 
 
-**Front:** How do you escape special characters in Vim regex? #card 
+**Front:** How do you escape special characters in Vim regex? #anki-card 
 **Back:** To escape special characters in Vim regex, you need to use a backslash (`\`) before the character. For example, to match the literal characters `[` and `]`, you would use `\[` and `\]`
 ^1686475008179
 
-Using vim regex, how do I delete all lines that contain the word flashcard? #card 
+Using vim regex, how do I delete all lines that contain the word flashcard? #anki-card 
 In Vim, you can use the `:g` command to delete all lines that contain the word “flashcard”. Here’s an example command:
 ```
 :g/flashcard/d

@@ -1,7 +1,7 @@
 ---
 title: MSVC
 created: 2023-09-03 08:46
-updated: 2023-12-04T09:42
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -30,7 +30,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ C++::MSVC
 ﹇<br>
 Is `cl.exe` the **MSVC** compiler? Like, how should I think of what `cl.exe` is? For instance, I am familiar with `g++.exe` being the compiler for C++ source code. Is cl.exe the Visual Studio equivalent for MSVC?
 
-#card 
+#anki-card 
 
 Yes, `cl.exe` is the Microsoft C++ (MSVC) compiler<sup>[\[1\]](https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options?view=msvc-170)</sup>. It controls the MSVC C and C++ compilers and linker<sup>[\[1\]](https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options?view=msvc-170)</sup>. Just like `g++.exe` is used to compile C++ source code in GCC, `cl.exe` is used to compile C++ source code in MSVC<sup>[\[1\]](https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options?view=msvc-170)</sup>. It can be run only on operating systems that support Microsoft Visual Studio for Windows<sup>[\[1\]](https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options?view=msvc-170)</sup>. You can think of `cl.exe` as the Visual Studio equivalent for MSVC<sup>[\[1\]](https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options?view=msvc-170)</sup>.
 
@@ -41,7 +41,7 @@ Yes, `cl.exe` is the Microsoft C++ (MSVC) compiler<sup>[\[1\]](https://learn.mic
 ﹇<br>
 What is `g++.exe` and how is it different from MSVC (i.e., `cl.exe`)?
 
-#card 
+#anki-card 
 
 **g++** is a GNU C++ compiler invocation command, which is used for preprocessing, compilation, assembly, and linking of source code to generate an executable file<sup>[\[1\]](https://www.geeksforgeeks.org/compiling-with-g-plus-plus/)</sup>. It’s part of the GNU Compiler Collection (GCC), which includes front ends for C, C++, Objective-C, Fortran, Ada, Go, and D<sup>[\[2\]](https://gcc.gnu.org/)</sup>. You can use g++ with various tools like MinGW-w64 to create programs that run on different platforms including Windows<sup>[\[3\]](https://code.visualstudio.com/docs/cpp/config-mingw)</sup>.
 
@@ -59,7 +59,7 @@ The main difference between the two lies in their compatibility and usage. g++ i
 ﹇<br>
 What does MSVC stand for and is that the same thing as the cl.exe?
 
-#card 
+#anki-card 
 
 MSVC stands for **M**icro**s**oft **V**isual **C**++, which is a development environment that contains various tools, libraries, and compilers for developing C and C++ applications on Windows. It's a part of Microsoft's broader Visual Studio suite, although it can also be installed separately.
 
@@ -75,7 +75,7 @@ To put it simply:
 ﹇<br>
 What is the role of `cl.exe` in MSVC?
 
-#card 
+#anki-card 
 
 `cl.exe` is the command-line compiler for C, C++, and C++/CLI source files, and it is a part of the Microsoft Visual C++ development environment. 
 

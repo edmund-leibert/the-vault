@@ -1,7 +1,7 @@
 ---
 title: Misc. Notes
 created: 2023-09-03 08:46
-updated: 2023-12-04T09:39
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -30,7 +30,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource️::🗒️ C++::Misc. Note
 ﹇<br>
 When declaring a `struct` in C++, what must I *always* remember to add at the end of it? 
 
-#card 
+#anki-card 
 
 A semicolon. For example…
 ```cpp
@@ -45,7 +45,7 @@ struct structName {
 ﹇<br>
 What is the difference between brace and list initialization in C++?
 
-#card 
+#anki-card 
 
 In C++, both brace initialization (also known as uniform initialization) and list initialization are ways to initialize objects. They are similar in many ways, but there are some differences<sup>[\[1\]](https://stackoverflow.com/questions/18222926/what-are-the-advantages-of-list-initialization-using-curly-braces)</sup><sup>[\[2\]](https://stackoverflow.com/questions/21150067/initialization-difference-with-or-without-curly-braces-in-c)</sup>:
 1. **Narrowing Conversions**: Brace initialization does not allow narrowing conversions<sup>[\[1\]](https://stackoverflow.com/questions/18222926/what-are-the-advantages-of-list-initialization-using-curly-braces)</sup>. For example, if you try to initialize an `int` with a `double`, brace initialization will give a compile error, while list initialization will not<sup>[\[1\]](https://stackoverflow.com/questions/18222926/what-are-the-advantages-of-list-initialization-using-curly-braces)</sup>.
@@ -69,7 +69,7 @@ In general, brace initialization is preferred in modern C++ due to its safety fe
 ﹇<br>
 How do you create a dynamically allocated array of structs. 
 
-#card 
+#anki-card 
 
 One way is to use the `new` keyword…
 ```cpp
@@ -98,7 +98,7 @@ int main() {
 ﹇<br>
 What must I always remember when using the `new` keyword in C++? 
 
-#card-reverse  
+#anki-card-reverse  
 
 Don’t forget to deallocate the memory using `delete` or `delete[]`!
 
@@ -146,7 +146,7 @@ Remember, after calling `delete` or `delete[]` on a pointer, you should not use 
 ﹇<br>
 What should you do after calling `delete` or `delete[]` on a pointer? 
 
-#card
+#anki-card
 
 You should not use that pointer again. It’s a good practice to set the pointer to `nullptr` after deleting it.
 
@@ -156,7 +156,7 @@ You should not use that pointer again. It’s a good practice to set the pointer
 ﹇<br>
 Why should you set a pointer to `nullptr` after deleting it? 
 
-#card
+#anki-card
 
 Setting a pointer to `nullptr` after deleting it helps prevent “dangling pointers”.
 
@@ -166,7 +166,7 @@ Setting a pointer to `nullptr` after deleting it helps prevent “dangling poi
 ﹇<br>
 What are “dangling pointers”? 
 
-#card
+#anki-card
 
 “Dangling pointers” are pointers that point to memory that has already been deallocated.
 
@@ -176,7 +176,7 @@ What are “dangling pointers”? 
 ﹇<br>
 What can dangling pointers lead to? 
 
-#card
+#anki-card
 
 Dangling pointers can lead to undefined behavior and difficult-to-find bugs in your code.
 
@@ -186,7 +186,7 @@ Dangling pointers can lead to undefined behavior and difficult-to-find bugs in y
 ﹇<br>
 True or false, does C++ provides a built-in way to resize an array that has already been allocated? 
 
-#card 
+#anki-card 
 
 False. [If you need to change the size of the array during runtime, you’ll have to create a new array with the desired size, copy the elements over, and delete the old array](https://www.learncpp.com/cpp-tutorial/dynamically-allocating-arrays/).
 
@@ -196,7 +196,7 @@ False. [If you need to change the size of the array during runtime, you’ll hav
 ﹇<br>
 Are arrays contiguous in C++? If so, what is the benefit? 
 
-#card 
+#anki-card 
 
 - Yes, arrays in C++ are stored in contiguous memory locations.
 - This means that the elements of an array are stored next to each other in memory. 
@@ -208,7 +208,7 @@ Are arrays contiguous in C++? If so, what is the benefit?
 ﹇<br>
 What is the downside of arrays being stored in contiguous memory in C++? 
 
-#card-reverse 
+#anki-card-reverse 
 
 - One downside of <span class="spoiler">arrays</span> being stored in contiguous memory locations is that it can be difficult to resize them during runtime. If you need to add more elements to an <span class="spoiler">array</span> than its current size allows, you’ll have to create a new <span class="spoiler">array</span> with a larger size, copy the elements from the old <span class="spoiler">array</span> to the new one, and then delete the old <span class="spoiler">array</span>. This process can be time-consuming and inefficient.
 - Another downside is that inserting or deleting elements in the middle of an <span class="spoiler">array</span> can be slow because all the elements after the insertion or deletion point have to be shifted to make room for the new element or to close the gap left by the deleted element.
@@ -220,7 +220,7 @@ What is the downside of arrays being stored in contiguous memory in C++?
 ﹇<br>
 Does `printf()` have an option for `std::string`? 
 
-#card 
+#anki-card 
 
 No, `printf()` does ***not*** have an option for `std::string`
 
@@ -230,7 +230,7 @@ No, `printf()` does ***not*** have an option for `std::string`
 ﹇<br>
 Can you initialize a  `char*` via brace initialization with an empty string? 
 
-#card
+#anki-card
 
 Yes.
 
@@ -244,7 +244,7 @@ Is the following a valid example of brace initialization?
 int x = {4.4};
 ```
 
-#card 
+#anki-card 
 
 No, the syntax for brace initialization is as follows…
 
@@ -258,7 +258,7 @@ T object {arg1, arg2, ...};
 ﹇<br>
 In C++, can `struct` have a member functions? 
 
-#card 
+#anki-card 
 
 Yes.
 
@@ -269,7 +269,7 @@ Yes.
 ﹇<br>
 What must be *always* at the end of declaring a class? 
 
-#card 
+#anki-card 
 
 A semicolon.
 
@@ -279,7 +279,7 @@ A semicolon.
 ﹇<br>
 As recommended by LearnCpp.com, what are the general things one should do when configuring their compiler for a C++ project? 
 
-#card 
+#anki-card 
 
 1. Disable all compiler extensions
 	- Use the flag(s) `-pedantic-errors`
@@ -306,7 +306,7 @@ IntCollection::IntCollection(const IntCollection &c) {
 }
 ```
 
-#card 
+#anki-card 
 
 ```cpp
 IntCollection::IntCollection(const IntCollection &c)
@@ -328,7 +328,7 @@ In C++, the initializer list provides several benefits:
 2. ???
 3. ???
 
-#card 
+#anki-card 
 
 In C++, the initializer list provides several benefits:
 1. **Efficiency**: Initializing member variables via an initializer list can be more efficient than doing so in the constructor body.
@@ -341,7 +341,7 @@ In C++, the initializer list provides several benefits:
 ﹇<br>
 In C++, explain relatively in-depth how an initializer list enhances **efficiency**.
 
-#card 
+#anki-card 
 
 **Under the Hood for Efficiency**: When you use an initializer list, the member variables are initialized directly with the value, rather than first being default-constructed and then assigned a value. This "two-step" process in the absence of initializer lists can be less efficient, especially for complex objects. In some cases, it may even lead to double initialization. This efficiency gain is more noticeable for types where the cost of construction and assignment is high.
 
@@ -351,7 +351,7 @@ In C++, explain relatively in-depth how an initializer list enhances **efficienc
 ﹇<br>
 In C++, explain relatively in-depth how an initializer list enhances **immutability**.
 
-#card 
+#anki-card 
 
 > Why _**must**_ you use initializer lists for `const` and Reference Members?
 
@@ -363,7 +363,7 @@ For `const` members and references, you _**must**_ use an initializer list becau
 ﹇<br>
 In C++, explain relatively in-depth how an initializer list enhances **readability**.
 
-#card 
+#anki-card 
 
 **Readability**: Using initializer lists consolidates all the initialization logic in a single location right at the top of the constructor. This improves code readability, as anyone looking at your class will immediately know how members are being initialized without having to scan through the constructor's code block.
 
@@ -373,7 +373,7 @@ In C++, explain relatively in-depth how an initializer list enhances **readabili
 ﹇<br>
 When at the end of a while loop in C++, are all objects deconstructed? For instance, I instantiated the `Assignment` class (which is a derived class of the `Activity` class) in a `while(true)` loop. If the loop is not broken and goes for another iteration, the assignment class appears to be deconstructed.
 
-#card 
+#anki-card 
 
 In C++, an object’s destructor is called at the closing `}` for the block it was created in. So if you have a loop like this:
 
@@ -393,7 +393,7 @@ while (some_condition) {
 ﹇<br>
 For the debug flag for g++, what is the difference between `-g` and `-ggdb`? 
 
-#card 
+#anki-card 
 
 - The `-g` flag produces debugging information in the operating system’s native format (stabs, COFF, XCOFF, or DWARF 2). On most systems that use stabs format, `-g` enables the use of extra debugging information that only GDB can use.
 - The `-ggdb` flag produces debugging information specifically intended for GDB. This means to use the most expressive format available (DWARF 2, stabs, or the native format if neither of those are supported), including GDB extensions if at all possible.
@@ -422,7 +422,7 @@ IntCollection::IntCollection(const IntCollection &c)
 
 What can you infer?
 
-#card 
+#anki-card 
 
 When you see a constructor definition, like the one you posted:
 
@@ -468,7 +468,7 @@ The member variables `data`, `size`, and `capacity` are already typed in the cla
 ﹇<br>
 Is C++ pass-by-reference *or* pass-by-value? 
 
-#card 
+#anki-card 
 
 C++ is *both* pass-by-reference and pass-by-value.
 
@@ -478,7 +478,7 @@ C++ is *both* pass-by-reference and pass-by-value.
 ﹇<br>
 What is **pass-by-value**? 
 
-#card-reverse 
+#anki-card-reverse 
 
 When we pass parameters by value, a copy of the value is passed to the parameter and any changes to that value is *not* affected likewise to the original value.
 ```cpp
@@ -501,7 +501,7 @@ int main() {
 ﹇<br>
 What is **pass-by-reference** 
 
-#card-reverse 
+#anki-card-reverse 
 
 When we pass parameters by reference, a reference to the value is passed to the parameter and any changes to that value *is* affected likewise to the original value.
 ```cpp
@@ -524,7 +524,7 @@ int main() {
 ﹇<br>
 When passing-by-reference, what is the advantage of using **reference** (i.e., `&`)? 
 
-#card 
+#anki-card 
 
 References are typically easier and safer to use. Unlike pointers, they can't be `null`, and they don't require dereferencing to access the value they're referencing.
 
@@ -538,7 +538,7 @@ It's considered good practice to use references when you can, especially for `co
 ﹇<br>
 When passing-by-reference, what is the advantage of using **pointers** (i.e., `*`)? 
 
-#card 
+#anki-card 
 
 Pointers are more flexible and powerful, which can be both an advantage and a disadvantage. With pointers, you can point to different objects over their lifetime, and they can be reassigned to point to different objects.
 
@@ -554,7 +554,7 @@ Pointers can also point to an array of values, which can be useful in certain si
 ﹇<br>
 Do references require dereferencing? 
 
-#card 
+#anki-card 
 
 No. Note the difference to pointers…
 ```cpp
@@ -568,7 +568,7 @@ ref = 20  // reference
 ﹇<br>
 Can references be null? 
 
-#card 
+#anki-card 
 
 No.
 
@@ -578,7 +578,7 @@ No.
 ﹇<br>
 How would I go about creating a reference (i.e., alias) for the variable `x` in `int x = 10;`? 
 
-#card 
+#anki-card 
 
 ```cpp
 int x = 10;
@@ -597,7 +597,7 @@ cout << x << endl; // This will output '20'`
 ﹇<br>
 In C++, what is the difference between a **struct** and a **class**? 
 
-#card 
+#anki-card 
 
 In C++, the only difference between a `struct` and a `class` is the default accessibility of member variables and methods. In a `struct`, they are `public` by default; in a `class`, they are `private` by default [1](https://stackoverflow.com/questions/2750270/c-c-struct-vs-class) [2](https://learn.microsoft.com/en-us/cpp/cpp/classes-and-structs-cpp?view=msvc-170) [3](https://blogs.sw.siemens.com/embedded-software/2014/06/02/struct-vs-class-in-c/). Both classes and structs can have a mixture of public, protected and private members, can use inheritance, and can have member functions [4](https://stackoverflow.com/questions/54585/when-should-you-use-a-class-vs-a-struct-in-c).
 
@@ -607,7 +607,7 @@ In C++, the only difference between a `struct` and a `class` is the default 
 ﹇<br>
 Why does importing from a `.cxx` into another `.cxx` file create an error in C++? But when I rename the importing `.cxx` file to `.hxx` it works? 
 
-#card 
+#anki-card 
 
 The general convention in C++ is to declare functions, classes, and variables in header (.h or .hpp) files, and define them in implementation (.cpp) files. This is because the C++ compilation model doesn't support directly including one .cpp file into another.
 Here's a brief overview of how the C++ build process works:
@@ -644,7 +644,7 @@ When you compile `main.cpp`, the preprocessor will replace `#include "hello.h"` 
 ﹇<br>
 In the broad sense, how should I think of mutexes in C++? What are some simple concrete examples displaying the concept? 
 
-#card 
+#anki-card 
 
 In C++, a `std::mutex` can be used to protect shared data from being simultaneously accessed by multiple threads, thus preventing race condition. Here's a simple example:
 
@@ -704,7 +704,7 @@ With `std::lock_guard`, you don't need to explicitly unlock the mutex. It will a
 ﹇<br>
 What is a mutex in C++? 
 
-#card
+#anki-card
 
 A mutex (short for "mutual exclusion") in C++ is a synchronization primitive that can be used to protect shared data from being simultaneously accessed by multiple threads, thus preventing race conditions.
 
@@ -714,7 +714,7 @@ A mutex (short for "mutual exclusion") in C++ is a synchronization primitive tha
 ﹇<br>
 What is the purpose of the `std::mutex::lock()` function in C++? 
 
-#card
+#anki-card
 
 The `std::mutex::lock()` function is used to lock the mutex. If the mutex is already locked by another thread, this call will block until the mutex is available to be locked.
 
@@ -724,7 +724,7 @@ The `std::mutex::lock()` function is used to lock the mutex. If the mutex is alr
 ﹇<br>
 What is the purpose of the `std::mutex::unlock()` function in C++? 
 
-#card
+#anki-card
 
 The `std::mutex::unlock()` function in C++ is used to unlock the mutex, making it available for other threads to lock and access the shared data.
 
@@ -734,7 +734,7 @@ The `std::mutex::unlock()` function in C++ is used to unlock the mutex, making i
 ﹇<br>
 What is a deadlock in the context of mutexes?
 
-#card
+#anki-card
 
 A deadlock is a situation where a thread fails to unlock a mutex. This results in other threads being blocked when they attempt to lock the mutex, as they are waiting for the mutex to be released.
 
@@ -744,7 +744,7 @@ A deadlock is a situation where a thread fails to unlock a mutex. This results i
 ﹇<br>
 What are `std::lock_guard` and `std::unique_lock` in C++? 
 
-#card
+#anki-card
 
 `std::lock_guard` and `std::unique_lock` are both classes in C++ that manage a mutex object. They lock the mutex upon construction and unlock the mutex upon destruction. This provides a safer and more convenient way to manage locking and unlocking, as it ensures the mutex will always be unlocked even if an exception occurs. 
 
@@ -754,7 +754,7 @@ What are `std::lock_guard` and `std::unique_lock` in C++?
 ﹇<br>
 What is the difference between `std::lock_guard` and `std::unique_lock` in C++? 
 
-#card
+#anki-card
 
 Both `std::lock_guard` and `std::unique_lock` automatically manage the lock state of a mutex. However, `std::unique_lock` is more flexible and allows for deferred locking, try-locking, timed locking, recursive locking, and transferring lock ownership, while `std::lock_guard` does not.
 
@@ -764,7 +764,7 @@ Both `std::lock_guard` and `std::unique_lock` automatically manage the lock stat
 ﹇<br> 
 How does `std::lock_guard` ensure the mutex gets unlocked in C++? 
 
-#card
+#anki-card
 
 `std::lock_guard` automatically unlocks the mutex when the `lock_guard` object is destroyed, which happens when the object goes out of scope. This ensures that the mutex will be unlocked even if an exception occurs.
 
@@ -775,7 +775,7 @@ How does `std::lock_guard` ensure the mutex gets unlocked in C++?
 ﹇<br>
 How can you initialize a `char*` pointer to point to the start of a C string in C++? 
 
-#card 
+#anki-card 
 
 Yes.
 
@@ -809,7 +809,7 @@ stringstream ss;
 ss << text;
 ```
 
-#card 
+#anki-card 
 
 When extracting text form a string, the *time* complexity of such an operation is **linear** (i.e., $\mathcal{O}(n)$). Additionally, the *space* complexity is also **linear** (i.e., $\mathcal{O}(n)$) since we need allocate the same space needed to contain the text.
 
@@ -820,7 +820,7 @@ When extracting text form a string, the *time* complexity of such an operation i
 ﹇<br>
 Is the generic function `std::reverse()`, from the `<algorithm>` library, an in-place algorithm? 
 
-#card 
+#anki-card 
 
 Yes, it is an in-place algorithm.
 
@@ -830,7 +830,7 @@ Yes, it is an in-place algorithm.
 ﹇<br>
 What is the time and space complexity of `std::reverse()`? 
 
-#card 
+#anki-card 
 
 - Time: $\mathcal{O}\left( \frac{n}{2} \right)$
 - Space:  $\mathcal{O}(1)$
@@ -850,7 +850,7 @@ int main() {
 }
 ```
 
-#card 
+#anki-card 
 
 No! You can not use 
 
@@ -875,7 +875,7 @@ int main() {
 }
 ```
 
-#card 
+#anki-card 
 
 No, remember that to use `auto` range-based loops, the container/data structure must support the `.begin()` method.
 - C-style string literals do not support that
@@ -895,7 +895,7 @@ ss.insert("");
 ss.clear()
 ```
 
-#card 
+#anki-card 
 
 No, the following code is not valid. `stringstream` and other stream classes in C++ do not have an `insert` method.
 - If you want to insert data into a stream, use `<<` (i.e., insertion operator)
@@ -907,7 +907,7 @@ No, the following code is not valid. `stringstream` and other stream classes in 
 ﹇<br>
 How can I get `std::string` of all the values currently in a `std::stringstream`? 
 
-#card 
+#anki-card 
 
 Simply call `.str()` with no arguments.
 
@@ -917,7 +917,7 @@ Simply call `.str()` with no arguments.
 ﹇<br>
 How can I completely erase/reset the values of a `std::stringstream` to empty? 
 
-#card 
+#anki-card 
 
 Simply call `.str("")` with the empty string (i.e., `""`) argument.
 
@@ -927,7 +927,7 @@ Simply call `.str("")` with the empty string (i.e., `""`) argument.
 ﹇<br>
 What exactly is the heap in Computer Science? Particularly, what distinguishes it from stack? Reference not only the software layer but also the hardware layer/computer architecture that allows this. 
 
-#card 
+#anki-card 
 
 In computer science, the **heap** is a region of a computer’s memory space that is used for dynamic memory allocation. [It complements the **stack**, which is used for static memory allocation](https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/)[1](https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/)[2](https://www.baeldung.com/cs/memory-stack-vs-heap).
 
@@ -948,7 +948,7 @@ It’s important to note that while these concepts are common across many progra
 ﹇<br>
 What is the difference between “heap” and “free store”?
 
-#card 
+#anki-card 
 
 [The terms “heap” and “free store” are often used interchangeably in the context of C++ memory management, but there is a subtle difference between them](https://stackoverflow.com/questions/6161235/what-is-the-difference-between-the-heap-and-the-free-store)[1](https://stackoverflow.com/questions/6161235/what-is-the-difference-between-the-heap-and-the-free-store)[2](https://stackoverflow.com/questions/16404748/why-should-i-prefer-using-the-free-store-over-the-heap)[3](https://www.appsloveworld.com/cplus/100/25/what-is-the-difference-between-the-heap-and-the-free-store):
 
@@ -965,7 +965,7 @@ What is the difference between “heap” and “free store”?
 ﹇<br>
 Why is `for(auto num : list)` undesirable? 
 
-#card 
+#anki-card 
 
 You are iterating over elements by value which means we cannot modify them in place.
 
@@ -975,7 +975,7 @@ You are iterating over elements by value which means we cannot modify them in pl
 ﹇<br>
 Whare the three common examples in how one can use the `auto` keyword in a range-based for loop? 
 
-#card 
+#anki-card 
 
 1. [To iterate over elements by value, use `for (auto element : container)`](https://en.cppreference.com/w/cpp/language/range-for)[1](https://en.cppreference.com/w/cpp/language/range-for).
 2. [To iterate over elements by reference, use `for (auto& element : container)`](https://en.cppreference.com/w/cpp/language/range-for)[1](https://en.cppreference.com/w/cpp/language/range-for).
@@ -987,7 +987,7 @@ Whare the three common examples in how one can use the `auto` keyword in a range
 ﹇<br>
 How do you declare an array of size three using the `array` library in C++? 
 
-#card 
+#anki-card 
 
 The traditional way…
 ```cpp
@@ -1013,7 +1013,7 @@ Is the following code valid?
 array<int> arr = [3, 2, 1];
 ```
 
-#card 
+#anki-card 
 
 - No! You need to specify the size for the template parameter.
 - If you don’t want to have to do that, use `std::to_array()`.
@@ -1024,7 +1024,7 @@ array<int> arr = [3, 2, 1];
 ﹇<br>
 What library is the function `to_array()` a part of? 
 
-#card 
+#anki-card 
 
 It is part of the `<array>` library.
 
@@ -1034,7 +1034,7 @@ It is part of the `<array>` library.
 ﹇<br>
 What is the difference between `min()` and `lowest()` for `numeric_limits<T>`?
 
-#card 
+#anki-card 
 
 - `lowest()` returns the least (including negative) value for that type
 - `min()` returns the smallest finite (positive only) value for that type
@@ -1069,7 +1069,7 @@ int main() {
 }
 ```
 
-#card
+#anki-card
 
 No, I am missing a semicolon at the end of the line before the `switch` statement.
 
@@ -1079,7 +1079,7 @@ No, I am missing a semicolon at the end of the line before the `switch` statemen
 ﹇<br>
 How can  I go about using alternating values in C++?
 
-#card 
+#anki-card 
 
 One way is to use a `switch` statement with an iterator `i` that increments and then is reset back to zero after a certain value has been reached.
 
@@ -1093,7 +1093,7 @@ Is the following snippet valid in C++?
 std::array<int> arr = {1,2,3,4};
 ```
 
-#card 
+#anki-card 
 
 No, it is not. Remember that for `std::array` you _must_ also specify the size of the `std::array` like so…
 ```cpp
@@ -1112,7 +1112,7 @@ for(const auto& i : arr) {
 }
 ```
 
-#card 
+#anki-card 
 
 The following code is **not** valid. `i` is a `const int&` so it is not allowed to modify the value at that address.
 
@@ -1129,7 +1129,7 @@ for(auto i : arr) {
 }
 ```
 
-#card 
+#anki-card 
 
 While the code **will** compile, note that it **won’t** change the value of `arr` it will _only_ change the value of `i`.
 
@@ -1148,7 +1148,7 @@ for(auto& i : arr) {
 }
 ```
 
-#card 
+#anki-card 
 
 Yes, the following code will compile and its is logically sound.
 
@@ -1167,7 +1167,7 @@ for(auto& i : arr) {
 }
 ```
 
-#card 
+#anki-card 
 
 Yes, the following code will compile.
 
@@ -1187,7 +1187,7 @@ for(auto& i : arr) {
 }
 ```
 
-#card 
+#anki-card 
 
 No, the following code will **not** compile.
 
@@ -1208,7 +1208,7 @@ cout << i << endl;
 ﹇<br>
 Just to clarify, when dealing with type `int &` you do not need the dereference operator to access the value?
 
-#card 
+#anki-card 
 
 Yes, that’s correct! When dealing with a reference to an `int` (i.e., `int&`), you do not need to use the dereference operator (`*`) to access the value. A reference is an alias for another variable, so you can use it just like you would use the original variable. For example:
 ```cpp
@@ -1225,7 +1225,7 @@ In this example, `y` is a reference to `x`, so when we print the value of `y`, i
 ﹇<br>
 How could I assign a pointer `y` to point to an `int` variable called `x`?
 
-#card 
+#anki-card 
 
 If you want `y` to be a pointer to `x`, you can do that by declaring `y` as a pointer to an `int` and initializing it with the address of `x`. Here's an example:
 ```cpp
@@ -1241,7 +1241,7 @@ In this example, `y` is a pointer to an `int`, and we initialize it with the add
 ﹇<br>
 Why is accessing an element in an array faster than in a linked list? 
 
-#card
+#anki-card
 
 Accessing an element in an array is faster because of the way arrays are stored in memory. In an array, elements are stored in contiguous memory locations. This means that if you know the address of the first element (the base address), you can directly calculate the address of any element. 
 - For example, if you want to access the 5th element of an array, you can directly access it because you know it’s exactly 5 memory spaces away from the start of the array. This is a constant time operation, often denoted as $\mathcal{O}(1)$. 
@@ -1253,7 +1253,7 @@ Accessing an element in an array is faster because of the way arrays are stored 
 ﹇<br>
 What are some reasons we wouldn’t always use linked lists instead of arrays in C++? 
 
-#card
+#anki-card
 
 There are several reasons why we might prefer arrays over linked lists in certain situations in C++.
 1. Firstly, each node in a linked list requires extra memory to store the reference to the next node. This overhead does not exist in arrays.
@@ -1266,7 +1266,7 @@ There are several reasons why we might prefer arrays over linked lists in certai
 ﹇<br>
 When can linked lists be more efficient than arrays?
 
-#card
+#anki-card
 
 Linked lists can be more efficient than arrays when you need to frequently add or remove elements from the list. In an array, adding or removing elements typically requires shifting elements or reallocating memory, which can be costly operations. However, in a linked list, these operations simply involve changing a few references and can be done in constant time (i.e., $\mathcal{O}(1)$) if you have a reference to the point of insertion or deletion. Therefore, if your program involves frequent insertions or deletions, a linked list could be more efficient.
 
@@ -1276,7 +1276,7 @@ Linked lists can be more efficient than arrays when you need to frequently add o
 ﹇<br>
 In C++, what is the difference between a pointer and a reference?
 
-#card 
+#anki-card 
 
 A pointer is a variable that stores the memory address of another variable, while a reference is an alias for another variable. Here are some key differences between pointers and references:
 - **Syntax**: Pointers are declared using the `*` symbol, while references are declared using the `&` symbol. For example, `int* p` declares a pointer to an `int`, while `int& r` declares a reference to an `int`.
@@ -1290,7 +1290,7 @@ A pointer is a variable that stores the memory address of another variable, whil
 ﹇<br>
 In C++, specifically regarding the **syntax**, what is the difference between pointers and references?
 
-#card 
+#anki-card 
 
 **Syntax**: Pointers are declared using the `*` symbol, while references are declared using the `&` symbol. For example, `int* p` declares a pointer to an `int`, while `int& r` declares a reference to an `int`.
 
@@ -1300,7 +1300,7 @@ In C++, specifically regarding the **syntax**, what is the difference between po
 ﹇<br>
 In C++, specifically regarding the **initialization**, what is the difference between pointers and references?
 
-#card 
+#anki-card 
 
 **Initialization**: A pointer can be initialized to `nullptr` or to the address of another variable, while a reference must be initialized to refer to another variable when it is declared. For example, `int* p = nullptr;` is valid, but `int& r;` is not.
 
@@ -1310,7 +1310,7 @@ In C++, specifically regarding the **initialization**, what is the difference be
 ﹇<br>
 In C++, specifically regarding the **reassignment**, what is the difference between pointers and references?
 
-#card 
+#anki-card 
 
 **Reassignment**: A pointer can be reassigned to point to a different variable, while a reference cannot be reassigned to refer to a different variable once it has been initialized. For example, given two `int` variables `x` and `y`, you can do `int* p = &x; p = &y;`, but you cannot do `int& r = x; r = y;`.
 
@@ -1320,7 +1320,7 @@ In C++, specifically regarding the **reassignment**, what is the difference betw
 ﹇<br>
 In C++, specifically regarding the **indirection**, what is the difference between pointers and references?
 
-#card 
+#anki-card 
 
 **Indirection**: To access the value of the variable pointed to by a pointer, you need to use the dereference operator (`*`), while you can use a reference just like you would use the original variable. For example, given an `int` variable `x` and a pointer `p` pointing to `x`, you need to do `*p` to access the value of `x`, while if you have a reference `r` referring to `x`, you can just use `r`.
 
@@ -1330,7 +1330,7 @@ In C++, specifically regarding the **indirection**, what is the difference betwe
 ﹇<br>
 What are the main two types of polymorphism in C++?
 
-#card 
+#anki-card 
 
 The two types of polymorphism are:
 - Compile-Time Polymorphism (i.e., Method Overloading)
@@ -1342,7 +1342,7 @@ The two types of polymorphism are:
 ﹇<br>
 In programming, especially C++, what is polymorphism?
 
-#card 
+#anki-card 
 
 Certainly! Polymorphism is one of the four fundamental principles of Object-Oriented Programming (OOP), alongside encapsulation, inheritance, and abstraction. In C++, polymorphism allows objects of different classes to be treated as objects of a common superclass.
 
@@ -1437,7 +1437,7 @@ There are mainly two types of polymorphism in C++:
 ﹇<br>
 What is compile-time polymorphism in C++ and give an example?
 
-#card
+#anki-card
 
 Compile-time polymorphism in C++ allows the function to be determined at compile-time. Method overloading is an example. For instance, you can have multiple `add` methods that accept different types of parameters (`int`, `float`, etc.).
 
@@ -1447,7 +1447,7 @@ Compile-time polymorphism in C++ allows the function to be determined at compile
 ﹇<br>
 What is run-time polymorphism in C++ and give an example?
 
-#card
+#anki-card
 
 Run-time polymorphism in C++ allows the function to be determined at run-time, typically using virtual functions and pointers/references to base classes. For example, a base class `Shape` can have a virtual function `draw`, which can be overridden by derived classes like `Circle` and `Square`. Using a reference/pointer to `Shape`, you can call the `draw` method and execute the derived class's implementation.
 
@@ -1457,7 +1457,7 @@ Run-time polymorphism in C++ allows the function to be determined at run-time, t
 ﹇<br>
 What is a virtual function in C++?
 
-#card
+#anki-card
 
 A virtual function in C++ is a member function that is declared within a base class and is redefined by a derived class. The keyword `virtual` is used to make a function virtual. When you refer to a derived class object using a pointer or a reference to the base class, you can call a virtual function for that object and execute the derived class’s version of the function.
 
@@ -1467,7 +1467,7 @@ A virtual function in C++ is a member function that is declared within a base cl
 ﹇<br>
 What does the `override` keyword signify in C++?
 
-#card
+#anki-card
 
 The `override` keyword in C++ indicates that a virtual member function in a derived class is meant to override a virtual function declared in a base class. It helps in catching errors during compilation, such as a mismatch in function signatures between the base and derived class methods. If the method does not correctly override a base class method, the compiler will issue an error.
 
@@ -1477,7 +1477,7 @@ The `override` keyword in C++ indicates that a virtual member function in a deri
 ﹇<br>
 In a brief summary, what is **polymorphism** in the context of C++?
 
-#card 
+#anki-card 
 
 Polymorphism is a fundamental concept in Object-Oriented Programming that allows objects of different types to be treated as objects of a common type. In C++, it manifests in two main ways:
 1. **Compile-Time Polymorphism**: This occurs when the function to be executed is determined at compile-time. Method overloading is a common example.
@@ -1491,7 +1491,7 @@ In essence, polymorphism enables more flexible, extensible, and maintainable cod
 ﹇<br>
 What is encapsulation in C++? Give an example.
 
-#card
+#anki-card
 
 Encapsulation in C++ is the bundling of data with the methods that operate on that data. It restricts direct access to an object's data, ensuring that it can only be modified in well-defined ways. 
 
@@ -1512,7 +1512,7 @@ public:
 ﹇<br>
 What is inheritance in C++? Give an example.
 
-#card
+#anki-card
 
 Inheritance in C++ is the mechanism by which one class (derived class) inherits attributes and methods from another class (base class). This promotes code reusability.
 
@@ -1535,7 +1535,7 @@ public:
 ﹇<br>
 What is polymorphism in C++? Give an example.
 
-#card
+#anki-card
 
 Polymorphism in C++ allows objects of different classes to be treated as objects of a common superclass. It often uses virtual functions to achieve this. 
 
@@ -1552,7 +1552,7 @@ void drawShape(Shape& shape) {
 ﹇<br>
 What is abstraction in C++? Give an example.
 
-#card
+#anki-card
 
 Abstraction in C++ allows the programmer to hide complex details while exposing only the essential parts. It often involves the use of abstract classes and interfaces. 
 

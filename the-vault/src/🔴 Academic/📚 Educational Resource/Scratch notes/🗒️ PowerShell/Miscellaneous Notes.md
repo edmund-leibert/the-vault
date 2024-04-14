@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2023-08-04 01:58
-updated: 2024-03-27T01:34
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -32,7 +32,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ PowerShell::Miscel
 ﹇<br>
 What happens when you create a symbolic link? 
 
-#card 
+#anki-card 
 
 You are creating a shortcut to an other file or directory.
 
@@ -43,7 +43,7 @@ You are creating a shortcut to an other file or directory.
 ﹇<br>
 Does the symbolic link take up a lot of space in your hard drive? 
 
-#card 
+#anki-card 
 
 No, this is why it can save you space by allowing you to have multiple copies of the same file in different locations without actually taking up the space for each copy.
 
@@ -54,7 +54,7 @@ No, this is why it can save you space by allowing you to have multiple copies of
 ﹇<br>
 How do you create  symbolic link in PowerShell? 
 
-#card-reverse  
+#anki-card-reverse  
 
 You can use the `New-Item` cmdlet with the `ItemType` `SymbolicLink` parameter.
 
@@ -65,7 +65,7 @@ You can use the `New-Item` cmdlet with the `ItemType` `SymbolicLink` parameter.
 ﹇<br>
 What does the following code do? `New-Item -ItemType SymbolicLink -Path "Link" -Target "Target"` 
 
-#card 
+#anki-card 
 
 Creates a symbolic link called "Link" that points to the *file* "Target".
 
@@ -76,7 +76,7 @@ Creates a symbolic link called "Link" that points to the *file* "Target".
 ﹇<br>
 Can you create symbolic links to *directories* with PowerShell on Windows? 
 
-#card 
+#anki-card 
 
 Yes. For example, to create a symbolic link called "Link" that points to the *directory* "Target", you can use the following command: `New-Item -ItemType Junction -Path "Link" -Target "Target"`
 
@@ -87,7 +87,7 @@ Yes. For example, to create a symbolic link called "Link" that points to the *di
 ﹇<br>
 What are some of the upsides of symbolic links in PowerShell? 
 
-#card-reverse  
+#anki-card-reverse  
 
 If you have multiple copies of the same file in different locations, you can use <span class="spoiler">symbolic links</span> to create shortcuts to the file instead of actually copying the file to each location. This can save you a lot of space, especially if the file is large.
 
@@ -100,7 +100,7 @@ If you have a lot of files in different locations, you can use <span class="spoi
 ﹇<br>
 What are some of the downsides of symbolic links in PowerShell? 
 
-#card-reverse  
+#anki-card-reverse  
 
 If you create a <span class="spoiler">symbolic link</span> and it does not work, it can be difficult to figure out why.
 
@@ -113,7 +113,7 @@ When you access a <span class="spoiler">symbolic links</span>, the operating sys
 ﹇<br>
 What is a cmdlet in PowerShell? 
 
-#card-reverse  
+#anki-card-reverse  
 
 A cmdlet is a lightweight command that is used in the PowerShell environment.
 
@@ -142,7 +142,7 @@ The {1:PowerShell runtime} invokes these cmdlets within the context of automatio
 ﹇<br>
 What do cmdlets typically return? 
 
-#card 
+#anki-card 
 
 A Microsoft .NET object to the next pipeline.
 
@@ -153,7 +153,7 @@ A Microsoft .NET object to the next pipeline.
 ﹇<br>
 In PowerShell, what are [cmdlets](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/cmdlet-overview?view=powershell-7.3#cmdlets)? 
 
-#card-reverse 
+#anki-card-reverse 
 
 <span class="spoiler">Cmdlets</span> perform an action and typically return a Microsoft .NET object to the next command in the pipeline.
 
@@ -171,7 +171,7 @@ A <span class="spoiler">cmdlet</span> is a single command that participates in t
 ﹇<br>
 What does `$PWD` mean in PowerShell? 
 
-#card-reverse 
+#anki-card-reverse 
 
 <span class="spoiler">`$PWD`</span> is an automatic variable in PowerShell that contains the full path of the current directory.
 
@@ -184,7 +184,7 @@ It is a shortcut for <span class="spoiler">`Get-Location`</span>. To get the cur
 ﹇<br>
 How do I open the current directory in File Explorer? 
 
-#card-reverse  
+#anki-card-reverse  
 
 ```powershell
 explorer.exe .
@@ -197,7 +197,7 @@ explorer.exe .
 ﹇<br>
 How to test if a file or path exists in PowerShell? 
 
-#card-reverse 
+#anki-card-reverse 
 
 Use the cmdlet `Test-Path`.
 
@@ -216,7 +216,7 @@ This command checks whether all elements in the path exist, that is, the `C:` 
 ﹇<br>
 How can you enforce the type of a variable in PowerShell? 
 
-#card 
+#anki-card 
 
 In PowerShell, you can enforce the type of a variable by using type accelerators or by casting the value to the desired type when you assign it to the variable. 
 
@@ -238,7 +238,7 @@ $myInt = [int] 10
 ﹇<br>
 What are type accelerators in PowerShell? 
 
-#card-reverse  
+#anki-card-reverse  
 
 <span class="spoiler">Type accelerators</span> are aliases for .NET framework classes. They allow you to access specific .NET framework classes without having to explicitly type the entire class name.
 - For example, you can shorten the **AliasAttribute** class from `[System.Management.Automation.AliasAttribute]` to `[Alias]`.
@@ -249,7 +249,7 @@ What are type accelerators in PowerShell?
 ﹇<br>
 What are some common types in PowerShell? 
 
-#card 
+#anki-card 
 
 Some common types in PowerShell include `System.String`, `System.Int32`, `System.Boolean`, `System.DateTime`, `System.Array`, `System.Collections.ArrayList`, and `System.Collections.Hashtable`. PowerShell also has its own set of types that are specific to the language, such as `PSCustomObject`, `PSObject`, and `SwitchParameter`.
 
@@ -259,7 +259,7 @@ Some common types in PowerShell include `System.String`, `System.Int32`, `Sys
 ﹇<br>
  What is the definition of a symbolic link? 
 
-#card 
+#anki-card 
 
 A <span class="spoiler">symbolic link</span>, also known as a symlink or soft link, is a special type of file that points to another file or directory.
 
@@ -271,7 +271,7 @@ A <span class="spoiler">symbolic link</span>, also known as a symlink or soft li
 ﹇<br>
 What is the basic syntax of a PowerShell cmdlet? 
 
-#card-reverse  
+#anki-card-reverse  
 
 The <span class="spoiler">basic syntax</span> of a PowerShell <span class="spoiler">cmdlet</span> is "Verb-Noun", where "Verb" represents the action and "Noun" represents the target object.
 
@@ -281,7 +281,7 @@ The <span class="spoiler">basic syntax</span> of a PowerShell <span class="spoil
 ﹇<br>
 How do you get help for a specific cmdlet in PowerShell? 
 
-#card 
+#anki-card 
 
 Use the <span class="spoiler">`Get-Help`</span> cmdlet followed by the cmdlet name, e.g., `Get-Help Get-Process`.
 
@@ -291,7 +291,7 @@ Use the <span class="spoiler">`Get-Help`</span> cmdlet followed by the cmdlet na
 ﹇<br>
 What is the purpose of the `Get-ChildItem` cmdlet? 
 
-#card-reverse  
+#anki-card-reverse  
 
  The <span class="spoiler">`Get-ChildItem`</span> cmdlet is used to retrieve a list of child items, such as files and folders, in a specified location.
 
@@ -301,7 +301,7 @@ What is the purpose of the `Get-ChildItem` cmdlet?
 ﹇<br>
 How do you create a new folder using a cmdlet in PowerShell? 
 
-#card-reverse  
+#anki-card-reverse  
 
 Use the <span class="spoiler">`New-Item`</span> cmdlet followed by the `-ItemType` and `-Path` parameters, e.g., `New-Item -ItemType Directory -Path "C:\NewFolder"`.
 
@@ -311,7 +311,7 @@ Use the <span class="spoiler">`New-Item`</span> cmdlet followed by the `-ItemTyp
 ﹇<br>
 How do you delete a file using a cmdlet in PowerShell? 
 
-#card-reverse  
+#anki-card-reverse  
 
 Use the <span class="spoiler">`Remove-Item`</span> cmdlet followed by the `-Path` or `-LiteralPath` parameter, e.g., `Remove-Item -Path "C:\File.txt"`.
 
@@ -321,7 +321,7 @@ Use the <span class="spoiler">`Remove-Item`</span> cmdlet followed by the `-Path
 ﹇<br>
 What is the purpose of the `Get-Process` cmdlet? 
 
-#card-reverse  
+#anki-card-reverse  
 
 The <span class="spoiler">`Get-Process`</span> cmdlet retrieves a list of currently running processes on the local or remote computer.
 
@@ -331,7 +331,7 @@ The <span class="spoiler">`Get-Process`</span> cmdlet retrieves a list of curren
 ﹇<br>
 How do you stop a specific process using a cmdlet in PowerShell? 
 
-#card-reverse  
+#anki-card-reverse  
 
 Use the <span class="spoiler">`Stop-Process`</span> cmdlet followed by the `-Name` or `-Id` parameter, e.g., `Stop-Process -Name "ProcessName"`.
 
@@ -341,7 +341,7 @@ Use the <span class="spoiler">`Stop-Process`</span> cmdlet followed by the `-Nam
 ﹇<br>
 How do you execute a PowerShell script using a cmdlet? 
 
-#card-reverse  
+#anki-card-reverse  
 
 Use the <span class="spoiler">`Invoke-Expression`</span> cmdlet or the “&” operator followed by the script path, e.g., `Invoke-Expression "C:\Script.ps1"` or `& "C:\Script.ps1"`.
 
@@ -351,7 +351,7 @@ Use the <span class="spoiler">`Invoke-Expression`</span> cmdlet or the “&” o
 ﹇<br>
 How do you export a list of running processes to a CSV file using cmdlets in PowerShell? 
 
-#card-reverse  
+#anki-card-reverse  
 
 Use the <span class="spoiler">Get-Process</span> cmdlet and pipe the output to the <span class="spoiler">Export-Csv</span> cmdlet, e.g., G`et-Process | Export-Csv -Path "C:\Processes.csv" -NoTypeInformation`.
 
@@ -361,7 +361,7 @@ Use the <span class="spoiler">Get-Process</span> cmdlet and pipe the output to t
 ﹇<br>
 How to view the full history of commands across all shells and sessions? 
 
-#card-reverse  
+#anki-card-reverse  
 
 Use the <span class="spoiler">`Get-PSReadlineOption`</span> cmdlet.
 - This cmdlet has a <span class="spoiler">`HistorySavePath`</span> property that gives you the path where all of the history is saved.
@@ -381,7 +381,7 @@ cat (Get-PSReadlineOption).HistorySavePath
 ﹇<br>
 How to print only the last 100 lines of the output of a command in PowerShell? 
 
-#card-reverse  
+#anki-card-reverse  
 
 Use the <span class="spoiler">`Select-Object`</span> cmdlet with the <span class="spoiler">`-Last`</span> parameter.
 
@@ -399,7 +399,7 @@ cat (Get-PSReadlineOption).HistorySavePath | Select-Object -Last 100
 ﹇<br>
 How do I open PowerShell with administrative privileges in Windows? 
 
-#card 
+#anki-card 
 
 Press the <kbd>Windows</kbd> key, type "PowerShell," right-click on "Windows PowerShell" and select "Run as administrator."
 
@@ -409,7 +409,7 @@ Press the <kbd>Windows</kbd> key, type "PowerShell," right-click on "Windows Pow
 ﹇<br>
 In PowerShell, how do I list all installed Linux distributions with their WSL versions? 
 
-#card 
+#anki-card 
 
 Run the command: `wsl --list --verbose`
 
@@ -419,7 +419,7 @@ Run the command: `wsl --list --verbose`
 ﹇<br>
 How do I remove a specific Ubuntu distribution from WSL in PowerShell?
 
-#card 
+#anki-card 
 
 Use the command: `wsl --unregister <DistroName>`, replacing `<DistroName>` with the exact name of the Ubuntu distribution you want to remove.
 
@@ -429,7 +429,7 @@ Use the command: `wsl --unregister <DistroName>`, replacing `<DistroName>` with 
 ﹇<br>
 How do I uninstall WSL and remove all installed Linux distributions in PowerShell?
 
-#card 
+#anki-card 
 
 Run the command: `wsl --uninstall`
 
@@ -439,7 +439,7 @@ Run the command: `wsl --uninstall`
 ﹇<br>
 How do I remove the Windows Subsystem for Linux feature entirely from my Windows system using PowerShell? 
 
-#card 
+#anki-card 
 
 Run the following commands in PowerShell (as an administrator):
 1. `wsl --uninstall`
@@ -451,7 +451,7 @@ Run the following commands in PowerShell (as an administrator):
 ﹇<br>
 Can you create an alias for a `cmdlet` or other command in Powershell? 
 
-#card 
+#anki-card 
 
 Yes, you can create an alias for a cmdlet or other command in PowerShell using the `Set-Alias` cmdlet.
 	- The `Name` parameter specifies the alias’s name and the `Value` parameter specifies the cmdlet that the alias runs.
@@ -464,7 +464,7 @@ For example, to create an alias named `list` for the `Get-ChildItem` cmdlet,
 ﹇<br>
 Can you assign an alias to a command with parameters in PowerShell? 
 
-#card 
+#anki-card 
 
 You **cannot** assign an alias to a command with parameters using `Set-Alias` or `New-Alias`.
 
@@ -485,7 +485,7 @@ Set-Alias -Name list -Value Get-ChildItem-Force
 ﹇<br>
 How to move multiple files, for instance a file named `A.txt` and `B.txt` in one command? 
 
-#card 
+#anki-card 
 
 ```powershell
 Get-Item -Path .\A.txt, .\B.txt | Move-Item -Destination .\neovim-configurations\ -Force
@@ -497,7 +497,7 @@ Get-Item -Path .\A.txt, .\B.txt | Move-Item -Destination .\neovim-configurations
 ﹇<br>
 How do you pass arguments to a PowerShell script? 
 
-#card 
+#anki-card 
 
 You can pass arguments to a PowerShell script by defining them using the `param` statement at the beginning of your script.
 
@@ -507,7 +507,7 @@ You can pass arguments to a PowerShell script by defining them using the `param
 ﹇<br>
 How do you define arguments in a PowerShell script? 
 
-#card 
+#anki-card 
 
 You can define arguments in a PowerShell script using the `param` statement. For example: `param(＄name, ＄address = "USA", ＄age)`.
 
@@ -517,7 +517,7 @@ You can define arguments in a PowerShell script using the `param` statement. F
 ﹇<br>
 How do you call a PowerShell script with arguments?
 
-#card 
+#anki-card 
 
 You can call a PowerShell script with arguments like this: `powershell.exe -file myscript.ps1 -name "John" -address "Canada" -age 25`.
 ⌂
@@ -526,7 +526,7 @@ You can call a PowerShell script with arguments like this: `powershell.exe -fil
 ﹇<br>
 How do you define a default value for a parameter in PowerShell?
 
-#card 
+#anki-card 
 
 You can define a script `myscript.ps1` that takes in arguments for `name`, `address`, and `age` like this:
 
@@ -551,7 +551,7 @@ powershell.exe -file myscript.ps1 -name "John" -address "Canada" -age 25
 ﹇<br>
 How can you combine a path and child-path? 
 
-#card 
+#anki-card 
 
 `Join-Path` is a cmdlet in PowerShell that combines a path and child-path into a single path. The provider supplies the path delimiters[1](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/join-path?view=powershell-7.3). 
 
@@ -563,7 +563,7 @@ For example, if you want to combine a path with a child path, you can use `Join
 ﹇<br>
 What is the target of a symbolic link? 
 
-#card 
+#anki-card 
 
 A symbolic link is a file whose purpose is to point to another file or directory (called the “target”) by specifying a path thereto. The object being pointed to is called the target.
 
@@ -576,7 +576,7 @@ SSH stands for {2:<b>S</b>ecure <b>S</b><b>h</b>ell}.
 ﹇<br>
 What is SSH? 
 
-#card 
+#anki-card 
 
 A network protocol that provides a secure way to access a remote computer.
 
@@ -590,7 +590,7 @@ Lets say I am supposed to `ssh` into the account `lleibert@hills.ccsf.edu`.
 
 What would be my host? 
 
-#card 
+#anki-card 
 
 Your host would be `hills.ccsf.edu`.
 
@@ -603,7 +603,7 @@ In PowerShell, to print the current host you can use the cmdlet {1:`Get-Host`}.
 ﹇<br>
 What is the command to install all font type extension in Windows? 
 
-#card 
+#anki-card 
 
 Trick question!
 Currently, there is <b>not</b> a singular cmdlet in PowerShell to install fonts. In order to install fonts in PowerShell, you need to move all the appropriate files to the  `C:\Windows\fonts\` folder.
@@ -621,7 +621,7 @@ What is wrong with following PowerShell command?
 Get-Command node | $_.Source
 ```
 
-#card 
+#anki-card 
 
 The problem with the command is the use of… 
 
@@ -649,7 +649,7 @@ Get-Command node | ForEach-Object { $_.Source }
 ﹇<br>
 How do you find a process with task id `4200` via PowerShell? 
 
-#card-reverse 
+#anki-card-reverse 
 
 ```powershell
 netstat -ano | findstr :4200
@@ -661,7 +661,7 @@ netstat -ano | findstr :4200
 ﹇<br>
 How does one kill a process with task id `4200` via PowerShell ?
 
-#card-reverse  
+#anki-card-reverse  
 
 ```powershell
 taskkill /PID 15940 /F
@@ -673,7 +673,7 @@ taskkill /PID 15940 /F
 ﹇<br>
 What is the difference between `Get-ChildItem` and `Get-Item` in PowerShell? 
 
-#card 
+#anki-card 
 
 `Get-Item` gets the item at the specified location, while `Get-ChildItem` gets the items and child items in one or more specified locations. In other words, `Get-Item` returns information about the targeted item itself, whereas `Get-ChildItem` returns information about the targeted item's children, if the given item happens to be a container ¹.
 
@@ -697,7 +697,7 @@ What is wrong with the following PowerShell scripting code?
 $currentDirectory = $Get-Location
 ```
 
-#card 
+#anki-card 
 
 When using the `Get-Location` cmdlet in PowerShell, it does *not* require the `$` symbol.
 
@@ -711,7 +711,7 @@ What is the problem with the following code?
 Write-Host $currentDirectory > tmp.txt
 ```
 
-#card 
+#anki-card 
 
 `Write-Host` sends information directly to the console, <i>not</i> to a file. If you want to write the value of `$currentDirectory` to a file, you should use either `Out-File` or `Set-Content`. For example…
 - `$currentDirectory | Out-File "tmp.txt"`
@@ -723,7 +723,7 @@ Write-Host $currentDirectory > tmp.txt
 ﹇<br>
 How can I use `Set-Content` to write the value of `$currentDirectory` to the file `tmp.txt`? 
 
-#card-reverse  
+#anki-card-reverse  
 
 ```powershell
 Set-Content -Path "tmp.txt" -Value $currentDirectory
@@ -735,7 +735,7 @@ Set-Content -Path "tmp.txt" -Value $currentDirectory
 ﹇<br>
 How can I use `Out-File` to write the value of `$currentDirectory` to the file `tmp.txt` 
 
-#card-reverse  
+#anki-card-reverse  
 
 ```powershell
 $currentDirectory | Out-File "tmp.txt"
@@ -750,7 +750,7 @@ If you want to append new content to a file, you can use {`Out-File`}. If you w
 ﹇<br>
 By default, `Out-File` saves data to a file in what encoding? 
 
-#card 
+#anki-card 
 
 Unicode (UTF-16LE) *This can be specified
 
@@ -760,7 +760,7 @@ Unicode (UTF-16LE) *This can be specified
 ﹇<br>
 By default, `Set-Content` defaults to what encoding? 
 
-#card 
+#anki-card 
 
 ASCII (US-ASCII)
 
@@ -770,7 +770,7 @@ ASCII (US-ASCII)
 ﹇<br>
 What is a major difference between `Set-Content` and `Out-File`? 
 
-#card 
+#anki-card 
 
 `Out-File` allows you append new content to a file using the `-Append` parameter
 
@@ -782,7 +782,7 @@ What is a major difference between `Set-Content` and `Out-File`?
 ﹇<br>
 What is the difference between `Write-Host` and `Write-Information`? 
 
-#card 
+#anki-card 
 
 `Write-Host` sends information directly to the console. As such, you can *not* pipe/transfer the output of Write-Host
 The output of `Write-Information` can be redirected using either the `>` redirection operator or using cmdlets such as `Out-File`
@@ -793,7 +793,7 @@ The output of `Write-Information` can be redirected using either the `>` redirec
 ﹇<br>
 Can you use `Out-File` or `>` to redirect the output of `Write-Host`? 
 
-#card 
+#anki-card 
 
 No!
 
@@ -803,7 +803,7 @@ No!
 ﹇<br>
 Can you use `Out-File` or `>` to redirect the output of `Write-Information`? 
 
-#card 
+#anki-card 
 
 Yes!
 
@@ -813,7 +813,7 @@ Yes!
 ﹇<br>
 Starting in PowerShell 5.0, is `Write-Host` a wrapper for `Write-Information`? 
 
-#card 
+#anki-card 
 
 Yes, although only explicitly calling the cmdlet `Write-Information` can you the output be redirected or reused.
 
@@ -823,7 +823,7 @@ Yes, although only explicitly calling the cmdlet `Write-Information` can you the
 ﹇<br>
 What command should I run if I want to get a list of all files in the current folder that contain the word “quartz” in their name?
 
-#card 
+#anki-card 
 
 ```powershell
 Get-ChildItem -Filter "*quartz*" -Name
@@ -835,7 +835,7 @@ Get-ChildItem -Filter "*quartz*" -Name
 ﹇<br>
 What command should I run if I want to get a list of all files in the current folder, and all subsequent subfolders, that contain the word “quartz” in their name? 
 
-#card 
+#anki-card 
 
 ```powershell
 Get-ChildItem -Filter "*quartz*" -Recurse -Name
@@ -851,7 +851,7 @@ What does the following PowerShell command do?
 $Env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 ```
 
-#card 
+#anki-card 
 
 [This command retrieves the `Path` environment variable for both the `Machine` and `User` scopes, concatenates them with a semicolon separator, and assigns the result to the `$Env:Path` variable in the current PowerShell session](https://shellgeek.com/powershell-refresh-environment-variables/)[1](https://shellgeek.com/powershell-refresh-environment-variables/). 
 
@@ -863,7 +863,7 @@ This will update the `Path` environment variable in the current session without 
 ﹇<br>
 Without closing a shell session, how can I make a new one/do a hard “refresh” so that it reloads all environment variables?
 
-#card 
+#anki-card 
 
 You can’t, at least easily.
 
@@ -875,7 +875,7 @@ If you need to refresh environment variables, you may need to restart the PowerS
 ﹇<br>
 In PowerShell, how can you retrieve the value of an environment variable?
 
-#card 
+#anki-card 
 
 In PowerShell, you can retrieve the value of an environment variable using the `$env:` syntax followed by the name of the environment variable. Here’s how you can do it:
 
@@ -907,7 +907,7 @@ Remember, environment variable names are case-sensitive on non-Windows platforms
 ﹇<br>
 As of Feb. 18, 2024 11:10:09 AM, in **PowerShell**, what command can I run to list all the current ports open?
 
-#card 
+#anki-card 
 
 In PowerShell, you can use the `Get-NetTCPConnection` cmdlet to list all the current open ports. Here’s how you can do it:
 
@@ -933,7 +933,7 @@ Please note that you need to run these commands in an elevated PowerShell sessio
 ﹇<br>
 As of Mar. 27, 2024 01:30:08 AM, in the context of PowerShell, what does `Get-Content` do?
 
-#card 
+#anki-card 
 
 `Get-Content` is a cmdlet used in PowerShell to retrieve the contents of a file. Here's a breakdown of what it does:
 

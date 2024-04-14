@@ -26,7 +26,7 @@ cards-deck: 🔴 Academic::📚 Educational Resourcede.js
 ﹇<br>
 Is Node.js a framework or library? 
 
-#card 
+#anki-card 
 
 No. <span class="spoiler">Node.js®</span> is an open-source, cross-platform JavaScript runtime environment.
 
@@ -37,7 +37,7 @@ No. <span class="spoiler">Node.js®</span> is an open-source, cross-platform Jav
 ﹇<br>
 What does `npm fund` mean? 
 
-#card-reverse 
+#anki-card-reverse 
 
 - This command retrieves information on how to fund the dependencies of a given project.
 	- If no package name is provided, it will list all dependencies that are looking for funding in a tree structure, listing the type of funding and the url to visit.
@@ -51,7 +51,7 @@ What does `npm fund` mean?
 ﹇<br>
 What is the general process to creating a simple request/response “Hello, World!” application in Node.js? 
 
-#card 
+#anki-card 
 
 1. Start with creating the `main.js`
 2. Import the http module
@@ -64,7 +64,7 @@ What is the general process to creating a simple request/response “Hello, Worl
 ﹇<br>
 What is the difference between `res.send()` and `res.end()`? 
 
-#card-reverse 
+#anki-card-reverse 
 
  _ `res.send()` will check the structure of your output and set header information accordingly.
 ```javascript
@@ -101,7 +101,7 @@ app.get('/',(req,res)=>{
 ﹇<br>
 Why is this “ETag” tag important? 
 
-#card 
+#anki-card 
 
 The ETag HTTP response header is an identifier for a specific version of a resource. It allows caches to be more efficient, and saves bandwidth, as a web server does not need to send a full response if the content has not changed.
 
@@ -112,7 +112,7 @@ The ETag HTTP response header is an identifier for a specific version of a resou
 ﹇<br>
 When using `npm` to run `node` to run an application, where is the current process located? 
 
-#card 
+#anki-card 
 
 In the root directory where the file `package-lock.json`
 
@@ -123,7 +123,7 @@ In the root directory where the file `package-lock.json`
 ﹇<br>
 What is the difference between **node** and **node.js**?
 
-#card 
+#anki-card 
 
 - The terms “node” and “node.js” are often used interchangeably, but there can be a difference depending on the context.
 - In the context of JavaScript runtime environment, there is no difference between “node” and “node.js”. [Both refer to the same thing: a JavaScript runtime that allows you to run JavaScript code outside of a browser](https://stackoverflow.com/questions/20057790/what-are-the-differences-between-node-js-and-node)[1](https://stackoverflow.com/questions/20057790/what-are-the-differences-between-node-js-and-node)[2](https://stackoverflow.com/questions/48513484/what-is-the-difference-between-node-and-nodejs).
@@ -137,7 +137,7 @@ What is the difference between **node** and **node.js**?
 ﹇<br>
 Does JSON allow comments? 
 
-#card 
+#anki-card 
 
 No.
 
@@ -148,7 +148,7 @@ No.
 ﹇<br>
 **Front:** What is `npm-run-all`? 
 
-#card 
+#anki-card 
 
 **Back:** `npm-run-all` is a CLI tool that allows you to run multiple npm scripts in parallel or sequentially.
 
@@ -159,7 +159,7 @@ No.
 ﹇<br>
 **Front:** What are the 3 CLI commands provided by `npm-run-all`?
 
-#card 
+#anki-card 
 
 **Back:** The 3 CLI commands provided by `npm-run-all` are `npm-run-all`, `run-s`, and `run-p`.
 
@@ -170,7 +170,7 @@ No.
 ﹇<br>
 **Front:** What is the difference between `run-s` and `run-p`? 
 
-#card 
+#anki-card 
 
 **Back:** `run-s` is a shorthand command for running scripts sequentially, while `run-p` is a shorthand command for running scripts in parallel.
 
@@ -181,7 +181,7 @@ No.
 ﹇<br>
 In Node, can you run scripts in sequential *and* parallel order? 
 
-#card 
+#anki-card 
 
 - In plain Node.js, you can run multiple scripts sequentially by chaining them with `&&`.
 	- For example: `node script1.js && node script2.js`.
@@ -194,7 +194,7 @@ In Node, can you run scripts in sequential *and* parallel order?
 ﹇<br>
 Can JavaScript directly execute PowerShell scripts? 
 
-#card 
+#anki-card 
 
 No.
 
@@ -205,7 +205,7 @@ No.
 ﹇<br>
 What is a child process? 
 
-#card 
+#anki-card 
 
 In computing, a child process is a process that is created by another process (the parent process). 
 
@@ -216,7 +216,7 @@ In computing, a child process is a process that is created by another process (t
 ﹇<br>
 How is a child process made? 
 
-#card 
+#anki-card 
 
 - This creation is done through a mechanism known as "forking," where the parent process makes a copy of itself.
 - This copy, the child process, can then be changed to run a different program.
@@ -229,7 +229,7 @@ How is a child process made?
 ﹇<br>
 Each process runs in its own protected memory space, so…
 
-#card-reverse 
+#anki-card-reverse 
 
 One process can't directly affect another one (unless explicit inter-process communication is set up), because…
 
@@ -240,7 +240,7 @@ One process can't directly affect another one (unless explicit inter-process com
 ﹇<br>
 In Node.js, what module provides the ability to spawn child processes? 
 
-#card 
+#anki-card 
 
 The `child_process` module.
 
@@ -251,7 +251,7 @@ The `child_process` module.
 ﹇<br>
 In Node.js, can child processes communicate with their parents?
 
-#card 
+#anki-card 
 
 - The spawned child processes have three main communication channels with the parent: `stdin`, `stdout`, and `stderr`.
 - These allow the parent and child processes to send and receive data from each other, if necessary. This module is often used to execute shell commands from within JavaScript code.
@@ -266,7 +266,7 @@ Child processes can be either {synchronous (blocking)} or {asynchronous (non-blo
 ﹇<br>
 What is the main difference between `exec` and `execSync` in Node.js? 
 
-#card
+#anki-card
 
 `exec` is asynchronous and doesn't block the Node.js event loop, allowing the application to continue doing other work while the command is executing. `execSync` is synchronous and blocks the Node.js event loop until the spawned shell command has completed.
 
@@ -277,7 +277,7 @@ What is the main difference between `exec` and `execSync` in Node.js?
 ﹇<br>
 **Front:** What happens when a command fails in `execSync`? 
 
-#card
+#anki-card
 
 **Back:** When a command fails (returns a non-zero status) in `execSync`, it throws an error.
 
@@ -288,7 +288,7 @@ What is the main difference between `exec` and `execSync` in Node.js?
 ﹇<br>
 **Front:** In Node.js, how does `exec` handle the output from the shell command? 
 
-#card
+#anki-card
 
 **Back:** `exec` provides the output to a callback function when the command has completed execution. The `stdout` and `stderr` from the command are passed to this callback function.
 
@@ -299,7 +299,7 @@ What is the main difference between `exec` and `execSync` in Node.js?
 ﹇<br>
 **Front:** What is the output of the `execSync` function in Node.js? 
 
-#card
+#anki-card
 
 **Back:** `execSync` returns the stdout from the command as a Buffer object (or a string, if an encoding is specified).
 
@@ -310,7 +310,7 @@ What is the main difference between `exec` and `execSync` in Node.js?
 ﹇<br>
 **Front:** What type of function (blocking or non-blocking) is `execSync` in Node.js? 
 
-#card
+#anki-card
 
 **Back:** `execSync` is a blocking (synchronous) function.
 
@@ -321,7 +321,7 @@ What is the main difference between `exec` and `execSync` in Node.js?
 ﹇<br>
 **Front:** What type of function (blocking or non-blocking) is `exec` in Node.js? 
 
-#card
+#anki-card
 
 **Back:** `exec` is a non-blocking (asynchronous) function.
 
@@ -332,7 +332,7 @@ What is the main difference between `exec` and `execSync` in Node.js?
 ﹇<br>
 What is a callback function in JavaScript? 
 
-#card 
+#anki-card 
 
 Also known as a “higher-order function”, a callback function is a function that is passed to another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action. Callback functions are often used in asynchronous operations, where the timing of the response cannot be predicted.
 
@@ -355,7 +355,7 @@ exec('ls -la', (error, stdout, stderr) => {
 });
 ```
 
-#card 
+#anki-card 
 
 - In this script, `ls -la` is a shell command that lists the files in the current directory in long format, including hidden files. This command is passed to `exec` along with a callback function. This function will be invoked when the `ls -la` command has completed.
 - If there's an error executing the command, the error argument will contain an Error object describing what went wrong. If the command executed successfully, then stdout will contain the command's output, and stderr will contain any error messages the command produced. The callback function then logs these values to the console.
@@ -370,7 +370,7 @@ What is the point of the braces in the statement?
 import { exec } from ‘child_process’`
 ```
 
-#card 
+#anki-card 
 
 - In JavaScript, the braces are used to import named exports from a module. If a module exports multiple items (like functions, objects, or values), you can import the ones you want using the curly braces `{}`.
 - In the case of… 
@@ -400,7 +400,7 @@ import fs, { readFileSync } from 'fs';
 ﹇<br>
 What method does Node.js's `http` module use to write data to the response body? 
 
-#card 
+#anki-card 
 
 Node.js's `http` module uses the `res.write()` method to write data to the response body.
 
@@ -411,7 +411,7 @@ Node.js's `http` module uses the `res.write()` method to write data to the respo
 ﹇<br>
 What do you need to call to indicate you've finished sending the response in Node.js's `http` module? 
 
-#card 
+#anki-card 
 
 You need to call `res.end()` to indicate you've finished sending the response in Node.js's `http` module.
 
@@ -422,7 +422,7 @@ You need to call `res.end()` to indicate you've finished sending the response in
 ﹇<br>
 What is the `res.send()` method in Express.js used for? 
 
-#card 
+#anki-card 
 
 The `res.send()` method in Express.js is used to send a response to the client and automatically closes the connection. It also sets the correct content-type and response length HTTP header based on the type of data being sent.
 
@@ -433,7 +433,7 @@ The `res.send()` method in Express.js is used to send a response to the client a
 ﹇<br>
 Can you send HTML files using the `res.write()` method in Node.js? 
 
-#card 
+#anki-card 
 
 Yes, you can send HTML files using the `res.write()` method in Node.js. You would typically use the `fs` (file system) module to read the HTML file, then write the contents to the response.
 
@@ -444,7 +444,7 @@ Yes, you can send HTML files using the `res.write()` method in Node.js. You woul
 ﹇<br>
 Does `res.write()` in Node.js's `http` module automatically set headers? 
 
-#card 
+#anki-card 
 
 No, `res.write()` in Node.js's `http` module does not automatically set headers. Headers can be set manually using `res.setHeader(name, value)` or `res.writeHead(statusCode[, statusMessage][, headers])`.
 
@@ -455,7 +455,7 @@ No, `res.write()` in Node.js's `http` module does not automatically set headers.
 ﹇<br>
 How does `res.send()` in Express.js differ from `res.write()` in Node.js in terms of header handling? 
 
-#card 
+#anki-card 
 
 `res.send()` in Express.js can automatically handle some header settings based on the type of data being sent. This automatic handling does not occur with `res.write()` in Node.js's `http` module.
 
@@ -466,7 +466,7 @@ How does `res.send()` in Express.js differ from `res.write()` in Node.js in term
 ﹇<br>
 In node.js, how do I run an application in “watch” mode? 
 
-#card 
+#anki-card 
 
 `node -watch`
 
@@ -477,7 +477,7 @@ In node.js, how do I run an application in “watch” mode?
 ﹇<br>
 Where should I put my script tags in an HTML file? 
 
-#card 
+#anki-card 
 
 - Usually The best place to put your `<script>` tags is usually at the bottom of the `<body>` section of your HTML file.
 - This is because when a browser loads a website with a `<script>` tag, it has to stop parsing the HTML until the script has been downloaded and executed. This can cause a delay in rendering the page and result in a bad user experience. [By placing the `<script>` tags at the bottom of the `<body>` section, you ensure that the rest of the page content is loaded and displayed before the scripts are executed.](https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup)
@@ -489,7 +489,7 @@ Where should I put my script tags in an HTML file?
 ﹇<br>
 What does `npm i` stand for? 
 
-#card 
+#anki-card 
 
 Stands for `npm install`
 
@@ -500,7 +500,7 @@ Stands for `npm install`
 ﹇<br>
 What is **npx** in regards to Node.js? How is it different from **npm**?
 
-#card 
+#anki-card 
 
 - [`npx` is a package runner tool that comes with `npm`, the node package manager, starting from version 5.2.0](https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/)[1](https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/)[2](https://www.geeksforgeeks.org/what-are-the-differences-between-npm-and-npx/)[3](https://www.hacksparrow.com/nodejs/what-is-npx.html). [It’s designed to make it easy to install and manage dependencies hosted in the npm registry](about:blank#)[1](https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/).
 - [The key difference between `npm` and `npx` lies in their execution of packages](about:blank#)[4](https://stackoverflow.com/questions/50605219/difference-between-npx-and-npm)[5](https://techstacker.com/npx-vs-npm/)[6](https://history-computer.com/npx-vs-npm-whats-the-difference/)[7](https://history-computer.com/npm-vs-npx-differences-and-when-to-use-each/).
@@ -515,7 +515,7 @@ What is **npx** in regards to Node.js? How is it different from **npm**?
 ﹇<br>
 What is npm?
 
-#card
+#anki-card
 
 `npm` (Node Package Manager) is the default package manager for the JavaScript runtime Node.js. It's used for installing, updating and managing package dependencies for your project.
 
@@ -526,7 +526,7 @@ What is npm?
 ﹇<br>
 What is npx?
 
-#card
+#anki-card
 
 `npx` is a package runner tool that comes with `npm`. It's used for executing Node packages without installing them globally or locally. It can run packages directly from the `npm` registry or from local `node_modules` directory.
 
@@ -537,7 +537,7 @@ What is npx?
 ﹇<br>
 What happens when you install a package using npm?
 
-#card
+#anki-card
 
 When you install a package using `npm`, it lists it under dependencies or devDependencies in your `package.json`, and also downloads the package code into the `node_modules/` directory. However, it doesn't automatically create a script to run that package.
 
@@ -548,7 +548,7 @@ When you install a package using `npm`, it lists it under dependencies or devDep
 ﹇<br>
 How does `npx` run a command or script?
 
-#card
+#anki-card
 
 `npx` first checks if the command exists in `$PATH` or in local project binaries. If not, it then installs the command/package temporarily from the npm registry and runs it.
 
@@ -559,7 +559,7 @@ How does `npx` run a command or script?
 ﹇<br>
 How can you run a script defined in `package.json`?
 
-#card
+#anki-card
 
 Scripts defined under the scripts section of `package.json `can be run using `npm run <script-name>`.
 
@@ -570,7 +570,7 @@ Scripts defined under the scripts section of `package.json `can be run using `np
 ﹇<br>
 What is a major advantage of `npx` over `npm`?
 
-#card
+#anki-card
 
 Unlike `npm`, `npx` allows you to run a command with a specific version of a package, or even execute code directly from a JavaScript file hosted on a URL or Git repository. This is especially useful for testing or running packages without permanently installing them.
 
@@ -581,7 +581,7 @@ Unlike `npm`, `npx` allows you to run a command with a specific version of a pac
 ﹇<br>
 If `npx` is present, then why do we need scripts in `package.json` file?
 
-#card
+#anki-card
 
 Scripts in `package.json` file provide a standard and convenient way to manage, organize and run tasks, especially complex tasks or tasks run frequently. They act like custom commands for your project that can be executed by anyone aware of these scripts in your project
 

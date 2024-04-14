@@ -1,7 +1,7 @@
 ---
 title: Personal Style Guide
 created: 2024-04-13T20:00
-updated: 2024-04-13T22:11
+updated: 2024-04-14T00:28
 authors:
   - Edmund Leibert III
 tags:
@@ -32,14 +32,14 @@ icon: TiNotes
 
 ---
 
-![[^toc]]
+
 
 ---
 
 ﹇<br>
 As of Feb. 10, 2024 03:09:42 PM, when typing, when should one **bold**, <ins>underline</ins>, surround by “double quotation marks”, surround by “single quotation marks”, or _italicize_? Employ the IEEE convention where possible.
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/obsidian 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/obsidian 
 
 When writing in accordance with the **IEEE (Institute of Electrical and Electronics Engineers)** convention, one can use specific formatting techniques to enhance clarity and emphasize different types of content [@caulfieldIEEEPaperFormat2022]. This is modified approach:
 
@@ -67,7 +67,7 @@ When writing in accordance with the **IEEE (Institute of Electrical and Electron
 ﹇<br>
 As of Apr. 13, 2024 12:18:16 AM, what are the various **callouts** I can use that will conform to the **GitHub Flavored Markdown**? 
 
-#card 
+#anki-card 
 
 > [!NOTE]
 > Highlights information that users should take into account, even when skimming.

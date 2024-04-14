@@ -1,7 +1,7 @@
 ---
 title: 📕 Foundations of Scalable Systems (2022) ▹ 📋 Table of Contents
 created: 2023-09-12 03:27
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -38,7 +38,7 @@ It also introduces a collection of {1:software architecture approaches} and dist
 ﹇<br>
 What is the definition of the word  _veritable_? [📑](https://learning.oreilly.com/library/view/foundations-of-scalable/9781098106058/preface01.html#:-:text=veritable)
 
-#card 
+#anki-card 
 
 The word “veritable” is an adjective. [It is often used as an intensifier to qualify a metaphor](about:blank#)[1](https://bing.com/search?q=Merriam+webster+definition+of+veritable). 
 
@@ -60,7 +60,7 @@ We all know of systems that fail suddenly when exposed to {1:unexpected high loa
 ﹇<br>
 How is software unlike physical systems? [📑](https://learning.oreilly.com/library/view/foundations-of-scalable/9781098106058/preface01.html#:-:text=Software%20is%20unlike%20physic,ms%20in%20that%20it%E2%80%99s%20amorphous)
 
-#card 
+#anki-card 
 
 Software is unlike physical systems in that it’s amorphous—its physical form ($1$s and $0$s) bears no resemblance to its actual capabilities. We’d never expect to transform a small village of $500$ people into a city of $10$ million overnight. But we sometimes expect our software systems to suddenly handle one thousand times the number of requests they were designed for. Unsurprisingly, the outcomes are rarely pretty.
 
@@ -72,7 +72,7 @@ Software is unlike physical systems in that it’s amorphous—its physical form
 ﹇<br>
 Who is the major target audience for this book? [](https://learning.oreilly.com/library/view/foundations-of-scalable/9781098106058/preface01.html#:-:text=major%20target%20audience)
 
-#card 
+#anki-card 
 
 The major target audience for this book is software engineers and architects who have zero or limited experience with distributed, concurrent systems. 
 - They need to deepen both their theoretical and practical design knowledge in order to meet the challenges of building larger-scale, typically internet-facing applications.
@@ -86,7 +86,7 @@ The major target audience for this book is software engineers and architects who
 ﹇<br>
 In the _broad_ context of software engineering, what does concurrency mean?
 
-#card 
+#anki-card 
 
 In software engineering, concurrency refers to the ability of different parts or units of a program, algorithm, or problem to be executed out-of-order or in partial order, without affecting the final outcome<sup>[\[1\]](https://en.wikipedia.org/wiki/Concurrency_%28computer_science%29)</sup>. This allows for parallel execution of the concurrent units, which can significantly improve overall speed of the execution in multi-processor and multi-core systems<sup>[\[1\]](https://en.wikipedia.org/wiki/Concurrency_%28computer_science%29)</sup>.
 
@@ -102,7 +102,7 @@ The concurrent model in software engineering focuses on executing multiple proce
 ﹇<br>
 Is _concurrency_ the same thing as _parallelism_?
 
-#card 
+#anki-card 
 
 [Concurrency is not parallelism: concurrency is about dealing with lots of things at once but parallelism is about doing lots of things at once](https://en.wikipedia.org/wiki/Concurrency_%28computer_science%29)[1](https://en.wikipedia.org/wiki/Concurrency_%28computer_science%29). [Concurrency is about structure, parallelism is about execution, concurrency provides a way to structure a solution to solve a problem that may (but not necessarily) be parallelizable](https://en.wikipedia.org/wiki/Concurrency_%28computer_science%29)[1](https://en.wikipedia.org/wiki/Concurrency_%28computer_science%29).
 

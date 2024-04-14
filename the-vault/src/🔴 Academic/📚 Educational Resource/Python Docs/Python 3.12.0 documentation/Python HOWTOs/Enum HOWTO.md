@@ -1,7 +1,7 @@
 ---
 title: Enum Howto
 created: 2023-10-31T17:48
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -37,7 +37,7 @@ An {1:[`Enum`](https://docs.python.org/3.12/library/enum.html#enum.Enum "enum.E
 ﹇<br>
 In the context of Enums in Python, what are symbolic names?
 
-#card 
+#anki-card 
 
 In the context of Python enumerations (Enums), **symbolic names** are the identifiers that represent the individual members of an Enum. They are human-readable labels for the values an Enum can take.
 
@@ -82,7 +82,7 @@ In Python, {1:`def`} is used to {2:define a function}, while {3:`class`} is 
 ﹇<br>
 In Python, can we have functions, within classes, be the same name as the class they’re in? Similar to how constructors work in C++?
 
-#card 
+#anki-card 
 
 In Python, constructors are defined using the `__init__` method, which is a special method that gets called when an object is instantiated. It’s similar to a constructor in C++. Here’s an example:
 
@@ -113,7 +113,7 @@ So, while you can’t have functions within classes with the same name to signal
 ﹇<br>
 What is the difference between Python and C++ in terms of constructors?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp 
 
 Unlike C++, Python doesn’t allow multiple constructors with different parameters.
 
@@ -123,7 +123,7 @@ Unlike C++, Python doesn’t allow multiple constructors with different paramete
 ﹇<br>
 In Python, how can you achieve similar functionality to multiple constructors like in C++?
 
-#card 
+#anki-card 
 
 You can achieve similar functionality by providing default values for your parameters or by using `*args` or `**kwargs` to accept a variable number of arguments.
 
@@ -146,7 +146,7 @@ So, while you can’t have functions within classes with the same name to signal
 ﹇<br>
 Can you overload a function in Python, like in C++? 
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp 
 
 [In Python, function overloading in the same way as in C++ or Java is not directly supported](https://stackoverflow.com/questions/7113032/overloaded-functions-in-python)[1](https://stackoverflow.com/questions/7113032/overloaded-functions-in-python)[2](https://stackoverflow.com/questions/75326378/function-overloading-in-python). [This means you can’t have multiple definitions of the same function with different numbers or types of parameters](https://www.geeksforgeeks.org/python-method-overloading/)[3](https://www.geeksforgeeks.org/python-method-overloading/). [If you try to define a function more than once, only the most recent definition will be used](https://www.geeksforgeeks.org/python-method-overloading/)[3](https://www.geeksforgeeks.org/python-method-overloading/).
 
@@ -179,7 +179,7 @@ In the following code snippet, could you please explain what is happening? Speci
 
 From my understanding, whatever you put in the parentheses when defining `Weekday` is an argument or parameter of a function. So, in this case, is `Enum` an argument of a function? Please help me make sense of this
 
-#card 
+#anki-card 
 
 In the code snippet you provided, `Enum` is not an argument of a function. Instead, it’s a base class that `Weekday` is inheriting from. This is a concept in object-oriented programming known as **inheritance**.
 

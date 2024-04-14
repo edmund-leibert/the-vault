@@ -6,7 +6,7 @@ tags:
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-10-27T17:38
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 ---
 
 # C++ reference
@@ -15,7 +15,7 @@ updated: 2024-01-25T16:47
 
 ### Program support utilities
 
-In C++, what is the difference between `exit()` and `main()`? #card
+In C++, what is the difference between `exit()` and `main()`? #anki-card
 - When one calls `return` in `main()`, destructors will be called for locally scoped objects.
 - In contrast, when one calls `exit()`, no destructors will be called for locally scoped objects
 	- A.k.a. any objects that you've created in that function will *not* be destroyed.
@@ -24,7 +24,7 @@ In C++, what is the difference between `exit()` and `main()`? #card
 ^1680217549244
 
 
-In C++, how do we specify a directory? #card
+In C++, how do we specify a directory? #anki-card
 - Use two forward slashes like this `//`.
 ^1680217549250
 

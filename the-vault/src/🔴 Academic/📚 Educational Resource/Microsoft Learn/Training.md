@@ -1,6 +1,6 @@
 ---
 created: 2023-10-07 15:19
-updated: 2023-11-18T02:44
+updated: 2024-04-14T00:24
 ---
 
 ---
@@ -19,7 +19,7 @@ cards-deck: Default::Computer Science
 
 #### (Unit 1 of 7) Introduction
 
-What type of applications does C# allow ou to build? #card 
+What type of applications does C# allow ou to build? #anki-card 
 - Business applications to capture, analyze, and process data
 - Dynamic web applications that can be accessed from a web browser
 - Games, both 2D and 3D
@@ -39,14 +39,14 @@ What type of applications does C# allow ou to build? #card
 
 ##### What to do if you get an error message
 
-Is C# a case-sensitive language? #card 
+Is C# a case-sensitive language? #anki-card 
 Yes, the C# compiler considers the words `console` and `Console` to be different as the words `cat` and `dog`
 
 What will happen is I try to execute the following expression?
 ```csharp
 Console.WriteLine('HelloWord!');
 ```
-#card 
+#anki-card 
 You will get the following error message…
 ```
 (1,19): error CS1012: Too many characters in character literal
@@ -54,12 +54,12 @@ You will get the following error message…
 
 ##### Display a new message
 
-How to comment a line in C#? #card 
+How to comment a line in C#? #anki-card 
 Use two forward slashes `//`.
 
 ##### The difference between Console.Write and Console.WriteLine
 
-What is the different between `Console.Write()` and `Console.WriteLine()`? #card 
+What is the different between `Console.Write()` and `Console.WriteLine()`? #anki-card 
 - `Console.WriteLine()` prints the entire message to the output console and then adds a line feed similar to how to create a new line of text by pressing <kbd>Enter</kbd> or <kbd>Return</kbd>.
 - `Console.Write` does the exact same thing but does not add a line feed.
 
@@ -71,19 +71,19 @@ What is the different between `Console.Write()` and `Console.WriteLine()`? #card
 
 ##### What is syntax?
 
-What is the rules for writing C# code called? #card-reverse 
+What is the rules for writing C# code called? #anki-card-reverse 
 syntax
 
 ##### How did your code work?
 
-What is a **literal string** in C#? #card 
+What is a **literal string** in C#? #anki-card 
 A phrase surrounded by double-quotation marks in your C# code.
 
 How does the following code work?
 ```csharp
 Console.WriteLine("Hello World!");
 ```
-#card
+#anki-card
 - The `Console` part is called a <span class="spoiler">**class**</span>. 
 	- <span class="spoiler">Classes "own" methods; or you could say that methods live inside of a class.</span>
 	- <span class="spoiler">To visit the method, you must know which class it's in.</span>
@@ -103,10 +103,10 @@ Console.WriteLine("Hello World!");
 
 ##### Understand the flow of execution
 
-Do some instructions require the CPU to wait before it can continue? #card 
+Do some instructions require the CPU to wait before it can continue? #anki-card 
 Yes.
 
-Can some instructions change the flow of execution? #card 
+Can some instructions change the flow of execution? #anki-card 
 Yes.
 
 ##### Check your knowledge
@@ -126,44 +126,44 @@ Yes.
 
 #### [Introduction](https://learn.microsoft.com/en-us/training/modules/csharp-literals-variables/1-introduction/?ns-enrollment-type=learningpath&ns-enrollment-id=learn.wwl.get-started-c-sharp-part-1)
 
-What are hard-coded values? #card 
+What are hard-coded values? #anki-card 
 Values that are constant and unchanged throughout the execution of the program.
 
 #### [Exercise - Print literal values](https://learn.microsoft.com/en-us/training/modules/csharp-literals-variables/2-exercise-literal-values/?ns-enrollment-type=learningpath&ns-enrollment-id=learn.wwl.get-started-c-sharp-part-1)1
 
 ##### What is a literal value?
 
-What is a literal value? #card-reverse 
+What is a literal value? #anki-card-reverse 
 A constant value that never changes.
 
 ##### Exercise - Print different literal data types
 
 ###### Use character literals
 
-What is a `char` in C#? #card 
+What is a `char` in C#? #anki-card 
 - Short for *character*
 - A single alphanumeric character
 
-What type of quotes create a character literal? #card 
+What type of quotes create a character literal? #anki-card 
 single quotes
 
-What type of quotes create a `string` data type? #card 
+What type of quotes create a `string` data type? #anki-card 
 double quotes
 
 ###### Use integer literals
 
 ###### Use floating-point literals
 
-What is a floating-point number? #card 
+What is a floating-point number? #anki-card 
 A number that contains a decimal.
 
-How many data types does C# support to represent decimal numbers? #card 
+How many data types does C# support to represent decimal numbers? #anki-card 
 Three types…
 - `float`
 - `double`
 - `decimal`
 
-How many degrees of precisions does each data type for representing decimal numbers have? #card
+How many degrees of precisions does each data type for representing decimal numbers have? #anki-card
 
 | Float Type | Precision     |
 | ---------- | ------------- |

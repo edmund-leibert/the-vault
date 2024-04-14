@@ -1,7 +1,7 @@
 ---
 title: Tree traversal
 created: 2023-11-20T06:20
-updated: 2023-12-04T08:26
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -30,7 +30,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::Wikipedia::Tree traversal
 ﹇<br>
 What is tree traversal in computer science?
 
-#card 
+#anki-card 
 
 Tree traversal, also known as tree search and walking the tree, is a form of graph traversal. It refers to the process of visiting (e.g., retrieving, updating, or deleting) each node in a tree data structure, exactly once.
 
@@ -40,7 +40,7 @@ Tree traversal, also known as tree search and walking the tree, is a form of gra
 ﹇<br>
 How are tree traversals classified?
 
-#card 
+#anki-card 
 
 Tree traversals are classified by the order in which the nodes are visited.
 
@@ -50,7 +50,7 @@ Tree traversals are classified by the order in which the nodes are visited.
 ﹇<br>
 Can the algorithms for tree traversal be generalized to other trees apart from binary trees?
 
-#card 
+#anki-card 
 
 Yes, the algorithms described for a binary tree may be generalized to other trees as well.
 

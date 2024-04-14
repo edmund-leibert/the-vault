@@ -1,7 +1,7 @@
 ---
 title: Misc. Notes
 created: 2023-10-31T16:39
-updated: 2023-12-03T15:31
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -43,7 +43,7 @@ build --copt="/WX"  # Treat warnings as errors
 
 In the `.bazelrc` file, is each `--copt` line appended to the list of `copt`s or are they overwritten during the build?
 
-#card 
+#anki-card 
 
 In the `.bazelrc` file, each `--copt` line is appended to the list of copts that are applied during the build. They are not overwritten.
 So, in your case, the build command will be something akin to:

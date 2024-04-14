@@ -12,14 +12,14 @@ tags:
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-09-03 08:46
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 ---
 
 # Python in a Nutshell, 4ᵗʰ Edition (2023)
 
 ## [Preface](https://learning.oreilly.com/library/view/python-in-a/9781098113544/preface01.html)
 
-What does the book Python in a Nutshell, 4ᵗʰ Edition (2022) cover? #card-reverse 
+What does the book Python in a Nutshell, 4ᵗʰ Edition (2022) cover? #anki-card-reverse 
 A wide range of application areas including…
 - web and network programming
 - XML handling
@@ -32,17 +32,17 @@ A wide range of application areas including…
 
 ## [1. Introduction To Python](https://learning.oreilly.com/library/view/python-in-a/9781098113544/ch01.html)
 
-Can Python be considered a well-established general-purpose programming language? #card 
+Can Python be considered a well-established general-purpose programming language? #anki-card 
 Yes.
 
 
 
-Who is the creator of Python? #card-reverse 
+Who is the creator of Python? #anki-card-reverse 
 Guido van Rossum
 
 
 
-What are some prominent characteristics of Python? #card-reverse 
+What are some prominent characteristics of Python? #anki-card-reverse 
 - stable
 - mature
 - high-level
@@ -52,7 +52,7 @@ What are some prominent characteristics of Python? #card-reverse
 
 
 
-What are some phases of the software life cycle? #card-reverse 
+What are some phases of the software life cycle? #anki-card-reverse 
 - analysis
 - design
 - prototyping
@@ -65,12 +65,12 @@ What are some phases of the software life cycle? #card-reverse
 
 
 
-What is the TIOBE index? #card 
+What is the TIOBE index? #anki-card 
 The TIOBE Programming Community index is an indicator of the popularity of programming languages
 
 
 
-Python provides a unique mix of… #card-reverse 
+Python provides a unique mix of… #anki-card-reverse 
 - elegance
 - simplicity
 - practicality

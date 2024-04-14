@@ -5,7 +5,7 @@ tags:
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-09-03 08:46
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 ---
 
 # LearnCpp.com
@@ -20,32 +20,32 @@ updated: 2024-01-25T16:47
 
 ### 11.4: [Sorting an array using selection sort](https://www.learncpp.com/cpp-tutorial/sorting-an-array-using-selection-sort/)
 
-In C++, how does one implement selection sort? #card-reverse 
+In C++, how does one implement selection sort? #anki-card-reverse 
 ```cpp
 // to be filled!
 ```
 
 
-**Question**: Selection sort is an in-place comparison sorting algorithm that divides the input list into two parts. What does the algorithm find and swap to move the sublist boundaries one element to the right? #card-reverse 
+**Question**: Selection sort is an in-place comparison sorting algorithm that divides the input list into two parts. What does the algorithm find and swap to move the sublist boundaries one element to the right? #anki-card-reverse 
 **Answer**: The algorithm finds the smallest element in the unsorted sublist and swaps it with the leftmost unsorted element.
 
 
-**Question**: What is the time complexity of selection sort? #card-reverse 
+**Question**: What is the time complexity of selection sort? #anki-card-reverse 
 **Answer**: The time complexity of <span class="spoiler">selection sort</span> is $O(n)$ in the worst case, where n is the number of elements in the input list.
 
 
-**Question**: What is the space complexity of selection sort? #card-reverse
+**Question**: What is the space complexity of selection sort? #anki-card-reverse
 **Answer**: The space complexity of <span class="spoiler">selection sort</span> is $O(1)$, because the algorithm only uses a constant amount of extra space to store the temporary index of the smallest element and the swap operation.
 
 
-**Question**: What are the advantages of selection sort? #card-reverse 
+**Question**: What are the advantages of selection sort? #anki-card-reverse 
 **Answer**: The advantages of <span class="spoiler">selection sort</span> are:
 - Simple to implement
 - Works well on small input sizes
 - Requires only $O(1)$ extra space
 
 
-**Question**: What are the disadvantages of <span class="spoiler">selection sort</span>? #card-reverse 
+**Question**: What are the disadvantages of <span class="spoiler">selection sort</span>? #anki-card-reverse 
 **Answer**: The disadvantages of selection sort are:
 - Slow for large input sizes
 - Not stable (i.e., it may change the relative order of equal elements)

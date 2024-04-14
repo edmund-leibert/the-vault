@@ -1,7 +1,7 @@
 ---
 title: Misc. Notes
 created: 2023-10-31T16:39
-updated: 2023-12-14T05:55
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -32,7 +32,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ GoogleTest::Misc. 
 ﹇<br>
 In the context of the framework **GoogleTest**, what is the difference between `ASSERT` and `EXPECT`?
 
-#card 
+#anki-card 
 
 The primary differences between `ASSERT` and `EXPECT` are:
 - Use `ASSERT` when the condition **must** hold - if it doesn't the test stops right there. Use this when the remainder of the test doesn't have semantic meaning without this condition holding.
@@ -50,7 +50,7 @@ This is echoed within the [GoogleTest Primer](https://google.github.io/googlete
 ﹇<br>
 How should I go about testing if two doubles or floats are equal?
 
-#card 
+#anki-card 
 
 Use [`EXPECT_NEAR`](https://github.com/google/googletest/blob/master/docs/reference/assertions.md#expect_near-expect_near) or the [`DoubleEq`](https://github.com/google/googletest/blob/master/docs/reference/assertions.md#expect_double_eq-expect_double_eq) matcher instead. Floating point operations can lead to [rounding errors](https://stackoverflow.com/questions/249467/what-is-a-simple-example-of-floating-point-rounding-error) which makes the results ever so slightly different.
 

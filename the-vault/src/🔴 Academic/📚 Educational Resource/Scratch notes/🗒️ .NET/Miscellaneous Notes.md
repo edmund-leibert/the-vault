@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2023-09-03 08:46
-updated: 2024-04-13T19:47
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -34,7 +34,7 @@ banner_y: 0
 ﹇<br>
 In brief, what is Microsoft’s **.NET**?
 
-#card 
+#anki-card 
 
 **.NET** is a free, cross-platform, [open-source developer platform](https://github.com/dotnet/core) for building [many kinds of applications](https://learn.microsoft.com/en-us/dotnet/core/apps). It can run programs written in [multiple languages](https://learn.microsoft.com/en-us/dotnet/fundamentals/languages), with [C#](https://learn.microsoft.com/en-us/dotnet/csharp/) being the most popular. It relies on a [high-performance](https://devblogs.microsoft.com/dotnet/category/performance/) runtime that is used in production by many [high-scale apps](https://devblogs.microsoft.com/dotnet/category/developer-stories/) [@genevievewarrenIntroductionNETNET2024].
 
@@ -45,7 +45,7 @@ In brief, what is Microsoft’s **.NET**?
 ﹇<br>
 What is **DocTo**?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/docto
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/docto
 
 **DocTo** is a simple utility for converting a Microsoft Word Document ‘.doc’ and Microsoft Excel ‘.xls’ files to any other supported format such as `.txt`, `.csv`, `.rtf`, and `.pdf`. [@tobyallenDocToXLSTo]
 
@@ -63,7 +63,7 @@ It additionally has the following features:
 ﹇<br>
 Using the [DocTo](https://github.com/tobya/DocTo) library, how can I export a `.docx` to a `.pdf` in the command line [@tobyallenDocToXLSTo]?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/docto
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/docto
 
 ```pwsh
 docto -f C:\Directory\MyFile.doc -O "C:\Output Directory\MyTextFile.pdf" -T wdFormatPDF
@@ -75,7 +75,7 @@ docto -f C:\Directory\MyFile.doc -O "C:\Output Directory\MyTextFile.pdf" -T wdFo
 ﹇<br>
 What does JSON stand for?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/json
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/json
 
 **J**ava**S**cript **O**bject **N**otation
 
@@ -85,7 +85,7 @@ What does JSON stand for?
 ﹇<br>
 What _namespace_ in **.NET** provides functionality for _serializing_ to and _deserializing_ form **J**ava**S**cript **O**bject **N**otation (JSON)?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp
 
 [The `System.Text.Json` namespace in .NET provides high-performance, low-allocating, and standards-compliant capabilities to process JavaScript Object Notation (JSON)](https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-8.0) [@dotnet-botSystemTextJson]. [It includes serializing objects to JSON text and deserializing JSON text to objects, with UTF-8 support built-in](https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-8.0)  [@dotnet-botSystemTextJson]. [It also provides types to read and write JSON text encoded as UTF-8, and to create an in-memory document object model (DOM) for random access of the JSON elements within a structured view of the data](https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-8.0) [@dotnet-botSystemTextJson].
 
@@ -138,7 +138,7 @@ This string represents a `WeatherForecast` with a `Date` of “2019-08-01”, a 
 ﹇<br>
 In the context of **C#**,  and more generally **.NET**, does the _serialized form_ include any information about an object’s associated _methods_?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
 
 [In C#, and generally in most programming languages, serialization does **not** include an object’s methods](https://stackoverflow.com/questions/2767893/are-methods-also-serialized-along-with-the-data-members-in-net) [@lisaAreMethodsAlso2010] [@ramezaniWhatMeaningSerialization2020]. [Serialization is the process of converting the state of an object into a form that can be persisted or transported](https://learn.microsoft.com/en-us/dotnet/standard/serialization/) [@genevievewarrenSerializationNET2023] [@naeemSerializationDeserialization2023]. [The serialized form includes only the data members (fields and properties) of the object](https://stackoverflow.com/questions/2767893/are-methods-also-serialized-along-with-the-data-members-in-net) [@lisaAreMethodsAlso2010] [@ramezaniWhatMeaningSerialization2020].
 
@@ -194,7 +194,7 @@ As you can see, the serialized JSON string includes the values of the `Name` and
 ﹇<br>
 In the context of software engineering, specifically** .NET**, is it possible to also _serialize_ an object's _methods_. If not, how do we rebuild an object with its methods when _deserializing_ data?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
 
 [In .NET, serialization is the process of converting the state of an object into a form that can be persisted or transported](https://learn.microsoft.com/en-us/dotnet/standard/serialization/) [@genevievewarrenSerializationNET2023]. This typically includes the values of its properties. [However, the serialized form **does not include any information about an object’s associated methods**](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/overview) [@genevievewarrenSerializeDeserializeJSON2023].
 
@@ -238,7 +238,7 @@ If you need to modify the behavior of methods after deserialization based on the
 ﹇<br>
 In general, what is the definition of *serialization*?
 
-#card-reverse #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
+#anki-card-reverse #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
 
 [<span class="spoiler">**Serialization**</span> is the process of translating a data structure or object state into a format that can be stored (e.g., in files or data buffers) or transmitted (e.g., over computer networks) and reconstructed later, possibly in a different computer environment](https://en.wikipedia.org/wiki/Serialization) [@Serialization2023] [@WhatSerialization2022] [@baeldungWhatAreSerialization2023]. [This process allows us to save the data associated with an object and recreate the object in a new location](https://en.wikipedia.org/wiki/Serialization) [@baeldungWhatAreSerialization2023]. [The serialized form does not include any information about an object’s associated methods](https://en.wikipedia.org/wiki/Serialization) [@Serialization2023].
 
@@ -258,7 +258,7 @@ var userDataString = System.Text.Json.JsonSerializer.Serialize(userData);
 ﹇<br>
 What is the definition of *deserialization*?
 
-#card-reverse #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
+#anki-card-reverse #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
 
 <span class="spoiler">**Deserialization**</span> is the reverse process of serialization. [It involves taking data structured in some format and rebuilding it into an object](https://en.wikipedia.org/wiki/Serialization) [@theowaspfoundationDeserializationOWASPCheat] [@dagsterlabsDataDeserializationDagster]. [This process is used to extract the data or the state of the object from the stored or received serialized format](https://en.wikipedia.org/wiki/Serialization) [@dagsterlabsDataDeserializationDagster].
 
@@ -275,7 +275,7 @@ var deserializedUserData = System.Text.Json.JsonSerializer.Deserialize<UserData>
 ﹇<br>
 As of 2023, what is the most prevalent encoding for data on the web and files on the disk?
 
-#card 
+#anki-card 
 
 UTF-8.
 
@@ -285,7 +285,7 @@ UTF-8.
 ﹇<br>
 Does UTF-8 support emojis?
 
-#card 
+#anki-card 
 
 Yes. Emojis are also characters from the UTF-8 alphabet: 😄 is 128516.
 
@@ -295,7 +295,7 @@ Yes. Emojis are also characters from the UTF-8 alphabet: 😄 is 128516.
 ﹇<br>
 What is the difference between **.NET Core**, **.NET Framework**, and **.NET**?
 
-#card 
+#anki-card 
 
 Sure, let’s break down these terms:
 
@@ -312,7 +312,7 @@ Sure, let’s break down these terms:
 ﹇<br>
 As of 2024, can **.NET** be considered a newer version of **.NET Core**?
 
-#card 
+#anki-card 
 
 Yes, that’s correct. **.NET 5** and its successors are the next step forward from **.NET Core**.
 
@@ -325,7 +325,7 @@ Microsoft merged the best of .NET Core and .NET Framework into a single platform
 ﹇<br>
 In the context of .NET, what does **IIS** stand for and what is it?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/
 
 IIS stands for **I**nternet **I**nformation **S**ervices. [It is a flexible, secure, and manageable web server for hosting web applications, including ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/?view=aspnetcore-8.0) [@rickandersonHostASPNET2023].
 
@@ -341,7 +341,7 @@ Most commonly, IIS is used to host ASP.NET web applications and static websites.
 ﹇<br>
 As of 2024, is **IIS** current out “outdated”? If it is outdated, what is a modern alternative to it currently?
 
-#card
+#anki-card
 
 [**Internet Information Services (IIS)** is still being used and supported by Microsoft](https://learn.microsoft.com/en-us/lifecycle/products/internet-information-services-iis) [@leanserverIISWebServer2022]. [However, it’s important to note that older versions of IIS (7.5 and below) are no longer supported by Microsoft and may be vulnerable to attacks](https://cybernews.com/security/millions-of-microsoft-web-servers-powered-by-vulnerable-legacy-software/) [@edvardasmikalauskasMillionsMicrosoftWeb2023]. [Therefore, it’s recommended to use the latest version of IIS for the most secure and best performance](https://learn.microsoft.com/en-us/lifecycle/products/internet-information-services-iis) [@leanserverIISWebServer2022].
 
@@ -361,7 +361,7 @@ As for alternatives to IIS, there are several modern web servers that you might 
 ﹇<br>
 Just to clarify, what server am I running when I run a simple **Node.js** application locally? In your explanation, make sure to relate this to how Microsoft’s **IIS** works too?
 
-#card 
+#anki-card 
 
 [When you run a JavaScript Node.js application locally, you’re typically running it on a **Node.js server**](https://stackoverflow.com/questions/5489956/how-could-others-on-a-local-network-access-my-nodejs-app-while-its-running-on)[1](https://stackoverflow.com/questions/5489956/how-could-others-on-a-local-network-access-my-nodejs-app-while-its-running-on)[2](https://sabe.io/tutorials/setting-up-local-web-server-node-js)[3](https://stackoverflow.com/questions/6084360/using-node-js-as-a-simple-web-server). [Node.js includes a built-in HTTP server library, allowing you to run a web server without the use of external software](https://stackoverflow.com/questions/5489956/how-could-others-on-a-local-network-access-my-nodejs-app-while-its-running-on)[1](https://stackoverflow.com/questions/5489956/how-could-others-on-a-local-network-access-my-nodejs-app-while-its-running-on)[2](https://sabe.io/tutorials/setting-up-local-web-server-node-js)[3](https://stackoverflow.com/questions/6084360/using-node-js-as-a-simple-web-server).
 
@@ -380,7 +380,7 @@ However, it’s important to note that running a Node.js application on IIS is n
 ﹇<br>
 What are HTTP, HTTP/2, HTTPS, FTP, FTPS, SMTP and NNTP?
 
-#card 
+#anki-card 
 
 These are all network protocols. They are designed to send/transfer information over a computer network and are a integral part of today’s internet.
 
@@ -390,7 +390,7 @@ These are all network protocols. They are designed to send/transfer information 
 ﹇<br>
 In the context of software engineering, specifically in the language **C#** (**.NET**), what exactly is an `async` function and how does it work? Relate your description/analysis to threads at the operating system level.
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
 
 [In C#, an `async` function is a method, lambda expression, or anonymous method that is marked with the `async` keyword](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async)[1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async)[2](https://www.c-sharpcorner.com/article/async-and-await-in-c-sharp/). [This keyword indicates that the function is asynchronous, meaning it can run in the background while other code executes](https://stackify.com/c-threading-and-multithreading-a-guide-with-examples/)[3](https://stackify.com/c-threading-and-multithreading-a-guide-with-examples/).
 
@@ -427,7 +427,7 @@ Two brief questions:
 1. When calling an `async` method, must you have an `await` prepended/before it when calling it? 
 2. Must an `async` method, by definition, must call another `async` function?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
 
 1. **Do you need to use `await` when calling an `async` method?**
     - [No, it’s not mandatory to use `await` when calling an `async` method](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[1](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[2](https://stackoverflow.com/questions/17805887/using-async-without-await). [However, if you call an `async` method without `await`, the method will return a `Task` or `Task<T>` immediately, and the caller will continue execution before the `async` method has completed](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[1](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[2](https://stackoverflow.com/questions/17805887/using-async-without-await). [This can lead to unexpected behavior if the caller depends on the completion of the `async` method](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[1](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[2](https://stackoverflow.com/questions/17805887/using-async-without-await). [If you don’t need to wait for the `async` method to complete, you can ignore the returned `Task`](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[1](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[2](https://stackoverflow.com/questions/17805887/using-async-without-await). [But be aware that any exceptions thrown by the `async` method will be swallowed and won’t be observed until the `Task` is awaited](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await)[1](https://stackoverflow.com/questions/15522900/how-to-safely-call-an-async-method-in-c-sharp-without-await).
@@ -440,7 +440,7 @@ Two brief questions:
 ﹇<br>
 It seems unless I specify manually the creation of extra threads in **C#**, when an `async` method is now waiting (via `await`) for another method to finish execution and return a task, the threads itself don't change or go off the processor, but instead the thread itself switches to execute a different method. Is this correct?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
 
 In C#, when an `async` method encounters an `await` keyword, it doesn’t necessarily create a new thread. Instead, it signs up the rest of the method as a continuation on the awaited task. The thread that was executing the method can then go back to the thread pool and be used for another work until the awaited task completes. When the awaited task completes, the continuation (the rest of the method) can be executed on a different thread.
 
@@ -473,7 +473,7 @@ internal abstract class MerriamWebsterAnkiFlashcardsGenerator
 }
 ```
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/csharp 
 
 Asynchronous methods in C# typically return a `Task` or `Task<T>`, and they should be awaited with the `await` keyword.
 
@@ -487,7 +487,7 @@ The `Main` method in this case returns a `Task<int>` because it's an async metho
 ﹇<br>
 What does `Task<int>` signify in the context of an `async` method like `Main` in a C# program?
 
-#card 
+#anki-card 
 
 `Task<int>` is the return type of an asynchronous method that returns an integer. The `Task` represents an ongoing work that will eventually complete and produce a result of the type specified, in this case, an `int`. 
 
@@ -499,7 +499,7 @@ The `async` keyword allows the `await` keyword to be used in the method, which m
 ﹇<br>
 Why is the `Main` function in C# programs marked with `async` when using `HttpClient.GetAsync`?
 
-#card 
+#anki-card 
 
  The `Main` function is marked with `async` because `HttpClient.GetAsync` is an asynchronous method, and any method that uses the `await` keyword must be marked as `async`. This lets the compiler know that the method contains an awaited asynchronous operation.
 
@@ -509,7 +509,7 @@ Why is the `Main` function in C# programs marked with `async` when using `HttpCl
 ﹇<br>
 What does `ReadAsStringAsync` do in the context of an `HttpResponseMessage`?
 
-#card 
+#anki-card 
 
 The `ReadAsStringAsync` method is used to asynchronously read the content from the HTTP response as a string. It reads the byte stream from the HTTP response and converts it into a string using the encoding specified in the HTTP response.
 
@@ -519,7 +519,7 @@ The `ReadAsStringAsync` method is used to asynchronously read the content from t
 ﹇<br>
 What are the benefits of reading the content of an HTTP response asynchronously?
 
-#card 
+#anki-card 
 
 Reading the content asynchronously allows the application to do other work while waiting for the IO operation to complete. It makes the application more efficient and responsive, especially for IO-bound operations.
 
@@ -529,7 +529,7 @@ Reading the content asynchronously allows the application to do other work while
 ﹇<br>
 What is the difference between thread-based operations and IO Completion Port (IOCP)-based operations?
 
-#card 
+#anki-card 
 
 Thread-based operations dedicate a thread for each IO operation, blocking it until the operation completes. This can be inefficient and resource-intensive. 
 
@@ -541,7 +541,7 @@ IOCP-based operations, on the other hand, use a pool of threads to handle multip
 ﹇<br>
 How does .NET implement IOCP-based operations?
 
-#card 
+#anki-card 
 
 While developers don't directly create and manage IOCPs in C#, the .NET Framework's implementation of async/await and Task uses IOCP under the hood on Windows. When these features are used, they automatically leverage IOCP-based operations.
 
@@ -551,7 +551,7 @@ While developers don't directly create and manage IOCPs in C#, the .NET Framewor
 ﹇<br>
 In .NET how do you ensure the success of a response?
 
-#card 
+#anki-card 
 
 Use the method `EnsureSuccessStatusCode()`. For example…
 
@@ -572,7 +572,7 @@ If you wanted to allow any code in any assembly to access a specific method, you
 ﹇<br>
 What is the default access modifier in C#?
 
-#card 
+#anki-card 
 
 `internal`
 
@@ -589,7 +589,7 @@ internal static void WriteRequestToConsole(this HttpResponseMessage response)
 }
 ```
 
-#card 
+#anki-card 
 
 The `this` keyword in front of `HttpResponseMessage response` indicates that `WriteRequestToConsole` is an extension method that can be called on instances of `HttpResponseMessage`. So, instead of calling the method like this:
 
@@ -611,7 +611,7 @@ The latter is more intuitive and allows for more fluent and readable code, which
 ﹇<br>
 What is the purpose of the `this` keyword in the argument list of a method in C#?
 
-#card 
+#anki-card 
 
 The `this` keyword in the argument list of a method is used to create an extension method in C#. An extension method is a static method that can be called as if it were an instance method of the extended type. The `this` keyword in front of the first parameter specifies the type the method will operate on. For example, in `WriteRequestToConsole(this HttpResponseMessage response)`, `this` indicates that `WriteRequestToConsole` is an extension method that can be called on instances of `HttpResponseMessage`.
 
@@ -621,7 +621,7 @@ The `this` keyword in the argument list of a method is used to create an extensi
 ﹇<br>
 How would you write an extension method for the class `HttpResponseMessage`?
 
-#card 
+#anki-card 
 
 ```csharp
 ExtensionMethod(this HttpResponseMessage response)
@@ -633,7 +633,7 @@ ExtensionMethod(this HttpResponseMessage response)
 ﹇<br>
 In C#, how would you create a global variable for the entire executable and that would be called rom other classes too?
 
-#card 
+#anki-card 
 
 In C#, you typically don't create global variables as you might in other programming languages. Instead, you would usually create a public static property in a static class. This property can then be accessed from any other class in your application.
 
@@ -662,7 +662,7 @@ This will effectively give you a "global" variable, in the sense that it's acces
 ﹇<br>
 Factoring in that, in .NET, it is considered better to pass data explicitly through method parameter and return values, or use dependency injection to provide dependencies to classes that need them, how should we handle a `HttpClient` instance?
 
-#card 
+#anki-card 
 
 Generally, a `HttpClient` instance is a good candidate for using a singleton or shared object in your application because of its connection pooling capabilities. In other words, reusing it for the lifetime of your application is recommended as per Microsoft’s guidelines.
 
@@ -673,7 +673,7 @@ Generally, a `HttpClient` instance is a good candidate for using a singleton or 
 ﹇<br>
 Can I have an async method in C# return a string?
 
-#card 
+#anki-card 
 
 Yes, an async method in C# can return a string. However, the method signature would need to return a `Task<string>`, because asynchronous methods need to return a `Task` or `Task<T>`.
 
@@ -696,7 +696,7 @@ private static async Task Main(string[] args) {
 ﹇<br>
 What does the method `public async Task GetStringAsync()` return?
 
-#card 
+#anki-card 
 
 It returns nothing.
 
@@ -707,7 +707,7 @@ It returns nothing.
 ﹇<br>
 What does SOAP stand for in the context of .NET and software engineering in general?
 
-#card 
+#anki-card 
 
 To be filled.
 
@@ -717,7 +717,7 @@ To be filled.
 ﹇<br>
 What does SDLC stand for in the context of .NET and the general context of software engineering? 
 
-#card 
+#anki-card 
 
 In the context of software engineering, SDLC stands for:
 
@@ -734,7 +734,7 @@ It is a well defined sequence of step to not only create a software product, but
 ﹇<br>
 What process generally does SDLC entail?
 
-#card 
+#anki-card 
 
 The process generally follows several stages, including…
 - planning
@@ -751,7 +751,7 @@ The process generally follows several stages, including…
 ﹇<br>
 What does distributed development entail in the context of C#/.NET development?
 
-#card 
+#anki-card 
 
 Distributed development refers to the practice of developing software in a distributed computing environment, where different components of a software system can run on different systems (or servers), potentially across different locations.
 
@@ -774,7 +774,7 @@ Keep in mind that distributed development usually involves a lot more than just 
 ﹇<br>
 What does **cron** stand for?
 
-#card 
+#anki-card 
 
 <b>C</b>ommand <b>R</b>un <b>O</b><b>N</b>
 
@@ -784,7 +784,7 @@ What does **cron** stand for?
 ﹇<br>
 What is **cron** and what is it used for?
 
-#card 
+#anki-card 
 
 The `cron` command-line utility is a job scheduler on Unix-like operating systems. Users who set up and maintain software environments use cron to schedule jobs (commands or shell scripts), also known as **cron jobs**, to run periodically at fixed times, dates, or intervals.
 

@@ -1,7 +1,7 @@
 ---
 title: Chapter 1 Core Concepts ∋ Table of Contents
 created: 2024-04-12T05:58
-updated: 2024-04-13T22:28
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -53,7 +53,7 @@ There are **three** main pillars of **scalability**.
 ﹇<br>
 As of Apr. 13, 2024 03:45:39 AM, how many **pillars** does the concept of **scalability** consist of?
 
-#card 
+#anki-card 
 
 There are **three** main pillars of **scalability**.
 
@@ -64,7 +64,7 @@ There are **three** main pillars of **scalability**.
 ﹇<br>
 As of Apr. 12, 2024 07:38:46 AM, what are the three main pillars of **scalability** that are important to establish a comprehension of the topic?
 
-#card 
+#anki-card 
 
 1. Understanding what scalability is and how it evolves.
 2. Recognizing what scalability looks like in a large-scale application.

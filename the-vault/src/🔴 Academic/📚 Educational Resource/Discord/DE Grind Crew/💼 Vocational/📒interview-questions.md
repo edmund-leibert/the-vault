@@ -1,7 +1,7 @@
 ---
 title: 📒interview-questions
 created: 2023-12-03T15:09
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -50,7 +50,7 @@ function<void(int, string)> dfs = [&](int work_left, string schedule){
 
 However, my question is what exactly does this `[&]` mean in the code?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/cpp 
 
 Yes, you're correct that this code is declaring a lambda function. In C++, a lambda function is a special type of function that you can define inline in your source code. They are particularly useful for small functions that are only going to be used once or twice, such as in this DFS recursion.
 

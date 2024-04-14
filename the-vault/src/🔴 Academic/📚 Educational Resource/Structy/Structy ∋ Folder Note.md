@@ -1,7 +1,7 @@
 ---
 title: Structy ∋ Table of Contents
 created: 2023-09-03 08:46
-updated: 2024-04-13T22:28
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -48,7 +48,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::Structy::Structy ∋ Table
 ﹇<br>
 What is the website **Structy**?
 
-#card
+#anki-card
 
 Structy is a guided course that builds your algorithm knowledge efficiently. [@zabianStructyLearnData2023]
 

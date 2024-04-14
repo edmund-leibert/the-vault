@@ -1,7 +1,7 @@
 ---
 title: System Design꞉ Reddit
 created: 2023-08-24 00:06
-updated: 2023-12-07T21:36
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -106,7 +106,7 @@ Derived secondary numbers:
 ﹇<br>
 In this video, specifically for this system design problem, what are the _requirements_?
 
-#card 
+#anki-card 
 
 REQUIREMENTS:
 
@@ -123,7 +123,7 @@ REQUIREMENTS:
 ﹇<br>
 What is considered _out of scope_ for this system design problem?
 
-#card 
+#anki-card 
 
 - comments on posts
 - search functionality
@@ -136,7 +136,7 @@ What is considered _out of scope_ for this system design problem?
 ﹇<br>
 Where does the author of the video source his Reddit traffic numbers from? 
 
-#card 
+#anki-card 
 
 ```timestamp 
  00:22
@@ -151,7 +151,7 @@ Gets from the website https://foundationinc.co/lab/reddit-statistics/
 ﹇<br>
 Referring to the file `reddit-textfile.txt`, what does the the term TPS stand for?
 
-#card 
+#anki-card 
 
 In the context of system performance and this video, TPS stands for a **T**ransaction **P**er **S**econd (TPS)
 
@@ -163,7 +163,7 @@ In the context of system performance and this video, TPS stands for a **T**ransa
 ﹇<br>
 If I desire to learn more about designing a *search functionality* like Reddit, where should I look?
 
-#card 
+#anki-card 
 
 ```timestamp 
  01:11
@@ -179,7 +179,7 @@ Can just probably look at like Twitter, or you can look at something that does l
 ﹇<br>
 In the context of how this video is structured, what are call outs?
 
-#card 
+#anki-card 
 
 Call outs are interesting aspects that are devoted extra time and care to go over at the end of this video.
 
@@ -189,7 +189,7 @@ Call outs are interesting aspects that are devoted extra time and care to go ove
 ﹇<br>
 In the context of this YouTube video, what does MAU and DAU stand for?
 
-#card 
+#anki-card 
 
 - **M**onthly **A**ctive **U**sers
 - **D**aily **A**ctive **U**sers
@@ -200,7 +200,7 @@ In the context of this YouTube video, what does MAU and DAU stand for?
 ﹇<br>
 How is TPS calculated? 
 
-#card 
+#anki-card 
 
 The TPS is calculated by taking the total number of transactions performed over a given time period and dividing it by the number of seconds in that time period.
 
@@ -210,7 +210,7 @@ The TPS is calculated by taking the total number of transactions performed over 
 ﹇<br>
 How can you calculate and find the TPS from 21 Billion transactions in a month.
 
-#card
+#anki-card
 
 1. Calculate the total number of seconds in a month:<br>
    $30$ days $\cdot$ $24$ hours/day $\cdot$ $60$ minutes/hour $\cdot$ $60$ seconds/minute $=$ $2,592,000$ seconds
@@ -226,7 +226,7 @@ How can you calculate and find the TPS from 21 Billion transactions in a month.
 ﹇<br>
 For this system design problem, can we classify Reddit has read heavy?
 
-#card 
+#anki-card 
 
 Yes ❗
 
@@ -237,7 +237,7 @@ Yes ❗
 ﹇<br>
 What is the *celebrity problem* and how does it appear in this Reddit design problem?
 
-#card 
+#anki-card 
 
 ❗ There is a large number of subreddits with only a few trafficking in all the activity.
 

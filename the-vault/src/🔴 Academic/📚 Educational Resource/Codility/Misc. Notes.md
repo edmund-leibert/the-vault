@@ -7,11 +7,11 @@ tags:
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-09-03 11:24
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 ---
 
 context of C++, when tasked with iterating across an alphanumeric text and which the numeric portions of the text represent condensed forms of ambiguous text (i.e., `3aeb` is the same as `???aeb`), how should we go about iterating across this container with respect to the condensed text inside it? 
-#card 
+#anki-card 
 - **First approach**: 
 	- Iterate across the string, and declare a temporary `int` to serve as a placeholder for all numeric segments we come across.
 		- We will also have an uncondensed index to keep track of the uncondensed form. 
@@ -25,19 +25,19 @@ context of C++, when tasked with iterating across an alphanumeric text and which
 ^1689808799566
 
 How do I dereference a iterator in C++? 
-#card 
+#anki-card 
 Like so… `*it`
 ^1689808799571
 
 How do I set an iterator to the beginning of a container (i.e., string, array, etc.) 
-#card 
+#anki-card 
 ```cpp
 auto it = my_container.begin();
 ```
 ^1689808799577
 
 Generally, what type should I use when initializing an iterator in C++? 
-#card 
+#anki-card 
 Generally, you should not specify a type but instead use the keyword `auto`. For example… 
 ```cpp
 auto it = my_container.begin();
@@ -45,21 +45,21 @@ auto it = my_container.begin();
 ^1689808799583
 
 How do I set an iterator to the end of a container (i.e., string, array, etc.) 
-#card 
+#anki-card 
 ```cpp
 auto it = my_container.end();
 ```
 ^1689808799589
 
 When should I not use iterators in C++?
-#card 
+#anki-card 
 - Generally, when dealing with **noncontiguous** blocks of memory. 
 - For example, when dealing with linked lists…
 ^1689808799595
 
 
 Let’s consider the situation that I have extracted some numerical text from a `std::string` and have placed it into a `stdstringstream`. How can I can convert and extract the contents of that string stream to an int?
-#card 
+#anki-card 
 ```cpp
 // ss is a std::stringstream with "345" already in it
 int numericSegment {0};
@@ -68,7 +68,7 @@ ss >> numericSegment;
 ^1689778079546
 
 In C++, what is something that I must always remember to do when dealing with **streams**? For example, after extracting the data of a `std::stringstream` into an `int`, what must I do, so I can further insert to data into that stream? 
-#card 
+#anki-card 
 - You must call the method `clear()` on from the stream that you wish to further insert data into.
 - For example, consider the code below...
 ```cpp
@@ -97,12 +97,12 @@ for(auto *it = S.begin(); it != S.end(); it++) {
 ^1689808799603
 
 Does the `clear()` method of a stream object also clear the contents of a stream object? 
-#card 
+#anki-card 
 No, it does not. The `clear()` method of a stream object only clears the contents of a string stream object.
 ^1689808799610
 
 Let’s say you have `stringstream` object that you want to clear the contents of. How would you go about this? 
-#card 
+#anki-card 
 - You would use the `str()` method with an empty string as an argument.
 - For example…
 	```cpp
@@ -116,7 +116,7 @@ What is the time and space complexity of the following operations?
 my_stringstream.str(""); // Clears the data in my_stringstream
 my_stringstream.clear(); // Going to want to call clear just ensure that the error flags are reset
 ```
-#card 
+#anki-card 
 - Time Complexity: $\mathcal{O}(n)$ (i.e., linear)
 	- **Linear** with respect to the length of the string.
 - Space Complexity: $\mathcal{O}(n)$ (i.e., linear)
@@ -129,7 +129,7 @@ std::stringstream ss;
 ss << "324"
 int x << ss;
 ```
-#card 
+#anki-card 
 No! The `<<` is the insertion operator, which means that it is used to get data on the *right* side and insert into a **stream** on the left side.
 ^1689808799634
 
@@ -138,17 +138,17 @@ In C++, is the following code valid?
 int x;
 ss >> x
 ```
-#card 
+#anki-card 
 Yes!
 ^1689808799643
 
 In C++, what is the time and space complexity of storing of accessing the length of a given `std::string` in C++?
-#card 
+#anki-card 
 In C++, the `std::string` class stores the length of the string as a member variable, so finding the length of a string using the `length()`  or `size()` member functions has a time complexity of $\mathcal{O}(1)$.
 ^1689808799652
 
 In C++, do all containers have a time complexity of $\mathcal{O}(1)$ when accessing the length of the container? 
-#card 
+#anki-card 
 - Generally, yes. In C++, the C++ standard specifies the `size()` member function to have a time complexity of  $\mathcal{O}(1)$.
 - While some older implementation of the C++ standard library may not fully conform, it is safe to say that in modern C++, all containers follow this standard.
 ^1689808799659
@@ -157,13 +157,13 @@ In the context of C++, is the following code valid?
 ```cpp
 printf(%10d 10d% %3s, uncondensedPos, condensedPos, *it);
 ```
-#card  
+#anki-card  
 - While the current code *is* valid, there is a typo. `10d%` will literally just print `10d%` to the console..
 	- The correct form should be `%10d`
 ^1689808799666
 
 In the context of C++ and the `printf()` function, does the percent sign (`%`) go in front or at the end of the format specifier? 
-#card 
+#anki-card 
 The front of the format specifier (e.g., `%10d`)
 ^1689808799672
 
@@ -173,7 +173,7 @@ So C++ does support keyword equivalents for Boolean operators such as…
 - `!=` can be written as `not_eq`
 - `!` can be written as `not`
 Should we use them? 
-#card 
+#anki-card 
 - No, we should not. Although it is a feature, and are defined in the header `<ciso646>`, these alternative representations are not commonly used in C++ code. Developers prefer to use traditional operator symbols
 - Additionally, there is the problem of dealing with errors such as below…
 	```cpp
@@ -184,12 +184,12 @@ Should we use them?
 ^1689808799678
 
 In the general context of dealing with algorithm problems, specifically when dealing with iterating across linear directional or bidirectional containers (e.g., `std::string`, `std::vector`, etc.), what should I structure my `if-else` statements? 
-#card 
+#anki-card 
 - Remember to specifically reserve the `else` statement as a error statement. Ideally you should be able to identify all conditions. As such, any condition that reaches else should be classified as completely unknown to the programmer and produce an error.
 ^1689808799685
 
 Generally, in C++, how should you print an error to the console? 
-#card 
+#anki-card 
 - Traditionally, you would us `std::cerr`. For example…
 	```cpp
 	std::cerr << "An error occured." << std:endl;
@@ -198,12 +198,12 @@ Generally, in C++, how should you print an error to the console?
 ^1689808799691
 
 What does **nit** mean in the concept of code review?
-#card 
+#anki-card 
 Means that the comment is a suggestion to your code, but is not mandatory.
 ^1689808799698
 
 In the context of C++, more specifically`std::string`, what is the difference between the methods `append()` and `push_back()`? 
-#card 
+#anki-card 
 - `append()` Allows for appending *strings* to the end of the caller (i.e., the string). While it does allow for appending single characters to a string (e.g., `str1.append(1, str2)` it is better to just use `push_back()`/
 - `push_back()` Allows for appending a *character* to the end of a string.
 ^1689809074195
@@ -212,7 +212,7 @@ Is the following code valid in C++?
 ```cpp
 str1.push_back(str2);
 ```
-#card 
+#anki-card 
 No! The `push_back()` method of `std::string` objects is for **characters**, *not* **strings**.
 ^1689809598723
 

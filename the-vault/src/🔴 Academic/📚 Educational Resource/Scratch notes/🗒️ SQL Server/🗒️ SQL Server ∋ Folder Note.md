@@ -33,7 +33,7 @@ cards-deck: 🔴 Academic::📚 Educational ResourceL Server
 ﹇<br>
 What is a _stored procedure_ in SQL Server?
 
-#card 
+#anki-card 
 
 [A stored procedure in SQL Server is a prepared SQL code that you can save, so the code can be reused over and over again](https://www.w3schools.com/SQL/sql_stored_procedures.asp)[1](https://www.w3schools.com/SQL/sql_stored_procedures.asp). [If you have an SQL query that you write repeatedly, you can save it as a stored procedure and then just call it to execute it](https://www.w3schools.com/SQL/sql_stored_procedures.asp)[1](https://www.w3schools.com/SQL/sql_stored_procedures.asp). [You can also pass parameters to a stored procedure, so that the stored procedure can act based on the parameter value(s) that is passed](https://www.w3schools.com/SQL/sql_stored_procedures.asp)[1](https://www.w3schools.com/SQL/sql_stored_procedures.asp).
 
@@ -92,7 +92,7 @@ EXEC SelectAllCustomers @City = 'London';
 ﹇<br>
 How do you check, via the terminal that Microsoft’s SQL Server is installed?
 
-#card 
+#anki-card 
 
 Run the following command…
 ```cmd
@@ -111,7 +111,7 @@ What does the following command do?
 sqlcmd -L
 ```
 
-#card-reverse 
+#anki-card-reverse 
 
 List all the available SQL Server instances on the current machine.
 
@@ -123,7 +123,7 @@ List all the available SQL Server instances on the current machine.
 ﹇<br>
 What is the difference between the Express and the Developer versions of SQL Server?
 
-#card 
+#anki-card 
 
 SQL Server Express and SQL Server Developer are two different editions of Microsoft SQL Server. Both editions are free, but they have some key differences in terms of features and usage.
 - [SQL Server Express is an entry-level database that is ideal for learning and building data-driven desktop and small server applications](https://tipsfolder.com/difference-between-sql-server-developer-express-edition-431738195a02415ae897a5ab4393ae0d/)[1](https://tipsfolder.com/difference-between-sql-server-developer-express-edition-431738195a02415ae897a5ab4393ae0d/). [It has a limited set of features and is designed to be easy to use, with a low total cost of ownership](https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver16)[2](https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver16).

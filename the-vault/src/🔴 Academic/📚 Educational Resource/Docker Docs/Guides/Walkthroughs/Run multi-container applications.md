@@ -1,7 +1,7 @@
 ---
 title: Run multi-container applications
 created: 2023-11-19T02:24
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -30,7 +30,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::Docker Docs::Guides::Walkt
 ﹇<br>
 What primary problem does **Docker Compose** solve?
 
-#card 
+#anki-card 
 
 Traditionally, you must start each container individually. **Docker Compose** solves this issue by being a tool that allows you to start multiple containers with a single command.
 
@@ -42,7 +42,7 @@ Traditionally, you must start each container individually. **Docker Compose** so
 ﹇<br>
 What is an example of an application that uses multiple containers?
 
-#card 
+#anki-card 
 
 One example application could be a simple todo application built using ExpressJS and Node.js. The application saves all todos in a MongoDB database.
 
@@ -98,7 +98,7 @@ services:
   #database:
 ```
 
-#card 
+#anki-card 
 
 Docker Compose is a powerful tool that allows you to define and manage multi-container Docker applications. [It uses a YAML file (like the `compose.yaml` you provided) to configure your application’s services, and then with a single command, you can create and start all the services from your configuration](https://docs.docker.com/compose/)[1](https://docs.docker.com/compose/)[2](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04).
 
@@ -169,7 +169,7 @@ Could you please explain line by line what is happening in the `compose.yml` fil
 
 For instance, does **Docker Compose** first build all the images, or does it first try to build the `todo-app` service, and then, when reaching the `depends_on` line, jumps to building the `todo-database` service?
 
-#card 
+#anki-card 
 
 Here’s a breakdown of the `compose.yaml` file: 
 
@@ -264,7 +264,7 @@ Now, with that context, read the following statement…
 What does the term “service” mean in the above statement? Is a “service” in this case an image, or a container? For example, what does the term “service” in the following statement you stated....
 
 
-#card 
+#anki-card 
 
 In the context of **Docker Compose**, a “service” is a part of your application that performs a specific function. It’s an abstraction that represents a single component of a multi-component application.
 
@@ -326,7 +326,7 @@ services:
   #database:
 ```
 
-#card 
+#anki-card 
 
 In your `compose.yaml` file, the instructions to run containers based on the `todo-app` and `todo-database` images are implied in the service definitions:
 
@@ -343,7 +343,7 @@ So, while there’s no explicit line that says “run a container”, the instru
 ﹇<br>
 What is the difference between running `docker compose up` and `docker-compose up`?
 
-#card 
+#anki-card 
 
 [The commands `docker compose up` and `docker-compose up` essentially do the same thing, which is to build, (re)create, start, and attach to containers for a service](https://stackoverflow.com/questions/33715499/what-is-the-difference-between-docker-compose-up-and-docker-compose-start) [@lagoAnswerWhatDifference2015]. The difference lies in the version of Docker you are using.
 
@@ -360,7 +360,7 @@ In summary, both commands perform the same function, but `docker compose up` is 
 ﹇<br>
 When I run `docker compose down`, does it delete the images built, or simply stop the containers running?
 
-#card 
+#anki-card 
 
 When you run the `docker-compose down` command, it stops all the running containers associated with your Docker Compose configuration. [It also removes the stopped containers as well as any networks that were created](https://docs.docker.com/engine/reference/commandline/compose_down/) [@DockerCompose0200] [@geniusAnswerDockercomposeStop2017] [@avimanyubandyopadhyayDockerComposeVs2021].
 
@@ -427,7 +427,7 @@ EXPOSE 3000
 CMD npm run dev
 ```
 
-#card 
+#anki-card 
 
 Here’s a line-by-line explanation of the Dockerfile:
 
@@ -453,7 +453,7 @@ In some Dockerfile’s, you will notice that a new non-root user (i.e., a user n
 
 Specifically, why create a new user and then change ownership of the application directory to the `node` user?
 
-#card 
+#anki-card 
 
 [Creating a new user in a Dockerfile and running the application as this non-root user is a common practice for security reasons](https://www.baeldung.com/ops/root-user-password-docker-container) [@RootUserPassword] [@baeldungSettingUserDocker2023].
 
@@ -468,7 +468,7 @@ In summary, creating a new user and changing the ownership of the application di
 ﹇<br>
 How is running your application as a non-root user a good security practice that can help protect your system?
 
-#card 
+#anki-card 
 
 Yes, you’re correct. When you change the user to `node` using the `USER node` command in your Dockerfile, the `node` user has limited privileges compared to the `root` user.
 
@@ -493,7 +493,7 @@ When developing with **Docker**, you may need to automatically update and previe
 ﹇<br>
 What is the file extension `.ejs`? What does it stand for?
 
-#card 
+#anki-card 
 
 [The `.ejs` file extension stands for **Embedded JavaScript**](https://www.file-extensions.org/ejs-file-extension)[1](https://www.file-extensions.org/ejs-file-extension). [EJS is a simple templating language that lets you generate HTML markup with plain JavaScript](https://ejs.co/)[2](https://ejs.co/). [It’s used to separate the HTML code from JavaScript, making the code easier to read and maintain](https://www.file-extensions.org/ejs-file-extension)[1](https://www.file-extensions.org/ejs-file-extension).
 

@@ -1,7 +1,7 @@
 ---
 title: Algorithms library
 created: 2023-09-28 14:16
-updated: 2023-12-04T09:40
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -30,7 +30,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ C++::Algorithms li
 ﹇<br>
 In C++, what exactly is a **constrained algorithm**?
 
-#card 
+#anki-card 
 
 In C++, constrained algorithms are a feature introduced in C++20. They provide constrained versions of most algorithms in the namespace `std::ranges`¹. In these algorithms, a range can be specified as either an iterator-sentinel pair or as a single range argument¹. They also support projections and pointer-to-member callables¹. This means that you can use these algorithms with a wider variety of data types and structures, making your code more flexible and reusable.
 
@@ -51,7 +51,7 @@ In C++, constrained algorithms are a feature introduced in C++20. They provide c
 ﹇<br>
 What are the characteristics of constrained algorithm? Specifically, what makes an algorithm constrained vs. not constrained?
 
-#card 
+#anki-card 
 
 Constrained algorithms in C++20 are a new feature that provide more flexibility and functionality compared to the traditional algorithms in the Standard Template Library (STL). Here are some characteristics that make an algorithm constrained:
 

@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2024-01-28T13:45
-updated: 2024-04-13T22:06
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -35,7 +35,7 @@ icon: TiNotes
 ﹇<br>
 When building an **Obsidian** plugin, what command should you run to install dependencies?
 
-#card-reverse #🔴-academic/📚-educational-resource/discipline/computer-science/runtime/node-js
+#anki-card-reverse #🔴-academic/📚-educational-resource/discipline/computer-science/runtime/node-js
 
 `npm i`
 
@@ -45,7 +45,7 @@ When building an **Obsidian** plugin, what command should you run to install dep
 ﹇<br>
 In the context of *most* Obsidian plugins, what command should you run to start compilation in *watch* mode? 
 
-#card-reverse #🔴-academic/📚-educational-resource/discipline/computer-science/runtime/node-js
+#anki-card-reverse #🔴-academic/📚-educational-resource/discipline/computer-science/runtime/node-js
 
 `npm run dev`
 
@@ -55,7 +55,7 @@ In the context of *most* Obsidian plugins, what command should you run to start 
 ﹇<br>
 Generally, in the context of Obsidian plugin development, how can one manually install a plugin?
 
-#card-reverse #🔴-academic/📚-educational-resource/discipline/computer-science/runtime/node-js
+#anki-card-reverse #🔴-academic/📚-educational-resource/discipline/computer-science/runtime/node-js
 
 Simply copy over the `main.js`, `styles.css`, and `manifest.json` files of the plugin to your vault’s `.obsidian/plugins/your-plugin-id/` directory.
 
@@ -65,7 +65,7 @@ Simply copy over the `main.js`, `styles.css`, and `manifest.json` files of th
 ﹇<br>
 How to improve the code quality of a plugin with ESLint? 
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/runtime/node-js
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/runtime/node-js
 
 [ESLint](https://eslint.org/) is a tool that analyzes your code to quickly find problems. You can run ESLint against your plugin to find common bugs and ways to improve your code. [@FindFixProblems]
 
@@ -83,7 +83,7 @@ If your source code is in a folder, such as `src`, you can use ESLint with this
 ﹇<br>
 What symbol should I use as an alternate to the colon (i.e., `:`) for filenames?
 
-#card
+#anki-card
 
 Should use the following symbol… `꞉`
 
@@ -93,7 +93,7 @@ Should use the following symbol… `꞉`
 ﹇<br>
 What symbol should I use as an alternate to the forward slash (i.e., `/`) for filenames?
 
-#card
+#anki-card
 
 Should use the **fraction slash** symbol… `⁄`. [@SlashPunctuationWikipedia] 
 
@@ -104,7 +104,7 @@ Should use the **fraction slash** symbol… `⁄`. [@SlashPunctuationWikipedia]
 ﹇<br>
 In my vault, what does the 🗒️ emoji mean in a file name?
 
-#card
+#anki-card
 
 Means that it is “scratch note” pertaining to a topic. In other words, it is _not_ tied/related to a **singular** formal/structured educational resource like a book, website, etc.
 
@@ -114,7 +114,7 @@ Means that it is “scratch note” pertaining to a topic. In other words, it is
 ﹇<br>
 In my vault, what does the 🌐 emoji mean in a file name?
 
-#card
+#anki-card
 
 Means that it is “compendium” pertaining to a **singular** formal/structured educational resource in the format of a website.
 
@@ -124,7 +124,7 @@ Means that it is “compendium” pertaining to a **singular** formal/structured
 ﹇<br>
 In my vault, what does the ⌂ symbol mean?
 
-#card
+#anki-card
 
 Simply used to signify the end of Anki flashcards so that they are formatted correctly. Not significant beyond that.
 
@@ -134,7 +134,7 @@ Simply used to signify the end of Anki flashcards so that they are formatted cor
 ﹇<br>
 What symbol should I use as an alternate to the colon (i.e., `#`) for filenames?
 
-#card 
+#anki-card 
 
 Should use the following symbol… `⋕`
 
@@ -144,7 +144,7 @@ Should use the following symbol… `⋕`
 ﹇<br>
 What symbol should I use as an alternate to the *question mark* (i.e., `?`) for filenames?
 
-#card 
+#anki-card 
 
 Should use the following symbol… `？`
 
@@ -154,7 +154,7 @@ Should use the following symbol… `？`
 ﹇<br>
 What symbol should one use as an alternate to the _period_ (i.e., `.`) for filenames?
 
-#card 
+#anki-card 
 
 One should use the Unicode Character (U+2024): `․`
 
@@ -164,7 +164,7 @@ One should use the Unicode Character (U+2024): `․`
 ﹇<br>
 What symbol should one use as an alternate to _parentheses_ (i.e., `(` or `)`) for filenames?
 
-#card 
+#anki-card 
 
 One should use the _decorative brackets_ variants of each: `❨` and `❩` [@xahleeUnicodeBracketsQuotes2010]
 
@@ -175,7 +175,7 @@ One should use the _decorative brackets_ variants of each: `❨` and `❩` [@xah
 ﹇<br>
 When writing software engineering documents, should I put filenames in code blocks or bold them?
 
-#card 
+#anki-card 
 
 When writing software engineering documents, it’s common to put filenames, code snippets, and commands within code blocks (or monospace font) to distinguish them from the rest of the text. This helps to make it clear that you’re referring to something that’s part of the code or file system.
 
@@ -194,7 +194,7 @@ Remember, the most important thing is to be consistent in your formatting throug
 ﹇<br>
 As of Apr. 12, 2024 07:53:37 AM, when taking notes, what does each highlighting color signify?
 
-#card 
+#anki-card 
 
 - 🟨 **Yellow**, or **Gold** = <span style="color: gold">:BoBxHighlight: Important point</span>
 - 🟪 **Purple**, **Pink**, or **Magenta** = <span style="color: purple">:BoBxHighlight: Vocabulary</span>

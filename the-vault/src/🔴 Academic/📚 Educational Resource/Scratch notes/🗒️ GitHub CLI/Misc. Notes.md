@@ -1,7 +1,7 @@
 ---
 title: Misc. Notes
 created: 2023-10-31T16:39
-updated: 2023-12-14T05:34
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -32,7 +32,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ GitHub CLI::Misc.N
 ﹇<br>
 How to rename a repository using the GitHub CLI?
 
-#card-reverse 
+#anki-card-reverse 
 
 ```bash
 gh repo rename <new-repo-name>
@@ -46,7 +46,7 @@ Make sure that you are in the current repository.
 ﹇<br>
 How to update the remote URL on your local machine?
 
-#card-reverse 
+#anki-card-reverse 
 
 ```bash
 gh repo sync --remote origin --prompt
@@ -61,7 +61,7 @@ gh repo sync --remote origin --prompt
 ﹇<br>
 What exactly does the the command `gh repo sync` do?
 
-#card-reverse 
+#anki-card-reverse 
 
 1. Fetches the latest changes from the remote repository.
 2. Merges or rebases the fetched changes into the current branch of your local repository.
@@ -73,7 +73,7 @@ What exactly does the the command `gh repo sync` do?
 ﹇<br>
 What strategy does `gh repo sync` use? 
 
-#card 
+#anki-card 
 
 By default, `gh repo sync` uses the merge strategy.
 
@@ -83,7 +83,7 @@ By default, `gh repo sync` uses the merge strategy.
 ﹇<br>
 Can `gh repo sync` use other strategies than its default? 
 
-#card 
+#anki-card 
 
 Yes, you can also use the rebase strategy by passing the `--rebase` flag.
 
@@ -93,7 +93,7 @@ Yes, you can also use the rebase strategy by passing the `--rebase` flag.
 ﹇<br>
 What is the difference between **merge** and **rebase**?
 
-#card 
+#anki-card 
 
 **Merge** and **rebase** are two ways to integrate changes from one branch into another branch in Git. Both commands are designed to integrate changes from one branch into another branch, but they do it in very different ways.
 - When you **merge** one branch into another, a new merge commit is created that ties together the histories of both branches. This is a non-destructive operation and the existing branches are not changed in any way.
@@ -105,7 +105,7 @@ What is the difference between **merge** and **rebase**?
 ﹇<br>
 What is a benefit of using the rebase strategy?
 
-#card 
+#anki-card 
 
 The major benefit of rebasing is that you get a much cleaner project history. It eliminates the unnecessary merge commits required by git merge and results in a perfectly linear project history.
 
@@ -115,7 +115,7 @@ The major benefit of rebasing is that you get a much cleaner project history. It
 ﹇<br>
 What is a downside of using rebase? 
 
-#card 
+#anki-card 
 
 - One downside of using `rebase` is that it can make it difficult to track how and when commits were merged on the target branch. This is because `rebase` re-writes the project history by creating brand new commits for each commit in the original branch[1](https://bing.com/search?q=downside+of+using+rebase).
 - Another potential issue with `rebase` is that it can make it difficult to resolve conflicts. When you encounter conflicts during a `rebase`, Git will pause on the conflicting commit, allowing you to fix the conflict before proceeding. Solving conflicts in the middle of rebasing a long chain of commits can be confusing and hard to get right[2](https://medium.com/@fredrikmorken/why-you-should-stop-using-git-rebase-5552bee4fed1)
@@ -126,7 +126,7 @@ What is a downside of using rebase?
 ﹇<br>
 If I have GitHub CLI installed, is there an easier way than using `git` to sync the branches of my forked repository with `upstream`?
 
-#card 
+#anki-card 
 
 Yes, if you have the GitHub CLI installed, you can use it to sync your forked repository with the upstream repository. Here’s how you can do it:
 1. Open a command line terminal and navigate to your local clone of the forked repository.
@@ -150,7 +150,7 @@ gh repo sync owner/cli-fork -b BRANCH_NAME --force
 ﹇<br>
 Does `gh repo sync` sync all branches?
 
-#card 
+#anki-card 
 
 No, it just syncs the **current** branch.
 
@@ -160,7 +160,7 @@ No, it just syncs the **current** branch.
 ﹇<br>
 Using the **GitHub CLI**, is it possible to sync the `remote/origin` `main` branch with the `remote/upstream` `main` branch?
 
-#card 
+#anki-card 
 
 Yes, you can use the GitHub CLI to sync the `main` branch of your forked repository (the `origin` remote) with the `main` branch of the upstream repository (the `upstream` remote). Here’s how you can do it:
 

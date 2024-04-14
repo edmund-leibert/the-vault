@@ -10,7 +10,7 @@ tags:
   - study-note
 cards-deck: Default::Mathematics
 created: 2023-09-03 08:46
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 ---
 
 tion
@@ -21,7 +21,7 @@ tion
 
 #### **8.3 | Exercises**
 
-1. $f(x)=1+x$ #card 
+1. $f(x)=1+x$ #anki-card 
    - Let $n$ be the number of subintervals of length $∆x$ and $x_{i}$ is a sample point in the $i$th subinterval $[x_{i-1}, x_{i}^*]$
    - <details>
      <summary><b>Desmos Graph</b></summary>

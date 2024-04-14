@@ -8,7 +8,7 @@ tags:
   - 🔴-academic/📚-educational-resource/discipline/computer-science/programming-language/sql
   - study-note
 cards-deck: Default::Computer Science
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 ---
 
 # 📕 Learning SQL, 3rd Edition (2020)
@@ -22,7 +22,7 @@ updated: 2024-01-25T16:47
 ## Preface
 
 How far back does SQL’s roots go?
-#card 
+#anki-card 
 Go back as far as the 1970s
 ^1691723553852
 
@@ -34,7 +34,7 @@ SQL was initially created to be the language for {1:generating}, {1:manipulating
 ### Why Use This Book to Do It?
 
 What does this book cover that makes it unique? 
-#card 
+#anki-card 
 This book also covers how to retrieve data from nonrelational databases.
 ^1691723818113
 

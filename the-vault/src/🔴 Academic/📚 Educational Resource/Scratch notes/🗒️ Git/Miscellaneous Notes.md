@@ -1,7 +1,7 @@
 ---
 title: 🗒️ Git
 created: 2023-08-04 01:58
-updated: 2024-02-10T15:45
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -32,7 +32,7 @@ banner_y: 0
 ﹇<br>
 How to rename a branch?
 
-#card-reverse 
+#anki-card-reverse 
 
 Sure, here's how you can rename a branch in Git:
 
@@ -58,7 +58,7 @@ git push origin -u new-name
 ﹇<br>
 What is important to remember when renaming branches locally? 
 
-#card-reverse 
+#anki-card-reverse 
 
 Note that renaming a branch only affects your local repository.
 
@@ -77,7 +77,7 @@ git push origin new-name
 ﹇<br>
 How to confirm the name of your current remote? 
 
-#card-reverse 
+#anki-card-reverse 
 
 `git remote -v`
 
@@ -87,7 +87,7 @@ How to confirm the name of your current remote?
 ﹇<br>
 How do you rename an existing remote? 
 
-#card-reverse 
+#anki-card-reverse 
 
 `git remote rename [old name] [new name]`
 
@@ -97,7 +97,7 @@ How do you rename an existing remote?
 ﹇<br>
 Does renaming an existing remote, also rename the repository name on the hosting provider? (e.g. GitHub, GitLab, etc.)? 
 
-#card 
+#anki-card 
 
 No, the `git remote rename` command only renames the remote in your local repository. It does not change the name of the repository on GitHub or any other remote hosting service. 
 
@@ -109,7 +109,7 @@ If you want to rename your repository on GitHub, you can do so through the repos
 ﹇<br>
 In `.gitignore`, how do you match any level of subdirectories? 
 
-#card 
+#anki-card 
 
 - Use the wildcard `**`
 - For example…
@@ -124,7 +124,7 @@ In `.gitignore`, how do you match any level of subdirectories?
 ﹇<br>
 How to configure git to always **push the current branch and set the remote as upstream** automatically every time you push? 
 
-#card-reverse 
+#anki-card-reverse 
 
 Run the following command…
 
@@ -138,7 +138,7 @@ The <span class="spoiler">`--global`</span> flag means this will apply to all g
 ﹇<br>
 How do you delete a remote branch in Git? 
 
-#card 
+#anki-card 
 
 [You can use the `git push` command with the `-d` flag followed by the name of the remote branch you want to delete](https://www.freecodecamp.org/news/git-delete-branch-how-to-remove-a-local-or-remote-branch/)
 
@@ -154,7 +154,7 @@ git push origin -d remote_branch_name
 ﹇<br>
 How to set up my git name and git email? 
 
-#card 
+#anki-card 
 
 You can set up your Git username and email address by using the `git config` command. To set your global commit name and email address, run the `git config` command with the `--global` option:
 
@@ -171,7 +171,7 @@ git config --global user.email "youremail@yourdomain.com"
 ﹇<br>
 How do you query a remote repository without having to clone/fetch it first?  
 
-#card-reverse 
+#anki-card-reverse 
 
 ❗
 - Use the command `git ls-remote`
@@ -184,7 +184,7 @@ How do you query a remote repository without having to clone/fetch it first?
 ﹇<br>
 What command should you run to list all local branches?
 
-#card 
+#anki-card 
 
 `git branch --list`
 
@@ -194,7 +194,7 @@ What command should you run to list all local branches?
 ﹇<br>
 What command should you run to list all local _and_ remote branches?
 
-#card 
+#anki-card 
 
 `git branch --list --all`
 
@@ -204,7 +204,7 @@ What command should you run to list all local _and_ remote branches?
 ﹇<br>
 In regards to `.gitignore`, how to fix Visual Studio Code still tracking changes of files that should be ignored? 
 
-#card 
+#anki-card 
 
 There could be a few reasons why VS Code is still recognizing files that are in your `.gitignore` file.
 
@@ -217,7 +217,7 @@ One possibility is that the files were added to your cache.
 ﹇<br>
 What is the **GitHub Standard Fork & Pull Request Workflow**? 
 
-#card 
+#anki-card 
 
 1. Create a fork, _usually_ you should only include the “default” (e.g. `master` or `main`) branch from the upstream (i.e., the repository we are forking from).
 2. Create a branch off the original “default” and call it .
@@ -231,7 +231,7 @@ Citation: [GitHub Standard Fork & Pull Request Workflow](https://gist.github.com
 ﹇<br>
 After forking a repository, how should I name my branch for most of my personal projects? 
 
-#card 
+#anki-card 
 
 ❗Simply name you branch, `<repository-name>-forked`.
 
@@ -241,7 +241,7 @@ After forking a repository, how should I name my branch for most of my personal 
 ﹇<br>
 How do you ignore all folders with the name containing the word “build”? 
 
-#card-reverse 
+#anki-card-reverse 
 
 Add the following line to your `.gitignore` file:
 ```
@@ -255,7 +255,7 @@ Add the following line to your `.gitignore` file:
 ﹇<br>
 [What command to see all the branches of a remote repository?](https://git-scm.com/docs/git-ls-remote.html) 
 
-#card-reverse 
+#anki-card-reverse 
 
 ❗[`git ls-remote --heads <url>`](https://git-scm.com/docs/git-ls-remote.html)
 
@@ -265,7 +265,7 @@ Add the following line to your `.gitignore` file:
 ﹇<br>
 What is the opposite of git add? 
 
-#card-reverse 
+#anki-card-reverse 
 
 The opposite of `git add` is `git reset`. The `git add` command stages changes to be committed, while the `git reset` command unstages changes. Here’s an example:
 
@@ -284,7 +284,7 @@ This will unstage the changes to `file.txt` that were previously staged using�
 ﹇<br>
 What is the difference between `fetch` and `pull`? 
 
-#card-reverse  
+#anki-card-reverse  
 
 <span class="spoiler">`Fetch`</span> and <span class="spoiler">`pull`</span> are both used to download new data from a remote repository. <span class="spoiler">`Fetch`</span> only downloads new data from a remote repository but it doesn’t integrate any of this new data into your working files. <span class="spoiler">`Pull`</span>, on the other hand, not only downloads new data but also directly integrates it into your current working copy files.
 
@@ -294,7 +294,7 @@ What is the difference between `fetch` and `pull`?
 ﹇<br>
 Front: What does it mean to integrate new data into your working files? 
 
-#card-reverse 
+#anki-card-reverse 
 
 Back: By “integrate,” it means that <span class="spoiler">`pull`</span> not only downloads new data from the remote repository but also merges it with your local branch. This means that any changes made in the remote repository are applied to your local repository, updating your current working copy files with the latest changes from the remote repository.
 
@@ -304,7 +304,7 @@ Back: By “integrate,” it means that <span class="spoiler">`pull`</span> no
 ﹇<br>
 What does **unversioned files** mean? 
 
-#card-reverse 
+#anki-card-reverse 
 
 Files that have been added to the project directory but are not tracked by any VCS system.
 
@@ -314,7 +314,7 @@ Files that have been added to the project directory but are not tracked by any V
 ﹇<br>
 What does `git fetch` do? 
 
-#card-reverse  
+#anki-card-reverse  
 
 This command will download all the latest changes form the remote repository.
 
@@ -324,7 +324,7 @@ This command will download all the latest changes form the remote repository.
 ﹇<br>
 How can I create a new local branch that tracks a remote branch? 
 
-#card-reverse 
+#anki-card-reverse 
 
 ```bash
 git checkout -b new-branch origin/remote-branch-name
@@ -336,7 +336,7 @@ git checkout -b new-branch origin/remote-branch-name
 ﹇<br>
 So I just cloned a repo, and I having a weird issue. Right now, I am working on brnach `A`, However, I have a branch on my origin called `B`. For some reason, when I call `git fetch`, and then run `git branch -l`, the branch `B` is not being shown as a branch in the list. Only the branch `A` is being shown. What gives? 
 
-#card 
+#anki-card 
 
 - The `git branch` command, without any parameters, only shows your local branches. [When you fetch, information about your remote branches is updated, but it will only be shown when you use `git branch -r` (only remote branches) or `git branch -a` (all remote and local branches)](https://stackoverflow.com/questions/46597915/git-branches-not-showing-in-git-branch-after-pull-or-fetch-but-git-checkout)[1](https://stackoverflow.com/questions/46597915/git-branches-not-showing-in-git-branch-after-pull-or-fetch-but-git-checkout).
 - If you want to see the remote branch `B` after fetching it, you can use the command `git branch -a`. [This will show you a list of all local and remote branches, including the remote branch `B`](https://stackoverflow.com/questions/46597915/git-branches-not-showing-in-git-branch-after-pull-or-fetch-but-git-checkout)[1](https://stackoverflow.com/questions/46597915/git-branches-not-showing-in-git-branch-after-pull-or-fetch-but-git-checkout).
@@ -348,7 +348,7 @@ So I just cloned a repo, and I having a weird issue. Right now, I am working on 
 ﹇<br>
 What is the difference between `git branch -r`, `git branch -a`, and `git branch -l` 
 
-#card 
+#anki-card 
 
 The commands do the following…
 - Print only remote branches
@@ -360,7 +360,7 @@ The commands do the following…
 
 ﹇<br>
 ❗Assume that you forked a repository, made some changes, and screwed somethings up. You want a fresh start by overwriting your forked `master` branch with the original repo. How would you go about doing this? 
-#card 
+#anki-card 
 - Via the cli...
 	1. cd
 
@@ -373,7 +373,7 @@ What does the following git command do? Assume, that we are currently on the bra
 git checkout -b obsidian-sample-plugin-forked
 ```
 
-#card 
+#anki-card 
 
 1. Creates a branch from `master` called `obisdian-sample-plugin-forked`
 2. Checkouts the branch `obsidian-sample-plugin-forked`
@@ -384,7 +384,7 @@ git checkout -b obsidian-sample-plugin-forked
 ﹇<br>
 What emoji (i.e., gitmoji) should I use when I am making commit regarding `.gitignore` changes?
 
-#card 
+#anki-card 
 
 You should follow this format: `🙈 chore[.gitignore]:` 
 
@@ -394,7 +394,7 @@ You should follow this format: `🙈 chore[.gitignore]:`
 ﹇<br>
 How do I set to ignore all the contents of a folder no matter where it may be in my project directory?
 
-#card 
+#anki-card 
 
 `**/build/**`
 
@@ -404,7 +404,7 @@ How do I set to ignore all the contents of a folder no matter where it may be in
 ﹇<br>
 What does `git submodule add` do? 
 
-#card 
+#anki-card 
 
 1. **Clones the Submodule:** Starts by cloning the repository provided via a URL into the path specified in your current repository
 2. **Stages the Changes:** Stages the new submodule.
@@ -424,7 +424,7 @@ Submodules are not automatically updated, nor do they track the origin. As such,
 ﹇<br>
 What must I be aware if use the `submodule` command to add a repository to my repository? 
 
-#card 
+#anki-card 
 
 All future `clone`s and  `pull`s  of my repository must use the `--recursive` tag so that the submodules are properly initialized.
 
@@ -434,7 +434,7 @@ All future `clone`s and  `pull`s  of my repository must use the `--recursive` ta
 ﹇<br>
 When I use the `submodule` command to add a repository to my own repository, do I have to manually update the submodule? 
 
-#card
+#anki-card
 
 Yes.
 
@@ -444,7 +444,7 @@ Yes.
 ﹇<br>
 When I fork a repository, what is upstream and what is origin? 
 
-#card 
+#anki-card 
 
 When you fork a repository, the original repository is referred to as **upstream**, and the forked repository is referred to as **origin**.
 
@@ -454,7 +454,7 @@ When you fork a repository, the original repository is referred to as **upstream
 ﹇<br>
 How do you change the `git init` default branch name?
 
-#card 
+#anki-card 
 
 As of Git 2.28 (released 27th July 2020), you [can now configure the name of the branch created when you init a new repository](https://github.blog/2020-07-27-highlights-from-git-2-28/#introducing-init-defaultbranch):
 
@@ -481,7 +481,7 @@ Release notes: [https://lore.kernel.org/git/xmqq5za8hpir.fsf@gitster.c.googlers
 ﹇<br>
 What does `git fetch origin` do?
 
-#card 
+#anki-card 
 
 `git fetch` is the command that tells Git to fetch changes from a remote repository.
 
@@ -498,7 +498,7 @@ What does `git fetch origin` do?
 ﹇<br>
 Why is `git fetch origin` so useful?
 
-#card
+#anki-card
 
 It allows you to see changes from the remote repository without integrating them into your local branch immediately. This provides you an opportunity to review changes, decide on a merge or rebase strategy, or even just be aware of what's happening in other parts of the project.
 
@@ -519,7 +519,7 @@ Lets consider the case that you have a repo in which you are having merge confli
 
 How can we simply force our local `master` branch to be reset and just match our `remote/origin/master` branch?
 
-#card 
+#anki-card 
 
 ```bash
 git reset --hard origin/master
@@ -535,7 +535,7 @@ What does the following code do?
 git reset --hard origin/master
 ```
 
-#card
+#anki-card
 
 Forces our local `master` branch to be reset and just match our `remote/origin/master` branch?
 
@@ -545,7 +545,7 @@ Forces our local `master` branch to be reset and just match our `remote/origin/m
 ﹇<br>
 Why do we need to cautious about `git reset --hard`?
 
-#card 
+#anki-card 
 
 Be cautious with `git reset --hard` as it will discard changes in your working directory and index.
 
@@ -557,7 +557,7 @@ If you've made local commits that you want to keep, you'll need to take a differ
 ﹇<br>
 What does `git reset` primarily do?
 
-#card 
+#anki-card 
 
 `git reset` moves the current branch's pointer to a specified commit.
 
@@ -567,7 +567,7 @@ What does `git reset` primarily do?
 ﹇<br>
 When using `git reset`, what is the default target commit if none is specified?
 
-#card
+#anki-card
 
 `HEAD`, which is the latest commit in the current branch.
 
@@ -577,7 +577,7 @@ When using `git reset`, what is the default target commit if none is specified?
 ﹇<br>
 What does the `--hard` flag do when used with `git reset`?
 
-#card
+#anki-card
 
 It resets both the staging area and the working directory to match the state of the specified commit, discarding all changes in these areas.
 
@@ -587,7 +587,7 @@ It resets both the staging area and the working directory to match the state of 
 ﹇<br>
  What happens to your branch and working directory when you run `git reset --hard HEAD~1`?
  
-#card
+#anki-card
 
  The current branch pointer moves one commit back, discarding the most recent commit, as well as any staged and unstaged changes in the working directory.
  
@@ -597,7 +597,7 @@ It resets both the staging area and the working directory to match the state of 
 ﹇<br>
  Is `git reset --hard` a safe operation?
  
-#card
+#anki-card
 
  No, `git reset --hard` is a destructive operation. It discards commits and changes, so always be certain you want to use it and have backups or other branches pointing to desired commits.
  
@@ -607,7 +607,7 @@ It resets both the staging area and the working directory to match the state of 
 ﹇<br>
  What does `git reset --hard origin/master` do?
  
-#card
+#anki-card
 
   It sets the current branch and working directory to match the state of the `master` branch on `origin`, discarding any local commits and changes not on `origin/master`.
   
@@ -617,7 +617,7 @@ It resets both the staging area and the working directory to match the state of 
 ﹇<br>
 So, even though my local repository is based on my `origin` (hosted on GitHub) being a fork (i.e., the `upstream`) of my original repository, when I run the command `git branch -la`, the output is not listing any `upstream` branches. How can I fix this?
 
-#card 
+#anki-card 
 
 If you are not seeing an `upstream` remote when you run `git branch -la`, it means that an `upstream` remote has not been added to your local clone. The `upstream` remote typically refers to the original repository that your fork was created from, and it allows you to keep your fork up to date with changes made in the original repository.
 
@@ -637,7 +637,7 @@ After adding the `upstream` remote, you can fetch changes from the original repo
 ﹇<br>
 How can I list all the remote URLs (local and upstream) of my local repository?
 
-#card 
+#anki-card 
 
 The `git remote -v` command shows the remote URLs for all remotes in your local repository. The `-v` option stands for “verbose” and causes the command to show the remote URLs as well as the remote names.
 
@@ -647,7 +647,7 @@ The `git remote -v` command shows the remote URLs for all remotes in your loca
 ﹇<br>
 How can **hard** reset a branch in a forked repository to completely be the same as the corresponding branch in the upstream repository?
 
-#card 
+#anki-card 
 
 ❗ To be filled.
 
@@ -657,7 +657,7 @@ How can **hard** reset a branch in a forked repository to completely be the same
 ﹇<br>
 How can I `fetch` from all remotes in one command?
 
-#card 
+#anki-card 
 
 `git fetch --all`
 
@@ -667,7 +667,7 @@ How can I `fetch` from all remotes in one command?
 ﹇<br>
 Is there a difference between `--help` and `-help` for **git**?
 
-#card 
+#anki-card 
 
 Yes! `--help` will open the browser while `-help` will just open the command line.
 
@@ -677,7 +677,7 @@ Yes! `--help` will open the browser while `-help` will just open the command lin
 ﹇<br>
 How can you force changes into origin when pushing?
 
-#card 
+#anki-card 
 
 Use the option `--force` with `git push` like so…
 
@@ -689,7 +689,7 @@ Use the option `--force` with `git push` like so…
 ﹇<br>
 Is `git fetch` the same as `git fetch --all`?
 
-#card 
+#anki-card 
 
 [The command `git fetch` fetches data only from the default remote, which is usually `origin`](https://stackoverflow.com/questions/36630490/git-fetch-origin-vs-git-fetch-all)[1](https://stackoverflow.com/questions/36630490/git-fetch-origin-vs-git-fetch-all). On the other hand, `git fetch --all` fetches data from all remotes[1](https://stackoverflow.com/questions/36630490/git-fetch-origin-vs-git-fetch-all). So if you have multiple remotes configured for your repository, `git fetch --all` will fetch from all of them[1](https://stackoverflow.com/questions/36630490/git-fetch-origin-vs-git-fetch-all).
 
@@ -701,7 +701,7 @@ Is `git fetch` the same as `git fetch --all`?
 ﹇<br>
 After I run the command `git submodule init`, the directory that should be containing the submodule is empty. Why is this the case and how can I fix this?
 
-#card 
+#anki-card 
 
 After running `git submodule init`, the submodule directory may still appear empty. This is because `git submodule init` only initializes the local configuration file for the submodule, but it does not actually fetch the data from the submodule repository.
 
@@ -717,7 +717,7 @@ After running `git submodule init`, the submodule directory may still appear emp
 ﹇<br>
 What does `git submodule init` do?
 
-#card 
+#anki-card 
 
 `git submodule init` initializes the local configuration file for the submodule, but it does not actually fetch the data from the submodule repository.
 
@@ -727,7 +727,7 @@ What does `git submodule init` do?
 ﹇<br>
 How do I fetch data from a submodule repository and populate the submodule directory? 
 
-#card 
+#anki-card 
 
 To fetch data from a submodule repository and populate the submodule directory, you need to run `git submodule update --init`.
 
@@ -737,7 +737,7 @@ To fetch data from a submodule repository and populate the submodule directory, 
 ﹇<br>
 What if I forgot to use the `--recursive` flag when cloning a repository with submodules? 
 
-#card 
+#anki-card 
 
 If you have already cloned a repository with submodules but forgot to use the `--recursive` flag, you can still fetch the submodules by running `git submodule update --init`.
 
@@ -747,7 +747,7 @@ If you have already cloned a repository with submodules but forgot to use the `-
 ﹇<br>
 How do I fetch data from submodules that have other submodules? 
 
-#card 
+#anki-card 
 
 If submodules have other submodules, you need to use the recursive option when fetching data: `git submodule update --init --recursive`.
 
@@ -757,7 +757,7 @@ If submodules have other submodules, you need to use the recursive option when f
 ﹇<br>
 What is the git command to list all submodules present in a repository?
 
-#card-reverse 
+#anki-card-reverse 
 
 `git submodule status`
 
@@ -767,7 +767,7 @@ What is the git command to list all submodules present in a repository?
 ﹇<br>
 How can you view the configured submodules in a repository by examining a specific file?
 
-#card
+#anki-card
 
 By looking at the `.gitmodules` file in the root directory of the repository.
 
@@ -777,7 +777,7 @@ By looking at the `.gitmodules` file in the root directory of the repository.
 ﹇<br>
 Using Git, how can I fetch all the branches from my remote repository named origin?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/git 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/git 
 
 You can fetch all the branches from your remote repository named `origin` by using the following command in your terminal:
 
@@ -795,7 +795,7 @@ Remember, `git fetch` only downloads the data from the remote repository but doe
 ﹇<br>
 How can you rename a remote branch in Git?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/git 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/git 
 
 To rename a remote branch in Git, you can follow these steps:
 
@@ -812,7 +812,7 @@ Please replace `<old_name>` and `<new_name>` with the actual names of your branc
 ﹇<br>
 When resolving git merges, what does `HEAD` mean?
 
-#card 
+#anki-card 
 
 In Git, the term **HEAD** refers to the current commit you are viewing. By default, when you’re working with a repository, you’ll view the tip of the **master** branch (or the main branch with a different name) unless you’ve switched to another branch. Essentially, **HEAD** points to the most recent commit on the main branch of your codebase. [It’s like a snapshot of your last commit, and it moves along with you as you make new commits or switch branches](https://careerkarma.com/blog/what-is-a-git-head/)[1](https://careerkarma.com/blog/what-is-a-git-head/)[2](https://www.git-tower.com/learn/git/glossary/head/).
 
@@ -824,7 +824,7 @@ Additionally, when you switch branches using `git checkout`, **HEAD** changes to
 ﹇<br>
 What is Carmen’s favourite color?
 
-#card 
+#anki-card 
 
 Blue or Red
 
@@ -834,7 +834,7 @@ Blue or Red
 ﹇<br>
 What does `git merge --quit` do?
 
-#card 
+#anki-card 
 
 The `git merge --quit` command does not exist in Git. It's likely a typo or a misunderstanding of other Git commands used for merging or quitting a merge in progress.
 
@@ -856,7 +856,7 @@ If you're unsure what command to use to achieve your desired outcome, it's alway
 ﹇<br>
 What is _cherry picking_ in the context of **Git**?
 
-#card 
+#anki-card 
 
 [In the context of Git, cherry-picking refers to the process of selecting a commit from one branch and applying it to another](https://git-scm.com/docs/git-cherry-pick)[1](https://git-scm.com/docs/git-cherry-pick). [This is in contrast to other methods such as merge and rebase, which typically apply many commits to another branch](https://git-scm.com/docs/git-cherry-pick)[1](https://git-scm.com/docs/git-cherry-pick).
 
@@ -884,7 +884,7 @@ Please replace `<branch-name>` with the name of your branch and `<commit-hash>` 
 ﹇<br>
 Is the typewriter’s apostrophe, also known as the straight apostrophe (`'`), often recommended over the curly or smart apostrophe (`’`) in Git commit messages? If so, or not, why?
 
-#card 
+#anki-card 
 
 The typewriter’s apostrophe, also known as the straight apostrophe (`'`), is often recommended over the curly or smart apostrophe (`’`) in Git commit messages for a couple of reasons:
 

@@ -3,7 +3,7 @@ title: Solving Your First Problem
 authors:
   - Edmund Leibert III
 created: 2024-02-16T14:37
-updated: 2024-02-16T16:16
+updated: 2024-04-14T00:24
 tags:
   - 🔴-academic/📚-educational-resource/name/leetcode/🔖/explore/learn/the-leetcode-beginners-guide/solving-your-first-problem/solving-your-first-problem
   - 🔴-academic/📚-educational-resource/format/website
@@ -34,7 +34,7 @@ banner_y: 0
 ﹇<br>
 As of Feb. 16, 2024 04:07:50 PM, what is the common element at the heart of **LeetCode**?
 
-#card 
+#anki-card 
 
 The common element at the heart of LeetCode is solving problems. It’s a platform where users can strengthen their skills with data structures and algorithms, databases and writing queries, compete with coders from around the world, and prepare for coding interviews.
 
@@ -47,7 +47,7 @@ The common element at the heart of LeetCode is solving problems. It’s a platfo
 ﹇<br>
 As of Feb. 16, 2024 04:08:21 PM, what is the first problem that **LeetCode** encourages new users to solve?
 
-#card 
+#anki-card 
 
 **LeetCode** encourages new users to solve the *Add Two Integers* problem as their first problem. This problem is designed to allow users to focus on the process of submitting a solution and the features that are available to them.
 ⌂

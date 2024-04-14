@@ -1,7 +1,7 @@
 ---
 title: Part 1꞉ Overview
 created: 2023-10-31T17:48
-updated: 2024-04-13T22:27
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -30,7 +30,7 @@ cards-deck: "🔴 Academic::📚 Educational Resource::Docker Docs::Guides::Get 
 ﹇<br>
 What does this guide contain? [@OverviewGetStarted0200]
 
-#card 
+#anki-card 
 
 This guide contains step-by-step instructions on how to get started with Docker. This guide shows you how to:
 - Build and run an image as a container.
@@ -49,7 +49,7 @@ A {1:container} is a {2:sandboxed process running on a host machine that is isol
 ﹇<br>
 What technologies does Docker leverage to isolate containers?
 
-#card 
+#anki-card 
 
 The isolation leverages _kernel namespaces_ and _cgroups_, features that have been in Linux for a long time.
 
@@ -59,7 +59,7 @@ The isolation leverages _kernel namespaces_ and _cgroups_, features that have b
 ﹇<br>
 In brief, what is a container?
 
-#card 
+#anki-card 
 
 - Is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI.
 - Can be run on local machines, virtual machines, or deployed to the cloud.

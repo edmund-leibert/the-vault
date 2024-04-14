@@ -6,16 +6,16 @@ tags:
   - study-note
 cards-deck: Default::Business
 created: 2023-09-03 08:46
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 ---
 
 # Master Your Data with Excel and Power BI, 2ⁿᵈ Edition (2019)
 
-What is the `IFERROR` function in Excel? #card-reverse 
+What is the `IFERROR` function in Excel? #anki-card-reverse 
 The <span class="spoiler">`IFERROR`</span> function in Excel is used to trap and handle errors in a formula. It returns a value you specify if a formula evaluates to an error; otherwise, it returns the result of the formula[1](https://support.microsoft.com/en-us/office/iferror-function-c526fd07-caeb-47b8-8bb6-63f3e417f611). This allows you to manage errors without using more complicated nested `IF` statements[2](https://exceljet.net/functions/iferror-function)
 ^1680217512635
 
-Can a `.csv` file have multiple worksheets? #card 
+Can a `.csv` file have multiple worksheets? #anki-card 
 No. The `.csv` format does not have multiple sheets. In Excel, you can add the sheets. Kindly use excels process if you need to add different sheets in a file.
 
 

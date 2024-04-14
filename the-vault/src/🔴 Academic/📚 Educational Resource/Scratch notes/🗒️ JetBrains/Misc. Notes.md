@@ -3,7 +3,7 @@ title: Misc. Notes
 authors:
   - Edmund Leibert III
 created: 2023-11-05T00:57
-updated: 2023-12-23T12:34
+updated: 2024-04-14T00:24
 tags:
   - 🔴-academic/📚-educational-resource/name/🗒️-jetbrains/misc-notes
   - 🔴-academic/📚-educational-resource/discipline/computer-science/technology/jetbrains
@@ -16,7 +16,7 @@ In the JetBrain IDEs that do have this feature, what does the option **File Mask
 
 ![|800](the-vault/assets/images/Pasted%20image%2020231105005754.png)
 
-#card 
+#anki-card 
 
 Applies a filter to only search *in* files of the *specified* file type.
 

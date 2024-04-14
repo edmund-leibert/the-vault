@@ -4,7 +4,7 @@ tags:
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-09-03 08:46
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 ---
 
 # MSYS2 Documentation
@@ -17,7 +17,7 @@ updated: 2024-01-25T16:47
 
 ## [Updating MSYS2](https://www.msys2.org/docs/updating/)
 
-What is the command to run to update all packages? #card
+What is the command to run to update all packages? #anki-card
 ```bash session
 $ pacman -Suy
 :: Synchronizing package databases...
@@ -35,59 +35,59 @@ $ pacman -Suy
 ^1684769537658
 
 
-How do you list all installed packages? #card-reverse  
+How do you list all installed packages? #anki-card-reverse  
 ```bash session
 pacman -Qqe
 ```
 ^1684769537665
 
-How do you list all explicitly installed packages? #card 
+How do you list all explicitly installed packages? #anki-card 
 ```bash session
 pacman -Q
 ```
 ^1684769537669
 
-What is the difference between explicitly installed and just installed packages? #card 
+What is the difference between explicitly installed and just installed packages? #anki-card 
 Explicitly installed packages are those that you manually enter; while just installed packages are all the packages installed (i.e., including dependencies).
 ^1684769537673
 
-How to search for already installed packages? #card-reverse  
+How to search for already installed packages? #anki-card-reverse  
 ```bash session
 pacman -Qs string1
 ```
 ^1684769537677
 
-How to search for packages in the database? #card-reverse 
+How to search for packages in the database? #anki-card-reverse 
 ```bash session
 pacman -Ss string1
 ```
 ^1684769537681
 
-Can you install `make` in MSYS2? #card 
+Can you install `make` in MSYS2? #anki-card 
 Yes. However, the executable is called `/ucrt64/bin/mingw32-make.exe`.
 ^1684769537685
 
-How do I install a package in MSYS2? #card
+How do I install a package in MSYS2? #anki-card
 `pacman -S <name-of-package>`
 ^1684769537688
 
-**Q:** How do you export a list of installed packages in MSYS2? #card 
+**Q:** How do you export a list of installed packages in MSYS2? #anki-card 
 **A:** You can run your existing MSYS2 installation via `msys2_shell.cmd` and then make a list of installed packages by running the command `pacman -Qqe | xargs echo > /c/packages.txt ; exit`. This will create a text file named `packages.txt` containing the list of installed packages.
 ^1684769561111
 
-**Q:** How do you install packages using MSYS2? #card 
+**Q:** How do you install packages using MSYS2? #anki-card 
 **A:** To install packages using MSYS2, you can use the `pacman` package manager. First, open the MSYS2 terminal by running `msys2_shell.cmd`. Then, update the package database and synchronize it with the remote repository by running the command `pacman -Syu`. After that, you can install packages by running the command `pacman -S package_name`, replacing `package_name` with the name of the package you want to install.
 ^1684769561115
 
-**Q:** How do you update packages and synchronize it with the remote repositories? #card 
+**Q:** How do you update packages and synchronize it with the remote repositories? #anki-card 
 **A:** `pacman -Syu`
 ^1688994744883
 
-**Q:** How do you install all the packages listed in a file using MSYS2? #card 
+**Q:** How do you install all the packages listed in a file using MSYS2? #anki-card 
 **A:** To install all the packages listed in a file using MSYS2, you can use the `pacman` package manager. First, open the MSYS2 terminal by running `msys2_shell.cmd`. Then, update the package database and synchronize it with the remote repository by running the command `pacman -Syu`. After that, you can install all the packages listed in the file by running the command `pacman -S --needed $(< /path/to/file)`, replacing `/path/to/file` with the path to the file containing the list of packages.
 ^1684769561118
 
-**Q:** What does `/c/` refer to in MSYS2? #card 
+**Q:** What does `/c/` refer to in MSYS2? #anki-card 
 **A:** In MSYS2, `/c/` refers to the `C:\` drive on your Windows machine.
 ^1684769561122
 

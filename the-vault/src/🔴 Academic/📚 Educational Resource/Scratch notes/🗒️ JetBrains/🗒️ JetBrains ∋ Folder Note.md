@@ -1,7 +1,7 @@
 ---
 title: 🗒️ JetBrains ∋ Table of Contents
 created: 2023-10-31T17:48
-updated: 2023-11-18T02:44
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -31,7 +31,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ JetBrains::🗒️
 ﹇<br>
 What is the shortcut to update the project? 
 
-#card-reverse 
+#anki-card-reverse 
 
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>W</kbd>
 
@@ -41,7 +41,7 @@ What is the shortcut to update the project?
 ﹇<br>
 In JetBrains, what is the shortcut to open **Settings**?
 
-#card-reverse  
+#anki-card-reverse  
 
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>
 
@@ -51,7 +51,7 @@ In JetBrains, what is the shortcut to open **Settings**?
 ﹇<br>
 When working with **CLion**, how should I go about setting a project’s C++ standard?
 
-#card
+#anki-card
  
 Edit directly the **CMakeLists.txt** file, by adding the following line of code…
 `set(CMAKE_CXX_STANDARD 23)` 
@@ -64,7 +64,7 @@ Edit directly the **CMakeLists.txt** file, by adding the following line of code�
 ﹇<br>
 When using **Rider** to create a .NET project, how should I structure my project regarding the placement of the project itself and the solution?
 
-#card
+#anki-card
  
 Have the solution and project be in the same directory.
 
@@ -74,7 +74,7 @@ Have the solution and project be in the same directory.
 ﹇<br>
 What is the shortcut to create a new branch in a JetBrains IDE?
 
-#card-reverse 
+#anki-card-reverse 
 
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd>
 
@@ -84,7 +84,7 @@ What is the shortcut to create a new branch in a JetBrains IDE?
 ﹇<br>
 What is the shortcut to run a configuration in a JetBrains IDE?
 
-#card-reverse 
+#anki-card-reverse 
 
 <kbd>Shift</kbd> + <kbd>F10</kbd>
 
@@ -94,7 +94,7 @@ What is the shortcut to run a configuration in a JetBrains IDE?
 ﹇<br>
 What is the shortcut to create new tab in the terminal window of a JetBrains IDE? 
 
-#card-reverse  
+#anki-card-reverse  
 
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>
 
@@ -104,7 +104,7 @@ What is the shortcut to create new tab in the terminal window of a JetBrains IDE
 ﹇<br>
 What is the shortcut to make a new branch in a JetBrains IDE? 
 
-#card-reverse  
+#anki-card-reverse  
 
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd>
 
@@ -114,7 +114,7 @@ What is the shortcut to make a new branch in a JetBrains IDE?
 ﹇<br>
 When working in CLion, what CMake installation should I default to using? 
 
-#card
+#anki-card
 
 ~~Should default to using the one installed via MSYS2.~~
 *\*As of July 19, 2023, when developing on Windows, default to using* ***Visual Studio***.
@@ -125,7 +125,7 @@ When working in CLion, what CMake installation should I default to using?
 ﹇<br>
 When working in CLion, what generator should I use? 
 
-#card
+#anki-card
  
 ~~Should default to using the **ninja** installed via MSYS2.~~ 
 *\*As of July 2023, when developing on Windows, default to using* ***Visual Studio***.
@@ -136,7 +136,7 @@ When working in CLion, what generator should I use?
 ﹇<br>
 What is the difference between a toolchain and a generator in the context of CMake? 
 
-#card
+#anki-card
  
 In the context of CMake, a **generator** is responsible for writing the input files for a native build system. For example, the `Visual Studio` generator will create `.sln` and `.vcxproj` files for building with Microsoft Visual Studio¹.
 
@@ -148,7 +148,7 @@ On the other hand, a **toolchain** file is used to specify information about the
 ﹇<br>
 When I am focused on a shell in the Terminal, how can I go back to the most recent file open that I am editing on?
 
-#card-reverse
+#anki-card-reverse
 
 Press the <kbd>Esc</kbd> key when focused on the Terminal.
 
@@ -158,7 +158,7 @@ Press the <kbd>Esc</kbd> key when focused on the Terminal.
 ﹇<br>
 In **CLion**, when using the **IdeaVim** plugin, how do I move the current line up or down?
 
-#card 
+#anki-card 
 
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd>
 
@@ -170,7 +170,7 @@ In **CLion**, when using the **IdeaVim** plugin, how do I move the current line 
 ﹇<br>
 In JetBrains, how do disable/enable GitHub Copilot? 
 
-#card-reverse 
+#anki-card-reverse 
 
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd>
 
@@ -180,7 +180,7 @@ In JetBrains, how do disable/enable GitHub Copilot?
 ﹇<br>
 In JetBrains, how do you show GitHub Copilot completions? 
 
-#card-reverse 
+#anki-card-reverse 
 
 <kbd>Alt</kbd> + <kbd>\\</kbd>
 
@@ -190,7 +190,7 @@ In JetBrains, how do you show GitHub Copilot completions?
 ﹇<br>
 In JetBrains, how do you show GitHub Copilot previous completions? 
 
-#card-reverse 
+#anki-card-reverse 
 
 <kbd>Alt</kbd> + <kbd>[</kbd>
 
@@ -200,7 +200,7 @@ In JetBrains, how do you show GitHub Copilot previous completions?
 ﹇<br>
 In JetBrains, how do you show GitHub Copilot next completions? 
 
-#card-reverse 
+#anki-card-reverse 
 
 <kbd>Alt</kbd> + <kbd>]</kbd>
 
@@ -210,7 +210,7 @@ In JetBrains, how do you show GitHub Copilot next completions?
 ﹇<br>
 In JetBrains, what is the shortcut to view all branches?
 
-#card-reverse 
+#anki-card-reverse 
 
 <kbd>Ctrl</kbd> +<kbd>Shift</kbd> + <kbd>`</kbd>
 
@@ -220,7 +220,7 @@ In JetBrains, what is the shortcut to view all branches?
 ﹇<br>
 What is the shortcut in JetBrains to stop the current running process? 
 
-#card-reverse 
+#anki-card-reverse 
 
 <kbd>Ctrl</kbd> + <kbd>F2</kbd>
 
@@ -230,7 +230,7 @@ What is the shortcut in JetBrains to stop the current running process?
 ﹇<br>
 When in the “Run/Debug Configuations” window, what is the shortcut in JetBrains to make a copy/duplicate of the current configuration? 
 
-#card-reverse  
+#anki-card-reverse  
 
 <kbd>Ctrl</kbd> + <kbd>D</kbd>
 
@@ -240,7 +240,7 @@ When in the “Run/Debug Configuations” window, what is the shortcut in JetBra
 ﹇<br>
 How do I close the left sidebar in a JetBrains IDE? 
 
-#card-reverse 
+#anki-card-reverse 
 
 <kbd>Shift</kbd> + <kbd>Esc</kbd>
 
@@ -250,7 +250,7 @@ How do I close the left sidebar in a JetBrains IDE?
 ﹇<br>
 How do I open the mini window to select a run configuration to run? 
 
-#card-reverse 
+#anki-card-reverse 
 
 <kbd>F8</kbd>
 
@@ -260,7 +260,7 @@ How do I open the mini window to select a run configuration to run?
 ﹇<br>
 How do I add regular breakpoint to the current line? 
 
-#card-reverse  
+#anki-card-reverse  
 
 <kbd>Ctrl</kbd> + <kbd>F8</kbd>
 
@@ -270,7 +270,7 @@ How do I add regular breakpoint to the current line?
 ﹇<br>
 What is the shortcut to start debugging? 
 
-#card-reverse 
+#anki-card-reverse 
 
 <kbd>Shift</kbd> + <kbd>F9</kbd>
 
@@ -280,7 +280,7 @@ What is the shortcut to start debugging?
 ﹇<br>
 How can I switch between project?
 
-#card-reverse 
+#anki-card-reverse 
 
 - Switch to the next project window: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>]</kbd> (Window | Next Project Window)
 - Switch to the previous project window: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>[</kbd> (Window | Previous Project Window)

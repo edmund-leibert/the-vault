@@ -1,7 +1,7 @@
 ---
 title: 🗒️ Bash
 created: 2023-08-04 01:58
-updated: 2023-11-18T02:44
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -31,7 +31,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Bash::Misc. Notes
 ﹇<br>
 Can Bash be considered a programming language?
 
-#card 
+#anki-card 
 
 Yes, Bash can be considered a programming language. [It is primarily a command interpreter, but it also has programming elements](https://www.linuxjournal.com/content/understanding-bash-elements-programming)\[[[#^vladimirlikicUnderstandingBashElements2018|1]]\]. According to the Bash manual, Bash is described as a “sh-compatible command language”. [This “command language” is a programming language through which a user communicates with the operating system or an application](https://stackoverflow.com/questions/28693737/is-bash-a-programming-language)\[[2](https://stackoverflow.com/questions/28693737/is-bash-a-programming-language)\].
 
@@ -45,7 +45,7 @@ Yes, Bash can be considered a programming language. [It is primarily a command i
 ﹇<br>
 What command prints the current Linux *kernel* version? 
 
-#card-reverse 
+#anki-card-reverse 
 
 `uname -r`
 
@@ -55,7 +55,7 @@ What command prints the current Linux *kernel* version?
 ﹇<br>
 What commands prints the current operating system (OS) name and version?
 
-#card-reverse  
+#anki-card-reverse  
 
 `cat /etc/os-release`
 
@@ -63,7 +63,7 @@ What commands prints the current operating system (OS) name and version?
 <br>﹈<br>
 
 
-How do you check the hostname of the machine that you are connecting to? #card 
+How do you check the hostname of the machine that you are connecting to? #anki-card 
 You can use the command `echo $HOSTNAME`.
 ^1683619792079
 

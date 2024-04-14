@@ -6,7 +6,7 @@ tags:
   - 🔴-academic/📚-educational-resource/name/leetcode/🏷️/problems/difficulty/easy
   - study-note
 cards-deck: Default::Computer Science
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 ---
 
 # LeetCode
@@ -16,25 +16,25 @@ updated: 2024-01-25T16:47
 
 #### Solution (C++)
 
-How long should I take for each type of database coding problem? #card 
+How long should I take for each type of database coding problem? #anki-card 
 - **Easy**: 7m30s
 - **Medium**: 15m
 - **Hard**: 35m
 ^1689963399203
 
-How long should I take for each type of algorithm coding problem? #card 
+How long should I take for each type of algorithm coding problem? #anki-card 
 - **Easy**: 5m
 - **Medium**: 10m
 - **Hard**: 20m
 ^1692234812444
 
 
-When doing $O$-notation analysis, how should I account for the space complexity of the final result? #card 
+When doing $O$-notation analysis, how should I account for the space complexity of the final result? #anki-card 
 - You shouldn’t. Generally when dealing with space complexity we should only consider extra temporary space that is allocated in the algorithm.
 - For example, consider an algorithm with two input strings $m$ and $n$ that produces a new output strong by merging each of the input strings together. In this case, the the space time complexity would be $O(1)$ because we are not creating anymore space outside of the space needed for the final result.
 ^1689963399219
 
-What is a faster, more modern alternative to adding a character to end of a string in C++? #card
+What is a faster, more modern alternative to adding a character to end of a string in C++? #anki-card
 - Can use the `push_back()` of the string class. Example is below…
 ```cpp
 string word1 = "red"
@@ -47,7 +47,7 @@ while (i < m) {
 ^1689963399224
 
 
-In C++, how can detect a char is the end of a string if using a pointer in C++? #card 
+In C++, how can detect a char is the end of a string if using a pointer in C++? #anki-card 
 - You can check to see if it is equal to the `'\0'` (i.e. the **null character**) value which signifies the end of a string.
 ```cpp
 #include <iostream>
@@ -65,15 +65,15 @@ int main() {
 ^1689963399229
 
 
-What does “amortized constant” mean in C++? #card 
+What does “amortized constant” mean in C++? #anki-card 
 ❗ To be filled.
 ^1689963399234
 
-Does the C++ class `std::string` rely on the **null character**? #card 
+Does the C++ class `std::string` rely on the **null character**? #anki-card 
 No, it stores it size as an integer and does not rely on it.
 ^1689963399239
 
-What is the best approach for this problem? #card 
+What is the best approach for this problem? #anki-card 
 ```cpp
 // Time: O(n+m)
 // Space: O(1) *Not considering the space consumed by the input strings (word1 and word2) and the output string (word3)
@@ -116,7 +116,7 @@ public:
 
 #### Solution (C++)
 
-What is the **correct** approach to this problem? #card 
+What is the **correct** approach to this problem? #anki-card 
 - **Approach 1**
 	1. First and foremost, we are going to have to use an **associative container** (e.g., `std::map` or `std::hash`) as we are going to want to iterate across the `std::vector` input.
 		1. If the complement value (i.e., the corresponding value that needs to be found to add the *current* value to the `target`) is not found yet, we will put the *current value of the input `std::vector`* as the key and the *index* as the value. 
@@ -135,22 +135,22 @@ In the context of C++, is the following code valid?
 ```cpp
 map<int> numMap;
 ```
-#card 
+#anki-card 
 - **No!** `std::map` is a template class that requires *two* arguments. The correct way is describe below...
 	```cpp
 	map<int, int> numMap;
 	```
 ^1689963399256
 
-At least in the context of C++,  what is the relationships between generics and templates? #card 
+At least in the context of C++,  what is the relationships between generics and templates? #anki-card 
 A template class allows you to write generics. Recall that generic code is simply code that can work with different data types.
 ^1689963399261
 
-In C++, specifically in the context of data types, when does the compiler generate code for you? #card 
+In C++, specifically in the context of data types, when does the compiler generate code for you? #anki-card 
 The compiler generates code for you, from *your* given data types, during compile time.
 ^1689963399266
 
-In C++, how do I determine if I have found a key in my **map**? #card 
+In C++, how do I determine if I have found a key in my **map**? #anki-card 
 ```cpp
 if (numMap.find(key) == numMap.end()) {
 	// element not found
@@ -165,56 +165,56 @@ What is the time complexity of the `find()` method of `std::unordered_map`?
 - $\mathcal{O}(n)$ <i>*Worst case is linear</i> 
 - $\Theta(n)$ <i>*Average case is constant</i> 
 
-In the regards to asymptotic complexity, what is the symbol for worst-case complexity? #card-reverse 
+In the regards to asymptotic complexity, what is the symbol for worst-case complexity? #anki-card-reverse 
 - $\mathcal{O}$ is the symbol in the context of Big $O$ notation.
 	- Also, describes the **upper bound** of an algorithm
 ^1689963399277
 
-In the regards to asymptotic complexity, what is the symbol to describe a **tight bound**? #card-reverse 
+In the regards to asymptotic complexity, what is the symbol to describe a **tight bound**? #anki-card-reverse 
 - $\Theta$ is the symbol in the context of Big $O$ notation.
 ^1689963399282
 
-In the regards to asymptotic complexity, what is the symbol for best-case complexity? #card-reverse 
+In the regards to asymptotic complexity, what is the symbol for best-case complexity? #anki-card-reverse 
 - $\Omega$ is the symbol in the context of Big $O$ notation.
 	- Describes the **lower bound** of an algorithm.
 ^1689963399287
 
-What bound does $\mathcal{O}$ describe in the context of asymptotic notation? #card 
+What bound does $\mathcal{O}$ describe in the context of asymptotic notation? #anki-card 
 Describes the upper bound (i.e., worst case behavior)
 ^1689963399292
 
 
-What bound does $\Theta$ describe in the context of asymptotic notation? #card 
+What bound does $\Theta$ describe in the context of asymptotic notation? #anki-card 
 Describes the tight bound.
 ^1689963399296
 
 
-What bound does $\Omega$ describe in the context of asymptotic notation? #card 
+What bound does $\Omega$ describe in the context of asymptotic notation? #anki-card 
 Describes the the lower bound (i.e., best case behavior)
 ^1689963399301
 
 
-What is another name for Big $O$ notation? #card 
+What is another name for Big $O$ notation? #anki-card 
 asymptotic notation
 ^1689963399306
 
 
 ##### Attempt #1 (7/20/2023)   ⏲️ 00:15:00
 
-What is one of the primary differences between `std::map` and `std::unordered_map`, specifically regarding the time complexity of their search, insertion, and removal operations? #card 
+What is one of the primary differences between `std::map` and `std::unordered_map`, specifically regarding the time complexity of their search, insertion, and removal operations? #anki-card 
 - While they are both associative containers, they have different underlying implementations.
 - Additionally, `std::map` has a $\mathcal{O}(1)$ (i.e., constant time) time complexity while `std::unordered_map` has a $\mathcal{O}(\log n)$ time complexity. 
 ^1689963399310
 
 
-What is the list initialization for a vector? #card 
+What is the list initialization for a vector? #anki-card 
 `{"2", "3"}`  ← Note the use of braces
 ^1689963399315
 ^1689963399321
 
 
 
-What is the list initialization for arrays? #card 
+What is the list initialization for arrays? #anki-card 
 `["3", "4"]` ← Note the use of brackets 
 ^1689963399325
 
@@ -223,7 +223,7 @@ What is the list initialization for arrays? #card
 
 #### Solution (C++)
 
-What is the optimal approach to this problem? #card 
+What is the optimal approach to this problem? #anki-card 
 **Approach 1**
 1. First and foremost, we can first assert that there is a list of sub values that are **divisible** across both containers by checking if they match when they are combined in both ways. For example, `str1 + str2 == str2 + str1`.  
 2. From there, since we know the **gcd** is present, we can simply get the **gcdLength** of both containers length. And with **gcdLength**, we can get the actual **gcd** string.
@@ -241,24 +241,24 @@ if(str1.append(str2) == str1.append(str2)) {
 	// ...
 }
 ```
-#card 
+#anki-card 
 - ! Note that the `append()` method of a string a **modifies** the caller (i.e., the `str1` in the expression `str1.append(str2)`)
 	- ***Highly discouraged*** to modify modify existing variables in Boolean expressions.
 ^1689963399334
 
 
-In the context of 2d containers, how does can one easily find the greatest common divisor of two separate containers? #card 
+In the context of 2d containers, how does can one easily find the greatest common divisor of two separate containers? #anki-card 
 1. First and foremost, we can first assert that there is a list of sub values that are **divisible** across both containers by checking if they match when they are combined in both ways. For example, `str1 + str2 == str2 + str1`.  
 2. From there, since we know the **gcd** is present, we can simply get the **gcdLength** of both containers length. And with **gcdLength**, we can get the actual **gcd** string.
 ^1689963399339
 
 
-How can we check that there *exists* a common divisor of two separate containers? #card 
+How can we check that there *exists* a common divisor of two separate containers? #anki-card 
 Assert that there is a list of sub values that are **divisible** across both containers by checking if they match when they are combined in both ways. For example, `str1 + str2 == str2 + str1`. 
 ^1689963399343
 
 
-In C++, how can I find the greatest common divisor of two numbers? #card 
+In C++, how can I find the greatest common divisor of two numbers? #anki-card 
 Use the `std::gcd()` from the `<numeric>` library.
 ^1689963399348
 
@@ -287,22 +287,22 @@ The compiler error…
 ```bash
 Line 12: Char 29: error: type 'std::string' (aka 'basic_string<char>') does not provide a call operator int gcdLength = gcd(str1.size(), str2.size()); ^~~ 1 error generated.
 ```
-#card 
+#anki-card 
 Note how we declare a variable called `gcd` of type `std::string` already before calling the `gcd()` function. Need to be prepend `std::` to the `gcd()` so that the compiler knows that it is of the namespace library.
 ^1689963399353
 
 
-In C++, what library is `gcd()` a part of? #card 
+In C++, what library is `gcd()` a part of? #anki-card 
 The `<numeric>` library.
 ^1689963399357
 
 
-Should we consider the time complexity of adding strings when we are doing asymptotic analysis? #card
+Should we consider the time complexity of adding strings when we are doing asymptotic analysis? #anki-card
 Yes, we should. For example, in C++, the time complexity of the `append()` function is $\mathcal{O}(n)$ where $n$ is the length of the string that is beginning append to the calling string.
 ^1689963399361
 
 
-What is the worst case time complexity of `gcd()` from the `<numeric>` library? #card 
+What is the worst case time complexity of `gcd()` from the `<numeric>` library? #anki-card 
 $\mathcal{O}(\log m \cdot n)$
 ^1689963399366
 
@@ -312,7 +312,7 @@ $\mathcal{O}(\log m \cdot n)$
 
 #### Solution (C++) 
 
-What is the optimal approach(s) to the problem? #card
+What is the optimal approach(s) to the problem? #anki-card
 **Approach 1**
 1. Calculate the max element in the input vector
 2. Iterate through the elements in the vector, and for each element, determine if the current element + `extraCandies` will be greater than the max that was previously found.
@@ -326,12 +326,12 @@ What is the optimal approach(s) to the problem? #card
 
 ##### Attempt #1 (7/20/2023) ⏲️ 00:07:56
 
-In C++, what is the best way to find the max element of a sequence container? #card 
+In C++, what is the best way to find the max element of a sequence container? #anki-card 
 Call the `max_element()` from the `<algorithm>` library function on the sequence container.
 ^1689963399375
 
 
-In C++, how many groups are there for the various containers implemented in the language? #card 
+In C++, how many groups are there for the various containers implemented in the language? #anki-card 
 - There are 4 main…
 	- sequence
 	- associative
@@ -342,7 +342,7 @@ In C++, how many groups are there for the various containers implemented in the 
 ^1689963399379
 
 
-What implemented data structure(s) in C++ are classified as **sequence containers**? #card-reverse 
+What implemented data structure(s) in C++ are classified as **sequence containers**? #anki-card-reverse 
 - `array`
 - `<vector>`
 - `<forward_list>`
@@ -350,12 +350,12 @@ What implemented data structure(s) in C++ are classified as **sequence container
 ^1689963399384
 
 
-When generally conducting asymptotic analysis, do we generally account for the space of the input or output? #card 
+When generally conducting asymptotic analysis, do we generally account for the space of the input or output? #anki-card 
 No, we focus on analyzing additional memory that may be required.
 ^1689963399388
 
 
-Let us consider the case that I have an iterator called `*it` traversing a `std::vector`. How can I modify the value of an element using the iterator? #card 
+Let us consider the case that I have an iterator called `*it` traversing a `std::vector`. How can I modify the value of an element using the iterator? #anki-card 
 Simple. Just dereference the iterator and assign it a new value. For example…
 ```cpp
 *it = 4;
@@ -363,7 +363,7 @@ Simple. Just dereference the iterator and assign it a new value. For example…
 ^1689963399393
 
 
-When dealing with a LeetCode problem, and our problem requires us returning a container, what is something we can do to make out life easier? #card 
+When dealing with a LeetCode problem, and our problem requires us returning a container, what is something we can do to make out life easier? #anki-card 
 Well, if know the size of the container we will be returning we can initialize to the size of input immediately. For example…
 ```cpp
 vector<bool> kidsWithCandies(vector<int>& candies, int extraCandies) {
@@ -373,7 +373,7 @@ vector<bool> kidsWithCandies(vector<int>& candies, int extraCandies) {
 ^1689963399398
 
 
-How do I initialize a vector with an already predetermined length 5 with all the elements being `false`? #card 
+How do I initialize a vector with an already predetermined length 5 with all the elements being `false`? #anki-card 
 ```cpp
 vector<bool> v(5, false);
 ```
@@ -388,19 +388,19 @@ if(flowerbed[i] == 0) {
 	bool emptyRightPlot = (i == flowerbed.size()) || (flowerbed[i + 1] == 0);
 }
 ```
-#card 
+#anki-card 
 1. If the current plot is empty, thus *potentially* allowing for a flower at a pot…
 	1. If we are at the start of the container, return true at least for the condition of the left side. If we are **not** at the start, simply then check. Recall the compiler will only evaluate till the first expression of an OR statement that return true.
 	2. If we are at the end of the container, return true at least for the condition of the right side. If we are **not** at the end, simply then check. Recall the compiler will only evaluate till the first expression of an OR statement that return true.
 ^1689963399406
 
 
-How do I generally get the sum of a sequential container in C++? #card 
+How do I generally get the sum of a sequential container in C++? #anki-card 
 Use the function `std::accumulate()` from the `<numeric>` library.
 ^1689963399411
 
 
-In C++, is it `<numerics>` or `<numeric>` library? #card 
+In C++, is it `<numerics>` or `<numeric>` library? #anki-card 
 It is `<numeric>` library.
 ^1689963399415
 
@@ -410,7 +410,7 @@ It is `<numeric>` library.
 
 #### Solution (C++)
 
-What is the optimal approach to this problem? #card 
+What is the optimal approach to this problem? #anki-card 
 **Approach 1**
 1. Have two pointers, `itL` and `itR`, set to the start and last element of the string.
 2. Start a loop that continues till `itL` is greater than or equal to `itR`
@@ -430,7 +430,7 @@ What does the following code mean?
 ```cpp
 bool itR = s.end()
 ```
-#card
+#anki-card
 Sets the iterator `itR` to the last index of the container `s`.
 ^1689963399423
 
@@ -439,7 +439,7 @@ Is the following valid code in C++?
 ```cpp
 std::iter_swap(*itL, *itR);
 ```
-#card 
+#anki-card 
 - No, it is not. `std::iter_swap()` can **not** swap the values derived from the dereferencing of  iterators.
 - If you desire to swap the *values* (i.e., not the actual positions of the iterators), then you should just do the following...
 	```cpp
@@ -449,21 +449,21 @@ std::iter_swap(*itL, *itR);
 ^1689963399428
 
 
-What library is the `std::swap()` function from? #card 
+What library is the `std::swap()` function from? #anki-card 
 It is from the `<utility>` library.
 ^1689963399433
 
 
-What library is the `std::iter_swap()` function from? #card 
+What library is the `std::iter_swap()` function from? #anki-card 
 It is from the `<algorithm>` library.
 ^1689963399437
 
 
-When initializing a map with already predetermined values, do I use {} or []? #card 
+When initializing a map with already predetermined values, do I use {} or []? #anki-card 
 Should use {}.
 ^1689963399441
 
-When iterating across a sequential container, for my primary (most outer) loop, when should I stop my loop? #card 
+When iterating across a sequential container, for my primary (most outer) loop, when should I stop my loop? #anki-card 
 When my left iterator is **not** strictly less than (i.e., `<`) my right iterator.
 ^1689963696393
 
@@ -472,7 +472,7 @@ When my left iterator is **not** strictly less than (i.e., `<`) my right iterato
 
 #### Solution (C++)
 
-What is the optimal approach to this problem? #card 
+What is the optimal approach to this problem? #anki-card 
 **Approach 1**
 1. First reverse, in place, the string (i.e., reverse the string with respect to each *character*).
 2. Find each, now reversed, word by using the space as a delimiter. Do this by using the `end` iterator and the `std::find()` to set the `end` iterator to the first space after the word. Reverse it again to now make the word in order.
@@ -487,25 +487,25 @@ What is the optimal approach to this problem? #card
 
 ##### Attempt #1 (7/21/2023) ⏲️ 00:07:56
 
-What is the time and space complexity of splitting a `std::string` into a `std::vector` of words? #card 
+What is the time and space complexity of splitting a `std::string` into a `std::vector` of words? #anki-card 
 - Time Complexity: $\mathcal{O}(n)$
 - Space Complexity: $\mathcal{O}(n)$
 ^1689997459037
 
-Does C++ have mutable strings? #card
+Does C++ have mutable strings? #anki-card
 Yes.
 ^1689969615256
 
-What does it mean for a programming language to have mutable strings? #card 
+What does it mean for a programming language to have mutable strings? #anki-card 
 - Means that the elements of the string can be modified in place.
 - This is in contrast to languages like Java, or Python.
 ^1689969615260
 
-In  C++, how can I simply reverse the contents of a container? #card 
+In  C++, how can I simply reverse the contents of a container? #anki-card 
 You can simply call use the `std::reverse()` algorithm from the `<algorithm>` library.
 ^1689969615265
 
-In C++, what is the easiest, modern, way of converting a sentence that is a string to a vector of segments (that represents words)? Consider the delimiter in this case being a space. #card 
+In C++, what is the easiest, modern, way of converting a sentence that is a string to a vector of segments (that represents words)? Consider the delimiter in this case being a space. #anki-card 
 Since the delimiter is a space, we can simply insert the sentence into a `stringstream()` and then extract the contents of that `stringstream` to a word.
 - We can simply use a `while()` loop, since the `stringstream` will default to using a space as a delimiter.
 - For example...
@@ -529,19 +529,19 @@ while(ss >> words) {
 	words.push_back(words)
 }
 ```
-#card 
+#anki-card 
 You need to actually extract from `ss` into a **string**. Can just simply extract it into  the vector.
 ^1689983870623
 
-What is the time complexity of the `std::reverse()` algorithm? #card 
+What is the time complexity of the `std::reverse()` algorithm? #anki-card 
 The time complexity is $\mathcal{O}\left( \frac{n}{2} \right)$
 ^1689983870628
 
-For this problem, what is the downside to going with the “split first” approach? #card 
+For this problem, what is the downside to going with the “split first” approach? #anki-card 
 Although this makes the code more readable, this increases the space complexity of the algorithm to $\mathcal{O}(n)$, since we are having to create a copy of the initial container.
 ^1689983870632
 
-Given a vector of strings, how can I, ideally using functions from the `<numeric>` or `<algorithm>` standard library, concatenate the elements into a larger string where the elements (i.e., words) are separated by strings? #card 
+Given a vector of strings, how can I, ideally using functions from the `<numeric>` or `<algorithm>` standard library, concatenate the elements into a larger string where the elements (i.e., words) are separated by strings? #anki-card 
 - You can use the `std::accumulate()` from the numeric library to add up all the container elements together (if the elements supports it, *which it should*).
 - For example…
 ```cpp
@@ -582,7 +582,7 @@ if( !words.empty()) {
 }
 ```
 Make sure to break down each argument of `std::accumulate()`.
-#card 
+#anki-card 
 - The first argument is means that we will start from the element *next* of `words.begin()` (i.e., the second element)
 - We end our accumulation at `words.end()`
 - Our initial accumulation value is the first element of words.
@@ -607,11 +607,11 @@ while (start != s.end()) {
 	}
 }
 ```
-Essentially, why do we have start not to the first space but the second one after a word? #card 
+Essentially, why do we have start not to the first space but the second one after a word? #anki-card 
 The reason for incrementing `start` is so that we at least leave one space.
 ^1689983870642
 
-In modern C++, how can we remove all *leading* elements of a string in place? #card-reverse  
+In modern C++, how can we remove all *leading* elements of a string in place? #anki-card-reverse  
 To achieve this, do the following…
 ```cpp
 auto end = std::find_if_not(s.begin(), s.end(), [](char c){ return std::isspace(c); });
@@ -619,11 +619,11 @@ std::erase(s.begin(), end);
 ```
 ^1689983870646
 
-In modern C++, how can we check if a character is a space? #card 
+In modern C++, how can we check if a character is a space? #anki-card 
 Use the function `std::space()`. For example, `std::isspace(c)` will either return `true` or `false` depending on if `c` is a character.
 ^1689983870651
 
-In modern C++, how can we remove all *trailing* elements of a string in place? #card-reverse 
+In modern C++, how can we remove all *trailing* elements of a string in place? #anki-card-reverse 
 To achieve this, do the following…
 ```cpp
 start = std::find_if_not(s.rbegin(), s.rend(), [](char c){ return std::space(c); }).base();
@@ -636,21 +636,21 @@ If the following code snippet valid?
 auto start = std::find_if_not(s.end(), s.begin(), [](char c){ return std::space(c); });
 std::erase(start, end());
 ```
-#card
+#anki-card
 No, the following code snippet is not valid. To search through a string in reverse order you need to use **reverse iterators**.
 ^1689983870660
 
-What should I always do to iterator that is returned after reverse searching through a container? #card 
+What should I always do to iterator that is returned after reverse searching through a container? #anki-card 
 Call the method `.base()` on it so we can get the forward iterator.
 ^1689983870664
 
-How many arguments does `std::find()` and `std::find_if_not()` take? #card 
+How many arguments does `std::find()` and `std::find_if_not()` take? #anki-card 
 Three.
 - First two to determine range and traversal direction
 - Last for what value to find or the lambda function.
 ^1689983870668
 
-What library is `std::find()` and `std::find_if_not()` from? #card 
+What library is `std::find()` and `std::find_if_not()` from? #anki-card 
 They are from the `<algorithm>` library.
 ^1689983870673
 
@@ -661,15 +661,15 @@ They are from the `<algorithm>` library.
 ##### Attempt #1 (7/21/2023) ⏲️ 00:07:56
 
 
-What does the third argument in `std::accumulate()` stand for? #card 
+What does the third argument in `std::accumulate()` stand for? #anki-card 
 The size of each step.
 ^1689983870677
 
-For the function `std::distance()`, is the first argument taken as the starting iterator or is it the second? #card 
+For the function `std::distance()`, is the first argument taken as the starting iterator or is it the second? #anki-card 
 The first argument is the starting iterator. 
 ^1689983870682
 
-What is the time complexity of `std::accumulate()`? #card 
+What is the time complexity of `std::accumulate()`? #anki-card 
 - Time Complexity: $\mathcal{O}(n)$
 - Space Complexity: $\mathcal{O}(1)$
 ^1689983870687
@@ -682,11 +682,11 @@ while(it != nums.end()) { // Get the product of both the left and right side
 	it++; 
 }
 ```
-#card
+#anki-card
 Time Complexity: $\mathcal{O}(n)$
 ^1689983870692
 
-What is the optimal approach for finding what the total multiple of all values to the left of an element in a sequential container is? #card
+What is the optimal approach for finding what the total multiple of all values to the left of an element in a sequential container is? #anki-card
 - **Base Case**: First element is added to our `std::vector<int> maxLeftMultiple` variable.
 - **General Case**:
 	1. Multiply the current element with the previous element. Push the result of that to `maxLeftMultiple`
@@ -696,7 +696,7 @@ What is the optimal approach for finding what the total multiple of all values t
 - **Time Complexity**: $\mathcal{O}(n)$
 ^1689983870697
 
-How can I get the accumulated multiple (i.e., multiplying all elements together) of a sequential container in C++? #card 
+How can I get the accumulated multiple (i.e., multiplying all elements together) of a sequential container in C++? #anki-card 
 You can you the `std::accumulate()` function. For example…
 ```cpp
 std::accumulate(nums.begin(), nums.end(), 1, std::multiplies<int>());
@@ -708,22 +708,22 @@ What is the equivalent of…
 ```
 std::accumulate(nums.begin(), nums.end(), std::multiplies<int>());
 ```
-but using lambda functions? #card 
+but using lambda functions? #anki-card 
 ```cpp
 std::accumulate(nums.begin(), nums.end(), 1, [](int x, int y){ return x * y});
 ```
 ^1689987955248
 
-When creating a lambda function for `std::accumulate()`, how many parameters can I design my lambda function to have? #card 
+When creating a lambda function for `std::accumulate()`, how many parameters can I design my lambda function to have? #anki-card 
 For `std::accumulate()`, lambda functions must max two parameters.
 - If two parameters, then lambda function is a **binary operation** where first argument is the current accumulated value and the second argument is the current value.
 ^1689987955253
 
-When creating a lambda function for `std::find_if_not()`, how many parameters can I design my lambda function to have? #card 
+When creating a lambda function for `std::find_if_not()`, how many parameters can I design my lambda function to have? #anki-card 
 Only one.
 ^1689987955257
 
-How can I compute the products of all elements to the left of each element? #card 
+How can I compute the products of all elements to the left of each element? #anki-card 
 You can use the `std::inclusive_scan()` function. For example…
 ```cpp
 std::vector<int> results;
@@ -733,34 +733,34 @@ std::inclusive_scan(nums.begin(), nums.end(), result.begin(), std::multiplies<in
 ^1689987955262
 
 
-How many parameters does `std::inclusive_scan()` have? #card 
+How many parameters does `std::inclusive_scan()` have? #anki-card 
 `std::inclusive_scan()` has two versions:
 - 3 arguments: first input iterator, last input iterator (exclusive), output iterator
 - 4 arguments: first input iterator, last input iterator (exclusive), output iterator, binary operation
 ^1689987955266
 
-Can you specify the initial value for the output range for `std::exclusive_scan()`? #card 
+Can you specify the initial value for the output range for `std::exclusive_scan()`? #anki-card 
 `std::exclusive_scan()` has two versions:
 - 4 arguments: first input iterator, last input iterator (exclusive), output iterator, initial value
 - 5 arguments: first input iterator, last input iterator (exclusive), output iterator, initial value, binary operation
 ^1689987955272
 
-What is the time complexity of `std::inclusive_scan()`? How about `std::exclusive_scan()`? #card 
+What is the time complexity of `std::inclusive_scan()`? How about `std::exclusive_scan()`? #anki-card 
 They both have a time complexity: $\mathcal{O}(n)$
 ^1689987955277
 
-How many parameters does `std::accumulate()` have? #card
+How many parameters does `std::accumulate()` have? #anki-card
 `std::accumulate()` has two versions.
 	- 3 arguments: starting position (inclusive), ending position (exclusive), initial accumulate value
 	- 4 arguments: starting position (inclusive), ending position (exclusive), initial accumulate value, binary operation
 ^1689987955281
 
-How many parameters does `std::find()` have? #card 
+How many parameters does `std::find()` have? #anki-card 
 `std::find` has 3 arguments:
 - 3 arguments: first input iterator, last input iterator (exclusive), value to search for
 ^1689988097046
 
-How many parameters does `std::find_if_not()` have? #card
+How many parameters does `std::find_if_not()` have? #anki-card
 `std::find_if_not` has 3 arguments:
 - 3 arguments: first input iterator, last input iterator (exclusive), unary predicate
 ^1689987955286
@@ -771,7 +771,7 @@ Just using either `std::exclusive_scan()` or `std::inclusive_scan()`, how can I 
 1, 1, 2, 6, 24
 ```
 Note! We can not do a shift at the end.
-#card
+#anki-card
 Use the following code…
 ```cpp
 std::exclusive_scan(inVec.begin(), inVec.end(), result.begin(), 1, std::multiplication<int>)
@@ -786,7 +786,7 @@ Just using either `std::exclusive_scan()` or `std::inclusive_scan()`, how can I 
 1, 1, 2, 6, 24
 ```
 Find a solution that requires using a shift at the end.
-#card 
+#anki-card 
 Use the following code…
 ```cpp
 std::inclusive_scan(v.begin(), v.end(), inclusive_scan_results.begin(), std::multiplies<int>());
@@ -796,7 +796,7 @@ std::inclusive_scan(v.begin(), v.end(), inclusive_scan_results.begin(), std::mul
 - Note that if we were doing addition, we would want our initial value to be zero.
 ^1689989854790
 
-How can I shift a sequential container to the right using modern C++ practices. #card 
+How can I shift a sequential container to the right using modern C++ practices. #anki-card 
 Can use the `std::rotate()` function from the `<algorithm>` library.
 ```cpp
 // Shift result to the right by one position
@@ -805,27 +805,27 @@ inclusive_scan_results.front() = 1;
 ```
 ^1689989854797
 
-What is the time complexity of `std::rotate()`? #card 
+What is the time complexity of `std::rotate()`? #anki-card 
 Time complexity: $\mathcal{O}(n)$
 ^1689989854804
 
-❗How many parameters does `std::rotate()` have? #card 
+❗How many parameters does `std::rotate()` have? #anki-card 
 To be filled.
 ^1689990005349
 
-❗What initial value should I use when finding the product of all elements to the left of every element in a sequential container? Note than I am using `std::exclusive_scan()`. #card 
+❗What initial value should I use when finding the product of all elements to the left of every element in a sequential container? Note than I am using `std::exclusive_scan()`. #anki-card 
 To be filled.
 ^1689989854811
 
-❗What initial value should I use when finding the sum of all elements to the left of every element in a sequential container? Note than I am using `std::exclusive_scan()`. #card 
+❗What initial value should I use when finding the sum of all elements to the left of every element in a sequential container? Note than I am using `std::exclusive_scan()`. #anki-card 
 To be filled.
 ^1689989854818
 
-Is it `std::multiplies<int>()` or `std::multiplied<int>()`? #card 
+Is it `std::multiplies<int>()` or `std::multiplied<int>()`? #anki-card 
 It is `std::multiplies<int>()`
 ^1689991710389
 
-How many parameters does `exclusive_scan()` have? #card 
+How many parameters does `exclusive_scan()` have? #anki-card 
 `std::exclusive_scan` is a function template in the C++ Standard Library that computes an exclusive prefix sum (also known as exclusive scan) of the elements in a range. It has two versions:
 - The first version takes 5 arguments:
     1. `first`: an iterator to the first element of the input range
@@ -842,7 +842,7 @@ The second version uses `std::plus<>` as the binary operation by default.
 ^1689991710394
 
 
-What are the parameters of `std::transform()`? #card 
+What are the parameters of `std::transform()`? #anki-card 
 `std::transform` is an algorithm in the C++ Standard Library that applies a given function to a range of elements and stores the result in another range, beginning at a specified output iterator.
 `std::transform` has two versions:
 - The first version takes 4 arguments:
@@ -859,20 +859,20 @@ What are the parameters of `std::transform()`? #card
 The first version applies the given unary operation to each element in the input range and stores the result in the output range. The second version applies the given binary operation to pairs of elements from two input ranges and stores the result in the output range.
 ^1689993457873
 
-Generally, when should you use the `std::vector` method `reserve()`? #card-reverse 
+Generally, when should you use the `std::vector` method `reserve()`? #anki-card-reverse 
 - The container’s method changes the vector’s allocation or capacity to a certain size.
 - It does not change the vector size or the elements in it. 
 ^1689991710399
 
 
-❗Generally, when should you use the `std::vector` method `resize()`? #card-reverse 
+❗Generally, when should you use the `std::vector` method `resize()`? #anki-card-reverse 
 - The container’s method changes the actual size of teh vector and the number of element that is contains.
 - Will add or remove elements from the vector to achieve the size needed.
 	- If growing, the new elements are set to the default value.
 	- If shrinking, the elements are erased.
 ^1689991710403
 
-Does the `std::vector` method `erase()` effect the actual size of the vector? #card 
+Does the `std::vector` method `erase()` effect the actual size of the vector? #anki-card 
 Yes. It will actually shorten the vector, and as result, also drop elements.
 ^1690960629617
 
@@ -882,11 +882,11 @@ Yes. It will actually shorten the vector, and as result, also drop elements.
 
 ##### Attempt #1 (7/21/2023) ⏲️ 00:31:50
 
-In LeetCode, what is the shortcut to, when not using the vim key bindings, to duplicating the current line and pasting it below? #card-reverse 
+In LeetCode, what is the shortcut to, when not using the vim key bindings, to duplicating the current line and pasting it below? #anki-card-reverse 
 <kbd>Shift</kbd>+<kbd>Alt</kbd>
 ^1690053546525
 
-In LeetCode, what is the shortcut to, when not using the vim key bindings, to move the current line either up or down? #card-reverse 
+In LeetCode, what is the shortcut to, when not using the vim key bindings, to move the current line either up or down? #anki-card-reverse 
 <kbd>Alt</kbd>+<kbd>↑</kbd>/<kbd>↓</kbd>
 ^1690053546530
 
@@ -901,13 +901,13 @@ In LeetCode, what is the shortcut to, when not using the vim key bindings, to mo
 
 #### Solution (C++)
 
-❗What is the optimal solution to this problem? #card 
+❗What is the optimal solution to this problem? #anki-card 
 To be filled.
 ^1690177023110
 
 ##### Attempt #1 (2023-23-07) ⏲️ 00:21:00
 
-What is the easiest way to check if a pointer is not null? #card
+What is the easiest way to check if a pointer is not null? #anki-card
 Simply do the following…
 ```cpp
 if(l1) {  // <-- Will be true if l1 is not equal to nullptr
@@ -922,12 +922,12 @@ int valAtPos = (l1 ? l1->val : 0) + (l2 ? l2->val : 0) + carry;
 carry = valAtPos / 10;
 valAtPos = valAtPos % 10;
 ```
-#card 
+#anki-card 
 1. Cleanly defaults to zero if `l1` or `l2` equals `nullptr`. If not, then we access each of the nodes respective `val`s.
 2. `carry` is set to the *tens* digit of `valAtPos`.
 3. `valAtPos` is set to the last (*ones*) digit of `valAtPos`.
  
-What must I **always remember** to do when dealing with linked lists, specifically building my pointer. #card 
+What must I **always remember** to do when dealing with linked lists, specifically building my pointer. #anki-card 
 - First, create a `dummy` node. Then you can have your result, or “building/iterating”, node pointer be independent of tracking the start of your built linked list.
 ^1690176419670
 
@@ -938,12 +938,12 @@ ListNode* result = &dummy;
 // ...
 return dummy.next;
 ```
-#card 
+#anki-card 
 - We are creating a `ListNode` object named `dummy` on the stack. 
 - Since we are not creating a pointer to that object, we must use the `.` (i.e., “dot”) operator.
 ^1690176419678
 
-For cases, going past the initial iteration of the container, where should I test them? #card 
+For cases, going past the initial iteration of the container, where should I test them? #anki-card 
 Outside the loop!
 ^1690176419685
 
@@ -953,7 +953,7 @@ Outside the loop!
 
 ##### Attempt #1 (2023-23-07) ⏲️ 00:40:00
 
-When dealing with a test case, after the iteration over the original container is done, where should we do the test case? #card 
+When dealing with a test case, after the iteration over the original container is done, where should we do the test case? #anki-card 
 Test it *after* the main loop. Do this especially for cases in which we are testing cases where their is no stopper. Consider the importance of the following…
 ```cpp
 // Loop
@@ -967,7 +967,7 @@ if (maxLength < currSubSet.size() ) {
 
 #### Solution (C++)
 
-What is the optimal approach to this problem? #card 
+What is the optimal approach to this problem? #anki-card 
 **Approach 1**
 1. Simply use the generic algorithms and built-in methods of `vector` to remove the elements in our input vector that we want gone.
 	1. Remember to call first `remove()`
@@ -981,11 +981,11 @@ What is the optimal approach to this problem? #card
 
 ##### Attempt #1 (7-30-2023) ⏲️ 00:25:00
 
-In C++, is the `erase` method a member function of some container classes in C++ or is a generic algorithm? #card 
+In C++, is the `erase` method a member function of some container classes in C++ or is a generic algorithm? #anki-card 
 `erase` is a member function of some container classes such as `vector`, `deque`, and `list`.
 ^1690724587627
 
-How many parameters does `erase` from the `<algorithm>` library have? #card 
+How many parameters does `erase` from the `<algorithm>` library have? #anki-card 
 Erase has **two** overloads…
 - First overload takes a single iterator as an argument (removes a single element from the `vector`)
 - Second overload takes two iterators as arguments. Removes a range of elements from the `vector`
@@ -1017,25 +1017,25 @@ int main() {
 ```
 ^1690724587634
 
-What is the time complexity of the `erase` method ? #card 
+What is the time complexity of the `erase` method ? #anki-card 
 The time complexity of `erase` is $\mathcal{O}(n)$ (i.e., linear)
 ^1690725004479
 
-What is the space complexity of the `erase` method? #card
+What is the space complexity of the `erase` method? #anki-card
 The space complexity of `erase` is $\mathcal{O}(1)$ (i.e., constant)
 ^1690725009772
 
-What is the time complexity of `remove()` #card 
+What is the time complexity of `remove()` #anki-card 
 - $O(n)$
 - This is because the `remove()` function needs to iterate across the entire container.
 ^1690727104022
 
-Does `remove` actually delete/erase values in the element? #card 
+Does `remove` actually delete/erase values in the element? #anki-card 
 - No, all that the `remove` generic algorithm does is shift all the values that are desired to be “removed” to the end of a the container.
 - If you want to actually remove the elements, you should call `erase` to actually remove the elements in place.
 ^1690727104027
 
-Is `remove` a method of containers? #card 
+Is `remove` a method of containers? #anki-card 
 - No, it is a generic algorithm and should be called like so. 
 - For example...
 ```cpp
@@ -1043,7 +1043,7 @@ std::remove(...)
 ```
 ^1690727104032
 
-Does `erase()` remove elements in place? #card 
+Does `erase()` remove elements in place? #anki-card 
 Yes, the `erase` method of the `vector` class in C++ removes elements from the vector in place.
 ^1690736191773
 
@@ -1058,11 +1058,11 @@ Is the following code valid?
 ```cpp
 std::find(haystack.begin(), haystack.end(), needle);
 ```
-#card 
+#anki-card 
 No.
 ^1690761141179
 
-What is the time complexity of the `find` method of the `string` class? #card 
+What is the time complexity of the `find` method of the `string` class? #anki-card 
 While there are various implementations, it can be expected that the worst-case time complexity is $\mathcal{O}(n)$
 ^1690761141184
 
@@ -1073,33 +1073,33 @@ While there are various implementations, it can be expected that the worst-case 
 
 ##### Attempt #1 (2023-30-07) ⏲️ 00:25:00
 
-What is the worst-case time complexity of binary search? #card 
+What is the worst-case time complexity of binary search? #anki-card 
 $\mathcal{O}(\log n)$
 ^1690761141188
 
-What are some three ways in which binary search is implemented in the `algorithm` library in C++? #card 
+What are some three ways in which binary search is implemented in the `algorithm` library in C++? #anki-card 
 The following generic algorithms…
 - `std::lower_bound()`
 - `std::upper_bound()`
 - `std::binary_search()`
 ^1690761141193
 
-What is the difference between `std::lower_bound()` and `std::upper_bound()`? #card 
+What is the difference between `std::lower_bound()` and `std::upper_bound()`? #anki-card 
 - `std::lower_bound()` does a binary search to find the “closest” value, in a sorted array, strictly **greater than or equal to** ($\geq$) a given value.
 - `std::upper_bound` does a binary search to find the “closest” value,  in a sorted array, **greater than** ($>$) a given value.
 ^1690761141198
 
-Essentially, is `std::lower_bound()` returning an iterator to an element $>$ than a value and `std::upper_bound()` returning an iterator to an element $≥$? #card 
+Essentially, is `std::lower_bound()` returning an iterator to an element $>$ than a value and `std::upper_bound()` returning an iterator to an element $≥$? #anki-card 
 No, this is false.
 - `std::lower_bound()` is best thought as $≥$
 - `std::upper_bound()` is best thought as $>$
 ^1690761141202
 
-Does `std::binary_search()` return an iterator? #card 
+Does `std::binary_search()` return an iterator? #anki-card 
 No, it returns a Boolean stating if the value is found in the container.
 ^1690761301754
 
-What is the time complexity of `std::lower_bound()`, `std::upper_bound()`, and `std::binary_search()`? #card
+What is the time complexity of `std::lower_bound()`, `std::upper_bound()`, and `std::binary_search()`? #anki-card
 **Time Complexity:** $\mathcal{O}(\log n)$
 ^1690761301759
 
@@ -1107,7 +1107,7 @@ What is the time complexity of `std::lower_bound()`, `std::upper_bound()`, and `
 
 #### Solution (C++)
 
-What is the optimal solution for this problem? #card 
+What is the optimal solution for this problem? #anki-card 
 - **Approach:**
 	1. Find the last non-space character in our input string (use reverse search)
 	2. Using that position, find the first space (use reverse search)
@@ -1120,14 +1120,14 @@ What is the optimal solution for this problem? #card
 
 ##### Attempt #1 (2023-30-07) ⏲️ 00:25:00
 
-What is the difference between `std::find()` from the the `<algorithm>` and the `find()` method of `std::string`? #card 
+What is the difference between `std::find()` from the the `<algorithm>` and the `find()` method of `std::string`? #anki-card 
 - `std::find` is focused on finding elements in a range (in this case chars if the container is a `std::string`)
 - `std::string::find` is a member function of the `std::string` class that searches for a substring or a character within a string.
 	- Returns the position go the first occurrence of the substring or a character within the string, or `std:::string::npos` if no such occurrence is found.
 ^1690762055326
 
 
-Using `std::string::find`, could you search starting in reverse to find the first space (in reverse)? #card 
+Using `std::string::find`, could you search starting in reverse to find the first space (in reverse)? #anki-card 
 - You can instead use `std::string::rfind` which is a member function that searches for the last occurrence of a character or substring within a string.
 - Example…
 ```cpp
@@ -1164,26 +1164,26 @@ public:
     }
 };
 ```
-#card 
+#anki-card 
 No. If you wish to calculate the distance between an iterator and a numerical (e.g., `int`) representation of a position using `std::distance` from the `<algorithm>` library, best to use `auto sSize = std::distance(s.begin(), s.begin() + it);`
 ^1690762605039
 
-Lets say I have wish to calculate the distance between an iterator and a numerical (e.g., `int`) representation of a position using `std::distance` from the `<algorithm>` library. How can I correctly go about this? #card 
+Lets say I have wish to calculate the distance between an iterator and a numerical (e.g., `int`) representation of a position using `std::distance` from the `<algorithm>` library. How can I correctly go about this? #anki-card 
 Follow this format… 
 ```cpp
 auto sSize = std::distance(s.begin(), s.begin() + it);
 ```
 ^1690762615907
 
-❗What is wrong with the approach of just searching (in reverse) for the first space, if it exists, in a container? #card 
+❗What is wrong with the approach of just searching (in reverse) for the first space, if it exists, in a container? #anki-card 
 To be filled.
 ^1690764348740
 
-❗What is the time and space complexity of split a string, using the space `' '` as the delimiter. #card 
+❗What is the time and space complexity of split a string, using the space `' '` as the delimiter. #anki-card 
 To be filled.
 ^1690764348745
 
-Does `std::string::rfind` return the first element or substring found in string (in reverse order)? #card 
+Does `std::string::rfind` return the first element or substring found in string (in reverse order)? #anki-card 
 True. It searches for the *last* occurrence of a character or substring within a string, starting form the end of the string.
 ^1690764348750
 
@@ -1191,7 +1191,7 @@ True. It searches for the *last* occurrence of a character or substring within a
 ```cpp
 auto lastChar = std::find_if_not(s.rbegin(), s.rend(), delimeter);
 ```
-#card
+#anki-card
 To be filled.
 ^1690764348755
 
@@ -1199,7 +1199,7 @@ Is the following code valid in C++?
 ```cpp
 auto lastChar = std::find_if_not(s.rbegin(), s.rend(), [](char ch){return std::isspace(ch);});
 ```
-#card 
+#anki-card 
 No, it is not.
 ^1690765413126
 
@@ -1210,7 +1210,7 @@ No, it is not.
 
 ##### Attempt #1 (2023-30-07) ⏲️ 00:21:03
 
-How do I insert a value at the beginning of `std::vector`? #card 
+How do I insert a value at the beginning of `std::vector`? #anki-card 
 Use the following format…
 ```cpp
 vec.insert(vec.begin(), 1);
@@ -1224,22 +1224,22 @@ vec.insert(vec.begin(), 1);
 
 ##### Attempt  #1 (2023-30-07) ⏲️ 
 
-How do you convert an `int` to a `std::string`? #card 
+How do you convert an `int` to a `std::string`? #anki-card 
 Use the function `std::to_string` from the `<string>` library.
 ^1690771191591
 
-How to convert a `char` to an `int` in C++? #card 
+How to convert a `char` to an `int` in C++? #anki-card 
 Simply do the following…
 ```cpp
 int charInt = charVal - '0';
 ```
 ^1690771205487
 
-Does C++ have an inbuilt function to convert `char` to `int`? #card 
+Does C++ have an inbuilt function to convert `char` to `int`? #anki-card 
 No.
 ^1690771191598
 
-❗ What does `atoi()` do? #card 
+❗ What does `atoi()` do? #anki-card 
 To be filled.
 ^1690771191605
 
@@ -1248,7 +1248,7 @@ Is the following code valid?
 ```cpp
 sumResult.insert(sumResult.begin(), std::to_string(columnSum));
 ```
-#card
+#anki-card
 No. ❗Need to explain more
 ^1690771191611
 
@@ -1257,11 +1257,11 @@ Is the following code valid?
 int aVal = itA != a.rend() ? *itA - '0' : 0;  
 int bVal = itB != b.rend() ? *itB - '0' : 0;
 ```
-#card 
+#anki-card 
 Yes, it is also the recommended template for adding digits.
 ^1690771191617
 
-How to convert an `int` to `char`? #card 
+How to convert an `int` to `char`? #anki-card 
 Simply do the following…
 ```cpp
 int intVal = '0' + charVal;
@@ -1269,7 +1269,7 @@ int intVal = '0' + charVal;
 ^1690771191622
 
 
-Does C++ have an inbuilt function to convert `int` to `char`? #card 
+Does C++ have an inbuilt function to convert `int` to `char`? #anki-card 
 No.
 ^1690771191626
 
@@ -1280,7 +1280,7 @@ No.
 
 #### Solution (C++)
 
-What is the **optimal solution** to this problem? #card 
+What is the **optimal solution** to this problem? #anki-card 
 - **Fibonacci Approach**
 	- **Approach:**
 		1. First, let us consider a function $W(n)$ where $n$ is the number of steps in the staircase and $W(n)$ is the function returning the number of possible ways to get to the top.
@@ -1299,7 +1299,7 @@ What is the **optimal solution** to this problem? #card
 
 ##### Attempt #1 ⏲️ 99:99:99
 
-In the context of asymptotic complexity, which is faster $\mathcal{O}(\log_{2} n)$ or $\mathcal{O}(1)$? #card 
+In the context of asymptotic complexity, which is faster $\mathcal{O}(\log_{2} n)$ or $\mathcal{O}(1)$? #anki-card 
 $\mathcal{O}(\log_{2} n)$ becomes slower than $\mathcal{O}(1)$ when $n > 10$ .
 Proof for when $n > 10$ then is $\log_{2} n > 1$ (i.e., function is slower)…
 To prove mathematically, we compare both the functions directly and by comparing their growth rates…
@@ -1331,34 +1331,34 @@ $$
 So as we see, the growth rate of that $O(\log_{2} n)$ is will never become faster than $O(1)$ past the point of 10 for at ten $f(n)$ becomes greater and has a faster growth rate.
 ^1690951200222
 
-What is the derivate of the natural logarithm (i.e., $\ln$)? #card 
+What is the derivate of the natural logarithm (i.e., $\ln$)? #anki-card 
 Where $f(x)=\ln(x)$, $f'(x) = \frac{1}{x}$
 ^1690951200228
 
-When we talk about binary search having time complexity of $\mathcal{O}(n)$, do we mean natural log (i.e., $\ln$) or do we mean $\log_{10}$? #card 
+When we talk about binary search having time complexity of $\mathcal{O}(n)$, do we mean natural log (i.e., $\ln$) or do we mean $\log_{10}$? #anki-card 
 Neither, in the context of computer science and algorithm analysis the base is typically 2. 
 - This is because in computer science, specifically binary search , we divide the problem siz in half at each step, which corresponds to a logarithm base 2.
 ^1690951200233
 
-How do you remove a log (i.e., $\log$) from one side of the equation? #card 
+How do you remove a log (i.e., $\log$) from one side of the equation? #anki-card 
 - Simply raise both sides of the equation to the same exponent as the base of the logarithm.
 - For example… $\log_{10}(x) = y$ becomes $x = 10^y$
 ^1690951200238
 
-What is the derivative of a constant (e.g., 1)? #card 
+What is the derivative of a constant (e.g., 1)? #anki-card 
 It is always zero.
 ^1690951542539
 
-What is the derivative of $\log_{2}(x)$? #card
+What is the derivative of $\log_{2}(x)$? #anki-card
 If $f(x) = \log_{2}(x)$ then $f'(x) = \frac{1}{x \ln{2}}$
 ^1690951542548
 
-In mathematics, what is a closed-form expression and what is its relevance? #card 
+In mathematics, what is a closed-form expression and what is its relevance? #anki-card 
 - A closed-form expression is a mathematical expression that is formed with constants, variables, and a finite number of standard operations and functions, such that +,-,×, ÷, nth root, exponentiation, logarithm, trigonometric functions, and inverse hyperbolic functions.
 	- Closed-form expressions are always ideal cause they can serve as closed-form solutions that nearly always more desirable (i.e., efficient).
 ^1690952946872
 
-What is an example of a closed-form expression vs.  its open-form expression? #card 
+What is an example of a closed-form expression vs.  its open-form expression? #anki-card 
 - Lets consider the sum of an arithmetic series. An arithmetic series is a sequence of numbers in which each term is obtained by adding a constant difference to the preceding term, such as $1, 4, 7, 10, …$ .
 - The formula for the sum of the first $n$ of an arithmetic series is…
 	- $S_{n} = \frac{n}{2} * (a_{1} + a_{n})$ 
@@ -1367,37 +1367,37 @@ What is an example of a closed-form expression vs.  its open-form expression? #c
 		- where $a_{n}$ is the nth them
 ^1690952946877
 
-❗ What is the closed-form expression for the Fibonacci sequence? #card 
+❗ What is the closed-form expression for the Fibonacci sequence? #anki-card 
 To be filled.
 ^1690952946882
 
-Does modern C++ have a built-in way of determining of returning the value of a Fibonacci sequence? #card 
+Does modern C++ have a built-in way of determining of returning the value of a Fibonacci sequence? #anki-card 
 No.
 ^1690953629712
 
-What is this $φ$ symbol called? #card-reverse 
+What is this $φ$ symbol called? #anki-card-reverse 
 Phi
 ^1690953629717
 
-What is this $ψ$ symbol called? #card-reverse 
+What is this $ψ$ symbol called? #anki-card-reverse 
 Psi
 ^1690953629723
 
-What is **Binet’s formula**? #card-reverse 
+What is **Binet’s formula**? #anki-card-reverse 
 Another name for the closed-form expression for the Fibonacci sequence.
 ^1690953691055
 
-Write out the numbers of the Fibonacci Sequence? #card 
+Write out the numbers of the Fibonacci Sequence? #anki-card 
 ![[the-vault/assets/images/Pasted image 20230801224026.png|300]]
 ^1690954907285
 
-What are the first four numbers of the Fibonacci Sequence? #card 
+What are the first four numbers of the Fibonacci Sequence? #anki-card 
 $0, 1, 1, 2$
 ^1690954907292
 
 What pattern is the following reminiscent of?
 $W(n) = W(n-1) + W(n-2)$
-#card 
+#anki-card 
 The Fibonacci pattern!
 ^1690955762536
 
@@ -1437,7 +1437,7 @@ public:
 
 #### Solution (C++)
 
-What is the optimal approach to this problem? #card 
+What is the optimal approach to this problem? #anki-card 
 - **Two Pointer Nodes**
 	- **Approach:**
 		1. Remember the preliminary **edge cases** for linked list type problems…
@@ -1454,12 +1454,12 @@ What is the optimal approach to this problem? #card
 
 ##### Attempt #1 (2023-01-08) ⏲️ 00:09:00
 
-What are two very ***important**** **edge cases** to consider when dealing with linked lists? #card 
+What are two very ***important**** **edge cases** to consider when dealing with linked lists? #anki-card 
 1. Case where the `head` of the linked list is equal to `nullptr`. The linked list is of length 0.
 2. Case where the `head->next` of the linked list is equal to `nullptr`. The linked list is of length 1.
 ^1690960629679
 
-What is a general end of list **edge case** when dealing with linked lists? #card 
+What is a general end of list **edge case** when dealing with linked lists? #anki-card 
 Need to consider the case were we are at the end of the linked list!!!
 - Can not dereference a pointer that is equal to `nullptr`
 ^1690960629684
@@ -1491,11 +1491,11 @@ public:
     }
 };
 ```
-#card 
+#anki-card 
 No.
 ^1690968808506
 
-Can `std::merge()` , from the `<algortihm>` library, merge the input containers, so that the merge happens in place? For example, if I have two containers partially filled with enough space in one to contiain both the first and second container, can `std::merge()` merge both containers in place into the first container? #card 
+Can `std::merge()` , from the `<algortihm>` library, merge the input containers, so that the merge happens in place? For example, if I have two containers partially filled with enough space in one to contiain both the first and second container, can `std::merge()` merge both containers in place into the first container? #anki-card 
 No, it cannot. To do that, you have to use the two pointer method.
 ^1690968808512
 
@@ -1511,7 +1511,7 @@ public:
     }
 };
 ```
-#card 
+#anki-card 
 No! `std::merge()` is not capable of merging two containers in place! I.e., we can not have the result container *be* the input container.
 ^1690968808516
 
@@ -1523,14 +1523,14 @@ No! `std::merge()` is not capable of merging two containers in place! I.e., we c
 
 ##### Attempt #1 (2023-08-02) ⏲️ 99:99:99
 
-Does `std::numeric_limits<int>` support infinity? #card 
+Does `std::numeric_limits<int>` support infinity? #anki-card 
 No, it does not. `infinity()` only supports `double` and `float`.
 ^1690968808521
 
-What are the properties of *Greedy* algorithms? #card 
+What are the properties of *Greedy* algorithms? #anki-card 
 
 
-What are the properties of *Dynamic Programming* algorithms? #card 
+What are the properties of *Dynamic Programming* algorithms? #anki-card 
 1. **Overlapping Subproblems:** The problem can be divided into subproblems which are reused several times. The optimal solution of the original problem can be obtained by combining the solutions of these overlapping subproblems.
 2. **Optimal Substructure:** The solution to the problem can be built from the optimal solutions to its subproblems. This property means that we can construct a globally optimal solution from local optima.
 3. **Memoization or Tabulation:** Dynamic programming algorithms typically employ memoization or tabulation techniques to store the results of expensive function calls and reuse them when the same inputs occur again. This helps in avoiding recalculations and saves time.
@@ -1540,60 +1540,60 @@ What are the properties of *Dynamic Programming* algorithms? #card
 7. **Polynomial complexity:** With dynamic programming, many problems that could potentially have exponential complexity can often be solved in polynomial time.
 ^1690968808526
 
-Must *Dynamic Programming* problems have deterministic solutions? #card 
+Must *Dynamic Programming* problems have deterministic solutions? #anki-card 
 Yes.
 ^1690968808530
 
-Must *Dynamic Programming* problems solutions follow some ordering? #card 
+Must *Dynamic Programming* problems solutions follow some ordering? #anki-card 
 - Usually, they follow some kind of ordering, whether it’s left-to-right, bottom-up, top-down, or any other order that makes sense for the problem.
 	- The ordering is only valid if, as we traverse, each solution at that current state depends on solutions from the previous iteration.
 ^1690968808535
 
-Do “Dynamic Programming” algorithms employ memorization or tabulation techniques? #card 
+Do “Dynamic Programming” algorithms employ memorization or tabulation techniques? #anki-card 
 Typically yes, they do. This is so they can store the results of expensive function calls and reuse them when the same inputs occur again. Helps avoid recalculations
 ^1690968808540
 
-What is the primary trade-off when it comes to *Dynamic Programming* problems? #card 
+What is the primary trade-off when it comes to *Dynamic Programming* problems? #anki-card 
 Increase the space complexity but reduce the time complexity.
 ^1690968873868
 
 In the context of *Dynamic Programming* algorithms, what does the following property mean?
 **Overlapping Subproblems**
-#card 
+#anki-card 
 The problem can be divided into subproblems which are reused several times. The optimal solution of the original problem can be obtained by combining the solutions of these overlapping subproblems.
 ^1690969192951
 
 In the context of *Dynamic Programming* algorithms, what does the following property mean?
-**Optimal Substructure** #card 
+**Optimal Substructure** #anki-card 
 The solution to the problem can be built from the optimal solutions to its subproblems. This property means that we can construct a globally optimal solution from local optima.
 ^1690969192959
 
 In the context of *Dynamic Programming* algorithms, what does the following property mean?
-**Memorization or Tabulation** #card 
+**Memorization or Tabulation** #anki-card 
 Dynamic programming algorithms typically employ memorization or tabulation techniques to store the results of expensive function calls and reuse them when the same inputs occur again. This helps in avoiding recalculations and saves time.
 ^1690969192964
 
 In the context of *Dynamic Programming* algorithms, what does the following property mean?
-**Ordering** #card
+**Ordering** #anki-card
 Dynamic programming solutions usually follow some kind of ordering, whether it's left-to-right, bottom-up, top-down, or any other order that makes sense for the problem. The order must be such that the solution to a problem depends only on the problems that have already been solved.
 ^1690969192968
 
 In the context of *Dynamic Programming* algorithms, what does the following property mean?
-**Trade-off between time and space**  #card
+**Trade-off between time and space**  #anki-card
 Dynamic programming reduces time complexity by increasing space complexity. It trades a higher space usage for faster running times.
 ^1690969192973
 
 In the context of *Dynamic Programming* algorithms, what does the following property mean?
-**Deterministic** #card
+**Deterministic** #anki-card
 DP problems must have deterministic solutions. The solution for each subproblem remains the same and does not change over time.
 ^1690969192978
 
 In the context of *Dynamic Programming* algorithms, what does the following property mean?
-**Polynomial complexity** #card 
+**Polynomial complexity** #anki-card 
 With dynamic programming, many problems that could potentially have exponential complexity can often be solved in polynomial time.
 ^1690969192983
 
-What is a naive recursive solution for the Fibonacci Sequence? #card 
+What is a naive recursive solution for the Fibonacci Sequence? #anki-card 
 ```cpp
 int fib(int n) {
 	if(n == 0) {
@@ -1609,11 +1609,11 @@ int fib(int n) {
 ```
 ^1690970881259
 
-What is the time complexity of a naive recursive solution for the Fibonacci Sequence? #card 
+What is the time complexity of a naive recursive solution for the Fibonacci Sequence? #anki-card 
 Time complexity… $\mathcal{O}(2^n)$
 ^1690970881264
 
-How is the infamous Fibonacci problem an example of how *Dynamic Programming* can solve this problem? #card
+How is the infamous Fibonacci problem an example of how *Dynamic Programming* can solve this problem? #anki-card
 The Fibonacci sequence is defined as:
 - `Fib(0) = 0`
 - `Fib(1) = 1`
@@ -1648,34 +1648,34 @@ def fib(n):
 - The above solution initializes an array of size `n+1`, and then iteratively computes each Fibonacci number from 2 to `n`. The result is stored in `f[n]` and returned at the end. This solution has a time complexity of O(n) and a space complexity of O(n), which is much more efficient than the naive recursive solution for large values of `n`.
 ^1690974873296
 
-❗ What is the *Dynamic Programming* approach to implementing the Fibonacci Sequence? #card 
+❗ What is the *Dynamic Programming* approach to implementing the Fibonacci Sequence? #anki-card 
 To be filled.
 ^1690974873302
 
-❗ When trying to find the maximum subarray (or however we define the maximum based on the elements of a container), what algorithm should we at least attempt to resort to first? #card 
+❗ When trying to find the maximum subarray (or however we define the maximum based on the elements of a container), what algorithm should we at least attempt to resort to first? #anki-card 
 Kadane’s algorithm
 ^1690974873308
 
-What is the **maximum subarray problem**? #card 
+What is the **maximum subarray problem**? #anki-card 
 - Also known as the maximum segment sum problem.
 - Task of finding a contiguous subarray with the largest sum, within a given 1-dimensional array.
 - Can be solved in $\mathcal{O}(n)$ time and $\mathcal{O}(1)$ space.
 ^1690974873312
 
-In what time and space complexity can, **maximum subarray problems** be solved in? #card
+In what time and space complexity can, **maximum subarray problems** be solved in? #anki-card
 - Time: $\mathcal{O}(n)$
 - Space: $\mathcal{O}(1)$
 ^1690974873317
 
 
-In the context of the **maximum subarray problem**, what does an **empty subarray** mean? #card 
+In the context of the **maximum subarray problem**, what does an **empty subarray** mean? #anki-card 
 - Its means literally just an empty array `[ ]`; the sum of an empty subarray is zero.
 - For example, consider the array $[-1, -2, -3]$
 	- If we could **not** return an empty array, then the “maximum” subarray of this problem would be $[-1]$
 	- Now, if we **can** return an empty array, then the maximum subarray would be the empty subarray.
 ^1690974873322
 
-What is Kadane’s Algorithm where empty subarrays are admitted? #card 
+What is Kadane’s Algorithm where empty subarrays are admitted? #anki-card 
 ```python
 def max_subarray(numbers):
     """Find the largest sum of any contiguous subarray."""
@@ -1688,7 +1688,7 @@ def max_subarray(numbers):
 ```
 ^1690974873327
 
-What is Kadane’s Algorithm where no empty subarrays are admitted? #card 
+What is Kadane’s Algorithm where no empty subarrays are admitted? #anki-card 
 ```python
 def max_subarray(numbers):
     """Find the largest sum of any contiguous subarray."""
@@ -1701,12 +1701,12 @@ def max_subarray(numbers):
 ```
 ^1690974873332
 
-Is Kadane’s Algorithm considered a *Greedy* or *Dynamic Programming* algorithm? #card 
+Is Kadane’s Algorithm considered a *Greedy* or *Dynamic Programming* algorithm? #anki-card 
 - Kadane’s Algorithm unfortunately does not fit neatly into either camp.
 - It has properties of both.
 ^1690968808545
 
-In Kadane’s algorithm, when do we update the starting index of our subarray? In other words, when do we reset the beginning of our subarray? How would we keep track of the starting index? #card 
+In Kadane’s algorithm, when do we update the starting index of our subarray? In other words, when do we reset the beginning of our subarray? How would we keep track of the starting index? #anki-card 
 - In the original algorithm, the starting index of the subarray is not being tracked. However, if you want to track the starting index of the subarray, you can do so by adding a variable `start_index` and updating it whenever `current_sum` is reset to `x`. Here’s an example:
 ```python
 def max_subarray(numbers):
@@ -1726,7 +1726,7 @@ def max_subarray(numbers):
 - In this example, `start_index` is updated whenever `current_sum` is reset to `x`, which means that a new subarray with a larger sum has been found. This happens when the previous subarray has a negative sum and adding it to the current element `x` would result in a smaller sum than `x` itself. In this case, it’s better to start a new subarray at the current index `i`. So, to answer your question, we update the starting index of our subarray when we reset `current_sum` to `x`.
 ^1690974873337
 
-In Kadane’s algorithm, when do we update the ending index of our subarray? In other words, how would keep track of the ending index? #card 
+In Kadane’s algorithm, when do we update the ending index of our subarray? In other words, how would keep track of the ending index? #anki-card 
 You can also track the ending position of the subarray by adding another variable `end_index` and updating it whenever `best_sum` is updated. Here’s an example:
 ```python
 def max_subarray(numbers):

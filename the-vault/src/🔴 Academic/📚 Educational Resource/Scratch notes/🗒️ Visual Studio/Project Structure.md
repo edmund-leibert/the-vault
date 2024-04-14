@@ -1,7 +1,7 @@
 ---
 title: Project Structure
 created: 2023-09-03 08:46
-updated: 2023-11-18T02:44
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -35,7 +35,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource️::Visual Studio::Project 
 ﹇<br>
 What are the benefits and downside to putting the _solution_ and _project_ in the **same** directory? (This is in the context of creating a project in Visual Studio)
 
-#card 
+#anki-card 
 
 [In Visual Studio, a solution is a “container” for projects, and where they are in your local file system doesn’t really matter](https://stackoverflow.com/questions/42568331/is-it-a-bad-idea-for-my-solution-and-project-to-be-stored-in-separate-locations) \[[[#^ravenItBadIdea2017|2]]\]. However, there are some benefits and downsides to consider when deciding whether to put the solution and project in the same directory:
 
@@ -88,7 +88,7 @@ In conclusion, whether you should put the solution and project in the same direc
 ﹇<br>
 What is the difference between a solution and a project in Visual Studio?
 
-#card 
+#anki-card 
 
 [In Visual Studio, a **solution** is a container for one or more related projects, along with build information, Visual Studio window settings, and any miscellaneous files that aren’t associated with a particular project](https://learn.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio?view=vs-2022)[1](https://learn.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio?view=vs-2022). [It’s simply a container for one or more related projects](https://learn.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio?view=vs-2022)[1](https://learn.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio?view=vs-2022).
 

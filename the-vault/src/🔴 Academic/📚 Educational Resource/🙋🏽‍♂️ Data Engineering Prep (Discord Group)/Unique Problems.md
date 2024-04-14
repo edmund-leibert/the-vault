@@ -6,7 +6,7 @@ authors:
 tags:
   - study-note
 cards-deck: Default::Computer Science
-updated: 2023-10-07 15:19
+updated: 2024-04-14T00:24
 ---
 
 # Unique Problems
@@ -30,7 +30,7 @@ Given a text file containing the following…
 '2017-02-01T20:30 OperationA Start'
 ```
 You are tasked with finding the average amount of time for all the processes to run.
-What is the **optimal solution** for the following problem? #card 
+What is the **optimal solution** for the following problem? #anki-card 
 1. Parse through the text file.
 ^1691145475864
 

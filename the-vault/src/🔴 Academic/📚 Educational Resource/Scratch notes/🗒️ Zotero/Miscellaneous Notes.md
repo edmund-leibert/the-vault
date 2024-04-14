@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2023-09-03 08:46
-updated: 2024-04-13T20:29
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -34,7 +34,7 @@ banner_y: 0
 ﹇<br>
 As of Feb. 10, 2024 02:15:49 PM, in the context of using **Zotero**, what does the field **Short Title** refer to?
 
-#card
+#anki-card
 
 In **Zotero**, the **Short Title** field serves as a way to provide an abbreviated or concise version of a longer title [@zoteroZoteroItemTypes]. It’s particularly useful when you need to cite a work multiple times within your research or writing. Let me explain further and provide an example:
 
@@ -62,7 +62,7 @@ As of Feb. 10, 2024 03:09:29 PM, just to further clarify, let consider the case 
 
 What should he, or she, base the **Short Title** from? The item’s **Website Title** or just its **Title**?
 
-#card 
+#anki-card 
 
 When citing the title of a **blog article** from a website, you should generally base the **short title** on the **article title** itself [@zoteroZoteroItemTypes]. Let’s break it down:
 
@@ -91,7 +91,7 @@ In the context of Zotero, specifically the IEEE standard, should all items have 
 
 Would I need to write my own abstract for the item?
 
-#card 
+#anki-card 
 
 In the IEEE citation style, an abstract is typically provided for research papers to give a brief summary of the research conducted. However, for other types of sources like webpages, an abstract is not typically included in the citation.
 

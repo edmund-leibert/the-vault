@@ -1,7 +1,7 @@
 ---
 title: Misc. Notes
 created: 2023-11-17T00:08
-updated: 2024-03-27T00:02
+updated: 2024-04-14T00:24
 author(s):
   - Edmund Leibert III
 tags:
@@ -30,7 +30,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ JavaScript::Misc. 
 ﹇<br>
 What command returns the current window/tab/document’s url? 
 
-#card-reverse 
+#anki-card-reverse 
 
 ```js
 window.location.href
@@ -54,7 +54,7 @@ for(let value in dv.pages(`"${current_folder}"`).values) {
 }
 ```
 
-#card 
+#anki-card 
 
 In JavaScript, iterating over an object or array has specific semantics that you need to be aware of. The `for...in` loop is generally used to iterate over the enumerable properties of an object. When you use `for...in` on an array, the loop variable (`value` in your case) will hold the index of the array element, **_not_** the element itself. 
 
@@ -104,7 +104,7 @@ for(let value in dv.pages(`"${current_folder}"`).values) {
 }
 ```
 
-#card 
+#anki-card 
 
 In JavaScript, iterating over an object or array has specific semantics that you need to be aware of. The `for...in` loop is generally used to iterate over the enumerable properties of an object. When you use `for...in` on an array, the loop variable (`value` in your case) will hold the index of the array element, **_not_** the element itself. 
 
@@ -116,7 +116,7 @@ As such, the variable `value` will hold the index (or key, in case of objects) i
 ﹇<br>
 In JavaScript, how can one iterate over an array and get each object directly?
 
-#card 
+#anki-card 
 
 To iterate over an array and get each object directly, you can use `for...of`:
 
@@ -148,7 +148,7 @@ dv.pages(`"${current_folder}"`).values
 ﹇<br>
 What is the same origin policy? 
 
-#card-reverse 
+#anki-card-reverse 
 
 This policy dictates that JavaScript from one page may not access the other page if they come from different sites (from a different domain, protocol or port).
 ⌂
@@ -157,7 +157,7 @@ This policy dictates that JavaScript from one page may not access the other page
 ﹇<br>
 What is a client-side dynamic webpage? 
 
-#card-reverse  
+#anki-card-reverse  
 
 If the JavaScript code manipulates the DOM like a SPA does.
 
@@ -169,7 +169,7 @@ If the JavaScript code manipulates the DOM like a SPA does.
 ﹇<br>
 Can a website with JavaScript still be considered a “static” website?
 
-#card 
+#anki-card 
 
 
 As far as the required server infrastructure is concerned, a website with JavaScript can still be considered static because it can be hosted by static hosting services (no server code involved).
@@ -182,7 +182,7 @@ As far as the required server infrastructure is concerned, a website with JavaSc
 ﹇<br>
 What is a dynamic site? 
 
-#card 
+#anki-card 
 
 A dynamic site is a site with a server side language (php, python etc.) You could therefore have a dynamic site without JavaScript.
 
@@ -194,7 +194,7 @@ A dynamic site is a site with a server side language (php, python etc.) You coul
 ﹇<br>
 What is a function in JavaScript? 
 
-#card 
+#anki-card 
 
 A function in JavaScript is a block of code designed to perform a particular task. It is defined with the `function` keyword, followed by a name and parentheses `()`.
 
@@ -205,7 +205,7 @@ A function in JavaScript is a block of code designed to perform a particular tas
 ﹇<br>
 How do you create a `main` function in JavaScript? 
 
-#card 
+#anki-card 
 
 In JavaScript, there is no concept of a `main` function like in other languages such as C or C++. However, you can create a function called `main` and call it at the beginning of your script to mimic the behavior of a `main` function in other languages.
 
@@ -215,7 +215,7 @@ In JavaScript, there is no concept of a `main` function like in other language
 ﹇<br>
 How do you specify the entry point of a JavaScript project? 
 
-#card 
+#anki-card 
 
 If you’re using a bundler or module system, you can specify the entry point of your project in its configuration. For example, if you’re using webpack, you can specify the entry point in the `webpack.config.js` file.
 
@@ -226,7 +226,7 @@ If you’re using a bundler or module system, you can specify the entry point of
 ﹇<br>
 In JavaScript, what is the difference between using single quotation marks (e.g., `'Hello'`) or double quotation marks (e.g., `"Hello"`)? 
 
-#card 
+#anki-card 
 
 There is no difference in JavaScript, they are both treated the same.
 
@@ -238,7 +238,7 @@ Only thing that matters is that you start, and end, with the same symbol.
 ﹇<br>
 What are template literals? 
 
-#card 
+#anki-card 
 
 In the context of JavaScript, they allow you to put a variable directly into a string.
 
@@ -263,7 +263,7 @@ The variable inside the placeholder can be any valid JavaScript expression. Nota
 ﹇<br>
 Other than variable substitution, what else can template literals do? 
 
-#card 
+#anki-card 
 
 - Evaluate JavaScript expressions
 - Include line breaks as they are
@@ -275,7 +275,7 @@ Other than variable substitution, what else can template literals do?
 ﹇<br>
 When dealing with inline boolean expression, is the left, or right side, of the colon the value returned if the expression evaluated is true? 
 
-#card 
+#anki-card 
 
 The value to the left of the colon is true.
 
@@ -285,7 +285,7 @@ The value to the left of the colon is true.
 ﹇<br>
 Is `int` a data type in JavaScript?
 
-#card 
+#anki-card 
 
 No, `int` is not a data type in JavaScript. [JavaScript has the following data types](https://www.w3schools.com/js/js_datatypes.asp) [@JavaScriptDataTypes]:
 
@@ -310,7 +310,7 @@ So, if you’re looking to use integers in JavaScript, you would use the `Number
 ﹇<br>
 In JavaScript, does the `trim()` method of `String` remove also trailing parentheses?
 
-#card 
+#anki-card 
 
 No, the `trim()` method in JavaScript does not remove parentheses at the end of a string. [It only removes whitespace from both ends of a string](https://www.w3schools.com/jsref/jsref_trim_string.asp)[1](https://www.w3schools.com/jsref/jsref_trim_string.asp)[2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim). If you want to remove parentheses or any other characters from the end of a string, you might need to use a different method, such as `replace()` with a suitable regular expression. Here’s an example:
 
@@ -334,7 +334,7 @@ But I am confused, on the last part. What is the 3rd capture group for?
 /^ {0,3}(#{1,6}) +([^\n]+?) ?((?: *#\S+)*) *$/
 ```
 
-#card 
+#anki-card 
 
 The regular expression…
 ```javascript
@@ -376,7 +376,7 @@ However, this is not universally supported in all flavors of Markdown, and it’
 ﹇<br>
 As of Mar. 26, 2024 11:53:59 PM, what does it mean for functions to be first-class objects in JavaScript?
 
-#card
+#anki-card
 
 Functions in JavaScript can be treated like other data types. They can be assigned to variables, passed as arguments to other functions, and returned from functions.
 
@@ -386,7 +386,7 @@ Functions in JavaScript can be treated like other data types. They can be assign
 ﹇<br>
 As of Mar. 26, 2024 11:53:59 PM, give an example of assigning a function to a variable in JavaScript.
 
-#card
+#anki-card
 
 ```javascript
 function greet(name) {
@@ -404,7 +404,7 @@ sayHi("Alice"); // Calling the function using the variable
 ﹇<br>
 As of Mar. 26, 2024 11:53:59 PM, how can functions be passed as arguments in JavaScript?
 
-#card
+#anki-card
 
 You can pass functions as arguments to other functions that execute them. This allows functions to operate on other functions.
 
@@ -422,7 +422,7 @@ execute(greet, "Bob");
 ﹇<br>
 As of Mar. 26, 2024 11:53:59 PM, can functions return other functions in JavaScript?*
 
-#card
+#anki-card
 
 Yes! This allows creating complex functional patterns.
 
@@ -443,7 +443,7 @@ morningGreeting("Charlie");
 ﹇<br>
 As of Mar. 26, 2024 11:53:59 PM, What are some benefits of first-class functions in JavaScript?
 
-#card
+#anki-card
 
 - Higher-Order Functions: Functions that operate on other functions.
 - Callbacks: Functions passed to asynchronous operations for handling responses.
@@ -455,7 +455,7 @@ As of Mar. 26, 2024 11:53:59 PM, What are some benefits of first-class functions
 ﹇<br>
 As of Mar. 26, 2024 11:53:59 PM, what's the difference between calling a method and calling the object itself?
 
-#card
+#anki-card
 
 - Objects can have properties that are functions (methods).
 - You call methods using dot notation (e.g., `object.methodName()`).
@@ -467,7 +467,7 @@ As of Mar. 26, 2024 11:53:59 PM, what's the difference between calling a method 
 ﹇<br>
 As of Mar. 26, 2024 11:53:59 PM, think of a real-life analogy for first-class objects.
 
-#card
+#anki-card
 
 Imagine tools in a workshop. You can:
 

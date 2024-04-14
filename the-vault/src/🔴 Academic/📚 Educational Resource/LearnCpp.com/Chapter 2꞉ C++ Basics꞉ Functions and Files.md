@@ -5,7 +5,7 @@ tags:
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-10-27T17:38
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 ---
 
 # LearnCpp.com
@@ -17,7 +17,7 @@ updated: 2024-01-25T16:47
 A {**function**} is a reusable sequence of statements designed to do a particular job.
 ^1684877088201
 
-In C++, must every executable program must have a function named *main*? #card 
+In C++, must every executable program must have a function named *main*? #anki-card 
 Yes, this is where the program starts execution when its run.
 ^1684877088209
 
@@ -54,7 +54,7 @@ The curly braces and statements in-between are called the **function body**. Th
 -------
 #### **Nested functions are not supported**
 
-Does C++ allow nested functions? #card 
+Does C++ allow nested functions? #anki-card 
 No, unlike some other programming languages, in C++, functions cannot be defined inside other functions. 
 ^1684877088229
 
@@ -63,7 +63,7 @@ No, unlike some other programming languages, in C++, functions cannot be defined
 
 ##### **Question #1**
 
-In a function definition, what are the curly braces and statements in-between called? #card 
+In a function definition, what are the curly braces and statements in-between called? #anki-card 
 The function body.
 ^1684877088232
 
@@ -91,7 +91,7 @@ int main()
     return 0;
 }
 ```
-#card 
+#anki-card 
 ```
 In doA()
 In doB()
@@ -125,7 +125,7 @@ When the return statement is executed, the function exits immediately, and the r
 
 The return value from `main` is sometimes called a **status code** (also sometimes called an **exit code**, or rarely a **return code**), as it is used to indicate whether the program ran successfully or not.
 
-What is the best practice regarding what the `main` function should return? #card 
+What is the best practice regarding what the `main` function should return? #anki-card 
 > [!tip] Best practice
 > Your `main` function should return the value `0` if the program ran normally.
 ^1684889259298
@@ -133,7 +133,7 @@ What is the best practice regarding what the `main` function should return? #car
 A {non-zero} status code is often used to indicate failure (and while this works fine on most operating systems, strictly speaking, it’s not guaranteed to be portable).
 ^1684889259302
 
-In this context, how can we use the `<cstdlib>` library? #card 
+In this context, how can we use the `<cstdlib>` library? #anki-card 
 > [!note] For advanced readers
 > The C++ standard only defines the meaning of 3 status codes: 0, EXIT_SUCCESS, and EXIT_FAILURE. 0 and EXIT_SUCCESS both mean the program executed successfully. EXIT_FAILURE means the program did not execute successfully.
 > 
@@ -165,11 +165,11 @@ The only exception to the rule that a value-returning function must return a val
 -----
 #### **Reusing functions**
 
-What does DRY stand for? #card 
+What does DRY stand for? #anki-card 
 Don’t Repeat Yourself
 ^1684907741780
 
-What is the opposite of DRY? #card 
+What is the opposite of DRY? #anki-card 
 > [!note] As an aside…
 > The opposite of DRY is WET (“Write everything twice”).
 ^1684907741785
@@ -203,7 +203,7 @@ int main()
     return 0;
 }
 ```
-#card 
+#anki-card 
 This program prints the number 16
 ^1684907741789
 
@@ -225,7 +225,7 @@ int main()
     return 0;
 }
 ```
-#card 
+#anki-card 
 This program will not compile. Nested functions are not allowed.
 ^1684907741793
 
@@ -247,7 +247,7 @@ int main()
     return 0;
 }
 ```
-#card
+#anki-card
 This program compiles but does not produce any output. The return values from the functions are not used for anything (and are thus discarded).
 ^1684907741796
 
@@ -266,7 +266,7 @@ int main()
     return 0;
 }
 ```
-#card
+#anki-card
 This program prints 5 twice (on separate lines). Both times when function getNumbers() is called, the value 5 is returned. When the return 5 statement is executed, the function is exited immediately, so the return 7 statement never executes.
 ^1684907741800
 
@@ -283,7 +283,7 @@ int main()
     return 0;
 }
 ```
-#card
+#anki-card
 This program will not compile because the function has an invalid name. We talked about naming rules in lesson [1.7 -- Keywords and naming identifiers](https://www.learncpp.com/cpp-tutorial/keywords-and-naming-identifiers/#rules).
 ^1684907741804
 
@@ -300,7 +300,7 @@ int main()
     return 0;
 }
 ```
-#card
+#anki-card
 This program will compile, but the function will not be called because the function call is missing parentheses.
 ^1684907741808
 
@@ -309,7 +309,7 @@ This program will compile, but the function will not be called because the funct
 
 -----
 #### **Void return values**
-To tell the compiler that a function does not return a value, a return type of {**void**} is used. #card
+To tell the compiler that a function does not return a value, a return type of {**void**} is used. #anki-card
 ^1684907741811 
 For example:
 ```cpp
@@ -331,7 +331,7 @@ int main()
 -----
 #### **Void functions don’t need a return statement**
 
-Can you put a return statement at the end of a function? #card 
+Can you put a return statement at the end of a function? #anki-card 
 A return statement (with no return value) can be used in a void function -- such a statement will cause the function to return to the caller at the point where the return statement is executed. This is the same thing that happens at the end of the function anyway. Consequently, putting an empty return statement at the end of a void function is redundant:
 ```cpp
 #include <iostream>
@@ -350,7 +350,7 @@ int main()
 ^1684907741818
 
 
-What is the best practice regarding putting a return statement at the end of a non-value returning function? #card 
+What is the best practice regarding putting a return statement at the end of a non-value returning function? #anki-card 
 > [!tip] Best practice
 > Do not put a return statement at the end of a non-value returning function.
 ^1684907741822
@@ -358,7 +358,7 @@ What is the best practice regarding putting a return statement at the end of a n
 -----
 #### **Void functions can’t be used in expression that require a value**
 
-What is a critical tip regarding this concept? #card 
+What is a critical tip regarding this concept? #anki-card 
 > [!tip] Tip
 >
 > Some statements require values to be provided, and others don’t.
@@ -424,7 +424,7 @@ int main()
     return 0;
 }
 ```
-#card 
+#anki-card 
 This program prints the letters A and B on separate lines.
 ^1684907741849
 
@@ -442,14 +442,14 @@ int main()
     return 0;
 }
 ```
-#card 
+#anki-card 
 This program does not compile. Function `printA()` returns `void`, which can’t be sent to `std::cout` to be printed. This will produce a compile error.
 ^1684907741857
 
 -----
 ##### **Question #2**
 
-What is an early return, and what is its behavior? #card 
+What is an early return, and what is its behavior? #anki-card 
 An early return is a return statement that occurs before the last line of a function. It causes the function to return to the caller immediately.
 ^1684907741860
 
@@ -512,7 +512,7 @@ int main()
     return 0;
 }
 ```
-#card 
+#anki-card 
 multiply() has a return type of void, meaning it is a non-value returning function. Since the function is trying to return a value (via a return statement), this function will produce a compiler error. The return type should be int.
 
 ### 2.5: [Introduction to local scope](https://www.learncpp.com/cpp-tutorial/introduction-to-local-scope/)

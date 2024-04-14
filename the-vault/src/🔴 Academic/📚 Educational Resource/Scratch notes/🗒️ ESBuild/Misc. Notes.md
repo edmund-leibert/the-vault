@@ -1,7 +1,7 @@
 ---
 title: Misc. Notes
 created: 2023-10-31T16:39
-updated: 2023-12-11T23:34
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -32,7 +32,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ esbuild::Misc. Not
 ﹇<br>
 Are web bundlers classified as frameworks or libraries?
 
-#card 
+#anki-card 
 
 Neither, they classified as tools or technologies.
 
@@ -42,7 +42,7 @@ Neither, they classified as tools or technologies.
 ﹇<br>
 In essence, what does a web bundler do?
 
-#card 
+#anki-card 
 
 Essentially, a web bundler is used to bundle multiple JavaScript files and other assets (e.g., CSS files, images, etc.) in order to reduce the number of network requests and improve performance.
 
@@ -52,7 +52,7 @@ Essentially, a web bundler is used to bundle multiple JavaScript files and other
 ﹇<br>
 Other than **esbuild**, what are some _other_ popular web bundlers? 
 
-#card 
+#anki-card 
 
 - Vite
 - Webpack
@@ -136,7 +136,7 @@ if (prod) {
 // TODO 2: ...
 ```
 
-#card 
+#anki-card 
 
 The PowerShell executes *before* the `context.rebuild()` or `context.watch()` is called.
 
@@ -150,7 +150,7 @@ Explain what the following line does…
 const buildType = process.env.npm_config_buildType || buildTypeDebug 
 ```
 
-#card 
+#anki-card 
 
 Focusing on the right-side of the statement…
 - `process.env` is an object in Node.js that contains all environment variables.
@@ -164,7 +164,7 @@ Focusing on the right-side of the statement…
 ﹇<br>
 What is an object in Node.js that contains all environment variables?
 
-#card-reverse 
+#anki-card-reverse 
 
 `process.env`
 
@@ -174,7 +174,7 @@ What is an object in Node.js that contains all environment variables?
 ﹇<br>
 What prefix does **npm** automatically add to all user environment variables? 
 
-#card 
+#anki-card 
 
 **npm** add the prefix `npm_config_` automatically to all user environment variables.
 
@@ -190,7 +190,7 @@ What does `stdio` mean in the context of the following statement?
 execSync('sudo pwsh ./scripts/install-plugin.ps1', { stdio: 'inherit' });
 ```
 
-#card 
+#anki-card 
 
 The `stdio` option, when used with `execSync`, is for controlling the I/O streams of child processes. `stdio` can be used to specify what should be done with `stdin`, `stdout`, and `stderr` of the child processes.
 - `stdio: pipe` Pipes the child process’s `stdin`, `stdout`, and `stderr` to the parent.
@@ -206,7 +206,7 @@ In the context of `execSync`, specifically the `stdio` option, the {1:inherit} o
 ﹇<br>
 In the context of `execSync`, specifically the `stdio` option, what value should I use so that the the `stderr` and `stdout` form the child process are returned to the parent?
 
-#card 
+#anki-card 
 
 `pipe`
 
@@ -218,7 +218,7 @@ In the context of `execSync`, specifically the `stdio` option, what value should
 ﹇<br>
 In the context of `execSync`, specifically the `stdio` option, when the value is `pipe` can the child process directly read the parent’s `stdin`?
 
-#card 
+#anki-card 
 
 No.
 
@@ -230,7 +230,7 @@ No.
 ﹇<br>
 In the context of `execSync`, specifically the `stdio` option, when the value is `inherit` can the child you write something to `stdin` in the parent process and the child process will be able to read it?
 
-#card 
+#anki-card 
 
 Yes.
 
@@ -243,7 +243,7 @@ Yes.
 ﹇<br>
 Does the `watch` method in ESBuild provide direct functionality to run arbitrary commands or scripts upon file changes?
 
-#card 
+#anki-card 
 
 No, it does it now. If you wish to do so, you must script it yourself or use an outdated library (e.g., [**chokidar**](https://github.com/paulmillr/chokidar]) ).
 - If you desire to script the file watch yourself, you would need to use Node’s built-in filesystem module (i.e., **fs**)
@@ -255,7 +255,7 @@ No, it does it now. If you wish to do so, you must script it yourself or use an 
 ﹇<br>
 What is the downside of trying to implement your own script so you can provide directly functionality to run arbitrarily commands of scripts upon file changes?
 
-#card 
+#anki-card 
 
 You would need to use use Node’s built-in filesystem module (i.e., **fs**)
 - Note though that `fs.watch` can be tricky to get working across different OSes, because the underlying system events it hooks into can behave differently.
@@ -266,7 +266,7 @@ You would need to use use Node’s built-in filesystem module (i.e., **fs**)
 ﹇<br>
 What is one significant downside of ESBuild compared to other bundlers?
 
-#card 
+#anki-card 
 
 As of July 2023, ESBuild does *not* provide direct functionality to run arbitrary commands or scripts upon file changes
 

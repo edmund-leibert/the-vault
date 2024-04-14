@@ -1,7 +1,7 @@
 ---
 title: Containerize your application
 created: 2023-10-31T16:39
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -30,7 +30,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::Docker Docs::Guides::Walkt
 ﹇<br>
 What do you typically need to create when working with containers?
 
-#card 
+#anki-card 
 
 You typically need to create a Dockerfile to define your image and a `compose.yaml` file to define how to run it.
 
@@ -40,7 +40,7 @@ You typically need to create a Dockerfile to define your image and a `compose.ya
 ﹇<br>
 What command does Docker Desktop provide to help create the required files for containerization?
 
-#card 
+#anki-card 
 
 Docker Desktop provides the `docker init` command.
 
@@ -50,7 +50,7 @@ Docker Desktop provides the `docker init` command.
 ﹇<br>
 Where should you run the `docker init` command?
 
-#card 
+#anki-card 
 
 You should run the `docker init` command in a terminal within your project folder.
 
@@ -60,7 +60,7 @@ You should run the `docker init` command in a terminal within your project fol
 ﹇<br>
 What does the `docker init` command do?
 
-#card 
+#anki-card 
 
 The `docker init` command creates all the required files to containerize your application.
 
@@ -70,7 +70,7 @@ The `docker init` command creates all the required files to containerize your 
 ﹇<br>
 What should you get before you start containerizing your application?
 
-#card 
+#anki-card 
 
 You should get Docker Desktop before you start.
 
@@ -88,7 +88,7 @@ You should get Docker Desktop before you start.
 ﹇<br>
 What does the `docker init` command try to do?
 
-#card 
+#anki-card 
 
 The `docker init` command tries its best to do the heavy lifting for you in terms of containerization.
 
@@ -98,7 +98,7 @@ The `docker init` command tries its best to do the heavy lifting for you in te
 ﹇<br>
 What might be required when using the `docker init` command?
 
-#card 
+#anki-card 
 
 Sometimes there’s some assembly required when using the `docker init` command.
 
@@ -108,7 +108,7 @@ Sometimes there’s some assembly required when using the `docker init` comman
 ﹇<br>
 What should you refer to if you need to learn how to update the files created by `docker init`?
 
-#card 
+#anki-card 
 
 You can refer to the [Dockerfile reference⁠](https://docs.docker.com/engine/reference/builder/) and [Compose file reference](https://docs.docker.com/compose/compose-file/) to learn how to update the files created by `docker init`.
 

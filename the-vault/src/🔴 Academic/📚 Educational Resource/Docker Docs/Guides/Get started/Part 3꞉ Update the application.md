@@ -1,7 +1,7 @@
 ---
 title: Part 3꞉ Update the application
 created: 2023-10-31T17:48
-updated: 2024-04-13T22:27
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -31,7 +31,7 @@ cards-deck: "🔴 Academic::📚 Educational Resource::Docker Docs::Guides::Get 
 ﹇<br>
 After updating your source code, what must you always check what you _might_ need to do?
 
-#card 
+#anki-card 
 
 Need to check if you need to build an updated version of your image using the `docker build` command.
 
@@ -46,7 +46,7 @@ docker: Error response from daemon: driver failed programming external connectiv
 (bb242b2ca4d67eba76e79474fb36bb5125708ebdabd7f45c8eaf16caaabde9dd): Bind for 127.0.0.1:3000 failed: port is already allocated.
 ```
 
-#card 
+#anki-card 
 
 The error occurred because you aren't able to start the new container while your old container is still running. The reason is that the old container is already using the host's port 3000 and only one process on the machine (containers included) can listen to a specific port. 
 
@@ -62,7 +62,7 @@ To fix this, you need to remove the old container.
 ﹇<br>
 Via the CLI, what are the general steps to removing the ID of a container?
 
-#card 
+#anki-card 
 
 1. Get the ID of the container by using the `docker ps` command.
     ```bash
@@ -83,7 +83,7 @@ Via the CLI, what are the general steps to removing the ID of a container?
 ﹇<br>
 What must I always remember to do after stopping a container if I wish I rebuild the image that it is based on?
 
-#card 
+#anki-card 
 
 I **must** remember to stop it _and_ remove it completely.
 
@@ -93,7 +93,7 @@ I **must** remember to stop it _and_ remove it completely.
 ﹇<br>
 How can you stop and remove a container in a single command?
 
-#card 
+#anki-card 
 
 > [!Note] 
 > You can stop and remove a container in a single command by adding the `force` flag to the `docker rm` command. For example: `docker rm -f <the-container-id>`

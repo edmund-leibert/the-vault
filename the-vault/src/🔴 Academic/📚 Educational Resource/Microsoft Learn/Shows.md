@@ -1,6 +1,6 @@
 ---
 created: 2023-10-07 15:19
-updated: 2023-11-18T02:44
+updated: 2024-04-14T00:24
 ---
 
 ---
@@ -15,7 +15,7 @@ cards-deck: Default::Computer Science
 
 ## Shows
 
-How to list all packages in project? #card
+How to list all packages in project? #anki-card
 `state activate`
 
 

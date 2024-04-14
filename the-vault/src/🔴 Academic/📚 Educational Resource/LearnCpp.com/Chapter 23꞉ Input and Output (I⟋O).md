@@ -5,7 +5,7 @@ tags:
   - study-note
 cards-deck: Default::Computer Science
 created: 2023-10-27T17:38
-updated: 2024-01-25T16:47
+updated: 2024-04-14T00:24
 ---
 
 # LearnCpp.com
@@ -14,7 +14,7 @@ updated: 2024-01-25T16:47
 
 ### 23.1: [Input and output (I/O) streams](https://www.learncpp.com/cpp-tutorial/input-and-output-io-streams/)
 
-In modern C++, since C++17, which library should one use? #card
+In modern C++, since C++17, which library should one use? #anki-card
 - One should use this standard library... `filesystem`.
 
 ### 23.2: [Input with istream](https://www.learncpp.com/cpp-tutorial/input-with-istream/)
@@ -27,10 +27,10 @@ In modern C++, since C++17, which library should one use? #card
 
 ### 23.6: [Basic file I/O](https://www.learncpp.com/cpp-tutorial/basic-file-io/)
 
-How to read a file, line by line, in C++ using the `fstream` standard library? #card
+How to read a file, line by line, in C++ using the `fstream` standard library? #anki-card
 - redered
 
-What is yellow? #card
+What is yellow? #anki-card
 - Yellowe
 
 ### 23.7: [Random file I/O](https://www.learncpp.com/cpp-tutorial/random-file-io/)

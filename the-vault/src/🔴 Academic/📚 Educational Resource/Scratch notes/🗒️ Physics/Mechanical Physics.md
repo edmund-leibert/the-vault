@@ -1,7 +1,7 @@
 ---
 title: Mechanical Physics
 created: 2023-09-03 08:46
-updated: 2023-11-18T02:44
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -19,7 +19,7 @@ version: v0.1
 ﹇<br>
 What is the formula for work? 
 
-#card 
+#anki-card 
 
 $W = Fs$ constant force in direction of straight-line displacement
 
@@ -31,7 +31,7 @@ $W = Fs$ constant force in direction of straight-line displacement
 ﹇<br>
 What is Newton’s Second Law of Motion?
 
-#card 
+#anki-card 
 
 Newton's second law of motion pertains to the behavior of objects for which all existing forces are not balanced. The second law states that the acceleration of an object is dependent upon two variables - the [net force](http://www.physicsclassroom.com/Class/newtlaws/u2l2d.cfm) acting upon the object and the mass of the object. 
 
@@ -45,7 +45,7 @@ The acceleration of an object depends directly upon the net force acting upon th
 ﹇<br>
 Are components vectors?
 
-#card 
+#anki-card 
 
 **No**. Components are not considered vectors.
 
@@ -59,7 +59,7 @@ Are components vectors?
 ﹇<br>
 Assume that you are tasked with finding the magnitude of some arbitrary force $\vec{\boldsymbol{F}}$. Is it possible to find this value if you are only given $F_x$ and the angle $\theta$ measured from the $x$-axis to the vector?
 
-#card 
+#anki-card 
 
 Yes, it is possible.
 
@@ -85,7 +85,7 @@ A cable holds a $1130\:\text{kg}$ car in place on a ramp. The cable makes an ang
 (b) Find the tension in the cable<br>
 (c) How hard does the surface of the ramp push on the car?
 
-#card 
+#anki-card 
 
 
 `\begin{proof}[**Solution for (a)**]`

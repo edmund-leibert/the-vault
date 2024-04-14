@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2023-09-12 03:27
-updated: 2024-02-10T01:18
+updated: 2024-04-14T00:24
 authors:
   - Edmund Leibert III
 tags:
@@ -34,7 +34,7 @@ banner_y: 0
 ﹇<br>
 What languages does CMake support? 
 
-#card 
+#anki-card 
 
 Supported languages are:
 - C, CXX (i.e. C++)
@@ -59,7 +59,7 @@ Supported languages are:
 ﹇<br>
 What are some potential ['cmake clean' commands to clear up CMake output](https://stackoverflow.com/questions/9680420/looking-for-a-cmake-clean-command-to-clear-up-cmake-output)?
 
-#card
+#anki-card
 
 CMake 3.X offers a 'clean' target:
 ```cmake
@@ -79,7 +79,7 @@ From the CMake docs for 3.0.2:
 ﹇<br>
 In CMake, how can you configure the compiler flags?
 
-#card 
+#anki-card 
 
 In CMake, you can configure the compiler flags in several ways:
 
@@ -123,7 +123,7 @@ Would it be correct to say:
 
 > the naming convention<u>s</u> of a **CMake** project name _are_
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/cmake 
+#anki-card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/cmake 
 
 Both phrases can be correct depending on the context.
 
@@ -142,7 +142,7 @@ However, if you’re referring to multiple rules or standards that apply to the 
 ﹇<br>
 As of February 2024, what are the proper naming convention for **CMake** projects?
 
-#card 
+#anki-card 
 
 The naming convention for CMake projects is not strictly defined, but there are some common practices:
 
