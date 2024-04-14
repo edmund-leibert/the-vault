@@ -322,6 +322,48 @@
           "b": 0
         },
         "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "card;\ncard-reverse",
+        "color": {
+          "r": 69,
+          "g": 164,
+          "b": 229
+        },
+        "background_color": {
+          "r": 71,
+          "g": 71,
+          "b": 71
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/runtime/node-js",
+        "color": {
+          "r": 134,
+          "g": 172,
+          "b": 62
+        },
+        "background_color": {
+          "r": 64,
+          "g": 64,
+          "b": 64
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "🔴-academic/📚-educational-resource/discipline/computer-science/technology/obsidian",
+        "color": {
+          "r": 201,
+          "g": 179,
+          "b": 223
+        },
+        "background_color": {
+          "r": 82,
+          "g": 49,
+          "b": 109
+        },
+        "luminance_offset": 0.15
       }
     ],
     "EnableMultipleTags": true,

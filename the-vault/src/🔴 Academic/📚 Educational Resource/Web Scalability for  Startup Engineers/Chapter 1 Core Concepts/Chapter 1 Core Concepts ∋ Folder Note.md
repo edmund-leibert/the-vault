@@ -1,7 +1,7 @@
 ---
 title: Chapter 1 Core Concepts ∋ Table of Contents
 created: 2024-04-12T05:58
-updated: 2024-04-13T04:24
+updated: 2024-04-13T17:38
 authors:
   - Edmund Leibert III
 tags:
@@ -9,7 +9,7 @@ tags:
   - 🔴-academic/📚-educational-resource/format/book
   - 🔴-academic/📚-educational-resource/discipline/computer-science
   - study-note
-cards-deck: 🔴 Academic::📚 Educational resource::Web Scalability for Startup Engineers::Chapter 1 Core Concepts::Chapter 1 Core Concepts ∋ Table of Contents
+cards-deck: 🔴 Academic::📚 Educational resource::Web Scalability for Startup Engineers::Chapter 1 Core Concepts::Chapter 1 Core Concepts ∋ Folder Note
 banner: 
 banner_y: 0
 ---
@@ -36,8 +36,8 @@ banner_y: 0
 
 ---
 
-﹇<br>
-:EiZotero: <ins>**Zotero Annotation**</ins><br>Page 2 • <span style="color: gold">:BoBxHighlight: Important point</span>
+<span style="color: gold">﹇</span><br>
+:EiZotero: **Zotero Annotation**<br>Page 2 • <span style="color: gold">:BoBxHighlight: Important point</span>
 ^XEH6LP28aKJZ5LZHZp23
 
 :TiSquareLetterA: Highlight:
@@ -48,10 +48,10 @@ banner_y: 0
 :FarComment: Comment:
 
 There are **three** main pillars of **scalability**.
-<br><br>﹈<br>
+<br><br><span style="color: gold">﹈</span><br>
 
 ﹇<br>
-As of Apr. 13, 2024 03:45:39 AM, how many “pillars” does the concept of scalability consist of?
+As of Apr. 13, 2024 03:45:39 AM, how many **pillars** does the concept of **scalability** consist of?
 
 #card 
 
@@ -73,8 +73,8 @@ As of Apr. 12, 2024 07:38:46 AM, what are the three main pillars of **scalabilit
 ⌂
 <br>﹈<br>^1712935563039
 
-﹇<br>
-:EiZotero: <ins>**Zotero Annotation**</ins><br>Page 2 • <span style="color: gray">:BoBxHighlight: Action (thing to do)</span>
+<span style="color: gray">﹇</span><br>
+:EiZotero: **Zotero Annotation**<br>Page 2 • <span style="color: gray">:BoBxHighlight: Action (thing to do)</span>
  ^D79DNYNYaKJZ5LZHZp23
 
 :TiSquareLetterA: Highlight:
@@ -85,7 +85,7 @@ As of Apr. 12, 2024 07:38:46 AM, what are the three main pillars of **scalabilit
 :FarComment: Comment:
 
 Need to revisit this chapter after reading this book.
-<br><br>﹈<br>
+<br><br><span style="color: gray">﹈</span><br>
 
 ---
 

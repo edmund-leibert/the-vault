@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2024-01-28T13:45
-updated: 2024-04-13T04:02
+updated: 2024-04-13T17:48
 authors:
   - Edmund Leibert III
 tags:
@@ -19,7 +19,7 @@ banner_y:
 ---
 
 > [!NOTE] Note
-> These notes pertain to **miscellaneous** topics of Obsidian.
+> These notes pertain to **miscellaneous** topics of using [Obsidian](https://obsidian.md/). [@ObsidianSharpenYour]
 >  
 > These notes are structured in a Q&A format, making it easy to follow and learn. Corresponding Anki flashcards are available, enabling efficient revision and reinforcement of the concepts. [@ejsmontWebScalabilityStartup2015]
 
@@ -42,7 +42,7 @@ When building an Obsidian plugin, what command should you run to install depende
 <br>﹈<br>^1700212809979
 
 ﹇<br>
-In the context of *most* Obsidian plugins, when building a plugin, what command should you run to start compilation in *watch* mode? 
+In the context of *most* Obsidian plugins, what command should you run to start compilation in *watch* mode? 
 
 #card-reverse  
 
@@ -66,7 +66,7 @@ How to improve the code quality of a plugin with ESLint?
 
 #card
 
-[ESLint](https://eslint.org/) is a tool that analyzes your code to quickly find problems. You can run ESLint against your plugin to find common bugs and ways to improve your code.
+[ESLint](https://eslint.org/) is a tool that analyzes your code to quickly find problems. You can run ESLint against your plugin to find common bugs and ways to improve your code. [@FindFixProblems]
 
 To use ESLint with this project, make sure to install ESLint from the terminal: `npm install -g eslint`
 
@@ -196,7 +196,7 @@ As of Apr. 12, 2024 07:53:37 AM, generally, what does each highlighting color si
 #card 
 
 - 🟨 **Yellow**, or **Gold** = <span style="color: gold">:BoBxHighlight: Important point</span>
-- 🟪 **Purple**, **Pink**, or **Magenta** = <span style="color: magenta">:BoBxHighlight: Vocabulary</span>
+- 🟪 **Purple**, **Pink**, or **Magenta** = <span style="color: purple">:BoBxHighlight: Vocabulary</span>
 - 🟩 **Green** = <span style="color: green">:BoBxHighlight: Name (people), date, or location</span>
 - 🟦 **Blue** = <span style="color: blue">:BoBxHighlight: Theory, hypotheses, etc.</span>
 - 🟧 **Orange** = <span style="color: orange">:BoBxHighlight: Point of view</span>

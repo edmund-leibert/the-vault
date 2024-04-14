@@ -995,7 +995,6 @@
     "the-vault/src/🔴 Academic/📚 Educational resource/sortspec.md": "057c774774efc484c2db091c17b22f0e6fccb22107d7a8a347c9d002271b017f",
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/sortspec.md": "1de4eba4ba13097e3bbd18704637a0261e43b6939096ede2243b7af93c2acd24",
     "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md": "2fc392ec26f51a667f6a6bda28be963a44ffe78c68816791263de06e1b558d9f",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Obsidian/Miscellaneous Notes.md": "84051b243fcc824e3feba75b826c5d540a532ee7ebe3ba9838d72f04e1300a5e",
     "kartik-misc/terror-interview-problem.md": "95aaf58c7a86518c8cdb438671bf5db688ffb9711d8ba1329f9c4cc66ad4cd16",
     "the-vault/src/🔴 Academic/📚 Educational resource/Anki/Anki ∋ Folder Note.md": "fb668997c50ba09cfcc90d78edb2c99fb29eb05798046efb5d2dc0aff9855de8",
     "the-vault/src/🔴 Academic/📚 Educational resource/Docker Docs/Docker Docs ∋ Folder Note.md": "de1417b834d91acea0d00631371fa5b16f890f122298a6f561d7dc2695c20e6c",
@@ -1003,7 +1002,7 @@
     "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/LeetCode ∋ Folder Note.md": "62e622deccc6ef1b85aa4e08a967deca42fda21b8f1cdd784be78483305f2516",
     "the-vault/src/🔴 Academic/📚 Educational resource/PragmatiCoders/PragmatiCoders ∋ Folder Note.md": "2470eb462baf8d4bcabd0f22da084ee6312782a21f2cb564347e4baa870d3064",
     "the-vault/src/🔴 Academic/📚 Educational resource/Structy/Structy ∋ Folder Note.md": "603d6fe8fc581a3cbfd4f7f5fb3f3b393b4503ee4092c19483d1ec73a18cbcde",
-    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md": "b9c2f1bb9d492f62b462352b350f80230acaa1622ca0c5178f0195340e3f55e7",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md": "579b1c62e10e0a9df3c2acb9a9275adaf99ff7d5d99f4165e05a5e4bcdbba4fc",
     "the-vault/src/🔴 Academic/📚 Educational resource/Discord/DE Grind Crew/DE Grind Crew ∋ Folder Note.md": "1d53239fcad0ebc886e7aa275df28b6c9d3e7472089ac7b516a3b7f7ffe77e74",
     "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/Explore ∋ Folder Note.md": "17f531d33e6c4eaac28f4aea850ca8a3fdafa53e431c7389099ccd5163d11c5d",
     "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Anaconda/🗒️ Anaconda ∋ Folder Note.md": "70d08d6b9262269ec065feaa585df209bb3dbd8019f6020fe4d3ecb18137a584",
@@ -1031,6 +1030,12 @@
     "the-vault/src/🔴 Academic/📚 Educational resource/Docker Docs/Guides/Get started/Get started ∋ Folder Note.md": "017bba7e4be67ddba4617c2c13cb08b8d5b186fa68a73d11ae5b4ed75b68511b",
     "the-vault/src/🔴 Academic/📚 Educational resource/Docker Docs/Guides/Walkthroughs/Walkthroughs ∋ Folder Note.md": "b85f4bd6e8adadacdcc5fe7f5d661e68d2df324ebf90dae333094f1f736e6a01",
     "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/The LeetCode Beginner's Guide ∋ Folder Note.md": "c27b5d4b4dbe6040f86fdd38a722f83638e72cb19199a7c963830c833ba60689",
-    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Solving Your First Problem/Solving Your First Problem ∋ Folder Note.md": "7137a6879e0d9d995b5aafe422c92a250dcb06b24435e51c34aa617f7ddaad5e"
+    "the-vault/src/🔴 Academic/📚 Educational resource/LeetCode/Explore/The LeetCode Beginner's Guide/Solving Your First Problem/Solving Your First Problem ∋ Folder Note.md": "7137a6879e0d9d995b5aafe422c92a250dcb06b24435e51c34aa617f7ddaad5e",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ .NET/Miscellaneous Notes.md": "7a6a422f03412c115ee2731273cfcd6194b4f1240a65dd1e615b98f0d57dc8d9",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Obsidian/sortspec.md": "2b330566cfc41a4b56e56f74975752a28d8df973f39f808c21a9efc14a07ade6",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Obsidian/🗒️ Obsidian ∋ Folder Note.md": "dde96f48365ce71db371902756d4f40a94e11024c7a33093f5dcab6cd1b714a9",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Obsidian/Personal Style Guide.md": "72defddc1b45b9dcf62c1b298b13b32932bac814e264ac58fb6aa6073454dffd",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Zotero/Miscellaneous Notes.md": "8e199f5bcf09ab95c12df461d3506c8332cf49961fbe5af0cbd85a5a5d6e68f1",
+    "the-vault/src/🔴 Academic/📚 Educational resource/Scratch notes/🗒️ Obsidian/Miscellaneous Notes.md": "67a8482da8dc20e549d70ed01b897e3036eda30c679f43e994032efb530398db"
   }
 }

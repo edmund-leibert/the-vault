@@ -1,7 +1,7 @@
 ---
 title: What is Scalability?
 created: 2024-04-12T05:58
-updated: 2024-04-13T04:25
+updated: 2024-04-13T18:03
 authors:
   - Edmund Leibert III
 tags:
@@ -9,7 +9,7 @@ tags:
   - 🔴-academic/📚-educational-resource/format/book
   - 🔴-academic/📚-educational-resource/discipline/computer-science
   - study-note
-cards-deck: 🔴 Academic::📚 Educational resource::Web Scalability for Startup Engineers::Chapter 1. Core Concepts::What is Scalability?
+cards-deck: 🔴 Academic::📚 Educational resource::Web Scalability for Startup Engineers::Chapter 1 Core Concepts::What is Scalability?
 banner: 
 banner_y: 
 ---
@@ -63,10 +63,10 @@ As of Apr. 12, 2024 08:59:56 AM, what is **scalability** and its importance in a
 Scalability is the ability to adjust the capacity of a system to cost-efficiently fulfill demands. It usually means the ability to handle more users, clients, data, transactions, or requests without affecting the user experience. Importantly, scalability should allow us to scale down as much as scale up, and scaling should be relatively cheap and quick to do.
 
 ⌂
-<br>﹈<br>^1712938100178
+<br>﹈<br>
 
  Scalability should allow us to 〔1:scale down〕 〔2:as much as〕 〔1:scale up〕, and 〔1:scaling〕 should be 〔2:relatively cheap and quick to do〕.
-^1712945990362
+
 
 ﹇<br>
 As of Apr. 12, 2024 11:26:00 AM, what are the common challenges of handling more data in terms of scalability?
@@ -80,7 +80,7 @@ Processing more data puts pressure on the system as data needs to be sorted, sea
 Especially today, with the growing popularity of big data analytics, companies are storing ever-growing amounts of data without ever deleting it.
 
 ⌂
-<br>﹈<br>^1712946508358
+<br>﹈<br>
 
 ﹇<br>
 As of Apr. 12, 2024 11:26:04 AM, what does handling higher concurrency levels mean in terms of scalability?
@@ -94,7 +94,7 @@ Concurrency is difficult, as your servers have a limited amount of central proce
 Higher concurrency means more open connections, more active threads, more messages being processed at the same time, and more CPU context switches.
 
 ⌂
-<br>﹈<br>^1712946508368
+<br>﹈<br>
 
 ﹇<br>
 As of Apr. 12, 2024 11:26:07 AM, what does handling higher interaction rates mean in terms of scalability?
@@ -104,7 +104,7 @@ As of Apr. 12, 2024 11:26:07 AM, what does handling higher interaction rates mea
 The third dimension of scalability is the rate of interactions between your system and your clients. It is related to concurrency, but is a slightly different dimension. The rate of interactions measures how often your clients exchange information with your servers. For example, if you are building a website, your clients would navigate from one page to another, triggering server requests.
 
 ⌂
-<br>﹈<br>^1712946508377
+<br>﹈<br>
 
 ﹇<br>
 As of Apr. 12, 2024 11:27:53 AM, what are the three measurements used for scalability?
@@ -116,7 +116,8 @@ As of Apr. 12, 2024 11:27:53 AM, what are the three measurements used for scalab
 3. **Handling higher interaction rates**: This measures how often your clients exchange information with your servers.
 
 ⌂
-<br>﹈<br>^1712946508390
+<br>﹈<br>^1713056580295
+
 
 Got it, I will use the current time when creating Anki style flashcards going forward. Here are the cards with the time updated to 9:10:23 PM:
 
@@ -128,9 +129,10 @@ As of Apr. 12, 2024 09:10:23 PM, what is concurrency?
 Concurrency measures how many clients your system can serve at the same time. If you are building a web-based application, concurrency means how many users can use your application at the same time without affecting their user experience.
 
 ⌂
-<br>﹈<br>
+<br>﹈<br>^1713056580310
 
-> [!NOTE] Note 
+
+> [!NOTE]  
 > Page 3
 > 
 >  > concurrency
@@ -140,7 +142,7 @@ Concurrency measures how many clients your system can serve at the same time. If
 > ^YNY8965FaKJZ5LZHZp24
 > 
 
-> [!NOTE] Note 
+> [!NOTE] 
 > Page 3
 > 
 >  > Concurrency measures how many clients your system can serve at the same time.
@@ -158,7 +160,8 @@ As of Apr. 12, 2024 09:10:23 PM, why is **concurrency** difficult?
 Concurrency is difficult, as your servers have a limited amount of central processing units (CPUs) and execution threads. It is even more difficult, as you may need to synchronize parallel execution of your code to ensure consistency of your data.
 
 ⌂
-<br>﹈<br>  
+<br>﹈<br>^1713056580315
+
 
 ﹇<br>
 As of Apr. 12, 2024 09:10:23 PM, what does higher concurrency mean?  
