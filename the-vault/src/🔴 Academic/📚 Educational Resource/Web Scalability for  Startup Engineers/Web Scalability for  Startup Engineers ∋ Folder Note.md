@@ -1,37 +1,37 @@
 ---
-title: Web Scalability for Startup Engineers ∋ Table of Contents
+title: Web Scalability for Startup Engineers ∋ Folder Note
 created: 2024-04-12T04:06
-updated: 2024-04-13T04:16
+updated: 2024-04-13T04:44
 authors:
   - Edmund Leibert III
 tags:
-  - 🔴-academic/📚-educational-resource/name/web-scalability-for-startup-engineers/🔖/web-scalability-for-startup-engineers-∋-table-of-contents
+  - 🔴-academic/📚-educational-resource/name/web-scalability-for-startup-engineers/🔖/web-scalability-for-startup-engineers-∋-folder-note
   - 🔴-academic/📚-educational-resource/format/book
   - 🔴-academic/📚-educational-resource/discipline/computer-science
   - study-note
-cards-deck: 🔴 Academic::📚 Educational resource::Web Scalability for Startup Engineers::Web Scalability for Startup Engineers ∋ Table of Contents
+cards-deck: 🔴 Academic::📚 Educational resource::Web Scalability for Startup Engineers::Web Scalability for Startup Engineers ∋ Folder Note
 banner: "![[https://m.media-amazon.com/images/I/51aDZ1x51xL._AC_UF1000,1000_QL80_.jpg]]"
 banner_y: 0
 ---
 
-# Web Scalability for Starup Engineers ∋ Table of Contents 
+# Web Scalability for Starup Engineers ∋ Folder Note
 
 ---
 
-> [!NOTE] Note
-> These _*Web Scalability for Startup Engineers*_ notes reveal content on how to successfully handle web application scalability challenges to meet increasing product and traffic demands. It provides a holistic view of infrastructure and architecture of a scalable web application, and describes how infrastructure and software architecture work together to support a scalable environment.
+> [!NOTE]
+> These _**Web Scalability for Startup Engineers**_ notes reveal content on how to successfully handle web application scalability challenges to meet increasing product and traffic demands. It provides a holistic view of infrastructure and architecture of a scalable web application, and describes how infrastructure and software architecture work together to support a scalable environment.
 >  
 > These notes are structured in a Q&A format, making it easy to follow and learn. Corresponding Anki flashcards are available, enabling efficient revision and reinforcement of the concepts.
 
 ---
 
-> [!NOTE] Note
+> [!NOTE]
 > **Previous Notes**:
 > 
 
 ---
 
-> [!NOTE] Note
+> [!NOTE]
 > 
 > **<ins>Table of Contents</ins>**
 > 
@@ -58,14 +58,16 @@ banner_y: 0
 
 ---
 
-## :EiZoteroItem: Bibliography
-
-\[1\]
-A. Ejsmont, _Web Scalability for Startup Engineers_. New York: McGraw-Hill Education, 2015.
+> [!NOTE]
+> **<ins>Bibliography</ins>**
+> 
+>\[1\]
+> A. Ejsmont, _Web Scalability for Startup Engineers_. New York: McGraw-Hill Education, 2015.
+> 
 
 ---
 
-> [!NOTE] Note
+> [!NOTE]
 > **Next Notes**:
 > - [Chapter 1 Core Concepts ∋ Table of Contents](obsidian://open?vault=the-vault&file=the-vault%2Fsrc%2F%F0%9F%94%B4%20Academic%2F%F0%9F%93%9A%20Educational%20resource%2FWeb%20Scalability%20for%20%20Startup%20Engineers%2FChapter%201%20Core%20Concepts%2FChapter%201%20Core%20Concepts%20%E2%88%8B%20Table%20of%20Contents)
 

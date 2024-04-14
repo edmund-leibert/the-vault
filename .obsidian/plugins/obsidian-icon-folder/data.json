@@ -97,7 +97,7 @@
       },
       {
         "rule": ".* ∋ Folder Note",
-        "icon": "FasListOl",
+        "icon": "LiListTree",
         "for": "files",
         "order": 15,
         "useFilePath": true
@@ -107,7 +107,7 @@
         "icon": "RiFolderFill",
         "for": "folders",
         "order": 15,
-        "useFilePath": true
+        "useFilePath": false
       },
       {
         "rule": ".*\\.md",

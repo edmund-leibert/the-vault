@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2024-01-28T13:45
-updated: 2024-04-13T02:49
+updated: 2024-04-13T04:02
 authors:
   - Edmund Leibert III
 tags:
@@ -195,13 +195,13 @@ As of Apr. 12, 2024 07:53:37 AM, generally, what does each highlighting color si
 
 #card 
 
-- 🟨 **Yellow** = Important points
-- 🟪 **Purple**, **Pink**, or **Magenta** = Vocabulary
-- 🟩 **Green** = Names (People), dates, or places
-- 🟦 **Blue** = Theories and hypotheses
-- 🟧 **Orange** = Point of view
-- 🟥 **Red** = Critical (very rare)
-- 🟫 **Brown** or **Gray** = Actions (things to do)
+- 🟨 **Yellow**, or **Gold** = <span style="color: gold">:BoBxHighlight: Important point</span>
+- 🟪 **Purple**, **Pink**, or **Magenta** = <span style="color: magenta">:BoBxHighlight: Vocabulary</span>
+- 🟩 **Green** = <span style="color: green">:BoBxHighlight: Name (people), date, or location</span>
+- 🟦 **Blue** = <span style="color: blue">:BoBxHighlight: Theory, hypotheses, etc.</span>
+- 🟧 **Orange** = <span style="color: orange">:BoBxHighlight: Point of view</span>
+- 🟥 **Red** = <span style="color: red">:BoBxHighlight: Critical (very rare)</span>
+- 🟫 **Gray** or **Brown** = <span style="color: gray">:BoBxHighlight: Action (thing to do)</span>
 
 ⌂
 <br>﹈<br>
