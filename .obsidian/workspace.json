@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resource/Scratch notes/🗒️ Spark Optimization/Dynamic Partition Pruning.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resource/Scratch notes/🗒️ Obsidian/Personal Style Guide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resource/Scratch notes/🗒️ Spark Optimization/Dynamic Partition Pruning.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resource/Scratch notes/🗒️ Obsidian/Personal Style Guide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +189,7 @@
             "state": {
               "type": "zotero-annotation-view",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resource/Scratch notes/🗒️ Spark Optimization/Dynamic Partition Pruning.md",
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resource/Scratch notes/🗒️ Obsidian/Personal Style Guide.md",
                 "itemId": 331,
                 "attachmentId": 334,
                 "follow": null
@@ -202,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resource/Scratch notes/🗒️ Spark Optimization/Dynamic Partition Pruning.md"
+                "file": "the-vault/src/🔴 Academic/📚 Educational Resource/Scratch notes/🗒️ Obsidian/Personal Style Guide.md"
               }
             }
           },
@@ -214,13 +214,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 453.5,
-    "collapsed": true
+    "width": 453.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -246,8 +244,7 @@
       "cloze:Toggle all clozes": false,
       "obsidian-day-planner:Timeline": false,
       "reference-map:Reference Map": false,
-      "flashcards-obsidian:Generate flashcards": false,
-      "obsidian-trash-explorer:Open trash explorer": false
+      "flashcards-obsidian:Generate flashcards": false
     }
   },
   "active": "3b22159245c2a393",
