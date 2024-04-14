@@ -1,7 +1,7 @@
 ---
 title: Structy ∋ Table of Contents
 created: 2023-09-03 08:46
-updated: 2024-04-13T04:25
+updated: 2024-04-13T22:28
 authors:
   - Edmund Leibert III
 tags:
@@ -58,13 +58,13 @@ Structy is a guided course that builds your algorithm knowledge efficiently. [@z
 ## :FasListOl: Table of Contents
 
 - **Structy**
-	- [Structy ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/Structy%20∋%20Folder%20Note.md)
+	- [Structy ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Structy/Structy%20∋%20Folder%20Note.md)
 	- **0. Introduction**
-		- [0. Introduction ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/0.%20Introduction%20∋%20Folder%20Note.md)
-		- [001. code workspace tour](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/001.%20code%20workspace%20tour.md)
-		- [002. hey programmer](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/002.%20hey%20programmer.md)
-		- [003. max-value](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/003.%20max-value.md)
-		- [004. is prime](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/004.%20is%20prime.md)
+		- [0. Introduction ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Structy/0.%20Introduction/0.%20Introduction%20∋%20Folder%20Note.md)
+		- [001. code workspace tour](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Structy/0.%20Introduction/001.%20code%20workspace%20tour.md)
+		- [002. hey programmer](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Structy/0.%20Introduction/002.%20hey%20programmer.md)
+		- [003. max-value](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Structy/0.%20Introduction/003.%20max-value.md)
+		- [004. is prime](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Structy/0.%20Introduction/004.%20is%20prime.md)
 	- **1. Array and String**
 	- **2. Array and String**
 	- **3. Binary Tree**
@@ -85,7 +85,7 @@ A. Zabian, “Structy - Learn data structures and algorithms, efficiently.,” _
 
 > [!info]+
 > **Next Note(s)**:
-> - [0. Introduction ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/0.%20Introduction%20∋%20Folder%20Note.md)
+> - [0. Introduction ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Structy/0.%20Introduction/0.%20Introduction%20∋%20Folder%20Note.md)
 
 ---
 

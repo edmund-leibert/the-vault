@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2023-09-03 08:46
-updated: 2024-02-07T19:41
+updated: 2024-04-13T19:47
 authors:
   - Edmund Leibert III
 tags:
@@ -45,7 +45,7 @@ In brief, what is Microsoft’s **.NET**?
 ﹇<br>
 What is **DocTo**?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/technologies/docto
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/docto
 
 **DocTo** is a simple utility for converting a Microsoft Word Document ‘.doc’ and Microsoft Excel ‘.xls’ files to any other supported format such as `.txt`, `.csv`, `.rtf`, and `.pdf`. [@tobyallenDocToXLSTo]
 
@@ -63,7 +63,7 @@ It additionally has the following features:
 ﹇<br>
 Using the [DocTo](https://github.com/tobya/DocTo) library, how can I export a `.docx` to a `.pdf` in the command line [@tobyallenDocToXLSTo]?
 
-#card #🔴-academic/📚-educational-resource/discipline/computer-science/technologies/docto
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/technology/docto
 
 ```pwsh
 docto -f C:\Directory\MyFile.doc -O "C:\Output Directory\MyTextFile.pdf" -T wdFormatPDF

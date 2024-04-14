@@ -1,7 +1,7 @@
 ---
 title: Access a local folder
 created: 2023-11-19T12:44
-updated: 2024-03-27T00:31
+updated: 2024-04-13T22:27
 authors:
   - Edmund Leibert III
 tags:
@@ -209,7 +209,7 @@ For example, in a Node.js project, it's not recommended to sync the `node_modul
 ## [Step 4: Develop the application](https://docs.docker.com/guides/walkthroughs/access-local-folder/#step-4-develop-the-application)
 
 ﹇<br>
-In comparing with the previous walkthrough [Persist data between containers](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Docker%20Docs/Guides/Walkthroughs/Persist%20data%20between%20containers.md), what approach to development is better overall?
+In comparing with the previous walkthrough [Persist data between containers](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Docker%20Docs/Guides/Walkthroughs/Persist%20data%20between%20containers.md), what approach to development is better overall?
 
 #card 
 

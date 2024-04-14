@@ -1,7 +1,7 @@
 ---
 title: 🗒️ DE Grind Crew ∋ Table of Contents
 created: 2023-10-31T16:39
-updated: 2024-04-13T04:25
+updated: 2024-04-13T22:27
 authors:
   - Edmund Leibert III
 tags:
@@ -31,10 +31,10 @@ cards-deck: 🔴 Academic::📚 Educational Resource::Discord::DE Grind Crew::DE
 ## :FasListOl: Table of Contents
 
 - **DE Grind Crew**
-	- [DE Grind Crew ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Discord/DE%20Grind%20Crew/DE%20Grind%20Crew%20∋%20Folder%20Note.md)
+	- [DE Grind Crew ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Discord/DE%20Grind%20Crew/DE%20Grind%20Crew%20∋%20Folder%20Note.md)
 	- **💼 Vocational**
-		- [💼 Vocational ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Discord/DE%20Grind%20Crew/💼%20Vocational/💼%20Vocational%20∋%20Folder%20Note.md)
-		- [📒interview-questions](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Discord/DE%20Grind%20Crew/💼%20Vocational/📒interview-questions.md)
+		- [💼 Vocational ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Discord/DE%20Grind%20Crew/💼%20Vocational/💼%20Vocational%20∋%20Folder%20Note.md)
+		- [📒interview-questions](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Discord/DE%20Grind%20Crew/💼%20Vocational/📒interview-questions.md)
 
 ---
 

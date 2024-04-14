@@ -1,7 +1,7 @@
 ---
 title: Part 3꞉ Update the application
 created: 2023-10-31T17:48
-updated: 2024-03-27T00:31
+updated: 2024-04-13T22:27
 authors:
   - Edmund Leibert III
 tags:
@@ -22,7 +22,7 @@ cards-deck: "🔴 Academic::📚 Educational Resource::Docker Docs::Guides::Get 
 
 > [!INFO]+ 
 > **Previous Note(s)**:
-> - [Part 2꞉ Containerize an application](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Docker%20Docs/Guides/Get%20started/Part%202꞉%20Containerize%20an%20application.md)
+> - [Part 2꞉ Containerize an application](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Docker%20Docs/Guides/Get%20started/Part%202꞉%20Containerize%20an%20application.md)
 
 ---
 

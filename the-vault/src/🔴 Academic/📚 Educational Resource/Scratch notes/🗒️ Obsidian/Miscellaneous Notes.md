@@ -1,7 +1,7 @@
 ---
 title: Miscellaneous Notes
 created: 2024-01-28T13:45
-updated: 2024-04-13T17:48
+updated: 2024-04-13T22:06
 authors:
   - Edmund Leibert III
 tags:
@@ -9,9 +9,10 @@ tags:
   - 🔴-academic/📚-educational-resource/format/book
   - 🔴-academic/📚-educational-resource/discipline/computer-science
   - study-note
-cards-deck: 🔴 Academic::📚 Educational resource::Scratch notes::🗒️ Obsidian::Miscellaneous Notes
+cards-deck: 🔴 Academic::📚 Educational Resource::Scratch notes::🗒️ Obsidian::Miscellaneous Notes
 banner: 
 banner_y: 
+icon: TiNotes
 ---
 
 # Miscellaneous Notes
@@ -19,22 +20,22 @@ banner_y:
 ---
 
 > [!NOTE] Note
-> These notes pertain to **miscellaneous** topics of using [Obsidian](https://obsidian.md/). [@ObsidianSharpenYour]
+> This page contains **miscellaneous** *scratch notes* pertaining to [Obsidian](https://obsidian.md/). [@shidaliObsidianSharpenYour]
 >  
 > These notes are structured in a Q&A format, making it easy to follow and learn. Corresponding Anki flashcards are available, enabling efficient revision and reinforcement of the concepts. [@ejsmontWebScalabilityStartup2015]
 
 ---
 
 > [!NOTE] Note
-> **Previous Notes**:
+> :BoBxLeftArrowCircle: **Previous Notes**:
 > 
 
 ---
 
 ﹇<br>
-When building an Obsidian plugin, what command should you run to install dependencies?
+When building an **Obsidian** plugin, what command should you run to install dependencies?
 
-#card-reverse 
+#card-reverse #🔴-academic/📚-educational-resource/discipline/computer-science/runtime/node-js
 
 `npm i`
 
@@ -44,7 +45,7 @@ When building an Obsidian plugin, what command should you run to install depende
 ﹇<br>
 In the context of *most* Obsidian plugins, what command should you run to start compilation in *watch* mode? 
 
-#card-reverse  
+#card-reverse #🔴-academic/📚-educational-resource/discipline/computer-science/runtime/node-js
 
 `npm run dev`
 
@@ -54,7 +55,7 @@ In the context of *most* Obsidian plugins, what command should you run to start 
 ﹇<br>
 Generally, in the context of Obsidian plugin development, how can one manually install a plugin?
 
-#card-reverse 
+#card-reverse #🔴-academic/📚-educational-resource/discipline/computer-science/runtime/node-js
 
 Simply copy over the `main.js`, `styles.css`, and `manifest.json` files of the plugin to your vault’s `.obsidian/plugins/your-plugin-id/` directory.
 
@@ -64,7 +65,7 @@ Simply copy over the `main.js`, `styles.css`, and `manifest.json` files of th
 ﹇<br>
 How to improve the code quality of a plugin with ESLint? 
 
-#card
+#card #🔴-academic/📚-educational-resource/discipline/computer-science/runtime/node-js
 
 [ESLint](https://eslint.org/) is a tool that analyzes your code to quickly find problems. You can run ESLint against your plugin to find common bugs and ways to improve your code. [@FindFixProblems]
 
@@ -168,7 +169,7 @@ What symbol should one use as an alternate to _parentheses_ (i.e., `(` or `)`) f
 One should use the _decorative brackets_ variants of each: `❨` and `❩` [@xahleeUnicodeBracketsQuotes2010]
 
 ⌂
-<br>﹈<br>
+<br>﹈<br>^1713066923592
 
 
 ﹇<br>
@@ -191,7 +192,7 @@ Remember, the most important thing is to be consistent in your formatting throug
 <br>﹈<br>^1702108324016
 
 ﹇<br>
-As of Apr. 12, 2024 07:53:37 AM, generally, what does each highlighting color signify?
+As of Apr. 12, 2024 07:53:37 AM, when taking notes, what does each highlighting color signify?
 
 #card 
 
@@ -204,30 +205,9 @@ As of Apr. 12, 2024 07:53:37 AM, generally, what does each highlighting color si
 - 🟫 **Gray** or **Brown** = <span style="color: gray">:BoBxHighlight: Action (thing to do)</span>
 
 ⌂
-<br>﹈<br>
+<br>﹈<br>^1713066923600
 
-﹇<br>
-As of Apr. 13, 2024 12:18:16 AM, what are the various **callouts** I can use that will conform to the **GitHub Flavored Markdown**? 
 
-#card 
-
-> [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]  
-> Crucial information necessary for users to succeed.
-
-> [!WARNING]  
-> Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
-
-⌂
-<br>﹈<br>
 
 
 ---
@@ -243,7 +223,7 @@ Xah Lee, “Unicode: Brackets, Quotes «»「」【】《》,” _∑ Xah Lee W
 ---
 
 > [!NOTE] Note
-> **Next Notes:**
+> :CoArrowCircleRight: **Next Notes:**
 > 
 
 ---

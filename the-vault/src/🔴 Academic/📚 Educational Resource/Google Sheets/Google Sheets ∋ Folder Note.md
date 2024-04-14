@@ -1,7 +1,7 @@
 ---
 title: Google Sheets ∋ Table of Contents
 created: 2023-11-22T14:42
-updated: 2024-04-13T04:24
+updated: 2024-04-13T22:27
 authors:
   - Edmund Leibert III
 tags:
@@ -29,8 +29,8 @@ cards-deck: 🔴 Academic::📚 Educational Resource::Google Sheets::Google Shee
 ## :FasListOl: Table of Contents
 
 - **Google Sheets**
-	- [Google Sheets ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Google%20Sheets/Google%20Sheets%20∋%20Folder%20Note.md)
-	- [Misc. Notes](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Google%20Sheets/Misc.%20Notes.md)
+	- [Google Sheets ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Google%20Sheets/Google%20Sheets%20∋%20Folder%20Note.md)
+	- [Misc. Notes](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Google%20Sheets/Misc.%20Notes.md)
 
 ---
 

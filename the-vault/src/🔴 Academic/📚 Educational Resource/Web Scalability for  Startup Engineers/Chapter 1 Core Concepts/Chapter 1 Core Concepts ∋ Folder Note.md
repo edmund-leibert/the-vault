@@ -1,7 +1,7 @@
 ---
 title: Chapter 1 Core Concepts ∋ Table of Contents
 created: 2024-04-12T05:58
-updated: 2024-04-13T17:38
+updated: 2024-04-13T22:28
 authors:
   - Edmund Leibert III
 tags:
@@ -31,7 +31,7 @@ banner_y: 0
 
 ---
 
-![r](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Web%20Scalability%20for%20%20Startup%20Engineers/Web%20Scalability%20for%20%20Startup%20Engineers%20∋%20Folder%20Note.md#^toc)
+![r](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Web%20Scalability%20for%20%20Startup%20Engineers/Web%20Scalability%20for%20%20Startup%20Engineers%20∋%20Folder%20Note.md#^toc)
 
 
 ---

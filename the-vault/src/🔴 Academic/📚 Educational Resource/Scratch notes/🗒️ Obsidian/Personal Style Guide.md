@@ -1,7 +1,7 @@
 ---
 title: Personal Style Guide
 created: 2024-04-13T20:00
-updated: 2024-04-13T20:49
+updated: 2024-04-13T22:11
 authors:
   - Edmund Leibert III
 tags:
@@ -12,6 +12,7 @@ tags:
 cards-deck: 🔴 Academic::📚 Educational Resource::Scratch notes::🗒️ Obsidian::Personal Style Guide
 banner: 
 banner_y: 
+icon: TiNotes
 ---
 
 # Personal Style Guide
@@ -19,9 +20,9 @@ banner_y:
 ---
 
 > [!NOTE]
-> These notes pertain to my **personal style guide** when using [Obsidian](https://obsidian.md/). [@shidaliObsidianSharpenYour]
+> This page contains *scratch notes* pertain to my **personal style guide** when using [Obsidian](https://obsidian.md/). [@shidaliObsidianSharpenYour]
 >  
-> These notes are structured in a Q&A format, making it easy to follow and learn. Corresponding Anki flashcards are available, enabling efficient revision and reinforcement of the concepts. [@ejsmontWebScalabilityStartup2015]
+> These notes are structured in a Q&A format, making it easy to follow and learn. Corresponding Anki flashcards are available, enabling efficient revision and reinforcement of the concepts. [@ankitectsAnkiPowerfulIntelligent]
 
 ---
 
@@ -31,6 +32,7 @@ banner_y:
 
 ---
 
+![[^toc]]
 
 ---
 
@@ -62,19 +64,39 @@ When writing in accordance with the **IEEE (Institute of Electrical and Electron
 ⌂
 <br>﹈<br>^1707606300313
 
+﹇<br>
+As of Apr. 13, 2024 12:18:16 AM, what are the various **callouts** I can use that will conform to the **GitHub Flavored Markdown**? 
+
+#card 
+
+> [!NOTE]
+> Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
+⌂
+<br>﹈<br>^1713066923606
 
 ---
 
 > [!NOTE]
 > :EiZoteroItem: **Bibliography**
 > 
-> \[1\] Shida Li and Erica Xu, “Obsidian - Sharpen your thinking,” _Obsidian_. Available: [https://obsidian.md/](https://obsidian.md/). [Accessed: Apr. 14, 2024]
+> \[1\] Ankitects, “Anki - powerful, intelligent flashcards,” _Anki - powerful, intelligent flashcards_. Available: https://apps.ankiweb.net/
 >
-> \[2\]
-> A. Ejsmont, _Web Scalability for Startup Engineers_. New York: McGraw-Hill Education, 2015.
+> \[2\] S. Li and E. Xu, “Obsidian - Sharpen your thinking,” _Obsidian_. Available: https://obsidian.md/
 >
-> \[3\]
-> J. Caulfield, “IEEE Paper Format | Template & Guidelines,” _Scribbr_, Aug. 24, 2022. Available: [https://www.scribbr.com/ieee/ieee-paper-format/](https://www.scribbr.com/ieee/ieee-paper-format/). [Accessed: Feb. 10, 2024]
+> \[3\] J. Caulfield, “IEEE Paper Format | Template & Guidelines,” _Scribbr_, Aug. 24, 2022. Available: https://www.scribbr.com/ieee/ieee-paper-format/
 > 
 
 ---

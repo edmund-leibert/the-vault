@@ -1,7 +1,7 @@
 ---
 title: 🗒️ Anaconda
 created: 2023-08-25 16:32
-updated: 2024-04-13T04:24
+updated: 2024-04-13T22:27
 authors:
   - Edmund Leibert III
 tags:
@@ -31,8 +31,8 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Anaconda::🗒️ 
 
 ## :FasListOl: Table of Contents
 - **🗒️ Anaconda**
-	- [🗒️ Anaconda ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Scratch%20notes/🗒️%20Anaconda/🗒️%20Anaconda%20∋%20Folder%20Note.md)
-	- [Misc. Notes](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Scratch%20notes/🗒️%20Anaconda/Misc.%20Notes.md)
+	- [🗒️ Anaconda ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Scratch%20notes/🗒️%20Anaconda/🗒️%20Anaconda%20∋%20Folder%20Note.md)
+	- [Misc. Notes](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Scratch%20notes/🗒️%20Anaconda/Misc.%20Notes.md)
 
 ---
 

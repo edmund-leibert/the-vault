@@ -3,7 +3,7 @@ title: 🗒️ ESLint ∋ Table of Contents
 authors:
   - Edmund Leibert III
 created: 2023-09-03 08:46
-updated: 2024-04-13T04:24
+updated: 2024-04-13T22:27
 tags:
   - 🔴-academic/📚-educational-resource/name/🗒️-eslint/🔖/🗒️-eslint-∋-table-of-contents
   - 🔴-academic/📚-educational-resource/format/miscellaneous
@@ -32,8 +32,8 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ ESLint::🗒️ ES
 ## Table of Contents
 
 - **🗒️ ESLint ∋ Table of Contents**
-	- [🗒️ ESLint ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Scratch%20notes/🗒️%20ESLint/🗒️%20ESLint%20∋%20Folder%20Note.md)
-	- [Misc. Notes](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Scratch%20notes/🗒️%20ESLint/Misc.%20Notes.md)
+	- [🗒️ ESLint ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Scratch%20notes/🗒️%20ESLint/🗒️%20ESLint%20∋%20Folder%20Note.md)
+	- [Misc. Notes](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Scratch%20notes/🗒️%20ESLint/Misc.%20Notes.md)
 
 ---
 

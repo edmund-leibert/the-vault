@@ -1,7 +1,7 @@
 ---
 title: 🗒️ Discord ∋ Table of Contents
 created: 2023-10-31T16:39
-updated: 2024-04-13T04:24
+updated: 2024-04-13T22:27
 authors:
   - Edmund Leibert III
 tags:
@@ -31,7 +31,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Discord::🗒️ D
 
 ## :FasListOl: Table of Contents
 - **🗒️ Discord**
-	- [🗒️ Discord ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Scratch%20notes/🗒️%20Discord/🗒️%20Discord%20∋%20Folder%20Note.md)
+	- [🗒️ Discord ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Scratch%20notes/🗒️%20Discord/🗒️%20Discord%20∋%20Folder%20Note.md)
 
 ---
 

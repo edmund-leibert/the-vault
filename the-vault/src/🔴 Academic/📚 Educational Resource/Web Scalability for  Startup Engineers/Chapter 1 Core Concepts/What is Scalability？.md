@@ -1,7 +1,7 @@
 ---
 title: What is Scalability?
 created: 2024-04-12T05:58
-updated: 2024-04-13T18:03
+updated: 2024-04-13T22:28
 authors:
   - Edmund Leibert III
 tags:
@@ -218,6 +218,6 @@ A. Ejsmont, _Web Scalability for Startup Engineers_. New York: McGraw-Hill Educa
 
 > [!NOTE] Note
 > **Next Notes**:
-> - [0. Introduction ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/0.%20Introduction%20∋%20Folder%20Note.md)
+> - [0. Introduction ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Structy/0.%20Introduction/0.%20Introduction%20∋%20Folder%20Note.md)
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: 🗒️ C++
 created: 2023-09-28 14:16
-updated: 2024-04-13T04:24
+updated: 2024-04-13T22:27
 authors:
   - Edmund Leibert III
 tags:
@@ -29,10 +29,10 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ C++::🗒️ C++ �
 ---
 
 **🗒️ C++**
-- [🗒️ C++ ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Scratch%20notes/🗒️%20C++/🗒️%20C++%20∋%20Folder%20Note.md)
-- [Algorithms library](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Scratch%20notes/🗒️%20C++/Algorithms%20library.md)
-- [Misc. Notes](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Scratch%20notes/🗒️%20C++/Misc.%20Notes.md)
-- [MSVC](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Scratch%20notes/🗒️%20C++/MSVC.md)
+- [🗒️ C++ ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Scratch%20notes/🗒️%20C++/🗒️%20C++%20∋%20Folder%20Note.md)
+- [Algorithms library](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Scratch%20notes/🗒️%20C++/Algorithms%20library.md)
+- [Misc. Notes](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Scratch%20notes/🗒️%20C++/Misc.%20Notes.md)
+- [MSVC](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Scratch%20notes/🗒️%20C++/MSVC.md)
 
 ---
 

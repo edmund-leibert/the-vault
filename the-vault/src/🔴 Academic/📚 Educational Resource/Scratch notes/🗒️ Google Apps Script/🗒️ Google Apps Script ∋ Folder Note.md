@@ -1,7 +1,7 @@
 ---
 title: 🗒️ Google Apps Script ∋ Table of Contents
 created: 2023-10-31T16:39
-updated: 2024-04-13T04:24
+updated: 2024-04-13T22:27
 authors:
   - Edmund Leibert III
 tags:
@@ -31,7 +31,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Google Apps Script
 
 ## Table of Contents
 - **🗒️ Google Apps Scripts**
-	- [🗒️ Google Apps Script ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Scratch%20notes/🗒️%20Google%20Apps%20Script/🗒️%20Google%20Apps%20Script%20∋%20Folder%20Note.md)
+	- [🗒️ Google Apps Script ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Scratch%20notes/🗒️%20Google%20Apps%20Script/🗒️%20Google%20Apps%20Script%20∋%20Folder%20Note.md)
 
 
 ---

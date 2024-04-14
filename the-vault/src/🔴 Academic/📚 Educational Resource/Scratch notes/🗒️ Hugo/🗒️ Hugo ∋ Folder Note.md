@@ -1,7 +1,7 @@
 ---
 title: 🗒️ Hugo ∋ Table of Contents
 created: 2023-10-31T16:39
-updated: 2024-04-13T04:25
+updated: 2024-04-13T22:27
 authors:
   - Edmund Leibert III
 tags:
@@ -32,7 +32,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Hugo::🗒️ Hugo
 ## :FasListOl: Table of Contents
 
 - **🗒️ Hugo**
-	- [Walkthroughs ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Docker%20Docs/Guides/Walkthroughs/Walkthroughs%20∋%20Folder%20Note.md)
+	- [Walkthroughs ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Docker%20Docs/Guides/Walkthroughs/Walkthroughs%20∋%20Folder%20Note.md)
 
 ---
 

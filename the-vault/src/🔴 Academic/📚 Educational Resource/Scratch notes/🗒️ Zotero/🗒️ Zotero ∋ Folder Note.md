@@ -1,7 +1,7 @@
 ---
 title: 🗒️ Zotero ∋ Table of Contents
 created: 2023-09-03 08:46
-updated: 2024-04-13T04:25
+updated: 2024-04-13T22:27
 author(s):
   - Edmund Leibert III
 tags:
@@ -32,8 +32,8 @@ cards-deck: 🔴 Academic::📚 Educational Resource::🗒️ Zotero::🔖::🗒
 ## :FasListOl: Table of Contents
 
 - **🗒 Zotero**
-	- [🗒️ Zotero ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Scratch%20notes/🗒️%20Zotero/🗒️%20Zotero%20∋%20Folder%20Note.md)
-	- [Miscellaneous Notes](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Scratch%20notes/🗒️%20Zotero/Miscellaneous%20Notes.md)
+	- [🗒️ Zotero ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Scratch%20notes/🗒️%20Zotero/🗒️%20Zotero%20∋%20Folder%20Note.md)
+	- [Miscellaneous Notes](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Scratch%20notes/🗒️%20Zotero/Miscellaneous%20Notes.md)
 
 ---
 

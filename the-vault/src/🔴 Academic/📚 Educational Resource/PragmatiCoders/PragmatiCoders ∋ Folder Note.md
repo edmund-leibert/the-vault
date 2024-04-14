@@ -1,7 +1,7 @@
 ---
 title: PragmatiCoders ∋ Table of Contents
 created: 2023-11-14T14:30
-updated: 2024-03-27T00:31
+updated: 2024-04-13T22:27
 authors:
   - Edmund Leibert III
 tags:
@@ -26,7 +26,7 @@ cards-deck: 🔴 Academic::📚 Educational Resource️::PragmatiCoders::Pragmat
 ---
 
 ## Table of Contents
-- [Misc. Notes](the-vault/src/🔴%20Academic/📚%20Educational%20resource/PragmatiCoders/Misc.%20Notes.md)
+- [Misc. Notes](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/PragmatiCoders/Misc.%20Notes.md)
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: LeetCode ∋ Table of Contents
 created: 2024-01-23T16:17
-updated: 2024-04-13T04:25
+updated: 2024-04-13T22:27
 authors:
   - Edmund Leibert III
 tags:
@@ -35,8 +35,8 @@ cards-deck: 🔴 Academic::📚 Educational Resource::LeetCode::LeetCode ∋ Tab
 ## :FasListOl: Table of Contents
 
 - **LeetCode**
-	- [LeetCode ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20resource/LeetCode/LeetCode%20∋%20Folder%20Note.md)
-	- [Explore ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20resource/LeetCode/Explore/Explore%20∋%20Folder%20Note.md)
+	- [LeetCode ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/LeetCode/LeetCode%20∋%20Folder%20Note.md)
+	- [Explore ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/LeetCode/Explore/Explore%20∋%20Folder%20Note.md)
 
 ---
 
@@ -49,7 +49,7 @@ A. Zabian, “Structy - Learn data structures and algorithms, efficiently.,” _
 
 > [!info]+
 > **Next Notes**:
-> - [0. Introduction ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Structy/0.%20Introduction/0.%20Introduction%20∋%20Folder%20Note.md)
+> - [0. Introduction ∋ Folder Note](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Structy/0.%20Introduction/0.%20Introduction%20∋%20Folder%20Note.md)
 
 ---
 

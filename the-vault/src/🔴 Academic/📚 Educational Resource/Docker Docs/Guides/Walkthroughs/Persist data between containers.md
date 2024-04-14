@@ -1,7 +1,7 @@
 ---
 title: Persist data between containers
 created: 2023-11-19T12:44
-updated: 2024-03-27T00:31
+updated: 2024-04-13T22:27
 authors:
   - Edmund Leibert III
 tags:
@@ -42,7 +42,7 @@ What should you complete first to better understand some concepts in this walkth
 
 #card 
 
-The [Run multi-container applications](the-vault/src/🔴%20Academic/📚%20Educational%20resource/Docker%20Docs/Guides/Walkthroughs/Run%20multi-container%20applications.md) walkthrough.
+The [Run multi-container applications](the-vault/src/🔴%20Academic/📚%20Educational%20Resource/Docker%20Docs/Guides/Walkthroughs/Run%20multi-container%20applications.md) walkthrough.
 
 ⌂
 <br>﹈<br>^1700427510283
