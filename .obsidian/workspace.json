@@ -201,8 +201,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "horizontal",
@@ -232,8 +231,7 @@
       "cloze:Toggle all clozes": false,
       "obsidian-day-planner:Timeline": false,
       "reference-map:Reference Map": false,
-      "flashcards-obsidian:Generate flashcards": false,
-      "obsidian-trash-explorer:Open trash explorer": false
+      "flashcards-obsidian:Generate flashcards": false
     }
   },
   "active": "444c5b05b00e37cf",
