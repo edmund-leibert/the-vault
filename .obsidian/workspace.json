@@ -13,20 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "46b2fc8203bade51",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resource/Scratch notes/🗒️ Obsidian/Personal Style Guide.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -62,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#🔴-academic",
+                "query": "line:(gh repo sync)",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 522.5,
-    "collapsed": true
+    "width": 522.5
   },
   "right": {
     "id": "1186c1364788cf17",
@@ -108,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,7 +162,7 @@
             "state": {
               "type": "zotero-annotation-view",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
                 "itemId": 331,
                 "attachmentId": 334,
                 "follow": null
@@ -189,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "the-vault/src/🔴 Academic/📚 Educational Resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md"
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md"
               }
             }
           },
@@ -201,7 +187,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -236,21 +223,24 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "1124117a3842eab8",
+  "active": "444c5b05b00e37cf",
   "lastOpenFiles": [
-    "the-vault/src/🔴 Academic/📚 Educational Resource/Scratch notes/🗒️ Obsidian/Personal Style Guide.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Folder Note.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/Structy/Structy ∋ Folder Note.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/Structy/sortspec.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/sortspec.md",
-    "the-vault/src/🔴 Academic/sortspec.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/Scratch notes/🗒️ Obsidian/🗒️ Obsidian ∋ Folder Note.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/Scratch notes/🗒️ Obsidian/Miscellaneous Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/Scratch notes/🗒️ Obsidian/sortspec.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/Scratch notes/🗒️ Zotero/Miscellaneous Notes.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/Scratch notes/🗒️ Zotero/🗒️ Zotero ∋ Folder Note.md",
+    "the-vault/src/🔴 Academics/sortspec.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resource/Scratch notes/🗒️ GitHub CLI/Misc. Notes.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resource/Scratch notes/🗒️ Git/Miscellaneous Notes.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resource/Scratch notes/🗒️ JetBrains/🗒️ JetBrains ∋ Folder Note.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Folder Note.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resource/Scratch notes/🗒️ Obsidian/Personal Style Guide.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resource/Structy/Structy ∋ Folder Note.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resource/Structy/sortspec.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resource/sortspec.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resource/Scratch notes/🗒️ Obsidian/🗒️ Obsidian ∋ Folder Note.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resource/Scratch notes/🗒️ Obsidian/Miscellaneous Notes.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resource/Scratch notes/🗒️ Obsidian/sortspec.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resource/Scratch notes/🗒️ Zotero/Miscellaneous Notes.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resource/Scratch notes/🗒️ Zotero/🗒️ Zotero ∋ Folder Note.md",
     "ZtTemplates/zt-annot.eta.md",
     "ZtTemplates/ZtTemplates ∋ Folder Note.md",
     "ZtTemplates/zt-colored.eta.md",
@@ -260,11 +250,8 @@
     "ZtTemplates/zt-field.eta.md",
     "ZtTemplates/zt-note.eta.md",
     "ZtTemplates",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/Vim/Miscellanous Notes.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resource/Vim/Miscellanous Notes.md",
     "README.md",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/Anki/Anki ∋ Folder Note.md",
-    "the-vault/test.md",
-    "LiteratureNotes/zt-import/zt-import ∋ Table of Contents.md",
     "LiteratureNotes/zt-import",
     "LiteratureNotes",
     "the-vault/daily-notes",
@@ -272,7 +259,7 @@
     "the-vault/src/null Academic/null Educational resource/Web Scalability for  Startup Engineers",
     "the-vault/src/null Academic/null Educational resource",
     "the-vault/src/null Academic",
-    "the-vault/src/🔴 Academic/📚 Educational Resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts",
+    "the-vault/src/🔴 Academics/📚 Educational Resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts",
     "the-vault/🔴 Academics/📚 Educational Resources/🌐 LeetCode",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.light.png",
     "the-vault/assets/excalidraw/Drawing 2024-02-05 04.03.00.excalidraw.light.svg",

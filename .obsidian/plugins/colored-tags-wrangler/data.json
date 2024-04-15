@@ -247,9 +247,9 @@
           "b": 255
         },
         "background_color": {
-          "r": 246,
-          "g": 76,
-          "b": 40
+          "r": 223,
+          "g": 85,
+          "b": 58
         },
         "luminance_offset": 0.15
       },
@@ -372,7 +372,7 @@
     "EnableDarkLightDifference": true,
     "EnableBackgroundOpacity": true,
     "Values": {
-      "BackgroundOpacity": 0.85,
+      "BackgroundOpacity": 0.65,
       "LuminanceOffset": 0.15
     }
   },
@@ -471,7 +471,7 @@
     "Values": {
       "CardBorderOpacity": 0.3,
       "CardBackgroundLuminanceOffset": 0.15,
-      "BackgroundOpacity": 0.85
+      "BackgroundOpacity": 0.65
     },
     "EnableBackgroundOpacity": true
   },
