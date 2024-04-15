@@ -205,7 +205,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 453.5
+    "width": 453.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -231,10 +232,11 @@
       "cloze:Toggle all clozes": false,
       "obsidian-day-planner:Timeline": false,
       "reference-map:Reference Map": false,
-      "flashcards-obsidian:Generate flashcards": false
+      "flashcards-obsidian:Generate flashcards": false,
+      "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "444c5b05b00e37cf",
+  "active": "1124117a3842eab8",
   "lastOpenFiles": [
     "the-vault/src/🔴 Academic/📚 Educational Resource/Scratch notes/🗒️ Obsidian/Personal Style Guide.md",
     "the-vault/src/🔴 Academic/📚 Educational Resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md",
