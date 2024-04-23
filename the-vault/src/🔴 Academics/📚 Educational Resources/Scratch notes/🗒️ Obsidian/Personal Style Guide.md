@@ -1,7 +1,7 @@
 ---
 title: Personal Style Guide
 created: 2024-04-13T20:00
-updated: 2024-04-14T00:28
+updated: 2024-04-21T09:30
 authors:
   - Edmund Leibert III
 tags:
@@ -20,7 +20,7 @@ icon: TiNotes
 ---
 
 > [!NOTE]
-> This page contains *scratch notes* pertain to my **personal style guide** when using [Obsidian](https://obsidian.md/). [@shidaliObsidianSharpenYour]
+> This page contains *scratch notes* pertaining to my **personal style guide** when using [Obsidian](https://obsidian.md/). [@shidaliObsidianSharpenYour]
 >  
 > These notes are structured in a Q&A format, making it easy to follow and learn. Corresponding Anki flashcards are available, enabling efficient revision and reinforcement of the concepts. [@ankitectsAnkiPowerfulIntelligent]
 
