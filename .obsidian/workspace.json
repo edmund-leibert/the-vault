@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "05cf1c79f59d6811",
+            "id": "737c110b0f6090da",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ Obsidian/Personal Style Guide.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ Obsidian/Personal Style Guide.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,18 +111,10 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ Obsidian/Personal Style Guide.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
-            }
-          },
-          {
-            "id": "fa50cdbb115860a4",
-            "type": "leaf",
-            "state": {
-              "type": "quiet-outline",
-              "state": {}
             }
           },
           {
@@ -162,7 +154,7 @@
             "state": {
               "type": "zotero-annotation-view",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ Obsidian/Personal Style Guide.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
                 "itemId": 331,
                 "attachmentId": 334,
                 "follow": null
@@ -175,15 +167,23 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ Obsidian/Personal Style Guide.md"
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md"
               }
             }
           },
           {
-            "id": "9dc6f2f668dcfe42",
+            "id": "5e68f522073765a1",
             "type": "leaf",
             "state": {
               "type": "timeline",
+              "state": {}
+            }
+          },
+          {
+            "id": "8d39d413a553d774",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
               "state": {}
             }
           }
@@ -191,7 +191,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 453.5
+    "width": 453.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,7 +200,6 @@
       "graph:Open graph view": true,
       "workspaces:Manage workspace layouts": false,
       "canvas:Create new canvas": true,
-      "notion-like-tables:Create loom": false,
       "daily-notes:Open today's daily note": true,
       "templates:Insert template": true,
       "command-palette:Open command palette": true,
@@ -211,19 +211,24 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "chronology:Open Chronology": false,
       "custom-sort:Toggle custom sorting": false,
-      "omnisearch:Omnisearch": false,
       "templater-obsidian:Templater": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "cloze:Toggle all clozes": false,
-      "obsidian-day-planner:Timeline": false,
       "reference-map:Reference Map": false,
-      "flashcards-obsidian:Generate flashcards": false
+      "flashcards-obsidian:Generate flashcards": false,
+      "obsidian-day-planner:Timeline": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "omnisearch:Omnisearch": false,
+      "notion-like-tables:Create loom": false,
+      "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "3b22159245c2a393",
+  "active": "8d39d413a553d774",
   "lastOpenFiles": [
-    "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resources/Structy/0. Introduction/000. course introduction.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resources/Structy/0. Introduction/001. code workspace tour.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resources/Structy/0. Introduction/sortspec.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ Obsidian/Personal Style Guide.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ Obsidian/Miscellaneous Notes.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ English/Miscellaneous Notes.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ Zotero/Miscellaneous Notes.md",
@@ -246,9 +251,6 @@
     "the-vault/src/🔴 Academics/📚 Educational Resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
     "the-vault/src/🔴 Academics/📚 Educational Resource/Structy/Structy ∋ Folder Note.md",
     "the-vault/src/🔴 Academics/📚 Educational Resource/Structy/sortspec.md",
-    "the-vault/src/🔴 Academics/📚 Educational Resource/sortspec.md",
-    "the-vault/src/🔴 Academics/📚 Educational Resource/Scratch notes/🗒️ Obsidian/🗒️ Obsidian ∋ Folder Note.md",
-    "the-vault/src/🔴 Academics/📚 Educational Resource/Scratch notes/🗒️ Obsidian/Miscellaneous Notes.md",
     "ZtTemplates",
     "LiteratureNotes/zt-import",
     "LiteratureNotes",

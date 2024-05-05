@@ -136,7 +136,9 @@
     "iconsInNotesEnabled": true,
     "iconIdentifier": ":",
     "iconsInLinksEnabled": true,
-    "debugMode": false
+    "debugMode": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor"
   },
   "the-vault/🔴 Academics/leila physics homework.md": "LiConstruction",
   "the-vault/🔴 Academics/📚 Educational Resources/🗒️ GitHub": "FabGithub",
