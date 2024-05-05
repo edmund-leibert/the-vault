@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "zotero-annotation-view",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md",
                 "itemId": 331,
                 "attachmentId": 334,
                 "follow": null
@@ -167,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md"
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md"
               }
             }
           },
@@ -191,8 +191,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 453.5,
-    "collapsed": true
+    "width": 453.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,17 +217,17 @@
       "obsidian-day-planner:Timeline": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "omnisearch:Omnisearch": false,
-      "notion-like-tables:Create loom": false,
-      "obsidian-trash-explorer:Open trash explorer": false
+      "notion-like-tables:Create loom": false
     }
   },
-  "active": "8d39d413a553d774",
+  "active": "737c110b0f6090da",
   "lastOpenFiles": [
+    "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Folder Note.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Structy/0. Introduction/000. course introduction.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Structy/0. Introduction/001. code workspace tour.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Structy/0. Introduction/sortspec.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ Obsidian/Personal Style Guide.md",
-    "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ Obsidian/Miscellaneous Notes.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ English/Miscellaneous Notes.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ Zotero/Miscellaneous Notes.md",
@@ -250,7 +249,6 @@
     "the-vault/src/🔴 Academics/📚 Educational Resource/Scratch notes/🗒️ Obsidian/Personal Style Guide.md",
     "the-vault/src/🔴 Academics/📚 Educational Resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
     "the-vault/src/🔴 Academics/📚 Educational Resource/Structy/Structy ∋ Folder Note.md",
-    "the-vault/src/🔴 Academics/📚 Educational Resource/Structy/sortspec.md",
     "ZtTemplates",
     "LiteratureNotes/zt-import",
     "LiteratureNotes",
