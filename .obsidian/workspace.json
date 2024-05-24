@@ -191,7 +191,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 453.5
+    "width": 453.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,7 +218,8 @@
       "obsidian-day-planner:Timeline": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "omnisearch:Omnisearch": false,
-      "notion-like-tables:Create loom": false
+      "notion-like-tables:Create loom": false,
+      "obsidian-trash-explorer:Open trash explorer": false
     }
   },
   "active": "737c110b0f6090da",
