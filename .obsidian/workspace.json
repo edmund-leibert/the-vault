@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ PowerShell/Miscellaneous Notes.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "line:(gh repo sync)",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ PowerShell/Miscellaneous Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ PowerShell/Miscellaneous Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "zotero-annotation-view",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ PowerShell/Miscellaneous Notes.md",
                 "itemId": 331,
                 "attachmentId": 334,
                 "follow": null
@@ -167,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md"
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ PowerShell/Miscellaneous Notes.md"
               }
             }
           },
@@ -224,6 +224,8 @@
   },
   "active": "737c110b0f6090da",
   "lastOpenFiles": [
+    "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ PowerShell/🗒️ PowerShell ∋ Folder Note.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Folder Note.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Structy/0. Introduction/000. course introduction.md",
@@ -249,8 +251,6 @@
     "the-vault/src/🔴 Academics/📚 Educational Resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Folder Note.md",
     "the-vault/src/🔴 Academics/📚 Educational Resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md",
     "the-vault/src/🔴 Academics/📚 Educational Resource/Scratch notes/🗒️ Obsidian/Personal Style Guide.md",
-    "the-vault/src/🔴 Academics/📚 Educational Resource/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
-    "the-vault/src/🔴 Academics/📚 Educational Resource/Structy/Structy ∋ Folder Note.md",
     "ZtTemplates",
     "LiteratureNotes/zt-import",
     "LiteratureNotes",
