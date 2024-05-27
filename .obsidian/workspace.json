@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ PowerShell/Miscellaneous Notes.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/LearnCpp.com/Chapter 7꞉ Control Flow and Error Handling.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ PowerShell/Miscellaneous Notes.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/LearnCpp.com/Chapter 7꞉ Control Flow and Error Handling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ PowerShell/Miscellaneous Notes.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/LearnCpp.com/Chapter 7꞉ Control Flow and Error Handling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "zotero-annotation-view",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ PowerShell/Miscellaneous Notes.md",
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/LearnCpp.com/Chapter 7꞉ Control Flow and Error Handling.md",
                 "itemId": 331,
                 "attachmentId": 334,
                 "follow": null
@@ -167,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ PowerShell/Miscellaneous Notes.md"
+                "file": "the-vault/src/🔴 Academics/📚 Educational Resources/LearnCpp.com/Chapter 7꞉ Control Flow and Error Handling.md"
               }
             }
           },
@@ -191,8 +191,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 453.5,
-    "collapsed": true
+    "width": 453.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,16 +217,26 @@
       "obsidian-day-planner:Timeline": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "omnisearch:Omnisearch": false,
-      "notion-like-tables:Create loom": false,
-      "obsidian-trash-explorer:Open trash explorer": false
+      "notion-like-tables:Create loom": false
     }
   },
   "active": "737c110b0f6090da",
   "lastOpenFiles": [
-    "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ PowerShell/🗒️ PowerShell ∋ Folder Note.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resources/LearnCpp.com/Chapter 2꞉ C++ Basics꞉ Functions and Files.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resources/LearnCpp.com/Chapter 0꞉ Introduction⟋Getting Started.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resources/Microsoft Learn/Shows.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resources/Microsoft Learn/Q&A.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resources/Microsoft Learn/Events.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resources/Microsoft Learn/Code Samples.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resources/Microsoft Learn/Certifications.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resources/Microsoft Learn/Assessments.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Folder Note.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/Web Scalability for  Startup Engineers ∋ Folder Note.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resources/LeetCode/Problems/1. Two Sum.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resources/Structy/Structy ∋ Folder Note.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ PowerShell/Miscellaneous Notes.md",
+    "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ PowerShell/🗒️ PowerShell ∋ Folder Note.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Structy/0. Introduction/000. course introduction.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Structy/0. Introduction/001. code workspace tour.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Structy/0. Introduction/sortspec.md",
@@ -239,18 +248,7 @@
     "the-vault/src/🔴 Academics/📚 Educational Resources/sortspec.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/sortspec.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/Scratch Notes ∋ Folder Note.md",
-    "the-vault/src/🔴 Academics/📚 Educational Resources/Structy/sortspec.md",
-    "the-vault/src/🔴 Academics/📚 Educational Resources/Web Scalability for  Startup Engineers/sortspec.md",
-    "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ .NET/🗒️ .NET ∋ Folder Note.md",
-    "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ English/🗒️ English ∋ Folder Note.md",
     "the-vault/src/🔴 Academics/📚 Educational Resources/Scratch Notes/🗒️ English",
-    "the-vault/src/🔴 Academics/sortspec.md",
-    "the-vault/src/🔴 Academics/📚 Educational Resource/Scratch notes/🗒️ GitHub CLI/Misc. Notes.md",
-    "the-vault/src/🔴 Academics/📚 Educational Resource/Scratch notes/🗒️ Git/Miscellaneous Notes.md",
-    "the-vault/src/🔴 Academics/📚 Educational Resource/Scratch notes/🗒️ JetBrains/🗒️ JetBrains ∋ Folder Note.md",
-    "the-vault/src/🔴 Academics/📚 Educational Resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/Chapter 1 Core Concepts ∋ Folder Note.md",
-    "the-vault/src/🔴 Academics/📚 Educational Resource/Web Scalability for  Startup Engineers/Chapter 1 Core Concepts/What is Scalability？.md",
-    "the-vault/src/🔴 Academics/📚 Educational Resource/Scratch notes/🗒️ Obsidian/Personal Style Guide.md",
     "ZtTemplates",
     "LiteratureNotes/zt-import",
     "LiteratureNotes",
